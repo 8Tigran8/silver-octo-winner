@@ -1,0 +1,9 @@
+# v0 и оценка — только numpy. v1 (бустинг) — scikit-learn; версии закреплены ради воспроизводимости
+# (scikit-learn 1.9.1 проверен в Карантине 10.11.2026; scipy 1.17.1 — версия, которую ставил стенд).
+numpy==2.5.4
+scikit-learn==1.9.1
+scipy==1.17.1
+joblib==1.6.0
+threadpoolctl==3.8.0
+narwhals==2.28.0
+cloudpickle==3.1.2

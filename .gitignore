@@ -51,3 +51,9 @@ Ruses Cules.csv
 # Local communications and downloaded mail
 source/welcome_email.txt
 source/team_coordination.json
+
+# Model outputs, organizer reference files, external matches
+out/
+*.csv
+ref/
+external/
