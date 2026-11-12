@@ -1,0 +1,107 @@
+{
+  "registered_utc": "2026-11-12T22:05:52.907603+00:00",
+  "source_revision": "4340d274572876239c154c90bc507a9b3250a656",
+  "development": [
+    "1925299",
+    "1959846",
+    "1996436",
+    "2006229",
+    "2007448",
+    "2010085",
+    "2011166",
+    "2013725",
+    "2015213",
+    "2017461"
+  ],
+  "confirmation": [
+    "1874553",
+    "1886347",
+    "1899585",
+    "1927964",
+    "1953632",
+    "1986691",
+    "1996435",
+    "2006363",
+    "2007721",
+    "2016236"
+  ],
+  "split_rule": "shuffle sorted IDs with Python Random(20261113), first 10 development; fixed before scoring",
+  "frozen_v1_model_sha256": "f2f33ae6ac086d976ed9712110e542ad68588ed489d0c0fc212a47635731c682",
+  "baseline": "fixed v1 with unchanged frozen nine-game weights",
+  "labels": "SkillCorner automatic phase/possession proxies; distinct from target corrected tracking GT",
+  "primary_endpoint": "equal-game mean spellF1 on naturally detected tracking; confirmation report separate from known nine-game CV",
+  "development_objective": "improve transition boundaries without losing robustness; evaluate only prespecified decoder and training candidates",
+  "confirmation_rule": "choose at most one candidate before scoring confirmation, report all games and regressions, do not tune after results",
+  "competition_inputs": "never used for model selection or quality tests",
+  "prespecified_decoder_candidates": [
+    {
+      "name": "v1",
+      "cost": 6.0,
+      "duration": 1.0,
+      "dead_logit_bias": 0.0
+    },
+    {
+      "name": "cost3",
+      "cost": 3.0,
+      "duration": 1.0,
+      "dead_logit_bias": 0.0
+    },
+    {
+      "name": "cost9",
+      "cost": 9.0,
+      "duration": 1.0,
+      "dead_logit_bias": 0.0
+    },
+    {
+      "name": "cost3_duration04",
+      "cost": 3.0,
+      "duration": 0.4,
+      "dead_logit_bias": 0.0
+    },
+    {
+      "name": "cost6_duration04",
+      "cost": 6.0,
+      "duration": 0.4,
+      "dead_logit_bias": 0.0
+    },
+    {
+      "name": "cost3_deadplus",
+      "cost": 3.0,
+      "duration": 0.4,
+      "dead_logit_bias": 0.35
+    },
+    {
+      "name": "cost6_deadplus",
+      "cost": 6.0,
+      "duration": 1.0,
+      "dead_logit_bias": 0.35
+    },
+    {
+      "name": "cost3_deadminus",
+      "cost": 3.0,
+      "duration": 0.4,
+      "dead_logit_bias": -0.35
+    },
+    {
+      "name": "cost6_deadminus",
+      "cost": 6.0,
+      "duration": 1.0,
+      "dead_logit_bias": -0.35
+    }
+  ],
+  "training_candidates": "If decoder alone is insufficient, fit stage-one robust sensor augmentation on original nine games, compare unstacked and fixed 50/50 stage-one probability ensemble; no SkillCorner confirmation game enters training.",
+  "scenarios": [
+    "natural_detected",
+    "label_blind_seed7"
+  ],
+  "selection": {
+    "objective_weights": {
+      "known_matched": 0.4,
+      "known_label_blind": 0.2,
+      "skill_development_natural": 0.2,
+      "skill_development_label_blind": 0.2
+    },
+    "gates": "Known matched and known severe corruption no worse than v1 minus .005; SkillCorner natural no worse than v1 minus .01. Ties prefer original v1. Candidate must improve weighted score by at least .002.",
+    "weights_training": "No new SkillCorner game used to fit learned weights in decoder comparison"
+  }
+}

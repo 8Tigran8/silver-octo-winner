@@ -1,0 +1,6 @@
+{
+  "tools/decoder_development.py": "09a65a2bf48d9dbf8c315a23432952e3b43a6c63fb792ac382ac7c6b0aff002d",
+  "tools/skillcorner_reader.py": "7de0d9f2932f668b6d04b5b7ebbdf347442b8be90d17880ddf7f9b782778faa8",
+  "tools/skillcorner_sources.json": "1e3b82d5a5eb1afdbbbd3dc321595a28c6facfd816e0f2a7b53a4e2b661bceed",
+  "tools/fetch_skillcorner.py": "79e6f1c3f3ba71b79320740b1a3ef6b18beea622a678d1b031519318648b0e0d"
+}
