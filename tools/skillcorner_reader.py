@@ -35,8 +35,11 @@ def phase_labels(meta, phases, n):
     for row in phases:
         a, b = int(row["frame_start"]), int(row["frame_end"])
         team = int(row["team_in_possession_id"])
-        if team not in (home, away) or not 0 <= a < b <= n:
+        if team not in (home, away) or a >= b:
             raise ValueError("Invalid phase team or interval")
+        a, b = max(0,a), min(n,b)
+        if a >= b:
+            continue
         # Provider phase endpoints sometimes exceed metadata period endpoints.
         # Intersect with the independently supplied period; never borrow labels
         # from the next half or extend its scored span from a possession phase.
