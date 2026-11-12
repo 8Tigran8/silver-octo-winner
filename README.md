@@ -69,7 +69,7 @@ For decoder and scorer checks on synthetic fixtures and the organizer's publishe
 
 The implementation originates from VV's `model-v1` commit `cc44bfe6bceba39e2e67a03fd32e658cca68bc0e`. The reproduction branch adds setup, explicit output paths, controlled worker counts and verification tooling. Model features and decoder parameters are unchanged.
 
-Release still needs a real-match reproduction receipt, comparison with VV's original CSV, completed method provenance review and the final technical document. The repository remains private during development and must be public for submission.
+Technical verification completed on 12 November: two clean-source runs regenerated the real-match CSV byte for byte, passed the official validator and matched VV's supplied SHA-256. The technical document records the verified source, timings, data provenance and limitations. Model-selection provenance clarification remains in team review; we make no competitive validation score claim. The repository stays private until the agreed publication window and must be public before submission. The organizer's submission form is a separate release step.
 
 ## Data stays local
 

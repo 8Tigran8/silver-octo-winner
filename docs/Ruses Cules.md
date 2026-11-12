@@ -1,8 +1,10 @@
 # Ruses Cules: technical method
 
-**Review draft, 12 November 2026.** This describes the uploaded v1 implementation. A real-match CSV and clean reproduction receipt have not yet been verified. Method-selection provenance requires confirmation from the model author. This document is not ready for submission.
+**Technical verification completed, 12 November 2026.** The v1 pipeline regenerates the team CSV from raw inputs and passes the official format checks. Two clean-source runs and the author's independently supplied SHA-256 agree. Competition submission and repository publication remain separate release steps.
 
 ## Approach
+
+We use tabular boosting to work with the supplied numerical tracking and missing observations without rebuilding a pixel-level detector or persistent player identities. The temporal stack and state decoder address possession continuity that a nearest-player rule cannot represent. We keep the uploaded v1 features and parameters fixed during reproduction.
 
 We estimate per-frame probabilities from tracking, refine them with temporal context and decode a sequence of possessions and stoppages. Two histogram gradient boosting classifiers estimate dead-ball probability and home-team possession conditional on live play. Training and inference include swapped-team features; we average direct and swapped predictions to enforce team symmetry.
 
@@ -43,16 +45,16 @@ We let the temporal model resolve loose balls and contacts rather than change po
 
 Decoder optimization matched exhaustive enumeration on 60 short synthetic sequences. The local scorer reproduced the organizer's four published baseline results. On the review machine (Apple Silicon, 16 GB RAM, Python 3.12), both training stages completed on all nine external matches in 578.182 seconds using two worker processes and single-thread fitting. That training preflight read no competition input or public GT. These checks establish implementation consistency, not competitive accuracy. Final quality is unknown until the organizer evaluates the hidden full-match labels.
 
-Before release, resolve these review items:
+Method provenance and limitations:
 
-- Confirm how the author selected the uploaded method and parameters. The public five-minute window cannot be used for model selection or tuning. No competitive score is asserted here.
-- Recheck any claimed independent second-stage holdout score. `tools/exp_v1.py::stack_one` trains stage two from other matches' OOF predictions whose stage-one training can include the held-out match. A fully independent assessment requires nested match splits throughout both stages. First-stage OOF training for the final stack does not by itself provide that assessment.
+- The model author declares that v1 model/parameter selection used external matches only; the configuration records selection on 10 November. Our reproduction does not load the competition public GT, choose between variants or retune parameters. The author's explanation of version choice is still being clarified in team review; this declaration is not an independent audit of earlier experiments. No competitive score is asserted here.
+- We do not claim an independently validated second-stage holdout score. `tools/exp_v1.py::stack_one` trains stage two from other matches' OOF predictions whose stage-one training can include the held-out match. A fully independent assessment requires nested match splits throughout both stages. First-stage OOF training for the final stack does not by itself provide that assessment.
 - Long ball gaps, missing players and domain differences between training and competition tracking can create false stoppages or fragment possessions. Interpolation and temporal windows may also blur transition timing. Offline features use future frames and cannot serve a live causal feed unchanged.
 - Exact equality across platforms is not established. Single-thread model fitting, pinned libraries and fixed random seeds are controls; the two-clean-copy check tests the installed environment.
 
 We do not hand-label or hand-correct the supplied match. We keep competition assets, frame-level intermediate arrays, output CSVs and logs local and outside the public repository. We do not send these assets or extracts to hosted LLMs.
 
-## Reproduction and pending results
+## Reproduction and verification
 
 Follow the installation and data preparation commands in README, then run:
 
@@ -63,4 +65,22 @@ OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREAD
 .venv/bin/python tools/reproduce.py --data-dir /absolute/path/to/data --jobs 2
 ```
 
-The main command retrains from the pinned external inputs. The reproduction command starts twice from committed source and raw external inputs, checks both output files and records hashes. Fill in the final source revision, measured run times, output SHA-256 and confirmation against the author's CSV after those checks pass. Keep the full receipt local because it includes private input paths and hashes.
+The main command retrains from the pinned external inputs. The reproduction command starts twice from committed source and raw external inputs, checks both output files and records hashes.
+
+Verified source: `538f43473421aefe7aa10b457b957179bd0915dd`. Later documentation-only changes do not alter the tested inference/training code, dependencies or source manifests. Both runs independently converted all nine external matches and retrained both model stages; they shared the installed pinned Python environment and the same source input locations. Input SHA-256 hashes remained unchanged.
+
+| Verification | Result |
+|---|---|
+| Real-input baseline alignment | Byte-identical to organizer `baseline_smooth50.csv` |
+| Clean-source run 1 | Official format PASS; 647.224 s including conversion, training and inference |
+| Clean-source run 2 | Official format PASS; 667.945 s including conversion, training and inference |
+| Output contract | 199,319 ordered rows, exact `frame,label` header, H/A/D/X labels |
+| Comparison with author's file | Both clean outputs match the author's supplied SHA-256 |
+
+Team CSV SHA-256:
+
+```text
+4d767cd5d677c0dc3ceee7d716cf00e8f10b48920ae0e35eccf61ac1cf33db6c
+```
+
+These checks establish file validity and exact regeneration. They do not measure hidden-match prediction quality. Keep the full receipt local because it includes private input paths and hashes.
