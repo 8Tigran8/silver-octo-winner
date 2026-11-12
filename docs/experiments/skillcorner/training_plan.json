@@ -1,0 +1,20 @@
+{
+  "registered_utc": "2026-11-12T22:11:05.830744+00:00",
+  "model": "Original stage-one HistGradientBoosting parameters; fit on original nine external matches only",
+  "augmentation": [
+    "matched_seed0",
+    "label_blind_seed1",
+    "clean_source"
+  ],
+  "stride_per_scenario": 12,
+  "seed": 0,
+  "oof": "Each original test match excluded from robust fit; full-nine robust fit predicts only new SkillCorner games",
+  "candidates": {
+    "robust_stage1": "new stage-one probabilities, no second stage, original decoder",
+    "blend50": "0.5 * frozen v1 stacked probabilities + 0.5 * robust stage-one probabilities, original decoder"
+  },
+  "selection": "Same weighted objective/gates as decoder plan. The two robust candidates compete with the nine decoder candidates. No cross-product tuning.",
+  "confirmation": "One selected candidate frozen before first confirmation score; no further tuning on confirmation outcomes",
+  "training_source_protocol": "380987b3029cb161e9d5601a6286a2c4af425d9300a64322a90d7b2c63cfaaa9",
+  "input_hashes": "As registered in original quality audit; raw confidential competition data excluded"
+}

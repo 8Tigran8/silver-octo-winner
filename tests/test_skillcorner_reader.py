@@ -27,6 +27,14 @@ class ReaderTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "Conflicting"):
             reader.phase_labels(meta, phases, 10)
 
+    def test_provider_phase_cannot_extend_scored_half(self):
+        meta = {"home_team": {"id": 1}, "away_team": {"id": 2},
+                "match_periods": [{"start_frame": 2, "end_frame": 6, "period": 1},
+                                  {"start_frame": 7, "end_frame": 10, "period": 2}]}
+        phases = [{"frame_start": 1, "frame_end": 9, "team_in_possession_id": 1, "period": 1}]
+        gt, _ = reader.phase_labels(meta, phases, 11)
+        np.testing.assert_array_equal(gt, [3, 3, 0, 0, 0, 0, 3, 2, 2, 2, 3])
+
 
 if __name__ == "__main__":
     unittest.main()
