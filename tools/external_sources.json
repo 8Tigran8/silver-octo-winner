@@ -1,0 +1,139 @@
+{
+  "idsse_revision": "a715a38dfbaf5f58e431727c2b78d174101a703c",
+  "metrica_revision": "e706dd506b360d69d9d123d5b8026e7294b13996",
+  "sources": [
+    {
+      "name": "IDSSE / Sportec / DFL",
+      "url": "https://huggingface.co/datasets/pysport/idsse-data",
+      "paper": "https://doi.org/10.1038/s41597-025-04505-y",
+      "license": "CC BY 4.0"
+    },
+    {
+      "name": "Metrica Sports sample-data",
+      "url": "https://github.com/metrica-sports/sample-data",
+      "license": "Source acknowledgement required by repository README"
+    }
+  ],
+  "files": [
+    {
+      "path": "idsse/DFL_02_01_matchinformation_DFL-COM-000001_DFL-MAT-J03WMX.xml",
+      "url": "https://huggingface.co/datasets/pysport/idsse-data/resolve/a715a38dfbaf5f58e431727c2b78d174101a703c/DFL_02_01_matchinformation_DFL-COM-000001_DFL-MAT-J03WMX.xml",
+      "size": 11930,
+      "git_blob_sha1": "8f2a82d84428c28e0e01f0a908c8395cc8d23900"
+    },
+    {
+      "path": "idsse/DFL_02_01_matchinformation_DFL-COM-000001_DFL-MAT-J03WN1.xml",
+      "url": "https://huggingface.co/datasets/pysport/idsse-data/resolve/a715a38dfbaf5f58e431727c2b78d174101a703c/DFL_02_01_matchinformation_DFL-COM-000001_DFL-MAT-J03WN1.xml",
+      "size": 11722,
+      "git_blob_sha1": "45d2f112aed6c4212e66db8a91e8da1b8d728090"
+    },
+    {
+      "path": "idsse/DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WOH.xml",
+      "url": "https://huggingface.co/datasets/pysport/idsse-data/resolve/a715a38dfbaf5f58e431727c2b78d174101a703c/DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WOH.xml",
+      "size": 11745,
+      "git_blob_sha1": "a693a0cacc2b597357e65a04eec5febfdaff79aa"
+    },
+    {
+      "path": "idsse/DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WOY.xml",
+      "url": "https://huggingface.co/datasets/pysport/idsse-data/resolve/a715a38dfbaf5f58e431727c2b78d174101a703c/DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WOY.xml",
+      "size": 11952,
+      "git_blob_sha1": "bce56e5f518216e62d1e93a38322d4b9e357e5ab"
+    },
+    {
+      "path": "idsse/DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WPY.xml",
+      "url": "https://huggingface.co/datasets/pysport/idsse-data/resolve/a715a38dfbaf5f58e431727c2b78d174101a703c/DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WPY.xml",
+      "size": 11922,
+      "git_blob_sha1": "46f1ffe15e1b96b12aab10594b12886c503c2f68"
+    },
+    {
+      "path": "idsse/DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WQQ.xml",
+      "url": "https://huggingface.co/datasets/pysport/idsse-data/resolve/a715a38dfbaf5f58e431727c2b78d174101a703c/DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WQQ.xml",
+      "size": 11932,
+      "git_blob_sha1": "7ec8acbff5a0c6167b632cc230d2a8b0e7b44b1c"
+    },
+    {
+      "path": "idsse/DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WR9.xml",
+      "url": "https://huggingface.co/datasets/pysport/idsse-data/resolve/a715a38dfbaf5f58e431727c2b78d174101a703c/DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WR9.xml",
+      "size": 11823,
+      "git_blob_sha1": "7a8eb84881a1631da510982c01c90a3afd1b2e23"
+    },
+    {
+      "path": "idsse/DFL_04_03_positions_raw_observed_DFL-COM-000001_DFL-MAT-J03WMX.xml",
+      "url": "https://huggingface.co/datasets/pysport/idsse-data/resolve/a715a38dfbaf5f58e431727c2b78d174101a703c/DFL_04_03_positions_raw_observed_DFL-COM-000001_DFL-MAT-J03WMX.xml",
+      "size": 418524833,
+      "sha256": "d3dd92e509421a6466acb0a083c009035f1751bc5fd9ef42ffa8f20d01cf7d49"
+    },
+    {
+      "path": "idsse/DFL_04_03_positions_raw_observed_DFL-COM-000001_DFL-MAT-J03WN1.xml",
+      "url": "https://huggingface.co/datasets/pysport/idsse-data/resolve/a715a38dfbaf5f58e431727c2b78d174101a703c/DFL_04_03_positions_raw_observed_DFL-COM-000001_DFL-MAT-J03WN1.xml",
+      "size": 391722803,
+      "sha256": "56ef948961a18e150dba0b7b16869d0008ff66f3050a0c355d31fa5b8ec2fcec"
+    },
+    {
+      "path": "idsse/DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WOH.xml",
+      "url": "https://huggingface.co/datasets/pysport/idsse-data/resolve/a715a38dfbaf5f58e431727c2b78d174101a703c/DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WOH.xml",
+      "size": 348945715,
+      "sha256": "ec4dcf30200aad694dea263d5289485fcd0ca42badddaeb7c81f5cd5a4229d4f"
+    },
+    {
+      "path": "idsse/DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WOY.xml",
+      "url": "https://huggingface.co/datasets/pysport/idsse-data/resolve/a715a38dfbaf5f58e431727c2b78d174101a703c/DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WOY.xml",
+      "size": 362567859,
+      "sha256": "a228ef0e676d009cefff1580fcb721b53f598454eb120ec347e0a628a3a4646b"
+    },
+    {
+      "path": "idsse/DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WPY.xml",
+      "url": "https://huggingface.co/datasets/pysport/idsse-data/resolve/a715a38dfbaf5f58e431727c2b78d174101a703c/DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WPY.xml",
+      "size": 371688499,
+      "sha256": "845202c29ad93d696653436da426a7cdaefb848298e07b7343de6529581671e1"
+    },
+    {
+      "path": "idsse/DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WQQ.xml",
+      "url": "https://huggingface.co/datasets/pysport/idsse-data/resolve/a715a38dfbaf5f58e431727c2b78d174101a703c/DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WQQ.xml",
+      "size": 356219423,
+      "sha256": "cbefcb0bd7f39f3b94ee69a7bc97aac0f936425062c1cc1b144733df36804d6f"
+    },
+    {
+      "path": "idsse/DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WR9.xml",
+      "url": "https://huggingface.co/datasets/pysport/idsse-data/resolve/a715a38dfbaf5f58e431727c2b78d174101a703c/DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WR9.xml",
+      "size": 372934140,
+      "sha256": "70b63069189019066fb7e3d9db891122edfe787f3a43ba522ebe45ed89ea0269"
+    },
+    {
+      "path": "metrica/Sample_Game_1/Sample_Game_1_RawEventsData.csv",
+      "url": "https://raw.githubusercontent.com/metrica-sports/sample-data/e706dd506b360d69d9d123d5b8026e7294b13996/data/Sample_Game_1/Sample_Game_1_RawEventsData.csv",
+      "size": 139446,
+      "git_blob_sha1": "3c426dd4f442dd433bccf89e3634f91aa310cd8f"
+    },
+    {
+      "path": "metrica/Sample_Game_1/Sample_Game_1_RawTrackingData_Away_Team.csv",
+      "url": "https://raw.githubusercontent.com/metrica-sports/sample-data/e706dd506b360d69d9d123d5b8026e7294b13996/data/Sample_Game_1/Sample_Game_1_RawTrackingData_Away_Team.csv",
+      "size": 32782073,
+      "git_blob_sha1": "ff409a5680fd75acc7cebcf786827214c687478b"
+    },
+    {
+      "path": "metrica/Sample_Game_1/Sample_Game_1_RawTrackingData_Home_Team.csv",
+      "url": "https://raw.githubusercontent.com/metrica-sports/sample-data/e706dd506b360d69d9d123d5b8026e7294b13996/data/Sample_Game_1/Sample_Game_1_RawTrackingData_Home_Team.csv",
+      "size": 32782961,
+      "git_blob_sha1": "ce2e91c0e633426cec1146f4e728b72417454e3d"
+    },
+    {
+      "path": "metrica/Sample_Game_2/Sample_Game_2_RawEventsData.csv",
+      "url": "https://raw.githubusercontent.com/metrica-sports/sample-data/e706dd506b360d69d9d123d5b8026e7294b13996/data/Sample_Game_2/Sample_Game_2_RawEventsData.csv",
+      "size": 153897,
+      "git_blob_sha1": "decccd47c1d53960d290cb6679337eec83a8a97f"
+    },
+    {
+      "path": "metrica/Sample_Game_2/Sample_Game_2_RawTrackingData_Away_Team.csv",
+      "url": "https://raw.githubusercontent.com/metrica-sports/sample-data/e706dd506b360d69d9d123d5b8026e7294b13996/data/Sample_Game_2/Sample_Game_2_RawTrackingData_Away_Team.csv",
+      "size": 29627711,
+      "git_blob_sha1": "e7334d8d762954a215c49e55f211855000243fdc"
+    },
+    {
+      "path": "metrica/Sample_Game_2/Sample_Game_2_RawTrackingData_Home_Team.csv",
+      "url": "https://raw.githubusercontent.com/metrica-sports/sample-data/e706dd506b360d69d9d123d5b8026e7294b13996/data/Sample_Game_2/Sample_Game_2_RawTrackingData_Home_Team.csv",
+      "size": 31890338,
+      "git_blob_sha1": "8b4d3648888cc8b033e7142919ebaea04f6328e0"
+    }
+  ]
+}

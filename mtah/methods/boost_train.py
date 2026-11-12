@@ -69,14 +69,17 @@ def _fit_job(args):
         return test, boost.predict(models, z["X"], z["Xs"])
 
 
-def train(names=None, log=print):
+def train(names=None, log=print, workers=2):
     """-> {'stage1': модели на всех матчах, 'stage2': второй ярус или None}."""
     names = names or external.names()
     if not names:
         raise IOError("нет внешних матчей в external/conv — сначала tools/ext_idsse.py и tools/ext_metrica.py")
     cfg = config()
-    ctx = get_context("fork")
-    with ctx.Pool(min(8, os.cpu_count() or 1)) as pool:
+    if workers < 1:
+        raise ValueError("workers must be positive")
+    # Fresh interpreters avoid inheriting initialized OpenMP state on macOS.
+    ctx = get_context("spawn")
+    with ctx.Pool(min(workers, len(names), os.cpu_count() or 1)) as pool:
         pool.map(_make_features, names)
         log("признаки внешних матчей готовы ({})".format(len(names)))
         jobs = [(names, None)]

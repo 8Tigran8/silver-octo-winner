@@ -1,0 +1,59 @@
+{
+  "commit": "f8f2629ff1e0985f81d7e59d8413678514ee1530",
+  "files": [
+    {
+      "path": "ref/official/games.py",
+      "url": "https://raw.githubusercontent.com/metrica-sports/more-than-a-hack-2027/f8f2629ff1e0985f81d7e59d8413678514ee1530/games.py",
+      "size": 10301,
+      "sha256": "3b2122794e9e0476e2b3a871d14880e5fa47c4feaeacf99caef054c2309076ce"
+    },
+    {
+      "path": "ref/official/LICENSE",
+      "url": "https://raw.githubusercontent.com/metrica-sports/more-than-a-hack-2027/f8f2629ff1e0985f81d7e59d8413678514ee1530/LICENSE",
+      "size": 1603,
+      "sha256": "b1f93728571a232a0e158abdd869891f2efd51894134fb20678292c2468ff3ec"
+    },
+    {
+      "path": "ref/official/evaluation/possession_metrics.py",
+      "url": "https://raw.githubusercontent.com/metrica-sports/more-than-a-hack-2027/f8f2629ff1e0985f81d7e59d8413678514ee1530/evaluation/possession_metrics.py",
+      "size": 33370,
+      "sha256": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d"
+    },
+    {
+      "path": "ref/official/evaluation/validate_submission.py",
+      "url": "https://raw.githubusercontent.com/metrica-sports/more-than-a-hack-2027/f8f2629ff1e0985f81d7e59d8413678514ee1530/evaluation/validate_submission.py",
+      "size": 4192,
+      "sha256": "07ac29499acbd337e1dc1de1832d63f6e1fa1d981e22f6ad08212529e2bbee14"
+    },
+    {
+      "path": "ref/BAR-ATH_possession_gt_public.csv",
+      "url": "https://raw.githubusercontent.com/metrica-sports/more-than-a-hack-2027/f8f2629ff1e0985f81d7e59d8413678514ee1530/evaluation/gt/BAR-ATH_possession_gt_public.csv",
+      "size": 1682773,
+      "sha256": "e596a9af9626c623bb94be6fd350e12ee9a75c76a696cfadca3bc01735e92487"
+    },
+    {
+      "path": "ref/baseline_raw.csv",
+      "url": "https://raw.githubusercontent.com/metrica-sports/more-than-a-hack-2027/f8f2629ff1e0985f81d7e59d8413678514ee1530/evaluation/results/baseline_raw.csv",
+      "size": 1682773,
+      "sha256": "9471afeb95722454a96189481561adfb73b3963365a83969f04a986930f12511"
+    },
+    {
+      "path": "ref/baseline_smooth25.csv",
+      "url": "https://raw.githubusercontent.com/metrica-sports/more-than-a-hack-2027/f8f2629ff1e0985f81d7e59d8413678514ee1530/evaluation/results/baseline_smooth25.csv",
+      "size": 1682773,
+      "sha256": "c1fd857c2c0bd5299260b6c55dcd419bde41a4c5af46f9bbcb41b4b3b577353f"
+    },
+    {
+      "path": "ref/baseline_smooth50.csv",
+      "url": "https://raw.githubusercontent.com/metrica-sports/more-than-a-hack-2027/f8f2629ff1e0985f81d7e59d8413678514ee1530/evaluation/results/baseline_smooth50.csv",
+      "size": 1682773,
+      "sha256": "6d4e04b80b9016cc16ada99697bf219d3a74b58750dd6d5ec5a4cd5fc32ab4b9"
+    },
+    {
+      "path": "ref/baseline_smooth125.csv",
+      "url": "https://raw.githubusercontent.com/metrica-sports/more-than-a-hack-2027/f8f2629ff1e0985f81d7e59d8413678514ee1530/evaluation/results/baseline_smooth125.csv",
+      "size": 1682773,
+      "sha256": "41704ddccc1edcddf6a0781e3fdfa06ae07b19fb9ead3bf67f663bfc7b1900ba"
+    }
+  ]
+}
