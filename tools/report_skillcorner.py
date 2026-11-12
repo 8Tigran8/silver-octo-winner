@@ -72,6 +72,7 @@ def main():
         values=[r["spell_f1_mean"] for r in records if r["scenario"]==scenario and r["candidate"]==method]
         return statistics.mean(values)
     text=["# New-provider validation and improvement experiments", "",
+          "![Sealed-game confirmation](confirmation.png)","",
           f"Selected before sealed scoring: **{candidate}**. Adoption decision: **{'PROMOTE' if adopted else 'KEEP ORIGINAL V1'}**.","",
           "We fetched 20 SkillCorner A-League matches from pinned source revision `4340d274572876239c154c90bc507a9b3250a656`, under MIT with SkillCorner attribution. None is among the original nine training games. A seeded split fixed ten development and ten confirmation matches before the first new-game score. The original Metrica Sample_Game_3 is not an untouched holdout anymore after its earlier published evaluation; it is not used as the confirmation set here.","",
           "## What changed", "",

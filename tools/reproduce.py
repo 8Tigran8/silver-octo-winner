@@ -35,6 +35,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data-dir", type=Path, required=True)
     parser.add_argument("--jobs", type=int, choices=range(1, 9), default=2)
+    parser.add_argument("--method", choices=["v1", "v2"], default="v1")
     args = parser.parse_args()
     data = args.data_dir.resolve()
     commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
@@ -59,7 +60,7 @@ def main():
     reports.mkdir(parents=True, exist_ok=True)
     folder = Path(tempfile.mkdtemp(prefix="check-", dir=reports))
     receipt = {"status": "IN_PROGRESS", "source_commit": commit,
-               "official_commit": references["commit"], "jobs": args.jobs,
+               "official_commit": references["commit"], "jobs": args.jobs, "method": args.method,
                "input_sha256": before, "runs": [], "quality": "Not assessed"}
     try:
         archive = folder / "source.tar"
@@ -83,7 +84,7 @@ def main():
                     print(f"Run {number}: converting raw external inputs ({script})", flush=True)
                     run([sys.executable, script], clean, env, log)
                 print(f"Run {number}: training and full-match inference", flush=True)
-                run([sys.executable, "run.py", "v1", "--jobs", str(args.jobs), "--output", str(output)],
+                run([sys.executable, "run.py", args.method, "--jobs", str(args.jobs), "--output", str(output)],
                     clean, env, log)
                 validator = ROOT / "ref/official/evaluation/validate_submission.py"
                 run([sys.executable, str(validator), str(output)], clean, env, log)

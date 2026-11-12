@@ -1,0 +1,41 @@
+{
+  "selected_candidate": "cost9",
+  "adopted": true,
+  "submission_candidate": "cost9",
+  "confirmation_natural": {
+    "v1": 0.5451130908459321,
+    "candidate": 0.5523787691069124,
+    "delta": 0.007265678260980246,
+    "descriptive_95ci": [
+      0.004423195709581189,
+      0.010020327510326488
+    ],
+    "wins": 9,
+    "losses": 1,
+    "v1_macroF1": 0.8381109643386017,
+    "candidate_macroF1": 0.8384463819622047
+  },
+  "confirmation_label_blind": {
+    "v1": 0.4612957488983323,
+    "candidate": 0.47185863510311066,
+    "delta": 0.010562886204778249,
+    "descriptive_95ci": [
+      0.006963262542703933,
+      0.014291636600848045
+    ],
+    "wins": 10,
+    "losses": 0,
+    "v1_macroF1": 0.7871194245971332,
+    "candidate_macroF1": 0.7876836753418568
+  },
+  "limits": [
+    "SkillCorner automatically generated phase labels are proxies, not target corrected GT",
+    "10 Hz coordinates linearly resampled to 25 Hz only across adjacent observations",
+    "Only detected player and ball positions enter the predictor",
+    "Phase intervals intersect metadata periods; gaps inside periods count as dead",
+    "Same provider/league, only ten sealed games; interval is descriptive",
+    "No competition match quality scores or public GT used for this cycle"
+  ],
+  "development_record_count": 537,
+  "confirmation_record_count": 60
+}

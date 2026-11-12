@@ -3,6 +3,7 @@
     .venv/bin/python run.py baseline            # копия базового решения организаторов (±50)
     .venv/bin/python run.py v0                  # признаки + Витерби
     .venv/bin/python run.py v1                  # бустинг на внешних матчах + Витерби на 4 состояния
+    .venv/bin/python run.py v2                  # те же модели, декодер cost9 после внешней проверки
     .venv/bin/python run.py score out/*.csv     # оценить готовые файлы
     .venv/bin/python run.py summary             # сводка по трекингу (без сырых значений)
 
@@ -13,6 +14,7 @@
 
 import argparse
 import filecmp
+import json
 import os
 import sys
 import time
@@ -40,7 +42,7 @@ def score_files(paths, gt_path=None):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["baseline", "v0", "v1", "score", "summary"])
+    ap.add_argument("cmd", choices=["baseline", "v0", "v1", "v2", "score", "summary"])
     ap.add_argument("files", nargs="*")
     ap.add_argument("--window", type=int, default=50)
     ap.add_argument("--name", default=None)
@@ -65,11 +67,15 @@ def main():
     if args.cmd == "baseline":
         labels = baseline.run(d, window=args.window)
         name = args.name or ("baseline_smooth{}".format(args.window) if args.window else "baseline_raw")
-    elif args.cmd == "v1":
+    elif args.cmd in ("v1", "v2"):
         from mtah.methods import boost_train
         models = boost_train.train(workers=args.jobs)
-        labels = boost.run(d, models, boost_train.decoder_params())
-        name = args.name or "v1"
+        params = boost_train.decoder_params()
+        if args.cmd == "v2":
+            with open(os.path.join(os.path.dirname(boost_train.__file__), "v2_params.json")) as stream:
+                params.update(json.load(stream)["decoder"])
+        labels = boost.run(d, models, params)
+        name = args.name or args.cmd
     else:
         f = features.build(d)
         labels = viterbi.run(d, f)

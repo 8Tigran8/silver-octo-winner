@@ -1,0 +1,11 @@
+{
+  "about": "v2: fixed cost9 decoder selected on external development games and confirmed on ten sealed SkillCorner games; learned weights, features and duration rules are unchanged from v1.",
+  "selection_commit": "82913a4",
+  "evidence": "docs/experiments/skillcorner/REPORT.md",
+  "decoder": {
+    "cost_ha": 9.0,
+    "cost_in": 9.0,
+    "cost_same": 9.0,
+    "cost_other": 9.0
+  }
+}

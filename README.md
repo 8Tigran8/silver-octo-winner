@@ -40,11 +40,11 @@ The v1 method uses these two files. It does not read the video, homography or Sm
 
 ```bash
 OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 \
-  .venv/bin/python run.py v1 --jobs 2 --output 'out/Ruses Cules.csv'
+  .venv/bin/python run.py v2 --jobs 2 --output 'out/Ruses Cules.csv'
 .venv/bin/python ref/official/evaluation/validate_submission.py 'out/Ruses Cules.csv'
 ```
 
-This retrains v1 on the external matches and runs full-match inference. It writes exactly one CSV and checks the local CSV contract. The second command uses the unmodified official validator pinned to `f8f2629ff1e0985f81d7e59d8413678514ee1530`. A format PASS does not measure prediction quality.
+This retrains the original learned weights on the nine external matches and runs full-match inference with the externally selected v2 decoder. `run.py v1` retains the original cost-6 decoder; v2 uses cost 9. Features, learned model settings and duration constraints are unchanged. It writes exactly one CSV and checks the local CSV contract. The second command uses the unmodified official validator pinned to `f8f2629ff1e0985f81d7e59d8413678514ee1530`. A format PASS does not measure prediction quality.
 
 Prediction does not load or score the public ground truth. An explicit `run.py score ...` command remains available for a pipeline correctness check; do not use it to select models or tune parameters.
 
@@ -53,7 +53,7 @@ Prediction does not load or score the public ground truth. An explicit `run.py s
 Commit the intended source changes, then run:
 
 ```bash
-.venv/bin/python tools/reproduce.py --data-dir /absolute/path/to/data --jobs 2
+.venv/bin/python tools/reproduce.py --data-dir /absolute/path/to/data --method v2 --jobs 2
 ```
 
 The verifier exports the committed source twice, independently converts the pinned raw external matches, retrains the model in each copy, validates both CSVs with the official validator, compares their SHA-256 hashes and checks that the input files did not change. CSVs, logs and a receipt stay under `reports/reproduction/`. It does not evaluate the public window. Both runs use the installed pinned environment; this does not establish reproducibility across operating systems or library builds.
@@ -71,11 +71,17 @@ The fixed v1 pipeline achieved mean **spellF1 0.6466 versus 0.3244** for the org
 
 The [full report](docs/experiments/quality-audit/REPORT.md) includes per-match results, decoder/stack/duration ablations, five sensor scenarios, aggregate records, a figure and split provenance. These are external scores: historical configuration selection reused the nine games, sensor corruption is simulated, and Metrica labels are event-derived proxies. The model also predicts about 24% fewer possession spells than the reference. Hidden competition-match quality remains unknown. The audit changed neither the v1 configuration nor the team CSV.
 
+## New-provider confirmation and v2
+
+We added 20 public SkillCorner matches, fixing ten for development and ten for confirmation before scoring. After comparing nine decoder configurations and two sensor-mixture learned candidates, the selected **v2 changes the four transition costs from 6 to 9**. Its learned weights remain v1 weights trained on the original nine games. The sensor-mixture candidates did not pass the development gates and are not used.
+
+On the ten confirmation games, v2 achieved **spellF1 0.5524 versus v1 0.5451**, winning nine games and losing one; paired descriptive 95% gain interval **[0.0044, 0.0100]**. Under extra label-blind corruption: **0.4719 versus 0.4613**, ten wins. On known matched-sensor games there is a small regression, **0.6432 versus 0.6466**. SkillCorner references are automatic phase proxies, with a different sensor/annotation process from the competition. See the [full new-provider report](docs/experiments/skillcorner/REPORT.md) for all candidates, losses, source hashes and the predeclared adoption rule. This supports a modest improvement on the new provider and does not establish hidden-match quality or qualification probability.
+
 ## Review status
 
-The implementation originates from VV's `model-v1` commit `cc44bfe6bceba39e2e67a03fd32e658cca68bc0e`. The reproduction branch adds setup, explicit output paths, controlled worker counts and verification tooling. Model features and decoder parameters are unchanged.
+The implementation originates from VV's `model-v1` commit `cc44bfe6bceba39e2e67a03fd32e658cca68bc0e`. The reproduction branch adds setup, explicit output paths, controlled worker counts and verification tooling. V1 remains unchanged. The new v2 retains its learned models/features and changes only the externally validated transition costs.
 
-Technical verification completed on 12 November: two clean-source runs regenerated the real-match CSV byte for byte, passed the official validator and matched VV's supplied SHA-256. The technical document records the verified source, timings, data provenance and limitations. Model-selection provenance clarification remains in team review. The external quality audit above provides additional evidence with explicit selection and domain limitations. The repository stays private until the agreed publication window and must be public before submission. The organizer's submission form is a separate release step.
+Technical verification completed on 12 November: two clean-source runs regenerated the real-match CSV byte for byte, passed the official validator and matched VV's supplied SHA-256. Those timings and CSV hash describe original v1. The technical document records source revisions, data provenance and limitations; v2 reproduction has its own verification record. Model-selection provenance clarification remains in team review. The external quality audit above provides additional evidence with explicit selection and domain limitations. The repository stays private until the agreed publication window and must be public before submission. The organizer's submission form is a separate release step.
 
 ## Data stays local
 

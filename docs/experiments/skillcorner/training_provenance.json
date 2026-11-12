@@ -1,0 +1,303 @@
+{
+  "all_nine": {
+    "train": [
+      "idsse_J03WMX",
+      "idsse_J03WN1",
+      "idsse_J03WOH",
+      "idsse_J03WOY",
+      "idsse_J03WPY",
+      "idsse_J03WQQ",
+      "idsse_J03WR9",
+      "metrica_1",
+      "metrica_2"
+    ],
+    "excluded": null,
+    "augmentation": [
+      "matched_seed0",
+      "label_blind_seed1",
+      "clean_source"
+    ],
+    "stride_per_scenario": 12,
+    "training_plan_sha256": "b5f4aaa0015d26b60bc5ce4b4b00915f78facdeb0f6ce5cc87cc2cae301b69aa",
+    "model_parameters": {
+      "max_iter": 250,
+      "learning_rate": 0.08,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 200,
+      "l2_regularization": 1.0,
+      "max_bins": 128
+    },
+    "model_sha256": "1420cab3b5e913f204d1ef188e5014ed627f9fce05cd1cc870cd36d1caf39124",
+    "fitted_utc": "2026-11-12T22:13:49.235670+00:00"
+  },
+  "exclude_idsse_J03WMX": {
+    "train": [
+      "idsse_J03WN1",
+      "idsse_J03WOH",
+      "idsse_J03WOY",
+      "idsse_J03WPY",
+      "idsse_J03WQQ",
+      "idsse_J03WR9",
+      "metrica_1",
+      "metrica_2"
+    ],
+    "excluded": "idsse_J03WMX",
+    "augmentation": [
+      "matched_seed0",
+      "label_blind_seed1",
+      "clean_source"
+    ],
+    "stride_per_scenario": 12,
+    "training_plan_sha256": "b5f4aaa0015d26b60bc5ce4b4b00915f78facdeb0f6ce5cc87cc2cae301b69aa",
+    "model_parameters": {
+      "max_iter": 250,
+      "learning_rate": 0.08,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 200,
+      "l2_regularization": 1.0,
+      "max_bins": 128
+    },
+    "model_sha256": "d4b975ecc48e046268f6bc8d1dc80f317d7e6800086cde56eead158c7efe74b6",
+    "fitted_utc": "2026-11-12T22:13:38.228828+00:00"
+  },
+  "exclude_idsse_J03WN1": {
+    "train": [
+      "idsse_J03WMX",
+      "idsse_J03WOH",
+      "idsse_J03WOY",
+      "idsse_J03WPY",
+      "idsse_J03WQQ",
+      "idsse_J03WR9",
+      "metrica_1",
+      "metrica_2"
+    ],
+    "excluded": "idsse_J03WN1",
+    "augmentation": [
+      "matched_seed0",
+      "label_blind_seed1",
+      "clean_source"
+    ],
+    "stride_per_scenario": 12,
+    "training_plan_sha256": "b5f4aaa0015d26b60bc5ce4b4b00915f78facdeb0f6ce5cc87cc2cae301b69aa",
+    "model_parameters": {
+      "max_iter": 250,
+      "learning_rate": 0.08,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 200,
+      "l2_regularization": 1.0,
+      "max_bins": 128
+    },
+    "model_sha256": "77500ac19a1aaa16bcbbaf9769c15a73a63eabc64097b556f2da78e2a2c03300",
+    "fitted_utc": "2026-11-12T22:13:39.414704+00:00"
+  },
+  "exclude_idsse_J03WOH": {
+    "train": [
+      "idsse_J03WMX",
+      "idsse_J03WN1",
+      "idsse_J03WOY",
+      "idsse_J03WPY",
+      "idsse_J03WQQ",
+      "idsse_J03WR9",
+      "metrica_1",
+      "metrica_2"
+    ],
+    "excluded": "idsse_J03WOH",
+    "augmentation": [
+      "matched_seed0",
+      "label_blind_seed1",
+      "clean_source"
+    ],
+    "stride_per_scenario": 12,
+    "training_plan_sha256": "b5f4aaa0015d26b60bc5ce4b4b00915f78facdeb0f6ce5cc87cc2cae301b69aa",
+    "model_parameters": {
+      "max_iter": 250,
+      "learning_rate": 0.08,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 200,
+      "l2_regularization": 1.0,
+      "max_bins": 128
+    },
+    "model_sha256": "db849852f5320dea6499c293fdc87c0a452696d425c9b83be2c14aa16d235757",
+    "fitted_utc": "2026-11-12T22:13:40.343613+00:00"
+  },
+  "exclude_idsse_J03WOY": {
+    "train": [
+      "idsse_J03WMX",
+      "idsse_J03WN1",
+      "idsse_J03WOH",
+      "idsse_J03WPY",
+      "idsse_J03WQQ",
+      "idsse_J03WR9",
+      "metrica_1",
+      "metrica_2"
+    ],
+    "excluded": "idsse_J03WOY",
+    "augmentation": [
+      "matched_seed0",
+      "label_blind_seed1",
+      "clean_source"
+    ],
+    "stride_per_scenario": 12,
+    "training_plan_sha256": "b5f4aaa0015d26b60bc5ce4b4b00915f78facdeb0f6ce5cc87cc2cae301b69aa",
+    "model_parameters": {
+      "max_iter": 250,
+      "learning_rate": 0.08,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 200,
+      "l2_regularization": 1.0,
+      "max_bins": 128
+    },
+    "model_sha256": "cece9f432bd290bb46a274f9482c6e30b173a89756ee93e47569f3d5fcfdeed0",
+    "fitted_utc": "2026-11-12T22:15:15.337830+00:00"
+  },
+  "exclude_idsse_J03WPY": {
+    "train": [
+      "idsse_J03WMX",
+      "idsse_J03WN1",
+      "idsse_J03WOH",
+      "idsse_J03WOY",
+      "idsse_J03WQQ",
+      "idsse_J03WR9",
+      "metrica_1",
+      "metrica_2"
+    ],
+    "excluded": "idsse_J03WPY",
+    "augmentation": [
+      "matched_seed0",
+      "label_blind_seed1",
+      "clean_source"
+    ],
+    "stride_per_scenario": 12,
+    "training_plan_sha256": "b5f4aaa0015d26b60bc5ce4b4b00915f78facdeb0f6ce5cc87cc2cae301b69aa",
+    "model_parameters": {
+      "max_iter": 250,
+      "learning_rate": 0.08,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 200,
+      "l2_regularization": 1.0,
+      "max_bins": 128
+    },
+    "model_sha256": "8aa0436cfb5f3552a584e44df3b6e78769a1d56b795f526a38481cc73bf9f066",
+    "fitted_utc": "2026-11-12T22:15:15.768141+00:00"
+  },
+  "exclude_idsse_J03WQQ": {
+    "train": [
+      "idsse_J03WMX",
+      "idsse_J03WN1",
+      "idsse_J03WOH",
+      "idsse_J03WOY",
+      "idsse_J03WPY",
+      "idsse_J03WR9",
+      "metrica_1",
+      "metrica_2"
+    ],
+    "excluded": "idsse_J03WQQ",
+    "augmentation": [
+      "matched_seed0",
+      "label_blind_seed1",
+      "clean_source"
+    ],
+    "stride_per_scenario": 12,
+    "training_plan_sha256": "b5f4aaa0015d26b60bc5ce4b4b00915f78facdeb0f6ce5cc87cc2cae301b69aa",
+    "model_parameters": {
+      "max_iter": 250,
+      "learning_rate": 0.08,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 200,
+      "l2_regularization": 1.0,
+      "max_bins": 128
+    },
+    "model_sha256": "3391b48b3da2c5e05f6ffa0f67967029be4966a7f2351208e74250cbefc12a68",
+    "fitted_utc": "2026-11-12T22:15:17.003809+00:00"
+  },
+  "exclude_idsse_J03WR9": {
+    "train": [
+      "idsse_J03WMX",
+      "idsse_J03WN1",
+      "idsse_J03WOH",
+      "idsse_J03WOY",
+      "idsse_J03WPY",
+      "idsse_J03WQQ",
+      "metrica_1",
+      "metrica_2"
+    ],
+    "excluded": "idsse_J03WR9",
+    "augmentation": [
+      "matched_seed0",
+      "label_blind_seed1",
+      "clean_source"
+    ],
+    "stride_per_scenario": 12,
+    "training_plan_sha256": "b5f4aaa0015d26b60bc5ce4b4b00915f78facdeb0f6ce5cc87cc2cae301b69aa",
+    "model_parameters": {
+      "max_iter": 250,
+      "learning_rate": 0.08,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 200,
+      "l2_regularization": 1.0,
+      "max_bins": 128
+    },
+    "model_sha256": "0d151b2a97a746e3a133aeb96a6da1b0cafb3e72761c2ba0037f1395e8c54a9b",
+    "fitted_utc": "2026-11-12T22:15:25.127551+00:00"
+  },
+  "exclude_metrica_1": {
+    "train": [
+      "idsse_J03WMX",
+      "idsse_J03WN1",
+      "idsse_J03WOH",
+      "idsse_J03WOY",
+      "idsse_J03WPY",
+      "idsse_J03WQQ",
+      "idsse_J03WR9",
+      "metrica_2"
+    ],
+    "excluded": "metrica_1",
+    "augmentation": [
+      "matched_seed0",
+      "label_blind_seed1",
+      "clean_source"
+    ],
+    "stride_per_scenario": 12,
+    "training_plan_sha256": "b5f4aaa0015d26b60bc5ce4b4b00915f78facdeb0f6ce5cc87cc2cae301b69aa",
+    "model_parameters": {
+      "max_iter": 250,
+      "learning_rate": 0.08,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 200,
+      "l2_regularization": 1.0,
+      "max_bins": 128
+    },
+    "model_sha256": "e6bcd56d382dc63d910ff6dfefe3bad0881a03e536802b42f3bfdbfb3d7d05d7",
+    "fitted_utc": "2026-11-12T22:16:39.136582+00:00"
+  },
+  "exclude_metrica_2": {
+    "train": [
+      "idsse_J03WMX",
+      "idsse_J03WN1",
+      "idsse_J03WOH",
+      "idsse_J03WOY",
+      "idsse_J03WPY",
+      "idsse_J03WQQ",
+      "idsse_J03WR9",
+      "metrica_1"
+    ],
+    "excluded": "metrica_2",
+    "augmentation": [
+      "matched_seed0",
+      "label_blind_seed1",
+      "clean_source"
+    ],
+    "stride_per_scenario": 12,
+    "training_plan_sha256": "b5f4aaa0015d26b60bc5ce4b4b00915f78facdeb0f6ce5cc87cc2cae301b69aa",
+    "model_parameters": {
+      "max_iter": 250,
+      "learning_rate": 0.08,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 200,
+      "l2_regularization": 1.0,
+      "max_bins": 128
+    },
+    "model_sha256": "f22bb065b7cbcc09b4335d29d4373618a4c40b69e20ae12c6d7a8f44b59b86c4",
+    "fitted_utc": "2026-11-12T22:16:38.304680+00:00"
+  }
+}

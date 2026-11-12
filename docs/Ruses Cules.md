@@ -4,7 +4,7 @@
 
 ## Approach
 
-We use tabular boosting to work with the supplied numerical tracking and missing observations without rebuilding a pixel-level detector or persistent player identities. The temporal stack and state decoder address possession continuity that a nearest-player rule cannot represent. We keep the uploaded v1 features and parameters fixed during reproduction.
+We use tabular boosting to work with the supplied numerical tracking and missing observations without rebuilding a pixel-level detector or persistent player identities. The temporal stack and state decoder address possession continuity that a nearest-player rule cannot represent. We retain the v1 learned models and features. The selected v2 changes decoder transition costs using external development and confirmation matches only.
 
 We estimate per-frame probabilities from tracking, refine them with temporal context and decode a sequence of possessions and stoppages. Two histogram gradient boosting classifiers estimate dead-ball probability and home-team possession conditional on live play. Training and inference include swapped-team features; we average direct and swapped predictions to enforce team symmetry.
 
@@ -14,7 +14,7 @@ The first stage uses `HistGradientBoostingClassifier`: 250 iterations, learning 
 
 The second stage consumes the first-stage probability logits, centered temporal means and past/future shifts. Its classifiers use 150 iterations, at most 15 leaves and minimum 400 samples per leaf. Its training inputs are first-stage predictions produced while excluding the predicted external match from first-stage training. We then fit first-stage models on all external matches for competition inference.
 
-The decoder has four internal states: H, A, dead-after-H and dead-after-A. The latter two remember the owner before a stoppage and both produce D. Expanded-state Viterbi imposes a one-second minimum duration before leaving a state; the final segment may be shorter at a half boundary. It aggregates five frames per decoding step. H/A transitions and entering/leaving dead ball have cost 6.0 in the uploaded configuration. Restart snapping is disabled.
+The decoder has four internal states: H, A, dead-after-H and dead-after-A. The latter two remember the owner before a stoppage and both produce D. Expanded-state Viterbi imposes a one-second minimum duration before leaving a state; the final segment may be shorter at a half boundary. It aggregates five frames per decoding step. H/A transitions and entering/leaving dead ball have cost 9.0 in v2; the original v1 uses 6.0. Restart snapping is disabled.
 
 ## Assets
 
@@ -37,6 +37,8 @@ IDSSE source: [PySport mirror](https://huggingface.co/datasets/pysport/idsse-dat
 
 `mtah/degrade.py` introduces deterministic ball dropouts, position/speed noise and player-track fragmentation into external tracking. The target visibility and slot counts use public organizer descriptions. Other degradation settings are modeling assumptions or unsupervised statistics of the supplied tracking, not hand labels. The uploaded configuration uses degradation mode v2 and seed 0.
 
+SkillCorner Open Data supplies another 20 matches for validation only, under MIT with attribution to SkillCorner/PySport, revision `4340d274572876239c154c90bc507a9b3250a656`. We fixed ten development and ten confirmation games before scoring. Automatic possession-phase intervals supply H/A proxy labels, their complement inside metadata periods supplies D, and phase intervals are clipped to their declared period. Only detected tracking positions enter features; extrapolated positions and possession annotations do not. We resample adjacent finite observations from 10 to 25 Hz while preserving gaps. These labels and sensors differ from the competition. None of these 20 games trains learned weights.
+
 ## Possession rules
 
 We let the temporal model resolve loose balls and contacts rather than change possession after each nearest-player change. This is an approximation to controlled possession; the model has no referee signal. A dead-ball segment separates two possessions even if the same team restarts. X marks frames outside the published half boundaries. The second-half kickoff frame 113742 comes from the organizer's public starter code, rather than manual inspection; the earlier graded frames of that half receive D.
@@ -48,6 +50,8 @@ Decoder optimization matched exhaustive enumeration on 60 short synthetic sequen
 A fixed-configuration external audit used nested match splits across nine games: first-stage test predictions exclude the outer game, and each inner first-stage fit excludes both the outer game and its inner prediction game. Mean official spellF1 was **0.6466** versus **0.3244** for the organizer baseline, with nine wins in nine matches. The descriptive paired 95% bootstrap interval for the difference was **[0.3062, 0.3400]**; macroF1 was 0.8961 versus 0.7528. Removing the stack gave 0.6401 spellF1; removing Viterbi from the stacked model gave 0.4871. The full model predicted 76% as many possession spells as the reference, so merging separate possessions remains a weakness.
 
 Across the same nine games, spellF1 was 0.5011 versus baseline 0.1874 under stronger corruption, 0.5413 versus 0.2215 with label-blind gaps, and 0.6788 versus 0.3284 on clean inputs. A separate public Sample_Game_3, absent from the implemented training corpus, scored 0.6837 versus 0.3598 with frozen full-nine-game weights and clean tracking; its labels are event-derived proxies. No training or retuning used that game. Full protocols, per-game results and ablations are in the [external audit](experiments/quality-audit/REPORT.md).
+
+After the earlier v1 audit, we compared nine decoder configurations and two learned sensor-mixture candidates on development data. We froze the cost-9 decoder before scoring the ten new confirmation games. On those games, v2 spellF1 was **0.5524 versus v1 0.5451**, with nine wins and one loss; the descriptive paired 95% interval for the gain was **[0.0044, 0.0100]**. Extra label-blind corruption gave 0.4719 versus 0.4613, ten wins. The known matched-sensor cohort fell from 0.6466 to 0.6432, so the change is a domain trade-off, not a universal gain. The candidate passed a promotion rule frozen before confirmation. The [new-provider report](experiments/skillcorner/REPORT.md) includes the negative sensor-mixture results, protocols and per-game metrics. No candidate selection in this cycle read competition public GT.
 
 Method provenance and limitations:
 
@@ -64,14 +68,14 @@ Follow the installation and data preparation commands in README, then run:
 
 ```bash
 OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 \
-  .venv/bin/python run.py v1 --jobs 2 --output 'out/Ruses Cules.csv'
+  .venv/bin/python run.py v2 --jobs 2 --output 'out/Ruses Cules.csv'
 .venv/bin/python ref/official/evaluation/validate_submission.py 'out/Ruses Cules.csv'
-.venv/bin/python tools/reproduce.py --data-dir /absolute/path/to/data --jobs 2
+.venv/bin/python tools/reproduce.py --data-dir /absolute/path/to/data --method v2 --jobs 2
 ```
 
 The main command retrains from the pinned external inputs. The reproduction command starts twice from committed source and raw external inputs, checks both output files and records hashes.
 
-Verified source: `538f43473421aefe7aa10b457b957179bd0915dd`. Later documentation and external-audit tooling do not alter the tested inference/training code, inference dependencies or original source manifests. Both runs independently converted all nine external matches and retrained both model stages; they shared the installed pinned Python environment and the same source input locations. Input SHA-256 hashes remained unchanged.
+Original v1 verified source: `538f43473421aefe7aa10b457b957179bd0915dd`. The v2 path retains the original training code, inference dependencies and original training-source manifest, with a separate decoder configuration. Both runs independently converted all nine external matches and retrained both model stages; they shared the installed pinned Python environment and the same source input locations. Input SHA-256 hashes remained unchanged.
 
 | Verification | Result |
 |---|---|
@@ -81,7 +85,7 @@ Verified source: `538f43473421aefe7aa10b457b957179bd0915dd`. Later documentation
 | Output contract | 199,319 ordered rows, exact `frame,label` header, H/A/D/X labels |
 | Comparison with author's file | Both clean outputs match the author's supplied SHA-256 |
 
-Team CSV SHA-256:
+Original v1 CSV SHA-256 (v2 has a separate receipt):
 
 ```text
 4d767cd5d677c0dc3ceee7d716cf00e8f10b48920ae0e35eccf61ac1cf33db6c
