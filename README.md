@@ -12,11 +12,64 @@ The team submission also needs this public source repository and a short technic
 
 Deadline from the organizer's welcome email: **17 November 2026, 23:59 CET**.
 
-## Working together
+## Install and prepare
 
-- Add the implementation and pinned dependencies, then document one command that regenerates the CSV from the organizer's local data bundle.
-- Use feature branches for changes; keep `main` runnable. Check format with the organizer's validator and compare output hashes from clean repeated runs before submission.
-- Use the public five-minute ground truth only for pipeline correctness checks. Do not train or tune on it, or use hand labels or external human annotations of the provided game.
+Use Python 3.12. Run the commands from the repository root. Full external source files take about 2.75 GB; conversions, features and training need additional disk space. Start with two workers on a machine with 16 GB RAM.
+
+```bash
+python3.12 -m venv .venv
+.venv/bin/python -m pip install -r requirements-validation.txt
+.venv/bin/python tools/fetch_external.py
+.venv/bin/python tools/ext_idsse.py
+.venv/bin/python tools/ext_metrica.py
+.venv/bin/python tools/fetch_reference.py
+```
+
+`tools/external_sources.json` pins the public training source revisions, filenames, sizes and object hashes. The downloader verifies them. IDSSE is distributed under CC BY 4.0; Metrica sample-data asks users to acknowledge its source. See the source links in the manifest and [the technical draft](docs/Ruses%20Cules.md).
+
+Obtain the competition files from the organizer's private download link and store them locally:
+
+```text
+data/tactical/BAR-ATH_tactical_atd.xml
+data/tactical/BAR-ATH_tactical_atd.txt
+```
+
+The v1 method uses these two files. It does not read the video, homography or Smart Tagging. Set `MTAH_DATA_DIR` to use a different data directory.
+
+## Generate the team CSV
+
+```bash
+OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 \
+  .venv/bin/python run.py v1 --jobs 2 --output 'out/Ruses Cules.csv'
+.venv/bin/python ref/official/evaluation/validate_submission.py 'out/Ruses Cules.csv'
+```
+
+This retrains v1 on the external matches and runs full-match inference. It writes exactly one CSV and checks the local CSV contract. The second command uses the unmodified official validator pinned to `f8f2629ff1e0985f81d7e59d8413678514ee1530`. A format PASS does not measure prediction quality.
+
+Prediction does not load or score the public ground truth. An explicit `run.py score ...` command remains available for a pipeline correctness check; do not use it to select models or tune parameters.
+
+## Verify from two clean source copies
+
+Commit the intended source changes, then run:
+
+```bash
+.venv/bin/python tools/reproduce.py --data-dir /absolute/path/to/data --jobs 2
+```
+
+The verifier exports the committed source twice, independently converts the pinned raw external matches, retrains the model in each copy, validates both CSVs with the official validator, compares their SHA-256 hashes and checks that the input files did not change. CSVs, logs and a receipt stay under `reports/reproduction/`. It does not evaluate the public window. Both runs use the installed pinned environment; this does not establish reproducibility across operating systems or library builds.
+
+For decoder and scorer checks on synthetic fixtures and the organizer's published baselines:
+
+```bash
+.venv/bin/python -m tests.test_boost_viterbi
+.venv/bin/python -m tests.test_metrics
+```
+
+## Review status
+
+The implementation originates from VV's `model-v1` commit `cc44bfe6bceba39e2e67a03fd32e658cca68bc0e`. The reproduction branch adds setup, explicit output paths, controlled worker counts and verification tooling. Model features and decoder parameters are unchanged.
+
+Release still needs a real-match reproduction receipt, comparison with VV's original CSV, completed method provenance review and the final technical document. The repository remains private during development and must be public for submission.
 
 ## Data stays local
 

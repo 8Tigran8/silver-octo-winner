@@ -1,4 +1,4 @@
-"""Сквозной конвейер: данные -> признаки -> метки -> CSV -> проверка формата -> счёт на 5 минутах.
+"""Сквозной конвейер: данные -> признаки -> метки -> CSV -> проверка формата.
 
     .venv/bin/python run.py baseline            # копия базового решения организаторов (±50)
     .venv/bin/python run.py v0                  # признаки + Витерби
@@ -45,6 +45,9 @@ def main():
     ap.add_argument("--window", type=int, default=50)
     ap.add_argument("--name", default=None)
     ap.add_argument("--gt", default=None, help="другой файл ответов (например, синтетика)")
+    ap.add_argument("--output", default=None, help="точный путь итогового CSV")
+    ap.add_argument("--jobs", type=int, default=2, help="число процессов обучения; 1–2 для 16 ГБ RAM")
+    ap.add_argument("--score-public", action="store_true", help="явная проверка на публичном окне; не для подбора")
     args = ap.parse_args()
 
     if args.cmd == "score":
@@ -64,7 +67,7 @@ def main():
         name = args.name or ("baseline_smooth{}".format(args.window) if args.window else "baseline_raw")
     elif args.cmd == "v1":
         from mtah.methods import boost_train
-        models = boost_train.train()
+        models = boost_train.train(workers=args.jobs)
         labels = boost.run(d, models, boost_train.decoder_params())
         name = args.name or "v1"
     else:
@@ -72,7 +75,7 @@ def main():
         labels = viterbi.run(d, f)
         name = args.name or "v0"
 
-    path = submission.write(os.path.join(OUT_DIR, name + ".csv"), labels)
+    path = submission.write(args.output or os.path.join(OUT_DIR, name + ".csv"), labels)
     err = submission.validate(path)
     print("файл: {} — {}".format(path, "формат в порядке" if not err else "ОШИБКА: " + err))
     if args.cmd == "baseline":
@@ -82,7 +85,8 @@ def main():
             print("сверка с файлом организаторов {}: {}".format(
                 os.path.basename(ref), "СОВПАДАЕТ байт в байт — чтение и кадры верны" if same
                 else "НЕ совпадает — искать ошибку в чтении трекинга/выравнивании"))
-    score_files([path], args.gt)
+    if args.score_public:
+        score_files([path], args.gt)
     if err:
         sys.exit(1)
 
