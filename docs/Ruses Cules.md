@@ -41,7 +41,7 @@ We let the temporal model resolve loose balls and contacts rather than change po
 
 ## Evaluation and limitations
 
-Decoder optimization matched exhaustive enumeration on 60 short synthetic sequences. The local scorer reproduced the organizer's four published baseline results. These checks establish implementation consistency, not competitive accuracy. Final quality is unknown until the organizer evaluates the hidden full-match labels.
+Decoder optimization matched exhaustive enumeration on 60 short synthetic sequences. The local scorer reproduced the organizer's four published baseline results. On the review machine (Apple Silicon, 16 GB RAM, Python 3.12), both training stages completed on all nine external matches in 578.182 seconds using two worker processes and single-thread fitting. That training preflight read no competition input or public GT. These checks establish implementation consistency, not competitive accuracy. Final quality is unknown until the organizer evaluates the hidden full-match labels.
 
 Before release, resolve these review items:
 
