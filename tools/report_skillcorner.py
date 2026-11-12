@@ -56,6 +56,16 @@ def main():
                        "Same provider/league, only ten sealed games; interval is descriptive",
                        "No competition match quality scores or public GT used for this cycle"],
              "development_record_count":len(dev),"confirmation_record_count":len(confirmation)}
+    known_risks={}
+    for scenario in ["matched_seed0","label_blind_seed1","stress_seed1"]:
+        chosen={r["match"]:r["spell_f1_mean"] for r in dev if r["scenario"]==scenario and r["candidate"]==candidate}
+        base={r["match"]:r["spell_f1_mean"] for r in dev if r["scenario"]==scenario and r["candidate"]=="v1"}
+        delta=np.array([chosen[n]-base[n] for n in sorted(base)])
+        picks=np.random.default_rng(20261113).integers(0,len(delta),(10000,len(delta)))
+        ci=np.quantile(delta[picks].mean(axis=1),[.025,.975])
+        known_risks[scenario]={"delta":float(delta.mean()),"descriptive_95ci":ci.tolist(),
+                               "wins":int((delta>0).sum()),"losses":int((delta<0).sum())}
+    summary["known_game_tradeoffs"]=known_risks
     (OUTPUT/"summary.json").write_text(json.dumps(summary,indent=2)+"\n")
     (FOLDER/"decision.json").write_text(json.dumps(summary,indent=2)+"\n")
     for file in ["plan.json","training_plan.json","adoption_plan.json","selection.json"]:
@@ -84,6 +94,7 @@ def main():
     for method,data in sorted(selection["development_scores"].items(),key=lambda x:-x[1]["weighted"]):
         vals=" | ".join(f"{x:.4f}" for x in data["means"])
         text.append(f"| {method} | {vals} | {data['weighted']:.4f} | {data['eligible']} |")
+    text += ["","Known-game trade-offs are part of the selection evidence, not an independent confirmation. On matched inputs the selected decoder loses six games and wins three: mean change -0.0033, descriptive paired 95% interval [-0.0080, +0.0017]. The interval includes zero and does not establish equivalence. Natural SkillCorner v1 predictions also have the opposite count bias to matched DFL/Metrica: about 1.48 times the reference possession count on the development cohort, versus about 0.76 on the known matched cohort. Increasing possession counts everywhere would therefore be a poor global correction."]
     text += ["","## Confirmation: ten games unseen during selection","",
              "| Scenario | Nearest baseline | Original v1 | Selected candidate | Paired Δ | Descriptive 95% interval | Wins / losses |",
              "|---|---:|---:|---:|---:|---|---:|"]

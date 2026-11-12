@@ -1,5 +1,9 @@
 """Эксперименты v1 только на внешних матчах: признаки -> модели по схеме «все, кроме одного» -> декодер.
 
+ВНИМАНИЕ: исторический stack/s2 не исключает внешний тест из всех внутренних моделей.
+Он доступен только как диагностический эксперимент с --allow-nonnested-diagnostic.
+Для оценки стекинга используйте tools/quality_audit.py с вложенным разбиением.
+
 Правило: наш матч здесь не участвует. Каждый внешний матч получает вероятности от моделей, обученных
 на остальных (честная проверка). Параметры декодера подбираются по 6 матчам DFL из «подбора»;
 external.HOLDOUT (J03WR9, Metrica 1–2) только смотрим.
@@ -245,7 +249,12 @@ def main():
     ap.add_argument("--n", type=int, default=120)
     ap.add_argument("--params", default="{}")
     ap.add_argument("--stress", action="store_true")
+    ap.add_argument("--allow-nonnested-diagnostic", action="store_true",
+                    help="разрешить старую негодную для holdout-оценки схему стекинга")
     args = ap.parse_args()
+    if (args.cmd == "stack" or args.variant.endswith("s2")) and not args.allow_nonnested_diagnostic:
+        ap.error("Historical stack/s2 evaluation is not isolated. Use tools/quality_audit.py; "
+                 "--allow-nonnested-diagnostic is for diagnostics only.")
     {"stack": cmd_stack, "oof": cmd_oof, "tune": cmd_tune, "score": cmd_score, "v0": cmd_v0}[args.cmd](args)
 
 

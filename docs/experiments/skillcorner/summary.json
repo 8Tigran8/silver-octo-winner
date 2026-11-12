@@ -37,5 +37,34 @@
     "No competition match quality scores or public GT used for this cycle"
   ],
   "development_record_count": 537,
-  "confirmation_record_count": 60
+  "confirmation_record_count": 60,
+  "known_game_tradeoffs": {
+    "matched_seed0": {
+      "delta": -0.003344694147590335,
+      "descriptive_95ci": [
+        -0.008008389832608829,
+        0.001705443639415112
+      ],
+      "wins": 3,
+      "losses": 6
+    },
+    "label_blind_seed1": {
+      "delta": 0.0013175058340169077,
+      "descriptive_95ci": [
+        -0.0024766867667518826,
+        0.005626968876090909
+      ],
+      "wins": 4,
+      "losses": 5
+    },
+    "stress_seed1": {
+      "delta": 0.0032846155776367746,
+      "descriptive_95ci": [
+        -0.001405885026027201,
+        0.007580370548190025
+      ],
+      "wins": 6,
+      "losses": 3
+    }
+  }
 }

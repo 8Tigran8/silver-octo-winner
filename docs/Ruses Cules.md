@@ -1,6 +1,6 @@
 # Ruses Cules: technical method
 
-**Technical verification completed, 12 November 2026.** The v1 pipeline regenerates the team CSV from raw inputs and passes the official format checks. Two clean-source runs and the author's independently supplied SHA-256 agree. Competition submission and repository publication remain separate release steps.
+**V2 technical and external verification completed, 12 November 2026.** Two clean-source runs regenerated the same team CSV from raw inputs and passed the official format checks. V2 uses the original v1 learned models and externally confirmed cost-9 decoding. Competition submission and repository publication remain separate release steps.
 
 ## Approach
 
@@ -61,6 +61,16 @@ Method provenance and limitations:
 - Exact equality across platforms is not established. Single-thread model fitting, pinned libraries and fixed random seeds are controls; the two-clean-copy check tests the installed environment.
 
 We do not hand-label or hand-correct the supplied match. We keep competition assets, frame-level intermediate arrays, output CSVs and logs local and outside the public repository. We do not send these assets or extracts to hosted LLMs.
+
+## Verified v2 output
+
+Two exports of committed source `89737c386949c8dbda69bab95e59b02045194afa` independently converted all nine raw external matches, retrained both learned stages and generated the complete competition file. Both passed the pinned official validator and matched the separately generated v2 preflight CSV. Run times including conversion, training and inference were 351.340 s and 349.830 s with four worker processes. Input hashes remained unchanged. Later report-only changes do not alter this tested code or dependencies. The [sanitized receipt](experiments/skillcorner/v2_reproduction.json) records both runs; full local receipts include private paths and stay outside the repository.
+
+Current v2 team CSV SHA-256:
+
+```text
+a1dafd2eb1e4b4ea62ec7edbed543f4df6be1326ec404457f0ad29a5cac5ef81
+```
 
 ## Reproduction and verification
 

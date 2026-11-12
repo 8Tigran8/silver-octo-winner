@@ -28,6 +28,8 @@ Known-game scores for robust stage one exclude the scored match from all its tra
 | cost3_deadminus | 0.6430 | 0.5413 | 0.5070 | 0.4727 | 0.3966 | 0.5393 | False |
 | robust_stage1 | 0.6407 | 0.5655 | 0.5247 | 0.4384 | 0.3870 | 0.5344 | False |
 
+Known-game trade-offs are part of the selection evidence, not an independent confirmation. On matched inputs the selected decoder loses six games and wins three: mean change -0.0033, descriptive paired 95% interval [-0.0080, +0.0017]. The interval includes zero and does not establish equivalence. Natural SkillCorner v1 predictions also have the opposite count bias to matched DFL/Metrica: about 1.48 times the reference possession count on the development cohort, versus about 0.76 on the known matched cohort. Increasing possession counts everywhere would therefore be a poor global correction.
+
 ## Confirmation: ten games unseen during selection
 
 | Scenario | Nearest baseline | Original v1 | Selected candidate | Paired Δ | Descriptive 95% interval | Wins / losses |
