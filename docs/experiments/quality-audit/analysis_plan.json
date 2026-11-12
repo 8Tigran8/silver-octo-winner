@@ -1,0 +1,19 @@
+{
+  "registered_utc": "2026-11-12T21:14:09.910831+00:00",
+  "primary_endpoint": "Equal-match mean official spell_f1_mean on all 9 external matches, matched_seed0; nested_stack_viterbi minus baseline_smooth50",
+  "secondary": [
+    "macroF1 and per-class F1",
+    "per-match and source-family scores, including failures",
+    "stack and decoder ablations",
+    "prespecified duration 0 / 0.4 / 1 / 2 seconds",
+    "matched seed 1, stronger corruption, label-blind corruption, clean source",
+    "historical leaky stacking diagnostic versus nested stacking"
+  ],
+  "uncertainty": "Paired match bootstrap: 10,000 draws, seed 20261112, 95% percentile interval; descriptive with only 9 reused games and overlapping training folds",
+  "stopping_rule": "Complete all nine groups and all five scenarios; report negative results; no competition data reads or candidate retuning",
+  "limits": [
+    "Retrospective known datasets/configuration, not pristine independent model-selection validation",
+    "Synthetic v2 corruption conditions on external GT; compare label-blind and unmodified inputs",
+    "Metrica labels derived from events, DFL labels from provider tracking fields"
+  ]
+}

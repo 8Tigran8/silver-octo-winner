@@ -1,0 +1,119 @@
+{
+  "registered_utc": "2026-11-12T21:10:32.511157+00:00",
+  "protocol_hash": "380987b3029cb161e9d5601a6286a2c4af425d9300a64322a90d7b2c63cfaaa9",
+  "design": "Nested match cross-fitting of a frozen pipeline; retrospective",
+  "source_commit": "dc43fea1db2edb6e652d3c6233aa958b5273b07c",
+  "matches": [
+    "idsse_J03WMX",
+    "idsse_J03WN1",
+    "idsse_J03WOH",
+    "idsse_J03WOY",
+    "idsse_J03WPY",
+    "idsse_J03WQQ",
+    "idsse_J03WR9",
+    "metrica_1",
+    "metrica_2"
+  ],
+  "scenarios": {
+    "matched_seed0": {
+      "seed": 0,
+      "params": {},
+      "label_conditioned_corruption": true
+    },
+    "matched_seed1": {
+      "seed": 1,
+      "params": {},
+      "label_conditioned_corruption": true
+    },
+    "stress_seed1": {
+      "seed": 1,
+      "params": {
+        "ball_seen_target": 0.4,
+        "skip_ball_if_seen_below": 0.0,
+        "dead_jitter_s": 4.0,
+        "p_dead_hide": 0.85,
+        "pos_noise_m": 0.3,
+        "speed_noise": 0.6,
+        "frag_median_s": 17.5,
+        "frag_mean_s2": 53.5,
+        "frag_gap_mean_s2": 12.0
+      },
+      "label_conditioned_corruption": true
+    },
+    "label_blind_seed1": {
+      "seed": 1,
+      "params": {
+        "mode": "v1",
+        "ball_gap_mean_s": 6.0,
+        "frag_mean_s": 107.0,
+        "frag_gap_mean_s": 6.0,
+        "skip_ball_if_seen_below": 0.0
+      },
+      "label_conditioned_corruption": false
+    },
+    "clean_source": {
+      "seed": null,
+      "params": null,
+      "label_conditioned_corruption": false
+    }
+  },
+  "model": {
+    "max_iter": 250,
+    "learning_rate": 0.08,
+    "max_leaf_nodes": 31,
+    "min_samples_leaf": 200,
+    "l2_regularization": 1.0,
+    "max_bins": 128
+  },
+  "stack_model": {
+    "max_iter": 150,
+    "learning_rate": 0.08,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 400,
+    "l2_regularization": 1.0,
+    "max_bins": 128
+  },
+  "decoder": {
+    "stride": 5,
+    "emit_scale": 1.0,
+    "cost_ha": 6.0,
+    "cost_in": 6.0,
+    "cost_same": 6.0,
+    "cost_other": 6.0,
+    "min_team_s": 1.0,
+    "min_dead_s": 1.0,
+    "snap_s": 0.0,
+    "kick_speed": 4.0
+  },
+  "training_scenario": "matched_seed0",
+  "source_sha256": {
+    "mtah/features2.py": "753d109c3453cb3f2bb23f14fb35508760ceb6c59cad1c8758ca76983be6c88b",
+    "mtah/features.py": "5d6f7b88847ae35da393e0c2b8eee02f4ece315354803f00d4e1302802a0c604",
+    "mtah/degrade.py": "c451d252a49720e08bd45a09ba62cf178d9d5f3f66d7537ab453b97b85e5e14a",
+    "mtah/stack.py": "4a18e577d7f2a6b769a7485376cc499b014c8f2e5803a4d492357bc36caa1259",
+    "mtah/methods/boost.py": "60807b94a981b9fc3eb7c450eed474a078fc6e065fae882529d590d28c8ce9e6",
+    "mtah/methods/boost_train.py": "c3e8156605e7c6950f29ae2eabbc10f73f1ac8a049fc9189ea301d5f48f3408f",
+    "mtah/methods/v1_params.json": "01f8e02238da5dc7f3aa3fd49b2a7f2be6089ea2c974a616bd170e611ba34c6d",
+    "mtah/methods/viterbi.py": "a6630d3880526214e7cc386d16490b06255ae78590900c64c35d70fbd01b72eb",
+    "mtah/methods/baseline.py": "9d2f816da3b604df0d66434f1a8527d9146686d51462d22bd9d263484859e5ac",
+    "tools/quality_audit.py": "6060e2479287324c49720ec4e895ff11422e9364b4ce940b380c089edc4707a9"
+  },
+  "converted_inputs_sha256": {
+    "idsse_J03WMX": "cf4a153aedbc826b143651811cb079d544929072afc87aee9c97c10bead1040a",
+    "idsse_J03WN1": "b97a0a6d947128886ab63b6c2d10e81ca8d2ea14377c8cd0c1dc3623caa4c2ea",
+    "idsse_J03WOH": "33b7bcb556f593ee34d9327fbdef320ae34b5bad5228193e0db5419f12c5841a",
+    "idsse_J03WOY": "b54707a193ab63771b50165a67ea6bf3e7c389135566af86cd3275a1c1fb024c",
+    "idsse_J03WPY": "c48ebf1f106f69a21b378cdfbca6c756b922118f986647826f3b0ba282df7238",
+    "idsse_J03WQQ": "b4b25407833b8521183619e4af61f255eac6781bcbc9faabb6714a32c8e370c8",
+    "idsse_J03WR9": "9a0753700484fc565bcdbe7ebbee831328856e86e9c05314dccd80efd451de07",
+    "metrica_1": "dfc476291ddc64617269d303598e93884838cd2cd5f41fd25e7d09d6c6503cb5",
+    "metrica_2": "c281860596fc33feb55687ada6913c65e63451ccbb7c675588205c5dc9ff41c9"
+  },
+  "official_metric_sha256": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+  "limits": [
+    "Previously used matches/hyperparameters; no pristine new-game holdout",
+    "v2 corruption depends on external GT; label-blind and clean tests included",
+    "Metrica event-derived labels differ from DFL tracking possession",
+    "No competition match or public-window quality evaluation"
+  ]
+}

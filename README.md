@@ -65,11 +65,17 @@ For decoder and scorer checks on synthetic fixtures and the organizer's publishe
 .venv/bin/python -m tests.test_metrics
 ```
 
+## External quality evidence
+
+The fixed v1 pipeline achieved mean **spellF1 0.6466 versus 0.3244** for the organizer baseline on nine external matches using nested match cross-fitting for both learned stages. It won all nine comparisons; the descriptive paired 95% match-bootstrap interval for the difference is **[0.3062, 0.3400]**. Mean macroF1 was 0.8961 versus 0.7528. The separate Sample_Game_3, absent from the implemented training corpus, scored 0.6837 versus 0.3598 on clean tracking with frozen nine-game weights.
+
+The [full report](docs/experiments/quality-audit/REPORT.md) includes per-match results, decoder/stack/duration ablations, five sensor scenarios, aggregate records, a figure and split provenance. These are external scores: historical configuration selection reused the nine games, sensor corruption is simulated, and Metrica labels are event-derived proxies. The model also predicts about 24% fewer possession spells than the reference. Hidden competition-match quality remains unknown. The audit changed neither the v1 configuration nor the team CSV.
+
 ## Review status
 
 The implementation originates from VV's `model-v1` commit `cc44bfe6bceba39e2e67a03fd32e658cca68bc0e`. The reproduction branch adds setup, explicit output paths, controlled worker counts and verification tooling. Model features and decoder parameters are unchanged.
 
-Technical verification completed on 12 November: two clean-source runs regenerated the real-match CSV byte for byte, passed the official validator and matched VV's supplied SHA-256. The technical document records the verified source, timings, data provenance and limitations. Model-selection provenance clarification remains in team review; we make no competitive validation score claim. The repository stays private until the agreed publication window and must be public before submission. The organizer's submission form is a separate release step.
+Technical verification completed on 12 November: two clean-source runs regenerated the real-match CSV byte for byte, passed the official validator and matched VV's supplied SHA-256. The technical document records the verified source, timings, data provenance and limitations. Model-selection provenance clarification remains in team review. The external quality audit above provides additional evidence with explicit selection and domain limitations. The repository stays private until the agreed publication window and must be public before submission. The organizer's submission form is a separate release step.
 
 ## Data stays local
 

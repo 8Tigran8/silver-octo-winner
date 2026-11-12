@@ -1,0 +1,929 @@
+[
+  {
+    "protocol_hash": "380987b3029cb161e9d5601a6286a2c4af425d9300a64322a90d7b2c63cfaaa9",
+    "test": "idsse_J03WMX",
+    "inner_provenance": [
+      {
+        "inner_test": "idsse_J03WN1",
+        "train": [
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WOH",
+        "train": [
+          "idsse_J03WN1",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WOY",
+        "train": [
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WPY",
+        "train": [
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WQQ",
+        "train": [
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WR9",
+        "train": [
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "metrica_1",
+        "train": [
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "metrica_2",
+        "train": [
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1"
+        ]
+      }
+    ],
+    "seconds": 37.103
+  },
+  {
+    "protocol_hash": "380987b3029cb161e9d5601a6286a2c4af425d9300a64322a90d7b2c63cfaaa9",
+    "test": "idsse_J03WN1",
+    "inner_provenance": [
+      {
+        "inner_test": "idsse_J03WMX",
+        "train": [
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WOH",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WOY",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WOH",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WPY",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WQQ",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WR9",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "metrica_1",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "metrica_2",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1"
+        ]
+      }
+    ],
+    "seconds": 37.312
+  },
+  {
+    "protocol_hash": "380987b3029cb161e9d5601a6286a2c4af425d9300a64322a90d7b2c63cfaaa9",
+    "test": "idsse_J03WOH",
+    "inner_provenance": [
+      {
+        "inner_test": "idsse_J03WMX",
+        "train": [
+          "idsse_J03WN1",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WN1",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WOY",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WPY",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WQQ",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WR9",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "metrica_1",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "metrica_2",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1"
+        ]
+      }
+    ],
+    "seconds": 36.754
+  },
+  {
+    "protocol_hash": "380987b3029cb161e9d5601a6286a2c4af425d9300a64322a90d7b2c63cfaaa9",
+    "test": "idsse_J03WOY",
+    "inner_provenance": [
+      {
+        "inner_test": "idsse_J03WMX",
+        "train": [
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WN1",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WOH",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WOH",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WPY",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WQQ",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WPY",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WR9",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "metrica_1",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "metrica_2",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1"
+        ]
+      }
+    ],
+    "seconds": 36.947
+  },
+  {
+    "protocol_hash": "380987b3029cb161e9d5601a6286a2c4af425d9300a64322a90d7b2c63cfaaa9",
+    "test": "idsse_J03WPY",
+    "inner_provenance": [
+      {
+        "inner_test": "idsse_J03WMX",
+        "train": [
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WN1",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WOH",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WOY",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WQQ",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WR9",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WQQ",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "metrica_1",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "metrica_2",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1"
+        ]
+      }
+    ],
+    "seconds": 36.874
+  },
+  {
+    "protocol_hash": "380987b3029cb161e9d5601a6286a2c4af425d9300a64322a90d7b2c63cfaaa9",
+    "test": "idsse_J03WQQ",
+    "inner_provenance": [
+      {
+        "inner_test": "idsse_J03WMX",
+        "train": [
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WN1",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WOH",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WOY",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WPY",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WPY",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WR9",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WR9",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "metrica_1",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WR9",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "metrica_2",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WR9",
+          "metrica_1"
+        ]
+      }
+    ],
+    "seconds": 36.835
+  },
+  {
+    "protocol_hash": "380987b3029cb161e9d5601a6286a2c4af425d9300a64322a90d7b2c63cfaaa9",
+    "test": "idsse_J03WR9",
+    "inner_provenance": [
+      {
+        "inner_test": "idsse_J03WMX",
+        "train": [
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WN1",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WOH",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WOY",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WPY",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WQQ",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WQQ",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "metrica_1",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "metrica_1",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "metrica_2",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "metrica_1"
+        ]
+      }
+    ],
+    "seconds": 36.671
+  },
+  {
+    "protocol_hash": "380987b3029cb161e9d5601a6286a2c4af425d9300a64322a90d7b2c63cfaaa9",
+    "test": "metrica_1",
+    "inner_provenance": [
+      {
+        "inner_test": "idsse_J03WMX",
+        "train": [
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WN1",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WOH",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WOY",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WPY",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WQQ",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WR9",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WR9",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "metrica_2"
+        ]
+      },
+      {
+        "inner_test": "metrica_2",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9"
+        ]
+      }
+    ],
+    "seconds": 37.237
+  },
+  {
+    "protocol_hash": "380987b3029cb161e9d5601a6286a2c4af425d9300a64322a90d7b2c63cfaaa9",
+    "test": "metrica_2",
+    "inner_provenance": [
+      {
+        "inner_test": "idsse_J03WMX",
+        "train": [
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WN1",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WOH",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WOY",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WPY",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9",
+          "metrica_1"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WQQ",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WR9",
+          "metrica_1"
+        ]
+      },
+      {
+        "inner_test": "idsse_J03WR9",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "metrica_1"
+        ]
+      },
+      {
+        "inner_test": "metrica_1",
+        "train": [
+          "idsse_J03WMX",
+          "idsse_J03WN1",
+          "idsse_J03WOH",
+          "idsse_J03WOY",
+          "idsse_J03WPY",
+          "idsse_J03WQQ",
+          "idsse_J03WR9"
+        ]
+      }
+    ],
+    "seconds": 33.236
+  }
+]

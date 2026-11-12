@@ -1,0 +1,47 @@
+{
+  "registered_utc": "2026-11-12T21:19:35.117243+00:00",
+  "dataset": "Metrica Sports Sample_Game_3",
+  "source_revision": "e706dd506b360d69d9d123d5b8026e7294b13996",
+  "frozen_model": "out/training_preflight.pkl",
+  "model_training_games": [
+    "idsse_J03WMX",
+    "idsse_J03WN1",
+    "idsse_J03WOH",
+    "idsse_J03WOY",
+    "idsse_J03WPY",
+    "idsse_J03WQQ",
+    "idsse_J03WR9",
+    "metrica_1",
+    "metrica_2"
+  ],
+  "model_sha256": "f2f33ae6ac086d976ed9712110e542ad68588ed489d0c0fc212a47635731c682",
+  "selection": "No adaptation: compare frozen stage1, frozen stage2 and decoder to baseline; no training on game 3",
+  "labels": "Provider event-derived proxies, same conversion rules as Metrica sample games 1 and 2 where representable",
+  "scenarios": [
+    "clean_source",
+    "matched_seed0",
+    "label_blind_seed1",
+    "stress_seed1"
+  ],
+  "limits": "Absent from the implemented training corpus; historical author-wide exposure cannot be independently audited; event-proxy labels differ from tracking-derived target labels",
+  "files": [
+    {
+      "path": "external/holdout_metrica3/Sample_Game_3_events.json",
+      "size": 1709486,
+      "sha256": "28a53bfe9eaf32535362335553d517cdce0eabb588af6166009081753751f4e0",
+      "git_blob_sha1": "992b4cb502f0b0bc1244174f014f3f7ecb6d38ef"
+    },
+    {
+      "path": "external/holdout_metrica3/Sample_Game_3_metadata.xml",
+      "size": 81806,
+      "sha256": "009c7dcfcb66192014917ca1559c158f612353e390eafb85f8214b06a1c7dec1",
+      "git_blob_sha1": "74b55a80f6aeeb8f8df7fd26e4b3a94e2cc1738d"
+    },
+    {
+      "path": "external/holdout_metrica3/Sample_Game_3_tracking.txt",
+      "size": 53443115,
+      "sha256": "570e6ce82c2d93bc92723af331d93c31110bec1d6dc0be07c6d44ca3f981d658",
+      "git_blob_sha1": "7062b7ceaa44d53345a4625b8f447efc74895b1d"
+    }
+  ]
+}

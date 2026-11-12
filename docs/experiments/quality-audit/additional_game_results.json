@@ -1,0 +1,785 @@
+{
+  "status": "Completed frozen-weight additional-game evaluation",
+  "model_sha256": "f2f33ae6ac086d976ed9712110e542ad68588ed489d0c0fc212a47635731c682",
+  "training_games": [
+    "idsse_J03WMX",
+    "idsse_J03WN1",
+    "idsse_J03WOH",
+    "idsse_J03WOY",
+    "idsse_J03WPY",
+    "idsse_J03WQQ",
+    "idsse_J03WR9",
+    "metrica_1",
+    "metrica_2"
+  ],
+  "test_game": "Metrica Sample_Game_3",
+  "frames": 143761,
+  "graded_frames": 142698,
+  "provider_events": 3620,
+  "lineup_mappings": 11,
+  "labels": "Event-derived proxy; only event-covered period spans graded",
+  "training_or_retuning_on_holdout": false,
+  "seconds": 48.67,
+  "records": [
+    {
+      "match": "metrica_3",
+      "scenario": "clean_source",
+      "method": "baseline_smooth50",
+      "ball_visible_fraction": 0.6828126532957715,
+      "spell_f1_mean": 0.35978378378378384,
+      "macro_f1": 0.7393202581795114,
+      "alive_dead_f1": 0.8917980892084135,
+      "n_gt_spells": 368,
+      "n_pred_spells": 557,
+      "fragmentation": 1.4683257918552035,
+      "n_graded": 142698,
+      "spell_bootstrap_low": 0.33037837837837836,
+      "spell_bootstrap_high": 0.38918918918918916,
+      "per_class": {
+        "H": {
+          "precision": 0.7229025101752057,
+          "recall": 0.7839660528908086,
+          "f1": 0.7521970282182944,
+          "support": 52788
+        },
+        "A": {
+          "precision": 0.7591705270692088,
+          "recall": 0.7725801230171576,
+          "f1": 0.7658166283932171,
+          "support": 49424
+        },
+        "D": {
+          "precision": 0.7530295272230756,
+          "recall": 0.653855653806254,
+          "f1": 0.6999471179270227,
+          "support": 40486
+        }
+      },
+      "transition_f1_1s": 0.19319227230910765,
+      "macro_f1_ball_visible": 0.5575019835683183,
+      "macro_f1_ball_missing": 0.3021056320036612
+    },
+    {
+      "match": "metrica_3",
+      "scenario": "clean_source",
+      "method": "stage1_argmax",
+      "ball_visible_fraction": 0.6828126532957715,
+      "spell_f1_mean": 0.38979744936234056,
+      "macro_f1": 0.8449428181145429,
+      "alive_dead_f1": 0.9202010526627628,
+      "n_gt_spells": 368,
+      "n_pred_spells": 965,
+      "fragmentation": 2.5542986425339365,
+      "n_graded": 142698,
+      "spell_bootstrap_low": null,
+      "spell_bootstrap_high": null,
+      "per_class": {
+        "H": {
+          "precision": 0.8646448707833818,
+          "recall": 0.8511972417973782,
+          "f1": 0.8578683595055128,
+          "support": 52788
+        },
+        "A": {
+          "precision": 0.8816461586185503,
+          "recall": 0.8625768857235351,
+          "f1": 0.8720072817271601,
+          "support": 49424
+        },
+        "D": {
+          "precision": 0.7870020766471588,
+          "recall": 0.8237415402855308,
+          "f1": 0.8049528131109557,
+          "support": 40486
+        }
+      },
+      "transition_f1_1s": 0.4773452456924059,
+      "macro_f1_ball_visible": 0.6142057826522326,
+      "macro_f1_ball_missing": 0.4399113045609155
+    },
+    {
+      "match": "metrica_3",
+      "scenario": "clean_source",
+      "method": "stage1_viterbi",
+      "ball_visible_fraction": 0.6828126532957715,
+      "spell_f1_mean": 0.6852272727272727,
+      "macro_f1": 0.8456620732170604,
+      "alive_dead_f1": 0.9191926678030583,
+      "n_gt_spells": 368,
+      "n_pred_spells": 336,
+      "fragmentation": 0.9909502262443439,
+      "n_graded": 142698,
+      "spell_bootstrap_low": null,
+      "spell_bootstrap_high": null,
+      "per_class": {
+        "H": {
+          "precision": 0.8695887760038703,
+          "recall": 0.851254072895355,
+          "f1": 0.8603237509931746,
+          "support": 52788
+        },
+        "A": {
+          "precision": 0.8819576152387235,
+          "recall": 0.8656118484946584,
+          "f1": 0.8737082873830821,
+          "support": 49424
+        },
+        "D": {
+          "precision": 0.7837939550746795,
+          "recall": 0.823074643086499,
+          "f1": 0.8029541812749244,
+          "support": 40486
+        }
+      },
+      "transition_f1_1s": 0.7168949771689498,
+      "macro_f1_ball_visible": 0.6170279116702961,
+      "macro_f1_ball_missing": 0.4244390828797758
+    },
+    {
+      "match": "metrica_3",
+      "scenario": "clean_source",
+      "method": "frozen_stack_argmax",
+      "ball_visible_fraction": 0.6828126532957715,
+      "spell_f1_mean": 0.5162886597938143,
+      "macro_f1": 0.8491958767389369,
+      "alive_dead_f1": 0.9210314262691377,
+      "n_gt_spells": 368,
+      "n_pred_spells": 602,
+      "fragmentation": 1.7217194570135748,
+      "n_graded": 142698,
+      "spell_bootstrap_low": null,
+      "spell_bootstrap_high": null,
+      "per_class": {
+        "H": {
+          "precision": 0.8623038422458886,
+          "recall": 0.868151852693794,
+          "f1": 0.8652179659032982,
+          "support": 52788
+        },
+        "A": {
+          "precision": 0.8901507287298094,
+          "recall": 0.8674935254127549,
+          "f1": 0.878676093862076,
+          "support": 49424
+        },
+        "D": {
+          "precision": 0.7949548156381385,
+          "recall": 0.8126265869683348,
+          "f1": 0.8036935704514364,
+          "support": 40486
+        }
+      },
+      "transition_f1_1s": 0.567139282735613,
+      "macro_f1_ball_visible": 0.619765614328739,
+      "macro_f1_ball_missing": 0.49732574835662074
+    },
+    {
+      "match": "metrica_3",
+      "scenario": "clean_source",
+      "method": "frozen_stack_viterbi",
+      "ball_visible_fraction": 0.6828126532957715,
+      "spell_f1_mean": 0.6837209302325582,
+      "macro_f1": 0.8502358386807188,
+      "alive_dead_f1": 0.9217762721849915,
+      "n_gt_spells": 368,
+      "n_pred_spells": 320,
+      "fragmentation": 0.9411764705882353,
+      "n_graded": 142698,
+      "spell_bootstrap_low": 0.6429941860465116,
+      "spell_bootstrap_high": 0.7250581395348836,
+      "per_class": {
+        "H": {
+          "precision": 0.8639202407825433,
+          "recall": 0.8700083352277033,
+          "f1": 0.866953599879186,
+          "support": 52788
+        },
+        "A": {
+          "precision": 0.8888497919814543,
+          "recall": 0.8688693752023309,
+          "f1": 0.8787460224889244,
+          "support": 49424
+        },
+        "D": {
+          "precision": 0.7977926015767132,
+          "recall": 0.81235488810947,
+          "f1": 0.8050078936740463,
+          "support": 40486
+        }
+      },
+      "transition_f1_1s": 0.7166276346604215,
+      "macro_f1_ball_visible": 0.6196674581117981,
+      "macro_f1_ball_missing": 0.507145106902288
+    },
+    {
+      "match": "metrica_3",
+      "scenario": "matched_seed0",
+      "method": "baseline_smooth50",
+      "ball_visible_fraction": 0.6828126532957715,
+      "spell_f1_mean": 0.32056451612903225,
+      "macro_f1": 0.7168792384843795,
+      "alive_dead_f1": 0.8917980892084135,
+      "n_gt_spells": 368,
+      "n_pred_spells": 624,
+      "fragmentation": 1.6199095022624435,
+      "n_graded": 142698,
+      "spell_bootstrap_low": 0.2931451612903226,
+      "spell_bootstrap_high": 0.3455645161290323,
+      "per_class": {
+        "H": {
+          "precision": 0.6949405022695011,
+          "recall": 0.7511934530575131,
+          "f1": 0.7219728900581708,
+          "support": 52788
+        },
+        "A": {
+          "precision": 0.7210744210922488,
+          "recall": 0.7365247652962124,
+          "f1": 0.7287177074679452,
+          "support": 49424
+        },
+        "D": {
+          "precision": 0.7530295272230756,
+          "recall": 0.653855653806254,
+          "f1": 0.6999471179270227,
+          "support": 40486
+        }
+      },
+      "transition_f1_1s": 0.1837088388214905,
+      "macro_f1_ball_visible": 0.532192698247206,
+      "macro_f1_ball_missing": 0.30569056233850606
+    },
+    {
+      "match": "metrica_3",
+      "scenario": "matched_seed0",
+      "method": "stage1_argmax",
+      "ball_visible_fraction": 0.6828126532957715,
+      "spell_f1_mean": 0.2617204301075269,
+      "macro_f1": 0.8388401204249175,
+      "alive_dead_f1": 0.9171314622311182,
+      "n_gt_spells": 368,
+      "n_pred_spells": 1492,
+      "fragmentation": 4.088235294117647,
+      "n_graded": 142698,
+      "spell_bootstrap_low": null,
+      "spell_bootstrap_high": null,
+      "per_class": {
+        "H": {
+          "precision": 0.8607607181550844,
+          "recall": 0.8428241266954611,
+          "f1": 0.8516979976262491,
+          "support": 52788
+        },
+        "A": {
+          "precision": 0.8813523596737137,
+          "recall": 0.8460262220783425,
+          "f1": 0.8633280683824213,
+          "support": 49424
+        },
+        "D": {
+          "precision": 0.7731539927008975,
+          "recall": 0.8319913056365164,
+          "f1": 0.8014942952660822,
+          "support": 40486
+        }
+      },
+      "transition_f1_1s": 0.33942093541202667,
+      "macro_f1_ball_visible": 0.6185433954602343,
+      "macro_f1_ball_missing": 0.4254906160100429
+    },
+    {
+      "match": "metrica_3",
+      "scenario": "matched_seed0",
+      "method": "stage1_viterbi",
+      "ball_visible_fraction": 0.6828126532957715,
+      "spell_f1_mean": 0.6516220028208745,
+      "macro_f1": 0.8409614086618554,
+      "alive_dead_f1": 0.9168093288673861,
+      "n_gt_spells": 368,
+      "n_pred_spells": 341,
+      "fragmentation": 1.0180995475113122,
+      "n_graded": 142698,
+      "spell_bootstrap_low": null,
+      "spell_bootstrap_high": null,
+      "per_class": {
+        "H": {
+          "precision": 0.8642116484155441,
+          "recall": 0.8446806092293703,
+          "f1": 0.8543345180728662,
+          "support": 52788
+        },
+        "A": {
+          "precision": 0.8839641225533341,
+          "recall": 0.8534517643250242,
+          "f1": 0.8684400156471969,
+          "support": 49424
+        },
+        "D": {
+          "precision": 0.7733778955860321,
+          "recall": 0.8287556192263993,
+          "f1": 0.8001096922655031,
+          "support": 40486
+        }
+      },
+      "transition_f1_1s": 0.6981981981981983,
+      "macro_f1_ball_visible": 0.6175180589447858,
+      "macro_f1_ball_missing": 0.4233433926951697
+    },
+    {
+      "match": "metrica_3",
+      "scenario": "matched_seed0",
+      "method": "frozen_stack_argmax",
+      "ball_visible_fraction": 0.6828126532957715,
+      "spell_f1_mean": 0.30118964310706786,
+      "macro_f1": 0.8241191895575061,
+      "alive_dead_f1": 0.8995921832598051,
+      "n_gt_spells": 368,
+      "n_pred_spells": 1061,
+      "fragmentation": 3.7782805429864252,
+      "n_graded": 142698,
+      "spell_bootstrap_low": null,
+      "spell_bootstrap_high": null,
+      "per_class": {
+        "H": {
+          "precision": 0.865259416064225,
+          "recall": 0.8207736606804577,
+          "f1": 0.8424296630436895,
+          "support": 52788
+        },
+        "A": {
+          "precision": 0.8929315525144198,
+          "recall": 0.8237900615085788,
+          "f1": 0.8569684596036665,
+          "support": 49424
+        },
+        "D": {
+          "precision": 0.7192038616114147,
+          "recall": 0.8353998913204564,
+          "f1": 0.772959446025162,
+          "support": 40486
+        }
+      },
+      "transition_f1_1s": 0.31214421252371916,
+      "macro_f1_ball_visible": 0.6505363120375344,
+      "macro_f1_ball_missing": 0.47590843553039375
+    },
+    {
+      "match": "metrica_3",
+      "scenario": "matched_seed0",
+      "method": "frozen_stack_viterbi",
+      "ball_visible_fraction": 0.6828126532957715,
+      "spell_f1_mean": 0.6151645207439198,
+      "macro_f1": 0.8298587808283293,
+      "alive_dead_f1": 0.9028030322109452,
+      "n_gt_spells": 368,
+      "n_pred_spells": 331,
+      "fragmentation": 1.083710407239819,
+      "n_graded": 142698,
+      "spell_bootstrap_low": 0.5745350500715308,
+      "spell_bootstrap_high": 0.6575107296137339,
+      "per_class": {
+        "H": {
+          "precision": 0.8688129173726702,
+          "recall": 0.825642191407138,
+          "f1": 0.8466776101716317,
+          "support": 52788
+        },
+        "A": {
+          "precision": 0.8956627236882014,
+          "recall": 0.8364762058918744,
+          "f1": 0.8650582745705259,
+          "support": 49424
+        },
+        "D": {
+          "precision": 0.7284528301886792,
+          "recall": 0.834411895470039,
+          "f1": 0.7778404577428305,
+          "support": 40486
+        }
+      },
+      "transition_f1_1s": 0.6215921483097057,
+      "macro_f1_ball_visible": 0.6551693622458591,
+      "macro_f1_ball_missing": 0.4736940681993724
+    },
+    {
+      "match": "metrica_3",
+      "scenario": "label_blind_seed1",
+      "method": "baseline_smooth50",
+      "ball_visible_fraction": 0.5921036034142034,
+      "spell_f1_mean": 0.2812803103782735,
+      "macro_f1": 0.700777783785593,
+      "alive_dead_f1": 0.8653770975292331,
+      "n_gt_spells": 368,
+      "n_pred_spells": 663,
+      "fragmentation": 1.7828054298642535,
+      "n_graded": 142698,
+      "spell_bootstrap_low": 0.25643064985451014,
+      "spell_bootstrap_high": 0.30690591658583904,
+      "per_class": {
+        "H": {
+          "precision": 0.7030424279027631,
+          "recall": 0.7056527998787603,
+          "f1": 0.7043451953257951,
+          "support": 52788
+        },
+        "A": {
+          "precision": 0.7441295028472711,
+          "recall": 0.7059323405632891,
+          "f1": 0.7245278317118501,
+          "support": 49424
+        },
+        "D": {
+          "precision": 0.6550540546851286,
+          "recall": 0.6929308896902633,
+          "f1": 0.6734603243191338,
+          "support": 40486
+        }
+      },
+      "transition_f1_1s": 0.17944535073409462,
+      "macro_f1_ball_visible": 0.5430809143325002,
+      "macro_f1_ball_missing": 0.4334723617370951
+    },
+    {
+      "match": "metrica_3",
+      "scenario": "label_blind_seed1",
+      "method": "stage1_argmax",
+      "ball_visible_fraction": 0.5921036034142034,
+      "spell_f1_mean": 0.22964087000505815,
+      "macro_f1": 0.8180048437469303,
+      "alive_dead_f1": 0.8991652890047364,
+      "n_gt_spells": 368,
+      "n_pred_spells": 1609,
+      "fragmentation": 4.6289592760181,
+      "n_graded": 142698,
+      "spell_bootstrap_low": null,
+      "spell_bootstrap_high": null,
+      "per_class": {
+        "H": {
+          "precision": 0.8590892575996124,
+          "recall": 0.8062627869970448,
+          "f1": 0.8318381706244502,
+          "support": 52788
+        },
+        "A": {
+          "precision": 0.8847711267605634,
+          "recall": 0.8134509550016187,
+          "f1": 0.8476134255355036,
+          "support": 49424
+        },
+        "D": {
+          "precision": 0.7158814653365747,
+          "recall": 0.8437237563602233,
+          "f1": 0.7745629350808371,
+          "support": 40486
+        }
+      },
+      "transition_f1_1s": 0.2834138486312399,
+      "macro_f1_ball_visible": 0.6153188401488054,
+      "macro_f1_ball_missing": 0.6215204493314256
+    },
+    {
+      "match": "metrica_3",
+      "scenario": "label_blind_seed1",
+      "method": "stage1_viterbi",
+      "ball_visible_fraction": 0.5921036034142034,
+      "spell_f1_mean": 0.6397759103641456,
+      "macro_f1": 0.8226047881464259,
+      "alive_dead_f1": 0.900222829940241,
+      "n_gt_spells": 368,
+      "n_pred_spells": 346,
+      "fragmentation": 1.0633484162895928,
+      "n_graded": 142698,
+      "spell_bootstrap_low": null,
+      "spell_bootstrap_high": null,
+      "per_class": {
+        "H": {
+          "precision": 0.8666531440162272,
+          "recall": 0.8093884973857695,
+          "f1": 0.8370425515241753,
+          "support": 52788
+        },
+        "A": {
+          "precision": 0.8871550448332898,
+          "recall": 0.8247612495953383,
+          "f1": 0.8548211215031665,
+          "support": 49424
+        },
+        "D": {
+          "precision": 0.7190094836670179,
+          "recall": 0.842686360717285,
+          "f1": 0.775950691411936,
+          "support": 40486
+        }
+      },
+      "transition_f1_1s": 0.6365638766519824,
+      "macro_f1_ball_visible": 0.6192528502965097,
+      "macro_f1_ball_missing": 0.6264244709183009
+    },
+    {
+      "match": "metrica_3",
+      "scenario": "label_blind_seed1",
+      "method": "frozen_stack_argmax",
+      "ball_visible_fraction": 0.5921036034142034,
+      "spell_f1_mean": 0.2846473029045643,
+      "macro_f1": 0.8133787645640199,
+      "alive_dead_f1": 0.887405112316034,
+      "n_gt_spells": 368,
+      "n_pred_spells": 1078,
+      "fragmentation": 3.8733031674208145,
+      "n_graded": 142698,
+      "spell_bootstrap_low": null,
+      "spell_bootstrap_high": null,
+      "per_class": {
+        "H": {
+          "precision": 0.8760563380281691,
+          "recall": 0.8012427066757597,
+          "f1": 0.8369810424664583,
+          "support": 52788
+        },
+        "A": {
+          "precision": 0.9018490198804393,
+          "recall": 0.7875121398510845,
+          "f1": 0.8408113888228813,
+          "support": 49424
+        },
+        "D": {
+          "precision": 0.6822278579789309,
+          "recall": 0.8637800721236971,
+          "f1": 0.7623438624027206,
+          "support": 40486
+        }
+      },
+      "transition_f1_1s": 0.2883720930232558,
+      "macro_f1_ball_visible": 0.6751021836226085,
+      "macro_f1_ball_missing": 0.6365398466669165
+    },
+    {
+      "match": "metrica_3",
+      "scenario": "label_blind_seed1",
+      "method": "frozen_stack_viterbi",
+      "ball_visible_fraction": 0.5921036034142034,
+      "spell_f1_mean": 0.6093294460641399,
+      "macro_f1": 0.8207236874890572,
+      "alive_dead_f1": 0.8928086419753087,
+      "n_gt_spells": 368,
+      "n_pred_spells": 318,
+      "fragmentation": 1.0723981900452488,
+      "n_graded": 142698,
+      "spell_bootstrap_low": 0.5673177842565597,
+      "spell_bootstrap_high": 0.6536443148688047,
+      "per_class": {
+        "H": {
+          "precision": 0.877240809582817,
+          "recall": 0.8046525725543684,
+          "f1": 0.8393802861433878,
+          "support": 52788
+        },
+        "A": {
+          "precision": 0.9068269055017364,
+          "recall": 0.803051149239236,
+          "f1": 0.8517898532062839,
+          "support": 49424
+        },
+        "D": {
+          "precision": 0.6944961393783409,
+          "recall": 0.8664476609198242,
+          "f1": 0.7710009231174997,
+          "support": 40486
+        }
+      },
+      "transition_f1_1s": 0.5833333333333334,
+      "macro_f1_ball_visible": 0.6870310380178598,
+      "macro_f1_ball_missing": 0.6467162433956015
+    },
+    {
+      "match": "metrica_3",
+      "scenario": "stress_seed1",
+      "method": "baseline_smooth50",
+      "ball_visible_fraction": 0.39893341182076836,
+      "spell_f1_mean": 0.1793103448275862,
+      "macro_f1": 0.6009137212940265,
+      "alive_dead_f1": 0.7844243667202483,
+      "n_gt_spells": 368,
+      "n_pred_spells": 676,
+      "fragmentation": 1.914027149321267,
+      "n_graded": 142698,
+      "spell_bootstrap_low": 0.15747126436781608,
+      "spell_bootstrap_high": 0.20038314176245212,
+      "per_class": {
+        "H": {
+          "precision": 0.6962990029754137,
+          "recall": 0.5053800106084716,
+          "f1": 0.5856732014664882,
+          "support": 52788
+        },
+        "A": {
+          "precision": 0.6577825694514091,
+          "recall": 0.5308149886694723,
+          "f1": 0.5875173556680252,
+          "support": 49424
+        },
+        "D": {
+          "precision": 0.5123565891472868,
+          "recall": 0.8162574717186187,
+          "f1": 0.6295506067475662,
+          "support": 40486
+        }
+      },
+      "transition_f1_1s": 0.14330218068535827,
+      "macro_f1_ball_visible": 0.4976430101825187,
+      "macro_f1_ball_missing": 0.4375843254857194
+    },
+    {
+      "match": "metrica_3",
+      "scenario": "stress_seed1",
+      "method": "stage1_argmax",
+      "ball_visible_fraction": 0.39893341182076836,
+      "spell_f1_mean": 0.09700787401574804,
+      "macro_f1": 0.7327048268902963,
+      "alive_dead_f1": 0.8202832628049357,
+      "n_gt_spells": 368,
+      "n_pred_spells": 2807,
+      "fragmentation": 9.049773755656108,
+      "n_graded": 142698,
+      "spell_bootstrap_low": null,
+      "spell_bootstrap_high": null,
+      "per_class": {
+        "H": {
+          "precision": 0.8597430148742798,
+          "recall": 0.6755891490490263,
+          "f1": 0.7566220072346158,
+          "support": 52788
+        },
+        "A": {
+          "precision": 0.8850581073602657,
+          "recall": 0.6471754613143412,
+          "f1": 0.7476508812117246,
+          "support": 49424
+        },
+        "D": {
+          "precision": 0.5627487437958111,
+          "recall": 0.9045596008496765,
+          "f1": 0.6938415922245483,
+          "support": 40486
+        }
+      },
+      "transition_f1_1s": 0.1252816584046868,
+      "macro_f1_ball_visible": 0.6085096500162771,
+      "macro_f1_ball_missing": 0.5855027342345928
+    },
+    {
+      "match": "metrica_3",
+      "scenario": "stress_seed1",
+      "method": "stage1_viterbi",
+      "ball_visible_fraction": 0.39893341182076836,
+      "spell_f1_mean": 0.4754385964912281,
+      "macro_f1": 0.7409026526680936,
+      "alive_dead_f1": 0.8231297803137108,
+      "n_gt_spells": 368,
+      "n_pred_spells": 316,
+      "fragmentation": 1.0769230769230769,
+      "n_graded": 142698,
+      "spell_bootstrap_low": null,
+      "spell_bootstrap_high": null,
+      "per_class": {
+        "H": {
+          "precision": 0.8691891891891892,
+          "recall": 0.6853830416003637,
+          "f1": 0.7664198786184107,
+          "support": 52788
+        },
+        "A": {
+          "precision": 0.8959233670070742,
+          "recall": 0.6585464551634833,
+          "f1": 0.759110468438422,
+          "support": 49424
+        },
+        "D": {
+          "precision": 0.5665698752007908,
+          "recall": 0.9060415946253025,
+          "f1": 0.6971776109474486,
+          "support": 40486
+        }
+      },
+      "transition_f1_1s": 0.437636761487965,
+      "macro_f1_ball_visible": 0.6165053081635997,
+      "macro_f1_ball_missing": 0.5959823810564622
+    },
+    {
+      "match": "metrica_3",
+      "scenario": "stress_seed1",
+      "method": "frozen_stack_argmax",
+      "ball_visible_fraction": 0.39893341182076836,
+      "spell_f1_mean": 0.1828718609143593,
+      "macro_f1": 0.7251129477057013,
+      "alive_dead_f1": 0.8015432378535171,
+      "n_gt_spells": 368,
+      "n_pred_spells": 1185,
+      "fragmentation": 4.653846153846154,
+      "n_graded": 142698,
+      "spell_bootstrap_low": null,
+      "spell_bootstrap_high": null,
+      "per_class": {
+        "H": {
+          "precision": 0.8815508625668583,
+          "recall": 0.6650375085246647,
+          "f1": 0.7581388819902602,
+          "support": 52788
+        },
+        "A": {
+          "precision": 0.8990921483887809,
+          "recall": 0.6271851731952088,
+          "f1": 0.7389184872647525,
+          "support": 49424
+        },
+        "D": {
+          "precision": 0.5398842071405596,
+          "recall": 0.9120930692091094,
+          "f1": 0.6782814738620917,
+          "support": 40486
+        }
+      },
+      "transition_f1_1s": 0.17314629258517034,
+      "macro_f1_ball_visible": 0.6258627743721318,
+      "macro_f1_ball_missing": 0.5847568025654303
+    },
+    {
+      "match": "metrica_3",
+      "scenario": "stress_seed1",
+      "method": "frozen_stack_viterbi",
+      "ball_visible_fraction": 0.39893341182076836,
+      "spell_f1_mean": 0.48149300155520985,
+      "macro_f1": 0.7271476467872606,
+      "alive_dead_f1": 0.8027533823878471,
+      "n_gt_spells": 368,
+      "n_pred_spells": 275,
+      "fragmentation": 0.995475113122172,
+      "n_graded": 142698,
+      "spell_bootstrap_low": 0.43916018662519435,
+      "spell_bootstrap_high": 0.526905132192846,
+      "per_class": {
+        "H": {
+          "precision": 0.8814750434566675,
+          "recall": 0.672444494960976,
+          "f1": 0.7629005566420942,
+          "support": 52788
+        },
+        "A": {
+          "precision": 0.90105617455896,
+          "recall": 0.6283182259630948,
+          "f1": 0.7403681098607666,
+          "support": 49424
+        },
+        "D": {
+          "precision": 0.5410805720675652,
+          "recall": 0.9083139850812627,
+          "f1": 0.6781742738589213,
+          "support": 40486
+        }
+      },
+      "transition_f1_1s": 0.407744874715262,
+      "macro_f1_ball_visible": 0.619183132394375,
+      "macro_f1_ball_missing": 0.5841033185177197
+    }
+  ]
+}
