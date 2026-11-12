@@ -104,7 +104,7 @@ def main():
     columns = ["match", "scenario", "method", "spell_f1_mean", "macro_f1", "n_gt_spells", "n_pred_spells",
                "fragmentation", "alive_dead_f1", "transition_f1_1s", "ball_visible_fraction", "valid_fitted_holdout"]
     with (folder / "metrics.csv").open("w", newline="") as stream:
-        writer = csv.DictWriter(stream, columns)
+        writer = csv.DictWriter(stream, columns, lineterminator="\n")
         writer.writeheader()
         for row in records:
             writer.writerow({k: row[k] for k in columns})
@@ -154,7 +154,7 @@ def main():
              "- No final CSV or v1 configuration was changed based on this audit. Competitive quality on the hidden full-match GT remains unknown.", "",
              "## Reproduction", "", "```bash", ".venv/bin/python tools/quality_audit.py --jobs 4",
              "# Use the resulting protocol directory:", f"reports/plotenv/bin/python tools/summarize_quality_audit.py {folder.relative_to(folder.parents[2])} --plot", "```", "",
-             "Raw inputs are the pinned external sources from tools/external_sources.json. Full records: metrics.csv / results.json. Split provenance and input/source hashes: protocol.json plus stage1/*.json and scores/*.json (local).",
+             "Raw inputs are the pinned external sources from tools/external_sources.json. Full records: metrics.csv / results.json. Split provenance and input/source hashes: protocol.json and split_provenance.json in the published report; stage1/*.json and scores/*.json remain local.",
              "[Nested-evaluation background, scikit-learn](https://scikit-learn.org/stable/auto_examples/model_selection/plot_nested_cross_validation_iris.html).", ""]
     if fresh:
         extra = ["## Additional game outside the implemented training corpus", "",

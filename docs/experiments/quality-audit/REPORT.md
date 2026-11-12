@@ -115,7 +115,7 @@ reports/plotenv/bin/python -m pip install -r requirements-quality-plots.txt
 reports/plotenv/bin/python tools/summarize_quality_audit.py reports/quality_audit/380987b3029c --plot --fresh reports/fresh_holdout/results.json
 ```
 
-Raw inputs are the pinned external sources from tools/external_sources.json. Full records: metrics.csv / results.json. Split provenance and input/source hashes: protocol.json plus stage1/*.json and scores/*.json (local).
+Raw inputs are the pinned external sources from tools/external_sources.json. Full records: metrics.csv / results.json. Split provenance and input/source hashes: protocol.json and split_provenance.json; stage1/*.json and scores/*.json remain local.
 [Nested-evaluation background, scikit-learn](https://scikit-learn.org/stable/auto_examples/model_selection/plot_nested_cross_validation_iris.html).
 
 Data attribution: [IDSSE / DFL / Sportec, PySport mirror](https://huggingface.co/datasets/pysport/idsse-data), CC BY 4.0, Bassek et al. (2025); [Metrica Sports sample-data](https://github.com/metrica-sports/sample-data), source acknowledged as required by its README.
