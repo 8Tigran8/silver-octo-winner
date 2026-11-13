@@ -1,0 +1,425 @@
+{
+  "registered_utc": "2026-11-13T09:48:19.609659+00:00",
+  "status": "FROZEN SOURCE SPLIT BEFORE GATED DATA OR MODEL SCORES; access request pending owner review",
+  "metadata_source": "https://kloppy.pysport.org/user-guide/loading-data/pff/",
+  "metadata_sha256": "73a43ff11014dc461c4f85da299e60041ba49e3e9c9dca721ff6d7de36622a43",
+  "dataset_revision": "514c9ab5edac8261e7da963a90460b2c11fe2c68",
+  "heldout_countries": [
+    "Ecuador",
+    "Ghana",
+    "Netherlands",
+    "Portugal",
+    "Qatar",
+    "Senegal",
+    "South Korea",
+    "Uruguay"
+  ],
+  "holdout_reason": "Groups A/H: both national teams absent from all PFF training/development games; no match- or opponent-country leakage from remaining knockout games",
+  "final_test": [
+    {
+      "game_id": "3812",
+      "home": "Senegal",
+      "away": "Netherlands",
+      "date": "2022-11-21T16:00:00"
+    },
+    {
+      "game_id": "3814",
+      "home": "Qatar",
+      "away": "Ecuador",
+      "date": "2022-11-20T16:00:00"
+    },
+    {
+      "game_id": "3825",
+      "home": "Uruguay",
+      "away": "South Korea",
+      "date": "2022-11-24T13:00:00"
+    },
+    {
+      "game_id": "3826",
+      "home": "Portugal",
+      "away": "Ghana",
+      "date": "2022-11-24T16:00:00"
+    },
+    {
+      "game_id": "3829",
+      "home": "Qatar",
+      "away": "Senegal",
+      "date": "2022-11-25T13:00:00"
+    },
+    {
+      "game_id": "3830",
+      "home": "Netherlands",
+      "away": "Ecuador",
+      "date": "2022-11-25T16:00:00"
+    },
+    {
+      "game_id": "3841",
+      "home": "South Korea",
+      "away": "Ghana",
+      "date": "2022-11-28T13:00:00"
+    },
+    {
+      "game_id": "3843",
+      "home": "Portugal",
+      "away": "Uruguay",
+      "date": "2022-11-28T19:00:00"
+    },
+    {
+      "game_id": "3844",
+      "home": "Ecuador",
+      "away": "Senegal",
+      "date": "2022-11-29T15:00:00"
+    },
+    {
+      "game_id": "3845",
+      "home": "Netherlands",
+      "away": "Qatar",
+      "date": "2022-11-29T15:00:00"
+    },
+    {
+      "game_id": "3856",
+      "home": "Ghana",
+      "away": "Uruguay",
+      "date": "2022-12-02T15:00:00"
+    },
+    {
+      "game_id": "3857",
+      "home": "South Korea",
+      "away": "Portugal",
+      "date": "2022-12-02T15:00:00"
+    }
+  ],
+  "country_bridge_excluded_from_training_and_selection": [
+    {
+      "game_id": "10512",
+      "home": "Morocco",
+      "away": "Portugal",
+      "date": "2022-12-10T15:00:00"
+    },
+    {
+      "game_id": "10511",
+      "home": "Netherlands",
+      "away": "Argentina",
+      "date": "2022-12-09T19:00:00"
+    },
+    {
+      "game_id": "10509",
+      "home": "Portugal",
+      "away": "Switzerland",
+      "date": "2022-12-06T19:00:00"
+    },
+    {
+      "game_id": "10507",
+      "home": "Brazil",
+      "away": "South Korea",
+      "date": "2022-12-05T19:00:00"
+    },
+    {
+      "game_id": "10505",
+      "home": "England",
+      "away": "Senegal",
+      "date": "2022-12-04T19:00:00"
+    },
+    {
+      "game_id": "10502",
+      "home": "Netherlands",
+      "away": "United States",
+      "date": "2022-12-03T15:00:00"
+    }
+  ],
+  "development": [
+    {
+      "game_id": "10510",
+      "home": "Croatia",
+      "away": "Brazil",
+      "date": "2022-12-09T15:00:00"
+    },
+    {
+      "game_id": "3821",
+      "home": "Germany",
+      "away": "Japan",
+      "date": "2022-11-23T13:00:00"
+    },
+    {
+      "game_id": "10513",
+      "home": "England",
+      "away": "France",
+      "date": "2022-12-10T19:00:00"
+    },
+    {
+      "game_id": "10516",
+      "home": "Croatia",
+      "away": "Morocco",
+      "date": "2022-12-17T15:00:00"
+    },
+    {
+      "game_id": "3859",
+      "home": "Cameroon",
+      "away": "Brazil",
+      "date": "2022-12-02T19:00:00"
+    },
+    {
+      "game_id": "3827",
+      "home": "Brazil",
+      "away": "Serbia",
+      "date": "2022-11-24T19:00:00"
+    },
+    {
+      "game_id": "10503",
+      "home": "Argentina",
+      "away": "Australia",
+      "date": "2022-12-03T19:00:00"
+    },
+    {
+      "game_id": "3858",
+      "home": "Serbia",
+      "away": "Switzerland",
+      "date": "2022-12-02T19:00:00"
+    },
+    {
+      "game_id": "3838",
+      "home": "Croatia",
+      "away": "Canada",
+      "date": "2022-11-27T16:00:00"
+    },
+    {
+      "game_id": "3842",
+      "home": "Brazil",
+      "away": "Switzerland",
+      "date": "2022-11-28T16:00:00"
+    }
+  ],
+  "training": [
+    {
+      "game_id": "3816",
+      "home": "Argentina",
+      "away": "Saudi Arabia",
+      "date": "2022-11-22T10:00:00"
+    },
+    {
+      "game_id": "3854",
+      "home": "Japan",
+      "away": "Spain",
+      "date": "2022-12-01T19:00:00"
+    },
+    {
+      "game_id": "3850",
+      "home": "Poland",
+      "away": "Argentina",
+      "date": "2022-11-30T19:00:00"
+    },
+    {
+      "game_id": "3836",
+      "home": "Japan",
+      "away": "Costa Rica",
+      "date": "2022-11-27T10:00:00"
+    },
+    {
+      "game_id": "3831",
+      "home": "England",
+      "away": "United States",
+      "date": "2022-11-25T19:00:00"
+    },
+    {
+      "game_id": "10506",
+      "home": "Japan",
+      "away": "Croatia",
+      "date": "2022-12-05T15:00:00"
+    },
+    {
+      "game_id": "3846",
+      "home": "Wales",
+      "away": "England",
+      "date": "2022-11-29T19:00:00"
+    },
+    {
+      "game_id": "10514",
+      "home": "Argentina",
+      "away": "Croatia",
+      "date": "2022-12-13T19:00:00"
+    },
+    {
+      "game_id": "3819",
+      "home": "France",
+      "away": "Australia",
+      "date": "2022-11-22T19:00:00"
+    },
+    {
+      "game_id": "3853",
+      "home": "Canada",
+      "away": "Morocco",
+      "date": "2022-12-01T15:00:00"
+    },
+    {
+      "game_id": "3855",
+      "home": "Costa Rica",
+      "away": "Germany",
+      "date": "2022-12-01T19:00:00"
+    },
+    {
+      "game_id": "3832",
+      "home": "Tunisia",
+      "away": "Australia",
+      "date": "2022-11-26T10:00:00"
+    },
+    {
+      "game_id": "3833",
+      "home": "Poland",
+      "away": "Saudi Arabia",
+      "date": "2022-11-26T13:00:00"
+    },
+    {
+      "game_id": "3823",
+      "home": "Belgium",
+      "away": "Canada",
+      "date": "2022-11-23T19:00:00"
+    },
+    {
+      "game_id": "3834",
+      "home": "France",
+      "away": "Denmark",
+      "date": "2022-11-26T16:00:00"
+    },
+    {
+      "game_id": "3822",
+      "home": "Spain",
+      "away": "Costa Rica",
+      "date": "2022-11-23T16:00:00"
+    },
+    {
+      "game_id": "10504",
+      "home": "France",
+      "away": "Poland",
+      "date": "2022-12-04T15:00:00"
+    },
+    {
+      "game_id": "3835",
+      "home": "Argentina",
+      "away": "Mexico",
+      "date": "2022-11-26T19:00:00"
+    },
+    {
+      "game_id": "3847",
+      "home": "Iran",
+      "away": "United States",
+      "date": "2022-11-29T19:00:00"
+    },
+    {
+      "game_id": "3840",
+      "home": "Cameroon",
+      "away": "Serbia",
+      "date": "2022-11-28T10:00:00"
+    },
+    {
+      "game_id": "3824",
+      "home": "Switzerland",
+      "away": "Cameroon",
+      "date": "2022-11-24T10:00:00"
+    },
+    {
+      "game_id": "3837",
+      "home": "Belgium",
+      "away": "Morocco",
+      "date": "2022-11-27T13:00:00"
+    },
+    {
+      "game_id": "3851",
+      "home": "Saudi Arabia",
+      "away": "Mexico",
+      "date": "2022-11-30T19:00:00"
+    },
+    {
+      "game_id": "3817",
+      "home": "Denmark",
+      "away": "Tunisia",
+      "date": "2022-11-22T13:00:00"
+    },
+    {
+      "game_id": "3815",
+      "home": "United States",
+      "away": "Wales",
+      "date": "2022-11-21T19:00:00"
+    },
+    {
+      "game_id": "10517",
+      "home": "Argentina",
+      "away": "France",
+      "date": "2022-12-18T15:00:00"
+    },
+    {
+      "game_id": "3839",
+      "home": "Spain",
+      "away": "Germany",
+      "date": "2022-11-27T19:00:00"
+    },
+    {
+      "game_id": "10515",
+      "home": "France",
+      "away": "Morocco",
+      "date": "2022-12-14T19:00:00"
+    },
+    {
+      "game_id": "3813",
+      "home": "England",
+      "away": "Iran",
+      "date": "2022-11-21T13:00:00"
+    },
+    {
+      "game_id": "3828",
+      "home": "Wales",
+      "away": "Iran",
+      "date": "2022-11-25T10:00:00"
+    },
+    {
+      "game_id": "3848",
+      "home": "Australia",
+      "away": "Denmark",
+      "date": "2022-11-30T15:00:00"
+    },
+    {
+      "game_id": "3852",
+      "home": "Croatia",
+      "away": "Belgium",
+      "date": "2022-12-01T15:00:00"
+    },
+    {
+      "game_id": "10508",
+      "home": "Morocco",
+      "away": "Spain",
+      "date": "2022-12-06T15:00:00"
+    },
+    {
+      "game_id": "3818",
+      "home": "Mexico",
+      "away": "Poland",
+      "date": "2022-11-22T16:00:00"
+    },
+    {
+      "game_id": "3820",
+      "home": "Morocco",
+      "away": "Croatia",
+      "date": "2022-11-23T10:00:00"
+    },
+    {
+      "game_id": "3849",
+      "home": "Tunisia",
+      "away": "France",
+      "date": "2022-11-30T15:00:00"
+    }
+  ],
+  "schema_only_pilot": "Public kloppy10517 fixture inspected for schema; never a final-test game",
+  "test_policy": "No final-test labels/features/model scores accessed before candidate/code/checkpoint frozen. Score exactly one candidate versus frozen v3 once. No runner-up selection. Test is consumed after opening, even after failure.",
+  "intended_candidate": "Append 36 PFF games to existing29 team-head games (65 total), same108features/HGB capacity/team symmetry/50:50 blend. Original qD and decoder fixed. Label semantics and observed-only parser verified on training/dev before scoring.",
+  "development_gate": "At least .005 mean spellF1 gain on ten PFF dev games and no mean loss>.005 on any of five original19 cohorts; freeze one candidate only. All prior data are reused development, not fresh.",
+  "final_gate": "Mean whole-spell F1 gain>=.005, at least9/12 wins, positive mean gain in each of the two held-out groups. Paired whole-game95%bootstrap interval descriptive only: shared opponents and just2groups limit independence. Extra label-blind degradation must not regress by>.005.",
+  "label_eligibility": "PFF H/A/D references must be reconstructible from documented source events without predictor dependence; unknown remainsX. References are provider event proxies, not corrected competition tracking. If complete task labels cannot be validated, stop promotion rather than invent D or redefine endpoint after scores.",
+  "leakage_controls": [
+    "Separate raw positions and reference events; never expose event/possession fields to feature builder",
+    "Metadata periods/frame mapping must be independent of labels",
+    "No game IDs, team names or player identities as features",
+    "All augmentation siblings stay in one match split",
+    "No competition public/private GT fitting/tuning",
+    "Label-permutation unit test must leave features/predictions unchanged for fixed observed geometry/periods"
+  ],
+  "data_handling": "Only approved public/research data. Download position/event batches; no326GBvideo and no52GBbulk to20GiBfree disk. Keep raw hashes/source revisions and reproducible download/conversion commands."
+}
