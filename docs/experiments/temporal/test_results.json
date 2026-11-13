@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "command": "python -m unittest tests.test_temporal tests.test_v4 -v",
+  "tests": 8,
+  "coverage": [
+    "whole-game fold isolation",
+    "label-independent normalization and production predictions",
+    "period resets and team symmetry",
+    "unknown targets provide no gradient",
+    "frozen asset hashes and external-only whitelist",
+    "external reference ambiguity and geometry separation"
+  ]
+}

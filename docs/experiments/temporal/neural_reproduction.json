@@ -1,0 +1,17 @@
+{
+  "status": "PASS: identical full neural checkpoint after independent raw preparation and fitting",
+  "device": "Apple M4 MPS",
+  "seed": 20261113,
+  "updates": 1500,
+  "training_games": 29,
+  "fresh_cache": true,
+  "training_repeated": true,
+  "checkpoint_sha256": "d2628a2ddb790175f100e54d76c4e2aa89ebfce8179931e3c531d24c88816a90",
+  "repeat_checkpoint_sha256": "d2628a2ddb790175f100e54d76c4e2aa89ebfce8179931e3c531d24c88816a90",
+  "training_source": "tools/temporal_trial.py",
+  "commands": [
+    "MTAH_TEMPORAL_CACHE=/absolute/fresh/cache python tools/temporal_trial.py prepare --jobs 3",
+    "MTAH_TEMPORAL_CACHE=/absolute/fresh/cache python tools/temporal_trial.py fit --split full --device mps"
+  ],
+  "scope": "Neural branch only. Default submission generation uses frozen external-trained weights on CPU; clean inference reproduction is a separate check. Cross-backend training identity is not promised."
+}

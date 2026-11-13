@@ -26,6 +26,10 @@ if __name__=='__main__':
     targets={}
     for name in ['metrica_1','metrica_2']:
         with np.load(ROOT/'external/conv'/(name+'.npz')) as z:targets[name]=(z['ball'][::25,:2]-.5)*z['pitch']
+    from fresh_metrica_holdout import parse_tracking
+    source=ROOT/'external/holdout_metrica3'
+    m3,_,_=parse_tracking(source/'Sample_Game_3_metadata.xml',source/'Sample_Game_3_tracking.txt')
+    targets['metrica_3']=(m3['ball'][::25,:2]-.5)*np.asarray(m3['pitch'])
     d=atd.load();start=HALVES[0][1];targets['competition_automatic_tracking_only']=(d['ball'][start::25,:2]-.5)*np.array([105.3,68.])
     result={'purpose':'Heuristic eligibility screening, not an identity proof; no GT or model scores','rule':'Flag median ball-trajectory distance<8m across>=300 observed seconds; first30min, +/-180s, four axis reflections','comparisons':{name:screen(a,b) for name,b in targets.items()}}
     result['eligible_for_anonymous_research_diagnostic']=not any(v['potential_duplicate'] for v in result['comparisons'].values())

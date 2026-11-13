@@ -66,7 +66,7 @@ A later [team-ownership study](docs/experiments/team-context/REPORT.md) compared
 
 V3 expands team-head training to nineteen public games while retaining the v2 dead-ball channel and decoder. Nineteen whole-game exclusions select one fixed 50/50 blend before additional testing. On nine new European games, conditional H/A macroF1 improves **0.8203 → 0.8372**, nine wins, descriptive paired gain interval **[0.0134, 0.0209]**. These references lack D labels, so this is not full-match spellF1.
 
-On the prior ten SkillCorner confirmation games, full spellF1 improves **0.5524 → 0.6046**, ten wins; with added label-blind corruption, **0.4719 → 0.5156**, ten wins. This is a reused secondary cohort, not a pristine new holdout. Known matched-sensor performance changes **0.6432 → 0.6414**. The [expanded-training report](docs/experiments/expanded-team/REPORT.md) includes all four policies, source and split provenance, limitations and predeclared gates. External gates and both clean-source v3 runs passed. The verified local release package is v3; v1/v2 packages are archived.
+On the prior ten SkillCorner confirmation games, full spellF1 improves **0.5524 → 0.6046**, ten wins; with added label-blind corruption, **0.4719 → 0.5156**, ten wins. This is a reused secondary cohort, not a pristine new holdout. Known matched-sensor performance changes **0.6432 → 0.6414**. The [expanded-training report](docs/experiments/expanded-team/REPORT.md) includes all four policies, source and split provenance, limitations and predeclared gates. External gates and both clean-source v3 runs passed. These are historical v3 release results; v4 is evaluated below.
 
 ## More training data and overfit checks
 

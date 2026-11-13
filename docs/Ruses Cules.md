@@ -67,6 +67,8 @@ The candidate and full checkpoint were frozen before new-source scoring. Additio
 | MetricaSample3 |spellF1:0.5481→0.5527; extra gaps0.3976→0.4614|Previously v1-scored, not fresh; event-derived references, whole-stream prediction without annotation-derived half cuts |
 | Nine European SkillCorner games |conditionalH/A macroF1:0.8372→0.8410,8/9wins|Previously used in v3 validation; no D reference, not whole-match spellF1 |
 
+On the clean Metrica3 scenario, frame macroF1 slightly regresses (0.8109 to 0.8060), despite the spellF1 gain.
+
 Thus40screened games are evaluated, not40fresh independent tests. [Groningen/SciSports](https://github.com/MatKempeGroningen/WCSF_SolutionRoom) publishes a research sample with attribution requested and no explicit licence file; no raw files are redistributed or used to fit v4. Predictor coordinates/periods are independent of its reference flags. Contradictory source rows at110timestamps are markedX, excluding266/143431period frames; unknown holes affect spell boundaries. Raw-trajectory screens found no suspicious duplicates, but cannot prove anonymous identities. PFF64access is still pending and its future country-separated holdout is unopened.
 
 Full exclusions, per-game scores, source issues, fixed plans and deployment checks are in the [temporal report](experiments/temporal/REPORT.md). Long occlusions, incomplete players, ambiguous control and provider semantics remain failure modes. The method is offline and uses future context. Hidden competition quality and qualification probability are unknown.
@@ -81,6 +83,6 @@ Use Python3.12 and requirements-temporal.txt. The repository includes3.8MBof fro
 .venv/bin/python tools/reproduce.py --data-dir /absolute/path/to/data --method v4
 ```
 
-Default generation runs onCPU with frozen weights; it does not retrain. Two clean-source CPU generation checks are pending. Research neural training used deterministic MPS operations; optional raw-public-data preparation/fitting is documented in README. Raw-feature equality was checked, and independent neural retraining is being checked separately. Training artifacts need not match across devices; the submitted file is regenerated with the published frozen assets.
+Default generation runs onCPU with frozen weights; it does not retrain. Two clean-source CPU generation checks are pending. Research neural training used deterministic MPS operations; optional raw-public-data preparation/fitting is documented in README. Raw-feature equality was checked, and an independent full neural fit from freshly prepared raw public inputs produced the identical checkpoint SHA-256. See [the training repeat receipt](experiments/temporal/neural_reproduction.json). Training artifacts need not match across devices; the submitted file is regenerated with the published frozen assets.
 
 Competition materials, predictions and full local receipts remain outsideGit and are never sent to hostedLLMs. Publication and the organizer form are separate release steps; this document does not claim submission.

@@ -5,6 +5,7 @@
     .venv/bin/python run.py v1                  # бустинг на внешних матчах + Витерби на 4 состояния
     .venv/bin/python run.py v2                  # те же модели, декодер cost9 после внешней проверки
     .venv/bin/python run.py v3                  # v2 + командная модель на 19 внешних матчах
+    .venv/bin/python run.py v4                  # временная нейросеть + v3, фиксированные внешние веса, CPU
     .venv/bin/python run.py score out/*.csv     # оценить готовые файлы
     .venv/bin/python run.py summary             # сводка по трекингу (без сырых значений)
 
