@@ -1,0 +1,45 @@
+{
+  "selected_candidate": "expanded50",
+  "status": "All frozen gates pass",
+  "adopted": true,
+  "fresh_scores_seen": true,
+  "secondary_scores_seen": true,
+  "fresh_conditional_team_macroF1": {
+    "baseline": 0.8202717683466575,
+    "candidate": 0.8372091684532744,
+    "delta": 0.01693740010661693,
+    "descriptive_95ci": [
+      0.013368883574929966,
+      0.02094115502480174
+    ],
+    "wins": 9,
+    "losses": 0,
+    "ties": 0
+  },
+  "fresh_gate_pass": true,
+  "secondary_natural": {
+    "baseline": 0.5523787691069124,
+    "candidate": 0.6045716018857709,
+    "delta": 0.05219283277885861,
+    "descriptive_95ci": [
+      0.040848432183418645,
+      0.06282726977934128
+    ],
+    "wins": 10,
+    "losses": 0,
+    "ties": 0
+  },
+  "secondary_label_blind": {
+    "baseline": 0.47185863510311066,
+    "candidate": 0.515588242754479,
+    "delta": 0.04372960765136832,
+    "descriptive_95ci": [
+      0.03644896667169708,
+      0.050576271463623305
+    ],
+    "wins": 10,
+    "losses": 0,
+    "ties": 0
+  },
+  "secondary_gate_pass": true
+}

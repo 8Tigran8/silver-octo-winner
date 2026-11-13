@@ -1,0 +1,6 @@
+{
+  "about": "v3: original v2 dead/stacked team probabilities blended with a team-only head trained on nineteen public games; selected and confirmed externally.",
+  "selection_commit": "9bf76bd",
+  "evidence": "docs/experiments/expanded-team/REPORT.md",
+  "team_head": {"weight": 0.5, "gate": "all"}
+}

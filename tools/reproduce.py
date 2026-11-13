@@ -35,7 +35,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data-dir", type=Path, required=True)
     parser.add_argument("--jobs", type=int, choices=range(1, 9), default=2)
-    parser.add_argument("--method", choices=["v1", "v2"], default="v1")
+    parser.add_argument("--method", choices=["v1", "v2", "v3"], default="v1")
     args = parser.parse_args()
     data = args.data_dir.resolve()
     commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
@@ -46,11 +46,17 @@ def main():
     inputs = [data / "tactical" / ("BAR-ATH_tactical_atd." + ext) for ext in ("xml", "txt")]
     manifest = json.loads((ROOT / "tools/external_sources.json").read_text())
     inputs += [ROOT / "external" / item["path"] for item in manifest["files"]]
+    extra = []
+    if args.method == "v3":
+        names = set(json.loads((ROOT / "mtah/expanded_team_training.json").read_text())["skillcorner"])
+        extra = [item for item in json.loads((ROOT / "tools/skillcorner_sources.json").read_text())["files"]
+                 if item["path"].split("/")[1] in names]
+        inputs += [ROOT / "external" / item["path"] for item in extra]
     if any(not p.is_file() for p in inputs):
         parser.error("Required local tracking or pinned external inputs are missing")
     sys.path.insert(0, str(ROOT / "tools"))
     from fetch_external import check
-    if not all(check(ROOT / "external" / item["path"], item) for item in manifest["files"]):
+    if not all(check(ROOT / "external" / item["path"], item) for item in manifest["files"] + extra):
         parser.error("External source verification failed")
     references = json.loads((ROOT / "tools/reference_sources.json").read_text())
     if not all(check(ROOT / item["path"], item) for item in references["files"]):
@@ -77,7 +83,7 @@ def main():
                 with tarfile.open(archive) as source:
                     source.extractall(clean, filter="data")
                 (clean / "external").mkdir()
-                for dataset in ("idsse", "metrica"):
+                for dataset in (("idsse", "metrica", "skillcorner") if args.method == "v3" else ("idsse", "metrica")):
                     (clean / "external" / dataset).symlink_to(ROOT / "external" / dataset,
                                                               target_is_directory=True)
                 for script in ("tools/ext_idsse.py", "tools/ext_metrica.py"):

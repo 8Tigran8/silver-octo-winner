@@ -14,7 +14,7 @@ Deadline from the organizer's welcome email: **17 November 2026, 23:59 CET**.
 
 ## Install and prepare
 
-Use Python 3.12. Run the commands from the repository root. Full external source files take about 2.75 GB; conversions, features and training need additional disk space. Start with two workers on a machine with 16 GB RAM.
+Use Python 3.12. Run the commands from the repository root. The original public sources take about 2.75 GB; v3 adds roughly 0.9 GB of SkillCorner inputs. Conversions, features and training need additional disk space. Start with two workers on a machine with 16 GB RAM.
 
 ```bash
 python3.12 -m venv .venv
@@ -23,6 +23,7 @@ python3.12 -m venv .venv
 .venv/bin/python tools/ext_idsse.py
 .venv/bin/python tools/ext_metrica.py
 .venv/bin/python tools/fetch_reference.py
+.venv/bin/python tools/fetch_skillcorner.py --only-training
 ```
 
 `tools/external_sources.json` pins the public training source revisions, filenames, sizes and object hashes. The downloader verifies them. IDSSE is distributed under CC BY 4.0; Metrica sample-data asks users to acknowledge its source. See the source links in the manifest and [the technical draft](docs/Ruses%20Cules.md).
@@ -40,11 +41,11 @@ The v1 method uses these two files. It does not read the video, homography or Sm
 
 ```bash
 OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 \
-  .venv/bin/python run.py v2 --jobs 2 --output 'out/Ruses Cules.csv'
+  .venv/bin/python run.py v3 --jobs 2 --output 'out/Ruses Cules.csv'
 .venv/bin/python ref/official/evaluation/validate_submission.py 'out/Ruses Cules.csv'
 ```
 
-This retrains the original learned weights on the nine external matches and runs full-match inference with the externally selected v2 decoder. `run.py v1` retains the original cost-6 decoder; v2 uses cost 9. Features, learned model settings and duration constraints are unchanged. It writes exactly one CSV and checks the local CSV contract. The second command uses the unmodified official validator pinned to `f8f2629ff1e0985f81d7e59d8413678514ee1530`. A format PASS does not measure prediction quality.
+This retrains the original two-stage models on nine public games, adds a team-only head trained on nineteen public games, and blends the conditional team probabilities 50/50. The original dead channel and cost-9 duration decoder remain. `run.py v1` and `run.py v2` retain their earlier behavior. It writes exactly one CSV and checks the local CSV contract. The second command uses the unmodified official validator pinned to `f8f2629ff1e0985f81d7e59d8413678514ee1530`. A format PASS does not measure prediction quality.
 
 Prediction does not load or score the public ground truth. An explicit `run.py score ...` command remains available for a pipeline correctness check; do not use it to select models or tune parameters.
 
@@ -53,7 +54,7 @@ Prediction does not load or score the public ground truth. An explicit `run.py s
 Commit the intended source changes, then run:
 
 ```bash
-.venv/bin/python tools/reproduce.py --data-dir /absolute/path/to/data --method v2 --jobs 2
+.venv/bin/python tools/reproduce.py --data-dir /absolute/path/to/data --method v3 --jobs 2
 ```
 
 The verifier exports the committed source twice, independently converts the pinned raw external matches, retrains the model in each copy, validates both CSVs with the official validator, compares their SHA-256 hashes and checks that the input files did not change. CSVs, logs and a receipt stay under `reports/reproduction/`. It does not evaluate the public window. Both runs use the installed pinned environment; this does not establish reproducibility across operating systems or library builds.
@@ -79,7 +80,13 @@ On the ten confirmation games, v2 achieved **spellF1 0.5524 versus v1 0.5451**, 
 
 ## Further team-head experiments
 
-A later [team-ownership study](docs/experiments/team-context/REPORT.md) compared 17 policies: observed ball-contact context, team-only sensor augmentation, matched-head controls and missing-ball gating. The best reused-development composite gain was +0.0036, below the frozen +0.005 replacement threshold. **V2 remains the submission candidate.** Nine additional European matches were hash-verified and prepared for conditional H/A validation but remain unscored; their ownership annotations do not provide reliable D ground truth. No production inference settings changed in this study.
+A later [team-ownership study](docs/experiments/team-context/REPORT.md) compared 17 policies: observed ball-contact context, team-only sensor augmentation, matched-head controls and missing-ball gating. The best reused-development composite gain was +0.0036, below the frozen +0.005 replacement threshold. That study retained v2. The later expanded-training study below evaluates the nine additional European matches once for conditional H/A validation; their ownership annotations do not provide reliable D ground truth. No production inference settings changed in this study.
+
+## Expanded team-head candidate v3
+
+V3 expands team-head training to nineteen public games while retaining the v2 dead-ball channel and decoder. Nineteen whole-game exclusions select one fixed 50/50 blend before additional testing. On nine new European games, conditional H/A macroF1 improves **0.8203 → 0.8372**, nine wins, descriptive paired gain interval **[0.0134, 0.0209]**. These references lack D labels, so this is not full-match spellF1.
+
+On the prior ten SkillCorner confirmation games, full spellF1 improves **0.5524 → 0.6046**, ten wins; with added label-blind corruption, **0.4719 → 0.5156**, ten wins. This is a reused secondary cohort, not a pristine new holdout. Known matched-sensor performance changes **0.6432 → 0.6414**. The [expanded-training report](docs/experiments/expanded-team/REPORT.md) includes all four policies, source and split provenance, limitations and predeclared gates. External gates passed; full clean-source v3 verification is in progress. Current local release package stays v2 until those checks pass.
 
 ## Review status
 

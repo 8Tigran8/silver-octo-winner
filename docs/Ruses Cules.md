@@ -1,106 +1,74 @@
 # Ruses Cules: technical method
 
-**V2 technical and external verification completed, 12 November 2026.** Two clean-source runs regenerated the same team CSV from raw inputs and passed the official format checks. V2 uses the original v1 learned models and externally confirmed cost-9 decoding. Competition submission and repository publication remain separate release steps.
+**V3 candidate, 13 November 2026. External validation passed; clean-source reproduction is in progress.** V3 keeps the original dead-ball model and adds a team-only head trained on nineteen public matches. Repository publication and competition submission are separate release steps.
 
-## Approach
+## Method and inputs
 
-We use tabular boosting to work with the supplied numerical tracking and missing observations without rebuilding a pixel-level detector or persistent player identities. The temporal stack and state decoder address possession continuity that a nearest-player rule cannot represent. We retain the v1 learned models and features. The selected v2 changes decoder transition costs using external development and confirmation matches only.
+The command reads only the competition tactical EPTS XML/TXT. It maps input frame IDs 1..199319 to output frames 0..199318 and converts normalized positions to metres. Track slots are fragments, not persistent player identities. V3 does not use the supplied video, broadcast, homography or Smart Tagging. No hand correction or annotation of the provided match enters the method.
 
-We estimate per-frame probabilities from tracking, refine them with temporal context and decode a sequence of possessions and stoppages. Two histogram gradient boosting classifiers estimate dead-ball probability and home-team possession conditional on live play. Training and inference include swapped-team features; we average direct and swapped predictions to enforce team symmetry.
-
-`mtah/features2.py` produces 87 features: visibility, ball gaps, interpolated ball position and movement, distance to the two nearest players of each team, nearby player counts, team shape, speeds, and temporal summaries. Interpolation supplies features alongside explicit gap indicators; it is not an observed ball position. Team attack direction is inferred from average team positions within each half.
-
-The first stage uses `HistGradientBoostingClassifier`: 250 iterations, learning rate 0.08, at most 31 leaves, minimum 200 samples per leaf, L2 regularization 1.0 and 128 bins. We disable early stopping and fix random seeds. We train on every fourth frame and include swapped-team copies.
-
-The second stage consumes the first-stage probability logits, centered temporal means and past/future shifts. Its classifiers use 150 iterations, at most 15 leaves and minimum 400 samples per leaf. Its training inputs are first-stage predictions produced while excluding the predicted external match from first-stage training. We then fit first-stage models on all external matches for competition inference.
-
-The decoder has four internal states: H, A, dead-after-H and dead-after-A. The latter two remember the owner before a stoppage and both produce D. Expanded-state Viterbi imposes a one-second minimum duration before leaving a state; the final segment may be shorter at a half boundary. It aggregates five frames per decoding step. H/A transitions and entering/leaving dead ball have cost 9.0 in v2; the original v1 uses 6.0. Restart snapping is disabled.
-
-## Assets
-
-Competition inference reads only `tactical/BAR-ATH_tactical_atd.xml` and `.txt`. It maps tracking frame IDs 1..199319 onto output frames 0..199318, converts normalized pitch positions to meters and treats track slots as fragments rather than persistent player identities.
-
-The v1 path does not use the provided video, homography, broadcast recording or Smart Tagging. Earlier experimental modules remain in the repository; they are not part of the documented v1 command. We do not claim to have benchmarked every unused asset.
-
-## External training data and labels
-
-We converted 1,288,806 labelled frames across nine external matches before frame subsampling and team-swap augmentation:
-
-| Source | Matches | Label source |
-|---|---|---|
-| IDSSE / DFL / Sportec Solutions | J03WMX, J03WN1, J03WOH, J03WOY, J03WPY, J03WQQ, J03WR9 | Provider `BallStatus` and `BallPossession` fields in tracking exports; dead status maps to D, otherwise the possession team maps to H/A |
-| Metrica Sports sample-data | Sample_Game_1 and Sample_Game_2 | Provider event annotations; `tools/ext_metrica.py` derives possession/stoppage intervals from passes, recoveries, carries, shots, ball-out, fouls and restarts |
-
-The original labels come from the named data providers; we did not independently audit their annotation workflows. Our converters derive class labels automatically from those fields. Metrica event-derived labels are a different proxy from corrected tracking ownership and can contain timing and semantic differences.
-
-IDSSE source: [PySport mirror](https://huggingface.co/datasets/pysport/idsse-data), revision `a715a38dfbaf5f58e431727c2b78d174101a703c`; [Bassek et al., Scientific Data, 2025](https://doi.org/10.1038/s41597-025-04505-y), CC BY 4.0. Metrica source: [sample-data](https://github.com/metrica-sports/sample-data), revision `e706dd506b360d69d9d123d5b8026e7294b13996`; we acknowledge Metrica Sports as required by its README. The manifest records each input file's immutable URL and integrity hash.
-
-`mtah/degrade.py` introduces deterministic ball dropouts, position/speed noise and player-track fragmentation into external tracking. The target visibility and slot counts use public organizer descriptions. Other degradation settings are modeling assumptions or unsupervised statistics of the supplied tracking, not hand labels. The uploaded configuration uses degradation mode v2 and seed 0.
-
-SkillCorner Open Data supplies another 20 matches for validation only, under MIT with attribution to SkillCorner/PySport, revision `4340d274572876239c154c90bc507a9b3250a656`. We fixed ten development and ten confirmation games before scoring. Automatic possession-phase intervals supply H/A proxy labels, their complement inside metadata periods supplies D, and phase intervals are clipped to their declared period. Only detected tracking positions enter features; extrapolated positions and possession annotations do not. We resample adjacent finite observations from 10 to 25 Hz while preserving gaps. These labels and sensors differ from the competition. None of these 20 games trains learned weights.
-
-## Possession rules
-
-We let the temporal model resolve loose balls and contacts rather than change possession after each nearest-player change. This is an approximation to controlled possession; the model has no referee signal. A dead-ball segment separates two possessions even if the same team restarts. X marks frames outside the published half boundaries. The second-half kickoff frame 113742 comes from the organizer's public starter code, rather than manual inspection; the earlier graded frames of that half receive D.
-
-## Evaluation and limitations
-
-Decoder optimization matched exhaustive enumeration on 60 short synthetic sequences. The local scorer reproduced the organizer's four published baseline results. On the review machine (Apple Silicon, 16 GB RAM, Python 3.12), both training stages completed on all nine external matches in 578.182 seconds using two worker processes and single-thread fitting. That training preflight read no competition input or public GT. These checks establish implementation consistency, not competitive accuracy. Final quality is unknown until the organizer evaluates the hidden full-match labels.
-
-A fixed-configuration external audit used nested match splits across nine games: first-stage test predictions exclude the outer game, and each inner first-stage fit excludes both the outer game and its inner prediction game. Mean official spellF1 was **0.6466** versus **0.3244** for the organizer baseline, with nine wins in nine matches. The descriptive paired 95% bootstrap interval for the difference was **[0.3062, 0.3400]**; macroF1 was 0.8961 versus 0.7528. Removing the stack gave 0.6401 spellF1; removing Viterbi from the stacked model gave 0.4871. The full model predicted 76% as many possession spells as the reference, so merging separate possessions remains a weakness.
-
-Across the same nine games, spellF1 was 0.5011 versus baseline 0.1874 under stronger corruption, 0.5413 versus 0.2215 with label-blind gaps, and 0.6788 versus 0.3284 on clean inputs. A separate public Sample_Game_3, absent from the implemented training corpus, scored 0.6837 versus 0.3598 with frozen full-nine-game weights and clean tracking; its labels are event-derived proxies. No training or retuning used that game. Full protocols, per-game results and ablations are in the [external audit](experiments/quality-audit/REPORT.md).
-
-After the earlier v1 audit, we compared nine decoder configurations and two learned sensor-mixture candidates on development data. We froze the cost-9 decoder before scoring the ten new confirmation games. On those games, v2 spellF1 was **0.5524 versus v1 0.5451**, with nine wins and one loss; the descriptive paired 95% interval for the gain was **[0.0044, 0.0100]**. Extra label-blind corruption gave 0.4719 versus 0.4613, ten wins. The known matched-sensor cohort fell from 0.6466 to 0.6432, so the change is a domain trade-off, not a universal gain. The candidate passed a promotion rule frozen before confirmation. The [new-provider report](experiments/skillcorner/REPORT.md) includes the negative sensor-mixture results, protocols and per-game metrics. No candidate selection in this cycle read competition public GT.
-
-We also tested 17 later team-head/context/augmentation/gating policies on development data. None cleared the frozen replacement criterion; v2 remains unchanged. The [team-head report](experiments/team-context/REPORT.md) includes negative results, training exclusions and a prepared, unscored nine-match European dataset supporting conditional H/A references only.
-
-Method provenance and limitations:
-
-- The model author declares that v1 model/parameter selection used external matches only; the configuration records selection on 10 November. Our reproduction does not load the competition public GT, choose between variants or retune parameters. The author's explanation of version choice is still being clarified in team review; this declaration is not an independent audit of earlier experiments. No competitive score is asserted here.
-- The historical `tools/exp_v1.py::stack_one` evaluation can include the outer test match in first-stage fits for inner predictions; its scores are not valid held-out evidence. The new audit in `tools/quality_audit.py` excludes the outer test match throughout both learned stages. Its nine-game scores remain retrospective because the author had already used these games for configuration selection. Matched v2 corruption conditions on external live/dead labels; clean and label-blind scenarios test other input assumptions. Small samples, simulated corruption and differing annotation processes limit transfer to the competition match.
-- Long ball gaps, missing players and domain differences between training and competition tracking can create false stoppages or fragment possessions. Interpolation and temporal windows may also blur transition timing. Offline features use future frames and cannot serve a live causal feed unchanged.
-- Exact equality across platforms is not established. Single-thread model fitting, pinned libraries and fixed random seeds are controls; the two-clean-copy check tests the installed environment.
-
-We do not hand-label or hand-correct the supplied match. We keep competition assets, frame-level intermediate arrays, output CSVs and logs local and outside the public repository. We do not send these assets or extracts to hosted LLMs.
-
-## Verified v2 output
-
-Two exports of committed source `89737c386949c8dbda69bab95e59b02045194afa` independently converted all nine raw external matches, retrained both learned stages and generated the complete competition file. Both passed the pinned official validator and matched the separately generated v2 preflight CSV. Run times including conversion, training and inference were 351.340 s and 349.830 s with four worker processes. Input hashes remained unchanged. Later report-only changes do not alter this tested code or dependencies. The [sanitized receipt](experiments/skillcorner/v2_reproduction.json) records both runs; full local receipts include private paths and stay outside the repository.
-
-Current v2 team CSV SHA-256:
+We choose tabular boosting because the input already supplies numerical tracking, with missing ball/player observations and fragmented identities. The pipeline has two probability paths followed by a temporal decoder:
 
 ```text
-a1dafd2eb1e4b4ea62ec7edbed543f4df6be1326ec404457f0ad29a5cac5ef81
+Tracking -> 87 geometry/gap/motion features -> nine-game boosting + temporal stack -> qD, qH
+             + 21 observed-contact features -> nineteen-game team-only boosting -> rH
+                                                qD, 0.5*qH + 0.5*rH -> Viterbi -> CSV
 ```
 
-## Reproduction and verification
+The original path uses two `HistGradientBoostingClassifier` models: dead-ball probability and home possession conditional on live play. Each uses 250 iterations, learning rate 0.08, at most 31 leaves, minimum 200 samples per leaf, L2=1 and 128 bins. The temporal stack consumes first-stage logits, centered means and past/future shifts; its classifiers use 150 iterations, at most 15 leaves and minimum 400 samples per leaf. First-stage out-of-match predictions train this stack; final first-stage weights fit all nine original games. Seeds are fixed at zero, early stopping disabled, fitting single-threaded.
 
-Follow the installation and data preparation commands in README, then run:
+`mtah/features2.py` supplies 87 features: visibility/gap durations, ball position and speed, nearest-player distances/counts by team, team shape/activity and temporal summaries. Interpolation supplies features alongside gap indicators, not observations. Team attack direction is inferred from mean team positions within each half.
+
+`mtah/possession_context.py` adds 21 features to the new team-only classifier: previous/following visible-frame team-distance margins, nearest distances/counts and estimated ball speeds; decayed endpoint evidence; endpoint agreement/change; visible-only rolling margins. These carries/windows reset at period boundaries. This classifier uses the original 250-iteration settings. Training and inference include team swaps; averaging direct and swapped predictions enforces home/away symmetry. We retain the original stacked qD and blend the two conditional home probabilities with fixed equal weights. No new dead-ball head is trained from SkillCorner labels.
+
+The duration-constrained Viterbi decoder has H, A, dead-after-H and dead-after-A internal states; both dead states output D. It aggregates five frames per step, uses transition costs 9 and one-second minimum live/dead durations. A final segment may truncate at a period boundary. Restart snapping is disabled. Original v1/v2 commands remain available.
+
+## Training data and label provenance
+
+The original path trains on nine matches, with 1,288,806 H/A/D-labelled frames before sampling. The added head uses 1,495,434 unique live-team frames across nineteen matches, producing 747,644 sampled examples after sensor augmentation and team swaps.
+
+| Public source | Games and amount | Labels and use |
+|---|---|---|
+| IDSSE / DFL / Sportec | Seven: J03WMX, J03WN1, J03WOH, J03WOY, J03WPY, J03WQQ, J03WR9 | Provider tracking `BallStatus` / `BallPossession`; original path uses H/A/D, new head uses H/A only |
+| Metrica Sports sample-data | Sample_Game_1 and Sample_Game_2; together with DFL, 735,744 live-team frames | Provider events automatically converted into possession/stoppage intervals; event-derived proxies differ from corrected tracking |
+| SkillCorner Open Data | Ten 2024/25 development matches listed in `mtah/expanded_team_training.json`; 759,690 live-team frames | Provider automatic possession-phase intervals supply H/A; these train only the new team head |
+
+Original input sampling uses every fourth frame. The new head uses matched-seed0 / label-blind-seed1 / clean versions of each original game, stride 12 each, and natural / label-blind-seed7 versions of each SkillCorner game, stride 8 each. `mtah/degrade.py` simulates ball gaps, position/speed noise and player fragmentation. Matched v2 simulation uses external live/dead labels to model sensor dropout; label-blind simulation chooses gaps from geometry. These are modelling assumptions, not evidence of the target's true label distribution.
+
+IDSSE: [PySport mirror](https://huggingface.co/datasets/pysport/idsse-data), revision `a715a38dfbaf5f58e431727c2b78d174101a703c`, [Bassek et al. (2025)](https://doi.org/10.1038/s41597-025-04505-y), CC BY 4.0. Metrica: [sample-data](https://github.com/metrica-sports/sample-data), revision `e706dd506b360d69d9d123d5b8026e7294b13996`; we acknowledge Metrica Sports. SkillCorner: [Open Data](https://github.com/SkillCorner/opendata), revision `4340d274572876239c154c90bc507a9b3250a656`, MIT; credit SkillCorner/PySport. The source manifests pin URLs, sizes and hashes. Provider annotation workflows were not independently audited.
+
+SkillCorner input uses only detected positions. Adjacent finite observations resample from 10 to 25 Hz, preserving missing data. Automatic phase intervals intersect their declared metadata period. Their complement is a D proxy for evaluation, not a target copied into predictions. Neither phase labels nor tracking possession fields enter model features. The other ten modern SkillCorner games and nine European 2019/20 games are validation-only; the latter have H/A references only where automatic ownership is known, with unknown ownership X and no invented D labels.
+
+## Possession rules and evaluation
+
+The model approximates controlled possession from geometry and temporal evidence; nearest contact alone does not force a hand-over. A D interval separates possessions even if the same team restarts. Outside published halves we output X. The public starter's second-half kickoff frame 113742 supplies the boundary; earlier graded frames of that half receive D. This is organizer-provided alignment, not a hand-labelled rule.
+
+We fit twenty new heads: one on all nineteen games and nineteen leave-one-whole-game-out heads, excluding every augmentation of the scored game. Original-game baseline stack probabilities use the previous nested exclusions. We select among four fixed blends using development data, freeze one candidate, then evaluate it once on the nine European games. The protocol, exclusions, hashes and per-game results are in the [expanded-training report](experiments/expanded-team/REPORT.md).
+
+| Validation cohort | Metric | V2 | V3 | Scope |
+|---|---|---:|---:|---|
+| Nine new European games | Conditional H/A macroF1 | 0.8203 | 0.8372 | 9/9 wins; paired descriptive 95% gain interval [0.0134, 0.0209]; no D reference |
+| Prior ten SkillCorner confirmation games | Whole-spell F1 | 0.5524 | 0.6046 | 10/10 wins; gain interval [0.0408, 0.0628]; reused secondary cohort |
+| Same ten with extra label-blind corruption | Whole-spell F1 | 0.4719 | 0.5156 | 10/10 wins; reused secondary cohort |
+
+The selected blend passed the predeclared development and confirmation gates. Known matched-sensor spellF1 decreases slightly, 0.6432 to 0.6414. The previous seventeen context/augmentation policies did not clear their selection gate and are not the submitted method. Earlier v1/v2 results and negative experiments remain documented in the linked reports.
+
+These sources have different sensors and label semantics. Development reused known games and does not independently validate the complete historical hyperparameter-selection process. The European endpoint tests known-live H/A predictions, not full-match spellF1 or dead-ball accuracy. The secondary ten games were previously used to confirm v2; they were not training inputs for either method, but are not pristine new data. Intervals resample whole games, 10,000 draws, seed 20261113, and are descriptive. No hidden-match quality or qualification probability is claimed.
+
+The original model author declares external-only parameter selection; this is not an independent audit of all historical version choices. The historical non-nested stack evaluation is blocked by default; current estimator exclusions are recorded. No competition public GT is used to fit or select v3. Long occlusions, ambiguous contacts and domain differences remain failure modes. Offline features use future frames and require redesign for live causal use.
+
+## Reproduction and technical checks
+
+Use Python 3.12 and the pinned requirements from README, fetch/convert the original nine public games, fetch the ten extra training games with `tools/fetch_skillcorner.py --only-training`, and obtain the private tactical XML/TXT from the organizer.
 
 ```bash
 OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 \
-  .venv/bin/python run.py v2 --jobs 2 --output 'out/Ruses Cules.csv'
+  .venv/bin/python run.py v3 --jobs 2 --output 'out/Ruses Cules.csv'
 .venv/bin/python ref/official/evaluation/validate_submission.py 'out/Ruses Cules.csv'
-.venv/bin/python tools/reproduce.py --data-dir /absolute/path/to/data --method v2 --jobs 2
+.venv/bin/python tools/reproduce.py --data-dir /absolute/path/to/data --method v3 --jobs 2
 ```
 
-The main command retrains from the pinned external inputs. The reproduction command starts twice from committed source and raw external inputs, checks both output files and records hashes.
+The command retrains both original stages and the new nineteen-game head, then writes exactly 199,319 ordered `frame,label` rows. The verifier exports committed source twice, independently converts raw inputs, retrains, validates and compares CSV bytes while checking input hashes. It never scores the competition public window. Matching bytes on the installed pinned environment do not establish equality across platforms.
 
-Original v1 verified source: `538f43473421aefe7aa10b457b957179bd0915dd`. The v2 path retains the original training code, inference dependencies and original training-source manifest, with a separate decoder configuration. Both runs independently converted all nine external matches and retrained both model stages; they shared the installed pinned Python environment and the same source input locations. Input SHA-256 hashes remained unchanged.
+V3 preflight passed the format check. Setting the added-head weight to zero reproduced the verified v2 CSV byte for byte. Full clean-source v3 verification is pending. The previous [v2 clean-run receipt](experiments/skillcorner/v2_reproduction.json) remains available; no v2 verification is presented as v3 verification.
 
-| Verification | Result |
-|---|---|
-| Real-input baseline alignment | Byte-identical to organizer `baseline_smooth50.csv` |
-| Clean-source run 1 | Official format PASS; 647.224 s including conversion, training and inference |
-| Clean-source run 2 | Official format PASS; 667.945 s including conversion, training and inference |
-| Output contract | 199,319 ordered rows, exact `frame,label` header, H/A/D/X labels |
-| Comparison with author's file | Both clean outputs match the author's supplied SHA-256 |
-
-Original v1 CSV SHA-256 (v2 has a separate receipt):
-
-```text
-4d767cd5d677c0dc3ceee7d716cf00e8f10b48920ae0e35eccf61ac1cf33db6c
-```
-
-These checks establish file validity and exact regeneration. They do not measure hidden-match prediction quality. Keep the full receipt local because it includes private input paths and hashes.
+Competition materials, intermediates, outputs and full receipts stay local and outside the public repository. We do not send match materials or extracts to hosted LLMs. Submission and repository publication require their separate release steps.

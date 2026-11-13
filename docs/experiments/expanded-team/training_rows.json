@@ -1,0 +1,173 @@
+{
+  "skillcorner__2007448": {
+    "game": "skillcorner/2007448",
+    "plan_sha256": "0f36291a4259f78b448d1d9bab0ca54c1b1b014a55e2cc0355449927296c5592",
+    "rows_sha256": "91aa2ddc2c05b1de4fc065db62e1a74825eac4edd147453c1a4c35c0bfe481a9",
+    "rows": 36512,
+    "columns": 108,
+    "home_examples": 18256,
+    "away_examples": 18256
+  },
+  "original__idsse_J03WOH": {
+    "game": "original/idsse_J03WOH",
+    "plan_sha256": "0f36291a4259f78b448d1d9bab0ca54c1b1b014a55e2cc0355449927296c5592",
+    "rows_sha256": "fe800fbed8132672a3ca706020970fe505ff1c5f668357b8c22893510f8fa916",
+    "rows": 35976,
+    "columns": 108,
+    "home_examples": 17988,
+    "away_examples": 17988
+  },
+  "skillcorner__2010085": {
+    "game": "skillcorner/2010085",
+    "plan_sha256": "0f36291a4259f78b448d1d9bab0ca54c1b1b014a55e2cc0355449927296c5592",
+    "rows_sha256": "61f5b54f643e7ca61fb5e3b5378cde56c9af9b24633350576249e721f4604cd0",
+    "rows": 40440,
+    "columns": 108,
+    "home_examples": 20220,
+    "away_examples": 20220
+  },
+  "skillcorner__2015213": {
+    "game": "skillcorner/2015213",
+    "plan_sha256": "0f36291a4259f78b448d1d9bab0ca54c1b1b014a55e2cc0355449927296c5592",
+    "rows_sha256": "76c25a01d7f830d4a4dcbd07280e15edef862ad0af94ca0385f0f1f53dd206ac",
+    "rows": 38000,
+    "columns": 108,
+    "home_examples": 19000,
+    "away_examples": 19000
+  },
+  "original__metrica_1": {
+    "game": "original/metrica_1",
+    "plan_sha256": "0f36291a4259f78b448d1d9bab0ca54c1b1b014a55e2cc0355449927296c5592",
+    "rows_sha256": "eb575e4df4892372a4d7e0a97763e7d5544ae305b5bdf3a3089d62d9505e1281",
+    "rows": 43140,
+    "columns": 108,
+    "home_examples": 21570,
+    "away_examples": 21570
+  },
+  "skillcorner__1925299": {
+    "game": "skillcorner/1925299",
+    "plan_sha256": "0f36291a4259f78b448d1d9bab0ca54c1b1b014a55e2cc0355449927296c5592",
+    "rows_sha256": "fb443cd05bcebd8cc1cb425a3db7fe0a43fb5d477970f9f965593e38c01fc0cc",
+    "rows": 44568,
+    "columns": 108,
+    "home_examples": 22284,
+    "away_examples": 22284
+  },
+  "skillcorner__1996436": {
+    "game": "skillcorner/1996436",
+    "plan_sha256": "0f36291a4259f78b448d1d9bab0ca54c1b1b014a55e2cc0355449927296c5592",
+    "rows_sha256": "f61a9fae34f44eb5d0615802130ed81fa68cd929aac3a9b2fbb4732cb9cf476a",
+    "rows": 33792,
+    "columns": 108,
+    "home_examples": 16896,
+    "away_examples": 16896
+  },
+  "skillcorner__2013725": {
+    "game": "skillcorner/2013725",
+    "plan_sha256": "0f36291a4259f78b448d1d9bab0ca54c1b1b014a55e2cc0355449927296c5592",
+    "rows_sha256": "6087ea102ac6db5d70d6614f500bae12752ccca3a88e58f32f542e319d109e24",
+    "rows": 38908,
+    "columns": 108,
+    "home_examples": 19454,
+    "away_examples": 19454
+  },
+  "original__idsse_J03WQQ": {
+    "game": "original/idsse_J03WQQ",
+    "plan_sha256": "0f36291a4259f78b448d1d9bab0ca54c1b1b014a55e2cc0355449927296c5592",
+    "rows_sha256": "30cbfe347051b7a3b554bfd83bf3b6faad8433e4827276aee2337f47f30b80ed",
+    "rows": 42216,
+    "columns": 108,
+    "home_examples": 21108,
+    "away_examples": 21108
+  },
+  "skillcorner__2006229": {
+    "game": "skillcorner/2006229",
+    "plan_sha256": "0f36291a4259f78b448d1d9bab0ca54c1b1b014a55e2cc0355449927296c5592",
+    "rows_sha256": "6ca647a6be20f69d411bbc81c57194d52fe7f4f51fa261b7f6cd6c5692974004",
+    "rows": 40680,
+    "columns": 108,
+    "home_examples": 20340,
+    "away_examples": 20340
+  },
+  "original__idsse_J03WR9": {
+    "game": "original/idsse_J03WR9",
+    "plan_sha256": "0f36291a4259f78b448d1d9bab0ca54c1b1b014a55e2cc0355449927296c5592",
+    "rows_sha256": "8dda2b1f2478fe57d849270dfafda14d6434e2552e0e293c6b2b6cc7b9ffd1c9",
+    "rows": 42630,
+    "columns": 108,
+    "home_examples": 21315,
+    "away_examples": 21315
+  },
+  "original__idsse_J03WN1": {
+    "game": "original/idsse_J03WN1",
+    "plan_sha256": "0f36291a4259f78b448d1d9bab0ca54c1b1b014a55e2cc0355449927296c5592",
+    "rows_sha256": "09c6ab011a50bc83f134df346d3990a7003e381bd608df04351bb2f51253cd10",
+    "rows": 34164,
+    "columns": 108,
+    "home_examples": 17082,
+    "away_examples": 17082
+  },
+  "original__idsse_J03WOY": {
+    "game": "original/idsse_J03WOY",
+    "plan_sha256": "0f36291a4259f78b448d1d9bab0ca54c1b1b014a55e2cc0355449927296c5592",
+    "rows_sha256": "04a872423143a19b95c3571876df8dd979e6c38d592929d67a698c2fcb9aad4c",
+    "rows": 38148,
+    "columns": 108,
+    "home_examples": 19074,
+    "away_examples": 19074
+  },
+  "skillcorner__2011166": {
+    "game": "skillcorner/2011166",
+    "plan_sha256": "0f36291a4259f78b448d1d9bab0ca54c1b1b014a55e2cc0355449927296c5592",
+    "rows_sha256": "a4de80e7cc86ae96735c63c7f5848776ddb957e59c7b1fb102e80c1ada452ed6",
+    "rows": 33900,
+    "columns": 108,
+    "home_examples": 16950,
+    "away_examples": 16950
+  },
+  "original__idsse_J03WMX": {
+    "game": "original/idsse_J03WMX",
+    "plan_sha256": "0f36291a4259f78b448d1d9bab0ca54c1b1b014a55e2cc0355449927296c5592",
+    "rows_sha256": "2466b2defc302a6de141305c7dba63da7e817e99696c91ee0dada6dc3b2554bd",
+    "rows": 42666,
+    "columns": 108,
+    "home_examples": 21333,
+    "away_examples": 21333
+  },
+  "skillcorner__2017461": {
+    "game": "skillcorner/2017461",
+    "plan_sha256": "0f36291a4259f78b448d1d9bab0ca54c1b1b014a55e2cc0355449927296c5592",
+    "rows_sha256": "e909b225e6172c42029534135ebcd180e9b011862d757cac9388e6055094be4a",
+    "rows": 35736,
+    "columns": 108,
+    "home_examples": 17868,
+    "away_examples": 17868
+  },
+  "original__idsse_J03WPY": {
+    "game": "original/idsse_J03WPY",
+    "plan_sha256": "0f36291a4259f78b448d1d9bab0ca54c1b1b014a55e2cc0355449927296c5592",
+    "rows_sha256": "a40d3855ba738960fe477b16ae7bdfbc10c7d3f08ecfe81737f440d8e3718cca",
+    "rows": 40746,
+    "columns": 108,
+    "home_examples": 20373,
+    "away_examples": 20373
+  },
+  "original__metrica_2": {
+    "game": "original/metrica_2",
+    "plan_sha256": "0f36291a4259f78b448d1d9bab0ca54c1b1b014a55e2cc0355449927296c5592",
+    "rows_sha256": "56fa4373b984f1154cf2f2c5c66d6d2037af689598372cffd9841ff2255b9001",
+    "rows": 48198,
+    "columns": 108,
+    "home_examples": 24099,
+    "away_examples": 24099
+  },
+  "skillcorner__1959846": {
+    "game": "skillcorner/1959846",
+    "plan_sha256": "0f36291a4259f78b448d1d9bab0ca54c1b1b014a55e2cc0355449927296c5592",
+    "rows_sha256": "e1607aa6f288b7018756b695c91a7e87703c176c2002e4cfae17166925b921f5",
+    "rows": 37224,
+    "columns": 108,
+    "home_examples": 18612,
+    "away_examples": 18612
+  }
+}

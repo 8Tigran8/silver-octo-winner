@@ -1,6 +1,8 @@
 """Public-game team-head training; competition observations never enter fitting."""
 from pathlib import Path
 import json
+from multiprocessing import get_context
+import tempfile
 import numpy as np
 from . import degrade,features2,metrics,possession_context as context
 from .config import ROOT
@@ -77,3 +79,49 @@ def taper_weight(seen,segments,scale=1.):
 def blend_team(old,new,seen,segments,spec):
     weight=(taper_weight(seen,segments,spec["weight"]) if spec["gate"]=="taper_1s" else spec["weight"])
     return (1-weight)*old+weight*new
+
+
+def _prepare_rows_job(item):
+    game,directory=item
+    x,y,cols=training_rows(game)
+    path=Path(directory)/(game.replace("/","__")+".npz")
+    np.savez(path,X=x,y=y,cols=np.array(cols))
+    return str(path)
+
+
+def train(workers=2,log=print):
+    """Rebuild the expanded head from whitelisted public raw/converted sources."""
+    from threadpoolctl import threadpool_limits
+    from .config import CACHE_DIR
+    names=games();cache=Path(CACHE_DIR);cache.mkdir(parents=True,exist_ok=True)
+    if workers<1:raise ValueError("workers must be positive")
+    with tempfile.TemporaryDirectory(prefix="expanded-team-",dir=cache) as directory:
+        with get_context("spawn").Pool(min(workers,len(names))) as pool:
+            paths=pool.map(_prepare_rows_job,[(name,directory) for name in names])
+        parts=[];schema=None
+        for path in paths:
+            with np.load(path,allow_pickle=False) as z:
+                columns=z["cols"].tolist()
+                if schema is not None and schema!=columns:raise ValueError("Training column order differs")
+                schema=columns;parts.append((z["X"],z["y"]))
+        with threadpool_limits(1):model=context.fit(parts)
+    log("team head trained on {} public games".format(len(names)))
+    return model
+
+
+def run(data,base_models,team_model,params,spec):
+    """Competition inference only: no ground-truth input or scoring."""
+    from .config import HALVES,N_FRAMES,D,LABELS
+    from .methods import boost
+    from . import stack
+    segments=[(first,last+1) for _,first,last in HALVES]
+    x,names=features2.build(data,segments);xs,_=features2.build(data,segments,swap=True)
+    pd,ph=boost.predict(base_models["stage1"],x,xs)
+    if base_models.get("stage2") is not None:pd,ph=stack.predict(base_models["stage2"],pd,ph)
+    x,_=context.extend(x,names,segments);xs,_=context.extend(xs,names,segments)
+    new=context.predict(team_model,x,xs)
+    ph=blend_team(ph,new,np.isfinite(data["ball"][:,0]),segments,spec)
+    play=[(max(a,boost.KICKOFF.get(i,a)),b) for i,(a,b) in enumerate(segments)]
+    codes=boost.label(pd,ph,play,N_FRAMES,params,boost.kick_frames(data,params))
+    for i,(a,b) in enumerate(segments):codes[a:max(a,boost.KICKOFF.get(i,a))]=D
+    return np.array(LABELS)[codes]

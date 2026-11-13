@@ -1,5 +1,7 @@
 # Team ownership experiments after v2
 
+Historical report: the nine European games were unscored at this stage. A subsequent [expanded-training study](../expanded-team/REPORT.md) evaluated them once; they are no longer an unused confirmation pool.
+
 **Decision: No candidate clears frozen development gate; retain v2; European games remain unscored.**
 
 ![Development gains](development_gains.png)
