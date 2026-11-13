@@ -1,0 +1,35 @@
+{
+  "registered_utc": "2026-11-12T23:58:50.995419+00:00",
+  "prior_bounded_cycle": "12 constant-blend candidates completed; none has weighted development gain >= .005. No European model scores have been inspected.",
+  "reason": "Mixed context improves conditional live-team frame accuracy during ball gaps, but whole-spell gains are small. Test restricting its influence to gaps with smooth boundaries.",
+  "candidates": {
+    "missing50": [
+      "mixed",
+      0.5,
+      "hard"
+    ],
+    "missing100": [
+      "mixed",
+      1.0,
+      "hard"
+    ],
+    "taper50": [
+      "mixed",
+      0.5,
+      "taper_1s"
+    ],
+    "taper100": [
+      "mixed",
+      1.0,
+      "taper_1s"
+    ],
+    "robust_taper50": [
+      "robust",
+      0.5,
+      "taper_1s"
+    ]
+  },
+  "selection": "Original weighted objective and .005 gain/nonregression gates unchanged. Select at most one before European scoring.",
+  "fresh_confirmation": "Original conditional-H/A 9-game rule unchanged; no D reference claim.",
+  "stop": "After these five cached-prediction policies, finish this cycle. If none clears original development gate, retain v2 and leave fresh European matches unscored."
+}

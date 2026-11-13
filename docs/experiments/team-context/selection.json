@@ -1,0 +1,260 @@
+{
+  "registered_utc": "2026-11-13T00:00:14.489375+00:00",
+  "selected_candidate": "v2",
+  "best_development_candidate": "taper100",
+  "fresh_european_model_scores_seen": false,
+  "status": "No candidate clears frozen development gate; retain v2; European games remain unscored",
+  "score_order": [
+    "known/matched_seed0",
+    "known/label_blind_seed1",
+    "known/stress_seed1",
+    "development/natural_detected",
+    "development/label_blind_seed7"
+  ],
+  "scores": {
+    "base_team100": {
+      "means": [
+        0.6409311561257919,
+        0.5403057227463551,
+        0.503927705799336,
+        0.496440469377122,
+        0.4161826167143283
+      ],
+      "weighted": 0.5469582242178779,
+      "gain": -0.007407401346453568,
+      "nonregression_pass": false,
+      "development_pass": false
+    },
+    "base_team25": {
+      "means": [
+        0.6424397940215069,
+        0.5417441908652021,
+        0.5047766981648241,
+        0.5101318164263718,
+        0.429758262673217
+      ],
+      "weighted": 0.5533027716015609,
+      "gain": -0.0010628539627705047,
+      "nonregression_pass": true,
+      "development_pass": false
+    },
+    "base_team50": {
+      "means": [
+        0.6441266558887307,
+        0.5405555600055305,
+        0.5055469760273535,
+        0.507331872860049,
+        0.42620805582181287
+      ],
+      "weighted": 0.5524697600929709,
+      "gain": -0.0018958654713605583,
+      "nonregression_pass": true,
+      "development_pass": false
+    },
+    "context100": {
+      "means": [
+        0.641521379223692,
+        0.5388492882464105,
+        0.5059671665699629,
+        0.4980048011435299,
+        0.4174055039958721
+      ],
+      "weighted": 0.5474604703666393,
+      "gain": -0.006905155197692192,
+      "nonregression_pass": false,
+      "development_pass": false
+    },
+    "context25": {
+      "means": [
+        0.6453038825883255,
+        0.5441739948006696,
+        0.5067469511497481,
+        0.5111054003401826,
+        0.43084284765681646
+      ],
+      "weighted": 0.5553460015948639,
+      "gain": 0.0009803760305324705,
+      "nonregression_pass": true,
+      "development_pass": false
+    },
+    "context50": {
+      "means": [
+        0.6457272183992283,
+        0.5450692393772022,
+        0.509763306055489,
+        0.508862013694416,
+        0.429743518218251
+      ],
+      "weighted": 0.5550258416176652,
+      "gain": 0.0006602160533337731,
+      "nonregression_pass": true,
+      "development_pass": false
+    },
+    "missing100": {
+      "means": [
+        0.6426934504484612,
+        0.5497405424132142,
+        0.5089192390501961,
+        0.5131517155715752,
+        0.43592075192207524
+      ],
+      "weighted": 0.5568399821607575,
+      "gain": 0.0024743565964260306,
+      "nonregression_pass": true,
+      "development_pass": false
+    },
+    "missing50": {
+      "means": [
+        0.6436095242142444,
+        0.5480621180550438,
+        0.5088278626263473,
+        0.5131420261876775,
+        0.4356648436543063
+      ],
+      "weighted": 0.5568176072651033,
+      "gain": 0.002451981700771877,
+      "nonregression_pass": true,
+      "development_pass": false
+    },
+    "mixed_context100": {
+      "means": [
+        0.6439114577919096,
+        0.5487147029457895,
+        0.507062112414401,
+        0.49801781846617676,
+        0.4242127631494115
+      ],
+      "weighted": 0.5517536400290394,
+      "gain": -0.0026119855352920718,
+      "nonregression_pass": false,
+      "development_pass": false
+    },
+    "mixed_context25": {
+      "means": [
+        0.6473775012700279,
+        0.5465043844599015,
+        0.507132082216351,
+        0.511462574907624,
+        0.43323660270680225
+      ],
+      "weighted": 0.5571917129228767,
+      "gain": 0.0028260873585452817,
+      "nonregression_pass": true,
+      "development_pass": false
+    },
+    "mixed_context50": {
+      "means": [
+        0.6465254712777264,
+        0.5508269753649271,
+        0.5093761209307448,
+        0.508608872527251,
+        0.43384724375596534
+      ],
+      "weighted": 0.5572668068407193,
+      "gain": 0.002901181276387832,
+      "nonregression_pass": true,
+      "development_pass": false
+    },
+    "robust_taper50": {
+      "means": [
+        0.6438767377183554,
+        0.5456800880985819,
+        0.5074327266167854,
+        0.5133128659228722,
+        0.43431684661064135
+      ],
+      "weighted": 0.5562126552137613,
+      "gain": 0.0018470296494298433,
+      "nonregression_pass": true,
+      "development_pass": false
+    },
+    "robust_team100": {
+      "means": [
+        0.6470786540204732,
+        0.5465601218505634,
+        0.5040530368162879,
+        0.4888029533996999,
+        0.4225016976640376
+      ],
+      "weighted": 0.5504044161910494,
+      "gain": -0.0039612093732820375,
+      "nonregression_pass": false,
+      "development_pass": false
+    },
+    "robust_team25": {
+      "means": [
+        0.6477163672598691,
+        0.5467102704072705,
+        0.506067642240949,
+        0.5115864149595392,
+        0.4315911669468821
+      ],
+      "weighted": 0.557064117366686,
+      "gain": 0.0026984918023545967,
+      "nonregression_pass": true,
+      "development_pass": false
+    },
+    "robust_team50": {
+      "means": [
+        0.6482254259820551,
+        0.5456772750498539,
+        0.5077152588928132,
+        0.5116587151877285,
+        0.4296469428931051
+      ],
+      "weighted": 0.5566867570189595,
+      "gain": 0.0023211314546280892,
+      "nonregression_pass": true,
+      "development_pass": false
+    },
+    "taper100": {
+      "means": [
+        0.6438373196231361,
+        0.5506560764492843,
+        0.5099021912953999,
+        0.5147970355223278,
+        0.43690350224111285
+      ],
+      "weighted": 0.5580062506917994,
+      "gain": 0.003640625127467989,
+      "nonregression_pass": true,
+      "development_pass": false
+    },
+    "taper50": {
+      "means": [
+        0.644246819844206,
+        0.5470902198746391,
+        0.5079561077341176,
+        0.5141167382404377,
+        0.4355124271600601
+      ],
+      "weighted": 0.5570426049927097,
+      "gain": 0.002676979428378301,
+      "nonregression_pass": true,
+      "development_pass": false
+    },
+    "v2": {
+      "means": [
+        0.643231855695781,
+        0.5426119327022039,
+        0.5043512537889125,
+        0.5119251247726204,
+        0.4308273589552708
+      ],
+      "weighted": 0.5543656255643314,
+      "gain": 0.0,
+      "nonregression_pass": true,
+      "development_pass": false
+    }
+  },
+  "record_count_including_repeated_baselines": 893,
+  "unique_records": 846,
+  "selection_threshold_gain": 0.005,
+  "plan_sha256": {
+    "plan.json": "9045b9caaab9f546641d4ccb12a6ba5d7de087dbc6754130c02571fa53b6f6bf",
+    "ablation_plan.json": "59eaeb48b67458b198d311e066887d8b6f09f0a5a0c5a386631207f27b40ac2f",
+    "followup_plan.json": "165c1d4b47a7d2ba426410467ec87f592a33c0983ccccbfc1c61a3ed81152346",
+    "gated_followup_plan.json": "d4c86d788cb64fab867cb2c56eb6eeed065ab13a8ad9d96d4461edae4278a2e1",
+    "context_mix/plan.json": "b3f980347ed3b7e3c68b6568f1af12b9971f5fc58304f6c4314ad993cf1cffac"
+  }
+}

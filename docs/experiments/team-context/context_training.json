@@ -1,0 +1,173 @@
+{
+  "exclude_idsse_J03WQQ": {
+    "train": [
+      "idsse_J03WMX",
+      "idsse_J03WN1",
+      "idsse_J03WOH",
+      "idsse_J03WOY",
+      "idsse_J03WPY",
+      "idsse_J03WR9",
+      "metrica_1",
+      "metrica_2"
+    ],
+    "excluded": "idsse_J03WQQ",
+    "plan_sha256": "9045b9caaab9f546641d4ccb12a6ba5d7de087dbc6754130c02571fa53b6f6bf",
+    "context_source_sha256": "973319eb341eebb0576a0c82cfe1d18addbc055ae8c2e6305bff50768fce2e30",
+    "model_sha256": "67242f736e4b24ff687cb72c80b2a1e3d5dca09bcc95a4f7d7318f3649417f2d",
+    "fitted_utc": "2026-11-12T23:46:58.396552+00:00"
+  },
+  "exclude_idsse_J03WR9": {
+    "train": [
+      "idsse_J03WMX",
+      "idsse_J03WN1",
+      "idsse_J03WOH",
+      "idsse_J03WOY",
+      "idsse_J03WPY",
+      "idsse_J03WQQ",
+      "metrica_1",
+      "metrica_2"
+    ],
+    "excluded": "idsse_J03WR9",
+    "plan_sha256": "9045b9caaab9f546641d4ccb12a6ba5d7de087dbc6754130c02571fa53b6f6bf",
+    "context_source_sha256": "973319eb341eebb0576a0c82cfe1d18addbc055ae8c2e6305bff50768fce2e30",
+    "model_sha256": "f2c838568f64f83fc0a99422ea717e4616288840304da3334d69ced9c3cab52d",
+    "fitted_utc": "2026-11-12T23:47:02.778744+00:00"
+  },
+  "exclude_metrica_2": {
+    "train": [
+      "idsse_J03WMX",
+      "idsse_J03WN1",
+      "idsse_J03WOH",
+      "idsse_J03WOY",
+      "idsse_J03WPY",
+      "idsse_J03WQQ",
+      "idsse_J03WR9",
+      "metrica_1"
+    ],
+    "excluded": "metrica_2",
+    "plan_sha256": "9045b9caaab9f546641d4ccb12a6ba5d7de087dbc6754130c02571fa53b6f6bf",
+    "context_source_sha256": "973319eb341eebb0576a0c82cfe1d18addbc055ae8c2e6305bff50768fce2e30",
+    "model_sha256": "fca27efb8e3c4f9e2cf2d2fd98f5705b2269e10998db69a682263748243e83d7",
+    "fitted_utc": "2026-11-12T23:47:36.955457+00:00"
+  },
+  "all_nine": {
+    "train": [
+      "idsse_J03WMX",
+      "idsse_J03WN1",
+      "idsse_J03WOH",
+      "idsse_J03WOY",
+      "idsse_J03WPY",
+      "idsse_J03WQQ",
+      "idsse_J03WR9",
+      "metrica_1",
+      "metrica_2"
+    ],
+    "excluded": null,
+    "plan_sha256": "9045b9caaab9f546641d4ccb12a6ba5d7de087dbc6754130c02571fa53b6f6bf",
+    "context_source_sha256": "973319eb341eebb0576a0c82cfe1d18addbc055ae8c2e6305bff50768fce2e30",
+    "model_sha256": "fa6edd4781bc639d4cdf5b51692cd5cde5034e097ff6f969d7aa0362cdfe6e07",
+    "fitted_utc": "2026-11-12T23:46:23.506095+00:00"
+  },
+  "exclude_idsse_J03WOH": {
+    "train": [
+      "idsse_J03WMX",
+      "idsse_J03WN1",
+      "idsse_J03WOY",
+      "idsse_J03WPY",
+      "idsse_J03WQQ",
+      "idsse_J03WR9",
+      "metrica_1",
+      "metrica_2"
+    ],
+    "excluded": "idsse_J03WOH",
+    "plan_sha256": "9045b9caaab9f546641d4ccb12a6ba5d7de087dbc6754130c02571fa53b6f6bf",
+    "context_source_sha256": "973319eb341eebb0576a0c82cfe1d18addbc055ae8c2e6305bff50768fce2e30",
+    "model_sha256": "c710f6c39389eb3246fefc011d00bc727d2d25c5986c7b66860ba970112afae0",
+    "fitted_utc": "2026-11-12T23:46:19.049852+00:00"
+  },
+  "exclude_idsse_J03WMX": {
+    "train": [
+      "idsse_J03WN1",
+      "idsse_J03WOH",
+      "idsse_J03WOY",
+      "idsse_J03WPY",
+      "idsse_J03WQQ",
+      "idsse_J03WR9",
+      "metrica_1",
+      "metrica_2"
+    ],
+    "excluded": "idsse_J03WMX",
+    "plan_sha256": "9045b9caaab9f546641d4ccb12a6ba5d7de087dbc6754130c02571fa53b6f6bf",
+    "context_source_sha256": "973319eb341eebb0576a0c82cfe1d18addbc055ae8c2e6305bff50768fce2e30",
+    "model_sha256": "32b31010325dfaf4ab56bc8d9ff07e27e51bc1fa374e7337c21f1e291b8aeb03",
+    "fitted_utc": "2026-11-12T23:46:18.061371+00:00"
+  },
+  "exclude_idsse_J03WPY": {
+    "train": [
+      "idsse_J03WMX",
+      "idsse_J03WN1",
+      "idsse_J03WOH",
+      "idsse_J03WOY",
+      "idsse_J03WQQ",
+      "idsse_J03WR9",
+      "metrica_1",
+      "metrica_2"
+    ],
+    "excluded": "idsse_J03WPY",
+    "plan_sha256": "9045b9caaab9f546641d4ccb12a6ba5d7de087dbc6754130c02571fa53b6f6bf",
+    "context_source_sha256": "973319eb341eebb0576a0c82cfe1d18addbc055ae8c2e6305bff50768fce2e30",
+    "model_sha256": "b13d9d160a8369b852d38a608dbfaf638ed00a126b028efb85890ce0b8ba3978",
+    "fitted_utc": "2026-11-12T23:46:58.718490+00:00"
+  },
+  "exclude_idsse_J03WOY": {
+    "train": [
+      "idsse_J03WMX",
+      "idsse_J03WN1",
+      "idsse_J03WOH",
+      "idsse_J03WPY",
+      "idsse_J03WQQ",
+      "idsse_J03WR9",
+      "metrica_1",
+      "metrica_2"
+    ],
+    "excluded": "idsse_J03WOY",
+    "plan_sha256": "9045b9caaab9f546641d4ccb12a6ba5d7de087dbc6754130c02571fa53b6f6bf",
+    "context_source_sha256": "973319eb341eebb0576a0c82cfe1d18addbc055ae8c2e6305bff50768fce2e30",
+    "model_sha256": "e75a9e40a20e83ae9de9497fc10ab8bce3baff8556a0bba5a1c290ba722c7107",
+    "fitted_utc": "2026-11-12T23:46:58.567580+00:00"
+  },
+  "exclude_idsse_J03WN1": {
+    "train": [
+      "idsse_J03WMX",
+      "idsse_J03WOH",
+      "idsse_J03WOY",
+      "idsse_J03WPY",
+      "idsse_J03WQQ",
+      "idsse_J03WR9",
+      "metrica_1",
+      "metrica_2"
+    ],
+    "excluded": "idsse_J03WN1",
+    "plan_sha256": "9045b9caaab9f546641d4ccb12a6ba5d7de087dbc6754130c02571fa53b6f6bf",
+    "context_source_sha256": "973319eb341eebb0576a0c82cfe1d18addbc055ae8c2e6305bff50768fce2e30",
+    "model_sha256": "d1d67583211b1c7154d1b38174a9ab440701b7360892d80c6f32b83262bdaa23",
+    "fitted_utc": "2026-11-12T23:46:19.144625+00:00"
+  },
+  "exclude_metrica_1": {
+    "train": [
+      "idsse_J03WMX",
+      "idsse_J03WN1",
+      "idsse_J03WOH",
+      "idsse_J03WOY",
+      "idsse_J03WPY",
+      "idsse_J03WQQ",
+      "idsse_J03WR9",
+      "metrica_2"
+    ],
+    "excluded": "metrica_1",
+    "plan_sha256": "9045b9caaab9f546641d4ccb12a6ba5d7de087dbc6754130c02571fa53b6f6bf",
+    "context_source_sha256": "973319eb341eebb0576a0c82cfe1d18addbc055ae8c2e6305bff50768fce2e30",
+    "model_sha256": "3a7903a59d803113a05b857c83a88586ebb2de7b73610599cb68fc0efa868970",
+    "fitted_utc": "2026-11-12T23:47:37.676684+00:00"
+  }
+}

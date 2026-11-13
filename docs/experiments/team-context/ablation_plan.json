@@ -1,0 +1,10 @@
+{
+  "registered_utc": "2026-11-12T23:49:25.408184+00:00",
+  "reason": "Separate value of observed-context features from simply bypassing the team stack; dead probability remains stacked in all candidates",
+  "results_inspected_yet": false,
+  "base_team25": 0.25,
+  "base_team50": 0.5,
+  "base_team100": 1.0,
+  "selection": "Add matched-weight original stage-one team-head controls to the original bounded development selection; choose at most one candidate before fresh legacy scores",
+  "fresh_tests": "Original conditional H/A confirmation rule unchanged"
+}

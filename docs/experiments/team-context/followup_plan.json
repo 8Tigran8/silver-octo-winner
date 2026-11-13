@@ -1,0 +1,8 @@
+{
+  "registered_utc": "2026-11-12T23:52:31.845113+00:00",
+  "additional_hypotheses": [
+    "Reuse prior robust stage-one team probabilities alone, preserving baseline stacked dead probabilities; fixed 25/50/100 percent blends",
+    "Fit 21-feature context team head on matched/label-blind/clean original games, stride12 each, preserving baseline dead probabilities; fixed blends"
+  ],
+  "bounded_stop": "Complete these two focused hypotheses and existing context/base-head controls. Select at most one candidate with original development criterion. If no candidate clears it, retain v2 and leave fresh European matches unscored for another cycle. Do not lower thresholds after seeing results."
+}

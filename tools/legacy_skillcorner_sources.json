@@ -1,0 +1,115 @@
+{
+  "source": "SkillCorner European 2019/20 open-data release",
+  "revision": "1ed50b775f93075c2a6d00d0d795f13b7b89709e",
+  "license": "MIT, credit SkillCorner and Friends of Tracking",
+  "files": [
+    {
+      "path": "skillcorner_legacy/2068/match_data.json",
+      "url": "https://raw.githubusercontent.com/SkillCorner/opendata/1ed50b775f93075c2a6d00d0d795f13b7b89709e/data/matches/2068/match_data.json",
+      "size": 16914,
+      "git_blob_sha1": "27760525d6ced01a11b0ef72502f3c7b09817640"
+    },
+    {
+      "path": "skillcorner_legacy/2068/structured_data.json",
+      "url": "https://raw.githubusercontent.com/SkillCorner/opendata/1ed50b775f93075c2a6d00d0d795f13b7b89709e/data/matches/2068/structured_data.json",
+      "size": 56097681,
+      "git_blob_sha1": "ed545d22859747c7404aa11a9109f1f359a2b474"
+    },
+    {
+      "path": "skillcorner_legacy/2269/match_data.json",
+      "url": "https://raw.githubusercontent.com/SkillCorner/opendata/1ed50b775f93075c2a6d00d0d795f13b7b89709e/data/matches/2269/match_data.json",
+      "size": 14252,
+      "git_blob_sha1": "86ea889735d1b942850e83e05311f58fcfbdcec5"
+    },
+    {
+      "path": "skillcorner_legacy/2269/structured_data.json",
+      "url": "https://raw.githubusercontent.com/SkillCorner/opendata/1ed50b775f93075c2a6d00d0d795f13b7b89709e/data/matches/2269/structured_data.json",
+      "size": 61487206,
+      "git_blob_sha1": "73be7a4c93e7b0f79115b496c933e69874fccd3a"
+    },
+    {
+      "path": "skillcorner_legacy/2417/match_data.json",
+      "url": "https://raw.githubusercontent.com/SkillCorner/opendata/1ed50b775f93075c2a6d00d0d795f13b7b89709e/data/matches/2417/match_data.json",
+      "size": 15172,
+      "git_blob_sha1": "9ec7c9ea82f9fc053a1afa24c2316a39370f9fa4"
+    },
+    {
+      "path": "skillcorner_legacy/2417/structured_data.json",
+      "url": "https://raw.githubusercontent.com/SkillCorner/opendata/1ed50b775f93075c2a6d00d0d795f13b7b89709e/data/matches/2417/structured_data.json",
+      "size": 54257176,
+      "git_blob_sha1": "81a3f335841cc09b6814a180425e8c534ca8dc98"
+    },
+    {
+      "path": "skillcorner_legacy/2440/match_data.json",
+      "url": "https://raw.githubusercontent.com/SkillCorner/opendata/1ed50b775f93075c2a6d00d0d795f13b7b89709e/data/matches/2440/match_data.json",
+      "size": 14366,
+      "git_blob_sha1": "4ccdba9d49b2d1be218d5bd08c9aa9552e3467b5"
+    },
+    {
+      "path": "skillcorner_legacy/2440/structured_data.json",
+      "url": "https://raw.githubusercontent.com/SkillCorner/opendata/1ed50b775f93075c2a6d00d0d795f13b7b89709e/data/matches/2440/structured_data.json",
+      "size": 53770663,
+      "git_blob_sha1": "5e840ded4a4a5fe3a5586e976c033407e3e7f7b0"
+    },
+    {
+      "path": "skillcorner_legacy/2841/match_data.json",
+      "url": "https://raw.githubusercontent.com/SkillCorner/opendata/1ed50b775f93075c2a6d00d0d795f13b7b89709e/data/matches/2841/match_data.json",
+      "size": 14377,
+      "git_blob_sha1": "f39e3776d6b682c097018f704294076b5b9d6841"
+    },
+    {
+      "path": "skillcorner_legacy/2841/structured_data.json",
+      "url": "https://raw.githubusercontent.com/SkillCorner/opendata/1ed50b775f93075c2a6d00d0d795f13b7b89709e/data/matches/2841/structured_data.json",
+      "size": 77100038,
+      "git_blob_sha1": "917cb292078120b48d59d141220b65c77c073bbd"
+    },
+    {
+      "path": "skillcorner_legacy/3442/match_data.json",
+      "url": "https://raw.githubusercontent.com/SkillCorner/opendata/1ed50b775f93075c2a6d00d0d795f13b7b89709e/data/matches/3442/match_data.json",
+      "size": 14421,
+      "git_blob_sha1": "2d773eac7d54df953b51ea606f9cca82a9fc7ccd"
+    },
+    {
+      "path": "skillcorner_legacy/3442/structured_data.json",
+      "url": "https://raw.githubusercontent.com/SkillCorner/opendata/1ed50b775f93075c2a6d00d0d795f13b7b89709e/data/matches/3442/structured_data.json",
+      "size": 69271465,
+      "git_blob_sha1": "9489f2c579ded0a7a116bbe6f9431b2a3e45f6bc"
+    },
+    {
+      "path": "skillcorner_legacy/3518/match_data.json",
+      "url": "https://raw.githubusercontent.com/SkillCorner/opendata/1ed50b775f93075c2a6d00d0d795f13b7b89709e/data/matches/3518/match_data.json",
+      "size": 17607,
+      "git_blob_sha1": "ce7f165733840d9adc911a51cb20e7dc6d727714"
+    },
+    {
+      "path": "skillcorner_legacy/3518/structured_data.json",
+      "url": "https://raw.githubusercontent.com/SkillCorner/opendata/1ed50b775f93075c2a6d00d0d795f13b7b89709e/data/matches/3518/structured_data.json",
+      "size": 57500828,
+      "git_blob_sha1": "af0207e2325157346754bec4a7f5ec60d2c1374f"
+    },
+    {
+      "path": "skillcorner_legacy/3749/match_data.json",
+      "url": "https://raw.githubusercontent.com/SkillCorner/opendata/1ed50b775f93075c2a6d00d0d795f13b7b89709e/data/matches/3749/match_data.json",
+      "size": 15926,
+      "git_blob_sha1": "21c727b486aaa1f6a6cc5b62301e395127875f7e"
+    },
+    {
+      "path": "skillcorner_legacy/3749/structured_data.json",
+      "url": "https://raw.githubusercontent.com/SkillCorner/opendata/1ed50b775f93075c2a6d00d0d795f13b7b89709e/data/matches/3749/structured_data.json",
+      "size": 53242393,
+      "git_blob_sha1": "607715a47cf2ca6250ef2e3373e9c576c6589e8c"
+    },
+    {
+      "path": "skillcorner_legacy/4039/match_data.json",
+      "url": "https://raw.githubusercontent.com/SkillCorner/opendata/1ed50b775f93075c2a6d00d0d795f13b7b89709e/data/matches/4039/match_data.json",
+      "size": 15835,
+      "git_blob_sha1": "8af6634222dea82b895c8bfb0258ceb90bfe5b0e"
+    },
+    {
+      "path": "skillcorner_legacy/4039/structured_data.json",
+      "url": "https://raw.githubusercontent.com/SkillCorner/opendata/1ed50b775f93075c2a6d00d0d795f13b7b89709e/data/matches/4039/structured_data.json",
+      "size": 55724843,
+      "git_blob_sha1": "ba8420673320c984c140a49285cae9dd8504258f"
+    }
+  ]
+}

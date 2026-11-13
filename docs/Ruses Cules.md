@@ -53,6 +53,8 @@ Across the same nine games, spellF1 was 0.5011 versus baseline 0.1874 under stro
 
 After the earlier v1 audit, we compared nine decoder configurations and two learned sensor-mixture candidates on development data. We froze the cost-9 decoder before scoring the ten new confirmation games. On those games, v2 spellF1 was **0.5524 versus v1 0.5451**, with nine wins and one loss; the descriptive paired 95% interval for the gain was **[0.0044, 0.0100]**. Extra label-blind corruption gave 0.4719 versus 0.4613, ten wins. The known matched-sensor cohort fell from 0.6466 to 0.6432, so the change is a domain trade-off, not a universal gain. The candidate passed a promotion rule frozen before confirmation. The [new-provider report](experiments/skillcorner/REPORT.md) includes the negative sensor-mixture results, protocols and per-game metrics. No candidate selection in this cycle read competition public GT.
 
+We also tested 17 later team-head/context/augmentation/gating policies on development data. None cleared the frozen replacement criterion; v2 remains unchanged. The [team-head report](experiments/team-context/REPORT.md) includes negative results, training exclusions and a prepared, unscored nine-match European dataset supporting conditional H/A references only.
+
 Method provenance and limitations:
 
 - The model author declares that v1 model/parameter selection used external matches only; the configuration records selection on 10 November. Our reproduction does not load the competition public GT, choose between variants or retune parameters. The author's explanation of version choice is still being clarified in team review; this declaration is not an independent audit of earlier experiments. No competitive score is asserted here.

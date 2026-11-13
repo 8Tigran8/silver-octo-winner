@@ -1,0 +1,31 @@
+{
+  "registered_utc": "2026-11-12T23:44:26.567000+00:00",
+  "baseline": "v2 cost9, unchanged original nine-game learned weights",
+  "hypothesis": "Observed previous/following team-distance evidence through ball occlusion improves team ownership; original dead-ball probabilities remain unchanged",
+  "source_sha256": "973319eb341eebb0576a0c82cfe1d18addbc055ae8c2e6305bff50768fce2e30",
+  "training": "Only nine original DFL/Metrica games, matched_seed0; original stage-one HGB parameters, 21 added observed-context features, team-swap symmetry",
+  "known_validation": "One original match excluded from new head; v2 nested predictions retained for blending; original audit caches",
+  "development_skillcorner": [
+    "1925299",
+    "1959846",
+    "1996436",
+    "2006229",
+    "2007448",
+    "2010085",
+    "2011166",
+    "2013725",
+    "2015213",
+    "2017461"
+  ],
+  "old_v2_confirmation": "Do not use these ten games for selection or claim fresh confirmation; all prior results acknowledged",
+  "candidates": {
+    "context25": 0.25,
+    "context50": 0.5,
+    "context100": 1.0
+  },
+  "decoder": "unchanged v2 cost9, one-second minima",
+  "selection": "0.4 known matched +0.2 known label-blind +0.2 SkillCorner development natural +0.2 SkillCorner development label-blind; gain >=.005, known matched/new natural/new blind each no worse than baseline minus .005",
+  "fresh_source": "Nine 2019/20 European SkillCorner matches at initial commit 1ed50b775f93075c2a6d00d0d795f13b7b89709e, absent from implemented training corpus; source may only support conditional H/A validation, eligibility checked before scoring",
+  "fresh_protocol": "Freeze at most one candidate before any fresh-game score. If conditional H/A labels only, require paired team-macroF1 positive 95% interval, gain >=.005 and wins >=7/9; no claim of full H/A/D validation on these games",
+  "competition_data": "No competition input or public GT used to select this candidate"
+}

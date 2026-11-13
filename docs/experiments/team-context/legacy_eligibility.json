@@ -1,0 +1,158 @@
+{
+  "reference": "Automatic known-team possession only, unknown ownership X, no D labels",
+  "records": [
+    {
+      "match": "2068",
+      "frames": 180323,
+      "reference_live_frames": 88206,
+      "reference_live_without_ball": 20210,
+      "period_spans": [
+        [
+          4453,
+          77085
+        ],
+        [
+          105283,
+          180270
+        ]
+      ],
+      "dead_reference_available": false
+    },
+    {
+      "match": "2269",
+      "frames": 144751,
+      "reference_live_frames": 91471,
+      "reference_live_without_ball": 25019,
+      "period_spans": [
+        [
+          6538,
+          74125
+        ],
+        [
+          76750,
+          144500
+        ]
+      ],
+      "dead_reference_available": false
+    },
+    {
+      "match": "2417",
+      "frames": 170251,
+      "reference_live_frames": 100173,
+      "reference_live_without_ball": 26817,
+      "period_spans": [
+        [
+          3285,
+          72363
+        ],
+        [
+          99620,
+          170193
+        ]
+      ],
+      "dead_reference_available": false
+    },
+    {
+      "match": "2440",
+      "frames": 171676,
+      "reference_live_frames": 90910,
+      "reference_live_without_ball": 15833,
+      "period_spans": [
+        [
+          2278,
+          72610
+        ],
+        [
+          97620,
+          171213
+        ]
+      ],
+      "dead_reference_available": false
+    },
+    {
+      "match": "3442",
+      "frames": 167428,
+      "reference_live_frames": 98851,
+      "reference_live_without_ball": 16369,
+      "period_spans": [
+        [
+          2288,
+          70023
+        ],
+        [
+          95225,
+          167310
+        ]
+      ],
+      "dead_reference_available": false
+    },
+    {
+      "match": "2841",
+      "frames": 170998,
+      "reference_live_frames": 97416,
+      "reference_live_without_ball": 16863,
+      "period_spans": [
+        [
+          343,
+          69375
+        ],
+        [
+          95503,
+          170533
+        ]
+      ],
+      "dead_reference_available": false
+    },
+    {
+      "match": "3749",
+      "frames": 167251,
+      "reference_live_frames": 103559,
+      "reference_live_without_ball": 35231,
+      "period_spans": [
+        [
+          1900,
+          70895
+        ],
+        [
+          94320,
+          167210
+        ]
+      ],
+      "dead_reference_available": false
+    },
+    {
+      "match": "3518",
+      "frames": 166778,
+      "reference_live_frames": 95810,
+      "reference_live_without_ball": 19194,
+      "period_spans": [
+        [
+          1355,
+          68923
+        ],
+        [
+          92960,
+          166543
+        ]
+      ],
+      "dead_reference_available": false
+    },
+    {
+      "match": "4039",
+      "frames": 170788,
+      "reference_live_frames": 91075,
+      "reference_live_without_ball": 20092,
+      "period_spans": [
+        [
+          1105,
+          73523
+        ],
+        [
+          97155,
+          170788
+        ]
+      ],
+      "dead_reference_available": false
+    }
+  ]
+}

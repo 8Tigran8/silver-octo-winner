@@ -1,0 +1,3589 @@
+{
+  "kind": "Oracle probabilities on external development data only; not attainable model scores",
+  "records": [
+    {
+      "match": "idsse_J03WN1",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "v2",
+      "spell": 0.5992797118847539,
+      "macro": 0.9077266173994815,
+      "n_gt": 500,
+      "n_pred": 333,
+      "per_class": {
+        "H": {
+          "precision": 0.909134328358209,
+          "recall": 0.8362208615908404,
+          "f1": 0.8711545887501608,
+          "support": 36421
+        },
+        "A": {
+          "precision": 0.8452902843601896,
+          "recall": 0.8930091375641507,
+          "f1": 0.8684947349199585,
+          "support": 31956
+        },
+        "D": {
+          "precision": 0.9761376024548795,
+          "recall": 0.9910362920857018,
+          "f1": 0.9835305285283249,
+          "support": 73184
+        }
+      },
+      "false_dead_fraction": 0.025929771706860495,
+      "missed_dead_fraction": 0.008963707914298208
+    },
+    {
+      "match": "idsse_J03WN1",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "ORACLE_dead_probability",
+      "spell": 0.6162291169451073,
+      "macro": 0.917059121922608,
+      "n_gt": 500,
+      "n_pred": 338,
+      "per_class": {
+        "H": {
+          "precision": 0.9162154120797382,
+          "recall": 0.8455012218225749,
+          "f1": 0.8794391055389756,
+          "support": 36421
+        },
+        "A": {
+          "precision": 0.8381185270425777,
+          "recall": 0.9116597822005257,
+          "f1": 0.8733437256430241,
+          "support": 31956
+        },
+        "D": {
+          "precision": 0.998346791272151,
+          "recall": 0.9984422824661128,
+          "f1": 0.9983945345858242,
+          "support": 73184
+        }
+      },
+      "false_dead_fraction": 0.0017696008891878849,
+      "missed_dead_fraction": 0.0015577175338871885
+    },
+    {
+      "match": "idsse_J03WN1",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "ORACLE_team_probability",
+      "spell": 0.8981779206859593,
+      "macro": 0.9743208485651089,
+      "n_gt": 500,
+      "n_pred": 433,
+      "per_class": {
+        "H": {
+          "precision": 0.9921513269339356,
+          "recall": 0.9648828972296203,
+          "f1": 0.9783271390988433,
+          "support": 36421
+        },
+        "A": {
+          "precision": 0.9584532095901005,
+          "recall": 0.969520590812367,
+          "f1": 0.96395513448764,
+          "support": 31956
+        },
+        "D": {
+          "precision": 0.9764820635092663,
+          "recall": 0.984914735461303,
+          "f1": 0.9806802721088435,
+          "support": 73184
+        }
+      },
+      "false_dead_fraction": 0.025388654079588166,
+      "missed_dead_fraction": 0.015085264538696982
+    },
+    {
+      "match": "idsse_J03WN1",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "ORACLE_both",
+      "spell": 0.9383647798742139,
+      "macro": 0.991478183663387,
+      "n_gt": 500,
+      "n_pred": 454,
+      "per_class": {
+        "H": {
+          "precision": 0.9903305785123967,
+          "recall": 0.9870404437000632,
+          "f1": 0.988682773889248,
+          "support": 36421
+        },
+        "A": {
+          "precision": 0.9880400751408892,
+          "recall": 0.9875453748904744,
+          "f1": 0.987792663077501,
+          "support": 31956
+        },
+        "D": {
+          "precision": 0.9970267726844969,
+          "recall": 0.9988932006996065,
+          "f1": 0.9979591140234122,
+          "support": 73184
+        }
+      },
+      "false_dead_fraction": 0.0031882065606856106,
+      "missed_dead_fraction": 0.0011067993003935287
+    },
+    {
+      "match": "idsse_J03WN1",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "v2",
+      "spell": 0.49161451814768464,
+      "macro": 0.8220497807707005,
+      "n_gt": 500,
+      "n_pred": 299,
+      "per_class": {
+        "H": {
+          "precision": 0.8805687203791469,
+          "recall": 0.6886960819307543,
+          "f1": 0.7729023510923491,
+          "support": 36421
+        },
+        "A": {
+          "precision": 0.8090207511576059,
+          "recall": 0.7381086493929152,
+          "f1": 0.7719395853447005,
+          "support": 31956
+        },
+        "D": {
+          "precision": 0.8623705627911965,
+          "recall": 0.9888910144293834,
+          "f1": 0.9213074058750518,
+          "support": 73184
+        }
+      },
+      "false_dead_fraction": 0.168916448513389,
+      "missed_dead_fraction": 0.011108985570616528
+    },
+    {
+      "match": "idsse_J03WN1",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "ORACLE_dead_probability",
+      "spell": 0.5027707808564232,
+      "macro": 0.871011547472102,
+      "n_gt": 500,
+      "n_pred": 294,
+      "per_class": {
+        "H": {
+          "precision": 0.8512084592145015,
+          "recall": 0.773592158370171,
+          "f1": 0.8105464535895629,
+          "support": 36421
+        },
+        "A": {
+          "precision": 0.7663169832719025,
+          "recall": 0.8457879584428589,
+          "f1": 0.8040936542409187,
+          "support": 31956
+        },
+        "D": {
+          "precision": 0.998346791272151,
+          "recall": 0.9984422824661128,
+          "f1": 0.9983945345858242,
+          "support": 73184
+        }
+      },
+      "false_dead_fraction": 0.0017696008891878849,
+      "missed_dead_fraction": 0.0015577175338871885
+    },
+    {
+      "match": "idsse_J03WN1",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "ORACLE_team_probability",
+      "spell": 0.8013230429988975,
+      "macro": 0.9094375846182553,
+      "n_gt": 500,
+      "n_pred": 407,
+      "per_class": {
+        "H": {
+          "precision": 0.9932827385758114,
+          "recall": 0.8444853244007579,
+          "f1": 0.9128602380316385,
+          "support": 36421
+        },
+        "A": {
+          "precision": 0.9499024995568162,
+          "recall": 0.8384028038553011,
+          "f1": 0.8906766842306478,
+          "support": 31956
+        },
+        "D": {
+          "precision": 0.8731050721559394,
+          "recall": 0.9829470922606034,
+          "f1": 0.9247758315924796,
+          "support": 73184
+        }
+      },
+      "false_dead_fraction": 0.1529022917062755,
+      "missed_dead_fraction": 0.017052907739396588
+    },
+    {
+      "match": "idsse_J03WN1",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "ORACLE_both",
+      "spell": 0.9383647798742139,
+      "macro": 0.991478183663387,
+      "n_gt": 500,
+      "n_pred": 454,
+      "per_class": {
+        "H": {
+          "precision": 0.9903305785123967,
+          "recall": 0.9870404437000632,
+          "f1": 0.988682773889248,
+          "support": 36421
+        },
+        "A": {
+          "precision": 0.9880400751408892,
+          "recall": 0.9875453748904744,
+          "f1": 0.987792663077501,
+          "support": 31956
+        },
+        "D": {
+          "precision": 0.9970267726844969,
+          "recall": 0.9988932006996065,
+          "f1": 0.9979591140234122,
+          "support": 73184
+        }
+      },
+      "false_dead_fraction": 0.0031882065606856106,
+      "missed_dead_fraction": 0.0011067993003935287
+    },
+    {
+      "match": "idsse_J03WMX",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "v2",
+      "spell": 0.4645326504481434,
+      "macro": 0.8172610929270715,
+      "n_gt": 511,
+      "n_pred": 270,
+      "per_class": {
+        "H": {
+          "precision": 0.8986689132266218,
+          "recall": 0.6818542098130961,
+          "f1": 0.7753903410577734,
+          "support": 39111
+        },
+        "A": {
+          "precision": 0.8909633086995981,
+          "recall": 0.7427904362488651,
+          "f1": 0.8101576223429966,
+          "support": 46258
+        },
+        "D": {
+          "precision": 0.7707874998391807,
+          "recall": 0.9886629921779597,
+          "f1": 0.8662353153804446,
+          "support": 60598
+        }
+      },
+      "false_dead_fraction": 0.2086940224203165,
+      "missed_dead_fraction": 0.011337007822040331
+    },
+    {
+      "match": "idsse_J03WMX",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "ORACLE_dead_probability",
+      "spell": 0.5219573400250941,
+      "macro": 0.9125507384064658,
+      "n_gt": 511,
+      "n_pred": 286,
+      "per_class": {
+        "H": {
+          "precision": 0.8581155170215479,
+          "recall": 0.8603973306742349,
+          "f1": 0.8592549089702014,
+          "support": 39111
+        },
+        "A": {
+          "precision": 0.8816123090258966,
+          "recall": 0.8794586882269013,
+          "f1": 0.8805341817906345,
+          "support": 46258
+        },
+        "D": {
+          "precision": 0.9977890342699688,
+          "recall": 0.9979372256510116,
+          "f1": 0.997863124458562,
+          "support": 60598
+        }
+      },
+      "false_dead_fraction": 0.0015696564326629105,
+      "missed_dead_fraction": 0.0020627743489884153
+    },
+    {
+      "match": "idsse_J03WMX",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "ORACLE_team_probability",
+      "spell": 0.7367463026166098,
+      "macro": 0.8816885512075355,
+      "n_gt": 511,
+      "n_pred": 368,
+      "per_class": {
+        "H": {
+          "precision": 0.99387358184765,
+          "recall": 0.7839482498529825,
+          "f1": 0.8765169165678021,
+          "support": 39111
+        },
+        "A": {
+          "precision": 0.9780064308681672,
+          "recall": 0.8219118855116953,
+          "f1": 0.8931906546227668,
+          "support": 46258
+        },
+        "D": {
+          "precision": 0.785551270953018,
+          "recall": 0.9883494504769135,
+          "f1": 0.8753580824320373,
+          "support": 60598
+        }
+      },
+      "false_dead_fraction": 0.19152151249282526,
+      "missed_dead_fraction": 0.01165054952308657
+    },
+    {
+      "match": "idsse_J03WMX",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "ORACLE_both",
+      "spell": 0.9305870236869207,
+      "macro": 0.9919351798922276,
+      "n_gt": 511,
+      "n_pred": 460,
+      "per_class": {
+        "H": {
+          "precision": 0.9887125671871001,
+          "recall": 0.9876761013525607,
+          "f1": 0.988194062496003,
+          "support": 39111
+        },
+        "A": {
+          "precision": 0.9909494424596731,
+          "recall": 0.9893856197846859,
+          "f1": 0.9901669136657183,
+          "support": 46258
+        },
+        "D": {
+          "precision": 0.9965081038344973,
+          "recall": 0.9983827849103931,
+          "f1": 0.9974445635149617,
+          "support": 60598
+        }
+      },
+      "false_dead_fraction": 0.0024833370427204252,
+      "missed_dead_fraction": 0.0016172150896069178
+    },
+    {
+      "match": "idsse_J03WMX",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "v2",
+      "spell": 0.5858190709046454,
+      "macro": 0.9184549947410569,
+      "n_gt": 511,
+      "n_pred": 307,
+      "per_class": {
+        "H": {
+          "precision": 0.8912354251277348,
+          "recall": 0.8696786070414972,
+          "f1": 0.8803250685853306,
+          "support": 39111
+        },
+        "A": {
+          "precision": 0.9164866970945118,
+          "recall": 0.8898785075014052,
+          "f1": 0.9029866298136509,
+          "support": 46258
+        },
+        "D": {
+          "precision": 0.9543625868621496,
+          "recall": 0.9904122248259019,
+          "f1": 0.9720532858241892,
+          "support": 60598
+        }
+      },
+      "false_dead_fraction": 0.033618760908526515,
+      "missed_dead_fraction": 0.009587775174098156
+    },
+    {
+      "match": "idsse_J03WMX",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "ORACLE_dead_probability",
+      "spell": 0.6031515151515151,
+      "macro": 0.934155031121528,
+      "n_gt": 511,
+      "n_pred": 314,
+      "per_class": {
+        "H": {
+          "precision": 0.8926015535464153,
+          "recall": 0.8961161821482447,
+          "f1": 0.8943554149229356,
+          "support": 39111
+        },
+        "A": {
+          "precision": 0.9118559496691615,
+          "recall": 0.908642829348437,
+          "f1": 0.9102465539830865,
+          "support": 46258
+        },
+        "D": {
+          "precision": 0.9977890342699688,
+          "recall": 0.9979372256510116,
+          "f1": 0.997863124458562,
+          "support": 60598
+        }
+      },
+      "false_dead_fraction": 0.0015696564326629105,
+      "missed_dead_fraction": 0.0020627743489884153
+    },
+    {
+      "match": "idsse_J03WMX",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "ORACLE_team_probability",
+      "spell": 0.8825531914893618,
+      "macro": 0.9719272145212745,
+      "n_gt": 511,
+      "n_pred": 429,
+      "per_class": {
+        "H": {
+          "precision": 0.9922503328894807,
+          "recall": 0.952647592748843,
+          "f1": 0.9720457599039929,
+          "support": 39111
+        },
+        "A": {
+          "precision": 0.9817481285777191,
+          "recall": 0.9639629901854815,
+          "f1": 0.9727742751805232,
+          "support": 46258
+        },
+        "D": {
+          "precision": 0.9524739273298729,
+          "recall": 0.9901811940988151,
+          "f1": 0.9709616084793075,
+          "support": 60598
+        }
+      },
+      "false_dead_fraction": 0.03507127880143846,
+      "missed_dead_fraction": 0.009818805901184858
+    },
+    {
+      "match": "idsse_J03WMX",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "ORACLE_both",
+      "spell": 0.9305870236869207,
+      "macro": 0.9919351798922276,
+      "n_gt": 511,
+      "n_pred": 460,
+      "per_class": {
+        "H": {
+          "precision": 0.9887125671871001,
+          "recall": 0.9876761013525607,
+          "f1": 0.988194062496003,
+          "support": 39111
+        },
+        "A": {
+          "precision": 0.9909494424596731,
+          "recall": 0.9893856197846859,
+          "f1": 0.9901669136657183,
+          "support": 46258
+        },
+        "D": {
+          "precision": 0.9965081038344973,
+          "recall": 0.9983827849103931,
+          "f1": 0.9974445635149617,
+          "support": 60598
+        }
+      },
+      "false_dead_fraction": 0.0024833370427204252,
+      "missed_dead_fraction": 0.0016172150896069178
+    },
+    {
+      "match": "idsse_J03WOH",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "v2",
+      "spell": 0.6813509544787077,
+      "macro": 0.9310002186094266,
+      "n_gt": 402,
+      "n_pred": 279,
+      "per_class": {
+        "H": {
+          "precision": 0.9226355776788053,
+          "recall": 0.9000920104278485,
+          "f1": 0.9112243841854688,
+          "support": 39126
+        },
+        "A": {
+          "precision": 0.8907479723640733,
+          "recall": 0.9035314909046589,
+          "f1": 0.8970941929238077,
+          "support": 32819
+        },
+        "D": {
+          "precision": 0.9810505824740701,
+          "recall": 0.9883405598369823,
+          "f1": 0.9846820787190036,
+          "support": 65269
+        }
+      },
+      "false_dead_fraction": 0.017318785183126,
+      "missed_dead_fraction": 0.011659440163017665
+    },
+    {
+      "match": "idsse_J03WOH",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "ORACLE_dead_probability",
+      "spell": 0.6951965065502183,
+      "macro": 0.9412419393249545,
+      "n_gt": 402,
+      "n_pred": 285,
+      "per_class": {
+        "H": {
+          "precision": 0.9307148468185389,
+          "recall": 0.9084496242907529,
+          "f1": 0.9194474623622535,
+          "support": 39126
+        },
+        "A": {
+          "precision": 0.8937777777777778,
+          "recall": 0.9191322100003047,
+          "f1": 0.9062776968258499,
+          "support": 32819
+        },
+        "D": {
+          "precision": 0.9979624352728498,
+          "recall": 0.9980388852288222,
+          "f1": 0.9980006587867598,
+          "support": 65269
+        }
+      },
+      "false_dead_fraction": 0.0018486343734797415,
+      "missed_dead_fraction": 0.0019611147711777414
+    },
+    {
+      "match": "idsse_J03WOH",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "ORACLE_team_probability",
+      "spell": 0.9211340206185568,
+      "macro": 0.9776224127447087,
+      "n_gt": 402,
+      "n_pred": 374,
+      "per_class": {
+        "H": {
+          "precision": 0.9939040207522698,
+          "recall": 0.9792720952819097,
+          "f1": 0.9865338070961429,
+          "support": 39126
+        },
+        "A": {
+          "precision": 0.9564163924618606,
+          "recall": 0.974222249306804,
+          "f1": 0.9652372111277152,
+          "support": 32819
+        },
+        "D": {
+          "precision": 0.9813594138026183,
+          "recall": 0.9808331673535675,
+          "f1": 0.9810962200102679,
+          "support": 65269
+        }
+      },
+      "false_dead_fraction": 0.016901799986100495,
+      "missed_dead_fraction": 0.019166832646432458
+    },
+    {
+      "match": "idsse_J03WOH",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "ORACLE_both",
+      "spell": 0.9560975609756097,
+      "macro": 0.9926026571920671,
+      "n_gt": 402,
+      "n_pred": 377,
+      "per_class": {
+        "H": {
+          "precision": 0.9925384615384616,
+          "recall": 0.9893421254408833,
+          "f1": 0.9909377159972352,
+          "support": 39126
+        },
+        "A": {
+          "precision": 0.9894560414444614,
+          "recall": 0.9893354459307109,
+          "f1": 0.9893957400127982,
+          "support": 32819
+        },
+        "D": {
+          "precision": 0.9964831266533127,
+          "recall": 0.9984678790850174,
+          "f1": 0.9974745155661677,
+          "support": 65269
+        }
+      },
+      "false_dead_fraction": 0.003196886510528876,
+      "missed_dead_fraction": 0.0015321209149826104
+    },
+    {
+      "match": "idsse_J03WOH",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "v2",
+      "spell": 0.5177215189873418,
+      "macro": 0.8399948245509051,
+      "n_gt": 402,
+      "n_pred": 230,
+      "per_class": {
+        "H": {
+          "precision": 0.8820719602977668,
+          "recall": 0.7268312630987067,
+          "f1": 0.7969621388336183,
+          "support": 39126
+        },
+        "A": {
+          "precision": 0.8720428250733897,
+          "recall": 0.7693714007130016,
+          "f1": 0.8174960339301324,
+          "support": 32819
+        },
+        "D": {
+          "precision": 0.84150015127797,
+          "recall": 0.9800977493143759,
+          "f1": 0.9055263008889645,
+          "support": 65269
+        }
+      },
+      "false_dead_fraction": 0.16747515463201057,
+      "missed_dead_fraction": 0.01990225068562411
+    },
+    {
+      "match": "idsse_J03WOH",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "ORACLE_dead_probability",
+      "spell": 0.5557299843014128,
+      "macro": 0.9089525456290621,
+      "n_gt": 402,
+      "n_pred": 235,
+      "per_class": {
+        "H": {
+          "precision": 0.8842297650130548,
+          "recall": 0.8655625415324848,
+          "f1": 0.8747965799602201,
+          "support": 39126
+        },
+        "A": {
+          "precision": 0.8436385255648038,
+          "recall": 0.8647429842469301,
+          "f1": 0.8540603981402067,
+          "support": 32819
+        },
+        "D": {
+          "precision": 0.9979624352728498,
+          "recall": 0.9980388852288222,
+          "f1": 0.9980006587867598,
+          "support": 65269
+        }
+      },
+      "false_dead_fraction": 0.0018486343734797415,
+      "missed_dead_fraction": 0.0019611147711777414
+    },
+    {
+      "match": "idsse_J03WOH",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "ORACLE_team_probability",
+      "spell": 0.7896879240162823,
+      "macro": 0.9007466214641698,
+      "n_gt": 402,
+      "n_pred": 335,
+      "per_class": {
+        "H": {
+          "precision": 0.9955242566510172,
+          "recall": 0.8129376884935848,
+          "f1": 0.8950137880578535,
+          "support": 39126
+        },
+        "A": {
+          "precision": 0.9345436702649657,
+          "recall": 0.8705018434443462,
+          "f1": 0.9013866759216899,
+          "support": 32819
+        },
+        "D": {
+          "precision": 0.8486893190885479,
+          "recall": 0.9712420904257764,
+          "f1": 0.9058394004129663,
+          "support": 65269
+        }
+      },
+      "false_dead_fraction": 0.15709222322607547,
+      "missed_dead_fraction": 0.028757909574223597
+    },
+    {
+      "match": "idsse_J03WOH",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "ORACLE_both",
+      "spell": 0.9560975609756097,
+      "macro": 0.9926026571920671,
+      "n_gt": 402,
+      "n_pred": 377,
+      "per_class": {
+        "H": {
+          "precision": 0.9925384615384616,
+          "recall": 0.9893421254408833,
+          "f1": 0.9909377159972352,
+          "support": 39126
+        },
+        "A": {
+          "precision": 0.9894560414444614,
+          "recall": 0.9893354459307109,
+          "f1": 0.9893957400127982,
+          "support": 32819
+        },
+        "D": {
+          "precision": 0.9964831266533127,
+          "recall": 0.9984678790850174,
+          "f1": 0.9974745155661677,
+          "support": 65269
+        }
+      },
+      "false_dead_fraction": 0.003196886510528876,
+      "missed_dead_fraction": 0.0015321209149826104
+    },
+    {
+      "match": "idsse_J03WOY",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "v2",
+      "spell": 0.6413016270337922,
+      "macro": 0.9151503610494416,
+      "n_gt": 456,
+      "n_pred": 343,
+      "per_class": {
+        "H": {
+          "precision": 0.8872892694674873,
+          "recall": 0.8769173807256956,
+          "f1": 0.8820728365832247,
+          "support": 37812
+        },
+        "A": {
+          "precision": 0.8823605371900827,
+          "recall": 0.8880022872589282,
+          "f1": 0.8851724227271549,
+          "support": 38474
+        },
+        "D": {
+          "precision": 0.9767630858140445,
+          "recall": 0.9796528301886792,
+          "f1": 0.9782058238379454,
+          "support": 66250
+        }
+      },
+      "false_dead_fraction": 0.020239624570694493,
+      "missed_dead_fraction": 0.020347169811320755
+    },
+    {
+      "match": "idsse_J03WOY",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "ORACLE_dead_probability",
+      "spell": 0.6671660424469413,
+      "macro": 0.9310045699165833,
+      "n_gt": 456,
+      "n_pred": 345,
+      "per_class": {
+        "H": {
+          "precision": 0.8977459559798462,
+          "recall": 0.8953242356923727,
+          "f1": 0.8965334604486109,
+          "support": 37812
+        },
+        "A": {
+          "precision": 0.8971880264351432,
+          "recall": 0.899776472422935,
+          "f1": 0.8984803851594234,
+          "support": 38474
+        },
+        "D": {
+          "precision": 0.9980676620220106,
+          "recall": 0.9979320754716982,
+          "f1": 0.9979998641417154,
+          "support": 66250
+        }
+      },
+      "false_dead_fraction": 0.001677896337466901,
+      "missed_dead_fraction": 0.0020679245283018867
+    },
+    {
+      "match": "idsse_J03WOY",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "ORACLE_team_probability",
+      "spell": 0.9399548532731377,
+      "macro": 0.9740886968253714,
+      "n_gt": 456,
+      "n_pred": 430,
+      "per_class": {
+        "H": {
+          "precision": 0.9938049506289733,
+          "recall": 0.9715434253676082,
+          "f1": 0.9825481097128796,
+          "support": 37812
+        },
+        "A": {
+          "precision": 0.9473539001755706,
+          "recall": 0.9817279201538701,
+          "f1": 0.9642346574083529,
+          "support": 38474
+        },
+        "D": {
+          "precision": 0.9795589108232752,
+          "recall": 0.9714415094339622,
+          "f1": 0.9754833233548816,
+          "support": 66250
+        }
+      },
+      "false_dead_fraction": 0.017604802978266,
+      "missed_dead_fraction": 0.028558490566037736
+    },
+    {
+      "match": "idsse_J03WOY",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "ORACLE_both",
+      "spell": 0.9689189189189189,
+      "macro": 0.9933194094850596,
+      "n_gt": 456,
+      "n_pred": 432,
+      "per_class": {
+        "H": {
+          "precision": 0.9922332670642809,
+          "recall": 0.9899502803342854,
+          "f1": 0.9910904589803672,
+          "support": 37812
+        },
+        "A": {
+          "precision": 0.9921655387818844,
+          "recall": 0.9907729895513854,
+          "f1": 0.9914687751970244,
+          "support": 38474
+        },
+        "D": {
+          "precision": 0.9963398653431941,
+          "recall": 0.9984603773584906,
+          "f1": 0.9973989942777873,
+          "support": 66250
+        }
+      },
+      "false_dead_fraction": 0.0031853813281598198,
+      "missed_dead_fraction": 0.001539622641509434
+    },
+    {
+      "match": "idsse_J03WOY",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "v2",
+      "spell": 0.47548209366391186,
+      "macro": 0.8301562514709744,
+      "n_gt": 456,
+      "n_pred": 270,
+      "per_class": {
+        "H": {
+          "precision": 0.8670109748224661,
+          "recall": 0.7103565005818259,
+          "f1": 0.7809047563670194,
+          "support": 37812
+        },
+        "A": {
+          "precision": 0.8468569780853518,
+          "recall": 0.7633466756770806,
+          "f1": 0.8029362714273997,
+          "support": 38474
+        },
+        "D": {
+          "precision": 0.8439695093397159,
+          "recall": 0.9793358490566038,
+          "f1": 0.906627726618504,
+          "support": 66250
+        }
+      },
+      "false_dead_fraction": 0.15723723881183965,
+      "missed_dead_fraction": 0.020664150943396225
+    },
+    {
+      "match": "idsse_J03WOY",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "ORACLE_dead_probability",
+      "spell": 0.5134408602150538,
+      "macro": 0.8914274545966215,
+      "n_gt": 456,
+      "n_pred": 288,
+      "per_class": {
+        "H": {
+          "precision": 0.865700760292641,
+          "recall": 0.7980006347191367,
+          "f1": 0.8304732547098409,
+          "support": 37812
+        },
+        "A": {
+          "precision": 0.8155405405405406,
+          "recall": 0.8784113947081146,
+          "f1": 0.8458092449383087,
+          "support": 38474
+        },
+        "D": {
+          "precision": 0.9980676620220106,
+          "recall": 0.9979320754716982,
+          "f1": 0.9979998641417154,
+          "support": 66250
+        }
+      },
+      "false_dead_fraction": 0.001677896337466901,
+      "missed_dead_fraction": 0.0020679245283018867
+    },
+    {
+      "match": "idsse_J03WOY",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "ORACLE_team_probability",
+      "spell": 0.8297872340425532,
+      "macro": 0.9123573849374781,
+      "n_gt": 456,
+      "n_pred": 390,
+      "per_class": {
+        "H": {
+          "precision": 0.994188937228092,
+          "recall": 0.8461070559610706,
+          "f1": 0.9141901931649331,
+          "support": 37812
+        },
+        "A": {
+          "precision": 0.9561880120741699,
+          "recall": 0.8645059000883714,
+          "f1": 0.9080386027655305,
+          "support": 38474
+        },
+        "D": {
+          "precision": 0.8584245279273796,
+          "recall": 0.9792,
+          "f1": 0.9148433588819709,
+          "support": 66250
+        }
+      },
+      "false_dead_fraction": 0.14024853839498727,
+      "missed_dead_fraction": 0.0208
+    },
+    {
+      "match": "idsse_J03WOY",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "ORACLE_both",
+      "spell": 0.9689189189189189,
+      "macro": 0.9933194094850596,
+      "n_gt": 456,
+      "n_pred": 432,
+      "per_class": {
+        "H": {
+          "precision": 0.9922332670642809,
+          "recall": 0.9899502803342854,
+          "f1": 0.9910904589803672,
+          "support": 37812
+        },
+        "A": {
+          "precision": 0.9921655387818844,
+          "recall": 0.9907729895513854,
+          "f1": 0.9914687751970244,
+          "support": 38474
+        },
+        "D": {
+          "precision": 0.9963398653431941,
+          "recall": 0.9984603773584906,
+          "f1": 0.9973989942777873,
+          "support": 66250
+        }
+      },
+      "false_dead_fraction": 0.0031853813281598198,
+      "missed_dead_fraction": 0.001539622641509434
+    },
+    {
+      "match": "idsse_J03WPY",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "v2",
+      "spell": 0.6393113342898136,
+      "macro": 0.9201443794067741,
+      "n_gt": 421,
+      "n_pred": 276,
+      "per_class": {
+        "H": {
+          "precision": 0.9130334041320718,
+          "recall": 0.9236990154711674,
+          "f1": 0.9183352430521838,
+          "support": 51192
+        },
+        "A": {
+          "precision": 0.8790931118033922,
+          "recall": 0.8390709660367385,
+          "f1": 0.8586159099361035,
+          "support": 30268
+        },
+        "D": {
+          "precision": 0.9776289084555402,
+          "recall": 0.989405569025961,
+          "f1": 0.9834819852320351,
+          "support": 64751
+        }
+      },
+      "false_dead_fraction": 0.017996562730174318,
+      "missed_dead_fraction": 0.010594430974039011
+    },
+    {
+      "match": "idsse_J03WPY",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "ORACLE_dead_probability",
+      "spell": 0.6478632478632479,
+      "macro": 0.9300310002819758,
+      "n_gt": 421,
+      "n_pred": 281,
+      "per_class": {
+        "H": {
+          "precision": 0.9162772810306701,
+          "recall": 0.9308290357868417,
+          "f1": 0.9234958380573078,
+          "support": 51192
+        },
+        "A": {
+          "precision": 0.8807542041786989,
+          "recall": 0.8565151314920048,
+          "f1": 0.8684655712443261,
+          "support": 30268
+        },
+        "D": {
+          "precision": 0.9979774899260472,
+          "recall": 0.9982857407607605,
+          "f1": 0.9981315915442937,
+          "support": 64751
+        }
+      },
+      "false_dead_fraction": 0.00160815123987233,
+      "missed_dead_fraction": 0.0017142592392395484
+    },
+    {
+      "match": "idsse_J03WPY",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "ORACLE_team_probability",
+      "spell": 0.8903553299492385,
+      "macro": 0.9795790603794842,
+      "n_gt": 421,
+      "n_pred": 367,
+      "per_class": {
+        "H": {
+          "precision": 0.9951644867221562,
+          "recall": 0.9809345210189092,
+          "f1": 0.9879982686026837,
+          "support": 51192
+        },
+        "A": {
+          "precision": 0.9708728179551123,
+          "recall": 0.9646821725915158,
+          "f1": 0.9677675952471704,
+          "support": 30268
+        },
+        "D": {
+          "precision": 0.9760490894695171,
+          "recall": 0.9899924325493042,
+          "f1": 0.9829713172885983,
+          "support": 64751
+        }
+      },
+      "false_dead_fraction": 0.019310090842131106,
+      "missed_dead_fraction": 0.010007567450695741
+    },
+    {
+      "match": "idsse_J03WPY",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "ORACLE_both",
+      "spell": 0.9271356783919597,
+      "macro": 0.9928944296687415,
+      "n_gt": 421,
+      "n_pred": 375,
+      "per_class": {
+        "H": {
+          "precision": 0.9941384042344639,
+          "recall": 0.9906040006250977,
+          "f1": 0.9923680554196591,
+          "support": 51192
+        },
+        "A": {
+          "precision": 0.9887347208457218,
+          "recall": 0.9888000528611074,
+          "f1": 0.9887673857742244,
+          "support": 30268
+        },
+        "D": {
+          "precision": 0.9961651599390122,
+          "recall": 0.9989343793918241,
+          "f1": 0.9975478478123411,
+          "support": 64751
+        }
+      },
+      "false_dead_fraction": 0.0030567149521237417,
+      "missed_dead_fraction": 0.0010656206081759356
+    },
+    {
+      "match": "idsse_J03WPY",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "v2",
+      "spell": 0.5260677466863034,
+      "macro": 0.8280608235894521,
+      "n_gt": 421,
+      "n_pred": 258,
+      "per_class": {
+        "H": {
+          "precision": 0.8900848593121929,
+          "recall": 0.7785982184716362,
+          "f1": 0.8306172633684825,
+          "support": 51192
+        },
+        "A": {
+          "precision": 0.835426731078905,
+          "recall": 0.6856085634994054,
+          "f1": 0.7531392901212166,
+          "support": 30268
+        },
+        "D": {
+          "precision": 0.8308286874436944,
+          "recall": 0.9827493011690939,
+          "f1": 0.9004259172786574,
+          "support": 64751
+        }
+      },
+      "false_dead_fraction": 0.1590596611834029,
+      "missed_dead_fraction": 0.017250698830906085
+    },
+    {
+      "match": "idsse_J03WPY",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "ORACLE_dead_probability",
+      "spell": 0.5476744186046512,
+      "macro": 0.8942592349954207,
+      "n_gt": 421,
+      "n_pred": 267,
+      "per_class": {
+        "H": {
+          "precision": 0.874663612940166,
+          "recall": 0.8952180028129395,
+          "f1": 0.8848214544296098,
+          "support": 51192
+        },
+        "A": {
+          "precision": 0.8166637975555173,
+          "recall": 0.7836659178009779,
+          "f1": 0.7998246590123582,
+          "support": 30268
+        },
+        "D": {
+          "precision": 0.9979774899260472,
+          "recall": 0.9982857407607605,
+          "f1": 0.9981315915442937,
+          "support": 64751
+        }
+      },
+      "false_dead_fraction": 0.00160815123987233,
+      "missed_dead_fraction": 0.0017142592392395484
+    },
+    {
+      "match": "idsse_J03WPY",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "ORACLE_team_probability",
+      "spell": 0.7937743190661479,
+      "macro": 0.905870758945048,
+      "n_gt": 421,
+      "n_pred": 350,
+      "per_class": {
+        "H": {
+          "precision": 0.9956893602463223,
+          "recall": 0.8527894983591187,
+          "f1": 0.9187158685564569,
+          "support": 51192
+        },
+        "A": {
+          "precision": 0.9533783783783784,
+          "recall": 0.8391040042288886,
+          "f1": 0.892598580164476,
+          "support": 30268
+        },
+        "D": {
+          "precision": 0.8406227715711909,
+          "recall": 0.9831045080384859,
+          "f1": 0.906297828114211,
+          "support": 64751
+        }
+      },
+      "false_dead_fraction": 0.14815860545052786,
+      "missed_dead_fraction": 0.016895491961514107
+    },
+    {
+      "match": "idsse_J03WPY",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "ORACLE_both",
+      "spell": 0.9271356783919597,
+      "macro": 0.9928944296687415,
+      "n_gt": 421,
+      "n_pred": 375,
+      "per_class": {
+        "H": {
+          "precision": 0.9941384042344639,
+          "recall": 0.9906040006250977,
+          "f1": 0.9923680554196591,
+          "support": 51192
+        },
+        "A": {
+          "precision": 0.9887347208457218,
+          "recall": 0.9888000528611074,
+          "f1": 0.9887673857742244,
+          "support": 30268
+        },
+        "D": {
+          "precision": 0.9961651599390122,
+          "recall": 0.9989343793918241,
+          "f1": 0.9975478478123411,
+          "support": 64751
+        }
+      },
+      "false_dead_fraction": 0.0030567149521237417,
+      "missed_dead_fraction": 0.0010656206081759356
+    },
+    {
+      "match": "idsse_J03WQQ",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "v2",
+      "spell": 0.6507801418439716,
+      "macro": 0.9185386346032693,
+      "n_gt": 401,
+      "n_pred": 304,
+      "per_class": {
+        "H": {
+          "precision": 0.8913340623291416,
+          "recall": 0.8805022954361329,
+          "f1": 0.8858850699633202,
+          "support": 37030
+        },
+        "A": {
+          "precision": 0.9165757906215921,
+          "recall": 0.8880647478973839,
+          "f1": 0.9020950500150259,
+          "support": 47322
+        },
+        "D": {
+          "precision": 0.9521154969540182,
+          "recall": 0.9836704429844981,
+          "f1": 0.9676357838314618,
+          "support": 57993
+        }
+      },
+      "false_dead_fraction": 0.0340122344461305,
+      "missed_dead_fraction": 0.016329557015501872
+    },
+    {
+      "match": "idsse_J03WQQ",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "ORACLE_dead_probability",
+      "spell": 0.6689265536723165,
+      "macro": 0.9344999341476776,
+      "n_gt": 401,
+      "n_pred": 307,
+      "per_class": {
+        "H": {
+          "precision": 0.8867299211546171,
+          "recall": 0.8959492303537672,
+          "f1": 0.891315736449728,
+          "support": 37030
+        },
+        "A": {
+          "precision": 0.917941615171532,
+          "recall": 0.9103376864883141,
+          "f1": 0.9141238382209396,
+          "support": 47322
+        },
+        "D": {
+          "precision": 0.998,
+          "recall": 0.9981204628144776,
+          "f1": 0.9980602277723655,
+          "support": 57993
+        }
+      },
+      "false_dead_fraction": 0.0013751896813353566,
+      "missed_dead_fraction": 0.0018795371855223906
+    },
+    {
+      "match": "idsse_J03WQQ",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "ORACLE_team_probability",
+      "spell": 0.9214007782101167,
+      "macro": 0.9730762043501304,
+      "n_gt": 401,
+      "n_pred": 370,
+      "per_class": {
+        "H": {
+          "precision": 0.9946359088382435,
+          "recall": 0.9664326221982177,
+          "f1": 0.9803314614436379,
+          "support": 37030
+        },
+        "A": {
+          "precision": 0.9717924227952881,
+          "recall": 0.9675415240268797,
+          "f1": 0.9696623145589123,
+          "support": 47322
+        },
+        "D": {
+          "precision": 0.9589535864978903,
+          "recall": 0.979738934009277,
+          "f1": 0.969234837047841,
+          "support": 57993
+        }
+      },
+      "false_dead_fraction": 0.028831562974203338,
+      "missed_dead_fraction": 0.02026106599072302
+    },
+    {
+      "match": "idsse_J03WQQ",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "ORACLE_both",
+      "spell": 0.9687179487179487,
+      "macro": 0.9944762410904552,
+      "n_gt": 401,
+      "n_pred": 379,
+      "per_class": {
+        "H": {
+          "precision": 0.9928571428571429,
+          "recall": 0.9909802862543884,
+          "f1": 0.9919178267333423,
+          "support": 37030
+        },
+        "A": {
+          "precision": 0.9945208377406389,
+          "recall": 0.9934280038882549,
+          "f1": 0.9939741204330175,
+          "support": 47322
+        },
+        "D": {
+          "precision": 0.996489718661275,
+          "recall": 0.9985860362457538,
+          "f1": 0.9975367761050057,
+          "support": 57993
+        }
+      },
+      "false_dead_fraction": 0.0024184370257966615,
+      "missed_dead_fraction": 0.001413963754246202
+    },
+    {
+      "match": "idsse_J03WQQ",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "v2",
+      "spell": 0.5581395348837209,
+      "macro": 0.8369921068344423,
+      "n_gt": 401,
+      "n_pred": 287,
+      "per_class": {
+        "H": {
+          "precision": 0.876115821468565,
+          "recall": 0.7394815014852822,
+          "f1": 0.802020941641649,
+          "support": 37030
+        },
+        "A": {
+          "precision": 0.911460731644922,
+          "recall": 0.7529056252905625,
+          "f1": 0.824630838309494,
+          "support": 47322
+        },
+        "D": {
+          "precision": 0.7983055555555556,
+          "recall": 0.9911196178849171,
+          "f1": 0.8843245405521837,
+          "support": 57993
+        }
+      },
+      "false_dead_fraction": 0.17215952200303491,
+      "missed_dead_fraction": 0.008880382115082856
+    },
+    {
+      "match": "idsse_J03WQQ",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "ORACLE_dead_probability",
+      "spell": 0.6031654676258993,
+      "macro": 0.9086178099990837,
+      "n_gt": 401,
+      "n_pred": 294,
+      "per_class": {
+        "H": {
+          "precision": 0.8500612161610666,
+          "recall": 0.8437483121793141,
+          "f1": 0.8468929999322355,
+          "support": 37030
+        },
+        "A": {
+          "precision": 0.8784198361000211,
+          "recall": 0.8833946156121888,
+          "f1": 0.8809002022926501,
+          "support": 47322
+        },
+        "D": {
+          "precision": 0.998,
+          "recall": 0.9981204628144776,
+          "f1": 0.9980602277723655,
+          "support": 57993
+        }
+      },
+      "false_dead_fraction": 0.0013751896813353566,
+      "missed_dead_fraction": 0.0018795371855223906
+    },
+    {
+      "match": "idsse_J03WQQ",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "ORACLE_team_probability",
+      "spell": 0.8179656538969617,
+      "macro": 0.9095372540340653,
+      "n_gt": 401,
+      "n_pred": 356,
+      "per_class": {
+        "H": {
+          "precision": 0.994947233770387,
+          "recall": 0.8401836348906292,
+          "f1": 0.9110395314787701,
+          "support": 37030
+        },
+        "A": {
+          "precision": 0.9846470517011745,
+          "recall": 0.8592409450150036,
+          "f1": 0.9176794520238781,
+          "support": 47322
+        },
+        "D": {
+          "precision": 0.8238893665806821,
+          "recall": 0.9913437828703464,
+          "f1": 0.8998927785995476,
+          "support": 57993
+        }
+      },
+      "false_dead_fraction": 0.14568712063732928,
+      "missed_dead_fraction": 0.008656217129653579
+    },
+    {
+      "match": "idsse_J03WQQ",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "ORACLE_both",
+      "spell": 0.9687179487179487,
+      "macro": 0.9944762410904552,
+      "n_gt": 401,
+      "n_pred": 379,
+      "per_class": {
+        "H": {
+          "precision": 0.9928571428571429,
+          "recall": 0.9909802862543884,
+          "f1": 0.9919178267333423,
+          "support": 37030
+        },
+        "A": {
+          "precision": 0.9945208377406389,
+          "recall": 0.9934280038882549,
+          "f1": 0.9939741204330175,
+          "support": 47322
+        },
+        "D": {
+          "precision": 0.996489718661275,
+          "recall": 0.9985860362457538,
+          "f1": 0.9975367761050057,
+          "support": 57993
+        }
+      },
+      "false_dead_fraction": 0.0024184370257966615,
+      "missed_dead_fraction": 0.001413963754246202
+    },
+    {
+      "match": "idsse_J03WR9",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "v2",
+      "spell": 0.6877300613496933,
+      "macro": 0.937731334560926,
+      "n_gt": 370,
+      "n_pred": 282,
+      "per_class": {
+        "H": {
+          "precision": 0.934800264425347,
+          "recall": 0.9296380472961551,
+          "f1": 0.9322120093422737,
+          "support": 53239
+        },
+        "A": {
+          "precision": 0.9148291424887169,
+          "recall": 0.8846837297752284,
+          "f1": 0.8995039383805886,
+          "support": 32077
+        },
+        "D": {
+          "precision": 0.9709284748189991,
+          "recall": 0.9922594074218622,
+          "f1": 0.981478055959916,
+          "support": 61494
+        }
+      },
+      "false_dead_fraction": 0.021414506071545783,
+      "missed_dead_fraction": 0.0077405925781377045
+    },
+    {
+      "match": "idsse_J03WR9",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "ORACLE_dead_probability",
+      "spell": 0.7036585365853658,
+      "macro": 0.9474338228097055,
+      "n_gt": 370,
+      "n_pred": 286,
+      "per_class": {
+        "H": {
+          "precision": 0.9362144115737735,
+          "recall": 0.9481019553334962,
+          "f1": 0.9421206861153107,
+          "support": 53239
+        },
+        "A": {
+          "precision": 0.9118649466475554,
+          "recall": 0.8924774760731988,
+          "f1": 0.9020670531888076,
+          "support": 32077
+        },
+        "D": {
+          "precision": 0.9980650406504065,
+          "recall": 0.998162422350148,
+          "f1": 0.9981137291249979,
+          "support": 61494
+        }
+      },
+      "false_dead_fraction": 0.0013948145717098785,
+      "missed_dead_fraction": 0.001837577649852018
+    },
+    {
+      "match": "idsse_J03WR9",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "ORACLE_team_probability",
+      "spell": 0.9195994277539343,
+      "macro": 0.9819682866135738,
+      "n_gt": 370,
+      "n_pred": 329,
+      "per_class": {
+        "H": {
+          "precision": 0.996532125999422,
+          "recall": 0.9715622006423862,
+          "f1": 0.983888762078673,
+          "support": 53239
+        },
+        "A": {
+          "precision": 0.9785093167701864,
+          "recall": 0.9822614334258192,
+          "f1": 0.9803817850864229,
+          "support": 32077
+        },
+        "D": {
+          "precision": 0.9721553305159079,
+          "recall": 0.9912999642241519,
+          "f1": 0.9816343126756255,
+          "support": 61494
+        }
+      },
+      "false_dead_fraction": 0.02046509447231469,
+      "missed_dead_fraction": 0.00870003577584805
+    },
+    {
+      "match": "idsse_J03WR9",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "ORACLE_both",
+      "spell": 0.951549295774648,
+      "macro": 0.9946781348102082,
+      "n_gt": 370,
+      "n_pred": 340,
+      "per_class": {
+        "H": {
+          "precision": 0.9957098504092577,
+          "recall": 0.99395180225023,
+          "f1": 0.9948300496315237,
+          "support": 53239
+        },
+        "A": {
+          "precision": 0.9922584673013891,
+          "recall": 0.9909592542943542,
+          "f1": 0.9916084352383329,
+          "support": 32077
+        },
+        "D": {
+          "precision": 0.9964952133701119,
+          "recall": 0.9986990600709013,
+          "f1": 0.9975959195607681,
+          "support": 61494
+        }
+      },
+      "false_dead_fraction": 0.00253176426461625,
+      "missed_dead_fraction": 0.001300939929098774
+    },
+    {
+      "match": "idsse_J03WR9",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "v2",
+      "spell": 0.5555555555555555,
+      "macro": 0.830115962279165,
+      "n_gt": 370,
+      "n_pred": 242,
+      "per_class": {
+        "H": {
+          "precision": 0.9332798533119413,
+          "recall": 0.7648340502263379,
+          "f1": 0.8407023918900784,
+          "support": 53239
+        },
+        "A": {
+          "precision": 0.8959208400646204,
+          "recall": 0.6915546965115191,
+          "f1": 0.7805830708869222,
+          "support": 32077
+        },
+        "D": {
+          "precision": 0.7752741647538893,
+          "recall": 0.988665560867727,
+          "f1": 0.8690624240604943,
+          "support": 61494
+        }
+      },
+      "false_dead_fraction": 0.20656148905246377,
+      "missed_dead_fraction": 0.011334439132273067
+    },
+    {
+      "match": "idsse_J03WR9",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "ORACLE_dead_probability",
+      "spell": 0.6225859247135842,
+      "macro": 0.9220051815419713,
+      "n_gt": 370,
+      "n_pred": 241,
+      "per_class": {
+        "H": {
+          "precision": 0.9120712277413309,
+          "recall": 0.9139728394597945,
+          "f1": 0.91302104344726,
+          "support": 53239
+        },
+        "A": {
+          "precision": 0.8564455569461827,
+          "recall": 0.853321694672195,
+          "f1": 0.8548807720536564,
+          "support": 32077
+        },
+        "D": {
+          "precision": 0.9980650406504065,
+          "recall": 0.998162422350148,
+          "f1": 0.9981137291249979,
+          "support": 61494
+        }
+      },
+      "false_dead_fraction": 0.0013948145717098785,
+      "missed_dead_fraction": 0.001837577649852018
+    },
+    {
+      "match": "idsse_J03WR9",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "ORACLE_team_probability",
+      "spell": 0.7683109118086696,
+      "macro": 0.8849432857677293,
+      "n_gt": 370,
+      "n_pred": 299,
+      "per_class": {
+        "H": {
+          "precision": 0.9968881317433277,
+          "recall": 0.8243580833599429,
+          "f1": 0.9024510610297746,
+          "support": 53239
+        },
+        "A": {
+          "precision": 0.9620372110505544,
+          "recall": 0.7979237459862206,
+          "f1": 0.8723288231484952,
+          "support": 32077
+        },
+        "D": {
+          "precision": 0.7952218430034129,
+          "recall": 0.9851367613100465,
+          "f1": 0.8800499731249182,
+          "support": 61494
+        }
+      },
+      "false_dead_fraction": 0.18284964133339585,
+      "missed_dead_fraction": 0.014863238689953491
+    },
+    {
+      "match": "idsse_J03WR9",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "ORACLE_both",
+      "spell": 0.951549295774648,
+      "macro": 0.9946781348102082,
+      "n_gt": 370,
+      "n_pred": 340,
+      "per_class": {
+        "H": {
+          "precision": 0.9957098504092577,
+          "recall": 0.99395180225023,
+          "f1": 0.9948300496315237,
+          "support": 53239
+        },
+        "A": {
+          "precision": 0.9922584673013891,
+          "recall": 0.9909592542943542,
+          "f1": 0.9916084352383329,
+          "support": 32077
+        },
+        "D": {
+          "precision": 0.9964952133701119,
+          "recall": 0.9986990600709013,
+          "f1": 0.9975959195607681,
+          "support": 61494
+        }
+      },
+      "false_dead_fraction": 0.00253176426461625,
+      "missed_dead_fraction": 0.001300939929098774
+    },
+    {
+      "match": "metrica_1",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "v2",
+      "spell": 0.6455573505654282,
+      "macro": 0.8031425551647543,
+      "n_gt": 326,
+      "n_pred": 293,
+      "per_class": {
+        "H": {
+          "precision": 0.7916254036598493,
+          "recall": 0.81900795153351,
+          "f1": 0.8050839108016684,
+          "support": 44897
+        },
+        "A": {
+          "precision": 0.780259623992838,
+          "recall": 0.8430139768825264,
+          "f1": 0.8104237859450916,
+          "support": 41354
+        },
+        "D": {
+          "precision": 0.829868587125993,
+          "recall": 0.7609565143392052,
+          "f1": 0.7939199687475028,
+          "support": 58755
+        }
+      },
+      "false_dead_fraction": 0.10627123163789405,
+      "missed_dead_fraction": 0.23904348566079484
+    },
+    {
+      "match": "metrica_1",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "ORACLE_dead_probability",
+      "spell": 0.7141396933560477,
+      "macro": 0.9396553182656754,
+      "n_gt": 326,
+      "n_pred": 261,
+      "per_class": {
+        "H": {
+          "precision": 0.9047930283224401,
+          "recall": 0.9250061251308551,
+          "f1": 0.9147879335220327,
+          "support": 44897
+        },
+        "A": {
+          "precision": 0.9169951654890294,
+          "recall": 0.8943995744063452,
+          "f1": 0.9055564396675194,
+          "support": 41354
+        },
+        "D": {
+          "precision": 0.9984856476833812,
+          "recall": 0.9987575525487192,
+          "f1": 0.9986215816074742,
+          "support": 58755
+        }
+      },
+      "false_dead_fraction": 0.0010318720942365887,
+      "missed_dead_fraction": 0.001242447451280742
+    },
+    {
+      "match": "metrica_1",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "ORACLE_team_probability",
+      "spell": 0.8436251920122888,
+      "macro": 0.8421908983582053,
+      "n_gt": 326,
+      "n_pred": 325,
+      "per_class": {
+        "H": {
+          "precision": 0.9950687042506742,
+          "recall": 0.8629307080651268,
+          "f1": 0.9243009829182174,
+          "support": 44897
+        },
+        "A": {
+          "precision": 0.7262491608324542,
+          "recall": 0.9155825313149877,
+          "f1": 0.8099990373198986,
+          "support": 41354
+        },
+        "D": {
+          "precision": 0.8276661228122218,
+          "recall": 0.7597821462003234,
+          "f1": 0.7922726748364998,
+          "support": 58755
+        }
+      },
+      "false_dead_fraction": 0.10776686647111337,
+      "missed_dead_fraction": 0.2402178537996766
+    },
+    {
+      "match": "metrica_1",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "ORACLE_both",
+      "spell": 0.9410256410256409,
+      "macro": 0.9955638260923244,
+      "n_gt": 326,
+      "n_pred": 298,
+      "per_class": {
+        "H": {
+          "precision": 0.9948049052396879,
+          "recall": 0.993763503129385,
+          "f1": 0.9942839314963174,
+          "support": 44897
+        },
+        "A": {
+          "precision": 0.9939782345828295,
+          "recall": 0.9938820912124583,
+          "f1": 0.9939301605726446,
+          "support": 41354
+        },
+        "D": {
+          "precision": 0.9980444172363364,
+          "recall": 0.9989107310016169,
+          "f1": 0.9984773862080111,
+          "support": 58755
+        }
+      },
+      "false_dead_fraction": 0.0013333178745753673,
+      "missed_dead_fraction": 0.0010892689983831164
+    },
+    {
+      "match": "metrica_1",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "v2",
+      "spell": 0.6304207119741099,
+      "macro": 0.8026812526161651,
+      "n_gt": 326,
+      "n_pred": 292,
+      "per_class": {
+        "H": {
+          "precision": 0.7875297683481273,
+          "recall": 0.8102100363053211,
+          "f1": 0.798708926630584,
+          "support": 44897
+        },
+        "A": {
+          "precision": 0.788685675337953,
+          "recall": 0.8394351211491029,
+          "f1": 0.8132694537829892,
+          "support": 41354
+        },
+        "D": {
+          "precision": 0.8247842192660718,
+          "recall": 0.7692792102799761,
+          "f1": 0.796065377434922,
+          "support": 58755
+        }
+      },
+      "false_dead_fraction": 0.11132624549280588,
+      "missed_dead_fraction": 0.23072078972002383
+    },
+    {
+      "match": "metrica_1",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "ORACLE_dead_probability",
+      "spell": 0.7094991364421416,
+      "macro": 0.9349912607400492,
+      "n_gt": 326,
+      "n_pred": 253,
+      "per_class": {
+        "H": {
+          "precision": 0.9020789792102079,
+          "recall": 0.9132904202953427,
+          "f1": 0.9076500796883301,
+          "support": 44897
+        },
+        "A": {
+          "precision": 0.9050269740068662,
+          "recall": 0.8924650577936838,
+          "f1": 0.8987021209243432,
+          "support": 41354
+        },
+        "D": {
+          "precision": 0.9984856476833812,
+          "recall": 0.9987575525487192,
+          "f1": 0.9986215816074742,
+          "support": 58755
+        }
+      },
+      "false_dead_fraction": 0.0010318720942365887,
+      "missed_dead_fraction": 0.001242447451280742
+    },
+    {
+      "match": "metrica_1",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "ORACLE_team_probability",
+      "spell": 0.8263399693721286,
+      "macro": 0.8420179415881925,
+      "n_gt": 326,
+      "n_pred": 327,
+      "per_class": {
+        "H": {
+          "precision": 0.9950999355254675,
+          "recall": 0.8594115419738513,
+          "f1": 0.9222918061000095,
+          "support": 44897
+        },
+        "A": {
+          "precision": 0.7298004262739779,
+          "recall": 0.9107946026986506,
+          "f1": 0.8103136698076675,
+          "support": 41354
+        },
+        "D": {
+          "precision": 0.8234744878343494,
+          "recall": 0.7655348480980342,
+          "f1": 0.7934483488569009,
+          "support": 58755
+        }
+      },
+      "false_dead_fraction": 0.11179000823178861,
+      "missed_dead_fraction": 0.2344651519019658
+    },
+    {
+      "match": "metrica_1",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "ORACLE_both",
+      "spell": 0.9410256410256409,
+      "macro": 0.9955638260923244,
+      "n_gt": 326,
+      "n_pred": 298,
+      "per_class": {
+        "H": {
+          "precision": 0.9948049052396879,
+          "recall": 0.993763503129385,
+          "f1": 0.9942839314963174,
+          "support": 44897
+        },
+        "A": {
+          "precision": 0.9939782345828295,
+          "recall": 0.9938820912124583,
+          "f1": 0.9939301605726446,
+          "support": 41354
+        },
+        "D": {
+          "precision": 0.9980444172363364,
+          "recall": 0.9989107310016169,
+          "f1": 0.9984773862080111,
+          "support": 58755
+        }
+      },
+      "false_dead_fraction": 0.0013333178745753673,
+      "missed_dead_fraction": 0.0010892689983831164
+    },
+    {
+      "match": "metrica_2",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "v2",
+      "spell": 0.6639730639730639,
+      "macro": 0.8151669208452327,
+      "n_gt": 326,
+      "n_pred": 268,
+      "per_class": {
+        "H": {
+          "precision": 0.8957510335323841,
+          "recall": 0.7524502237999692,
+          "f1": 0.8178710732709811,
+          "support": 51832
+        },
+        "A": {
+          "precision": 0.8638262520769048,
+          "recall": 0.8167923511984918,
+          "f1": 0.8396511547424036,
+          "support": 44556
+        },
+        "D": {
+          "precision": 0.7118732653281908,
+          "recall": 0.8823043245175125,
+          "f1": 0.7879785345223133,
+          "support": 44768
+        }
+      },
+      "false_dead_fraction": 0.16586089554716354,
+      "missed_dead_fraction": 0.1176956754824875
+    },
+    {
+      "match": "metrica_2",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "ORACLE_dead_probability",
+      "spell": 0.7136986301369863,
+      "macro": 0.9385939768693904,
+      "n_gt": 326,
+      "n_pred": 258,
+      "per_class": {
+        "H": {
+          "precision": 0.9238929344617202,
+          "recall": 0.905676030251582,
+          "f1": 0.9146937900664446,
+          "support": 51832
+        },
+        "A": {
+          "precision": 0.8927262753702688,
+          "recall": 0.9131430110422839,
+          "f1": 0.9028192297877534,
+          "support": 44556
+        },
+        "D": {
+          "precision": 0.9982354649214894,
+          "recall": 0.9983023588277341,
+          "f1": 0.9982689107539731,
+          "support": 44768
+        }
+      },
+      "false_dead_fraction": 0.0008196041000954476,
+      "missed_dead_fraction": 0.0016976411722659042
+    },
+    {
+      "match": "metrica_2",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "ORACLE_team_probability",
+      "spell": 0.8345911949685535,
+      "macro": 0.8501918168463787,
+      "n_gt": 326,
+      "n_pred": 310,
+      "per_class": {
+        "H": {
+          "precision": 0.9953192510801728,
+          "recall": 0.7999884241395278,
+          "f1": 0.8870277670816754,
+          "support": 51832
+        },
+        "A": {
+          "precision": 0.8770221418888386,
+          "recall": 0.8711957985456504,
+          "f1": 0.8740992613943434,
+          "support": 44556
+        },
+        "D": {
+          "precision": 0.7146426243754074,
+          "recall": 0.8817458899213724,
+          "f1": 0.7894484220631175,
+          "support": 44768
+        }
+      },
+      "false_dead_fraction": 0.16352658007220816,
+      "missed_dead_fraction": 0.11825411007862759
+    },
+    {
+      "match": "metrica_2",
+      "cohort": "known",
+      "scenario": "label_blind_seed1",
+      "method": "ORACLE_both",
+      "spell": 0.9219672131147542,
+      "macro": 0.9960502525148608,
+      "n_gt": 326,
+      "n_pred": 284,
+      "per_class": {
+        "H": {
+          "precision": 0.9954269175108539,
+          "recall": 0.9952924834079333,
+          "f1": 0.9953596959201984,
+          "support": 51832
+        },
+        "A": {
+          "precision": 0.9953477918867288,
+          "recall": 0.9939850974055122,
+          "f1": 0.9946659779227635,
+          "support": 44556
+        },
+        "D": {
+          "precision": 0.997368186278883,
+          "recall": 0.9988831308077198,
+          "f1": 0.9981250837016206,
+          "support": 44768
+        }
+      },
+      "false_dead_fraction": 0.0012242187824210483,
+      "missed_dead_fraction": 0.0011168691922802002
+    },
+    {
+      "match": "metrica_2",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "v2",
+      "spell": 0.6579564489112227,
+      "macro": 0.8112272792259532,
+      "n_gt": 326,
+      "n_pred": 271,
+      "per_class": {
+        "H": {
+          "precision": 0.8846048423937871,
+          "recall": 0.7471832072850748,
+          "f1": 0.8101075178847843,
+          "support": 51832
+        },
+        "A": {
+          "precision": 0.8656497717991832,
+          "recall": 0.8088024059610378,
+          "f1": 0.8362611096929895,
+          "support": 44556
+        },
+        "D": {
+          "precision": 0.7097908370107272,
+          "recall": 0.8838456040028592,
+          "f1": 0.7873132101000856,
+          "support": 44768
+        }
+      },
+      "false_dead_fraction": 0.16784247001701458,
+      "missed_dead_fraction": 0.11615439599714081
+    },
+    {
+      "match": "metrica_2",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "ORACLE_dead_probability",
+      "spell": 0.7093959731543624,
+      "macro": 0.9351553596961878,
+      "n_gt": 326,
+      "n_pred": 270,
+      "per_class": {
+        "H": {
+          "precision": 0.9189295552931916,
+          "recall": 0.9009878067603025,
+          "f1": 0.9098702412032889,
+          "support": 51832
+        },
+        "A": {
+          "precision": 0.8873916383188851,
+          "recall": 0.9074872071101535,
+          "f1": 0.8973269271313012,
+          "support": 44556
+        },
+        "D": {
+          "precision": 0.9982354649214894,
+          "recall": 0.9983023588277341,
+          "f1": 0.9982689107539731,
+          "support": 44768
+        }
+      },
+      "false_dead_fraction": 0.0008196041000954476,
+      "missed_dead_fraction": 0.0016976411722659042
+    },
+    {
+      "match": "metrica_2",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "ORACLE_team_probability",
+      "spell": 0.8237871674491393,
+      "macro": 0.847842640224656,
+      "n_gt": 326,
+      "n_pred": 313,
+      "per_class": {
+        "H": {
+          "precision": 0.9953769817257655,
+          "recall": 0.7934094767711066,
+          "f1": 0.8829914006892332,
+          "support": 51832
+        },
+        "A": {
+          "precision": 0.8770621468926554,
+          "recall": 0.871038692880869,
+          "f1": 0.8740400423394815,
+          "support": 44556
+        },
+        "D": {
+          "precision": 0.7099350614308071,
+          "recall": 0.8815671908506075,
+          "f1": 0.7864964776452535,
+          "support": 44768
+        }
+      },
+      "false_dead_fraction": 0.16729260903846951,
+      "missed_dead_fraction": 0.11843280914939243
+    },
+    {
+      "match": "metrica_2",
+      "cohort": "known",
+      "scenario": "matched_seed0",
+      "method": "ORACLE_both",
+      "spell": 0.9219672131147542,
+      "macro": 0.9960502525148608,
+      "n_gt": 326,
+      "n_pred": 284,
+      "per_class": {
+        "H": {
+          "precision": 0.9954269175108539,
+          "recall": 0.9952924834079333,
+          "f1": 0.9953596959201984,
+          "support": 51832
+        },
+        "A": {
+          "precision": 0.9953477918867288,
+          "recall": 0.9939850974055122,
+          "f1": 0.9946659779227635,
+          "support": 44556
+        },
+        "D": {
+          "precision": 0.997368186278883,
+          "recall": 0.9988831308077198,
+          "f1": 0.9981250837016206,
+          "support": 44768
+        }
+      },
+      "false_dead_fraction": 0.0012242187824210483,
+      "missed_dead_fraction": 0.0011168691922802002
+    },
+    {
+      "match": "1959846",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "v2",
+      "spell": 0.4924050632911393,
+      "macro": 0.8250806913235964,
+      "n_gt": 283,
+      "n_pred": 349,
+      "per_class": {
+        "H": {
+          "precision": 0.7218571582462566,
+          "recall": 0.9004057939856493,
+          "f1": 0.8013058139812977,
+          "support": 37211
+        },
+        "A": {
+          "precision": 0.7482445586787706,
+          "recall": 0.9174198739439453,
+          "f1": 0.8242409638554218,
+          "support": 37285
+        },
+        "D": {
+          "precision": 0.9879324660946581,
+          "recall": 0.7453953138704423,
+          "f1": 0.8496952961340696,
+          "support": 71829
+        }
+      },
+      "false_dead_fraction": 0.008778994845360825,
+      "missed_dead_fraction": 0.2546046861295577
+    },
+    {
+      "match": "1959846",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_dead_probability",
+      "spell": 0.7084019769357497,
+      "macro": 0.9404630838930471,
+      "n_gt": 283,
+      "n_pred": 324,
+      "per_class": {
+        "H": {
+          "precision": 0.9159880564603692,
+          "recall": 0.9068554997178254,
+          "f1": 0.911398900757586,
+          "support": 37211
+        },
+        "A": {
+          "precision": 0.9074844350245066,
+          "recall": 0.9186804344910822,
+          "f1": 0.9130481140876983,
+          "support": 37285
+        },
+        "D": {
+          "precision": 0.997560635628659,
+          "recall": 0.9963246042684709,
+          "f1": 0.996942236833857,
+          "support": 71829
+        }
+      },
+      "false_dead_fraction": 0.00234911941580756,
+      "missed_dead_fraction": 0.003675395731529048
+    },
+    {
+      "match": "1959846",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_team_probability",
+      "spell": 0.6963665086887836,
+      "macro": 0.8720587998248478,
+      "n_gt": 283,
+      "n_pred": 350,
+      "per_class": {
+        "H": {
+          "precision": 0.9943337400027111,
+          "recall": 0.9856225309720243,
+          "f1": 0.9899589721442453,
+          "support": 37211
+        },
+        "A": {
+          "precision": 0.6530561916505196,
+          "recall": 0.9943408877564704,
+          "f1": 0.788347243634044,
+          "support": 37285
+        },
+        "D": {
+          "precision": 0.9902601101196127,
+          "recall": 0.7261273301869718,
+          "f1": 0.8378701836962545,
+          "support": 71829
+        }
+      },
+      "false_dead_fraction": 0.006886275773195876,
+      "missed_dead_fraction": 0.27387266981302816
+    },
+    {
+      "match": "1959846",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_both",
+      "spell": 0.9672727272727274,
+      "macro": 0.9953091205455995,
+      "n_gt": 283,
+      "n_pred": 267,
+      "per_class": {
+        "H": {
+          "precision": 0.9960615052603183,
+          "recall": 0.9922872268952729,
+          "f1": 0.9941707839151331,
+          "support": 37211
+        },
+        "A": {
+          "precision": 0.994958433896487,
+          "recall": 0.995091859997318,
+          "f1": 0.9950251424740194,
+          "support": 37285
+        },
+        "D": {
+          "precision": 0.9957896199541444,
+          "recall": 0.9976750337607373,
+          "f1": 0.996731435247646,
+          "support": 71829
+        }
+      },
+      "false_dead_fraction": 0.004067332474226804,
+      "missed_dead_fraction": 0.0023249662392626934
+    },
+    {
+      "match": "1925299",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "v2",
+      "spell": 0.536724960254372,
+      "macro": 0.820156701121172,
+      "n_gt": 258,
+      "n_pred": 371,
+      "per_class": {
+        "H": {
+          "precision": 0.7925617851715588,
+          "recall": 0.9190006306339726,
+          "f1": 0.8511109775056043,
+          "support": 53914
+        },
+        "A": {
+          "precision": 0.7220533684336484,
+          "recall": 0.8573498905970276,
+          "f1": 0.7839066722095198,
+          "support": 35191
+        },
+        "D": {
+          "precision": 0.9537014314928426,
+          "recall": 0.7276074576800062,
+          "f1": 0.8254524536483916,
+          "support": 64095
+        }
+      },
+      "false_dead_fraction": 0.025408226249929857,
+      "missed_dead_fraction": 0.27239254231999377
+    },
+    {
+      "match": "1925299",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_dead_probability",
+      "spell": 0.7145833333333333,
+      "macro": 0.9391266293584932,
+      "n_gt": 258,
+      "n_pred": 318,
+      "per_class": {
+        "H": {
+          "precision": 0.93221608463627,
+          "recall": 0.9234150684423341,
+          "f1": 0.9277947055041511,
+          "support": 53914
+        },
+        "A": {
+          "precision": 0.8846541584990198,
+          "recall": 0.8977011167628087,
+          "f1": 0.89112988533307,
+          "support": 35191
+        },
+        "D": {
+          "precision": 0.9985331980962784,
+          "recall": 0.9983774085342071,
+          "f1": 0.9984552972382587,
+          "support": 64095
+        }
+      },
+      "false_dead_fraction": 0.0010549351888221761,
+      "missed_dead_fraction": 0.0016225914657929635
+    },
+    {
+      "match": "1925299",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_team_probability",
+      "spell": 0.7436065573770492,
+      "macro": 0.8547193720824297,
+      "n_gt": 258,
+      "n_pred": 352,
+      "per_class": {
+        "H": {
+          "precision": 0.9975730420983852,
+          "recall": 0.9911154802092221,
+          "f1": 0.9943337768308229,
+          "support": 53914
+        },
+        "A": {
+          "precision": 0.6339127149064803,
+          "recall": 0.9534540081270779,
+          "f1": 0.7615210903189932,
+          "support": 35191
+        },
+        "D": {
+          "precision": 0.9587838561181886,
+          "recall": 0.6986504407520088,
+          "f1": 0.8083032490974729,
+          "support": 64095
+        }
+      },
+      "false_dead_fraction": 0.0216037259413052,
+      "missed_dead_fraction": 0.3013495592479913
+    },
+    {
+      "match": "1925299",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_both",
+      "spell": 0.9980582524271846,
+      "macro": 0.9973823756581579,
+      "n_gt": 258,
+      "n_pred": 257,
+      "per_class": {
+        "H": {
+          "precision": 0.9983640081799591,
+          "recall": 0.996067811700115,
+          "f1": 0.9972145881304316,
+          "support": 53914
+        },
+        "A": {
+          "precision": 0.9970145009951663,
+          "recall": 0.9964195390866983,
+          "f1": 0.9967169312545302,
+          "support": 35191
+        },
+        "D": {
+          "precision": 0.9970890410958904,
+          "recall": 0.9993447226772759,
+          "f1": 0.9982156075895119,
+          "support": 64095
+        }
+      },
+      "false_dead_fraction": 0.002098647662869648,
+      "missed_dead_fraction": 0.0006552773227240814
+    },
+    {
+      "match": "2006229",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "v2",
+      "spell": 0.5305114638447972,
+      "macro": 0.8206202481658927,
+      "n_gt": 244,
+      "n_pred": 323,
+      "per_class": {
+        "H": {
+          "precision": 0.7961479058780776,
+          "recall": 0.913137712570857,
+          "f1": 0.8506392024772129,
+          "support": 47984
+        },
+        "A": {
+          "precision": 0.6922933643771828,
+          "recall": 0.8906928676272354,
+          "f1": 0.7790601705684305,
+          "support": 33383
+        },
+        "D": {
+          "precision": 0.970063821300359,
+          "recall": 0.7285868360346326,
+          "f1": 0.8321613714520352,
+          "support": 66758
+        }
+      },
+      "false_dead_fraction": 0.01844728206766871,
+      "missed_dead_fraction": 0.27141316396536747
+    },
+    {
+      "match": "2006229",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_dead_probability",
+      "spell": 0.7325490196078432,
+      "macro": 0.9418310041102527,
+      "n_gt": 244,
+      "n_pred": 266,
+      "per_class": {
+        "H": {
+          "precision": 0.9371944739638682,
+          "recall": 0.9189521507169056,
+          "f1": 0.9279836690026727,
+          "support": 47984
+        },
+        "A": {
+          "precision": 0.8867424242424242,
+          "recall": 0.9116316688134679,
+          "f1": 0.8990148147054045,
+          "support": 33383
+        },
+        "D": {
+          "precision": 0.9985169650213467,
+          "recall": 0.9984720932322718,
+          "f1": 0.9984945286226808,
+          "support": 66758
+        }
+      },
+      "false_dead_fraction": 0.001216709476814925,
+      "missed_dead_fraction": 0.0015279067677282123
+    },
+    {
+      "match": "2006229",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_team_probability",
+      "spell": 0.72,
+      "macro": 0.855911143362182,
+      "n_gt": 244,
+      "n_pred": 331,
+      "per_class": {
+        "H": {
+          "precision": 0.9975530007383188,
+          "recall": 0.9855160053351117,
+          "f1": 0.9914979714642149,
+          "support": 47984
+        },
+        "A": {
+          "precision": 0.6215267175572519,
+          "recall": 0.975586376299314,
+          "f1": 0.7593112854528286,
+          "support": 33383
+        },
+        "D": {
+          "precision": 0.9727855960264901,
+          "recall": 0.7041103687947512,
+          "f1": 0.8169241731695025,
+          "support": 66758
+        }
+      },
+      "false_dead_fraction": 0.016161343050622487,
+      "missed_dead_fraction": 0.2958896312052488
+    },
+    {
+      "match": "2006229",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_both",
+      "spell": 0.9950617283950617,
+      "macro": 0.9971223795686935,
+      "n_gt": 244,
+      "n_pred": 242,
+      "per_class": {
+        "H": {
+          "precision": 0.9982450642431839,
+          "recall": 0.995769423141047,
+          "f1": 0.997005706893134,
+          "support": 47984
+        },
+        "A": {
+          "precision": 0.9963734452270343,
+          "recall": 0.9958362040559566,
+          "f1": 0.9961047522023132,
+          "support": 33383
+        },
+        "D": {
+          "precision": 0.9972344719336274,
+          "recall": 0.9992809850504808,
+          "f1": 0.9982566796106335,
+          "support": 66758
+        }
+      },
+      "false_dead_fraction": 0.0022736490223309205,
+      "missed_dead_fraction": 0.0007190149495191587
+    },
+    {
+      "match": "1996436",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "v2",
+      "spell": 0.49773462783171524,
+      "macro": 0.7978757524973957,
+      "n_gt": 252,
+      "n_pred": 366,
+      "per_class": {
+        "H": {
+          "precision": 0.7355451348182884,
+          "recall": 0.8590793329134376,
+          "f1": 0.7925271893592027,
+          "support": 36517
+        },
+        "A": {
+          "precision": 0.6336788168161174,
+          "recall": 0.8764577024676246,
+          "f1": 0.7355529421306622,
+          "support": 31042
+        },
+        "D": {
+          "precision": 0.9854453239068623,
+          "recall": 0.7716599872429024,
+          "f1": 0.865547126002322,
+          "support": 83091
+        }
+      },
+      "false_dead_fraction": 0.014017377403454758,
+      "missed_dead_fraction": 0.22834001275709764
+    },
+    {
+      "match": "1996436",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_dead_probability",
+      "spell": 0.6561101549053356,
+      "macro": 0.9168820416081219,
+      "n_gt": 252,
+      "n_pred": 329,
+      "per_class": {
+        "H": {
+          "precision": 0.89998579747195,
+          "recall": 0.8676506832434209,
+          "f1": 0.8835224896126711,
+          "support": 36517
+        },
+        "A": {
+          "precision": 0.8506333024405314,
+          "recall": 0.8870240319567039,
+          "f1": 0.8684476124392859,
+          "support": 31042
+        },
+        "D": {
+          "precision": 0.9987721938007824,
+          "recall": 0.998579870262724,
+          "f1": 0.9986760227724083,
+          "support": 83091
+        }
+      },
+      "false_dead_fraction": 0.0015097914415547892,
+      "missed_dead_fraction": 0.0014201297372759985
+    },
+    {
+      "match": "1996436",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_team_probability",
+      "spell": 0.7141891891891892,
+      "macro": 0.8604693854030764,
+      "n_gt": 252,
+      "n_pred": 340,
+      "per_class": {
+        "H": {
+          "precision": 0.9971199113818887,
+          "recall": 0.9860065175123914,
+          "f1": 0.9915320748481969,
+          "support": 36517
+        },
+        "A": {
+          "precision": 0.5917440061871616,
+          "recall": 0.9859222988209523,
+          "f1": 0.7395906333824701,
+          "support": 31042
+        },
+        "D": {
+          "precision": 0.9874721426297357,
+          "recall": 0.7465670168851019,
+          "f1": 0.8502854479785622,
+          "support": 83091
+        }
+      },
+      "false_dead_fraction": 0.011649077102976657,
+      "missed_dead_fraction": 0.25343298311489815
+    },
+    {
+      "match": "1996436",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_both",
+      "spell": 0.9940119760479043,
+      "macro": 0.9970521744390348,
+      "n_gt": 252,
+      "n_pred": 249,
+      "per_class": {
+        "H": {
+          "precision": 0.9982957669048927,
+          "recall": 0.9945504833365282,
+          "f1": 0.9964196057450924,
+          "support": 36517
+        },
+        "A": {
+          "precision": 0.9958474167069049,
+          "recall": 0.9965852715675536,
+          "f1": 0.9962162075128408,
+          "support": 31042
+        },
+        "D": {
+          "precision": 0.997836668469443,
+          "recall": 0.9992056901469473,
+          "f1": 0.9985207100591715,
+          "support": 83091
+        }
+      },
+      "false_dead_fraction": 0.002664337838037863,
+      "missed_dead_fraction": 0.0007943098530526772
+    },
+    {
+      "match": "2007448",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "v2",
+      "spell": 0.5130742049469965,
+      "macro": 0.8039170458311649,
+      "n_gt": 226,
+      "n_pred": 340,
+      "per_class": {
+        "H": {
+          "precision": 0.7091848192229957,
+          "recall": 0.885362639827301,
+          "f1": 0.7875409917829399,
+          "support": 35669
+        },
+        "A": {
+          "precision": 0.7170530327087964,
+          "recall": 0.9055423361762426,
+          "f1": 0.800349724709941,
+          "support": 37403
+        },
+        "D": {
+          "precision": 0.9680996534607099,
+          "recall": 0.7170287743833069,
+          "f1": 0.8238604210006137,
+          "support": 72078
+        }
+      },
+      "false_dead_fraction": 0.023305780599956208,
+      "missed_dead_fraction": 0.282971225616693
+    },
+    {
+      "match": "2007448",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_dead_probability",
+      "spell": 0.7147410358565737,
+      "macro": 0.939882351528607,
+      "n_gt": 226,
+      "n_pred": 276,
+      "per_class": {
+        "H": {
+          "precision": 0.9097482064988043,
+          "recall": 0.9065855504780062,
+          "f1": 0.908164125031595,
+          "support": 35669
+        },
+        "A": {
+          "precision": 0.9115317957605653,
+          "recall": 0.9140175921717509,
+          "f1": 0.9127730015485663,
+          "support": 37403
+        },
+        "D": {
+          "precision": 0.9985575589459085,
+          "recall": 0.9988623435722411,
+          "f1": 0.9987099280056597,
+          "support": 72078
+        }
+      },
+      "false_dead_fraction": 0.0014232537770965622,
+      "missed_dead_fraction": 0.0011376564277588168
+    },
+    {
+      "match": "2007448",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_team_probability",
+      "spell": 0.7161904761904762,
+      "macro": 0.8479220242278623,
+      "n_gt": 226,
+      "n_pred": 299,
+      "per_class": {
+        "H": {
+          "precision": 0.9973023930384336,
+          "recall": 0.9639182483388937,
+          "f1": 0.9803261861313869,
+          "support": 35669
+        },
+        "A": {
+          "precision": 0.6183595055128633,
+          "recall": 0.9896265005480844,
+          "f1": 0.7611321879851537,
+          "support": 37403
+        },
+        "D": {
+          "precision": 0.9701662894814523,
+          "recall": 0.6839673686839257,
+          "f1": 0.8023076985670462,
+          "support": 72078
+        }
+      },
+      "false_dead_fraction": 0.020746660827676813,
+      "missed_dead_fraction": 0.31603263131607423
+    },
+    {
+      "match": "2007448",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_both",
+      "spell": 0.9933184855233852,
+      "macro": 0.9974612587503029,
+      "n_gt": 226,
+      "n_pred": 223,
+      "per_class": {
+        "H": {
+          "precision": 0.9980609807503161,
+          "recall": 0.995710560991337,
+          "f1": 0.9968843854380105,
+          "support": 35669
+        },
+        "A": {
+          "precision": 0.9975910064239829,
+          "recall": 0.9964441354971526,
+          "f1": 0.9970172411486965,
+          "support": 37403
+        },
+        "D": {
+          "precision": 0.9976040440412713,
+          "recall": 0.999361802491745,
+          "f1": 0.9984821496642016,
+          "support": 72078
+        }
+      },
+      "false_dead_fraction": 0.002367527917670243,
+      "missed_dead_fraction": 0.000638197508254946
+    },
+    {
+      "match": "2010085",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "v2",
+      "spell": 0.5044404973357015,
+      "macro": 0.8106135619860012,
+      "n_gt": 232,
+      "n_pred": 331,
+      "per_class": {
+        "H": {
+          "precision": 0.7693052251661061,
+          "recall": 0.933565598248059,
+          "f1": 0.8435130638125646,
+          "support": 50230
+        },
+        "A": {
+          "precision": 0.6867523031010769,
+          "recall": 0.8624128266962132,
+          "f1": 0.7646234524205082,
+          "support": 30686
+        },
+        "D": {
+          "precision": 0.9832898717012621,
+          "recall": 0.70868604249049,
+          "f1": 0.823704169724931,
+          "support": 66509
+        }
+      },
+      "false_dead_fraction": 0.009899154678926294,
+      "missed_dead_fraction": 0.29131395750951
+    },
+    {
+      "match": "2010085",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_dead_probability",
+      "spell": 0.6955512572533848,
+      "macro": 0.9373471057268533,
+      "n_gt": 232,
+      "n_pred": 285,
+      "per_class": {
+        "H": {
+          "precision": 0.9259478672985783,
+          "recall": 0.9335058729842723,
+          "f1": 0.9297115098641817,
+          "support": 50230
+        },
+        "A": {
+          "precision": 0.8902479338842976,
+          "recall": 0.8775989050381281,
+          "f1": 0.8838781672574504,
+          "support": 30686
+        },
+        "D": {
+          "precision": 0.9982565566994814,
+          "recall": 0.9986467996812461,
+          "f1": 0.9984516400589277,
+          "support": 66509
+        }
+      },
+      "false_dead_fraction": 0.0014335854466360177,
+      "missed_dead_fraction": 0.0013532003187538529
+    },
+    {
+      "match": "2010085",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_team_probability",
+      "spell": 0.7349177330895794,
+      "macro": 0.8445824451370378,
+      "n_gt": 232,
+      "n_pred": 315,
+      "per_class": {
+        "H": {
+          "precision": 0.997525444023149,
+          "recall": 0.9951423452120247,
+          "f1": 0.9963324696033486,
+          "support": 50230
+        },
+        "A": {
+          "precision": 0.5855732577460658,
+          "recall": 0.9761780616567816,
+          "f1": 0.7320291785290991,
+          "support": 30686
+        },
+        "D": {
+          "precision": 0.9829072790294627,
+          "recall": 0.6821783518020118,
+          "f1": 0.8053856872786658,
+          "support": 66509
+        }
+      },
+      "false_dead_fraction": 0.009750852736170844,
+      "missed_dead_fraction": 0.31782164819798825
+    },
+    {
+      "match": "2010085",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_both",
+      "spell": 0.9917570498915401,
+      "macro": 0.997143136244818,
+      "n_gt": 232,
+      "n_pred": 229,
+      "per_class": {
+        "H": {
+          "precision": 0.9978265204386839,
+          "recall": 0.9962373083814453,
+          "f1": 0.9970312811316995,
+          "support": 50230
+        },
+        "A": {
+          "precision": 0.996769456681351,
+          "recall": 0.9954376588672359,
+          "f1": 0.9961031126184149,
+          "support": 30686
+        },
+        "D": {
+          "precision": 0.9973885637100405,
+          "recall": 0.999203115367845,
+          "f1": 0.9982950149843397,
+          "support": 66509
+        }
+      },
+      "false_dead_fraction": 0.002150378169954026,
+      "missed_dead_fraction": 0.0007968846321550467
+    },
+    {
+      "match": "2013725",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "v2",
+      "spell": 0.5370967741935484,
+      "macro": 0.7910040187830853,
+      "n_gt": 306,
+      "n_pred": 438,
+      "per_class": {
+        "H": {
+          "precision": 0.7179881788781086,
+          "recall": 0.8417928401453937,
+          "f1": 0.7749771293755116,
+          "support": 38241
+        },
+        "A": {
+          "precision": 0.7016436688311688,
+          "recall": 0.8729140895205877,
+          "f1": 0.7779640233544454,
+          "support": 39611
+        },
+        "D": {
+          "precision": 0.9594024237358963,
+          "recall": 0.7160769146796001,
+          "f1": 0.8200709036192992,
+          "support": 64123
+        }
+      },
+      "false_dead_fraction": 0.024957611878949803,
+      "missed_dead_fraction": 0.28392308532039984
+    },
+    {
+      "match": "2013725",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_dead_probability",
+      "spell": 0.6858806404657933,
+      "macro": 0.9136592891957681,
+      "n_gt": 306,
+      "n_pred": 381,
+      "per_class": {
+        "H": {
+          "precision": 0.8700839014158364,
+          "recall": 0.8677858842603489,
+          "f1": 0.8689333734829342,
+          "support": 38241
+        },
+        "A": {
+          "precision": 0.8724046810117025,
+          "recall": 0.8751356946302795,
+          "f1": 0.8737680538401431,
+          "support": 39611
+        },
+        "D": {
+          "precision": 0.9984555382215289,
+          "recall": 0.9980974065467929,
+          "f1": 0.9982764402642272,
+          "support": 64123
+        }
+      },
+      "false_dead_fraction": 0.0012716436315059344,
+      "missed_dead_fraction": 0.0019025934532071176
+    },
+    {
+      "match": "2013725",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_team_probability",
+      "spell": 0.7714285714285715,
+      "macro": 0.8549500343967771,
+      "n_gt": 306,
+      "n_pred": 394,
+      "per_class": {
+        "H": {
+          "precision": 0.9957046979865772,
+          "recall": 0.9699014147119583,
+          "f1": 0.982633691433416,
+          "support": 38241
+        },
+        "A": {
+          "precision": 0.6527301613847312,
+          "recall": 0.9853323571735124,
+          "f1": 0.7852644709574874,
+          "support": 39611
+        },
+        "D": {
+          "precision": 0.9671711551302026,
+          "recall": 0.6776819549927483,
+          "f1": 0.7969519407994279,
+          "support": 64123
+        }
+      },
+      "false_dead_fraction": 0.01894620562092175,
+      "missed_dead_fraction": 0.3223180450072517
+    },
+    {
+      "match": "2013725",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_both",
+      "spell": 0.9986928104575163,
+      "macro": 0.9963184414312489,
+      "n_gt": 306,
+      "n_pred": 306,
+      "per_class": {
+        "H": {
+          "precision": 0.9965652857891977,
+          "recall": 0.993933213043592,
+          "f1": 0.9952475091973135,
+          "support": 38241
+        },
+        "A": {
+          "precision": 0.9957076126751673,
+          "recall": 0.9955567897806165,
+          "f1": 0.9956321955160573,
+          "support": 39611
+        },
+        "D": {
+          "precision": 0.9972442783745913,
+          "recall": 0.9989083480186517,
+          "f1": 0.9980756195803759,
+          "support": 64123
+        }
+      },
+      "false_dead_fraction": 0.00227354467451061,
+      "missed_dead_fraction": 0.0010916519813483462
+    },
+    {
+      "match": "2011166",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "v2",
+      "spell": 0.5080906148867314,
+      "macro": 0.8264019540937033,
+      "n_gt": 271,
+      "n_pred": 347,
+      "per_class": {
+        "H": {
+          "precision": 0.6830567451820129,
+          "recall": 0.8623323083161558,
+          "f1": 0.7622959389422431,
+          "support": 29593
+        },
+        "A": {
+          "precision": 0.769388933810789,
+          "recall": 0.8712588949351193,
+          "f1": 0.81716129507171,
+          "support": 38224
+        },
+        "D": {
+          "precision": 0.9851435335898194,
+          "recall": 0.8279773156899811,
+          "f1": 0.8997486282671567,
+          "support": 80408
+        }
+      },
+      "false_dead_fraction": 0.014804547532329652,
+      "missed_dead_fraction": 0.1720226843100189
+    },
+    {
+      "match": "2011166",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_dead_probability",
+      "spell": 0.6805460750853243,
+      "macro": 0.9183444626061504,
+      "n_gt": 271,
+      "n_pred": 315,
+      "per_class": {
+        "H": {
+          "precision": 0.8473812226366142,
+          "recall": 0.8829452911161423,
+          "f1": 0.8647977758654928,
+          "support": 29593
+        },
+        "A": {
+          "precision": 0.9064359113034073,
+          "recall": 0.8769359564671411,
+          "f1": 0.8914419445774161,
+          "support": 38224
+        },
+        "D": {
+          "precision": 0.9987812461136675,
+          "recall": 0.9988060889463735,
+          "f1": 0.9987936673755425,
+          "support": 80408
+        }
+      },
+      "false_dead_fraction": 0.001445065396581978,
+      "missed_dead_fraction": 0.001193911053626505
+    },
+    {
+      "match": "2011166",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_team_probability",
+      "spell": 0.7591572123176662,
+      "macro": 0.9008135134680487,
+      "n_gt": 271,
+      "n_pred": 346,
+      "per_class": {
+        "H": {
+          "precision": 0.9950327699206623,
+          "recall": 0.974757544013787,
+          "f1": 0.9847908096205383,
+          "support": 29593
+        },
+        "A": {
+          "precision": 0.7110965076980849,
+          "recall": 0.9908172875680201,
+          "f1": 0.8279699182370688,
+          "support": 38224
+        },
+        "D": {
+          "precision": 0.9869950738916257,
+          "recall": 0.8098323549895533,
+          "f1": 0.8896798125465389,
+          "support": 80408
+        }
+      },
+      "false_dead_fraction": 0.01265169500272793,
+      "missed_dead_fraction": 0.19016764501044672
+    },
+    {
+      "match": "2011166",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_both",
+      "spell": 0.9903345724907062,
+      "macro": 0.9963811248154846,
+      "n_gt": 271,
+      "n_pred": 267,
+      "per_class": {
+        "H": {
+          "precision": 0.9963032050195014,
+          "recall": 0.9926671848072179,
+          "f1": 0.9944818714242188,
+          "support": 29593
+        },
+        "A": {
+          "precision": 0.9961271751929871,
+          "recall": 0.9958926329007953,
+          "f1": 0.9960098902392758,
+          "support": 38224
+        },
+        "D": {
+          "precision": 0.9979261099037566,
+          "recall": 0.9993781713262362,
+          "f1": 0.9986516127829594,
+          "support": 80408
+        }
+      },
+      "false_dead_fraction": 0.0024625094002978603,
+      "missed_dead_fraction": 0.0006218286737638046
+    },
+    {
+      "match": "2017461",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "v2",
+      "spell": 0.5134587554269174,
+      "macro": 0.8182218328904859,
+      "n_gt": 283,
+      "n_pred": 408,
+      "per_class": {
+        "H": {
+          "precision": 0.7831124807395994,
+          "recall": 0.8604126224549682,
+          "f1": 0.8199447175107822,
+          "support": 44302
+        },
+        "A": {
+          "precision": 0.6610865535434194,
+          "recall": 0.8515226095580942,
+          "f1": 0.7443167223221167,
+          "support": 27223
+        },
+        "D": {
+          "precision": 0.9775747375170314,
+          "recall": 0.8175067024128686,
+          "f1": 0.890404058838559,
+          "support": 74600
+        }
+      },
+      "false_dead_fraction": 0.019559594547361062,
+      "missed_dead_fraction": 0.18249329758713137
+    },
+    {
+      "match": "2017461",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_dead_probability",
+      "spell": 0.6893353941267388,
+      "macro": 0.9123759213697772,
+      "n_gt": 283,
+      "n_pred": 364,
+      "per_class": {
+        "H": {
+          "precision": 0.9158006113331766,
+          "recall": 0.8791702406211909,
+          "f1": 0.8971116639027087,
+          "support": 44302
+        },
+        "A": {
+          "precision": 0.8156896551724138,
+          "recall": 0.8689343569775557,
+          "f1": 0.8414705725414867,
+          "support": 27223
+        },
+        "D": {
+          "precision": 0.9985789932301092,
+          "recall": 0.9985120643431635,
+          "f1": 0.9985455276651363,
+          "support": 74600
+        }
+      },
+      "false_dead_fraction": 0.001481999300943726,
+      "missed_dead_fraction": 0.0014879356568364612
+    },
+    {
+      "match": "2017461",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_team_probability",
+      "spell": 0.7840978593272171,
+      "macro": 0.8833209799503621,
+      "n_gt": 283,
+      "n_pred": 371,
+      "per_class": {
+        "H": {
+          "precision": 0.9968604254351041,
+          "recall": 0.9890524129836125,
+          "f1": 0.9929410698301552,
+          "support": 44302
+        },
+        "A": {
+          "precision": 0.638576376448107,
+          "recall": 0.9820372479153657,
+          "f1": 0.773911533117184,
+          "support": 27223
+        },
+        "D": {
+          "precision": 0.9877787911450129,
+          "recall": 0.7984986595174263,
+          "f1": 0.8831103369037472,
+          "support": 74600
+        }
+      },
+      "false_dead_fraction": 0.010304089479203075,
+      "missed_dead_fraction": 0.20150134048257373
+    },
+    {
+      "match": "2017461",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_both",
+      "spell": 0.9968141592920354,
+      "macro": 0.9963688105726493,
+      "n_gt": 283,
+      "n_pred": 282,
+      "per_class": {
+        "H": {
+          "precision": 0.9975099037917374,
+          "recall": 0.9946503543858065,
+          "f1": 0.996078076788318,
+          "support": 44302
+        },
+        "A": {
+          "precision": 0.9946015424164525,
+          "recall": 0.9948572897917203,
+          "f1": 0.9947293996657669,
+          "support": 27223
+        },
+        "D": {
+          "precision": 0.9974973233404711,
+          "recall": 0.9991018766756032,
+          "f1": 0.9982989552638628,
+          "support": 74600
+        }
+      },
+      "false_dead_fraction": 0.002614470464872422,
+      "missed_dead_fraction": 0.0008981233243967829
+    },
+    {
+      "match": "2015213",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "v2",
+      "spell": 0.48571428571428577,
+      "macro": 0.7674134384818161,
+      "n_gt": 296,
+      "n_pred": 404,
+      "per_class": {
+        "H": {
+          "precision": 0.6310121723873232,
+          "recall": 0.8717692331000212,
+          "f1": 0.7321051426244943,
+          "support": 33003
+        },
+        "A": {
+          "precision": 0.702353595255745,
+          "recall": 0.8818232584112802,
+          "f1": 0.7819224659060431,
+          "support": 42978
+        },
+        "D": {
+          "precision": 0.9733041139555733,
+          "recall": 0.6622700592389758,
+          "f1": 0.7882127069149107,
+          "support": 73769
+        }
+      },
+      "false_dead_fraction": 0.01763598794435451,
+      "missed_dead_fraction": 0.3377299407610243
+    },
+    {
+      "match": "2015213",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_dead_probability",
+      "spell": 0.6938388625592418,
+      "macro": 0.9261387261977041,
+      "n_gt": 296,
+      "n_pred": 337,
+      "per_class": {
+        "H": {
+          "precision": 0.8641293166789126,
+          "recall": 0.8908887070872344,
+          "f1": 0.8773050068628035,
+          "support": 33003
+        },
+        "A": {
+          "precision": 0.9141426186501311,
+          "recall": 0.8918516450276885,
+          "f1": 0.9028595656475243,
+          "support": 42978
+        },
+        "D": {
+          "precision": 0.9980757503895928,
+          "recall": 0.9984275237565915,
+          "f1": 0.9982516060827845,
+          "support": 73769
+        }
+      },
+      "false_dead_fraction": 0.001868888274700254,
+      "missed_dead_fraction": 0.0015724762434084778
+    },
+    {
+      "match": "2015213",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_team_probability",
+      "spell": 0.7294460641399417,
+      "macro": 0.835420485165694,
+      "n_gt": 296,
+      "n_pred": 390,
+      "per_class": {
+        "H": {
+          "precision": 0.9959360943074298,
+          "recall": 0.9727600521164742,
+          "f1": 0.984211655783439,
+          "support": 33003
+        },
+        "A": {
+          "precision": 0.6089850724948218,
+          "recall": 0.9919493694448323,
+          "f1": 0.7546622058185746,
+          "support": 42978
+        },
+        "D": {
+          "precision": 0.9794569564302252,
+          "recall": 0.6308069785411216,
+          "f1": 0.7673875938950683,
+          "support": 73769
+        }
+      },
+      "false_dead_fraction": 0.01284531659230597,
+      "missed_dead_fraction": 0.3691930214588784
+    },
+    {
+      "match": "2015213",
+      "cohort": "skillcorner",
+      "scenario": "natural_detected",
+      "method": "ORACLE_both",
+      "spell": 0.9938983050847459,
+      "macro": 0.9962693402085367,
+      "n_gt": 296,
+      "n_pred": 294,
+      "per_class": {
+        "H": {
+          "precision": 0.9965333738786681,
+          "recall": 0.9929703360300579,
+          "f1": 0.9947486644001944,
+          "support": 33003
+        },
+        "A": {
+          "precision": 0.9957897185391952,
+          "recall": 0.9960677555958862,
+          "f1": 0.995928717662386,
+          "support": 42978
+        },
+        "D": {
+          "precision": 0.997414551607445,
+          "recall": 0.9988477544768127,
+          "f1": 0.99813063856303,
+          "support": 73769
+        }
+      },
+      "false_dead_fraction": 0.002513786341322173,
+      "missed_dead_fraction": 0.0011522455231872467
+    }
+  ]
+}

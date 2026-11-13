@@ -77,6 +77,10 @@ We added 20 public SkillCorner matches, fixing ten for development and ten for c
 
 On the ten confirmation games, v2 achieved **spellF1 0.5524 versus v1 0.5451**, winning nine games and losing one; paired descriptive 95% gain interval **[0.0044, 0.0100]**. Under extra label-blind corruption: **0.4719 versus 0.4613**, ten wins. On known matched-sensor games there is a small regression, **0.6432 versus 0.6466**. SkillCorner references are automatic phase proxies, with a different sensor/annotation process from the competition. See the [full new-provider report](docs/experiments/skillcorner/REPORT.md) for all candidates, losses, source hashes and the predeclared adoption rule. This supports a modest improvement on the new provider and does not establish hidden-match quality or qualification probability.
 
+## Further team-head experiments
+
+A later [team-ownership study](docs/experiments/team-context/REPORT.md) compared 17 policies: observed ball-contact context, team-only sensor augmentation, matched-head controls and missing-ball gating. The best reused-development composite gain was +0.0036, below the frozen +0.005 replacement threshold. **V2 remains the submission candidate.** Nine additional European matches were hash-verified and prepared for conditional H/A validation but remain unscored; their ownership annotations do not provide reliable D ground truth. No production inference settings changed in this study.
+
 ## Review status
 
 The implementation originates from VV's `model-v1` commit `cc44bfe6bceba39e2e67a03fd32e658cca68bc0e`. The reproduction branch adds setup, explicit output paths, controlled worker counts and verification tooling. V1 remains unchanged. The new v2 retains its learned models/features and changes only the externally validated transition costs.
