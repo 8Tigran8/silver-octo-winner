@@ -1,0 +1,25 @@
+{
+  "purpose": "Heuristic eligibility screening, not an identity proof; no GT or model scores",
+  "rule": "Flag median ball-trajectory distance<8m across>=300 observed seconds; first30min, +/-180s, four axis reflections",
+  "comparisons": {
+    "metrica_1": {
+      "median_distance_m": 34.952093253729046,
+      "lag_seconds": 88,
+      "paired_observed_seconds": 1027,
+      "potential_duplicate": false
+    },
+    "metrica_2": {
+      "median_distance_m": 35.22138467057298,
+      "lag_seconds": 111,
+      "paired_observed_seconds": 1233,
+      "potential_duplicate": false
+    },
+    "competition_automatic_tracking_only": {
+      "median_distance_m": 37.569134058776214,
+      "lag_seconds": 112,
+      "paired_observed_seconds": 1264,
+      "potential_duplicate": false
+    }
+  },
+  "eligible_for_anonymous_research_diagnostic": true
+}
