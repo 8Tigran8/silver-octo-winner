@@ -1,0 +1,83 @@
+{
+  "registered_utc": "2026-11-13T07:29:18.887027+00:00",
+  "purpose": "Increase team-head training diversity from nine to nineteen games; retain frozen v2 dead probabilities/decoder",
+  "training_games": [
+    "original/idsse_J03WMX",
+    "original/idsse_J03WN1",
+    "original/idsse_J03WOH",
+    "original/idsse_J03WOY",
+    "original/idsse_J03WPY",
+    "original/idsse_J03WQQ",
+    "original/idsse_J03WR9",
+    "original/metrica_1",
+    "original/metrica_2",
+    "skillcorner/1925299",
+    "skillcorner/1959846",
+    "skillcorner/1996436",
+    "skillcorner/2006229",
+    "skillcorner/2007448",
+    "skillcorner/2010085",
+    "skillcorner/2011166",
+    "skillcorner/2013725",
+    "skillcorner/2015213",
+    "skillcorner/2017461"
+  ],
+  "original_scenarios": {
+    "matched_seed0": 12,
+    "label_blind_seed1": 12,
+    "clean_source": 12
+  },
+  "skillcorner_scenarios": {
+    "natural_detected": 8,
+    "label_blind_seed7": 8
+  },
+  "model": "Original stage-one HGB parameters, 108 original+observed-context features, team-swap symmetry, seed0, no early stopping",
+  "evaluation": "Leave-one-entire-game-out across all 19 training games; all augmentations of the test game excluded. Original v2 baseline nested exclusions retained. Fresh European games never train weights.",
+  "candidates": {
+    "expanded25": {
+      "weight": 0.25,
+      "gate": "all"
+    },
+    "expanded50": {
+      "weight": 0.5,
+      "gate": "all"
+    },
+    "expanded100": {
+      "weight": 1.0,
+      "gate": "all"
+    },
+    "expanded_taper100": {
+      "weight": 1.0,
+      "gate": "taper_1s"
+    }
+  },
+  "selection_weights": {
+    "known/matched_seed0": 0.4,
+    "known/label_blind_seed1": 0.2,
+    "development/natural_detected": 0.2,
+    "development/label_blind_seed7": 0.2
+  },
+  "development_gate": "Weighted spellF1 gain >= .005; no mean loss worse than .005 in any of the five reported cohorts, including known stress. Ties prefer lower new-head weight.",
+  "fresh_games": [
+    "2068",
+    "2269",
+    "2417",
+    "2440",
+    "2841",
+    "3442",
+    "3518",
+    "3749",
+    "4039"
+  ],
+  "fresh_reference": "Automatic H/A only where source ownership is known. Unknown is X, never synthetic D. Periods derive independently of ownership. Conditional team macroF1 primary; not a full H/A/D score.",
+  "fresh_gate": "One frozen candidate only. Conditional team macroF1 gain >=.005, descriptive paired 95% lower bound >0, at least7/9 wins. Do not pick a runner-up after fresh scores.",
+  "adoption": "Both development and fresh gates must pass; otherwise keep v2. Fresh test only if development passes. All earlier known-data selection is disclosed.",
+  "baseline_checkpoint_sha256": "f2f33ae6ac086d976ed9712110e542ad68588ed489d0c0fc212a47635731c682",
+  "context_source_sha256": "973319eb341eebb0576a0c82cfe1d18addbc055ae8c2e6305bff50768fce2e30",
+  "source_manifests_sha256": {
+    "tools/external_sources.json": "e4a901564b81f9e30a9d131880c466cfcfc0bf304ca0d16280d1538e29f09844",
+    "tools/skillcorner_sources.json": "1e3b82d5a5eb1afdbbbd3dc321595a28c6facfd816e0f2a7b53a4e2b661bceed",
+    "tools/legacy_skillcorner_sources.json": "a62a828eecc8a21c5eaf90e363e0a8a46e210921b807b9f65e52f4731f39212c"
+  },
+  "competition_inputs": "No competition tracking, video, tagging, public or private GT used in this selection process"
+}

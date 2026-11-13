@@ -1,0 +1,10 @@
+{
+  "registered_utc": "2026-11-13T07:33:16.028824+00:00",
+  "stage": "Source frozen before expanded model fits",
+  "sha256": {
+    "mtah/expanded_team.py": "52afd9567096d1818537130d689afb67fb2c4b6cc8865987919859fdb511b6c9",
+    "mtah/expanded_team_training.json": "659a8d7ee9f4f3f9947a8394d2f8a72142b7405b24f182f96fb0e726250a87a8",
+    "mtah/possession_context.py": "973319eb341eebb0576a0c82cfe1d18addbc055ae8c2e6305bff50768fce2e30",
+    "tools/expanded_team_trial.py": "b76b5647dadc5afe7a4dd498c405a11188457e7c529e35bc72d6048aa040b1f5"
+  }
+}
