@@ -78,6 +78,8 @@ def main():
     if result["fresh_scores_seen"]:
         pair=result["fresh_conditional_team_macroF1"]
         text += [f"Conditional H/A macroF1: **{pair['candidate']:.4f} vs v2 {pair['baseline']:.4f}**, difference {pair['delta']:+.4f}, interval [{pair['descriptive_95ci'][0]:+.4f}, {pair['descriptive_95ci'][1]:+.4f}], wins/losses {pair['wins']}/{pair['losses']}. Gate pass: **{result['fresh_gate_pass']}**.",""]
+        missing=paired(fresh,"natural_detected","missing_conditional_team_macroF1",name,9)
+        text += [f"Additional descriptive breakdown on known-live frames with missing ball tracking: mean conditional H/A macroF1 {missing['baseline']:.4f} → {missing['candidate']:.4f}. This subgroup summary is not an additional selection gate; it uses the already frozen predictions and does not evaluate D reference frames.",""]
     else:text += ["No fresh model scores have been computed in this report state.",""]
     text += ["## Reused full-task secondary check","",
              "The prior ten v2-confirmation games are not training inputs for either method, but their historical use means this is a reused secondary cohort, not a new pristine holdout. Evaluate only the frozen new candidate. Require no natural mean spellF1 regression and at most 0.005 mean loss under added label-blind corruption. This checks complete H/A/D behavior because the European references lack D labels.",""]
@@ -87,6 +89,9 @@ def main():
             pair=result[key]
             text.append(f"| {label} | {pair['baseline']:.4f} | {pair['candidate']:.4f} | {pair['delta']:+.4f} | [{pair['descriptive_95ci'][0]:+.4f}, {pair['descriptive_95ci'][1]:+.4f}] | {pair['wins']}/{pair['losses']} |")
         text += ["",f"Secondary nonregression gate pass: **{result['secondary_gate_pass']}**.",""]
+        dead={policy:statistics.mean(r["per_class"]["D"]["f1"] for r in secondary
+              if r["candidate"]==policy and r["scenario"]=="natural_detected") for policy in ["v2",name]}
+        text += [f"Additional descriptive frame-level D F1 on the same reused natural games changes {dead['v2']:.4f} → {dead[name]:.4f}. Keeping qD fixed does not make decoded D labels identical: changed team probabilities can change the joint temporal path. This small D-class regression is not hidden by the improved overall spellF1.",""]
     else:text += ["Secondary candidate scores have not been computed in this report state.",""]
     text += ["## Reproduce","","Use README setup, pinned source manifests and prior baseline/nested caches. Copy this report's plans into reports/v4_search before running:","","```bash",
              ".venv/bin/python tools/expanded_team_trial.py prepare --jobs 4",
@@ -109,6 +114,29 @@ def main():
     ax.set_xticks(x,labels);ax.set_ylim(0,1);ax.set_ylabel("Mean official spellF1 on reused development games")
     ax.set_title("Expanded team training: all game-excluded development cohorts");ax.legend(frameon=False)
     ax.grid(axis="y",alpha=.2);fig.tight_layout();fig.savefig(OUTPUT/"development.png",dpi=150);plt.close(fig)
+    if result["fresh_scores_seen"] and result["secondary_scores_seen"]:
+        fig,axes=plt.subplots(1,2,figsize=(12,6))
+        cohorts=[(fresh_path,"all_conditional_team_macroF1","New European games: conditional H/A macroF1"),
+                 (secondary_path,"spell_f1_mean","Reused SkillCorner check: full spellF1")]
+        for ax,(path,metric,title) in zip(axes,cohorts):
+            records=json.loads(path.read_text())["records"]
+            scores={policy:{r["match"]:r[metric] for r in records
+                    if r["candidate"]==policy and r["scenario"]=="natural_detected"}
+                    for policy in ["v2",name]}
+            matches=sorted(scores["v2"]);y=np.arange(len(matches))
+            old=np.array([scores["v2"][n] for n in matches])
+            new=np.array([scores[name][n] for n in matches])
+            ax.hlines(y,old,new,color="#79ad91",linewidth=2)
+            ax.scatter(old,y,color="#666666",s=45,label="v2",zorder=3)
+            ax.scatter(new,y,color="#13824a",s=45,label="v3 / expanded50",zorder=3)
+            ax.set_yticks(y,matches);ax.invert_yaxis();ax.set_xlim(0,1)
+            ax.set_xlabel("Score (different metric in each panel)")
+            ax.set_ylabel("Public match ID");ax.set_title(title,fontsize=11)
+            ax.grid(axis="x",alpha=.2);ax.legend(frameon=False,loc="lower left")
+        fig.tight_layout();fig.savefig(OUTPUT/"confirmation.png",dpi=150);plt.close(fig)
+        report=OUTPUT/"REPORT.md"
+        report.write_text(report.read_text().replace("## Reused full-task secondary check",
+            "![Per-game confirmation; metrics differ between panels](confirmation.png)\n\n## Reused full-task secondary check"))
     print(json.dumps(result,indent=2))
 
 

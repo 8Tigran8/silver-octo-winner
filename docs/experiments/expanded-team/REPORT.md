@@ -38,6 +38,10 @@ Promotion requires conditional H/A macroF1 gain ≥0.005, positive lower descrip
 
 Conditional H/A macroF1: **0.8372 vs v2 0.8203**, difference +0.0169, interval [+0.0134, +0.0209], wins/losses 9/0. Gate pass: **True**.
 
+Additional descriptive breakdown on known-live frames with missing ball tracking: mean conditional H/A macroF1 0.5763 → 0.6074. This subgroup summary is not an additional selection gate; it uses the already frozen predictions and does not evaluate D reference frames.
+
+![Per-game confirmation; metrics differ between panels](confirmation.png)
+
 ## Reused full-task secondary check
 
 The prior ten v2-confirmation games are not training inputs for either method, but their historical use means this is a reused secondary cohort, not a new pristine holdout. Evaluate only the frozen new candidate. Require no natural mean spellF1 regression and at most 0.005 mean loss under added label-blind corruption. This checks complete H/A/D behavior because the European references lack D labels.
@@ -48,6 +52,12 @@ The prior ten v2-confirmation games are not training inputs for either method, b
 | Label-blind corruption | 0.4719 | 0.5156 | +0.0437 | [+0.0364, +0.0506] | 10/0 |
 
 Secondary nonregression gate pass: **True**.
+
+Additional descriptive frame-level D F1 on the same reused natural games changes 0.8580 → 0.8569. Keeping qD fixed does not make decoded D labels identical: changed team probabilities can change the joint temporal path. This small D-class regression is not hidden by the improved overall spellF1.
+
+## Verified production command
+
+`run.py v3` rebuilds the original nine-game stages and the nineteen-game team head. Two clean raw-input reproductions of source `6f067004dc59c45ea7e21be6a7bd4246c7e20651` passed the official validator, matched preflight and produced the same CSV SHA-256 `c501145adc08873ae0bab30e88e9cd2cfa88484210c26bed1e6f9fa667724e40`. Timings: 513.040 s and 511.716 s, four workers. Inputs stayed unchanged; competition GT was not scored. See [the v3 receipt](v3_reproduction.json) and the main README for setup.
 
 ## Reproduce
 

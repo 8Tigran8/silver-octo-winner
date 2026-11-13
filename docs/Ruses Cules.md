@@ -1,6 +1,6 @@
 # Ruses Cules: technical method
 
-**V3 candidate, 13 November 2026. External validation passed; clean-source reproduction is in progress.** V3 keeps the original dead-ball model and adds a team-only head trained on nineteen public matches. Repository publication and competition submission are separate release steps.
+**V3 verified candidate, 13 November 2026. External validation and two clean-source reproductions passed.** V3 keeps the original dead-ball model and adds a team-only head trained on nineteen public matches. Repository publication and competition submission are separate release steps.
 
 ## Method and inputs
 
@@ -69,6 +69,6 @@ OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREAD
 
 The command retrains both original stages and the new nineteen-game head, then writes exactly 199,319 ordered `frame,label` rows. The verifier exports committed source twice, independently converts raw inputs, retrains, validates and compares CSV bytes while checking input hashes. It never scores the competition public window. Matching bytes on the installed pinned environment do not establish equality across platforms.
 
-V3 preflight passed the format check. Setting the added-head weight to zero reproduced the verified v2 CSV byte for byte. Full clean-source v3 verification is pending. The previous [v2 clean-run receipt](experiments/skillcorner/v2_reproduction.json) remains available; no v2 verification is presented as v3 verification.
+V3 preflight and both clean-source runs passed the official format check. Setting the added-head weight to zero reproduced the verified v2 CSV byte for byte. Tested source: `6f067004dc59c45ea7e21be6a7bd4246c7e20651`. Both independently retrained runs produced SHA-256 `c501145adc08873ae0bab30e88e9cd2cfa88484210c26bed1e6f9fa667724e40`, matching preflight. Timings: 513.040 s and 511.716 s, four workers on Apple M4 / 16 GB. All raw input hashes stayed unchanged. The [v3 receipt](experiments/expanded-team/v3_reproduction.json) records the result; the previous [v2 receipt](experiments/skillcorner/v2_reproduction.json) is preserved.
 
 Competition materials, intermediates, outputs and full receipts stay local and outside the public repository. We do not send match materials or extracts to hosted LLMs. Submission and repository publication require their separate release steps.

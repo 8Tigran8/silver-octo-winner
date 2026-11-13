@@ -1,0 +1,29 @@
+{
+  "status": "PASS: clean-source reproduction and official CSV format",
+  "source_commit": "6f067004dc59c45ea7e21be6a7bd4246c7e20651",
+  "official_commit": "f8f2629ff1e0985f81d7e59d8413678514ee1530",
+  "jobs": 4,
+  "method": "v3",
+  "runs": [
+    {
+      "run": 1,
+      "csv_sha256": "c501145adc08873ae0bab30e88e9cd2cfa88484210c26bed1e6f9fa667724e40",
+      "official_format": "PASS",
+      "seconds": 513.04
+    },
+    {
+      "run": 2,
+      "csv_sha256": "c501145adc08873ae0bab30e88e9cd2cfa88484210c26bed1e6f9fa667724e40",
+      "official_format": "PASS",
+      "seconds": 511.716
+    }
+  ],
+  "csv_sha256": "c501145adc08873ae0bab30e88e9cd2cfa88484210c26bed1e6f9fa667724e40",
+  "rows": 199319,
+  "base_training_games": 9,
+  "expanded_team_training_games": 19,
+  "public_GT_scored": false,
+  "hidden_target_quality": "unknown",
+  "environment": "Python 3.12, pinned requirements-validation.txt; same-machine reproducibility",
+  "inputs_unchanged": true
+}
