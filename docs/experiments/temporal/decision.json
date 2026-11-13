@@ -8,7 +8,7 @@
   "new_WCSF_games": 1,
   "total_distinct_screened_games": 40,
   "fresh_final_test_limit": "Only WCSF is a new-source comparison in this cycle; anonymous provenance and reference conflicts limit certainty. Other cohorts reused. PFF remains unopened.",
-  "quality_recommendation": "Adopt only after CPU frozen-asset validation and two clean reproductions",
+  "quality_recommendation": "Adopt v4: registered development, external checks, CPU asset validation and two clean inference reproductions passed",
   "external": {
     "wcsf": {
       "label_blind_seed7": {
@@ -62,5 +62,6 @@
       }
     }
   },
-  "reproduction": "PENDING until separate receipt"
+  "reproduction": "PASS; see v4_reproduction.json and separate neural_reproduction.json",
+  "adopted": true
 }

@@ -76,7 +76,7 @@ A request for the PFF 64-game World Cup2022 dataset is submitted and awaits owne
 
 ## Current temporal candidate v4
 
-V4 adds learned25second context and50/50probability fusion to v3. Across29whole-game neural exclusions, composite spellF1 improves0.5657→0.6143 (26wins/3losses; descriptive paired gain interval[0.0434,0.0540]). On a new Groningen/SciSports match:0.5368→0.6858; with extra gaps0.4587→0.5702. Forty screened games are covered in total, including nine conditional-only and reused cohorts; this is not40fresh tests. See the [full report](docs/experiments/temporal/REPORT.md). CPU asset checks match research external scores; final clean-source reproduction and packaging are pending.
+V4 adds learned25second context and50/50probability fusion to v3. Across29whole-game neural exclusions, composite spellF1 improves0.5657→0.6143 (26wins/3losses; descriptive paired gain interval[0.0434,0.0540]). On a new Groningen/SciSports match:0.5368→0.6858; with extra gaps0.4587→0.5702. Forty screened games are covered in total, including nine conditional-only and reused cohorts; this is not40fresh tests. See the [full report](docs/experiments/temporal/REPORT.md). CPU asset checks match research external scores. Two clean-source CPU generations passed in 25.017 s / 24.239 s and matched preflight byte for byte. An independent raw-data neural refit reproduced the identical checkpoint. See the [inference receipt](docs/experiments/temporal/v4_reproduction.json) and [training repeat](docs/experiments/temporal/neural_reproduction.json). The verified local package is v4; v1/v2/v3 are archived. Submission is a separate pending step.
 
 ## Review status
 

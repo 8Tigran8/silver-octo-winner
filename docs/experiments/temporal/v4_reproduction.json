@@ -1,0 +1,37 @@
+{
+  "status": "PASS: clean-source reproduction and official CSV format",
+  "source_commit": "11b782f4f8a4bcfe4114e8da3b57cdbaac603a63",
+  "official_commit": "f8f2629ff1e0985f81d7e59d8413678514ee1530",
+  "jobs": 2,
+  "method": "v4",
+  "runs": [
+    {
+      "run": 1,
+      "csv_sha256": "06a6d8f82185bc2ea191923fb1fdcd651b5556985f46b83fff5bc88daac3be82",
+      "official_format": "PASS",
+      "seconds": 25.017
+    },
+    {
+      "run": 2,
+      "csv_sha256": "06a6d8f82185bc2ea191923fb1fdcd651b5556985f46b83fff5bc88daac3be82",
+      "official_format": "PASS",
+      "seconds": 24.239
+    }
+  ],
+  "quality": "Not assessed",
+  "execution_mode": "frozen_external_weights_cpu_inference",
+  "training_repeated": false,
+  "csv_sha256": "06a6d8f82185bc2ea191923fb1fdcd651b5556985f46b83fff5bc88daac3be82",
+  "rows": 199319,
+  "inputs_unchanged": true,
+  "preflight_match": true,
+  "public_GT_scored": false,
+  "hidden_target_quality": "unknown",
+  "environment": "Python 3.12; pinned requirements-temporal.txt; single-thread CPU inference",
+  "training_repeat_receipt": "neural_reproduction.json",
+  "model_asset_hashes": {
+    "base_external.pkl": "f2f33ae6ac086d976ed9712110e542ad68588ed489d0c0fc212a47635731c682",
+    "team_external.pkl": "9f0688b4a6197d7134153993576a172000e42ae40619174819fbfcf62dc7cf18",
+    "temporal_state.pt": "d2628a2ddb790175f100e54d76c4e2aa89ebfce8179931e3c531d24c88816a90"
+  }
+}
