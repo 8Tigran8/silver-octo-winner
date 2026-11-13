@@ -1,0 +1,85 @@
+{
+  "baseline_reproduced": true,
+  "scores": {
+    "v3": {
+      "means": [
+        0.6414464779657619,
+        0.5419021503910881,
+        0.5105315752767322,
+        0.5588501869181337,
+        0.479980504248921
+      ],
+      "weighted": 0.5727251594979333
+    },
+    "data29": {
+      "means": [
+        0.6414947127636591,
+        0.543551165818811,
+        0.510983328332408,
+        0.5601338160585086,
+        0.4802820345917891
+      ],
+      "weighted": 0.5733912883992854
+    }
+  },
+  "weighted_gain": 0.0006661289013520921,
+  "descriptive_paired_95ci": [
+    -0.0014699631973081378,
+    0.002876043891240026
+  ],
+  "development_gate_pass": false,
+  "new_fresh_confirmation": false,
+  "promoted": false,
+  "release": "v3 unchanged",
+  "diagnostics": {
+    "original_pool": {
+      "log_loss": {
+        "data29_training_mean": 0.20239571525439035,
+        "data29_heldout_mean": 0.23611391519354996,
+        "v3_heldout_mean": 0.23657384191585198
+      },
+      "accuracy": {
+        "data29_training_mean": 0.9125705295138888,
+        "data29_heldout_mean": 0.8942057291666666,
+        "v3_heldout_mean": 0.8930121527777778
+      }
+    },
+    "SkillCorner": {
+      "log_loss": {
+        "data29_training_mean": 0.1724998716368478,
+        "data29_heldout_mean": 0.21729356624564944,
+        "v3_heldout_mean": 0.22443584218226256
+      },
+      "accuracy": {
+        "data29_training_mean": 0.9284976356907895,
+        "data29_heldout_mean": 0.907275390625,
+        "v3_heldout_mean": 0.90234375
+      }
+    },
+    "IDSSE_DFL": {
+      "log_loss": {
+        "data29_training_mean": 0.22398969274400757,
+        "data29_heldout_mean": 0.2446324185755255,
+        "v3_heldout_mean": 0.24334418318763906
+      },
+      "accuracy": {
+        "data29_training_mean": 0.9013323102678571,
+        "data29_heldout_mean": 0.8910435267857143,
+        "v3_heldout_mean": 0.8904854910714286
+      }
+    },
+    "Metrica": {
+      "log_loss": {
+        "data29_training_mean": 0.1326601440868962,
+        "data29_heldout_mean": 0.2062991533566355,
+        "v3_heldout_mean": 0.21287764746459725
+      },
+      "accuracy": {
+        "data29_training_mean": 0.947265625,
+        "data29_heldout_mean": 0.9052734375,
+        "v3_heldout_mean": 0.90185546875
+      }
+    }
+  },
+  "plan_sha256": "fdaee606952dd5002b4641193985f6569b6117d9530e3859165fa8d8892b2c38"
+}

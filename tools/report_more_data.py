@@ -34,12 +34,13 @@ def main():
     diagnostics={}
     fits=[json.loads(path.read_text()) for path in (FOLDER/'models').glob('exclude__*.json')]
     if len(fits)!=19:raise ValueError('Missing exclusions')
-    for family in ['original','skillcorner']:
-        subset=[m for m in fits if m['excluded'].startswith(family+'/')]
+    for family,prefix in [('original_pool','original/'),('SkillCorner','skillcorner/'),
+                          ('IDSSE_DFL','original/idsse_'),('Metrica','original/metrica_')]:
+        subset=[m for m in fits if m['excluded'].startswith(prefix)]
         diagnostics[family]={}
         for key in ['log_loss','accuracy']:
             diagnostics[family][key]={
-                'data29_training_mean':statistics.mean(statistics.mean(d[key] for d in m['training_diagnostic'].values()) for m in subset),
+                'data29_training_mean':statistics.mean(statistics.mean(d[key] for g,d in m['training_diagnostic'].items() if g.startswith(prefix)) for m in subset),
                 'data29_heldout_mean':statistics.mean(m['heldout_diagnostic'][key] for m in subset),
                 'v3_heldout_mean':statistics.mean(m['v3_heldout_diagnostic'][key] for m in subset)}
     result={'baseline_reproduced':True,'scores':scores,'weighted_gain':gain,'descriptive_paired_95ci':np.quantile(draws,[.025,.975]).tolist(),'development_gate_pass':bool(passed),'new_fresh_confirmation':False,'promoted':False,'release':'v3 unchanged','diagnostics':diagnostics,'plan_sha256':sha(PLAN)}
@@ -47,15 +48,21 @@ def main():
     out=ROOT/'docs/experiments/more-data';(out/'decision.json').write_text(json.dumps(result,indent=2)+'\n');(out/'development_results.json').write_text(json.dumps(data,indent=2)+'\n')
     provenance={path.stem:json.loads(path.read_text()) for path in (FOLDER/'models').glob('*.json')}
     (out/'training_provenance.json').write_text(json.dumps(provenance,indent=2)+'\n')
+    counts=json.loads((ROOT/'docs/experiments/expanded-team/training_data_counts.json').read_text())
+    counts += [{'game':m['game'],'live_team_frames':m['reference_live_frames']} for m in
+               (json.loads(path.read_text()) for path in (FOLDER/'rows').glob('*.json'))]
+    if len(counts)!=29:raise ValueError('Incomplete source counts')
+    (out/'training_data_counts.json').write_text(json.dumps(counts,indent=2)+'\n')
     lines=['# Fixed-capacity 19 → 29 game study','','**Verified release remains v3.** No fresh confirmation has been completed in this cycle.','',
       'The only experimental change is adding ten prior SkillCorner confirmation games to the team-head training pool. They are now training data, not a test set. The expanded head retains 108 features, original HGB capacity, augmentations, sampling and a fixed 50/50 blend with the original nine-game stacked team probabilities. The dead-probability channel and decoder stay fixed.','',
+      f'The 29-game head uses {sum(r["live_team_frames"] for r in counts):,} unique live-team source frames and {provenance["all_twenty_nine"]["sampled_training_rows"]:,} sampled augmented/symmetric examples, versus 747,644 examples for the nineteen-game head. Provider frame counts are not independent statistical samples.','',
       'One full model and nineteen leave-one-whole-game-out heads are fitted. Every augmented and team-swapped sibling of a scored game is excluded from its head. Both v3 and data29 are evaluated on the same original19 excluded games; baseline scores match the prior study exactly. Historical feature/configuration choices reused these games, so this is reused-development evidence, not an unbiased final generalization estimate.','',
       '| Cohort | V3 spellF1 | Data29 spellF1 | Difference |','|---|---:|---:|---:|']
     for i,(cohort,scenario) in enumerate(groups):lines.append(f'| {cohort}/{scenario} | {scores["v3"]["means"][i]:.4f} | {scores["data29"]["means"][i]:.4f} | {differences[i]:+.4f} |')
     bounds=result['descriptive_paired_95ci']
     lines += ['',f'Weighted gain: **{gain:+.4f}**; descriptive paired 95% game-bootstrap interval [{bounds[0]:+.4f}, {bounds[1]:+.4f}]. Fixed development gate pass: **{passed}**. Gate requires gain ≥0.005 and no cohort mean loss >0.005. Original and SkillCorner games are resampled separately, preserving paired scenario differences within each game; 10,000 draws, seed 20261113. Intervals do not account for historical model selection.','',
       '## Descriptive overfit diagnostic','',
-      'For each excluded fit, score at most 2,048 evenly spaced augmented/symmetric H/A rows per game. Training means weight games equally; held-out rows use the same source/augmentation pipeline. These binary-head losses/accuracies are not the official decoded spellF1. A train/held-out gap can indicate overfit or source shift; a small gap cannot prove absence of overfit.','',
+      'For each excluded fit, score at most 2,048 evenly spaced augmented/symmetric H/A rows per game. Training means weight games equally and include only the same source family as the held-out cohort; held-out rows use the same augmentation pipeline. These binary-head losses/accuracies are not the official decoded spellF1. A train/held-out gap can indicate overfit or match shift; a small gap cannot prove absence of overfit.','',
       '| Held-out family | Data29 training loss | Data29 held-out loss | V3 held-out loss | Data29 training accuracy | Data29 held-out accuracy | V3 held-out accuracy |','|---|---:|---:|---:|---:|---:|---:|']
     for family,d in diagnostics.items():
         l=d['log_loss'];a=d['accuracy'];lines.append(f'| {family} | {l["data29_training_mean"]:.4f} | {l["data29_heldout_mean"]:.4f} | {l["v3_heldout_mean"]:.4f} | {a["data29_training_mean"]:.4f} | {a["data29_heldout_mean"]:.4f} | {a["v3_heldout_mean"]:.4f} |')

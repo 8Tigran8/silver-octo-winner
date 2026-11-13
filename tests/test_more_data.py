@@ -1,12 +1,24 @@
 """Whole-game isolation and a genuinely unchanged capacity/data comparison."""
 import sys
+import json
+import numpy as np
 from pathlib import Path
 import unittest
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'tools'))
 import more_data_trial as trial
+from more_data_decoder import temperature
 
 
 class MoreDataTests(unittest.TestCase):
+    def test_calibration_preserves_team_swap_symmetry(self):
+        p=np.linspace(.01,.99,101)
+        np.testing.assert_array_equal(temperature(p,1.),p)
+        for value in [.75,1.25]:
+            q=temperature(p,value)
+            np.testing.assert_allclose(temperature(1-p,value),1-q,atol=1e-12)
+            self.assertTrue((np.diff(q)>0).all())
+            self.assertAlmostEqual(float(temperature(np.array([.5]),value)[0]),.5)
+
     def test_complete_exclusion_for_every_scored_game(self):
         p=trial.plan()
         for game in p['evaluation_games']:
@@ -30,6 +42,22 @@ class MoreDataTests(unittest.TestCase):
             parts=[(game,scenario) for game in trial.split(excluded)
                    for scenario in ('natural','corrupt','team_swapped')]
             self.assertFalse(any(game==excluded for game,_ in parts))
+
+    def test_future_pff_holdout_excludes_entire_national_teams(self):
+        p=json.loads((trial.PLAN.parent/'pff_protocol.json').read_text())
+        countries=set(p['heldout_countries'])
+        sets=[]
+        for key,count in [('training',36),('development',10),('final_test',12),
+                          ('country_bridge_excluded_from_training_and_selection',6)]:
+            rows=p[key];self.assertEqual(len(rows),count)
+            sets.append({r['game_id'] for r in rows})
+            if key in ('training','development'):
+                self.assertTrue(all(not countries.intersection([r['home'],r['away']]) for r in rows))
+            if key=='final_test':
+                self.assertTrue(all({r['home'],r['away']} <= countries for r in rows))
+        self.assertEqual(len(set.union(*sets)),64)
+        self.assertEqual(sum(len(s) for s in sets),64)
+        self.assertNotIn('10517',sets[2])
 
 
 if __name__=='__main__':unittest.main()

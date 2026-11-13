@@ -88,6 +88,12 @@ V3 expands team-head training to nineteen public games while retaining the v2 de
 
 On the prior ten SkillCorner confirmation games, full spellF1 improves **0.5524 → 0.6046**, ten wins; with added label-blind corruption, **0.4719 → 0.5156**, ten wins. This is a reused secondary cohort, not a pristine new holdout. Known matched-sensor performance changes **0.6432 → 0.6414**. The [expanded-training report](docs/experiments/expanded-team/REPORT.md) includes all four policies, source and split provenance, limitations and predeclared gates. External gates and both clean-source v3 runs passed. The verified local release package is v3; v1/v2 packages are archived.
 
+## More training data and overfit checks
+
+A subsequent fixed-capacity [19 → 29 game study](docs/experiments/more-data/REPORT.md) added the ten prior confirmation games to research training, excluding every scored game and all its augmentations. Data-only weighted spellF1 gain was +0.00067; descriptive paired 95% interval [-0.00147, +0.00288]. Nine registered decoder/calibration policies then achieved at most +0.00416, below the fixed +0.005 gate. None replaces v3. Baseline v3 and unchanged data29 controls reproduced prior scores exactly. Training/held-out head diagnostics and all candidate results are reported; these reused games do not establish an unbiased final generalization estimate.
+
+A request for the PFF 64-game World Cup2022 dataset is submitted and awaits owner approval. Its prospective split is frozen before gated data/model scores: 36 training, ten development, twelve final-test games with both national teams outside PFF training/development, and six cross-country knockout games excluded to preserve that separation. Source terms, observed-ball availability and event-proxy label semantics still require verification after access. No new PFF score or promotion is claimed; see [the protocol](docs/experiments/more-data/pff_protocol.json).
+
 ## Review status
 
 The implementation originates from VV's `model-v1` commit `cc44bfe6bceba39e2e67a03fd32e658cca68bc0e`. The reproduction branch adds setup, explicit output paths, controlled worker counts and verification tooling. V1 remains unchanged. V2 retains its learned models/features and changes only the externally validated transition costs; v3 adds the externally validated nineteen-game team head described above.

@@ -1,0 +1,17 @@
+{
+  "purpose": "Exclude accidental training-source overlap with future2022 World Cup holdout",
+  "DFL": "Original seven games are German club2022/23 matches, not national-team2022 World Cup fixtures",
+  "SkillCorner": "All20 modern training games are A-League2024/25 matches, after World Cup2022",
+  "Metrica": {
+    "Sample_Game_1": {
+      "last_folder_change_commit": "5f825443fa855896701b1460f193cca2899c61e6",
+      "commit_date": "2020-04-01T18:27:58Z",
+      "url": "https://github.com/metrica-sports/sample-data/commit/5f825443fa855896701b1460f193cca2899c61e6"
+    },
+    "Sample_Game_2": {
+      "last_folder_change_commit": "09773d7f29ed7fdcb87c4289737595ad5a7c44c6",
+      "commit_date": "2020-04-07T16:17:36Z",
+      "url": "https://github.com/metrica-sports/sample-data/commit/09773d7f29ed7fdcb87c4289737595ad5a7c44c6"
+    }
+  }
+}

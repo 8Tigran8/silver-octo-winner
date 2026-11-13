@@ -1,0 +1,4379 @@
+{
+  "exclude__skillcorner__1959846": {
+    "excluded": "skillcorner/1959846",
+    "train": [
+      "original/idsse_J03WMX",
+      "original/idsse_J03WN1",
+      "original/idsse_J03WOH",
+      "original/idsse_J03WOY",
+      "original/idsse_J03WPY",
+      "original/idsse_J03WQQ",
+      "original/idsse_J03WR9",
+      "original/metrica_1",
+      "original/metrica_2",
+      "skillcorner/1874553",
+      "skillcorner/1886347",
+      "skillcorner/1899585",
+      "skillcorner/1925299",
+      "skillcorner/1927964",
+      "skillcorner/1953632",
+      "skillcorner/1986691",
+      "skillcorner/1996435",
+      "skillcorner/1996436",
+      "skillcorner/2006229",
+      "skillcorner/2006363",
+      "skillcorner/2007448",
+      "skillcorner/2007721",
+      "skillcorner/2010085",
+      "skillcorner/2011166",
+      "skillcorner/2013725",
+      "skillcorner/2015213",
+      "skillcorner/2016236",
+      "skillcorner/2017461"
+    ],
+    "plan_sha256": "fdaee606952dd5002b4641193985f6569b6117d9530e3859165fa8d8892b2c38",
+    "rows_sha256": {
+      "original/idsse_J03WMX": "2466b2defc302a6de141305c7dba63da7e817e99696c91ee0dada6dc3b2554bd",
+      "original/idsse_J03WN1": "09c6ab011a50bc83f134df346d3990a7003e381bd608df04351bb2f51253cd10",
+      "original/idsse_J03WOH": "fe800fbed8132672a3ca706020970fe505ff1c5f668357b8c22893510f8fa916",
+      "original/idsse_J03WOY": "04a872423143a19b95c3571876df8dd979e6c38d592929d67a698c2fcb9aad4c",
+      "original/idsse_J03WPY": "a40d3855ba738960fe477b16ae7bdfbc10c7d3f08ecfe81737f440d8e3718cca",
+      "original/idsse_J03WQQ": "30cbfe347051b7a3b554bfd83bf3b6faad8433e4827276aee2337f47f30b80ed",
+      "original/idsse_J03WR9": "8dda2b1f2478fe57d849270dfafda14d6434e2552e0e293c6b2b6cc7b9ffd1c9",
+      "original/metrica_1": "eb575e4df4892372a4d7e0a97763e7d5544ae305b5bdf3a3089d62d9505e1281",
+      "original/metrica_2": "56fa4373b984f1154cf2f2c5c66d6d2037af689598372cffd9841ff2255b9001",
+      "skillcorner/1874553": "23c5874a7adf98c2ba059a6598aabf07b21e082236e4fedb501ea7c3aca04002",
+      "skillcorner/1886347": "d43dcadb3790dbe8e1fa8d1d76832037765c7695fad12c73a3d8b7e7c59aef9c",
+      "skillcorner/1899585": "03a565c2073ccf06ae4c118e81dcc43d490420dc0f72129ca487c761eca9f8f0",
+      "skillcorner/1925299": "fb443cd05bcebd8cc1cb425a3db7fe0a43fb5d477970f9f965593e38c01fc0cc",
+      "skillcorner/1927964": "4fc7094f3353b568dad6c60bbdc72c5c901822d4c7bd1ae689fb70765b3b7c4f",
+      "skillcorner/1953632": "69911ae858f583d41e2d35b16b9b3271c4487c186020790c95eda2ac7e99b79b",
+      "skillcorner/1986691": "43efa239339ad23b85df1c9553fab77b89c174eaac46511613b87d266aad5dd8",
+      "skillcorner/1996435": "408af1e90df479bc30dfc3aa3f661d36097c67ce3be9039a6bb6942417031859",
+      "skillcorner/1996436": "f61a9fae34f44eb5d0615802130ed81fa68cd929aac3a9b2fbb4732cb9cf476a",
+      "skillcorner/2006229": "6ca647a6be20f69d411bbc81c57194d52fe7f4f51fa261b7f6cd6c5692974004",
+      "skillcorner/2006363": "90838b370e5885a9f714aac4c574eefebec297d7ed0cee5c46d6543e46f33780",
+      "skillcorner/2007448": "91aa2ddc2c05b1de4fc065db62e1a74825eac4edd147453c1a4c35c0bfe481a9",
+      "skillcorner/2007721": "6bfcaa4db0b2fca9e18273ffd319dff23db52927e169ad537cc7ee869e5c37d8",
+      "skillcorner/2010085": "61f5b54f643e7ca61fb5e3b5378cde56c9af9b24633350576249e721f4604cd0",
+      "skillcorner/2011166": "a4de80e7cc86ae96735c63c7f5848776ddb957e59c7b1fb102e80c1ada452ed6",
+      "skillcorner/2013725": "6087ea102ac6db5d70d6614f500bae12752ccca3a88e58f32f542e319d109e24",
+      "skillcorner/2015213": "76c25a01d7f830d4a4dcbd07280e15edef862ad0af94ca0385f0f1f53dd206ac",
+      "skillcorner/2016236": "ee598ffecfd8b9c32cba1c9b8f45d3da784db216788aef3a6786f80e1b15a34b",
+      "skillcorner/2017461": "e909b225e6172c42029534135ebcd180e9b011862d757cac9388e6055094be4a"
+    },
+    "training_diagnostic": {
+      "original/idsse_J03WMX": {
+        "sampled_rows": 2048,
+        "log_loss": 0.24317363931705877,
+        "accuracy": 0.90185546875
+      },
+      "original/idsse_J03WN1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2789001190716407,
+        "accuracy": 0.87255859375
+      },
+      "original/idsse_J03WOH": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20209500407005426,
+        "accuracy": 0.9111328125
+      },
+      "original/idsse_J03WOY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.24376957050613654,
+        "accuracy": 0.884765625
+      },
+      "original/idsse_J03WPY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20757528456459778,
+        "accuracy": 0.908203125
+      },
+      "original/idsse_J03WQQ": {
+        "sampled_rows": 2048,
+        "log_loss": 0.200746137965428,
+        "accuracy": 0.908203125
+      },
+      "original/idsse_J03WR9": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1858746126216772,
+        "accuracy": 0.9130859375
+      },
+      "original/metrica_1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13860923649904422,
+        "accuracy": 0.947265625
+      },
+      "original/metrica_2": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11950974379159277,
+        "accuracy": 0.95263671875
+      },
+      "skillcorner/1874553": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1552400787946489,
+        "accuracy": 0.93310546875
+      },
+      "skillcorner/1886347": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13877873094823923,
+        "accuracy": 0.93994140625
+      },
+      "skillcorner/1899585": {
+        "sampled_rows": 2048,
+        "log_loss": 0.17656898604569599,
+        "accuracy": 0.9306640625
+      },
+      "skillcorner/1925299": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16860083733890482,
+        "accuracy": 0.93212890625
+      },
+      "skillcorner/1927964": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11771224982296899,
+        "accuracy": 0.953125
+      },
+      "skillcorner/1953632": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1331540629302369,
+        "accuracy": 0.9453125
+      },
+      "skillcorner/1986691": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18067436874468304,
+        "accuracy": 0.9248046875
+      },
+      "skillcorner/1996435": {
+        "sampled_rows": 2048,
+        "log_loss": 0.14995998909189362,
+        "accuracy": 0.94873046875
+      },
+      "skillcorner/1996436": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19178040391657747,
+        "accuracy": 0.91796875
+      },
+      "skillcorner/2006229": {
+        "sampled_rows": 2048,
+        "log_loss": 0.17692001586852385,
+        "accuracy": 0.92626953125
+      },
+      "skillcorner/2006363": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1418164433152215,
+        "accuracy": 0.95556640625
+      },
+      "skillcorner/2007448": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16005755684623962,
+        "accuracy": 0.9365234375
+      },
+      "skillcorner/2007721": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15619757942702156,
+        "accuracy": 0.93603515625
+      },
+      "skillcorner/2010085": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19105272398735687,
+        "accuracy": 0.9130859375
+      },
+      "skillcorner/2011166": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19386736109797137,
+        "accuracy": 0.91943359375
+      },
+      "skillcorner/2013725": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2593641804884751,
+        "accuracy": 0.88916015625
+      },
+      "skillcorner/2015213": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20489436444596243,
+        "accuracy": 0.91162109375
+      },
+      "skillcorner/2016236": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20039746614903484,
+        "accuracy": 0.9169921875
+      },
+      "skillcorner/2017461": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20668746855346287,
+        "accuracy": 0.90966796875
+      }
+    },
+    "sampled_training_rows": 1118368,
+    "heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.1844742309821233,
+      "accuracy": 0.9208984375
+    },
+    "v3_heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.19357157097757488,
+      "accuracy": 0.91650390625
+    },
+    "model_sha256": "30c0fb44b978fd8a4e47e0a6eda3d4d88faddb5293c6df41af0e2af030eb0ebc",
+    "fitted_utc": "2026-11-13T09:54:26.156066+00:00"
+  },
+  "exclude__original__metrica_1": {
+    "excluded": "original/metrica_1",
+    "train": [
+      "original/idsse_J03WMX",
+      "original/idsse_J03WN1",
+      "original/idsse_J03WOH",
+      "original/idsse_J03WOY",
+      "original/idsse_J03WPY",
+      "original/idsse_J03WQQ",
+      "original/idsse_J03WR9",
+      "original/metrica_2",
+      "skillcorner/1874553",
+      "skillcorner/1886347",
+      "skillcorner/1899585",
+      "skillcorner/1925299",
+      "skillcorner/1927964",
+      "skillcorner/1953632",
+      "skillcorner/1959846",
+      "skillcorner/1986691",
+      "skillcorner/1996435",
+      "skillcorner/1996436",
+      "skillcorner/2006229",
+      "skillcorner/2006363",
+      "skillcorner/2007448",
+      "skillcorner/2007721",
+      "skillcorner/2010085",
+      "skillcorner/2011166",
+      "skillcorner/2013725",
+      "skillcorner/2015213",
+      "skillcorner/2016236",
+      "skillcorner/2017461"
+    ],
+    "plan_sha256": "fdaee606952dd5002b4641193985f6569b6117d9530e3859165fa8d8892b2c38",
+    "rows_sha256": {
+      "original/idsse_J03WMX": "2466b2defc302a6de141305c7dba63da7e817e99696c91ee0dada6dc3b2554bd",
+      "original/idsse_J03WN1": "09c6ab011a50bc83f134df346d3990a7003e381bd608df04351bb2f51253cd10",
+      "original/idsse_J03WOH": "fe800fbed8132672a3ca706020970fe505ff1c5f668357b8c22893510f8fa916",
+      "original/idsse_J03WOY": "04a872423143a19b95c3571876df8dd979e6c38d592929d67a698c2fcb9aad4c",
+      "original/idsse_J03WPY": "a40d3855ba738960fe477b16ae7bdfbc10c7d3f08ecfe81737f440d8e3718cca",
+      "original/idsse_J03WQQ": "30cbfe347051b7a3b554bfd83bf3b6faad8433e4827276aee2337f47f30b80ed",
+      "original/idsse_J03WR9": "8dda2b1f2478fe57d849270dfafda14d6434e2552e0e293c6b2b6cc7b9ffd1c9",
+      "original/metrica_2": "56fa4373b984f1154cf2f2c5c66d6d2037af689598372cffd9841ff2255b9001",
+      "skillcorner/1874553": "23c5874a7adf98c2ba059a6598aabf07b21e082236e4fedb501ea7c3aca04002",
+      "skillcorner/1886347": "d43dcadb3790dbe8e1fa8d1d76832037765c7695fad12c73a3d8b7e7c59aef9c",
+      "skillcorner/1899585": "03a565c2073ccf06ae4c118e81dcc43d490420dc0f72129ca487c761eca9f8f0",
+      "skillcorner/1925299": "fb443cd05bcebd8cc1cb425a3db7fe0a43fb5d477970f9f965593e38c01fc0cc",
+      "skillcorner/1927964": "4fc7094f3353b568dad6c60bbdc72c5c901822d4c7bd1ae689fb70765b3b7c4f",
+      "skillcorner/1953632": "69911ae858f583d41e2d35b16b9b3271c4487c186020790c95eda2ac7e99b79b",
+      "skillcorner/1959846": "e1607aa6f288b7018756b695c91a7e87703c176c2002e4cfae17166925b921f5",
+      "skillcorner/1986691": "43efa239339ad23b85df1c9553fab77b89c174eaac46511613b87d266aad5dd8",
+      "skillcorner/1996435": "408af1e90df479bc30dfc3aa3f661d36097c67ce3be9039a6bb6942417031859",
+      "skillcorner/1996436": "f61a9fae34f44eb5d0615802130ed81fa68cd929aac3a9b2fbb4732cb9cf476a",
+      "skillcorner/2006229": "6ca647a6be20f69d411bbc81c57194d52fe7f4f51fa261b7f6cd6c5692974004",
+      "skillcorner/2006363": "90838b370e5885a9f714aac4c574eefebec297d7ed0cee5c46d6543e46f33780",
+      "skillcorner/2007448": "91aa2ddc2c05b1de4fc065db62e1a74825eac4edd147453c1a4c35c0bfe481a9",
+      "skillcorner/2007721": "6bfcaa4db0b2fca9e18273ffd319dff23db52927e169ad537cc7ee869e5c37d8",
+      "skillcorner/2010085": "61f5b54f643e7ca61fb5e3b5378cde56c9af9b24633350576249e721f4604cd0",
+      "skillcorner/2011166": "a4de80e7cc86ae96735c63c7f5848776ddb957e59c7b1fb102e80c1ada452ed6",
+      "skillcorner/2013725": "6087ea102ac6db5d70d6614f500bae12752ccca3a88e58f32f542e319d109e24",
+      "skillcorner/2015213": "76c25a01d7f830d4a4dcbd07280e15edef862ad0af94ca0385f0f1f53dd206ac",
+      "skillcorner/2016236": "ee598ffecfd8b9c32cba1c9b8f45d3da784db216788aef3a6786f80e1b15a34b",
+      "skillcorner/2017461": "e909b225e6172c42029534135ebcd180e9b011862d757cac9388e6055094be4a"
+    },
+    "training_diagnostic": {
+      "original/idsse_J03WMX": {
+        "sampled_rows": 2048,
+        "log_loss": 0.24330110003481614,
+        "accuracy": 0.90185546875
+      },
+      "original/idsse_J03WN1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2779632529211947,
+        "accuracy": 0.87744140625
+      },
+      "original/idsse_J03WOH": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20281070236534904,
+        "accuracy": 0.90625
+      },
+      "original/idsse_J03WOY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2398459754352502,
+        "accuracy": 0.89208984375
+      },
+      "original/idsse_J03WPY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2052267591306487,
+        "accuracy": 0.9072265625
+      },
+      "original/idsse_J03WQQ": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19832493179197297,
+        "accuracy": 0.91357421875
+      },
+      "original/idsse_J03WR9": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18478478706370588,
+        "accuracy": 0.92138671875
+      },
+      "original/metrica_2": {
+        "sampled_rows": 2048,
+        "log_loss": 0.12033881143267589,
+        "accuracy": 0.9501953125
+      },
+      "skillcorner/1874553": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15339528823707124,
+        "accuracy": 0.9306640625
+      },
+      "skillcorner/1886347": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13948370439714444,
+        "accuracy": 0.94189453125
+      },
+      "skillcorner/1899585": {
+        "sampled_rows": 2048,
+        "log_loss": 0.17305791293245604,
+        "accuracy": 0.92919921875
+      },
+      "skillcorner/1925299": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1669157260102268,
+        "accuracy": 0.93359375
+      },
+      "skillcorner/1927964": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11715113856600404,
+        "accuracy": 0.9521484375
+      },
+      "skillcorner/1953632": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1292318630776853,
+        "accuracy": 0.94677734375
+      },
+      "skillcorner/1959846": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1630413430687957,
+        "accuracy": 0.927734375
+      },
+      "skillcorner/1986691": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18324306589358097,
+        "accuracy": 0.9208984375
+      },
+      "skillcorner/1996435": {
+        "sampled_rows": 2048,
+        "log_loss": 0.149423210513627,
+        "accuracy": 0.94384765625
+      },
+      "skillcorner/1996436": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19126126944720792,
+        "accuracy": 0.91748046875
+      },
+      "skillcorner/2006229": {
+        "sampled_rows": 2048,
+        "log_loss": 0.17745161879195104,
+        "accuracy": 0.927734375
+      },
+      "skillcorner/2006363": {
+        "sampled_rows": 2048,
+        "log_loss": 0.14141932520893674,
+        "accuracy": 0.95361328125
+      },
+      "skillcorner/2007448": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1604080634756081,
+        "accuracy": 0.9365234375
+      },
+      "skillcorner/2007721": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1547813509183427,
+        "accuracy": 0.9404296875
+      },
+      "skillcorner/2010085": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1884921926004529,
+        "accuracy": 0.91357421875
+      },
+      "skillcorner/2011166": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19015263139364974,
+        "accuracy": 0.921875
+      },
+      "skillcorner/2013725": {
+        "sampled_rows": 2048,
+        "log_loss": 0.25856124484740317,
+        "accuracy": 0.8857421875
+      },
+      "skillcorner/2015213": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20497682200031622,
+        "accuracy": 0.90771484375
+      },
+      "skillcorner/2016236": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20057068760810665,
+        "accuracy": 0.91748046875
+      },
+      "skillcorner/2017461": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20679327451738574,
+        "accuracy": 0.91064453125
+      }
+    },
+    "sampled_training_rows": 1112452,
+    "heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.214793675151992,
+      "accuracy": 0.91015625
+    },
+    "v3_heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.22286197741835614,
+      "accuracy": 0.908203125
+    },
+    "model_sha256": "828a0ba15a775215db6053057c249a226c7554454936b4641a1a10e9dd0356f7",
+    "fitted_utc": "2026-11-13T09:51:54.214536+00:00"
+  },
+  "exclude__original__idsse_J03WPY": {
+    "excluded": "original/idsse_J03WPY",
+    "train": [
+      "original/idsse_J03WMX",
+      "original/idsse_J03WN1",
+      "original/idsse_J03WOH",
+      "original/idsse_J03WOY",
+      "original/idsse_J03WQQ",
+      "original/idsse_J03WR9",
+      "original/metrica_1",
+      "original/metrica_2",
+      "skillcorner/1874553",
+      "skillcorner/1886347",
+      "skillcorner/1899585",
+      "skillcorner/1925299",
+      "skillcorner/1927964",
+      "skillcorner/1953632",
+      "skillcorner/1959846",
+      "skillcorner/1986691",
+      "skillcorner/1996435",
+      "skillcorner/1996436",
+      "skillcorner/2006229",
+      "skillcorner/2006363",
+      "skillcorner/2007448",
+      "skillcorner/2007721",
+      "skillcorner/2010085",
+      "skillcorner/2011166",
+      "skillcorner/2013725",
+      "skillcorner/2015213",
+      "skillcorner/2016236",
+      "skillcorner/2017461"
+    ],
+    "plan_sha256": "fdaee606952dd5002b4641193985f6569b6117d9530e3859165fa8d8892b2c38",
+    "rows_sha256": {
+      "original/idsse_J03WMX": "2466b2defc302a6de141305c7dba63da7e817e99696c91ee0dada6dc3b2554bd",
+      "original/idsse_J03WN1": "09c6ab011a50bc83f134df346d3990a7003e381bd608df04351bb2f51253cd10",
+      "original/idsse_J03WOH": "fe800fbed8132672a3ca706020970fe505ff1c5f668357b8c22893510f8fa916",
+      "original/idsse_J03WOY": "04a872423143a19b95c3571876df8dd979e6c38d592929d67a698c2fcb9aad4c",
+      "original/idsse_J03WQQ": "30cbfe347051b7a3b554bfd83bf3b6faad8433e4827276aee2337f47f30b80ed",
+      "original/idsse_J03WR9": "8dda2b1f2478fe57d849270dfafda14d6434e2552e0e293c6b2b6cc7b9ffd1c9",
+      "original/metrica_1": "eb575e4df4892372a4d7e0a97763e7d5544ae305b5bdf3a3089d62d9505e1281",
+      "original/metrica_2": "56fa4373b984f1154cf2f2c5c66d6d2037af689598372cffd9841ff2255b9001",
+      "skillcorner/1874553": "23c5874a7adf98c2ba059a6598aabf07b21e082236e4fedb501ea7c3aca04002",
+      "skillcorner/1886347": "d43dcadb3790dbe8e1fa8d1d76832037765c7695fad12c73a3d8b7e7c59aef9c",
+      "skillcorner/1899585": "03a565c2073ccf06ae4c118e81dcc43d490420dc0f72129ca487c761eca9f8f0",
+      "skillcorner/1925299": "fb443cd05bcebd8cc1cb425a3db7fe0a43fb5d477970f9f965593e38c01fc0cc",
+      "skillcorner/1927964": "4fc7094f3353b568dad6c60bbdc72c5c901822d4c7bd1ae689fb70765b3b7c4f",
+      "skillcorner/1953632": "69911ae858f583d41e2d35b16b9b3271c4487c186020790c95eda2ac7e99b79b",
+      "skillcorner/1959846": "e1607aa6f288b7018756b695c91a7e87703c176c2002e4cfae17166925b921f5",
+      "skillcorner/1986691": "43efa239339ad23b85df1c9553fab77b89c174eaac46511613b87d266aad5dd8",
+      "skillcorner/1996435": "408af1e90df479bc30dfc3aa3f661d36097c67ce3be9039a6bb6942417031859",
+      "skillcorner/1996436": "f61a9fae34f44eb5d0615802130ed81fa68cd929aac3a9b2fbb4732cb9cf476a",
+      "skillcorner/2006229": "6ca647a6be20f69d411bbc81c57194d52fe7f4f51fa261b7f6cd6c5692974004",
+      "skillcorner/2006363": "90838b370e5885a9f714aac4c574eefebec297d7ed0cee5c46d6543e46f33780",
+      "skillcorner/2007448": "91aa2ddc2c05b1de4fc065db62e1a74825eac4edd147453c1a4c35c0bfe481a9",
+      "skillcorner/2007721": "6bfcaa4db0b2fca9e18273ffd319dff23db52927e169ad537cc7ee869e5c37d8",
+      "skillcorner/2010085": "61f5b54f643e7ca61fb5e3b5378cde56c9af9b24633350576249e721f4604cd0",
+      "skillcorner/2011166": "a4de80e7cc86ae96735c63c7f5848776ddb957e59c7b1fb102e80c1ada452ed6",
+      "skillcorner/2013725": "6087ea102ac6db5d70d6614f500bae12752ccca3a88e58f32f542e319d109e24",
+      "skillcorner/2015213": "76c25a01d7f830d4a4dcbd07280e15edef862ad0af94ca0385f0f1f53dd206ac",
+      "skillcorner/2016236": "ee598ffecfd8b9c32cba1c9b8f45d3da784db216788aef3a6786f80e1b15a34b",
+      "skillcorner/2017461": "e909b225e6172c42029534135ebcd180e9b011862d757cac9388e6055094be4a"
+    },
+    "training_diagnostic": {
+      "original/idsse_J03WMX": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2415480934560748,
+        "accuracy": 0.90283203125
+      },
+      "original/idsse_J03WN1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.28216455289344566,
+        "accuracy": 0.8740234375
+      },
+      "original/idsse_J03WOH": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20480777158538815,
+        "accuracy": 0.90771484375
+      },
+      "original/idsse_J03WOY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2417396359234881,
+        "accuracy": 0.8935546875
+      },
+      "original/idsse_J03WQQ": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20328461556913552,
+        "accuracy": 0.91162109375
+      },
+      "original/idsse_J03WR9": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1867279611251954,
+        "accuracy": 0.91650390625
+      },
+      "original/metrica_1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13554185054465323,
+        "accuracy": 0.94921875
+      },
+      "original/metrica_2": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11921740064674133,
+        "accuracy": 0.953125
+      },
+      "skillcorner/1874553": {
+        "sampled_rows": 2048,
+        "log_loss": 0.157412888765079,
+        "accuracy": 0.931640625
+      },
+      "skillcorner/1886347": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13950530907280012,
+        "accuracy": 0.94189453125
+      },
+      "skillcorner/1899585": {
+        "sampled_rows": 2048,
+        "log_loss": 0.17572358664580912,
+        "accuracy": 0.92919921875
+      },
+      "skillcorner/1925299": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1654082022301257,
+        "accuracy": 0.931640625
+      },
+      "skillcorner/1927964": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11761334098118749,
+        "accuracy": 0.95263671875
+      },
+      "skillcorner/1953632": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13043834341227736,
+        "accuracy": 0.94482421875
+      },
+      "skillcorner/1959846": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16538649483547008,
+        "accuracy": 0.9326171875
+      },
+      "skillcorner/1986691": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18019278888723667,
+        "accuracy": 0.923828125
+      },
+      "skillcorner/1996435": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15195681258600685,
+        "accuracy": 0.94091796875
+      },
+      "skillcorner/1996436": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19276930215156887,
+        "accuracy": 0.91357421875
+      },
+      "skillcorner/2006229": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1787517445908427,
+        "accuracy": 0.9296875
+      },
+      "skillcorner/2006363": {
+        "sampled_rows": 2048,
+        "log_loss": 0.14308893230793804,
+        "accuracy": 0.95166015625
+      },
+      "skillcorner/2007448": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15987354587448058,
+        "accuracy": 0.935546875
+      },
+      "skillcorner/2007721": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15405094371492328,
+        "accuracy": 0.9404296875
+      },
+      "skillcorner/2010085": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19053008803988036,
+        "accuracy": 0.91357421875
+      },
+      "skillcorner/2011166": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1907636253335146,
+        "accuracy": 0.919921875
+      },
+      "skillcorner/2013725": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2559944655383983,
+        "accuracy": 0.888671875
+      },
+      "skillcorner/2015213": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2034839886474249,
+        "accuracy": 0.91015625
+      },
+      "skillcorner/2016236": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20177478446438446,
+        "accuracy": 0.912109375
+      },
+      "skillcorner/2017461": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20808772108978346,
+        "accuracy": 0.90673828125
+      }
+    },
+    "sampled_training_rows": 1114846,
+    "heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.2284740841343434,
+      "accuracy": 0.8974609375
+    },
+    "v3_heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.23025876221313205,
+      "accuracy": 0.8974609375
+    },
+    "model_sha256": "7c13478956b1034542ad3145d322807b6f58d1a79fe6bf2ef4304f454bd80296",
+    "fitted_utc": "2026-11-13T09:48:48.418610+00:00"
+  },
+  "exclude__original__idsse_J03WMX": {
+    "excluded": "original/idsse_J03WMX",
+    "train": [
+      "original/idsse_J03WN1",
+      "original/idsse_J03WOH",
+      "original/idsse_J03WOY",
+      "original/idsse_J03WPY",
+      "original/idsse_J03WQQ",
+      "original/idsse_J03WR9",
+      "original/metrica_1",
+      "original/metrica_2",
+      "skillcorner/1874553",
+      "skillcorner/1886347",
+      "skillcorner/1899585",
+      "skillcorner/1925299",
+      "skillcorner/1927964",
+      "skillcorner/1953632",
+      "skillcorner/1959846",
+      "skillcorner/1986691",
+      "skillcorner/1996435",
+      "skillcorner/1996436",
+      "skillcorner/2006229",
+      "skillcorner/2006363",
+      "skillcorner/2007448",
+      "skillcorner/2007721",
+      "skillcorner/2010085",
+      "skillcorner/2011166",
+      "skillcorner/2013725",
+      "skillcorner/2015213",
+      "skillcorner/2016236",
+      "skillcorner/2017461"
+    ],
+    "plan_sha256": "fdaee606952dd5002b4641193985f6569b6117d9530e3859165fa8d8892b2c38",
+    "rows_sha256": {
+      "original/idsse_J03WN1": "09c6ab011a50bc83f134df346d3990a7003e381bd608df04351bb2f51253cd10",
+      "original/idsse_J03WOH": "fe800fbed8132672a3ca706020970fe505ff1c5f668357b8c22893510f8fa916",
+      "original/idsse_J03WOY": "04a872423143a19b95c3571876df8dd979e6c38d592929d67a698c2fcb9aad4c",
+      "original/idsse_J03WPY": "a40d3855ba738960fe477b16ae7bdfbc10c7d3f08ecfe81737f440d8e3718cca",
+      "original/idsse_J03WQQ": "30cbfe347051b7a3b554bfd83bf3b6faad8433e4827276aee2337f47f30b80ed",
+      "original/idsse_J03WR9": "8dda2b1f2478fe57d849270dfafda14d6434e2552e0e293c6b2b6cc7b9ffd1c9",
+      "original/metrica_1": "eb575e4df4892372a4d7e0a97763e7d5544ae305b5bdf3a3089d62d9505e1281",
+      "original/metrica_2": "56fa4373b984f1154cf2f2c5c66d6d2037af689598372cffd9841ff2255b9001",
+      "skillcorner/1874553": "23c5874a7adf98c2ba059a6598aabf07b21e082236e4fedb501ea7c3aca04002",
+      "skillcorner/1886347": "d43dcadb3790dbe8e1fa8d1d76832037765c7695fad12c73a3d8b7e7c59aef9c",
+      "skillcorner/1899585": "03a565c2073ccf06ae4c118e81dcc43d490420dc0f72129ca487c761eca9f8f0",
+      "skillcorner/1925299": "fb443cd05bcebd8cc1cb425a3db7fe0a43fb5d477970f9f965593e38c01fc0cc",
+      "skillcorner/1927964": "4fc7094f3353b568dad6c60bbdc72c5c901822d4c7bd1ae689fb70765b3b7c4f",
+      "skillcorner/1953632": "69911ae858f583d41e2d35b16b9b3271c4487c186020790c95eda2ac7e99b79b",
+      "skillcorner/1959846": "e1607aa6f288b7018756b695c91a7e87703c176c2002e4cfae17166925b921f5",
+      "skillcorner/1986691": "43efa239339ad23b85df1c9553fab77b89c174eaac46511613b87d266aad5dd8",
+      "skillcorner/1996435": "408af1e90df479bc30dfc3aa3f661d36097c67ce3be9039a6bb6942417031859",
+      "skillcorner/1996436": "f61a9fae34f44eb5d0615802130ed81fa68cd929aac3a9b2fbb4732cb9cf476a",
+      "skillcorner/2006229": "6ca647a6be20f69d411bbc81c57194d52fe7f4f51fa261b7f6cd6c5692974004",
+      "skillcorner/2006363": "90838b370e5885a9f714aac4c574eefebec297d7ed0cee5c46d6543e46f33780",
+      "skillcorner/2007448": "91aa2ddc2c05b1de4fc065db62e1a74825eac4edd147453c1a4c35c0bfe481a9",
+      "skillcorner/2007721": "6bfcaa4db0b2fca9e18273ffd319dff23db52927e169ad537cc7ee869e5c37d8",
+      "skillcorner/2010085": "61f5b54f643e7ca61fb5e3b5378cde56c9af9b24633350576249e721f4604cd0",
+      "skillcorner/2011166": "a4de80e7cc86ae96735c63c7f5848776ddb957e59c7b1fb102e80c1ada452ed6",
+      "skillcorner/2013725": "6087ea102ac6db5d70d6614f500bae12752ccca3a88e58f32f542e319d109e24",
+      "skillcorner/2015213": "76c25a01d7f830d4a4dcbd07280e15edef862ad0af94ca0385f0f1f53dd206ac",
+      "skillcorner/2016236": "ee598ffecfd8b9c32cba1c9b8f45d3da784db216788aef3a6786f80e1b15a34b",
+      "skillcorner/2017461": "e909b225e6172c42029534135ebcd180e9b011862d757cac9388e6055094be4a"
+    },
+    "training_diagnostic": {
+      "original/idsse_J03WN1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.28314113679225483,
+        "accuracy": 0.8701171875
+      },
+      "original/idsse_J03WOH": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2018060789675301,
+        "accuracy": 0.90869140625
+      },
+      "original/idsse_J03WOY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2436194112678488,
+        "accuracy": 0.89013671875
+      },
+      "original/idsse_J03WPY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20686101777797206,
+        "accuracy": 0.90625
+      },
+      "original/idsse_J03WQQ": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19916064029109765,
+        "accuracy": 0.9130859375
+      },
+      "original/idsse_J03WR9": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18675080777528663,
+        "accuracy": 0.9130859375
+      },
+      "original/metrica_1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1371150222038624,
+        "accuracy": 0.94677734375
+      },
+      "original/metrica_2": {
+        "sampled_rows": 2048,
+        "log_loss": 0.119132141084978,
+        "accuracy": 0.95263671875
+      },
+      "skillcorner/1874553": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15480946997351136,
+        "accuracy": 0.93310546875
+      },
+      "skillcorner/1886347": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13915238390415763,
+        "accuracy": 0.94140625
+      },
+      "skillcorner/1899585": {
+        "sampled_rows": 2048,
+        "log_loss": 0.17666456989237453,
+        "accuracy": 0.92724609375
+      },
+      "skillcorner/1925299": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16617249732065983,
+        "accuracy": 0.93359375
+      },
+      "skillcorner/1927964": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1183514419898243,
+        "accuracy": 0.95263671875
+      },
+      "skillcorner/1953632": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13104439212471075,
+        "accuracy": 0.94482421875
+      },
+      "skillcorner/1959846": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1648479728125375,
+        "accuracy": 0.92919921875
+      },
+      "skillcorner/1986691": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18301580980697432,
+        "accuracy": 0.92138671875
+      },
+      "skillcorner/1996435": {
+        "sampled_rows": 2048,
+        "log_loss": 0.14826935448544798,
+        "accuracy": 0.94482421875
+      },
+      "skillcorner/1996436": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19314318897341354,
+        "accuracy": 0.9150390625
+      },
+      "skillcorner/2006229": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1799467498722337,
+        "accuracy": 0.92578125
+      },
+      "skillcorner/2006363": {
+        "sampled_rows": 2048,
+        "log_loss": 0.14237696959234503,
+        "accuracy": 0.9521484375
+      },
+      "skillcorner/2007448": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16097555852403564,
+        "accuracy": 0.93115234375
+      },
+      "skillcorner/2007721": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1552659494393564,
+        "accuracy": 0.93603515625
+      },
+      "skillcorner/2010085": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1922545800049423,
+        "accuracy": 0.91357421875
+      },
+      "skillcorner/2011166": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19087401434716122,
+        "accuracy": 0.9189453125
+      },
+      "skillcorner/2013725": {
+        "sampled_rows": 2048,
+        "log_loss": 0.25589349462374433,
+        "accuracy": 0.8935546875
+      },
+      "skillcorner/2015213": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2018005264081108,
+        "accuracy": 0.9111328125
+      },
+      "skillcorner/2016236": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20470510332763156,
+        "accuracy": 0.91357421875
+      },
+      "skillcorner/2017461": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20778362792980387,
+        "accuracy": 0.9091796875
+      }
+    },
+    "sampled_training_rows": 1112926,
+    "heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.2653906245718154,
+      "accuracy": 0.89306640625
+    },
+    "v3_heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.26474001428781413,
+      "accuracy": 0.892578125
+    },
+    "model_sha256": "87bfde59caf8ed83a8b06b44dbcb503058d221a3717e0511193bc331da6a03a4",
+    "fitted_utc": "2026-11-13T09:43:18.327648+00:00"
+  },
+  "exclude__skillcorner__2011166": {
+    "excluded": "skillcorner/2011166",
+    "train": [
+      "original/idsse_J03WMX",
+      "original/idsse_J03WN1",
+      "original/idsse_J03WOH",
+      "original/idsse_J03WOY",
+      "original/idsse_J03WPY",
+      "original/idsse_J03WQQ",
+      "original/idsse_J03WR9",
+      "original/metrica_1",
+      "original/metrica_2",
+      "skillcorner/1874553",
+      "skillcorner/1886347",
+      "skillcorner/1899585",
+      "skillcorner/1925299",
+      "skillcorner/1927964",
+      "skillcorner/1953632",
+      "skillcorner/1959846",
+      "skillcorner/1986691",
+      "skillcorner/1996435",
+      "skillcorner/1996436",
+      "skillcorner/2006229",
+      "skillcorner/2006363",
+      "skillcorner/2007448",
+      "skillcorner/2007721",
+      "skillcorner/2010085",
+      "skillcorner/2013725",
+      "skillcorner/2015213",
+      "skillcorner/2016236",
+      "skillcorner/2017461"
+    ],
+    "plan_sha256": "fdaee606952dd5002b4641193985f6569b6117d9530e3859165fa8d8892b2c38",
+    "rows_sha256": {
+      "original/idsse_J03WMX": "2466b2defc302a6de141305c7dba63da7e817e99696c91ee0dada6dc3b2554bd",
+      "original/idsse_J03WN1": "09c6ab011a50bc83f134df346d3990a7003e381bd608df04351bb2f51253cd10",
+      "original/idsse_J03WOH": "fe800fbed8132672a3ca706020970fe505ff1c5f668357b8c22893510f8fa916",
+      "original/idsse_J03WOY": "04a872423143a19b95c3571876df8dd979e6c38d592929d67a698c2fcb9aad4c",
+      "original/idsse_J03WPY": "a40d3855ba738960fe477b16ae7bdfbc10c7d3f08ecfe81737f440d8e3718cca",
+      "original/idsse_J03WQQ": "30cbfe347051b7a3b554bfd83bf3b6faad8433e4827276aee2337f47f30b80ed",
+      "original/idsse_J03WR9": "8dda2b1f2478fe57d849270dfafda14d6434e2552e0e293c6b2b6cc7b9ffd1c9",
+      "original/metrica_1": "eb575e4df4892372a4d7e0a97763e7d5544ae305b5bdf3a3089d62d9505e1281",
+      "original/metrica_2": "56fa4373b984f1154cf2f2c5c66d6d2037af689598372cffd9841ff2255b9001",
+      "skillcorner/1874553": "23c5874a7adf98c2ba059a6598aabf07b21e082236e4fedb501ea7c3aca04002",
+      "skillcorner/1886347": "d43dcadb3790dbe8e1fa8d1d76832037765c7695fad12c73a3d8b7e7c59aef9c",
+      "skillcorner/1899585": "03a565c2073ccf06ae4c118e81dcc43d490420dc0f72129ca487c761eca9f8f0",
+      "skillcorner/1925299": "fb443cd05bcebd8cc1cb425a3db7fe0a43fb5d477970f9f965593e38c01fc0cc",
+      "skillcorner/1927964": "4fc7094f3353b568dad6c60bbdc72c5c901822d4c7bd1ae689fb70765b3b7c4f",
+      "skillcorner/1953632": "69911ae858f583d41e2d35b16b9b3271c4487c186020790c95eda2ac7e99b79b",
+      "skillcorner/1959846": "e1607aa6f288b7018756b695c91a7e87703c176c2002e4cfae17166925b921f5",
+      "skillcorner/1986691": "43efa239339ad23b85df1c9553fab77b89c174eaac46511613b87d266aad5dd8",
+      "skillcorner/1996435": "408af1e90df479bc30dfc3aa3f661d36097c67ce3be9039a6bb6942417031859",
+      "skillcorner/1996436": "f61a9fae34f44eb5d0615802130ed81fa68cd929aac3a9b2fbb4732cb9cf476a",
+      "skillcorner/2006229": "6ca647a6be20f69d411bbc81c57194d52fe7f4f51fa261b7f6cd6c5692974004",
+      "skillcorner/2006363": "90838b370e5885a9f714aac4c574eefebec297d7ed0cee5c46d6543e46f33780",
+      "skillcorner/2007448": "91aa2ddc2c05b1de4fc065db62e1a74825eac4edd147453c1a4c35c0bfe481a9",
+      "skillcorner/2007721": "6bfcaa4db0b2fca9e18273ffd319dff23db52927e169ad537cc7ee869e5c37d8",
+      "skillcorner/2010085": "61f5b54f643e7ca61fb5e3b5378cde56c9af9b24633350576249e721f4604cd0",
+      "skillcorner/2013725": "6087ea102ac6db5d70d6614f500bae12752ccca3a88e58f32f542e319d109e24",
+      "skillcorner/2015213": "76c25a01d7f830d4a4dcbd07280e15edef862ad0af94ca0385f0f1f53dd206ac",
+      "skillcorner/2016236": "ee598ffecfd8b9c32cba1c9b8f45d3da784db216788aef3a6786f80e1b15a34b",
+      "skillcorner/2017461": "e909b225e6172c42029534135ebcd180e9b011862d757cac9388e6055094be4a"
+    },
+    "training_diagnostic": {
+      "original/idsse_J03WMX": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2428107558539649,
+        "accuracy": 0.90283203125
+      },
+      "original/idsse_J03WN1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2828466005160119,
+        "accuracy": 0.873046875
+      },
+      "original/idsse_J03WOH": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20368175255970053,
+        "accuracy": 0.9052734375
+      },
+      "original/idsse_J03WOY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.23995703422811493,
+        "accuracy": 0.8876953125
+      },
+      "original/idsse_J03WPY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20763864114544575,
+        "accuracy": 0.9072265625
+      },
+      "original/idsse_J03WQQ": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20030387731657123,
+        "accuracy": 0.9111328125
+      },
+      "original/idsse_J03WR9": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1873756418651793,
+        "accuracy": 0.91455078125
+      },
+      "original/metrica_1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13710775090441923,
+        "accuracy": 0.9482421875
+      },
+      "original/metrica_2": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1189534650497268,
+        "accuracy": 0.95751953125
+      },
+      "skillcorner/1874553": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15670058140403076,
+        "accuracy": 0.93603515625
+      },
+      "skillcorner/1886347": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1389170291499338,
+        "accuracy": 0.94189453125
+      },
+      "skillcorner/1899585": {
+        "sampled_rows": 2048,
+        "log_loss": 0.17659572132767332,
+        "accuracy": 0.9306640625
+      },
+      "skillcorner/1925299": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1649473927496945,
+        "accuracy": 0.931640625
+      },
+      "skillcorner/1927964": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11785375926023686,
+        "accuracy": 0.95166015625
+      },
+      "skillcorner/1953632": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1330668262421941,
+        "accuracy": 0.9443359375
+      },
+      "skillcorner/1959846": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16568845057991444,
+        "accuracy": 0.9306640625
+      },
+      "skillcorner/1986691": {
+        "sampled_rows": 2048,
+        "log_loss": 0.17987871964604552,
+        "accuracy": 0.92578125
+      },
+      "skillcorner/1996435": {
+        "sampled_rows": 2048,
+        "log_loss": 0.14843995602861626,
+        "accuracy": 0.943359375
+      },
+      "skillcorner/1996436": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19183643330321132,
+        "accuracy": 0.91796875
+      },
+      "skillcorner/2006229": {
+        "sampled_rows": 2048,
+        "log_loss": 0.17876190395621583,
+        "accuracy": 0.92626953125
+      },
+      "skillcorner/2006363": {
+        "sampled_rows": 2048,
+        "log_loss": 0.14137796097309557,
+        "accuracy": 0.9541015625
+      },
+      "skillcorner/2007448": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16153286544807238,
+        "accuracy": 0.93310546875
+      },
+      "skillcorner/2007721": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15380139883735836,
+        "accuracy": 0.935546875
+      },
+      "skillcorner/2010085": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19021821034661038,
+        "accuracy": 0.9111328125
+      },
+      "skillcorner/2013725": {
+        "sampled_rows": 2048,
+        "log_loss": 0.25691886873899933,
+        "accuracy": 0.89501953125
+      },
+      "skillcorner/2015213": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20525247787162587,
+        "accuracy": 0.90966796875
+      },
+      "skillcorner/2016236": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20085800847826427,
+        "accuracy": 0.9140625
+      },
+      "skillcorner/2017461": {
+        "sampled_rows": 2048,
+        "log_loss": 0.207422361072791,
+        "accuracy": 0.90869140625
+      }
+    },
+    "sampled_training_rows": 1121692,
+    "heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.21447664697672958,
+      "accuracy": 0.908203125
+    },
+    "v3_heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.21873755036944093,
+      "accuracy": 0.91064453125
+    },
+    "model_sha256": "c132be8e0ba683b21bb4c355c3751a5825682f3218e88453349f6026f6d5d657",
+    "fitted_utc": "2026-11-13T09:56:59.418699+00:00"
+  },
+  "exclude__skillcorner__2017461": {
+    "excluded": "skillcorner/2017461",
+    "train": [
+      "original/idsse_J03WMX",
+      "original/idsse_J03WN1",
+      "original/idsse_J03WOH",
+      "original/idsse_J03WOY",
+      "original/idsse_J03WPY",
+      "original/idsse_J03WQQ",
+      "original/idsse_J03WR9",
+      "original/metrica_1",
+      "original/metrica_2",
+      "skillcorner/1874553",
+      "skillcorner/1886347",
+      "skillcorner/1899585",
+      "skillcorner/1925299",
+      "skillcorner/1927964",
+      "skillcorner/1953632",
+      "skillcorner/1959846",
+      "skillcorner/1986691",
+      "skillcorner/1996435",
+      "skillcorner/1996436",
+      "skillcorner/2006229",
+      "skillcorner/2006363",
+      "skillcorner/2007448",
+      "skillcorner/2007721",
+      "skillcorner/2010085",
+      "skillcorner/2011166",
+      "skillcorner/2013725",
+      "skillcorner/2015213",
+      "skillcorner/2016236"
+    ],
+    "plan_sha256": "fdaee606952dd5002b4641193985f6569b6117d9530e3859165fa8d8892b2c38",
+    "rows_sha256": {
+      "original/idsse_J03WMX": "2466b2defc302a6de141305c7dba63da7e817e99696c91ee0dada6dc3b2554bd",
+      "original/idsse_J03WN1": "09c6ab011a50bc83f134df346d3990a7003e381bd608df04351bb2f51253cd10",
+      "original/idsse_J03WOH": "fe800fbed8132672a3ca706020970fe505ff1c5f668357b8c22893510f8fa916",
+      "original/idsse_J03WOY": "04a872423143a19b95c3571876df8dd979e6c38d592929d67a698c2fcb9aad4c",
+      "original/idsse_J03WPY": "a40d3855ba738960fe477b16ae7bdfbc10c7d3f08ecfe81737f440d8e3718cca",
+      "original/idsse_J03WQQ": "30cbfe347051b7a3b554bfd83bf3b6faad8433e4827276aee2337f47f30b80ed",
+      "original/idsse_J03WR9": "8dda2b1f2478fe57d849270dfafda14d6434e2552e0e293c6b2b6cc7b9ffd1c9",
+      "original/metrica_1": "eb575e4df4892372a4d7e0a97763e7d5544ae305b5bdf3a3089d62d9505e1281",
+      "original/metrica_2": "56fa4373b984f1154cf2f2c5c66d6d2037af689598372cffd9841ff2255b9001",
+      "skillcorner/1874553": "23c5874a7adf98c2ba059a6598aabf07b21e082236e4fedb501ea7c3aca04002",
+      "skillcorner/1886347": "d43dcadb3790dbe8e1fa8d1d76832037765c7695fad12c73a3d8b7e7c59aef9c",
+      "skillcorner/1899585": "03a565c2073ccf06ae4c118e81dcc43d490420dc0f72129ca487c761eca9f8f0",
+      "skillcorner/1925299": "fb443cd05bcebd8cc1cb425a3db7fe0a43fb5d477970f9f965593e38c01fc0cc",
+      "skillcorner/1927964": "4fc7094f3353b568dad6c60bbdc72c5c901822d4c7bd1ae689fb70765b3b7c4f",
+      "skillcorner/1953632": "69911ae858f583d41e2d35b16b9b3271c4487c186020790c95eda2ac7e99b79b",
+      "skillcorner/1959846": "e1607aa6f288b7018756b695c91a7e87703c176c2002e4cfae17166925b921f5",
+      "skillcorner/1986691": "43efa239339ad23b85df1c9553fab77b89c174eaac46511613b87d266aad5dd8",
+      "skillcorner/1996435": "408af1e90df479bc30dfc3aa3f661d36097c67ce3be9039a6bb6942417031859",
+      "skillcorner/1996436": "f61a9fae34f44eb5d0615802130ed81fa68cd929aac3a9b2fbb4732cb9cf476a",
+      "skillcorner/2006229": "6ca647a6be20f69d411bbc81c57194d52fe7f4f51fa261b7f6cd6c5692974004",
+      "skillcorner/2006363": "90838b370e5885a9f714aac4c574eefebec297d7ed0cee5c46d6543e46f33780",
+      "skillcorner/2007448": "91aa2ddc2c05b1de4fc065db62e1a74825eac4edd147453c1a4c35c0bfe481a9",
+      "skillcorner/2007721": "6bfcaa4db0b2fca9e18273ffd319dff23db52927e169ad537cc7ee869e5c37d8",
+      "skillcorner/2010085": "61f5b54f643e7ca61fb5e3b5378cde56c9af9b24633350576249e721f4604cd0",
+      "skillcorner/2011166": "a4de80e7cc86ae96735c63c7f5848776ddb957e59c7b1fb102e80c1ada452ed6",
+      "skillcorner/2013725": "6087ea102ac6db5d70d6614f500bae12752ccca3a88e58f32f542e319d109e24",
+      "skillcorner/2015213": "76c25a01d7f830d4a4dcbd07280e15edef862ad0af94ca0385f0f1f53dd206ac",
+      "skillcorner/2016236": "ee598ffecfd8b9c32cba1c9b8f45d3da784db216788aef3a6786f80e1b15a34b"
+    },
+    "training_diagnostic": {
+      "original/idsse_J03WMX": {
+        "sampled_rows": 2048,
+        "log_loss": 0.24304399713141173,
+        "accuracy": 0.90185546875
+      },
+      "original/idsse_J03WN1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.28120915361280596,
+        "accuracy": 0.87109375
+      },
+      "original/idsse_J03WOH": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20314111408563001,
+        "accuracy": 0.9111328125
+      },
+      "original/idsse_J03WOY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.23846831262470866,
+        "accuracy": 0.88818359375
+      },
+      "original/idsse_J03WPY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2085188657200186,
+        "accuracy": 0.90673828125
+      },
+      "original/idsse_J03WQQ": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2001107711471596,
+        "accuracy": 0.90966796875
+      },
+      "original/idsse_J03WR9": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18688288249666968,
+        "accuracy": 0.916015625
+      },
+      "original/metrica_1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13601595809776024,
+        "accuracy": 0.94775390625
+      },
+      "original/metrica_2": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11809852923226487,
+        "accuracy": 0.9541015625
+      },
+      "skillcorner/1874553": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15758727579553344,
+        "accuracy": 0.9326171875
+      },
+      "skillcorner/1886347": {
+        "sampled_rows": 2048,
+        "log_loss": 0.14053749599999288,
+        "accuracy": 0.94384765625
+      },
+      "skillcorner/1899585": {
+        "sampled_rows": 2048,
+        "log_loss": 0.178288825717485,
+        "accuracy": 0.9306640625
+      },
+      "skillcorner/1925299": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16858815921626566,
+        "accuracy": 0.9306640625
+      },
+      "skillcorner/1927964": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1171626232153511,
+        "accuracy": 0.95458984375
+      },
+      "skillcorner/1953632": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13213629291515966,
+        "accuracy": 0.94482421875
+      },
+      "skillcorner/1959846": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16666885526768582,
+        "accuracy": 0.931640625
+      },
+      "skillcorner/1986691": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18113985765459345,
+        "accuracy": 0.9208984375
+      },
+      "skillcorner/1996435": {
+        "sampled_rows": 2048,
+        "log_loss": 0.14723060648115088,
+        "accuracy": 0.947265625
+      },
+      "skillcorner/1996436": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1912646703651424,
+        "accuracy": 0.91650390625
+      },
+      "skillcorner/2006229": {
+        "sampled_rows": 2048,
+        "log_loss": 0.17935007033878342,
+        "accuracy": 0.92578125
+      },
+      "skillcorner/2006363": {
+        "sampled_rows": 2048,
+        "log_loss": 0.14331904700698722,
+        "accuracy": 0.9521484375
+      },
+      "skillcorner/2007448": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16070185361053338,
+        "accuracy": 0.93505859375
+      },
+      "skillcorner/2007721": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1561771524861631,
+        "accuracy": 0.93798828125
+      },
+      "skillcorner/2010085": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18926513793039518,
+        "accuracy": 0.9140625
+      },
+      "skillcorner/2011166": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1947914938119582,
+        "accuracy": 0.91796875
+      },
+      "skillcorner/2013725": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2549443979412135,
+        "accuracy": 0.892578125
+      },
+      "skillcorner/2015213": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20513012015476967,
+        "accuracy": 0.908203125
+      },
+      "skillcorner/2016236": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20134239138254287,
+        "accuracy": 0.9150390625
+      }
+    },
+    "sampled_training_rows": 1119856,
+    "heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.22980148803099304,
+      "accuracy": 0.900390625
+    },
+    "v3_heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.23893196966332889,
+      "accuracy": 0.88623046875
+    },
+    "model_sha256": "83ae666372304c6b9c54d90b72cdb5861111d7269ec8eb562fe542f18d6e3c73",
+    "fitted_utc": "2026-11-13T09:58:51.467970+00:00"
+  },
+  "exclude__original__idsse_J03WOY": {
+    "excluded": "original/idsse_J03WOY",
+    "train": [
+      "original/idsse_J03WMX",
+      "original/idsse_J03WN1",
+      "original/idsse_J03WOH",
+      "original/idsse_J03WPY",
+      "original/idsse_J03WQQ",
+      "original/idsse_J03WR9",
+      "original/metrica_1",
+      "original/metrica_2",
+      "skillcorner/1874553",
+      "skillcorner/1886347",
+      "skillcorner/1899585",
+      "skillcorner/1925299",
+      "skillcorner/1927964",
+      "skillcorner/1953632",
+      "skillcorner/1959846",
+      "skillcorner/1986691",
+      "skillcorner/1996435",
+      "skillcorner/1996436",
+      "skillcorner/2006229",
+      "skillcorner/2006363",
+      "skillcorner/2007448",
+      "skillcorner/2007721",
+      "skillcorner/2010085",
+      "skillcorner/2011166",
+      "skillcorner/2013725",
+      "skillcorner/2015213",
+      "skillcorner/2016236",
+      "skillcorner/2017461"
+    ],
+    "plan_sha256": "fdaee606952dd5002b4641193985f6569b6117d9530e3859165fa8d8892b2c38",
+    "rows_sha256": {
+      "original/idsse_J03WMX": "2466b2defc302a6de141305c7dba63da7e817e99696c91ee0dada6dc3b2554bd",
+      "original/idsse_J03WN1": "09c6ab011a50bc83f134df346d3990a7003e381bd608df04351bb2f51253cd10",
+      "original/idsse_J03WOH": "fe800fbed8132672a3ca706020970fe505ff1c5f668357b8c22893510f8fa916",
+      "original/idsse_J03WPY": "a40d3855ba738960fe477b16ae7bdfbc10c7d3f08ecfe81737f440d8e3718cca",
+      "original/idsse_J03WQQ": "30cbfe347051b7a3b554bfd83bf3b6faad8433e4827276aee2337f47f30b80ed",
+      "original/idsse_J03WR9": "8dda2b1f2478fe57d849270dfafda14d6434e2552e0e293c6b2b6cc7b9ffd1c9",
+      "original/metrica_1": "eb575e4df4892372a4d7e0a97763e7d5544ae305b5bdf3a3089d62d9505e1281",
+      "original/metrica_2": "56fa4373b984f1154cf2f2c5c66d6d2037af689598372cffd9841ff2255b9001",
+      "skillcorner/1874553": "23c5874a7adf98c2ba059a6598aabf07b21e082236e4fedb501ea7c3aca04002",
+      "skillcorner/1886347": "d43dcadb3790dbe8e1fa8d1d76832037765c7695fad12c73a3d8b7e7c59aef9c",
+      "skillcorner/1899585": "03a565c2073ccf06ae4c118e81dcc43d490420dc0f72129ca487c761eca9f8f0",
+      "skillcorner/1925299": "fb443cd05bcebd8cc1cb425a3db7fe0a43fb5d477970f9f965593e38c01fc0cc",
+      "skillcorner/1927964": "4fc7094f3353b568dad6c60bbdc72c5c901822d4c7bd1ae689fb70765b3b7c4f",
+      "skillcorner/1953632": "69911ae858f583d41e2d35b16b9b3271c4487c186020790c95eda2ac7e99b79b",
+      "skillcorner/1959846": "e1607aa6f288b7018756b695c91a7e87703c176c2002e4cfae17166925b921f5",
+      "skillcorner/1986691": "43efa239339ad23b85df1c9553fab77b89c174eaac46511613b87d266aad5dd8",
+      "skillcorner/1996435": "408af1e90df479bc30dfc3aa3f661d36097c67ce3be9039a6bb6942417031859",
+      "skillcorner/1996436": "f61a9fae34f44eb5d0615802130ed81fa68cd929aac3a9b2fbb4732cb9cf476a",
+      "skillcorner/2006229": "6ca647a6be20f69d411bbc81c57194d52fe7f4f51fa261b7f6cd6c5692974004",
+      "skillcorner/2006363": "90838b370e5885a9f714aac4c574eefebec297d7ed0cee5c46d6543e46f33780",
+      "skillcorner/2007448": "91aa2ddc2c05b1de4fc065db62e1a74825eac4edd147453c1a4c35c0bfe481a9",
+      "skillcorner/2007721": "6bfcaa4db0b2fca9e18273ffd319dff23db52927e169ad537cc7ee869e5c37d8",
+      "skillcorner/2010085": "61f5b54f643e7ca61fb5e3b5378cde56c9af9b24633350576249e721f4604cd0",
+      "skillcorner/2011166": "a4de80e7cc86ae96735c63c7f5848776ddb957e59c7b1fb102e80c1ada452ed6",
+      "skillcorner/2013725": "6087ea102ac6db5d70d6614f500bae12752ccca3a88e58f32f542e319d109e24",
+      "skillcorner/2015213": "76c25a01d7f830d4a4dcbd07280e15edef862ad0af94ca0385f0f1f53dd206ac",
+      "skillcorner/2016236": "ee598ffecfd8b9c32cba1c9b8f45d3da784db216788aef3a6786f80e1b15a34b",
+      "skillcorner/2017461": "e909b225e6172c42029534135ebcd180e9b011862d757cac9388e6055094be4a"
+    },
+    "training_diagnostic": {
+      "original/idsse_J03WMX": {
+        "sampled_rows": 2048,
+        "log_loss": 0.24748182221645929,
+        "accuracy": 0.90380859375
+      },
+      "original/idsse_J03WN1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.28495362123006307,
+        "accuracy": 0.875
+      },
+      "original/idsse_J03WOH": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20357184425246413,
+        "accuracy": 0.9091796875
+      },
+      "original/idsse_J03WPY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.21186942843784323,
+        "accuracy": 0.9052734375
+      },
+      "original/idsse_J03WQQ": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19960320954323402,
+        "accuracy": 0.90869140625
+      },
+      "original/idsse_J03WR9": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18773012724153026,
+        "accuracy": 0.91796875
+      },
+      "original/metrica_1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13566287860823292,
+        "accuracy": 0.94677734375
+      },
+      "original/metrica_2": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11811952876781129,
+        "accuracy": 0.95458984375
+      },
+      "skillcorner/1874553": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15654484393163778,
+        "accuracy": 0.93408203125
+      },
+      "skillcorner/1886347": {
+        "sampled_rows": 2048,
+        "log_loss": 0.14068780437933243,
+        "accuracy": 0.943359375
+      },
+      "skillcorner/1899585": {
+        "sampled_rows": 2048,
+        "log_loss": 0.17659064227712104,
+        "accuracy": 0.9287109375
+      },
+      "skillcorner/1925299": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16820523012760003,
+        "accuracy": 0.9306640625
+      },
+      "skillcorner/1927964": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11809798293754614,
+        "accuracy": 0.95361328125
+      },
+      "skillcorner/1953632": {
+        "sampled_rows": 2048,
+        "log_loss": 0.12981581262768443,
+        "accuracy": 0.9462890625
+      },
+      "skillcorner/1959846": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16467085473727294,
+        "accuracy": 0.93017578125
+      },
+      "skillcorner/1986691": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1823474344335429,
+        "accuracy": 0.92138671875
+      },
+      "skillcorner/1996435": {
+        "sampled_rows": 2048,
+        "log_loss": 0.14906667068754806,
+        "accuracy": 0.9443359375
+      },
+      "skillcorner/1996436": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19376030093805324,
+        "accuracy": 0.91357421875
+      },
+      "skillcorner/2006229": {
+        "sampled_rows": 2048,
+        "log_loss": 0.17982228673795117,
+        "accuracy": 0.92724609375
+      },
+      "skillcorner/2006363": {
+        "sampled_rows": 2048,
+        "log_loss": 0.14241979821851866,
+        "accuracy": 0.95263671875
+      },
+      "skillcorner/2007448": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16106075035425133,
+        "accuracy": 0.93505859375
+      },
+      "skillcorner/2007721": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15314010510236442,
+        "accuracy": 0.93798828125
+      },
+      "skillcorner/2010085": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1927311493155637,
+        "accuracy": 0.91259765625
+      },
+      "skillcorner/2011166": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19337076609032744,
+        "accuracy": 0.91748046875
+      },
+      "skillcorner/2013725": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2551840299880267,
+        "accuracy": 0.890625
+      },
+      "skillcorner/2015213": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20442142261843238,
+        "accuracy": 0.912109375
+      },
+      "skillcorner/2016236": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20201151333975031,
+        "accuracy": 0.91259765625
+      },
+      "skillcorner/2017461": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20840727888776306,
+        "accuracy": 0.9091796875
+      }
+    },
+    "sampled_training_rows": 1117444,
+    "heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.26265749264195304,
+      "accuracy": 0.8759765625
+    },
+    "v3_heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.25944938524301764,
+      "accuracy": 0.8779296875
+    },
+    "model_sha256": "86be25332731be041a4fcd1972dc5ecdbbe2d6bc7c51ae837883ea15cb44fa6e",
+    "fitted_utc": "2026-11-13T09:48:48.342326+00:00"
+  },
+  "exclude__original__idsse_J03WN1": {
+    "excluded": "original/idsse_J03WN1",
+    "train": [
+      "original/idsse_J03WMX",
+      "original/idsse_J03WOH",
+      "original/idsse_J03WOY",
+      "original/idsse_J03WPY",
+      "original/idsse_J03WQQ",
+      "original/idsse_J03WR9",
+      "original/metrica_1",
+      "original/metrica_2",
+      "skillcorner/1874553",
+      "skillcorner/1886347",
+      "skillcorner/1899585",
+      "skillcorner/1925299",
+      "skillcorner/1927964",
+      "skillcorner/1953632",
+      "skillcorner/1959846",
+      "skillcorner/1986691",
+      "skillcorner/1996435",
+      "skillcorner/1996436",
+      "skillcorner/2006229",
+      "skillcorner/2006363",
+      "skillcorner/2007448",
+      "skillcorner/2007721",
+      "skillcorner/2010085",
+      "skillcorner/2011166",
+      "skillcorner/2013725",
+      "skillcorner/2015213",
+      "skillcorner/2016236",
+      "skillcorner/2017461"
+    ],
+    "plan_sha256": "fdaee606952dd5002b4641193985f6569b6117d9530e3859165fa8d8892b2c38",
+    "rows_sha256": {
+      "original/idsse_J03WMX": "2466b2defc302a6de141305c7dba63da7e817e99696c91ee0dada6dc3b2554bd",
+      "original/idsse_J03WOH": "fe800fbed8132672a3ca706020970fe505ff1c5f668357b8c22893510f8fa916",
+      "original/idsse_J03WOY": "04a872423143a19b95c3571876df8dd979e6c38d592929d67a698c2fcb9aad4c",
+      "original/idsse_J03WPY": "a40d3855ba738960fe477b16ae7bdfbc10c7d3f08ecfe81737f440d8e3718cca",
+      "original/idsse_J03WQQ": "30cbfe347051b7a3b554bfd83bf3b6faad8433e4827276aee2337f47f30b80ed",
+      "original/idsse_J03WR9": "8dda2b1f2478fe57d849270dfafda14d6434e2552e0e293c6b2b6cc7b9ffd1c9",
+      "original/metrica_1": "eb575e4df4892372a4d7e0a97763e7d5544ae305b5bdf3a3089d62d9505e1281",
+      "original/metrica_2": "56fa4373b984f1154cf2f2c5c66d6d2037af689598372cffd9841ff2255b9001",
+      "skillcorner/1874553": "23c5874a7adf98c2ba059a6598aabf07b21e082236e4fedb501ea7c3aca04002",
+      "skillcorner/1886347": "d43dcadb3790dbe8e1fa8d1d76832037765c7695fad12c73a3d8b7e7c59aef9c",
+      "skillcorner/1899585": "03a565c2073ccf06ae4c118e81dcc43d490420dc0f72129ca487c761eca9f8f0",
+      "skillcorner/1925299": "fb443cd05bcebd8cc1cb425a3db7fe0a43fb5d477970f9f965593e38c01fc0cc",
+      "skillcorner/1927964": "4fc7094f3353b568dad6c60bbdc72c5c901822d4c7bd1ae689fb70765b3b7c4f",
+      "skillcorner/1953632": "69911ae858f583d41e2d35b16b9b3271c4487c186020790c95eda2ac7e99b79b",
+      "skillcorner/1959846": "e1607aa6f288b7018756b695c91a7e87703c176c2002e4cfae17166925b921f5",
+      "skillcorner/1986691": "43efa239339ad23b85df1c9553fab77b89c174eaac46511613b87d266aad5dd8",
+      "skillcorner/1996435": "408af1e90df479bc30dfc3aa3f661d36097c67ce3be9039a6bb6942417031859",
+      "skillcorner/1996436": "f61a9fae34f44eb5d0615802130ed81fa68cd929aac3a9b2fbb4732cb9cf476a",
+      "skillcorner/2006229": "6ca647a6be20f69d411bbc81c57194d52fe7f4f51fa261b7f6cd6c5692974004",
+      "skillcorner/2006363": "90838b370e5885a9f714aac4c574eefebec297d7ed0cee5c46d6543e46f33780",
+      "skillcorner/2007448": "91aa2ddc2c05b1de4fc065db62e1a74825eac4edd147453c1a4c35c0bfe481a9",
+      "skillcorner/2007721": "6bfcaa4db0b2fca9e18273ffd319dff23db52927e169ad537cc7ee869e5c37d8",
+      "skillcorner/2010085": "61f5b54f643e7ca61fb5e3b5378cde56c9af9b24633350576249e721f4604cd0",
+      "skillcorner/2011166": "a4de80e7cc86ae96735c63c7f5848776ddb957e59c7b1fb102e80c1ada452ed6",
+      "skillcorner/2013725": "6087ea102ac6db5d70d6614f500bae12752ccca3a88e58f32f542e319d109e24",
+      "skillcorner/2015213": "76c25a01d7f830d4a4dcbd07280e15edef862ad0af94ca0385f0f1f53dd206ac",
+      "skillcorner/2016236": "ee598ffecfd8b9c32cba1c9b8f45d3da784db216788aef3a6786f80e1b15a34b",
+      "skillcorner/2017461": "e909b225e6172c42029534135ebcd180e9b011862d757cac9388e6055094be4a"
+    },
+    "training_diagnostic": {
+      "original/idsse_J03WMX": {
+        "sampled_rows": 2048,
+        "log_loss": 0.24342709260875156,
+        "accuracy": 0.90478515625
+      },
+      "original/idsse_J03WOH": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20447714173576426,
+        "accuracy": 0.9052734375
+      },
+      "original/idsse_J03WOY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.24254590267327514,
+        "accuracy": 0.8857421875
+      },
+      "original/idsse_J03WPY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20714358785219808,
+        "accuracy": 0.9091796875
+      },
+      "original/idsse_J03WQQ": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2005117817877691,
+        "accuracy": 0.90966796875
+      },
+      "original/idsse_J03WR9": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18623097630678553,
+        "accuracy": 0.9150390625
+      },
+      "original/metrica_1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13708225841624966,
+        "accuracy": 0.94775390625
+      },
+      "original/metrica_2": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11793337536536261,
+        "accuracy": 0.951171875
+      },
+      "skillcorner/1874553": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1546713821338188,
+        "accuracy": 0.935546875
+      },
+      "skillcorner/1886347": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1386453517871612,
+        "accuracy": 0.9443359375
+      },
+      "skillcorner/1899585": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1771697303806642,
+        "accuracy": 0.92822265625
+      },
+      "skillcorner/1925299": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16600289097791449,
+        "accuracy": 0.93310546875
+      },
+      "skillcorner/1927964": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11818173197349495,
+        "accuracy": 0.95458984375
+      },
+      "skillcorner/1953632": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13117181965852998,
+        "accuracy": 0.94677734375
+      },
+      "skillcorner/1959846": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16433841161675136,
+        "accuracy": 0.92724609375
+      },
+      "skillcorner/1986691": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18079947324345674,
+        "accuracy": 0.92236328125
+      },
+      "skillcorner/1996435": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15208621018820234,
+        "accuracy": 0.943359375
+      },
+      "skillcorner/1996436": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19160727493797136,
+        "accuracy": 0.92041015625
+      },
+      "skillcorner/2006229": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1768274607061394,
+        "accuracy": 0.93359375
+      },
+      "skillcorner/2006363": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1417437965744205,
+        "accuracy": 0.9501953125
+      },
+      "skillcorner/2007448": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15931881651081767,
+        "accuracy": 0.93701171875
+      },
+      "skillcorner/2007721": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15446140019551924,
+        "accuracy": 0.93994140625
+      },
+      "skillcorner/2010085": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1881218924464755,
+        "accuracy": 0.91748046875
+      },
+      "skillcorner/2011166": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19320858846423405,
+        "accuracy": 0.9208984375
+      },
+      "skillcorner/2013725": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2573834087670085,
+        "accuracy": 0.892578125
+      },
+      "skillcorner/2015213": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2020376945673512,
+        "accuracy": 0.9072265625
+      },
+      "skillcorner/2016236": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20182899499940976,
+        "accuracy": 0.9140625
+      },
+      "skillcorner/2017461": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20694144340939236,
+        "accuracy": 0.91259765625
+      }
+    },
+    "sampled_training_rows": 1121428,
+    "heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.30617680252132,
+      "accuracy": 0.86181640625
+    },
+    "v3_heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.30750896850483045,
+      "accuracy": 0.8583984375
+    },
+    "model_sha256": "f2cd533b8d1c205bfc95b483b643955d171aa2ffd77db9d6a3ae48ede75e9dcd",
+    "fitted_utc": "2026-11-13T09:48:46.934777+00:00"
+  },
+  "exclude__original__idsse_J03WR9": {
+    "excluded": "original/idsse_J03WR9",
+    "train": [
+      "original/idsse_J03WMX",
+      "original/idsse_J03WN1",
+      "original/idsse_J03WOH",
+      "original/idsse_J03WOY",
+      "original/idsse_J03WPY",
+      "original/idsse_J03WQQ",
+      "original/metrica_1",
+      "original/metrica_2",
+      "skillcorner/1874553",
+      "skillcorner/1886347",
+      "skillcorner/1899585",
+      "skillcorner/1925299",
+      "skillcorner/1927964",
+      "skillcorner/1953632",
+      "skillcorner/1959846",
+      "skillcorner/1986691",
+      "skillcorner/1996435",
+      "skillcorner/1996436",
+      "skillcorner/2006229",
+      "skillcorner/2006363",
+      "skillcorner/2007448",
+      "skillcorner/2007721",
+      "skillcorner/2010085",
+      "skillcorner/2011166",
+      "skillcorner/2013725",
+      "skillcorner/2015213",
+      "skillcorner/2016236",
+      "skillcorner/2017461"
+    ],
+    "plan_sha256": "fdaee606952dd5002b4641193985f6569b6117d9530e3859165fa8d8892b2c38",
+    "rows_sha256": {
+      "original/idsse_J03WMX": "2466b2defc302a6de141305c7dba63da7e817e99696c91ee0dada6dc3b2554bd",
+      "original/idsse_J03WN1": "09c6ab011a50bc83f134df346d3990a7003e381bd608df04351bb2f51253cd10",
+      "original/idsse_J03WOH": "fe800fbed8132672a3ca706020970fe505ff1c5f668357b8c22893510f8fa916",
+      "original/idsse_J03WOY": "04a872423143a19b95c3571876df8dd979e6c38d592929d67a698c2fcb9aad4c",
+      "original/idsse_J03WPY": "a40d3855ba738960fe477b16ae7bdfbc10c7d3f08ecfe81737f440d8e3718cca",
+      "original/idsse_J03WQQ": "30cbfe347051b7a3b554bfd83bf3b6faad8433e4827276aee2337f47f30b80ed",
+      "original/metrica_1": "eb575e4df4892372a4d7e0a97763e7d5544ae305b5bdf3a3089d62d9505e1281",
+      "original/metrica_2": "56fa4373b984f1154cf2f2c5c66d6d2037af689598372cffd9841ff2255b9001",
+      "skillcorner/1874553": "23c5874a7adf98c2ba059a6598aabf07b21e082236e4fedb501ea7c3aca04002",
+      "skillcorner/1886347": "d43dcadb3790dbe8e1fa8d1d76832037765c7695fad12c73a3d8b7e7c59aef9c",
+      "skillcorner/1899585": "03a565c2073ccf06ae4c118e81dcc43d490420dc0f72129ca487c761eca9f8f0",
+      "skillcorner/1925299": "fb443cd05bcebd8cc1cb425a3db7fe0a43fb5d477970f9f965593e38c01fc0cc",
+      "skillcorner/1927964": "4fc7094f3353b568dad6c60bbdc72c5c901822d4c7bd1ae689fb70765b3b7c4f",
+      "skillcorner/1953632": "69911ae858f583d41e2d35b16b9b3271c4487c186020790c95eda2ac7e99b79b",
+      "skillcorner/1959846": "e1607aa6f288b7018756b695c91a7e87703c176c2002e4cfae17166925b921f5",
+      "skillcorner/1986691": "43efa239339ad23b85df1c9553fab77b89c174eaac46511613b87d266aad5dd8",
+      "skillcorner/1996435": "408af1e90df479bc30dfc3aa3f661d36097c67ce3be9039a6bb6942417031859",
+      "skillcorner/1996436": "f61a9fae34f44eb5d0615802130ed81fa68cd929aac3a9b2fbb4732cb9cf476a",
+      "skillcorner/2006229": "6ca647a6be20f69d411bbc81c57194d52fe7f4f51fa261b7f6cd6c5692974004",
+      "skillcorner/2006363": "90838b370e5885a9f714aac4c574eefebec297d7ed0cee5c46d6543e46f33780",
+      "skillcorner/2007448": "91aa2ddc2c05b1de4fc065db62e1a74825eac4edd147453c1a4c35c0bfe481a9",
+      "skillcorner/2007721": "6bfcaa4db0b2fca9e18273ffd319dff23db52927e169ad537cc7ee869e5c37d8",
+      "skillcorner/2010085": "61f5b54f643e7ca61fb5e3b5378cde56c9af9b24633350576249e721f4604cd0",
+      "skillcorner/2011166": "a4de80e7cc86ae96735c63c7f5848776ddb957e59c7b1fb102e80c1ada452ed6",
+      "skillcorner/2013725": "6087ea102ac6db5d70d6614f500bae12752ccca3a88e58f32f542e319d109e24",
+      "skillcorner/2015213": "76c25a01d7f830d4a4dcbd07280e15edef862ad0af94ca0385f0f1f53dd206ac",
+      "skillcorner/2016236": "ee598ffecfd8b9c32cba1c9b8f45d3da784db216788aef3a6786f80e1b15a34b",
+      "skillcorner/2017461": "e909b225e6172c42029534135ebcd180e9b011862d757cac9388e6055094be4a"
+    },
+    "training_diagnostic": {
+      "original/idsse_J03WMX": {
+        "sampled_rows": 2048,
+        "log_loss": 0.24512497320120857,
+        "accuracy": 0.9033203125
+      },
+      "original/idsse_J03WN1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2811625069958097,
+        "accuracy": 0.8720703125
+      },
+      "original/idsse_J03WOH": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20444891861216397,
+        "accuracy": 0.9111328125
+      },
+      "original/idsse_J03WOY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2399655030990692,
+        "accuracy": 0.89013671875
+      },
+      "original/idsse_J03WPY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20782876044902948,
+        "accuracy": 0.91064453125
+      },
+      "original/idsse_J03WQQ": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20288295481111793,
+        "accuracy": 0.90771484375
+      },
+      "original/metrica_1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13916146002618063,
+        "accuracy": 0.947265625
+      },
+      "original/metrica_2": {
+        "sampled_rows": 2048,
+        "log_loss": 0.12142184888567356,
+        "accuracy": 0.9541015625
+      },
+      "skillcorner/1874553": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15496548887646833,
+        "accuracy": 0.931640625
+      },
+      "skillcorner/1886347": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1377590832656739,
+        "accuracy": 0.9453125
+      },
+      "skillcorner/1899585": {
+        "sampled_rows": 2048,
+        "log_loss": 0.17547500758009282,
+        "accuracy": 0.927734375
+      },
+      "skillcorner/1925299": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1678269608637384,
+        "accuracy": 0.9296875
+      },
+      "skillcorner/1927964": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11674952577374403,
+        "accuracy": 0.9521484375
+      },
+      "skillcorner/1953632": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13050568236728388,
+        "accuracy": 0.94873046875
+      },
+      "skillcorner/1959846": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1654142026127693,
+        "accuracy": 0.9287109375
+      },
+      "skillcorner/1986691": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1819344600772731,
+        "accuracy": 0.92236328125
+      },
+      "skillcorner/1996435": {
+        "sampled_rows": 2048,
+        "log_loss": 0.14938765253634148,
+        "accuracy": 0.94482421875
+      },
+      "skillcorner/1996436": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19122315702777118,
+        "accuracy": 0.91796875
+      },
+      "skillcorner/2006229": {
+        "sampled_rows": 2048,
+        "log_loss": 0.17940976978772422,
+        "accuracy": 0.92822265625
+      },
+      "skillcorner/2006363": {
+        "sampled_rows": 2048,
+        "log_loss": 0.14167564391678172,
+        "accuracy": 0.9501953125
+      },
+      "skillcorner/2007448": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15980811720893745,
+        "accuracy": 0.93505859375
+      },
+      "skillcorner/2007721": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1534557638602629,
+        "accuracy": 0.93701171875
+      },
+      "skillcorner/2010085": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19176251472182737,
+        "accuracy": 0.91259765625
+      },
+      "skillcorner/2011166": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19011491790856913,
+        "accuracy": 0.921875
+      },
+      "skillcorner/2013725": {
+        "sampled_rows": 2048,
+        "log_loss": 0.25875330763014,
+        "accuracy": 0.88720703125
+      },
+      "skillcorner/2015213": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20359218710921048,
+        "accuracy": 0.91259765625
+      },
+      "skillcorner/2016236": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2006887627453698,
+        "accuracy": 0.9130859375
+      },
+      "skillcorner/2017461": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2076201592301593,
+        "accuracy": 0.9130859375
+      }
+    },
+    "sampled_training_rows": 1112962,
+    "heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.20332280131215796,
+      "accuracy": 0.91015625
+    },
+    "v3_heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.20196503436768581,
+      "accuracy": 0.90673828125
+    },
+    "model_sha256": "d3bebcaddaa0a1d39024a0c4e70d7794556f0ad170224d35d988a9f9f1df60c7",
+    "fitted_utc": "2026-11-13T09:52:03.393672+00:00"
+  },
+  "exclude__skillcorner__1925299": {
+    "excluded": "skillcorner/1925299",
+    "train": [
+      "original/idsse_J03WMX",
+      "original/idsse_J03WN1",
+      "original/idsse_J03WOH",
+      "original/idsse_J03WOY",
+      "original/idsse_J03WPY",
+      "original/idsse_J03WQQ",
+      "original/idsse_J03WR9",
+      "original/metrica_1",
+      "original/metrica_2",
+      "skillcorner/1874553",
+      "skillcorner/1886347",
+      "skillcorner/1899585",
+      "skillcorner/1927964",
+      "skillcorner/1953632",
+      "skillcorner/1959846",
+      "skillcorner/1986691",
+      "skillcorner/1996435",
+      "skillcorner/1996436",
+      "skillcorner/2006229",
+      "skillcorner/2006363",
+      "skillcorner/2007448",
+      "skillcorner/2007721",
+      "skillcorner/2010085",
+      "skillcorner/2011166",
+      "skillcorner/2013725",
+      "skillcorner/2015213",
+      "skillcorner/2016236",
+      "skillcorner/2017461"
+    ],
+    "plan_sha256": "fdaee606952dd5002b4641193985f6569b6117d9530e3859165fa8d8892b2c38",
+    "rows_sha256": {
+      "original/idsse_J03WMX": "2466b2defc302a6de141305c7dba63da7e817e99696c91ee0dada6dc3b2554bd",
+      "original/idsse_J03WN1": "09c6ab011a50bc83f134df346d3990a7003e381bd608df04351bb2f51253cd10",
+      "original/idsse_J03WOH": "fe800fbed8132672a3ca706020970fe505ff1c5f668357b8c22893510f8fa916",
+      "original/idsse_J03WOY": "04a872423143a19b95c3571876df8dd979e6c38d592929d67a698c2fcb9aad4c",
+      "original/idsse_J03WPY": "a40d3855ba738960fe477b16ae7bdfbc10c7d3f08ecfe81737f440d8e3718cca",
+      "original/idsse_J03WQQ": "30cbfe347051b7a3b554bfd83bf3b6faad8433e4827276aee2337f47f30b80ed",
+      "original/idsse_J03WR9": "8dda2b1f2478fe57d849270dfafda14d6434e2552e0e293c6b2b6cc7b9ffd1c9",
+      "original/metrica_1": "eb575e4df4892372a4d7e0a97763e7d5544ae305b5bdf3a3089d62d9505e1281",
+      "original/metrica_2": "56fa4373b984f1154cf2f2c5c66d6d2037af689598372cffd9841ff2255b9001",
+      "skillcorner/1874553": "23c5874a7adf98c2ba059a6598aabf07b21e082236e4fedb501ea7c3aca04002",
+      "skillcorner/1886347": "d43dcadb3790dbe8e1fa8d1d76832037765c7695fad12c73a3d8b7e7c59aef9c",
+      "skillcorner/1899585": "03a565c2073ccf06ae4c118e81dcc43d490420dc0f72129ca487c761eca9f8f0",
+      "skillcorner/1927964": "4fc7094f3353b568dad6c60bbdc72c5c901822d4c7bd1ae689fb70765b3b7c4f",
+      "skillcorner/1953632": "69911ae858f583d41e2d35b16b9b3271c4487c186020790c95eda2ac7e99b79b",
+      "skillcorner/1959846": "e1607aa6f288b7018756b695c91a7e87703c176c2002e4cfae17166925b921f5",
+      "skillcorner/1986691": "43efa239339ad23b85df1c9553fab77b89c174eaac46511613b87d266aad5dd8",
+      "skillcorner/1996435": "408af1e90df479bc30dfc3aa3f661d36097c67ce3be9039a6bb6942417031859",
+      "skillcorner/1996436": "f61a9fae34f44eb5d0615802130ed81fa68cd929aac3a9b2fbb4732cb9cf476a",
+      "skillcorner/2006229": "6ca647a6be20f69d411bbc81c57194d52fe7f4f51fa261b7f6cd6c5692974004",
+      "skillcorner/2006363": "90838b370e5885a9f714aac4c574eefebec297d7ed0cee5c46d6543e46f33780",
+      "skillcorner/2007448": "91aa2ddc2c05b1de4fc065db62e1a74825eac4edd147453c1a4c35c0bfe481a9",
+      "skillcorner/2007721": "6bfcaa4db0b2fca9e18273ffd319dff23db52927e169ad537cc7ee869e5c37d8",
+      "skillcorner/2010085": "61f5b54f643e7ca61fb5e3b5378cde56c9af9b24633350576249e721f4604cd0",
+      "skillcorner/2011166": "a4de80e7cc86ae96735c63c7f5848776ddb957e59c7b1fb102e80c1ada452ed6",
+      "skillcorner/2013725": "6087ea102ac6db5d70d6614f500bae12752ccca3a88e58f32f542e319d109e24",
+      "skillcorner/2015213": "76c25a01d7f830d4a4dcbd07280e15edef862ad0af94ca0385f0f1f53dd206ac",
+      "skillcorner/2016236": "ee598ffecfd8b9c32cba1c9b8f45d3da784db216788aef3a6786f80e1b15a34b",
+      "skillcorner/2017461": "e909b225e6172c42029534135ebcd180e9b011862d757cac9388e6055094be4a"
+    },
+    "training_diagnostic": {
+      "original/idsse_J03WMX": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2428948338943729,
+        "accuracy": 0.904296875
+      },
+      "original/idsse_J03WN1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.28111109990287875,
+        "accuracy": 0.8759765625
+      },
+      "original/idsse_J03WOH": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20259822548871445,
+        "accuracy": 0.90771484375
+      },
+      "original/idsse_J03WOY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.24174543145412244,
+        "accuracy": 0.8896484375
+      },
+      "original/idsse_J03WPY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2084326018141162,
+        "accuracy": 0.908203125
+      },
+      "original/idsse_J03WQQ": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19799617149112136,
+        "accuracy": 0.91455078125
+      },
+      "original/idsse_J03WR9": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18628728372140424,
+        "accuracy": 0.91552734375
+      },
+      "original/metrica_1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13689373377442102,
+        "accuracy": 0.9482421875
+      },
+      "original/metrica_2": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1182881259404084,
+        "accuracy": 0.95361328125
+      },
+      "skillcorner/1874553": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15561972727812595,
+        "accuracy": 0.931640625
+      },
+      "skillcorner/1886347": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1380775060219269,
+        "accuracy": 0.9453125
+      },
+      "skillcorner/1899585": {
+        "sampled_rows": 2048,
+        "log_loss": 0.17674172579499484,
+        "accuracy": 0.9296875
+      },
+      "skillcorner/1927964": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11897957792213057,
+        "accuracy": 0.95263671875
+      },
+      "skillcorner/1953632": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1313206256052292,
+        "accuracy": 0.9462890625
+      },
+      "skillcorner/1959846": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16729456991540892,
+        "accuracy": 0.92822265625
+      },
+      "skillcorner/1986691": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18254662907233807,
+        "accuracy": 0.9189453125
+      },
+      "skillcorner/1996435": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15000457696966624,
+        "accuracy": 0.94677734375
+      },
+      "skillcorner/1996436": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1916118892368714,
+        "accuracy": 0.91845703125
+      },
+      "skillcorner/2006229": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18028224565492318,
+        "accuracy": 0.9267578125
+      },
+      "skillcorner/2006363": {
+        "sampled_rows": 2048,
+        "log_loss": 0.14235469862091168,
+        "accuracy": 0.95458984375
+      },
+      "skillcorner/2007448": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16291263594460226,
+        "accuracy": 0.9345703125
+      },
+      "skillcorner/2007721": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15503018375560862,
+        "accuracy": 0.93896484375
+      },
+      "skillcorner/2010085": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18936505274828092,
+        "accuracy": 0.91650390625
+      },
+      "skillcorner/2011166": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1948441566234944,
+        "accuracy": 0.91748046875
+      },
+      "skillcorner/2013725": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2543476657828627,
+        "accuracy": 0.88623046875
+      },
+      "skillcorner/2015213": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20537225113956292,
+        "accuracy": 0.9111328125
+      },
+      "skillcorner/2016236": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20354689641163798,
+        "accuracy": 0.91455078125
+      },
+      "skillcorner/2017461": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20893798276437645,
+        "accuracy": 0.90869140625
+      }
+    },
+    "sampled_training_rows": 1111024,
+    "heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.18830920236731352,
+      "accuracy": 0.91943359375
+    },
+    "v3_heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.1954055019579599,
+      "accuracy": 0.91943359375
+    },
+    "model_sha256": "ca4fee9c5848d86d947fd8beeba335173ec5fad8040c9ee4696b4b0b37f0dca9",
+    "fitted_utc": "2026-11-13T09:54:16.634784+00:00"
+  },
+  "all_twenty_nine": {
+    "excluded": null,
+    "train": [
+      "original/idsse_J03WMX",
+      "original/idsse_J03WN1",
+      "original/idsse_J03WOH",
+      "original/idsse_J03WOY",
+      "original/idsse_J03WPY",
+      "original/idsse_J03WQQ",
+      "original/idsse_J03WR9",
+      "original/metrica_1",
+      "original/metrica_2",
+      "skillcorner/1874553",
+      "skillcorner/1886347",
+      "skillcorner/1899585",
+      "skillcorner/1925299",
+      "skillcorner/1927964",
+      "skillcorner/1953632",
+      "skillcorner/1959846",
+      "skillcorner/1986691",
+      "skillcorner/1996435",
+      "skillcorner/1996436",
+      "skillcorner/2006229",
+      "skillcorner/2006363",
+      "skillcorner/2007448",
+      "skillcorner/2007721",
+      "skillcorner/2010085",
+      "skillcorner/2011166",
+      "skillcorner/2013725",
+      "skillcorner/2015213",
+      "skillcorner/2016236",
+      "skillcorner/2017461"
+    ],
+    "plan_sha256": "fdaee606952dd5002b4641193985f6569b6117d9530e3859165fa8d8892b2c38",
+    "rows_sha256": {
+      "original/idsse_J03WMX": "2466b2defc302a6de141305c7dba63da7e817e99696c91ee0dada6dc3b2554bd",
+      "original/idsse_J03WN1": "09c6ab011a50bc83f134df346d3990a7003e381bd608df04351bb2f51253cd10",
+      "original/idsse_J03WOH": "fe800fbed8132672a3ca706020970fe505ff1c5f668357b8c22893510f8fa916",
+      "original/idsse_J03WOY": "04a872423143a19b95c3571876df8dd979e6c38d592929d67a698c2fcb9aad4c",
+      "original/idsse_J03WPY": "a40d3855ba738960fe477b16ae7bdfbc10c7d3f08ecfe81737f440d8e3718cca",
+      "original/idsse_J03WQQ": "30cbfe347051b7a3b554bfd83bf3b6faad8433e4827276aee2337f47f30b80ed",
+      "original/idsse_J03WR9": "8dda2b1f2478fe57d849270dfafda14d6434e2552e0e293c6b2b6cc7b9ffd1c9",
+      "original/metrica_1": "eb575e4df4892372a4d7e0a97763e7d5544ae305b5bdf3a3089d62d9505e1281",
+      "original/metrica_2": "56fa4373b984f1154cf2f2c5c66d6d2037af689598372cffd9841ff2255b9001",
+      "skillcorner/1874553": "23c5874a7adf98c2ba059a6598aabf07b21e082236e4fedb501ea7c3aca04002",
+      "skillcorner/1886347": "d43dcadb3790dbe8e1fa8d1d76832037765c7695fad12c73a3d8b7e7c59aef9c",
+      "skillcorner/1899585": "03a565c2073ccf06ae4c118e81dcc43d490420dc0f72129ca487c761eca9f8f0",
+      "skillcorner/1925299": "fb443cd05bcebd8cc1cb425a3db7fe0a43fb5d477970f9f965593e38c01fc0cc",
+      "skillcorner/1927964": "4fc7094f3353b568dad6c60bbdc72c5c901822d4c7bd1ae689fb70765b3b7c4f",
+      "skillcorner/1953632": "69911ae858f583d41e2d35b16b9b3271c4487c186020790c95eda2ac7e99b79b",
+      "skillcorner/1959846": "e1607aa6f288b7018756b695c91a7e87703c176c2002e4cfae17166925b921f5",
+      "skillcorner/1986691": "43efa239339ad23b85df1c9553fab77b89c174eaac46511613b87d266aad5dd8",
+      "skillcorner/1996435": "408af1e90df479bc30dfc3aa3f661d36097c67ce3be9039a6bb6942417031859",
+      "skillcorner/1996436": "f61a9fae34f44eb5d0615802130ed81fa68cd929aac3a9b2fbb4732cb9cf476a",
+      "skillcorner/2006229": "6ca647a6be20f69d411bbc81c57194d52fe7f4f51fa261b7f6cd6c5692974004",
+      "skillcorner/2006363": "90838b370e5885a9f714aac4c574eefebec297d7ed0cee5c46d6543e46f33780",
+      "skillcorner/2007448": "91aa2ddc2c05b1de4fc065db62e1a74825eac4edd147453c1a4c35c0bfe481a9",
+      "skillcorner/2007721": "6bfcaa4db0b2fca9e18273ffd319dff23db52927e169ad537cc7ee869e5c37d8",
+      "skillcorner/2010085": "61f5b54f643e7ca61fb5e3b5378cde56c9af9b24633350576249e721f4604cd0",
+      "skillcorner/2011166": "a4de80e7cc86ae96735c63c7f5848776ddb957e59c7b1fb102e80c1ada452ed6",
+      "skillcorner/2013725": "6087ea102ac6db5d70d6614f500bae12752ccca3a88e58f32f542e319d109e24",
+      "skillcorner/2015213": "76c25a01d7f830d4a4dcbd07280e15edef862ad0af94ca0385f0f1f53dd206ac",
+      "skillcorner/2016236": "ee598ffecfd8b9c32cba1c9b8f45d3da784db216788aef3a6786f80e1b15a34b",
+      "skillcorner/2017461": "e909b225e6172c42029534135ebcd180e9b011862d757cac9388e6055094be4a"
+    },
+    "training_diagnostic": {
+      "original/idsse_J03WMX": {
+        "sampled_rows": 2048,
+        "log_loss": 0.24591167209710235,
+        "accuracy": 0.8984375
+      },
+      "original/idsse_J03WN1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.283004636790098,
+        "accuracy": 0.87255859375
+      },
+      "original/idsse_J03WOH": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20472955928931996,
+        "accuracy": 0.91015625
+      },
+      "original/idsse_J03WOY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.24301886311846366,
+        "accuracy": 0.88720703125
+      },
+      "original/idsse_J03WPY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20892818270949287,
+        "accuracy": 0.90966796875
+      },
+      "original/idsse_J03WQQ": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1999727973871035,
+        "accuracy": 0.91455078125
+      },
+      "original/idsse_J03WR9": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18689427804629286,
+        "accuracy": 0.91552734375
+      },
+      "original/metrica_1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1387373624986293,
+        "accuracy": 0.9501953125
+      },
+      "original/metrica_2": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11863618315384344,
+        "accuracy": 0.9541015625
+      },
+      "skillcorner/1874553": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1577639093236921,
+        "accuracy": 0.92919921875
+      },
+      "skillcorner/1886347": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13775223976156023,
+        "accuracy": 0.94384765625
+      },
+      "skillcorner/1899585": {
+        "sampled_rows": 2048,
+        "log_loss": 0.17687528887973186,
+        "accuracy": 0.9248046875
+      },
+      "skillcorner/1925299": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1669884560760111,
+        "accuracy": 0.93115234375
+      },
+      "skillcorner/1927964": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11875299271339936,
+        "accuracy": 0.94921875
+      },
+      "skillcorner/1953632": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13260769660412697,
+        "accuracy": 0.947265625
+      },
+      "skillcorner/1959846": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1661881131975217,
+        "accuracy": 0.92724609375
+      },
+      "skillcorner/1986691": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18083910017862403,
+        "accuracy": 0.921875
+      },
+      "skillcorner/1996435": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15110266251640067,
+        "accuracy": 0.9453125
+      },
+      "skillcorner/1996436": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19213116592883328,
+        "accuracy": 0.91650390625
+      },
+      "skillcorner/2006229": {
+        "sampled_rows": 2048,
+        "log_loss": 0.17933064912925434,
+        "accuracy": 0.92822265625
+      },
+      "skillcorner/2006363": {
+        "sampled_rows": 2048,
+        "log_loss": 0.14392205403916847,
+        "accuracy": 0.94970703125
+      },
+      "skillcorner/2007448": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1612780994485913,
+        "accuracy": 0.93701171875
+      },
+      "skillcorner/2007721": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1554928746292555,
+        "accuracy": 0.93603515625
+      },
+      "skillcorner/2010085": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19213364514289732,
+        "accuracy": 0.91552734375
+      },
+      "skillcorner/2011166": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19364962653271575,
+        "accuracy": 0.9208984375
+      },
+      "skillcorner/2013725": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2553890409087512,
+        "accuracy": 0.89208984375
+      },
+      "skillcorner/2015213": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20557208200821228,
+        "accuracy": 0.90625
+      },
+      "skillcorner/2016236": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20176656644796687,
+        "accuracy": 0.9130859375
+      },
+      "skillcorner/2017461": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20722916940129044,
+        "accuracy": 0.90966796875
+      }
+    },
+    "sampled_training_rows": 1155592,
+    "model_sha256": "4451dd8ec515824d734007d64f542545d26966032f6381467727f6d980abff08",
+    "fitted_utc": "2026-11-13T09:43:22.421367+00:00"
+  },
+  "exclude__original__idsse_J03WQQ": {
+    "excluded": "original/idsse_J03WQQ",
+    "train": [
+      "original/idsse_J03WMX",
+      "original/idsse_J03WN1",
+      "original/idsse_J03WOH",
+      "original/idsse_J03WOY",
+      "original/idsse_J03WPY",
+      "original/idsse_J03WR9",
+      "original/metrica_1",
+      "original/metrica_2",
+      "skillcorner/1874553",
+      "skillcorner/1886347",
+      "skillcorner/1899585",
+      "skillcorner/1925299",
+      "skillcorner/1927964",
+      "skillcorner/1953632",
+      "skillcorner/1959846",
+      "skillcorner/1986691",
+      "skillcorner/1996435",
+      "skillcorner/1996436",
+      "skillcorner/2006229",
+      "skillcorner/2006363",
+      "skillcorner/2007448",
+      "skillcorner/2007721",
+      "skillcorner/2010085",
+      "skillcorner/2011166",
+      "skillcorner/2013725",
+      "skillcorner/2015213",
+      "skillcorner/2016236",
+      "skillcorner/2017461"
+    ],
+    "plan_sha256": "fdaee606952dd5002b4641193985f6569b6117d9530e3859165fa8d8892b2c38",
+    "rows_sha256": {
+      "original/idsse_J03WMX": "2466b2defc302a6de141305c7dba63da7e817e99696c91ee0dada6dc3b2554bd",
+      "original/idsse_J03WN1": "09c6ab011a50bc83f134df346d3990a7003e381bd608df04351bb2f51253cd10",
+      "original/idsse_J03WOH": "fe800fbed8132672a3ca706020970fe505ff1c5f668357b8c22893510f8fa916",
+      "original/idsse_J03WOY": "04a872423143a19b95c3571876df8dd979e6c38d592929d67a698c2fcb9aad4c",
+      "original/idsse_J03WPY": "a40d3855ba738960fe477b16ae7bdfbc10c7d3f08ecfe81737f440d8e3718cca",
+      "original/idsse_J03WR9": "8dda2b1f2478fe57d849270dfafda14d6434e2552e0e293c6b2b6cc7b9ffd1c9",
+      "original/metrica_1": "eb575e4df4892372a4d7e0a97763e7d5544ae305b5bdf3a3089d62d9505e1281",
+      "original/metrica_2": "56fa4373b984f1154cf2f2c5c66d6d2037af689598372cffd9841ff2255b9001",
+      "skillcorner/1874553": "23c5874a7adf98c2ba059a6598aabf07b21e082236e4fedb501ea7c3aca04002",
+      "skillcorner/1886347": "d43dcadb3790dbe8e1fa8d1d76832037765c7695fad12c73a3d8b7e7c59aef9c",
+      "skillcorner/1899585": "03a565c2073ccf06ae4c118e81dcc43d490420dc0f72129ca487c761eca9f8f0",
+      "skillcorner/1925299": "fb443cd05bcebd8cc1cb425a3db7fe0a43fb5d477970f9f965593e38c01fc0cc",
+      "skillcorner/1927964": "4fc7094f3353b568dad6c60bbdc72c5c901822d4c7bd1ae689fb70765b3b7c4f",
+      "skillcorner/1953632": "69911ae858f583d41e2d35b16b9b3271c4487c186020790c95eda2ac7e99b79b",
+      "skillcorner/1959846": "e1607aa6f288b7018756b695c91a7e87703c176c2002e4cfae17166925b921f5",
+      "skillcorner/1986691": "43efa239339ad23b85df1c9553fab77b89c174eaac46511613b87d266aad5dd8",
+      "skillcorner/1996435": "408af1e90df479bc30dfc3aa3f661d36097c67ce3be9039a6bb6942417031859",
+      "skillcorner/1996436": "f61a9fae34f44eb5d0615802130ed81fa68cd929aac3a9b2fbb4732cb9cf476a",
+      "skillcorner/2006229": "6ca647a6be20f69d411bbc81c57194d52fe7f4f51fa261b7f6cd6c5692974004",
+      "skillcorner/2006363": "90838b370e5885a9f714aac4c574eefebec297d7ed0cee5c46d6543e46f33780",
+      "skillcorner/2007448": "91aa2ddc2c05b1de4fc065db62e1a74825eac4edd147453c1a4c35c0bfe481a9",
+      "skillcorner/2007721": "6bfcaa4db0b2fca9e18273ffd319dff23db52927e169ad537cc7ee869e5c37d8",
+      "skillcorner/2010085": "61f5b54f643e7ca61fb5e3b5378cde56c9af9b24633350576249e721f4604cd0",
+      "skillcorner/2011166": "a4de80e7cc86ae96735c63c7f5848776ddb957e59c7b1fb102e80c1ada452ed6",
+      "skillcorner/2013725": "6087ea102ac6db5d70d6614f500bae12752ccca3a88e58f32f542e319d109e24",
+      "skillcorner/2015213": "76c25a01d7f830d4a4dcbd07280e15edef862ad0af94ca0385f0f1f53dd206ac",
+      "skillcorner/2016236": "ee598ffecfd8b9c32cba1c9b8f45d3da784db216788aef3a6786f80e1b15a34b",
+      "skillcorner/2017461": "e909b225e6172c42029534135ebcd180e9b011862d757cac9388e6055094be4a"
+    },
+    "training_diagnostic": {
+      "original/idsse_J03WMX": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2429864363261552,
+        "accuracy": 0.90283203125
+      },
+      "original/idsse_J03WN1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.28324170457375575,
+        "accuracy": 0.87158203125
+      },
+      "original/idsse_J03WOH": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20387850903994753,
+        "accuracy": 0.91162109375
+      },
+      "original/idsse_J03WOY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2405254453759259,
+        "accuracy": 0.89013671875
+      },
+      "original/idsse_J03WPY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20792471995161643,
+        "accuracy": 0.9072265625
+      },
+      "original/idsse_J03WR9": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1860550111414583,
+        "accuracy": 0.9150390625
+      },
+      "original/metrica_1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1371472691940848,
+        "accuracy": 0.94775390625
+      },
+      "original/metrica_2": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11903311389996268,
+        "accuracy": 0.951171875
+      },
+      "skillcorner/1874553": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15544321770576838,
+        "accuracy": 0.9365234375
+      },
+      "skillcorner/1886347": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13989578622455173,
+        "accuracy": 0.94091796875
+      },
+      "skillcorner/1899585": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1762628097792481,
+        "accuracy": 0.9306640625
+      },
+      "skillcorner/1925299": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16747643041925891,
+        "accuracy": 0.93212890625
+      },
+      "skillcorner/1927964": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11881931101575893,
+        "accuracy": 0.95068359375
+      },
+      "skillcorner/1953632": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13067856167213235,
+        "accuracy": 0.94580078125
+      },
+      "skillcorner/1959846": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1656294382238182,
+        "accuracy": 0.9306640625
+      },
+      "skillcorner/1986691": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1814973983493937,
+        "accuracy": 0.92333984375
+      },
+      "skillcorner/1996435": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15009446927985823,
+        "accuracy": 0.9453125
+      },
+      "skillcorner/1996436": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19158418314645154,
+        "accuracy": 0.919921875
+      },
+      "skillcorner/2006229": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1797710797121591,
+        "accuracy": 0.92724609375
+      },
+      "skillcorner/2006363": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1409874857175316,
+        "accuracy": 0.95166015625
+      },
+      "skillcorner/2007448": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16120672466801395,
+        "accuracy": 0.93408203125
+      },
+      "skillcorner/2007721": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15458440904036075,
+        "accuracy": 0.93798828125
+      },
+      "skillcorner/2010085": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1909306162726458,
+        "accuracy": 0.91357421875
+      },
+      "skillcorner/2011166": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19276564574733243,
+        "accuracy": 0.92236328125
+      },
+      "skillcorner/2013725": {
+        "sampled_rows": 2048,
+        "log_loss": 0.25688910794120756,
+        "accuracy": 0.88623046875
+      },
+      "skillcorner/2015213": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20633913894470698,
+        "accuracy": 0.90966796875
+      },
+      "skillcorner/2016236": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20315293874071,
+        "accuracy": 0.9130859375
+      },
+      "skillcorner/2017461": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2084848108100023,
+        "accuracy": 0.90673828125
+      }
+    },
+    "sampled_training_rows": 1113376,
+    "heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.22197195019716232,
+      "accuracy": 0.9033203125
+    },
+    "v3_heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.21800405628880803,
+      "accuracy": 0.904296875
+    },
+    "model_sha256": "0ae2a37748158bdcf23e96031aacb62a22f5e23a418890b1f80448d4b2ff782d",
+    "fitted_utc": "2026-11-13T09:51:45.070076+00:00"
+  },
+  "exclude__skillcorner__1996436": {
+    "excluded": "skillcorner/1996436",
+    "train": [
+      "original/idsse_J03WMX",
+      "original/idsse_J03WN1",
+      "original/idsse_J03WOH",
+      "original/idsse_J03WOY",
+      "original/idsse_J03WPY",
+      "original/idsse_J03WQQ",
+      "original/idsse_J03WR9",
+      "original/metrica_1",
+      "original/metrica_2",
+      "skillcorner/1874553",
+      "skillcorner/1886347",
+      "skillcorner/1899585",
+      "skillcorner/1925299",
+      "skillcorner/1927964",
+      "skillcorner/1953632",
+      "skillcorner/1959846",
+      "skillcorner/1986691",
+      "skillcorner/1996435",
+      "skillcorner/2006229",
+      "skillcorner/2006363",
+      "skillcorner/2007448",
+      "skillcorner/2007721",
+      "skillcorner/2010085",
+      "skillcorner/2011166",
+      "skillcorner/2013725",
+      "skillcorner/2015213",
+      "skillcorner/2016236",
+      "skillcorner/2017461"
+    ],
+    "plan_sha256": "fdaee606952dd5002b4641193985f6569b6117d9530e3859165fa8d8892b2c38",
+    "rows_sha256": {
+      "original/idsse_J03WMX": "2466b2defc302a6de141305c7dba63da7e817e99696c91ee0dada6dc3b2554bd",
+      "original/idsse_J03WN1": "09c6ab011a50bc83f134df346d3990a7003e381bd608df04351bb2f51253cd10",
+      "original/idsse_J03WOH": "fe800fbed8132672a3ca706020970fe505ff1c5f668357b8c22893510f8fa916",
+      "original/idsse_J03WOY": "04a872423143a19b95c3571876df8dd979e6c38d592929d67a698c2fcb9aad4c",
+      "original/idsse_J03WPY": "a40d3855ba738960fe477b16ae7bdfbc10c7d3f08ecfe81737f440d8e3718cca",
+      "original/idsse_J03WQQ": "30cbfe347051b7a3b554bfd83bf3b6faad8433e4827276aee2337f47f30b80ed",
+      "original/idsse_J03WR9": "8dda2b1f2478fe57d849270dfafda14d6434e2552e0e293c6b2b6cc7b9ffd1c9",
+      "original/metrica_1": "eb575e4df4892372a4d7e0a97763e7d5544ae305b5bdf3a3089d62d9505e1281",
+      "original/metrica_2": "56fa4373b984f1154cf2f2c5c66d6d2037af689598372cffd9841ff2255b9001",
+      "skillcorner/1874553": "23c5874a7adf98c2ba059a6598aabf07b21e082236e4fedb501ea7c3aca04002",
+      "skillcorner/1886347": "d43dcadb3790dbe8e1fa8d1d76832037765c7695fad12c73a3d8b7e7c59aef9c",
+      "skillcorner/1899585": "03a565c2073ccf06ae4c118e81dcc43d490420dc0f72129ca487c761eca9f8f0",
+      "skillcorner/1925299": "fb443cd05bcebd8cc1cb425a3db7fe0a43fb5d477970f9f965593e38c01fc0cc",
+      "skillcorner/1927964": "4fc7094f3353b568dad6c60bbdc72c5c901822d4c7bd1ae689fb70765b3b7c4f",
+      "skillcorner/1953632": "69911ae858f583d41e2d35b16b9b3271c4487c186020790c95eda2ac7e99b79b",
+      "skillcorner/1959846": "e1607aa6f288b7018756b695c91a7e87703c176c2002e4cfae17166925b921f5",
+      "skillcorner/1986691": "43efa239339ad23b85df1c9553fab77b89c174eaac46511613b87d266aad5dd8",
+      "skillcorner/1996435": "408af1e90df479bc30dfc3aa3f661d36097c67ce3be9039a6bb6942417031859",
+      "skillcorner/2006229": "6ca647a6be20f69d411bbc81c57194d52fe7f4f51fa261b7f6cd6c5692974004",
+      "skillcorner/2006363": "90838b370e5885a9f714aac4c574eefebec297d7ed0cee5c46d6543e46f33780",
+      "skillcorner/2007448": "91aa2ddc2c05b1de4fc065db62e1a74825eac4edd147453c1a4c35c0bfe481a9",
+      "skillcorner/2007721": "6bfcaa4db0b2fca9e18273ffd319dff23db52927e169ad537cc7ee869e5c37d8",
+      "skillcorner/2010085": "61f5b54f643e7ca61fb5e3b5378cde56c9af9b24633350576249e721f4604cd0",
+      "skillcorner/2011166": "a4de80e7cc86ae96735c63c7f5848776ddb957e59c7b1fb102e80c1ada452ed6",
+      "skillcorner/2013725": "6087ea102ac6db5d70d6614f500bae12752ccca3a88e58f32f542e319d109e24",
+      "skillcorner/2015213": "76c25a01d7f830d4a4dcbd07280e15edef862ad0af94ca0385f0f1f53dd206ac",
+      "skillcorner/2016236": "ee598ffecfd8b9c32cba1c9b8f45d3da784db216788aef3a6786f80e1b15a34b",
+      "skillcorner/2017461": "e909b225e6172c42029534135ebcd180e9b011862d757cac9388e6055094be4a"
+    },
+    "training_diagnostic": {
+      "original/idsse_J03WMX": {
+        "sampled_rows": 2048,
+        "log_loss": 0.24346541313817915,
+        "accuracy": 0.89794921875
+      },
+      "original/idsse_J03WN1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.28093597348381455,
+        "accuracy": 0.87353515625
+      },
+      "original/idsse_J03WOH": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20235438184181265,
+        "accuracy": 0.91015625
+      },
+      "original/idsse_J03WOY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2365733799867328,
+        "accuracy": 0.8876953125
+      },
+      "original/idsse_J03WPY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20807418473510386,
+        "accuracy": 0.9091796875
+      },
+      "original/idsse_J03WQQ": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1991632037040837,
+        "accuracy": 0.91455078125
+      },
+      "original/idsse_J03WR9": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18324632556029763,
+        "accuracy": 0.92138671875
+      },
+      "original/metrica_1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13836794218859289,
+        "accuracy": 0.94580078125
+      },
+      "original/metrica_2": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11912413106629229,
+        "accuracy": 0.955078125
+      },
+      "skillcorner/1874553": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15742561331389127,
+        "accuracy": 0.9296875
+      },
+      "skillcorner/1886347": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1398233578622075,
+        "accuracy": 0.94189453125
+      },
+      "skillcorner/1899585": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1772391664992136,
+        "accuracy": 0.92919921875
+      },
+      "skillcorner/1925299": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1671989599629281,
+        "accuracy": 0.93310546875
+      },
+      "skillcorner/1927964": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11710500539006158,
+        "accuracy": 0.95166015625
+      },
+      "skillcorner/1953632": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13068904393930617,
+        "accuracy": 0.947265625
+      },
+      "skillcorner/1959846": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1654494559173555,
+        "accuracy": 0.92724609375
+      },
+      "skillcorner/1986691": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18336628022222942,
+        "accuracy": 0.9189453125
+      },
+      "skillcorner/1996435": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15023913837704295,
+        "accuracy": 0.94970703125
+      },
+      "skillcorner/2006229": {
+        "sampled_rows": 2048,
+        "log_loss": 0.17970680521760724,
+        "accuracy": 0.9267578125
+      },
+      "skillcorner/2006363": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1421001584013089,
+        "accuracy": 0.953125
+      },
+      "skillcorner/2007448": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15991160358230386,
+        "accuracy": 0.93359375
+      },
+      "skillcorner/2007721": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15462692087264887,
+        "accuracy": 0.93896484375
+      },
+      "skillcorner/2010085": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1937572402153559,
+        "accuracy": 0.91455078125
+      },
+      "skillcorner/2011166": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19503902940064216,
+        "accuracy": 0.9169921875
+      },
+      "skillcorner/2013725": {
+        "sampled_rows": 2048,
+        "log_loss": 0.25635656906256654,
+        "accuracy": 0.89013671875
+      },
+      "skillcorner/2015213": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20681549618844378,
+        "accuracy": 0.90625
+      },
+      "skillcorner/2016236": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2015877158167283,
+        "accuracy": 0.91455078125
+      },
+      "skillcorner/2017461": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20974591099916984,
+        "accuracy": 0.91015625
+      }
+    },
+    "sampled_training_rows": 1121800,
+    "heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.21398365111236325,
+      "accuracy": 0.908203125
+    },
+    "v3_heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.2235748179485216,
+      "accuracy": 0.89697265625
+    },
+    "model_sha256": "86c2edba19779ac57e3e7ec3287d4a9909afb0e3e387dfab55c0e5b043b0519c",
+    "fitted_utc": "2026-11-13T09:54:38.475571+00:00"
+  },
+  "exclude__skillcorner__2013725": {
+    "excluded": "skillcorner/2013725",
+    "train": [
+      "original/idsse_J03WMX",
+      "original/idsse_J03WN1",
+      "original/idsse_J03WOH",
+      "original/idsse_J03WOY",
+      "original/idsse_J03WPY",
+      "original/idsse_J03WQQ",
+      "original/idsse_J03WR9",
+      "original/metrica_1",
+      "original/metrica_2",
+      "skillcorner/1874553",
+      "skillcorner/1886347",
+      "skillcorner/1899585",
+      "skillcorner/1925299",
+      "skillcorner/1927964",
+      "skillcorner/1953632",
+      "skillcorner/1959846",
+      "skillcorner/1986691",
+      "skillcorner/1996435",
+      "skillcorner/1996436",
+      "skillcorner/2006229",
+      "skillcorner/2006363",
+      "skillcorner/2007448",
+      "skillcorner/2007721",
+      "skillcorner/2010085",
+      "skillcorner/2011166",
+      "skillcorner/2015213",
+      "skillcorner/2016236",
+      "skillcorner/2017461"
+    ],
+    "plan_sha256": "fdaee606952dd5002b4641193985f6569b6117d9530e3859165fa8d8892b2c38",
+    "rows_sha256": {
+      "original/idsse_J03WMX": "2466b2defc302a6de141305c7dba63da7e817e99696c91ee0dada6dc3b2554bd",
+      "original/idsse_J03WN1": "09c6ab011a50bc83f134df346d3990a7003e381bd608df04351bb2f51253cd10",
+      "original/idsse_J03WOH": "fe800fbed8132672a3ca706020970fe505ff1c5f668357b8c22893510f8fa916",
+      "original/idsse_J03WOY": "04a872423143a19b95c3571876df8dd979e6c38d592929d67a698c2fcb9aad4c",
+      "original/idsse_J03WPY": "a40d3855ba738960fe477b16ae7bdfbc10c7d3f08ecfe81737f440d8e3718cca",
+      "original/idsse_J03WQQ": "30cbfe347051b7a3b554bfd83bf3b6faad8433e4827276aee2337f47f30b80ed",
+      "original/idsse_J03WR9": "8dda2b1f2478fe57d849270dfafda14d6434e2552e0e293c6b2b6cc7b9ffd1c9",
+      "original/metrica_1": "eb575e4df4892372a4d7e0a97763e7d5544ae305b5bdf3a3089d62d9505e1281",
+      "original/metrica_2": "56fa4373b984f1154cf2f2c5c66d6d2037af689598372cffd9841ff2255b9001",
+      "skillcorner/1874553": "23c5874a7adf98c2ba059a6598aabf07b21e082236e4fedb501ea7c3aca04002",
+      "skillcorner/1886347": "d43dcadb3790dbe8e1fa8d1d76832037765c7695fad12c73a3d8b7e7c59aef9c",
+      "skillcorner/1899585": "03a565c2073ccf06ae4c118e81dcc43d490420dc0f72129ca487c761eca9f8f0",
+      "skillcorner/1925299": "fb443cd05bcebd8cc1cb425a3db7fe0a43fb5d477970f9f965593e38c01fc0cc",
+      "skillcorner/1927964": "4fc7094f3353b568dad6c60bbdc72c5c901822d4c7bd1ae689fb70765b3b7c4f",
+      "skillcorner/1953632": "69911ae858f583d41e2d35b16b9b3271c4487c186020790c95eda2ac7e99b79b",
+      "skillcorner/1959846": "e1607aa6f288b7018756b695c91a7e87703c176c2002e4cfae17166925b921f5",
+      "skillcorner/1986691": "43efa239339ad23b85df1c9553fab77b89c174eaac46511613b87d266aad5dd8",
+      "skillcorner/1996435": "408af1e90df479bc30dfc3aa3f661d36097c67ce3be9039a6bb6942417031859",
+      "skillcorner/1996436": "f61a9fae34f44eb5d0615802130ed81fa68cd929aac3a9b2fbb4732cb9cf476a",
+      "skillcorner/2006229": "6ca647a6be20f69d411bbc81c57194d52fe7f4f51fa261b7f6cd6c5692974004",
+      "skillcorner/2006363": "90838b370e5885a9f714aac4c574eefebec297d7ed0cee5c46d6543e46f33780",
+      "skillcorner/2007448": "91aa2ddc2c05b1de4fc065db62e1a74825eac4edd147453c1a4c35c0bfe481a9",
+      "skillcorner/2007721": "6bfcaa4db0b2fca9e18273ffd319dff23db52927e169ad537cc7ee869e5c37d8",
+      "skillcorner/2010085": "61f5b54f643e7ca61fb5e3b5378cde56c9af9b24633350576249e721f4604cd0",
+      "skillcorner/2011166": "a4de80e7cc86ae96735c63c7f5848776ddb957e59c7b1fb102e80c1ada452ed6",
+      "skillcorner/2015213": "76c25a01d7f830d4a4dcbd07280e15edef862ad0af94ca0385f0f1f53dd206ac",
+      "skillcorner/2016236": "ee598ffecfd8b9c32cba1c9b8f45d3da784db216788aef3a6786f80e1b15a34b",
+      "skillcorner/2017461": "e909b225e6172c42029534135ebcd180e9b011862d757cac9388e6055094be4a"
+    },
+    "training_diagnostic": {
+      "original/idsse_J03WMX": {
+        "sampled_rows": 2048,
+        "log_loss": 0.24562081889775456,
+        "accuracy": 0.90234375
+      },
+      "original/idsse_J03WN1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2813540532762988,
+        "accuracy": 0.873046875
+      },
+      "original/idsse_J03WOH": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20151988758801748,
+        "accuracy": 0.9111328125
+      },
+      "original/idsse_J03WOY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.240757308089486,
+        "accuracy": 0.89208984375
+      },
+      "original/idsse_J03WPY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2070418581488575,
+        "accuracy": 0.90380859375
+      },
+      "original/idsse_J03WQQ": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19901599427079653,
+        "accuracy": 0.91064453125
+      },
+      "original/idsse_J03WR9": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1868528500557006,
+        "accuracy": 0.916015625
+      },
+      "original/metrica_1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1353943482514481,
+        "accuracy": 0.94970703125
+      },
+      "original/metrica_2": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11724728004553914,
+        "accuracy": 0.95703125
+      },
+      "skillcorner/1874553": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15575721740849918,
+        "accuracy": 0.93505859375
+      },
+      "skillcorner/1886347": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1370666558972738,
+        "accuracy": 0.9453125
+      },
+      "skillcorner/1899585": {
+        "sampled_rows": 2048,
+        "log_loss": 0.17463222091305677,
+        "accuracy": 0.92822265625
+      },
+      "skillcorner/1925299": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16765537092199628,
+        "accuracy": 0.93408203125
+      },
+      "skillcorner/1927964": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11818205903213395,
+        "accuracy": 0.951171875
+      },
+      "skillcorner/1953632": {
+        "sampled_rows": 2048,
+        "log_loss": 0.12861402015403434,
+        "accuracy": 0.94873046875
+      },
+      "skillcorner/1959846": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16509689568878197,
+        "accuracy": 0.9296875
+      },
+      "skillcorner/1986691": {
+        "sampled_rows": 2048,
+        "log_loss": 0.178877935454107,
+        "accuracy": 0.9248046875
+      },
+      "skillcorner/1996435": {
+        "sampled_rows": 2048,
+        "log_loss": 0.14975459168617367,
+        "accuracy": 0.94384765625
+      },
+      "skillcorner/1996436": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19087483222226906,
+        "accuracy": 0.91943359375
+      },
+      "skillcorner/2006229": {
+        "sampled_rows": 2048,
+        "log_loss": 0.17801669163351228,
+        "accuracy": 0.92578125
+      },
+      "skillcorner/2006363": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13941739280383478,
+        "accuracy": 0.95556640625
+      },
+      "skillcorner/2007448": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16088317649324457,
+        "accuracy": 0.93701171875
+      },
+      "skillcorner/2007721": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1534010065363044,
+        "accuracy": 0.9404296875
+      },
+      "skillcorner/2010085": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1893725711156338,
+        "accuracy": 0.91552734375
+      },
+      "skillcorner/2011166": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19060544020703352,
+        "accuracy": 0.92138671875
+      },
+      "skillcorner/2015213": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20520951914702773,
+        "accuracy": 0.908203125
+      },
+      "skillcorner/2016236": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20157602260388757,
+        "accuracy": 0.91162109375
+      },
+      "skillcorner/2017461": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20571381684958767,
+        "accuracy": 0.91162109375
+      }
+    },
+    "sampled_training_rows": 1116684,
+    "heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.29852951762382907,
+      "accuracy": 0.88037109375
+    },
+    "v3_heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.30362401295572283,
+      "accuracy": 0.8720703125
+    },
+    "model_sha256": "82954f0b021ff52d7a9fcf6af702762acf149a3a0b73b76f3aa2ca3ce71ea94d",
+    "fitted_utc": "2026-11-13T09:56:59.344814+00:00"
+  },
+  "exclude__skillcorner__2006229": {
+    "excluded": "skillcorner/2006229",
+    "train": [
+      "original/idsse_J03WMX",
+      "original/idsse_J03WN1",
+      "original/idsse_J03WOH",
+      "original/idsse_J03WOY",
+      "original/idsse_J03WPY",
+      "original/idsse_J03WQQ",
+      "original/idsse_J03WR9",
+      "original/metrica_1",
+      "original/metrica_2",
+      "skillcorner/1874553",
+      "skillcorner/1886347",
+      "skillcorner/1899585",
+      "skillcorner/1925299",
+      "skillcorner/1927964",
+      "skillcorner/1953632",
+      "skillcorner/1959846",
+      "skillcorner/1986691",
+      "skillcorner/1996435",
+      "skillcorner/1996436",
+      "skillcorner/2006363",
+      "skillcorner/2007448",
+      "skillcorner/2007721",
+      "skillcorner/2010085",
+      "skillcorner/2011166",
+      "skillcorner/2013725",
+      "skillcorner/2015213",
+      "skillcorner/2016236",
+      "skillcorner/2017461"
+    ],
+    "plan_sha256": "fdaee606952dd5002b4641193985f6569b6117d9530e3859165fa8d8892b2c38",
+    "rows_sha256": {
+      "original/idsse_J03WMX": "2466b2defc302a6de141305c7dba63da7e817e99696c91ee0dada6dc3b2554bd",
+      "original/idsse_J03WN1": "09c6ab011a50bc83f134df346d3990a7003e381bd608df04351bb2f51253cd10",
+      "original/idsse_J03WOH": "fe800fbed8132672a3ca706020970fe505ff1c5f668357b8c22893510f8fa916",
+      "original/idsse_J03WOY": "04a872423143a19b95c3571876df8dd979e6c38d592929d67a698c2fcb9aad4c",
+      "original/idsse_J03WPY": "a40d3855ba738960fe477b16ae7bdfbc10c7d3f08ecfe81737f440d8e3718cca",
+      "original/idsse_J03WQQ": "30cbfe347051b7a3b554bfd83bf3b6faad8433e4827276aee2337f47f30b80ed",
+      "original/idsse_J03WR9": "8dda2b1f2478fe57d849270dfafda14d6434e2552e0e293c6b2b6cc7b9ffd1c9",
+      "original/metrica_1": "eb575e4df4892372a4d7e0a97763e7d5544ae305b5bdf3a3089d62d9505e1281",
+      "original/metrica_2": "56fa4373b984f1154cf2f2c5c66d6d2037af689598372cffd9841ff2255b9001",
+      "skillcorner/1874553": "23c5874a7adf98c2ba059a6598aabf07b21e082236e4fedb501ea7c3aca04002",
+      "skillcorner/1886347": "d43dcadb3790dbe8e1fa8d1d76832037765c7695fad12c73a3d8b7e7c59aef9c",
+      "skillcorner/1899585": "03a565c2073ccf06ae4c118e81dcc43d490420dc0f72129ca487c761eca9f8f0",
+      "skillcorner/1925299": "fb443cd05bcebd8cc1cb425a3db7fe0a43fb5d477970f9f965593e38c01fc0cc",
+      "skillcorner/1927964": "4fc7094f3353b568dad6c60bbdc72c5c901822d4c7bd1ae689fb70765b3b7c4f",
+      "skillcorner/1953632": "69911ae858f583d41e2d35b16b9b3271c4487c186020790c95eda2ac7e99b79b",
+      "skillcorner/1959846": "e1607aa6f288b7018756b695c91a7e87703c176c2002e4cfae17166925b921f5",
+      "skillcorner/1986691": "43efa239339ad23b85df1c9553fab77b89c174eaac46511613b87d266aad5dd8",
+      "skillcorner/1996435": "408af1e90df479bc30dfc3aa3f661d36097c67ce3be9039a6bb6942417031859",
+      "skillcorner/1996436": "f61a9fae34f44eb5d0615802130ed81fa68cd929aac3a9b2fbb4732cb9cf476a",
+      "skillcorner/2006363": "90838b370e5885a9f714aac4c574eefebec297d7ed0cee5c46d6543e46f33780",
+      "skillcorner/2007448": "91aa2ddc2c05b1de4fc065db62e1a74825eac4edd147453c1a4c35c0bfe481a9",
+      "skillcorner/2007721": "6bfcaa4db0b2fca9e18273ffd319dff23db52927e169ad537cc7ee869e5c37d8",
+      "skillcorner/2010085": "61f5b54f643e7ca61fb5e3b5378cde56c9af9b24633350576249e721f4604cd0",
+      "skillcorner/2011166": "a4de80e7cc86ae96735c63c7f5848776ddb957e59c7b1fb102e80c1ada452ed6",
+      "skillcorner/2013725": "6087ea102ac6db5d70d6614f500bae12752ccca3a88e58f32f542e319d109e24",
+      "skillcorner/2015213": "76c25a01d7f830d4a4dcbd07280e15edef862ad0af94ca0385f0f1f53dd206ac",
+      "skillcorner/2016236": "ee598ffecfd8b9c32cba1c9b8f45d3da784db216788aef3a6786f80e1b15a34b",
+      "skillcorner/2017461": "e909b225e6172c42029534135ebcd180e9b011862d757cac9388e6055094be4a"
+    },
+    "training_diagnostic": {
+      "original/idsse_J03WMX": {
+        "sampled_rows": 2048,
+        "log_loss": 0.24431755874142502,
+        "accuracy": 0.90380859375
+      },
+      "original/idsse_J03WN1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2823796365777167,
+        "accuracy": 0.87353515625
+      },
+      "original/idsse_J03WOH": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2033021700224138,
+        "accuracy": 0.90966796875
+      },
+      "original/idsse_J03WOY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2414786144678706,
+        "accuracy": 0.892578125
+      },
+      "original/idsse_J03WPY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2084718136851853,
+        "accuracy": 0.90576171875
+      },
+      "original/idsse_J03WQQ": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19950726016310183,
+        "accuracy": 0.90966796875
+      },
+      "original/idsse_J03WR9": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18539436377141738,
+        "accuracy": 0.91796875
+      },
+      "original/metrica_1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1365789917171083,
+        "accuracy": 0.94970703125
+      },
+      "original/metrica_2": {
+        "sampled_rows": 2048,
+        "log_loss": 0.12018834354008076,
+        "accuracy": 0.953125
+      },
+      "skillcorner/1874553": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15614115946864207,
+        "accuracy": 0.93505859375
+      },
+      "skillcorner/1886347": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1400871216077073,
+        "accuracy": 0.939453125
+      },
+      "skillcorner/1899585": {
+        "sampled_rows": 2048,
+        "log_loss": 0.17441803094266073,
+        "accuracy": 0.92822265625
+      },
+      "skillcorner/1925299": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16609608156482436,
+        "accuracy": 0.9326171875
+      },
+      "skillcorner/1927964": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11720216324334799,
+        "accuracy": 0.953125
+      },
+      "skillcorner/1953632": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13126509072980724,
+        "accuracy": 0.94775390625
+      },
+      "skillcorner/1959846": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1657740639975402,
+        "accuracy": 0.92919921875
+      },
+      "skillcorner/1986691": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1826903139270448,
+        "accuracy": 0.9228515625
+      },
+      "skillcorner/1996435": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15050929989289905,
+        "accuracy": 0.94580078125
+      },
+      "skillcorner/1996436": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1916136260161516,
+        "accuracy": 0.91357421875
+      },
+      "skillcorner/2006363": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1441246810541097,
+        "accuracy": 0.9541015625
+      },
+      "skillcorner/2007448": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1609688960842533,
+        "accuracy": 0.93310546875
+      },
+      "skillcorner/2007721": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1536728550487816,
+        "accuracy": 0.9384765625
+      },
+      "skillcorner/2010085": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1910676992115778,
+        "accuracy": 0.9140625
+      },
+      "skillcorner/2011166": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19223373673616356,
+        "accuracy": 0.91552734375
+      },
+      "skillcorner/2013725": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2536524020473458,
+        "accuracy": 0.8935546875
+      },
+      "skillcorner/2015213": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20280744653599975,
+        "accuracy": 0.9091796875
+      },
+      "skillcorner/2016236": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20286860316350308,
+        "accuracy": 0.91650390625
+      },
+      "skillcorner/2017461": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20821384835701423,
+        "accuracy": 0.9052734375
+      }
+    },
+    "sampled_training_rows": 1114912,
+    "heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.22337458841729024,
+      "accuracy": 0.912109375
+    },
+    "v3_heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.22828268142981029,
+      "accuracy": 0.90869140625
+    },
+    "model_sha256": "f16ff31482fe9dc10e10553d9d87152d786330973da9661282d707665043ca34",
+    "fitted_utc": "2026-11-13T09:54:39.289652+00:00"
+  },
+  "exclude__skillcorner__2007448": {
+    "excluded": "skillcorner/2007448",
+    "train": [
+      "original/idsse_J03WMX",
+      "original/idsse_J03WN1",
+      "original/idsse_J03WOH",
+      "original/idsse_J03WOY",
+      "original/idsse_J03WPY",
+      "original/idsse_J03WQQ",
+      "original/idsse_J03WR9",
+      "original/metrica_1",
+      "original/metrica_2",
+      "skillcorner/1874553",
+      "skillcorner/1886347",
+      "skillcorner/1899585",
+      "skillcorner/1925299",
+      "skillcorner/1927964",
+      "skillcorner/1953632",
+      "skillcorner/1959846",
+      "skillcorner/1986691",
+      "skillcorner/1996435",
+      "skillcorner/1996436",
+      "skillcorner/2006229",
+      "skillcorner/2006363",
+      "skillcorner/2007721",
+      "skillcorner/2010085",
+      "skillcorner/2011166",
+      "skillcorner/2013725",
+      "skillcorner/2015213",
+      "skillcorner/2016236",
+      "skillcorner/2017461"
+    ],
+    "plan_sha256": "fdaee606952dd5002b4641193985f6569b6117d9530e3859165fa8d8892b2c38",
+    "rows_sha256": {
+      "original/idsse_J03WMX": "2466b2defc302a6de141305c7dba63da7e817e99696c91ee0dada6dc3b2554bd",
+      "original/idsse_J03WN1": "09c6ab011a50bc83f134df346d3990a7003e381bd608df04351bb2f51253cd10",
+      "original/idsse_J03WOH": "fe800fbed8132672a3ca706020970fe505ff1c5f668357b8c22893510f8fa916",
+      "original/idsse_J03WOY": "04a872423143a19b95c3571876df8dd979e6c38d592929d67a698c2fcb9aad4c",
+      "original/idsse_J03WPY": "a40d3855ba738960fe477b16ae7bdfbc10c7d3f08ecfe81737f440d8e3718cca",
+      "original/idsse_J03WQQ": "30cbfe347051b7a3b554bfd83bf3b6faad8433e4827276aee2337f47f30b80ed",
+      "original/idsse_J03WR9": "8dda2b1f2478fe57d849270dfafda14d6434e2552e0e293c6b2b6cc7b9ffd1c9",
+      "original/metrica_1": "eb575e4df4892372a4d7e0a97763e7d5544ae305b5bdf3a3089d62d9505e1281",
+      "original/metrica_2": "56fa4373b984f1154cf2f2c5c66d6d2037af689598372cffd9841ff2255b9001",
+      "skillcorner/1874553": "23c5874a7adf98c2ba059a6598aabf07b21e082236e4fedb501ea7c3aca04002",
+      "skillcorner/1886347": "d43dcadb3790dbe8e1fa8d1d76832037765c7695fad12c73a3d8b7e7c59aef9c",
+      "skillcorner/1899585": "03a565c2073ccf06ae4c118e81dcc43d490420dc0f72129ca487c761eca9f8f0",
+      "skillcorner/1925299": "fb443cd05bcebd8cc1cb425a3db7fe0a43fb5d477970f9f965593e38c01fc0cc",
+      "skillcorner/1927964": "4fc7094f3353b568dad6c60bbdc72c5c901822d4c7bd1ae689fb70765b3b7c4f",
+      "skillcorner/1953632": "69911ae858f583d41e2d35b16b9b3271c4487c186020790c95eda2ac7e99b79b",
+      "skillcorner/1959846": "e1607aa6f288b7018756b695c91a7e87703c176c2002e4cfae17166925b921f5",
+      "skillcorner/1986691": "43efa239339ad23b85df1c9553fab77b89c174eaac46511613b87d266aad5dd8",
+      "skillcorner/1996435": "408af1e90df479bc30dfc3aa3f661d36097c67ce3be9039a6bb6942417031859",
+      "skillcorner/1996436": "f61a9fae34f44eb5d0615802130ed81fa68cd929aac3a9b2fbb4732cb9cf476a",
+      "skillcorner/2006229": "6ca647a6be20f69d411bbc81c57194d52fe7f4f51fa261b7f6cd6c5692974004",
+      "skillcorner/2006363": "90838b370e5885a9f714aac4c574eefebec297d7ed0cee5c46d6543e46f33780",
+      "skillcorner/2007721": "6bfcaa4db0b2fca9e18273ffd319dff23db52927e169ad537cc7ee869e5c37d8",
+      "skillcorner/2010085": "61f5b54f643e7ca61fb5e3b5378cde56c9af9b24633350576249e721f4604cd0",
+      "skillcorner/2011166": "a4de80e7cc86ae96735c63c7f5848776ddb957e59c7b1fb102e80c1ada452ed6",
+      "skillcorner/2013725": "6087ea102ac6db5d70d6614f500bae12752ccca3a88e58f32f542e319d109e24",
+      "skillcorner/2015213": "76c25a01d7f830d4a4dcbd07280e15edef862ad0af94ca0385f0f1f53dd206ac",
+      "skillcorner/2016236": "ee598ffecfd8b9c32cba1c9b8f45d3da784db216788aef3a6786f80e1b15a34b",
+      "skillcorner/2017461": "e909b225e6172c42029534135ebcd180e9b011862d757cac9388e6055094be4a"
+    },
+    "training_diagnostic": {
+      "original/idsse_J03WMX": {
+        "sampled_rows": 2048,
+        "log_loss": 0.24313582885903218,
+        "accuracy": 0.90283203125
+      },
+      "original/idsse_J03WN1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2834146103892345,
+        "accuracy": 0.8720703125
+      },
+      "original/idsse_J03WOH": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20499422538217005,
+        "accuracy": 0.9052734375
+      },
+      "original/idsse_J03WOY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.24242483413028348,
+        "accuracy": 0.88671875
+      },
+      "original/idsse_J03WPY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20849617200681125,
+        "accuracy": 0.90625
+      },
+      "original/idsse_J03WQQ": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2002685076487534,
+        "accuracy": 0.91015625
+      },
+      "original/idsse_J03WR9": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18783228834669907,
+        "accuracy": 0.916015625
+      },
+      "original/metrica_1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1392251729707939,
+        "accuracy": 0.95068359375
+      },
+      "original/metrica_2": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11965326626271289,
+        "accuracy": 0.95458984375
+      },
+      "skillcorner/1874553": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15635189241818065,
+        "accuracy": 0.93408203125
+      },
+      "skillcorner/1886347": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13975086614677754,
+        "accuracy": 0.94189453125
+      },
+      "skillcorner/1899585": {
+        "sampled_rows": 2048,
+        "log_loss": 0.17594651302714,
+        "accuracy": 0.93115234375
+      },
+      "skillcorner/1925299": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16709840578904073,
+        "accuracy": 0.9326171875
+      },
+      "skillcorner/1927964": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11766065501807918,
+        "accuracy": 0.951171875
+      },
+      "skillcorner/1953632": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13202943936673314,
+        "accuracy": 0.94677734375
+      },
+      "skillcorner/1959846": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16761888651061146,
+        "accuracy": 0.9267578125
+      },
+      "skillcorner/1986691": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18384174890784233,
+        "accuracy": 0.92041015625
+      },
+      "skillcorner/1996435": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15169936270776874,
+        "accuracy": 0.94482421875
+      },
+      "skillcorner/1996436": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19182094984310344,
+        "accuracy": 0.91845703125
+      },
+      "skillcorner/2006229": {
+        "sampled_rows": 2048,
+        "log_loss": 0.17885057670479879,
+        "accuracy": 0.9267578125
+      },
+      "skillcorner/2006363": {
+        "sampled_rows": 2048,
+        "log_loss": 0.14230388817026157,
+        "accuracy": 0.9541015625
+      },
+      "skillcorner/2007721": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15520034588049603,
+        "accuracy": 0.9404296875
+      },
+      "skillcorner/2010085": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19090551766828728,
+        "accuracy": 0.912109375
+      },
+      "skillcorner/2011166": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19111338804798134,
+        "accuracy": 0.9208984375
+      },
+      "skillcorner/2013725": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2558410509231255,
+        "accuracy": 0.89306640625
+      },
+      "skillcorner/2015213": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20634838584847526,
+        "accuracy": 0.91064453125
+      },
+      "skillcorner/2016236": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20247411024616835,
+        "accuracy": 0.9140625
+      },
+      "skillcorner/2017461": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20876738335206724,
+        "accuracy": 0.9091796875
+      }
+    },
+    "sampled_training_rows": 1119080,
+    "heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.1863010127352812,
+      "accuracy": 0.9208984375
+    },
+    "v3_heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.19379238275783994,
+      "accuracy": 0.9150390625
+    },
+    "model_sha256": "d7e1ced7b088f26ee756050ebf59d1de25923a2ce3b1c042dc901658c2c4e13c",
+    "fitted_utc": "2026-11-13T09:56:36.534858+00:00"
+  },
+  "exclude__original__metrica_2": {
+    "excluded": "original/metrica_2",
+    "train": [
+      "original/idsse_J03WMX",
+      "original/idsse_J03WN1",
+      "original/idsse_J03WOH",
+      "original/idsse_J03WOY",
+      "original/idsse_J03WPY",
+      "original/idsse_J03WQQ",
+      "original/idsse_J03WR9",
+      "original/metrica_1",
+      "skillcorner/1874553",
+      "skillcorner/1886347",
+      "skillcorner/1899585",
+      "skillcorner/1925299",
+      "skillcorner/1927964",
+      "skillcorner/1953632",
+      "skillcorner/1959846",
+      "skillcorner/1986691",
+      "skillcorner/1996435",
+      "skillcorner/1996436",
+      "skillcorner/2006229",
+      "skillcorner/2006363",
+      "skillcorner/2007448",
+      "skillcorner/2007721",
+      "skillcorner/2010085",
+      "skillcorner/2011166",
+      "skillcorner/2013725",
+      "skillcorner/2015213",
+      "skillcorner/2016236",
+      "skillcorner/2017461"
+    ],
+    "plan_sha256": "fdaee606952dd5002b4641193985f6569b6117d9530e3859165fa8d8892b2c38",
+    "rows_sha256": {
+      "original/idsse_J03WMX": "2466b2defc302a6de141305c7dba63da7e817e99696c91ee0dada6dc3b2554bd",
+      "original/idsse_J03WN1": "09c6ab011a50bc83f134df346d3990a7003e381bd608df04351bb2f51253cd10",
+      "original/idsse_J03WOH": "fe800fbed8132672a3ca706020970fe505ff1c5f668357b8c22893510f8fa916",
+      "original/idsse_J03WOY": "04a872423143a19b95c3571876df8dd979e6c38d592929d67a698c2fcb9aad4c",
+      "original/idsse_J03WPY": "a40d3855ba738960fe477b16ae7bdfbc10c7d3f08ecfe81737f440d8e3718cca",
+      "original/idsse_J03WQQ": "30cbfe347051b7a3b554bfd83bf3b6faad8433e4827276aee2337f47f30b80ed",
+      "original/idsse_J03WR9": "8dda2b1f2478fe57d849270dfafda14d6434e2552e0e293c6b2b6cc7b9ffd1c9",
+      "original/metrica_1": "eb575e4df4892372a4d7e0a97763e7d5544ae305b5bdf3a3089d62d9505e1281",
+      "skillcorner/1874553": "23c5874a7adf98c2ba059a6598aabf07b21e082236e4fedb501ea7c3aca04002",
+      "skillcorner/1886347": "d43dcadb3790dbe8e1fa8d1d76832037765c7695fad12c73a3d8b7e7c59aef9c",
+      "skillcorner/1899585": "03a565c2073ccf06ae4c118e81dcc43d490420dc0f72129ca487c761eca9f8f0",
+      "skillcorner/1925299": "fb443cd05bcebd8cc1cb425a3db7fe0a43fb5d477970f9f965593e38c01fc0cc",
+      "skillcorner/1927964": "4fc7094f3353b568dad6c60bbdc72c5c901822d4c7bd1ae689fb70765b3b7c4f",
+      "skillcorner/1953632": "69911ae858f583d41e2d35b16b9b3271c4487c186020790c95eda2ac7e99b79b",
+      "skillcorner/1959846": "e1607aa6f288b7018756b695c91a7e87703c176c2002e4cfae17166925b921f5",
+      "skillcorner/1986691": "43efa239339ad23b85df1c9553fab77b89c174eaac46511613b87d266aad5dd8",
+      "skillcorner/1996435": "408af1e90df479bc30dfc3aa3f661d36097c67ce3be9039a6bb6942417031859",
+      "skillcorner/1996436": "f61a9fae34f44eb5d0615802130ed81fa68cd929aac3a9b2fbb4732cb9cf476a",
+      "skillcorner/2006229": "6ca647a6be20f69d411bbc81c57194d52fe7f4f51fa261b7f6cd6c5692974004",
+      "skillcorner/2006363": "90838b370e5885a9f714aac4c574eefebec297d7ed0cee5c46d6543e46f33780",
+      "skillcorner/2007448": "91aa2ddc2c05b1de4fc065db62e1a74825eac4edd147453c1a4c35c0bfe481a9",
+      "skillcorner/2007721": "6bfcaa4db0b2fca9e18273ffd319dff23db52927e169ad537cc7ee869e5c37d8",
+      "skillcorner/2010085": "61f5b54f643e7ca61fb5e3b5378cde56c9af9b24633350576249e721f4604cd0",
+      "skillcorner/2011166": "a4de80e7cc86ae96735c63c7f5848776ddb957e59c7b1fb102e80c1ada452ed6",
+      "skillcorner/2013725": "6087ea102ac6db5d70d6614f500bae12752ccca3a88e58f32f542e319d109e24",
+      "skillcorner/2015213": "76c25a01d7f830d4a4dcbd07280e15edef862ad0af94ca0385f0f1f53dd206ac",
+      "skillcorner/2016236": "ee598ffecfd8b9c32cba1c9b8f45d3da784db216788aef3a6786f80e1b15a34b",
+      "skillcorner/2017461": "e909b225e6172c42029534135ebcd180e9b011862d757cac9388e6055094be4a"
+    },
+    "training_diagnostic": {
+      "original/idsse_J03WMX": {
+        "sampled_rows": 2048,
+        "log_loss": 0.24172267941299608,
+        "accuracy": 0.90625
+      },
+      "original/idsse_J03WN1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2807435888716137,
+        "accuracy": 0.87744140625
+      },
+      "original/idsse_J03WOH": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20095357705554326,
+        "accuracy": 0.9150390625
+      },
+      "original/idsse_J03WOY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.24117968225291664,
+        "accuracy": 0.89111328125
+      },
+      "original/idsse_J03WPY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20750350861697234,
+        "accuracy": 0.9111328125
+      },
+      "original/idsse_J03WQQ": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1978254495428056,
+        "accuracy": 0.91455078125
+      },
+      "original/idsse_J03WR9": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18427380571023108,
+        "accuracy": 0.91748046875
+      },
+      "original/metrica_1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.14498147674111653,
+        "accuracy": 0.9443359375
+      },
+      "skillcorner/1874553": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15333731888973967,
+        "accuracy": 0.935546875
+      },
+      "skillcorner/1886347": {
+        "sampled_rows": 2048,
+        "log_loss": 0.137310799377305,
+        "accuracy": 0.9423828125
+      },
+      "skillcorner/1899585": {
+        "sampled_rows": 2048,
+        "log_loss": 0.17568273108658117,
+        "accuracy": 0.9326171875
+      },
+      "skillcorner/1925299": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16790223563866719,
+        "accuracy": 0.931640625
+      },
+      "skillcorner/1927964": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11618162070442188,
+        "accuracy": 0.953125
+      },
+      "skillcorner/1953632": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13107847177158766,
+        "accuracy": 0.9501953125
+      },
+      "skillcorner/1959846": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16564546225499127,
+        "accuracy": 0.92724609375
+      },
+      "skillcorner/1986691": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1816653180409418,
+        "accuracy": 0.92333984375
+      },
+      "skillcorner/1996435": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15123790831934933,
+        "accuracy": 0.9443359375
+      },
+      "skillcorner/1996436": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1932386688959867,
+        "accuracy": 0.91748046875
+      },
+      "skillcorner/2006229": {
+        "sampled_rows": 2048,
+        "log_loss": 0.17773425195625198,
+        "accuracy": 0.92822265625
+      },
+      "skillcorner/2006363": {
+        "sampled_rows": 2048,
+        "log_loss": 0.14090588750091104,
+        "accuracy": 0.95654296875
+      },
+      "skillcorner/2007448": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1631612392627881,
+        "accuracy": 0.93212890625
+      },
+      "skillcorner/2007721": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1535604442599341,
+        "accuracy": 0.9384765625
+      },
+      "skillcorner/2010085": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19233234237244867,
+        "accuracy": 0.912109375
+      },
+      "skillcorner/2011166": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1920195335440193,
+        "accuracy": 0.9189453125
+      },
+      "skillcorner/2013725": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2540549847897937,
+        "accuracy": 0.89306640625
+      },
+      "skillcorner/2015213": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20374885884135022,
+        "accuracy": 0.91015625
+      },
+      "skillcorner/2016236": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2003613855748665,
+        "accuracy": 0.916015625
+      },
+      "skillcorner/2017461": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20611708863232092,
+        "accuracy": 0.91162109375
+      }
+    },
+    "sampled_training_rows": 1107394,
+    "heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.19780463156127903,
+      "accuracy": 0.900390625
+    },
+    "v3_heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.20289331751083833,
+      "accuracy": 0.8955078125
+    },
+    "model_sha256": "28a397ffa702cc085eff4491fea0b1ed0170748887dd90e73e642bc9fc0512c0",
+    "fitted_utc": "2026-11-13T09:52:03.128402+00:00"
+  },
+  "exclude__skillcorner__2010085": {
+    "excluded": "skillcorner/2010085",
+    "train": [
+      "original/idsse_J03WMX",
+      "original/idsse_J03WN1",
+      "original/idsse_J03WOH",
+      "original/idsse_J03WOY",
+      "original/idsse_J03WPY",
+      "original/idsse_J03WQQ",
+      "original/idsse_J03WR9",
+      "original/metrica_1",
+      "original/metrica_2",
+      "skillcorner/1874553",
+      "skillcorner/1886347",
+      "skillcorner/1899585",
+      "skillcorner/1925299",
+      "skillcorner/1927964",
+      "skillcorner/1953632",
+      "skillcorner/1959846",
+      "skillcorner/1986691",
+      "skillcorner/1996435",
+      "skillcorner/1996436",
+      "skillcorner/2006229",
+      "skillcorner/2006363",
+      "skillcorner/2007448",
+      "skillcorner/2007721",
+      "skillcorner/2011166",
+      "skillcorner/2013725",
+      "skillcorner/2015213",
+      "skillcorner/2016236",
+      "skillcorner/2017461"
+    ],
+    "plan_sha256": "fdaee606952dd5002b4641193985f6569b6117d9530e3859165fa8d8892b2c38",
+    "rows_sha256": {
+      "original/idsse_J03WMX": "2466b2defc302a6de141305c7dba63da7e817e99696c91ee0dada6dc3b2554bd",
+      "original/idsse_J03WN1": "09c6ab011a50bc83f134df346d3990a7003e381bd608df04351bb2f51253cd10",
+      "original/idsse_J03WOH": "fe800fbed8132672a3ca706020970fe505ff1c5f668357b8c22893510f8fa916",
+      "original/idsse_J03WOY": "04a872423143a19b95c3571876df8dd979e6c38d592929d67a698c2fcb9aad4c",
+      "original/idsse_J03WPY": "a40d3855ba738960fe477b16ae7bdfbc10c7d3f08ecfe81737f440d8e3718cca",
+      "original/idsse_J03WQQ": "30cbfe347051b7a3b554bfd83bf3b6faad8433e4827276aee2337f47f30b80ed",
+      "original/idsse_J03WR9": "8dda2b1f2478fe57d849270dfafda14d6434e2552e0e293c6b2b6cc7b9ffd1c9",
+      "original/metrica_1": "eb575e4df4892372a4d7e0a97763e7d5544ae305b5bdf3a3089d62d9505e1281",
+      "original/metrica_2": "56fa4373b984f1154cf2f2c5c66d6d2037af689598372cffd9841ff2255b9001",
+      "skillcorner/1874553": "23c5874a7adf98c2ba059a6598aabf07b21e082236e4fedb501ea7c3aca04002",
+      "skillcorner/1886347": "d43dcadb3790dbe8e1fa8d1d76832037765c7695fad12c73a3d8b7e7c59aef9c",
+      "skillcorner/1899585": "03a565c2073ccf06ae4c118e81dcc43d490420dc0f72129ca487c761eca9f8f0",
+      "skillcorner/1925299": "fb443cd05bcebd8cc1cb425a3db7fe0a43fb5d477970f9f965593e38c01fc0cc",
+      "skillcorner/1927964": "4fc7094f3353b568dad6c60bbdc72c5c901822d4c7bd1ae689fb70765b3b7c4f",
+      "skillcorner/1953632": "69911ae858f583d41e2d35b16b9b3271c4487c186020790c95eda2ac7e99b79b",
+      "skillcorner/1959846": "e1607aa6f288b7018756b695c91a7e87703c176c2002e4cfae17166925b921f5",
+      "skillcorner/1986691": "43efa239339ad23b85df1c9553fab77b89c174eaac46511613b87d266aad5dd8",
+      "skillcorner/1996435": "408af1e90df479bc30dfc3aa3f661d36097c67ce3be9039a6bb6942417031859",
+      "skillcorner/1996436": "f61a9fae34f44eb5d0615802130ed81fa68cd929aac3a9b2fbb4732cb9cf476a",
+      "skillcorner/2006229": "6ca647a6be20f69d411bbc81c57194d52fe7f4f51fa261b7f6cd6c5692974004",
+      "skillcorner/2006363": "90838b370e5885a9f714aac4c574eefebec297d7ed0cee5c46d6543e46f33780",
+      "skillcorner/2007448": "91aa2ddc2c05b1de4fc065db62e1a74825eac4edd147453c1a4c35c0bfe481a9",
+      "skillcorner/2007721": "6bfcaa4db0b2fca9e18273ffd319dff23db52927e169ad537cc7ee869e5c37d8",
+      "skillcorner/2011166": "a4de80e7cc86ae96735c63c7f5848776ddb957e59c7b1fb102e80c1ada452ed6",
+      "skillcorner/2013725": "6087ea102ac6db5d70d6614f500bae12752ccca3a88e58f32f542e319d109e24",
+      "skillcorner/2015213": "76c25a01d7f830d4a4dcbd07280e15edef862ad0af94ca0385f0f1f53dd206ac",
+      "skillcorner/2016236": "ee598ffecfd8b9c32cba1c9b8f45d3da784db216788aef3a6786f80e1b15a34b",
+      "skillcorner/2017461": "e909b225e6172c42029534135ebcd180e9b011862d757cac9388e6055094be4a"
+    },
+    "training_diagnostic": {
+      "original/idsse_J03WMX": {
+        "sampled_rows": 2048,
+        "log_loss": 0.24466946228555025,
+        "accuracy": 0.9033203125
+      },
+      "original/idsse_J03WN1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2844219654218846,
+        "accuracy": 0.87353515625
+      },
+      "original/idsse_J03WOH": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20350151372521924,
+        "accuracy": 0.9091796875
+      },
+      "original/idsse_J03WOY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2422252120633283,
+        "accuracy": 0.89013671875
+      },
+      "original/idsse_J03WPY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20675809096323253,
+        "accuracy": 0.91015625
+      },
+      "original/idsse_J03WQQ": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20144607129129555,
+        "accuracy": 0.908203125
+      },
+      "original/idsse_J03WR9": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18609687295972183,
+        "accuracy": 0.91845703125
+      },
+      "original/metrica_1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13673314194993785,
+        "accuracy": 0.94580078125
+      },
+      "original/metrica_2": {
+        "sampled_rows": 2048,
+        "log_loss": 0.12088276044430704,
+        "accuracy": 0.953125
+      },
+      "skillcorner/1874553": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1557040908304953,
+        "accuracy": 0.9345703125
+      },
+      "skillcorner/1886347": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1393678337410596,
+        "accuracy": 0.94287109375
+      },
+      "skillcorner/1899585": {
+        "sampled_rows": 2048,
+        "log_loss": 0.17509177836196327,
+        "accuracy": 0.92919921875
+      },
+      "skillcorner/1925299": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16804248789318135,
+        "accuracy": 0.9296875
+      },
+      "skillcorner/1927964": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11635529632020714,
+        "accuracy": 0.953125
+      },
+      "skillcorner/1953632": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13111075008272854,
+        "accuracy": 0.94580078125
+      },
+      "skillcorner/1959846": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16601674290633836,
+        "accuracy": 0.92919921875
+      },
+      "skillcorner/1986691": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18318509167732036,
+        "accuracy": 0.92236328125
+      },
+      "skillcorner/1996435": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15122500673706196,
+        "accuracy": 0.9443359375
+      },
+      "skillcorner/1996436": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1920268026811972,
+        "accuracy": 0.9169921875
+      },
+      "skillcorner/2006229": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1799067732695463,
+        "accuracy": 0.9267578125
+      },
+      "skillcorner/2006363": {
+        "sampled_rows": 2048,
+        "log_loss": 0.14148648208969059,
+        "accuracy": 0.953125
+      },
+      "skillcorner/2007448": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16073058295214485,
+        "accuracy": 0.93505859375
+      },
+      "skillcorner/2007721": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15671463487399684,
+        "accuracy": 0.93701171875
+      },
+      "skillcorner/2011166": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19441588361227405,
+        "accuracy": 0.9169921875
+      },
+      "skillcorner/2013725": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2569482669737224,
+        "accuracy": 0.8876953125
+      },
+      "skillcorner/2015213": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2033714848553016,
+        "accuracy": 0.91015625
+      },
+      "skillcorner/2016236": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20406671408716676,
+        "accuracy": 0.9111328125
+      },
+      "skillcorner/2017461": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20865142005751408,
+        "accuracy": 0.9091796875
+      }
+    },
+    "sampled_training_rows": 1115152,
+    "heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.20971821974770158,
+      "accuracy": 0.904296875
+    },
+    "v3_heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.2190363507988294,
+      "accuracy": 0.89990234375
+    },
+    "model_sha256": "55d537f118127f657248fffae5194e44baa554644bc1d06a8fb2779a675b39d3",
+    "fitted_utc": "2026-11-13T09:56:44.557716+00:00"
+  },
+  "exclude__original__idsse_J03WOH": {
+    "excluded": "original/idsse_J03WOH",
+    "train": [
+      "original/idsse_J03WMX",
+      "original/idsse_J03WN1",
+      "original/idsse_J03WOY",
+      "original/idsse_J03WPY",
+      "original/idsse_J03WQQ",
+      "original/idsse_J03WR9",
+      "original/metrica_1",
+      "original/metrica_2",
+      "skillcorner/1874553",
+      "skillcorner/1886347",
+      "skillcorner/1899585",
+      "skillcorner/1925299",
+      "skillcorner/1927964",
+      "skillcorner/1953632",
+      "skillcorner/1959846",
+      "skillcorner/1986691",
+      "skillcorner/1996435",
+      "skillcorner/1996436",
+      "skillcorner/2006229",
+      "skillcorner/2006363",
+      "skillcorner/2007448",
+      "skillcorner/2007721",
+      "skillcorner/2010085",
+      "skillcorner/2011166",
+      "skillcorner/2013725",
+      "skillcorner/2015213",
+      "skillcorner/2016236",
+      "skillcorner/2017461"
+    ],
+    "plan_sha256": "fdaee606952dd5002b4641193985f6569b6117d9530e3859165fa8d8892b2c38",
+    "rows_sha256": {
+      "original/idsse_J03WMX": "2466b2defc302a6de141305c7dba63da7e817e99696c91ee0dada6dc3b2554bd",
+      "original/idsse_J03WN1": "09c6ab011a50bc83f134df346d3990a7003e381bd608df04351bb2f51253cd10",
+      "original/idsse_J03WOY": "04a872423143a19b95c3571876df8dd979e6c38d592929d67a698c2fcb9aad4c",
+      "original/idsse_J03WPY": "a40d3855ba738960fe477b16ae7bdfbc10c7d3f08ecfe81737f440d8e3718cca",
+      "original/idsse_J03WQQ": "30cbfe347051b7a3b554bfd83bf3b6faad8433e4827276aee2337f47f30b80ed",
+      "original/idsse_J03WR9": "8dda2b1f2478fe57d849270dfafda14d6434e2552e0e293c6b2b6cc7b9ffd1c9",
+      "original/metrica_1": "eb575e4df4892372a4d7e0a97763e7d5544ae305b5bdf3a3089d62d9505e1281",
+      "original/metrica_2": "56fa4373b984f1154cf2f2c5c66d6d2037af689598372cffd9841ff2255b9001",
+      "skillcorner/1874553": "23c5874a7adf98c2ba059a6598aabf07b21e082236e4fedb501ea7c3aca04002",
+      "skillcorner/1886347": "d43dcadb3790dbe8e1fa8d1d76832037765c7695fad12c73a3d8b7e7c59aef9c",
+      "skillcorner/1899585": "03a565c2073ccf06ae4c118e81dcc43d490420dc0f72129ca487c761eca9f8f0",
+      "skillcorner/1925299": "fb443cd05bcebd8cc1cb425a3db7fe0a43fb5d477970f9f965593e38c01fc0cc",
+      "skillcorner/1927964": "4fc7094f3353b568dad6c60bbdc72c5c901822d4c7bd1ae689fb70765b3b7c4f",
+      "skillcorner/1953632": "69911ae858f583d41e2d35b16b9b3271c4487c186020790c95eda2ac7e99b79b",
+      "skillcorner/1959846": "e1607aa6f288b7018756b695c91a7e87703c176c2002e4cfae17166925b921f5",
+      "skillcorner/1986691": "43efa239339ad23b85df1c9553fab77b89c174eaac46511613b87d266aad5dd8",
+      "skillcorner/1996435": "408af1e90df479bc30dfc3aa3f661d36097c67ce3be9039a6bb6942417031859",
+      "skillcorner/1996436": "f61a9fae34f44eb5d0615802130ed81fa68cd929aac3a9b2fbb4732cb9cf476a",
+      "skillcorner/2006229": "6ca647a6be20f69d411bbc81c57194d52fe7f4f51fa261b7f6cd6c5692974004",
+      "skillcorner/2006363": "90838b370e5885a9f714aac4c574eefebec297d7ed0cee5c46d6543e46f33780",
+      "skillcorner/2007448": "91aa2ddc2c05b1de4fc065db62e1a74825eac4edd147453c1a4c35c0bfe481a9",
+      "skillcorner/2007721": "6bfcaa4db0b2fca9e18273ffd319dff23db52927e169ad537cc7ee869e5c37d8",
+      "skillcorner/2010085": "61f5b54f643e7ca61fb5e3b5378cde56c9af9b24633350576249e721f4604cd0",
+      "skillcorner/2011166": "a4de80e7cc86ae96735c63c7f5848776ddb957e59c7b1fb102e80c1ada452ed6",
+      "skillcorner/2013725": "6087ea102ac6db5d70d6614f500bae12752ccca3a88e58f32f542e319d109e24",
+      "skillcorner/2015213": "76c25a01d7f830d4a4dcbd07280e15edef862ad0af94ca0385f0f1f53dd206ac",
+      "skillcorner/2016236": "ee598ffecfd8b9c32cba1c9b8f45d3da784db216788aef3a6786f80e1b15a34b",
+      "skillcorner/2017461": "e909b225e6172c42029534135ebcd180e9b011862d757cac9388e6055094be4a"
+    },
+    "training_diagnostic": {
+      "original/idsse_J03WMX": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2440870744529161,
+        "accuracy": 0.9013671875
+      },
+      "original/idsse_J03WN1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2798011863979949,
+        "accuracy": 0.8779296875
+      },
+      "original/idsse_J03WOY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.24145745382403097,
+        "accuracy": 0.8916015625
+      },
+      "original/idsse_J03WPY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20793503119077475,
+        "accuracy": 0.9072265625
+      },
+      "original/idsse_J03WQQ": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20204954312480353,
+        "accuracy": 0.908203125
+      },
+      "original/idsse_J03WR9": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18505310336968422,
+        "accuracy": 0.9189453125
+      },
+      "original/metrica_1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13735244518932466,
+        "accuracy": 0.947265625
+      },
+      "original/metrica_2": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11922372185486155,
+        "accuracy": 0.9521484375
+      },
+      "skillcorner/1874553": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1554262453240694,
+        "accuracy": 0.93310546875
+      },
+      "skillcorner/1886347": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13927834638242448,
+        "accuracy": 0.94189453125
+      },
+      "skillcorner/1899585": {
+        "sampled_rows": 2048,
+        "log_loss": 0.17784473406327966,
+        "accuracy": 0.92626953125
+      },
+      "skillcorner/1925299": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16730250586918688,
+        "accuracy": 0.92919921875
+      },
+      "skillcorner/1927964": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11715572681888438,
+        "accuracy": 0.94970703125
+      },
+      "skillcorner/1953632": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13217086047465804,
+        "accuracy": 0.9443359375
+      },
+      "skillcorner/1959846": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16466562118119688,
+        "accuracy": 0.931640625
+      },
+      "skillcorner/1986691": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18400369389622434,
+        "accuracy": 0.9228515625
+      },
+      "skillcorner/1996435": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15108927386407137,
+        "accuracy": 0.94384765625
+      },
+      "skillcorner/1996436": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1909483989631034,
+        "accuracy": 0.91748046875
+      },
+      "skillcorner/2006229": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18062922006704013,
+        "accuracy": 0.92626953125
+      },
+      "skillcorner/2006363": {
+        "sampled_rows": 2048,
+        "log_loss": 0.14168136447858976,
+        "accuracy": 0.95166015625
+      },
+      "skillcorner/2007448": {
+        "sampled_rows": 2048,
+        "log_loss": 0.16080778368734466,
+        "accuracy": 0.93505859375
+      },
+      "skillcorner/2007721": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15338253393416934,
+        "accuracy": 0.935546875
+      },
+      "skillcorner/2010085": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18962071567712369,
+        "accuracy": 0.91259765625
+      },
+      "skillcorner/2011166": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19090902172037688,
+        "accuracy": 0.92138671875
+      },
+      "skillcorner/2013725": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2572061433711824,
+        "accuracy": 0.890625
+      },
+      "skillcorner/2015213": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20485061644454172,
+        "accuracy": 0.91015625
+      },
+      "skillcorner/2016236": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20196526913331164,
+        "accuracy": 0.91162109375
+      },
+      "skillcorner/2017461": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20562222517763773,
+        "accuracy": 0.908203125
+      }
+    },
+    "sampled_training_rows": 1119616,
+    "heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.2244331746499264,
+      "accuracy": 0.8955078125
+    },
+    "v3_heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.2214830614081853,
+      "accuracy": 0.89599609375
+    },
+    "model_sha256": "6d87d804f816946fd45343d304e67aa8bb578f3a46734a0f68af7e6334373bb6",
+    "fitted_utc": "2026-11-13T09:48:56.021865+00:00"
+  },
+  "exclude__skillcorner__2015213": {
+    "excluded": "skillcorner/2015213",
+    "train": [
+      "original/idsse_J03WMX",
+      "original/idsse_J03WN1",
+      "original/idsse_J03WOH",
+      "original/idsse_J03WOY",
+      "original/idsse_J03WPY",
+      "original/idsse_J03WQQ",
+      "original/idsse_J03WR9",
+      "original/metrica_1",
+      "original/metrica_2",
+      "skillcorner/1874553",
+      "skillcorner/1886347",
+      "skillcorner/1899585",
+      "skillcorner/1925299",
+      "skillcorner/1927964",
+      "skillcorner/1953632",
+      "skillcorner/1959846",
+      "skillcorner/1986691",
+      "skillcorner/1996435",
+      "skillcorner/1996436",
+      "skillcorner/2006229",
+      "skillcorner/2006363",
+      "skillcorner/2007448",
+      "skillcorner/2007721",
+      "skillcorner/2010085",
+      "skillcorner/2011166",
+      "skillcorner/2013725",
+      "skillcorner/2016236",
+      "skillcorner/2017461"
+    ],
+    "plan_sha256": "fdaee606952dd5002b4641193985f6569b6117d9530e3859165fa8d8892b2c38",
+    "rows_sha256": {
+      "original/idsse_J03WMX": "2466b2defc302a6de141305c7dba63da7e817e99696c91ee0dada6dc3b2554bd",
+      "original/idsse_J03WN1": "09c6ab011a50bc83f134df346d3990a7003e381bd608df04351bb2f51253cd10",
+      "original/idsse_J03WOH": "fe800fbed8132672a3ca706020970fe505ff1c5f668357b8c22893510f8fa916",
+      "original/idsse_J03WOY": "04a872423143a19b95c3571876df8dd979e6c38d592929d67a698c2fcb9aad4c",
+      "original/idsse_J03WPY": "a40d3855ba738960fe477b16ae7bdfbc10c7d3f08ecfe81737f440d8e3718cca",
+      "original/idsse_J03WQQ": "30cbfe347051b7a3b554bfd83bf3b6faad8433e4827276aee2337f47f30b80ed",
+      "original/idsse_J03WR9": "8dda2b1f2478fe57d849270dfafda14d6434e2552e0e293c6b2b6cc7b9ffd1c9",
+      "original/metrica_1": "eb575e4df4892372a4d7e0a97763e7d5544ae305b5bdf3a3089d62d9505e1281",
+      "original/metrica_2": "56fa4373b984f1154cf2f2c5c66d6d2037af689598372cffd9841ff2255b9001",
+      "skillcorner/1874553": "23c5874a7adf98c2ba059a6598aabf07b21e082236e4fedb501ea7c3aca04002",
+      "skillcorner/1886347": "d43dcadb3790dbe8e1fa8d1d76832037765c7695fad12c73a3d8b7e7c59aef9c",
+      "skillcorner/1899585": "03a565c2073ccf06ae4c118e81dcc43d490420dc0f72129ca487c761eca9f8f0",
+      "skillcorner/1925299": "fb443cd05bcebd8cc1cb425a3db7fe0a43fb5d477970f9f965593e38c01fc0cc",
+      "skillcorner/1927964": "4fc7094f3353b568dad6c60bbdc72c5c901822d4c7bd1ae689fb70765b3b7c4f",
+      "skillcorner/1953632": "69911ae858f583d41e2d35b16b9b3271c4487c186020790c95eda2ac7e99b79b",
+      "skillcorner/1959846": "e1607aa6f288b7018756b695c91a7e87703c176c2002e4cfae17166925b921f5",
+      "skillcorner/1986691": "43efa239339ad23b85df1c9553fab77b89c174eaac46511613b87d266aad5dd8",
+      "skillcorner/1996435": "408af1e90df479bc30dfc3aa3f661d36097c67ce3be9039a6bb6942417031859",
+      "skillcorner/1996436": "f61a9fae34f44eb5d0615802130ed81fa68cd929aac3a9b2fbb4732cb9cf476a",
+      "skillcorner/2006229": "6ca647a6be20f69d411bbc81c57194d52fe7f4f51fa261b7f6cd6c5692974004",
+      "skillcorner/2006363": "90838b370e5885a9f714aac4c574eefebec297d7ed0cee5c46d6543e46f33780",
+      "skillcorner/2007448": "91aa2ddc2c05b1de4fc065db62e1a74825eac4edd147453c1a4c35c0bfe481a9",
+      "skillcorner/2007721": "6bfcaa4db0b2fca9e18273ffd319dff23db52927e169ad537cc7ee869e5c37d8",
+      "skillcorner/2010085": "61f5b54f643e7ca61fb5e3b5378cde56c9af9b24633350576249e721f4604cd0",
+      "skillcorner/2011166": "a4de80e7cc86ae96735c63c7f5848776ddb957e59c7b1fb102e80c1ada452ed6",
+      "skillcorner/2013725": "6087ea102ac6db5d70d6614f500bae12752ccca3a88e58f32f542e319d109e24",
+      "skillcorner/2016236": "ee598ffecfd8b9c32cba1c9b8f45d3da784db216788aef3a6786f80e1b15a34b",
+      "skillcorner/2017461": "e909b225e6172c42029534135ebcd180e9b011862d757cac9388e6055094be4a"
+    },
+    "training_diagnostic": {
+      "original/idsse_J03WMX": {
+        "sampled_rows": 2048,
+        "log_loss": 0.24386348625711085,
+        "accuracy": 0.900390625
+      },
+      "original/idsse_J03WN1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2817207144829228,
+        "accuracy": 0.87353515625
+      },
+      "original/idsse_J03WOH": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20278400743999522,
+        "accuracy": 0.91015625
+      },
+      "original/idsse_J03WOY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2428302466426625,
+        "accuracy": 0.8876953125
+      },
+      "original/idsse_J03WPY": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2067858166229698,
+        "accuracy": 0.90771484375
+      },
+      "original/idsse_J03WQQ": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19918640988955705,
+        "accuracy": 0.9130859375
+      },
+      "original/idsse_J03WR9": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18790904502376232,
+        "accuracy": 0.916015625
+      },
+      "original/metrica_1": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13968912631824837,
+        "accuracy": 0.94775390625
+      },
+      "original/metrica_2": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11972324891872906,
+        "accuracy": 0.9541015625
+      },
+      "skillcorner/1874553": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15670279422425754,
+        "accuracy": 0.9345703125
+      },
+      "skillcorner/1886347": {
+        "sampled_rows": 2048,
+        "log_loss": 0.13992864991803627,
+        "accuracy": 0.9404296875
+      },
+      "skillcorner/1899585": {
+        "sampled_rows": 2048,
+        "log_loss": 0.17796031115732214,
+        "accuracy": 0.9267578125
+      },
+      "skillcorner/1925299": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1694386834765508,
+        "accuracy": 0.92919921875
+      },
+      "skillcorner/1927964": {
+        "sampled_rows": 2048,
+        "log_loss": 0.11835331878006103,
+        "accuracy": 0.95068359375
+      },
+      "skillcorner/1953632": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1328098760559614,
+        "accuracy": 0.947265625
+      },
+      "skillcorner/1959846": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1651741715970081,
+        "accuracy": 0.93115234375
+      },
+      "skillcorner/1986691": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18054482621556955,
+        "accuracy": 0.92431640625
+      },
+      "skillcorner/1996435": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1494763472150631,
+        "accuracy": 0.947265625
+      },
+      "skillcorner/1996436": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19128272534007845,
+        "accuracy": 0.9150390625
+      },
+      "skillcorner/2006229": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1770684967856807,
+        "accuracy": 0.92919921875
+      },
+      "skillcorner/2006363": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1416026343941017,
+        "accuracy": 0.94970703125
+      },
+      "skillcorner/2007448": {
+        "sampled_rows": 2048,
+        "log_loss": 0.1607068379568074,
+        "accuracy": 0.93359375
+      },
+      "skillcorner/2007721": {
+        "sampled_rows": 2048,
+        "log_loss": 0.15516434758072278,
+        "accuracy": 0.93798828125
+      },
+      "skillcorner/2010085": {
+        "sampled_rows": 2048,
+        "log_loss": 0.18948057640254368,
+        "accuracy": 0.9140625
+      },
+      "skillcorner/2011166": {
+        "sampled_rows": 2048,
+        "log_loss": 0.19387111348039224,
+        "accuracy": 0.91650390625
+      },
+      "skillcorner/2013725": {
+        "sampled_rows": 2048,
+        "log_loss": 0.25477860616548176,
+        "accuracy": 0.8896484375
+      },
+      "skillcorner/2016236": {
+        "sampled_rows": 2048,
+        "log_loss": 0.20109427821989617,
+        "accuracy": 0.91064453125
+      },
+      "skillcorner/2017461": {
+        "sampled_rows": 2048,
+        "log_loss": 0.2065867800345579,
+        "accuracy": 0.91162109375
+      }
+    },
+    "sampled_training_rows": 1117592,
+    "heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.22396710446286955,
+      "accuracy": 0.89794921875
+    },
+    "v3_heldout_diagnostic": {
+      "sampled_rows": 2048,
+      "log_loss": 0.22940158296359692,
+      "accuracy": 0.89794921875
+    },
+    "model_sha256": "2d8d2773706c2c5d75a5112e4b60d9061c84efb42b5e9f5a160848e92cd3a50e",
+    "fitted_utc": "2026-11-13T09:58:44.353652+00:00"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "status": "REQUEST SUBMITTED; owner approval pending",
+  "dataset": "https://huggingface.co/datasets/OpenSportsLab/PFF",
+  "provider_release": "https://www.blog.fc.pff.com/blog/pff-fc-release-2022-world-cup-data",
+  "games": 64,
+  "gated_files_downloaded": false,
+  "split": "pff_protocol.json",
+  "source_format_checked": "Public kloppy10517 schema fixture only; no full match scored",
+  "limitations": "Mirror uses a reformatted parquet/events representation. Availability of observed ball coordinates and event-derived H/A/D must be verified before model experiments. Dataset card lists GPL-3.0; original PFF source terms also need checking after access."
+}
