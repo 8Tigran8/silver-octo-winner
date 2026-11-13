@@ -1,0 +1,29 @@
+{
+  "source": "University of Groningen / SciSports WCSF2023",
+  "repository": "https://github.com/MatKempeGroningen/WCSF_SolutionRoom",
+  "revision": "1c9ba798f98a9fffb16081a5d3965774d4e5662c",
+  "terms": "Public research sample, attribution requested; no explicit licence file. Validation-only, do not redistribute raw data.",
+  "files": [
+    {
+      "path": "wcsf/README.md",
+      "url": "https://raw.githubusercontent.com/MatKempeGroningen/WCSF_SolutionRoom/1c9ba798f98a9fffb16081a5d3965774d4e5662c/README.md",
+      "size": 6935,
+      "git_blob_sha1": "166381db1f8cf94715e0f02e13ec1ccb936826aa",
+      "sha256": "c96cf55603b0b51a5229e988284a878043a7a9e374f5724e2563d23a00ca8f41"
+    },
+    {
+      "path": "wcsf/positions_FIRST_HALF.csv.zip",
+      "url": "https://raw.githubusercontent.com/MatKempeGroningen/WCSF_SolutionRoom/1c9ba798f98a9fffb16081a5d3965774d4e5662c/positions_FIRST_HALF.csv.zip",
+      "size": 22704565,
+      "git_blob_sha1": "d7de2a38f5650150684b1008aa7f4fd28b85d777",
+      "sha256": "e7e5d753dba30549a01f2e37695556dc3cdf62043e8e3e6447a71e77da30fede"
+    },
+    {
+      "path": "wcsf/positions_SECOND_HALF.csv.zip",
+      "url": "https://raw.githubusercontent.com/MatKempeGroningen/WCSF_SolutionRoom/1c9ba798f98a9fffb16081a5d3965774d4e5662c/positions_SECOND_HALF.csv.zip",
+      "size": 23746663,
+      "git_blob_sha1": "66fc3ee2966aaf3392d4a327ba3f49385e9c7032",
+      "sha256": "8653a296952a717eb1f106fce77bf497f28e34cae673f7e3ae6baa61908751ae"
+    }
+  ]
+}
