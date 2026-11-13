@@ -1,0 +1,48 @@
+{
+  "registered_utc": "2026-11-13T10:03:11.729795+00:00",
+  "reason": "Data29 improves held-out conditional-head loss but only +.00067 whole-spell F1; test a bounded temporal/calibration family",
+  "prior_result_seen": "Fixed 29-game development result; not a fresh confirmation",
+  "candidates": {
+    "c9_t0.75": {
+      "cost": 9,
+      "temperature": 0.75
+    },
+    "c9_t1": {
+      "cost": 9,
+      "temperature": 1.0
+    },
+    "c9_t1.25": {
+      "cost": 9,
+      "temperature": 1.25
+    },
+    "c12_t0.75": {
+      "cost": 12,
+      "temperature": 0.75
+    },
+    "c12_t1": {
+      "cost": 12,
+      "temperature": 1.0
+    },
+    "c12_t1.25": {
+      "cost": 12,
+      "temperature": 1.25
+    },
+    "c15_t0.75": {
+      "cost": 15,
+      "temperature": 0.75
+    },
+    "c15_t1": {
+      "cost": 15,
+      "temperature": 1.0
+    },
+    "c15_t1.25": {
+      "cost": 15,
+      "temperature": 1.25
+    }
+  },
+  "change": "Fixed already-trained29-game heads and50:50 mixture; conditional H/A logit temperature and four equal transition costs only; qD/durations unchanged",
+  "evaluation": "Same original19 whole-game exclusions and paired v3 reference; never scored on the ten added training games",
+  "gate": "Weighted official spellF1 gain>=.005 versusv3; no mean loss>.005 in any of five cohorts. Ties prefer temperature1 and lower cost. One selected candidate frozen; no fresh test in this research study.",
+  "release": "Keepv3 until a separate prospective third-provider confirmation and technical reproduction. PFF holdout not touched or redefined.",
+  "no_competition_GT": true
+}
