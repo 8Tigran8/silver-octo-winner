@@ -1,0 +1,88 @@
+{
+  "registered_utc": "2026-11-13T07:44:52.543264+00:00",
+  "selected_candidate": "expanded50",
+  "fresh_scores_seen": false,
+  "secondary_scores_seen": false,
+  "plan_sha256": "0f36291a4259f78b448d1d9bab0ca54c1b1b014a55e2cc0355449927296c5592",
+  "secondary_protocol_sha256": "1dea50c0701449dc1fd27647af9cab0c6c35a3a09e2baea68a9bd8cf8f46fc8b",
+  "score_order": [
+    "known/matched_seed0",
+    "known/label_blind_seed1",
+    "known/stress_seed1",
+    "development/natural_detected",
+    "development/label_blind_seed7"
+  ],
+  "scores": {
+    "expanded100": {
+      "means": [
+        0.6339587018855551,
+        0.5350904903660761,
+        0.49944254874152233,
+        0.5562341776620109,
+        0.48217204453014983
+      ],
+      "weighted": 0.5682828232658694,
+      "gain": 0.013917197701537987,
+      "nonregression_pass": false,
+      "pass": false
+    },
+    "expanded25": {
+      "means": [
+        0.6444739231448795,
+        0.5431405231694336,
+        0.5048369913138835,
+        0.5287271895733704,
+        0.45341793869572633
+      ],
+      "weighted": 0.5628466995456579,
+      "gain": 0.00848107398132647,
+      "nonregression_pass": true,
+      "pass": true
+    },
+    "expanded50": {
+      "means": [
+        0.6414464779657619,
+        0.5419021503910881,
+        0.5105315752767322,
+        0.5588501869181337,
+        0.479980504248921
+      ],
+      "weighted": 0.5727251594979333,
+      "gain": 0.0183595339336019,
+      "nonregression_pass": true,
+      "pass": true
+    },
+    "expanded_taper100": {
+      "means": [
+        0.642898872203148,
+        0.5459122241515627,
+        0.5056420291378834,
+        0.5145896164329418,
+        0.4502211067477032
+      ],
+      "weighted": 0.5593041383477007,
+      "gain": 0.004938512783369209,
+      "nonregression_pass": true,
+      "pass": false
+    },
+    "v2": {
+      "means": [
+        0.643231855695781,
+        0.5426119327022039,
+        0.5043512537889125,
+        0.5119251247726204,
+        0.4308273589552708
+      ],
+      "weighted": 0.5543656255643314,
+      "gain": 0.0,
+      "nonregression_pass": true,
+      "pass": false
+    }
+  },
+  "candidate_spec": {
+    "weight": 0.5,
+    "gate": "all"
+  },
+  "model_sha256": "9f0688b4a6197d7134153993576a172000e42ae40619174819fbfcf62dc7cf18",
+  "baseline_checkpoint_sha256": "f2f33ae6ac086d976ed9712110e542ad68588ed489d0c0fc212a47635731c682"
+}

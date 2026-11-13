@@ -26,5 +26,18 @@ class ExpandedTests(unittest.TestCase):
         np.testing.assert_array_equal(blended[seen],old[seen])
         self.assertTrue(((blended>=old)&(blended<=new)).all())
 
+    def test_independent_periods_make_features_label_invariant(self):
+        players=np.zeros((300,22,3),np.float32)
+        players[:,:11,0]=.25;players[:,11:,0]=.75
+        players[:,:,1]=np.linspace(.1,.9,22)
+        data={"players":players,"ball":np.tile([.5,.5,0.],(300,1)),
+              "slot_team":np.repeat([0,1],11),"pitch":(105.,68.),"gt":np.zeros(300,np.int8)}
+        before,swapped,names=expanded.feature_pair(data,[(0,150),(150,300)])
+        data["gt"][:]=3
+        after,after_swapped,after_names=expanded.feature_pair(data,[(0,150),(150,300)])
+        self.assertEqual(names,after_names)
+        np.testing.assert_allclose(before,after,equal_nan=True)
+        np.testing.assert_allclose(swapped,after_swapped,equal_nan=True)
+
 
 if __name__=="__main__":unittest.main()

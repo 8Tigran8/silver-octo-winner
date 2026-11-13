@@ -1,0 +1,188 @@
+{
+  "DFL_source_dates": "2022/2023; distinct from European 2019/2020 release",
+  "additional_SkillCorner_source": "2024/2025; distinct dates",
+  "anonymized_Metrica_check": "Heuristic raw trajectory comparison, first-half first30min, +/-90s and four axis reflections; not a proof of anonymized source identities",
+  "flag_rule": "median distance<8m over>=300 observed seconds",
+  "comparisons": [
+    {
+      "anonymized_training_game": "metrica_1",
+      "fresh_game": "2068",
+      "best_alignment": {
+        "median_ball_distance_m": 32.92024323505594,
+        "lag_s": -75,
+        "compared_seconds": 513
+      },
+      "potential_duplicate": false
+    },
+    {
+      "anonymized_training_game": "metrica_1",
+      "fresh_game": "2269",
+      "best_alignment": {
+        "median_ball_distance_m": 31.82244189246577,
+        "lag_s": -70,
+        "compared_seconds": 564
+      },
+      "potential_duplicate": false
+    },
+    {
+      "anonymized_training_game": "metrica_1",
+      "fresh_game": "2417",
+      "best_alignment": {
+        "median_ball_distance_m": 30.750195426292606,
+        "lag_s": 7,
+        "compared_seconds": 652
+      },
+      "potential_duplicate": false
+    },
+    {
+      "anonymized_training_game": "metrica_1",
+      "fresh_game": "2440",
+      "best_alignment": {
+        "median_ball_distance_m": 30.582840307226967,
+        "lag_s": 54,
+        "compared_seconds": 616
+      },
+      "potential_duplicate": false
+    },
+    {
+      "anonymized_training_game": "metrica_1",
+      "fresh_game": "3442",
+      "best_alignment": {
+        "median_ball_distance_m": 31.63237711431431,
+        "lag_s": 45,
+        "compared_seconds": 760
+      },
+      "potential_duplicate": false
+    },
+    {
+      "anonymized_training_game": "metrica_1",
+      "fresh_game": "2841",
+      "best_alignment": {
+        "median_ball_distance_m": 30.353893230258752,
+        "lag_s": 63,
+        "compared_seconds": 637
+      },
+      "potential_duplicate": false
+    },
+    {
+      "anonymized_training_game": "metrica_1",
+      "fresh_game": "3749",
+      "best_alignment": {
+        "median_ball_distance_m": 31.876661821744424,
+        "lag_s": -55,
+        "compared_seconds": 453
+      },
+      "potential_duplicate": false
+    },
+    {
+      "anonymized_training_game": "metrica_1",
+      "fresh_game": "3518",
+      "best_alignment": {
+        "median_ball_distance_m": 33.25988908028965,
+        "lag_s": 72,
+        "compared_seconds": 612
+      },
+      "potential_duplicate": false
+    },
+    {
+      "anonymized_training_game": "metrica_1",
+      "fresh_game": "4039",
+      "best_alignment": {
+        "median_ball_distance_m": 33.44631732899964,
+        "lag_s": 30,
+        "compared_seconds": 536
+      },
+      "potential_duplicate": false
+    },
+    {
+      "anonymized_training_game": "metrica_2",
+      "fresh_game": "2068",
+      "best_alignment": {
+        "median_ball_distance_m": 31.978466558662173,
+        "lag_s": -41,
+        "compared_seconds": 613
+      },
+      "potential_duplicate": false
+    },
+    {
+      "anonymized_training_game": "metrica_2",
+      "fresh_game": "2269",
+      "best_alignment": {
+        "median_ball_distance_m": 32.957098062298314,
+        "lag_s": -32,
+        "compared_seconds": 650
+      },
+      "potential_duplicate": false
+    },
+    {
+      "anonymized_training_game": "metrica_2",
+      "fresh_game": "2417",
+      "best_alignment": {
+        "median_ball_distance_m": 32.08558990308754,
+        "lag_s": 70,
+        "compared_seconds": 678
+      },
+      "potential_duplicate": false
+    },
+    {
+      "anonymized_training_game": "metrica_2",
+      "fresh_game": "2440",
+      "best_alignment": {
+        "median_ball_distance_m": 33.20140686591123,
+        "lag_s": 28,
+        "compared_seconds": 705
+      },
+      "potential_duplicate": false
+    },
+    {
+      "anonymized_training_game": "metrica_2",
+      "fresh_game": "3442",
+      "best_alignment": {
+        "median_ball_distance_m": 31.6597521283673,
+        "lag_s": -49,
+        "compared_seconds": 874
+      },
+      "potential_duplicate": false
+    },
+    {
+      "anonymized_training_game": "metrica_2",
+      "fresh_game": "2841",
+      "best_alignment": {
+        "median_ball_distance_m": 32.99087606877418,
+        "lag_s": -61,
+        "compared_seconds": 776
+      },
+      "potential_duplicate": false
+    },
+    {
+      "anonymized_training_game": "metrica_2",
+      "fresh_game": "3749",
+      "best_alignment": {
+        "median_ball_distance_m": 32.15645594656738,
+        "lag_s": 38,
+        "compared_seconds": 546
+      },
+      "potential_duplicate": false
+    },
+    {
+      "anonymized_training_game": "metrica_2",
+      "fresh_game": "3518",
+      "best_alignment": {
+        "median_ball_distance_m": 31.929554199523555,
+        "lag_s": -50,
+        "compared_seconds": 755
+      },
+      "potential_duplicate": false
+    },
+    {
+      "anonymized_training_game": "metrica_2",
+      "fresh_game": "4039",
+      "best_alignment": {
+        "median_ball_distance_m": 33.02380011412029,
+        "lag_s": -66,
+        "compared_seconds": 724
+      },
+      "potential_duplicate": false
+    }
+  ]
+}

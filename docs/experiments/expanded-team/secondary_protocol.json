@@ -1,0 +1,20 @@
+{
+  "registered_utc": "2026-11-13T07:37:02.525969+00:00",
+  "cohort": [
+    "1874553",
+    "1886347",
+    "1899585",
+    "1927964",
+    "1953632",
+    "1986691",
+    "1996435",
+    "2006363",
+    "2007721",
+    "2016236"
+  ],
+  "training_exposure": "No weights of expanded head or original baseline train on these games",
+  "historical_exposure": "Used previously to confirm v2; not pristine independent validation of the overall selection history",
+  "timing": "Only one selected candidate evaluated after freezing selection; cannot choose a runner-up",
+  "adoption_gate": "Full H/A/D mean spellF1 natural gain >=0 and additional label-blind mean change >=-.005; other development/fresh gates remain required",
+  "purpose": "Check complete-task regression because European references lack D labels"
+}
