@@ -8,6 +8,13 @@ ROOT=Path(__file__).resolve().parents[1]
 GEOMETRY=['x','y','group_id','timestamp_ms','x_ball','y_ball','player_id']
 
 
+def unanimous_reference(df):
+    alive=df.AliveFlag.to_numpy();owner=df.PossessionFlag.to_numpy();df=df.copy()
+    df['reference_label']=np.where(alive==0,2,np.where((alive==1)&(owner==1),0,np.where((alive==1)&(owner==2),1,3))).astype(np.int8)
+    grouped=df.groupby('timestamp_ms')['reference_label'];values=grouped.first();conflict=grouped.nunique(dropna=False)>1;values.loc[conflict]=3
+    return values,int(conflict.sum())
+
+
 def half(path):
     with zipfile.ZipFile(path) as z:
         name=next(n for n in z.namelist() if n.endswith('.csv') and not n.startswith('__'))
@@ -55,16 +62,19 @@ def labels(folder,selection_path):
     from quality_audit import sha
     selection=json.loads(Path(selection_path).read_text())
     if selection['plan_sha256']!=sha(ROOT/'docs/experiments/temporal/plan.json'):raise ValueError('No frozen candidate')
-    gt_parts=[]
+    gt_parts=[];quality=[]
     for name in ['positions_FIRST_HALF.csv.zip','positions_SECOND_HALF.csv.zip']:
         with zipfile.ZipFile(Path(folder)/name) as z:
             name=next(n for n in z.namelist() if n.endswith('.csv') and not n.startswith('__'))
             with z.open(name) as f:df=pd.read_csv(f,usecols=['timestamp_ms','AliveFlag','PossessionFlag'])
-        grouped=df.groupby('timestamp_ms')
-        if (grouped[['AliveFlag','PossessionFlag']].nunique(dropna=False)>1).any().any():raise ValueError('Conflicting source labels within frame')
-        d=grouped.first();start=int(d.index.min());n=(int(d.index.max())-start)//100+1;gt=np.full(n,3,np.int8);ix=np.round((d.index.to_numpy()-start)/100).astype(int)
-        alive=d.AliveFlag.to_numpy();owner=d.PossessionFlag.to_numpy();values=np.where(alive==0,2,np.where((alive==1)&(owner==1),0,np.where((alive==1)&(owner==2),1,3))).astype(np.int8);gt[ix]=values
-        pos=np.arange(int((n-1)*2.5)+1)/2.5;gt_parts.append(gt[np.floor(pos).astype(int)])
+        d,conflicts=unanimous_reference(df)
+        # Source rows occasionally disagree at the same timestamp. Never choose
+        # a majority or a model-favoured label. Unanimous-reference frames only.
+        start=int(d.index.min());n=(int(d.index.max())-start)//100+1;gt=np.full(n,3,np.int8);ix=np.round((d.index.to_numpy()-start)/100).astype(int);gt[ix]=d.to_numpy()
+        pos=np.arange(int((n-1)*2.5)+1)/2.5;up=gt[np.floor(pos).astype(int)];gt_parts.append(up)
+        quality.append({'source_timestamps':len(d),'ambiguous_source_frames':conflicts,'upsampled_frames':len(up),'known_reference_frames':int((up<3).sum()),'unknown_reference_frames':int((up==3).sum())})
+    out=ROOT/'reports/temporal/external/wcsf_reference_quality.json'
+    out.write_text(json.dumps({'policy':'Map each source row toH/A/D, require unanimity within timestamp; contradictory/unknown frames remainX. Dead ownership does not matter. No majority vote or model dependence.','halves':quality},indent=2)+'\n')
     return np.concatenate([gt_parts[0],np.full(250,3,np.int8),gt_parts[1]])
 
 

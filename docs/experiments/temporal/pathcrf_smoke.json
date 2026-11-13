@@ -1,0 +1,13 @@
+{
+  "source": "Official PathCRF140, MPL2.0",
+  "revision": "1b7c6f85a6b78c92e4543fde72ca2b86a933f997",
+  "weights_sha256": "c82235a17416354b5544f85721ca850304765737a2d9d5435dcdefd52a0d3700",
+  "safe_weights_only_load": true,
+  "synthetic_inference_shape": [
+    1,
+    50
+  ],
+  "finite_logits": true,
+  "seconds": 0.10467533301562071,
+  "quality": "Not evaluated: synthetic compatibility smoke only. Inference expects finite stable player trajectories; training/eval windows defined in play in paper. No task metric inferred from smoke."
+}

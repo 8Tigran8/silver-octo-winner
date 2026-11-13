@@ -1,0 +1,3 @@
+# Frozen external-trained v4 model assets
+
+These are team-generated learned parameters trained only on public matches, before the new WCSF comparison. They contain no organizer match inputs, labels or fitted target statistics. The default v4 command loads verified frozen weights and predicts on CPU; it does not retrain. Training source revisions, source terms, game exclusions and generation code are documented in the technical method and temporal experiment report. PyTorch state is loaded with weights_only=True; both HGB assets are locally generated sklearn objects whose hashes are checked before loading.

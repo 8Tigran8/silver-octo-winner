@@ -1,0 +1,122 @@
+{
+  "cohort": "wcsf",
+  "selection_sha256": "4fcfae43c437317f02323bc1946efccac86881835cd50112b029564a88937036",
+  "records": [
+    {
+      "match": "wcsf",
+      "scenario": "natural_detected",
+      "candidate": "v3",
+      "spell_f1_mean": 0.5368047337278107,
+      "macro_f1": 0.6774195771956778,
+      "n_gt_spells": 411,
+      "n_pred_spells": 434,
+      "per_class": {
+        "H": {
+          "precision": 0.6249566122874002,
+          "recall": 0.9471538478399053,
+          "f1": 0.7530387654987931,
+          "support": 45623
+        },
+        "A": {
+          "precision": 0.5877393511042134,
+          "recall": 0.915787065782164,
+          "f1": 0.7159755754835083,
+          "support": 30601
+        },
+        "D": {
+          "precision": 0.9973424449506454,
+          "recall": 0.39243512944234477,
+          "f1": 0.563244390604732,
+          "support": 66941
+        }
+      }
+    },
+    {
+      "match": "wcsf",
+      "scenario": "natural_detected",
+      "candidate": "fusion50",
+      "spell_f1_mean": 0.6857849196538937,
+      "macro_f1": 0.9102227205958018,
+      "n_gt_spells": 411,
+      "n_pred_spells": 398,
+      "per_class": {
+        "H": {
+          "precision": 0.8698631513373389,
+          "recall": 0.9487977555180501,
+          "f1": 0.9076174700689829,
+          "support": 45623
+        },
+        "A": {
+          "precision": 0.8426397459708825,
+          "recall": 0.9192183261984902,
+          "f1": 0.879264804713752,
+          "support": 30601
+        },
+        "D": {
+          "precision": 0.9982005998000666,
+          "recall": 0.8949970869870483,
+          "f1": 0.9437858870046706,
+          "support": 66941
+        }
+      }
+    },
+    {
+      "match": "wcsf",
+      "scenario": "label_blind_seed7",
+      "candidate": "v3",
+      "spell_f1_mean": 0.4586525759577279,
+      "macro_f1": 0.7101854932523682,
+      "n_gt_spells": 411,
+      "n_pred_spells": 346,
+      "per_class": {
+        "H": {
+          "precision": 0.7397456087219867,
+          "recall": 0.6692457751572671,
+          "f1": 0.7027319385946742,
+          "support": 45623
+        },
+        "A": {
+          "precision": 0.7053661947212025,
+          "recall": 0.6593575373353812,
+          "f1": 0.681586325710232,
+          "support": 30601
+        },
+        "D": {
+          "precision": 0.7139387323463192,
+          "recall": 0.7815987212620068,
+          "f1": 0.7462382154521985,
+          "support": 66941
+        }
+      }
+    },
+    {
+      "match": "wcsf",
+      "scenario": "label_blind_seed7",
+      "candidate": "fusion50",
+      "spell_f1_mean": 0.5702247191011237,
+      "macro_f1": 0.8397798813925758,
+      "n_gt_spells": 411,
+      "n_pred_spells": 301,
+      "per_class": {
+        "H": {
+          "precision": 0.8891097079318759,
+          "recall": 0.7746750542489533,
+          "f1": 0.8279569892473118,
+          "support": 45623
+        },
+        "A": {
+          "precision": 0.8322400258092268,
+          "recall": 0.7587006960556845,
+          "f1": 0.7937707272043489,
+          "support": 30601
+        },
+        "D": {
+          "precision": 0.8466438020578148,
+          "recall": 0.9551097234878475,
+          "f1": 0.8976119277260667,
+          "support": 66941
+        }
+      }
+    }
+  ]
+}

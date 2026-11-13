@@ -19,6 +19,12 @@
       "lag_seconds": 112,
       "paired_observed_seconds": 1264,
       "potential_duplicate": false
+    },
+    "metrica_3": {
+      "median_distance_m": 35.63496687727784,
+      "lag_seconds": -94,
+      "paired_observed_seconds": 1227,
+      "potential_duplicate": false
     }
   },
   "eligible_for_anonymous_research_diagnostic": true

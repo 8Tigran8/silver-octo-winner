@@ -1,4 +1,7 @@
-"""Train and infer twice from fresh tracked-source copies; compare exact CSV bytes.
+"""Regenerate twice from fresh source copies and compare exact CSV bytes.
+
+V1-v3 repeat public-data fitting; v4 verifies frozen external-trained weights
+and runs CPU inference. The receipt records this distinction.
 
 Logs, CSVs and the receipt remain local under reports/. Public GT is never scored.
 Run after committing the intended source revision and fetching external/reference inputs.
@@ -35,7 +38,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data-dir", type=Path, required=True)
     parser.add_argument("--jobs", type=int, choices=range(1, 9), default=2)
-    parser.add_argument("--method", choices=["v1", "v2", "v3"], default="v1")
+    parser.add_argument("--method", choices=["v1", "v2", "v3", "v4"], default="v1")
     args = parser.parse_args()
     data = args.data_dir.resolve()
     commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
@@ -45,7 +48,14 @@ def main():
     # Include exactly the files used by the main method, not optional videos.
     inputs = [data / "tactical" / ("BAR-ATH_tactical_atd." + ext) for ext in ("xml", "txt")]
     manifest = json.loads((ROOT / "tools/external_sources.json").read_text())
-    inputs += [ROOT / "external" / item["path"] for item in manifest["files"]]
+    if args.method == "v4":
+        frozen=json.loads((ROOT/'assets/v4/manifest.json').read_text())
+        assets=[ROOT/'assets/v4'/item['path'] for item in frozen['files']]
+        if any(not p.is_file() or sha256(p)!=item['sha256'] for p,item in zip(assets,frozen['files'])):
+            parser.error('Frozen external-trained model asset verification failed')
+        inputs += assets
+    else:
+        inputs += [ROOT / "external" / item["path"] for item in manifest["files"]]
     extra = []
     if args.method == "v3":
         names = set(json.loads((ROOT / "mtah/expanded_team_training.json").read_text())["skillcorner"])
@@ -56,7 +66,7 @@ def main():
         parser.error("Required local tracking or pinned external inputs are missing")
     sys.path.insert(0, str(ROOT / "tools"))
     from fetch_external import check
-    if not all(check(ROOT / "external" / item["path"], item) for item in manifest["files"] + extra):
+    if args.method != 'v4' and not all(check(ROOT / "external" / item["path"], item) for item in manifest["files"] + extra):
         parser.error("External source verification failed")
     references = json.loads((ROOT / "tools/reference_sources.json").read_text())
     if not all(check(ROOT / item["path"], item) for item in references["files"]):
@@ -68,6 +78,8 @@ def main():
     receipt = {"status": "IN_PROGRESS", "source_commit": commit,
                "official_commit": references["commit"], "jobs": args.jobs, "method": args.method,
                "input_sha256": before, "runs": [], "quality": "Not assessed"}
+    receipt['execution_mode']='frozen_external_weights_cpu_inference' if args.method=='v4' else 'raw_input_training_and_inference'
+    receipt['training_repeated']=args.method!='v4'
     try:
         archive = folder / "source.tar"
         subprocess.run(["git", "archive", "--format=tar", "-o", str(archive), commit], cwd=ROOT, check=True)
@@ -82,14 +94,15 @@ def main():
                 clean = Path(temporary)
                 with tarfile.open(archive) as source:
                     source.extractall(clean, filter="data")
-                (clean / "external").mkdir()
-                for dataset in (("idsse", "metrica", "skillcorner") if args.method == "v3" else ("idsse", "metrica")):
-                    (clean / "external" / dataset).symlink_to(ROOT / "external" / dataset,
-                                                              target_is_directory=True)
-                for script in ("tools/ext_idsse.py", "tools/ext_metrica.py"):
-                    print(f"Run {number}: converting raw external inputs ({script})", flush=True)
-                    run([sys.executable, script], clean, env, log)
-                print(f"Run {number}: training and full-match inference", flush=True)
+                if args.method!='v4':
+                    (clean / "external").mkdir()
+                    for dataset in (("idsse", "metrica", "skillcorner") if args.method == "v3" else ("idsse", "metrica")):
+                        (clean / "external" / dataset).symlink_to(ROOT / "external" / dataset,
+                                                                  target_is_directory=True)
+                    for script in ("tools/ext_idsse.py", "tools/ext_metrica.py"):
+                        print(f"Run {number}: converting raw external inputs ({script})", flush=True)
+                        run([sys.executable, script], clean, env, log)
+                print(f"Run {number}: {'verified frozen-weight CPU inference' if args.method=='v4' else 'training and full-match inference'}", flush=True)
                 run([sys.executable, "run.py", args.method, "--jobs", str(args.jobs), "--output", str(output)],
                     clean, env, log)
                 validator = ROOT / "ref/official/evaluation/validate_submission.py"

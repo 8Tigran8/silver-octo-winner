@@ -13,7 +13,7 @@ from quality_audit import sha,read_feature
 from skillcorner_reader import read_match
 from legacy_skillcorner_reader import period_spans
 from mtah import degrade
-PLAN=ROOT/'docs/experiments/temporal/plan.json';OUT=ROOT/'reports/temporal';AUDIT=ROOT/'reports/quality_audit/380987b3029c'
+PLAN=ROOT/'docs/experiments/temporal/plan.json';OUT=Path(os.environ.get('MTAH_TEMPORAL_CACHE',str(ROOT/'reports/temporal')));AUDIT=ROOT/'reports/quality_audit/380987b3029c'
 
 
 def plan():return json.loads(PLAN.read_text())
@@ -42,10 +42,9 @@ def prepare(game):
         dest=folder(game,scenario);dest.mkdir(parents=True,exist_ok=True)
         if (dest/'meta.json').exists():continue
         if family=='original':
-            f=read_feature(AUDIT,name,scenario)
-            # Cached87 features used equivalent independent half spans.
-            if segments!=metrics.valid_runs(f['gt']):raise ValueError('Cached source half spans differ')
-            x,cols=context.extend(f['X'],f['cols'].tolist(),segments);xs,_=context.extend(f['Xs'],f['cols'].tolist(),segments);gt=f['gt']
+            seed,params,_=expanded.ORIGINAL_SCENARIOS[scenario]
+            data=clean if seed is None else degrade.degrade(clean,seed=seed,params=params)
+            x,xs,cols=expanded.feature_pair(data,segments);gt=data['gt']
         else:
             data=clean if scenario=='natural_detected' else degrade.degrade(clean,seed=7,params=expanded.BLIND)
             x,xs,cols=expanded.feature_pair(data,segments);gt=data['gt']

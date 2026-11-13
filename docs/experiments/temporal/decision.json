@@ -1,0 +1,66 @@
+{
+  "candidate": "v4 / fusion50",
+  "development_gate_pass": true,
+  "external_checks_pass": true,
+  "CV_games": 29,
+  "additional_conditional_games": 9,
+  "additional_Metrica_games": 1,
+  "new_WCSF_games": 1,
+  "total_distinct_screened_games": 40,
+  "fresh_final_test_limit": "Only WCSF is a new-source comparison in this cycle; anonymous provenance and reference conflicts limit certainty. Other cohorts reused. PFF remains unopened.",
+  "quality_recommendation": "Adopt only after CPU frozen-asset validation and two clean reproductions",
+  "external": {
+    "wcsf": {
+      "label_blind_seed7": {
+        "metric": "spell_f1_mean",
+        "v3": 0.4586525759577279,
+        "v4": 0.5702247191011237,
+        "gain": 0.11157214314339581,
+        "matches": 1,
+        "wins": 1,
+        "losses": 0
+      },
+      "natural_detected": {
+        "metric": "spell_f1_mean",
+        "v3": 0.5368047337278107,
+        "v4": 0.6857849196538937,
+        "gain": 0.14898018592608298,
+        "matches": 1,
+        "wins": 1,
+        "losses": 0
+      }
+    },
+    "european": {
+      "natural_detected": {
+        "metric": "all_conditional_team_macroF1",
+        "v3": 0.8372091684532744,
+        "v4": 0.8409807166071098,
+        "gain": 0.003771548153835464,
+        "matches": 9,
+        "wins": 8,
+        "losses": 1
+      }
+    },
+    "metrica3": {
+      "label_blind_seed7": {
+        "metric": "spell_f1_mean",
+        "v3": 0.39761194029850744,
+        "v4": 0.4613924050632912,
+        "gain": 0.06378046476478377,
+        "matches": 1,
+        "wins": 1,
+        "losses": 0
+      },
+      "natural_detected": {
+        "metric": "spell_f1_mean",
+        "v3": 0.5480631276901005,
+        "v4": 0.5526627218934911,
+        "gain": 0.004599594203390622,
+        "matches": 1,
+        "wins": 1,
+        "losses": 0
+      }
+    }
+  },
+  "reproduction": "PENDING until separate receipt"
+}

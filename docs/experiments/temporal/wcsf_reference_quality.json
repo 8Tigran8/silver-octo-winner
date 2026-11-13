@@ -1,0 +1,19 @@
+{
+  "policy": "Map each source row toH/A/D, require unanimity within timestamp; contradictory/unknown frames remainX. Dead ownership does not matter. No majority vote or model dependence.",
+  "halves": [
+    {
+      "source_timestamps": 28014,
+      "ambiguous_source_frames": 0,
+      "upsampled_frames": 70033,
+      "known_reference_frames": 70033,
+      "unknown_reference_frames": 0
+    },
+    {
+      "source_timestamps": 29360,
+      "ambiguous_source_frames": 110,
+      "upsampled_frames": 73398,
+      "known_reference_frames": 73132,
+      "unknown_reference_frames": 266
+    }
+  ]
+}

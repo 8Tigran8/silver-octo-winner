@@ -43,7 +43,7 @@ def score_files(paths, gt_path=None):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["baseline", "v0", "v1", "v2", "v3", "score", "summary"])
+    ap.add_argument("cmd", choices=["baseline", "v0", "v1", "v2", "v3", "v4", "score", "summary"])
     ap.add_argument("files", nargs="*")
     ap.add_argument("--window", type=int, default=50)
     ap.add_argument("--name", default=None)
@@ -68,6 +68,10 @@ def main():
     if args.cmd == "baseline":
         labels = baseline.run(d, window=args.window)
         name = args.name or ("baseline_smooth{}".format(args.window) if args.window else "baseline_raw")
+    elif args.cmd == "v4":
+        from mtah import v4
+        labels = v4.run(d)
+        name = args.name or "v4"
     elif args.cmd in ("v1", "v2", "v3"):
         from mtah.methods import boost_train
         models = boost_train.train(workers=args.jobs)

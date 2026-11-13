@@ -1,74 +1,86 @@
-# Ruses Cules: technical method
+# Ruses Cules: v4 technical method
 
-**V3 verified candidate, 13 November 2026. External validation and two clean-source reproductions passed.** V3 keeps the original dead-ball model and adds a team-only head trained on nineteen public matches. Repository publication and competition submission are separate release steps.
+**13 November2026. V4 temporal fusion passed the registered development and external checks; frozen-weight CPU reproduction is being completed.** The final local package and submission status are recorded separately. No hidden competition score is claimed.
 
-## Method and inputs
+## Approach and assets
 
-The command reads only the competition tactical EPTS XML/TXT. It maps input frame IDs 1..199319 to output frames 0..199318 and converts normalized positions to metres. Track slots are fragments, not persistent player identities. V3 does not use the supplied video, broadcast, homography or Smart Tagging. No hand correction or annotation of the provided match enters the method.
+We infer team possession and stoppages from the supplied automatic tactical EPTS XML/TXT. Input IDs1..199319 map to output frames0..199318. Normalized coordinates become pitch metres; track slots are fragments, not stable player identities. The method uses no video, homography or Smart Tagging and makes no manual correction of this match.
 
-We choose tabular boosting because the input already supplies numerical tracking, with missing ball/player observations and fragmented identities. The pipeline has two probability paths followed by a temporal decoder:
+A framewise classifier can lose possession continuity when the ball disappears. We add a learned temporal model and retain the externally validated boosted path through a fixed probability mixture:
 
 ```text
-Tracking -> 87 geometry/gap/motion features -> nine-game boosting + temporal stack -> qD, qH
-             + 21 observed-contact features -> nineteen-game team-only boosting -> rH
-                                                qD, 0.5*qH + 0.5*rH -> Viterbi -> CSV
+Tracking ->87geometry/gap/motion features ->nine-game boosted models+stack ->dead, home|live
+          +21observed-contact features ->nineteen-game team head ------->v3 probabilities
+          +108missing masks ->25second residual temporal network ------>neural probabilities
+                            fixed50/50 probability mixture ->duration Viterbi ->CSV
 ```
 
-The original path uses two `HistGradientBoostingClassifier` models: dead-ball probability and home possession conditional on live play. Each uses 250 iterations, learning rate 0.08, at most 31 leaves, minimum 200 samples per leaf, L2=1 and 128 bins. The temporal stack consumes first-stage logits, centered means and past/future shifts; its classifiers use 150 iterations, at most 15 leaves and minimum 400 samples per leaf. First-stage out-of-match predictions train this stack; final first-stage weights fit all nine original games. Seeds are fixed at zero, early stopping disabled, fitting single-threaded.
+The original path has two histogram gradient boosting classifiers (dead/live and conditional home/away), each250iterations, learning rate0.08,31leaves, minleaf200,L2=1,128bins. Its temporal stack uses150iterations,15leaves,minleaf400 and out-of-match first-stage predictions. Final original weights train on nine public games. The additional nineteen-game team head uses the original250-iteration settings and averages direct/team-swapped predictions. Its conditional probability is blended50/50 with the original stack; it does not replace that path's dead classifier.
 
-`mtah/features2.py` supplies 87 features: visibility/gap durations, ball position and speed, nearest-player distances/counts by team, team shape/activity and temporal summaries. Interpolation supplies features alongside gap indicators, not observations. Team attack direction is inferred from mean team positions within each half.
+The neural model consumes the same108geometry/contact-context features plus explicit108finite-value masks at5Hz. It has48channels and five residual blocks, each two3-tap convolutions with dilations1/2/4/8/16 and dropout0.15. The convolutional receptive field is125steps (25seconds); geometric features also contain noncausal observed-ball context. Two output logits model dead probability and home possession conditional on live play. Direct and team-swapped inference enforce home/away symmetry. V4 averages both neural probability channels50/50 with v3, before decoding.
 
-`mtah/possession_context.py` adds 21 features to the new team-only classifier: previous/following visible-frame team-distance margins, nearest distances/counts and estimated ball speeds; decayed endpoint evidence; endpoint agreement/change; visible-only rolling margins. These carries/windows reset at period boundaries. This classifier uses the original 250-iteration settings. Training and inference include team swaps; averaging direct and swapped predictions enforces home/away symmetry. We retain the original stacked qD and blend the two conditional home probabilities with fixed equal weights. No new dead-ball head is trained from SkillCorner labels.
+Training uses fixed-seed20261113,1500AdamW updates, learning rate0.001,weight decay0.001,batch16,256supervised5Hzsteps and64context steps on each side. Families are sampled50/50, then games/scenarios uniformly, with random team swaps. Means/stds fit only training-fold observations; std floors at0.01, standardized values clip to[-8,8], and missing values become zero with a separate mask. Unknown targets contribute no gradient. No validation-based early stopping is used. No match/team/player identity or source event field enters features.
 
-The duration-constrained Viterbi decoder has H, A, dead-after-H and dead-after-A internal states; both dead states output D. It aggregates five frames per step, uses transition costs 9 and one-second minimum live/dead durations. A final segment may truncate at a period boundary. Restart snapping is disabled. Original v1/v2 commands remain available.
+This is our tracking-based temporal implementation, informed by [temporal possession modelling](https://doi.org/10.1016/j.eswa.2023.119780). It is not a reproduction of that paper's confidential-data results. We inspected official PathCRF code/checkpoint and ran a synthetic compatibility check; PathCRF and video-demo weights are not part of v4. See the [research comparison](experiments/temporal/INDUSTRY.md).
 
-## Training data and label provenance
+## Training data and reference provenance
 
-The original path trains on nine matches, with 1,288,806 H/A/D-labelled frames before sampling. The added head uses 1,495,434 unique live-team frames across nineteen matches, producing 747,644 sampled examples after sensor augmentation and team swaps.
+Every trained component uses public games outside the provided match. The temporal branch uses29matches with4,244,331reference-period frames before5Hzsampling and scenario augmentation. The original and nineteen-game components retain their earlier training registries.
 
-| Public source | Games and amount | Labels and use |
+| Source | Amount and annotation | Use and terms |
 |---|---|---|
-| IDSSE / DFL / Sportec | Seven: J03WMX, J03WN1, J03WOH, J03WOY, J03WPY, J03WQQ, J03WR9 | Provider tracking `BallStatus` / `BallPossession`; original path uses H/A/D, new head uses H/A only |
-| Metrica Sports sample-data | Sample_Game_1 and Sample_Game_2; together with DFL, 735,744 live-team frames | Provider events automatically converted into possession/stoppage intervals; event-derived proxies differ from corrected tracking |
-| SkillCorner Open Data | Ten 2024/25 development matches listed in `mtah/expanded_team_training.json`; 759,690 live-team frames | Provider automatic possession-phase intervals supply H/A; these train only the new team head |
+| IDSSE/DFL/Sportec | Seven club games,1,002,644H/A/Dframes; provider tracking BallStatus/BallPossession | Original boosted path and new temporal branch; CC BY4.0 |
+| Metrica sample-data | Sample_Game1/2,286,162H/A/Dframes; provider events automatically converted into possession/stoppage intervals | Original boosted path and new temporal branch; event proxies, not corrected-tracking truth; source acknowledgement |
+| SkillCorner Open Data | Twenty A-League2024/25games,2,955,525reference-period frames; automatic phases provide H/A, their complement within metadata periods supplies a D proxy | Temporal branch uses all20; v3 team head uses its designated10development games only. Neural dead-proxy loss has weight0.25; original labels and known-live SkillCorner frames weight1. MIT; credit SkillCorner/PySport |
 
-Original input sampling uses every fourth frame. The new head uses matched-seed0 / label-blind-seed1 / clean versions of each original game, stride 12 each, and natural / label-blind-seed7 versions of each SkillCorner game, stride 8 each. `mtah/degrade.py` simulates ball gaps, position/speed noise and player fragmentation. Matched v2 simulation uses external live/dead labels to model sensor dropout; label-blind simulation chooses gaps from geometry. These are modelling assumptions, not evidence of the target's true label distribution.
+Sources: [IDSSE mirror](https://huggingface.co/datasets/pysport/idsse-data), revision`a715a38dfbaf5f58e431727c2b78d174101a703c`, [Bassek et al.](https://doi.org/10.1038/s41597-025-04505-y); [Metrica](https://github.com/metrica-sports/sample-data), revision`e706dd506b360d69d9d123d5b8026e7294b13996`; [SkillCorner](https://github.com/SkillCorner/opendata), revision`4340d274572876239c154c90bc507a9b3250a656`. Manifests pin filenames, sizes and hashes. Provider annotation workflows were not independently audited.
 
-IDSSE: [PySport mirror](https://huggingface.co/datasets/pysport/idsse-data), revision `a715a38dfbaf5f58e431727c2b78d174101a703c`, [Bassek et al. (2025)](https://doi.org/10.1038/s41597-025-04505-y), CC BY 4.0. Metrica: [sample-data](https://github.com/metrica-sports/sample-data), revision `e706dd506b360d69d9d123d5b8026e7294b13996`; we acknowledge Metrica Sports. SkillCorner: [Open Data](https://github.com/SkillCorner/opendata), revision `4340d274572876239c154c90bc507a9b3250a656`, MIT; credit SkillCorner/PySport. The source manifests pin URLs, sizes and hashes. Provider annotation workflows were not independently audited.
+Original games contribute matched-seed0,label-blind-seed1 and clean tracking scenarios. SkillCorner contributes natural detections and label-blind-seed7. Sensor augmentation simulates missing ball observations, noisy positions and fragmented player slots. Matched augmentation uses external labels to approximate sensor dropout; label-blind tests avoid that assumption. SkillCorner resampling preserves missing detections and never uses extrapolated positions as observations. All augmentations of a game remain in its training/test group.
 
-SkillCorner input uses only detected positions. Adjacent finite observations resample from 10 to 25 Hz, preserving missing data. Automatic phase intervals intersect their declared metadata period. Their complement is a D proxy for evaluation, not a target copied into predictions. Neither phase labels nor tracking possession fields enter model features. For this verified v3 method, the other ten modern SkillCorner games and nine European 2019/20 games stay outside training; the latter have H/A references only where automatic ownership is known, with unknown ownership X and no invented D labels.
+## Possession rules and decoder
 
-## Possession rules and evaluation
+The model estimates controlled possession from player/ball geometry and learned context; a nearest touch does not force a hand-over. Four internal decoder states are H,A,dead-after-H,dead-after-A; both dead states outputD. The cost9 duration decoder aggregates fiveframes per step and imposes one-second minimum live/dead intervals, truncated at a period boundary. Restart snapping is disabled. A stoppage separates two possessions even when the same team restarts.
 
-The model approximates controlled possession from geometry and temporal evidence; nearest contact alone does not force a hand-over. A D interval separates possessions even if the same team restarts. Outside published halves we output X. The public starter's second-half kickoff frame 113742 supplies the boundary; earlier graded frames of that half receive D. This is organizer-provided alignment, not a hand-labelled rule.
+Output is exactly199,319ordered frame,label rows usingH/A/D/X. Outside published halves outputX. The public starter's second-half kickoff frame113742 supplies alignment; earlier graded frames of that half outputD. These boundaries are organizer-published, not hand labels. No competition public/private GT is used to train or select v4.
 
-We fit twenty new heads: one on all nineteen games and nineteen leave-one-whole-game-out heads, excluding every augmentation of the scored game. Original-game baseline stack probabilities use the previous nested exclusions. We select among four fixed blends using development data, freeze one candidate, then evaluate it once on the nine European games. The protocol, exclusions, hashes and per-game results are in the [expanded-training report](experiments/expanded-team/REPORT.md).
+## Validation and overfit checks
 
-| Validation cohort | Metric | V2 | V3 | Scope |
-|---|---|---:|---:|---|
-| Nine new European games | Conditional H/A macroF1 | 0.8203 | 0.8372 | 9/9 wins; paired descriptive 95% gain interval [0.0134, 0.0209]; no D reference |
-| Prior ten SkillCorner confirmation games | Whole-spell F1 | 0.5524 | 0.6046 | 10/10 wins; gain interval [0.0408, 0.0628]; reused secondary cohort |
-| Same ten with extra label-blind corruption | Whole-spell F1 | 0.4719 | 0.5156 | 10/10 wins; reused secondary cohort |
+Five whole-game neural folds cover29games, with23or24training games each. Normalization excludes the test fold. Baseline v3 uses its own excluded-game models on the original19 and frozen weights on the ten games outside its training; the original stack retains nested exclusions. Learned v3 probabilities never enter neural training: fusion occurs after prediction. All67baseline scenario scores reproduced earlier values exactly.
 
-The selected blend passed the predeclared development and confirmation gates. Known matched-sensor spellF1 decreases slightly, 0.6432 to 0.6414. The previous seventeen context/augmentation policies did not clear their selection gate and are not the submitted method. Earlier v1/v2 results and negative experiments remain documented in the linked reports. A later [29-game training and nine-policy decoder study](experiments/more-data/REPORT.md) did not clear the fixed replacement gates; its additional training games and settings are not used by this verified v3 method.
+| Excluded-game cohort | V3 spellF1 | V4 spellF1 |
+|---|---:|---:|
+| Original9,matched |0.6414|0.6440|
+| Original9,label-blind |0.5419|0.5583|
+| Original9,stress |0.5105|0.5320|
+| SkillCorner20,natural |0.5817|0.6500|
+| SkillCorner20,extra label-blind gaps |0.4978|0.6051|
 
-These sources have different sensors and label semantics. Development reused known games and does not independently validate the complete historical hyperparameter-selection process. The European endpoint tests known-live H/A predictions, not full-match spellF1 or dead-ball accuracy. The secondary ten games were previously used to confirm v2; they were not training inputs for either method, but are not pristine new data. Intervals resample whole games, 10,000 draws, seed 20261113, and are descriptive. No hidden-match quality or qualification probability is claimed.
+The predeclared equal-quarter composite of matched/blind original and natural/blind SkillCorner improves0.5657→0.6143; paired descriptive95%gain interval[0.0434,0.0540],26/29game wins. Whole games are resampled within source families, preserving paired scenarios. These are reused research games, so intervals do not account for historical model selection or opponent dependence. DFL matched mean falls slightly,0.6395→0.6379; improvements are not universal.
 
-The original model author declares external-only parameter selection; this is not an independent audit of all historical version choices. The historical non-nested stack evaluation is blocked by default; current estimator exclusions are recorded. No competition public GT is used to fit or select v3. Long occlusions, ambiguous contacts and domain differences remain failure modes. Offline features use future frames and require redesign for live causal use.
+For the standalone neural branch, full-fit versus excluded-fold spellF1 is0.6292/0.6159 onDFL,0.6498/0.6277 onMetrica and0.6789/0.6662 onSkillCorner. Only two Metrica training games exist. Training on only one provider transfers substantially worse to another: DFL-only→SkillCorner20 scores0.5850; SkillCorner-only→DFL7 scores0.5081. Small train/CV gaps cannot prove absence of overfit; source/sensor/label shift remains material.
 
-## Reproduction and technical checks
+The candidate and full checkpoint were frozen before new-source scoring. Additional checks cover eleven games absent from neural training:
 
-Use Python 3.12 and the pinned requirements from README, fetch/convert the original nine public games, fetch the ten extra training games with `tools/fetch_skillcorner.py --only-training`, and obtain the private tactical XML/TXT from the organizer.
+| External source | V3→V4 | Scope |
+|---|---|---|
+| New Groningen/SciSports research match |spellF1:0.5368→0.6858; with extra gaps0.4587→0.5702|One anonymized game, validation only; supplied AliveFlag/PossessionFlag references |
+| MetricaSample3 |spellF1:0.5481→0.5527; extra gaps0.3976→0.4614|Previously v1-scored, not fresh; event-derived references, whole-stream prediction without annotation-derived half cuts |
+| Nine European SkillCorner games |conditionalH/A macroF1:0.8372→0.8410,8/9wins|Previously used in v3 validation; no D reference, not whole-match spellF1 |
+
+Thus40screened games are evaluated, not40fresh independent tests. [Groningen/SciSports](https://github.com/MatKempeGroningen/WCSF_SolutionRoom) publishes a research sample with attribution requested and no explicit licence file; no raw files are redistributed or used to fit v4. Predictor coordinates/periods are independent of its reference flags. Contradictory source rows at110timestamps are markedX, excluding266/143431period frames; unknown holes affect spell boundaries. Raw-trajectory screens found no suspicious duplicates, but cannot prove anonymous identities. PFF64access is still pending and its future country-separated holdout is unopened.
+
+Full exclusions, per-game scores, source issues, fixed plans and deployment checks are in the [temporal report](experiments/temporal/REPORT.md). Long occlusions, incomplete players, ambiguous control and provider semantics remain failure modes. The method is offline and uses future context. Hidden competition quality and qualification probability are unknown.
+
+## Reproduction
+
+Use Python3.12 and requirements-temporal.txt. The repository includes3.8MBof frozen models trained only on the public external games above. Their hashes and feature-schema hash are checked before loading. PyTorch state uses weights-only deserialization. No private match input or fitted target statistic enters these model artifacts.
 
 ```bash
-OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 \
-  .venv/bin/python run.py v3 --jobs 2 --output 'out/Ruses Cules.csv'
+.venv/bin/python run.py v4 --output 'out/Ruses Cules.csv'
 .venv/bin/python ref/official/evaluation/validate_submission.py 'out/Ruses Cules.csv'
-.venv/bin/python tools/reproduce.py --data-dir /absolute/path/to/data --method v3 --jobs 2
+.venv/bin/python tools/reproduce.py --data-dir /absolute/path/to/data --method v4
 ```
 
-The command retrains both original stages and the new nineteen-game head, then writes exactly 199,319 ordered `frame,label` rows. The verifier exports committed source twice, independently converts raw inputs, retrains, validates and compares CSV bytes while checking input hashes. It never scores the competition public window. Matching bytes on the installed pinned environment do not establish equality across platforms.
+Default generation runs onCPU with frozen weights; it does not retrain. Two clean-source CPU generation checks are pending. Research neural training used deterministic MPS operations; optional raw-public-data preparation/fitting is documented in README. Raw-feature equality was checked, and independent neural retraining is being checked separately. Training artifacts need not match across devices; the submitted file is regenerated with the published frozen assets.
 
-V3 preflight and both clean-source runs passed the official format check. Setting the added-head weight to zero reproduced the verified v2 CSV byte for byte. Tested source: `6f067004dc59c45ea7e21be6a7bd4246c7e20651`. Both independently retrained runs produced SHA-256 `c501145adc08873ae0bab30e88e9cd2cfa88484210c26bed1e6f9fa667724e40`, matching preflight. Timings: 513.040 s and 511.716 s, four workers on Apple M4 / 16 GB. All raw input hashes stayed unchanged. The [v3 receipt](experiments/expanded-team/v3_reproduction.json) records the result; the previous [v2 receipt](experiments/skillcorner/v2_reproduction.json) is preserved.
-
-Competition materials, intermediates, outputs and full receipts stay local and outside the public repository. We do not send match materials or extracts to hosted LLMs. Submission and repository publication require their separate release steps.
+Competition materials, predictions and full local receipts remain outsideGit and are never sent to hostedLLMs. Publication and the organizer form are separate release steps; this document does not claim submission.

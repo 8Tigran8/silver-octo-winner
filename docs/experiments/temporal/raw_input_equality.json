@@ -1,0 +1,16 @@
+{
+  "original_games": {
+    "original/idsse_J03WOH": true,
+    "original/idsse_J03WN1": true,
+    "original/idsse_J03WMX": true,
+    "original/idsse_J03WOY": true,
+    "original/idsse_J03WQQ": true,
+    "original/idsse_J03WPY": true,
+    "original/metrica_2": true,
+    "original/metrica_1": true,
+    "original/idsse_J03WR9": true
+  },
+  "scenarios_per_game": 3,
+  "exact_float32_features_and_swaps": true,
+  "note": "SkillCorner preparation already reads pinned raw JSON/CSV directly"
+}

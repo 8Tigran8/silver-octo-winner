@@ -1,0 +1,63 @@
+{
+  "method": "v4 / temporal fusion50",
+  "files": [
+    {
+      "path": "base_external.pkl",
+      "sha256": "f2f33ae6ac086d976ed9712110e542ad68588ed489d0c0fc212a47635731c682",
+      "size": 2475170,
+      "purpose": "Original nine-game two-stage HGB"
+    },
+    {
+      "path": "team_external.pkl",
+      "sha256": "9f0688b4a6197d7134153993576a172000e42ae40619174819fbfcf62dc7cf18",
+      "size": 971284,
+      "purpose": "Nineteen-game conditional team head"
+    },
+    {
+      "path": "temporal_state.pt",
+      "sha256": "d2628a2ddb790175f100e54d76c4e2aa89ebfce8179931e3c531d24c88816a90",
+      "size": 329237,
+      "purpose": "Frozen29-game TCN state and train-only normalization"
+    }
+  ],
+  "feature_columns_sha256": "b0cc5697c48c43d3cc12bb5643c7a60711a78c660a112126f86a37d4007bfe35",
+  "model_training_games": [
+    "original/idsse_J03WMX",
+    "original/idsse_J03WN1",
+    "original/idsse_J03WOH",
+    "original/idsse_J03WOY",
+    "original/idsse_J03WPY",
+    "original/idsse_J03WQQ",
+    "original/idsse_J03WR9",
+    "original/metrica_1",
+    "original/metrica_2",
+    "skillcorner/1874553",
+    "skillcorner/1886347",
+    "skillcorner/1899585",
+    "skillcorner/1925299",
+    "skillcorner/1927964",
+    "skillcorner/1953632",
+    "skillcorner/1959846",
+    "skillcorner/1986691",
+    "skillcorner/1996435",
+    "skillcorner/1996436",
+    "skillcorner/2006229",
+    "skillcorner/2006363",
+    "skillcorner/2007448",
+    "skillcorner/2007721",
+    "skillcorner/2010085",
+    "skillcorner/2011166",
+    "skillcorner/2013725",
+    "skillcorner/2015213",
+    "skillcorner/2016236",
+    "skillcorner/2017461"
+  ],
+  "training_provenance": "../../docs/experiments/temporal/training_provenance.json",
+  "training_device": "TCN MPS, fixedseed20261113; HGB CPU",
+  "inference_device": "CPU",
+  "default_command_retrains": false,
+  "selection_frozen_commit": "d0bd103",
+  "external_only_training": true,
+  "competition_data_used_for_fitting": false,
+  "source_terms": "IDSSE CC BY4.0, Metrica acknowledgement, SkillCorner MIT; credit original providers. No match data is redistributed in these learned weights."
+}

@@ -12,59 +12,39 @@ The team submission also needs this public source repository and a short technic
 
 Deadline from the organizer's welcome email: **17 November 2026, 23:59 CET**.
 
-## Install and prepare
+## Install and generate the current v4 CSV
 
-Use Python 3.12. Run the commands from the repository root. The original public sources take about 2.75 GB; v3 adds roughly 0.9 GB of SkillCorner inputs. Conversions, features and training need additional disk space. Start with two workers on a machine with 16 GB RAM.
+Use Python3.12. V4 uses verified frozen external-trained models included under `assets/v4` (about3.8MB), and predicts onCPU. Generation needs the organizer tactical XML/TXT locally; no external match download or retraining is required for this command.
 
 ```bash
 python3.12 -m venv .venv
-.venv/bin/python -m pip install -r requirements-validation.txt
+.venv/bin/python -m pip install -r requirements-temporal.txt
+.venv/bin/python tools/fetch_reference.py
+MTAH_DATA_DIR=/absolute/path/to/data .venv/bin/python run.py v4 --output 'out/Ruses Cules.csv'
+.venv/bin/python ref/official/evaluation/validate_submission.py 'out/Ruses Cules.csv'
+.venv/bin/python tools/reproduce.py --data-dir /absolute/path/to/data --method v4
+```
+
+The data directory contains `tactical/BAR-ATH_tactical_atd.xml` and `.txt`. Only automatic tracking is read; video, homography and SmartTagging are unused. The CLI does not score publicGT unless explicitly requested. The official validator checks format, not accuracy.
+
+The v4 verifier exports committed source twice, independently reads the organizer inputs, verifies frozen asset hashes, predicts onCPU and compares CSV bytes while checking input hashes. This is **frozen-weight inference reproduction**, not a claim that both checks repeat model training. The receipt says which execution mode ran. V1/v2/v3 commands and their earlier raw-retraining receipts remain available.
+
+## Optional training and research reproduction
+
+The trained components and all source registries are inspectable. To reconstruct the public training inputs (roughly4.5GBraw plus intermediates):
+
+```bash
 .venv/bin/python tools/fetch_external.py
 .venv/bin/python tools/ext_idsse.py
 .venv/bin/python tools/ext_metrica.py
-.venv/bin/python tools/fetch_reference.py
-.venv/bin/python tools/fetch_skillcorner.py --only-training
+.venv/bin/python tools/fetch_skillcorner.py
+.venv/bin/python tools/temporal_trial.py prepare --jobs 3
+.venv/bin/python tools/temporal_trial.py fit --split full --device mps
 ```
 
-`tools/external_sources.json` pins the public training source revisions, filenames, sizes and object hashes. The downloader verifies them. IDSSE is distributed under CC BY 4.0; Metrica sample-data asks users to acknowledge its source. See the source links in the manifest and [the technical draft](docs/Ruses%20Cules.md).
+The neural training script reads public tracking directly and fits training-only normalization. Use `MTAH_TEMPORAL_CACHE` for a fresh work directory. Research runs used AppleM4MPS; deterministic operations and fixed seeds are recorded. CPU training is available but binary trained weights are not promised identical across backends. The release command uses the frozen checkpoint, independent of training hardware. Original boosted models can be retrained with `run.py v3`; their previously verified source remains documented.
 
-Obtain the competition files from the organizer's private download link and store them locally:
-
-```text
-data/tactical/BAR-ATH_tactical_atd.xml
-data/tactical/BAR-ATH_tactical_atd.txt
-```
-
-The v3 method uses these two files. It does not read the video, homography or Smart Tagging. Set `MTAH_DATA_DIR` to use a different data directory.
-
-## Generate the team CSV
-
-```bash
-OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 \
-  .venv/bin/python run.py v3 --jobs 2 --output 'out/Ruses Cules.csv'
-.venv/bin/python ref/official/evaluation/validate_submission.py 'out/Ruses Cules.csv'
-```
-
-This retrains the original two-stage models on nine public games, adds a team-only head trained on nineteen public games, and blends the conditional team probabilities 50/50. The original dead channel and cost-9 duration decoder remain. `run.py v1` and `run.py v2` retain their earlier behavior. It writes exactly one CSV and checks the local CSV contract. The second command uses the unmodified official validator pinned to `f8f2629ff1e0985f81d7e59d8413678514ee1530`. A format PASS does not measure prediction quality.
-
-Prediction does not load or score the public ground truth. An explicit `run.py score ...` command remains available for a pipeline correctness check; do not use it to select models or tune parameters.
-
-## Verify from two clean source copies
-
-Commit the intended source changes, then run:
-
-```bash
-.venv/bin/python tools/reproduce.py --data-dir /absolute/path/to/data --method v3 --jobs 2
-```
-
-The verifier exports the committed source twice, independently converts the pinned raw external matches, retrains the model in each copy, validates both CSVs with the official validator, compares their SHA-256 hashes and checks that the input files did not change. CSVs, logs and a receipt stay under `reports/reproduction/`. It does not evaluate the public window. Both runs use the installed pinned environment; this does not establish reproducibility across operating systems or library builds.
-
-For decoder and scorer checks on synthetic fixtures and the organizer's published baselines:
-
-```bash
-.venv/bin/python -m tests.test_boost_viterbi
-.venv/bin/python -m tests.test_metrics
-```
+[The technical document](docs/Ruses%20Cules.md) lists every training source, annotation proxy, component, failure mode and reproduction command. [The temporal report](docs/experiments/temporal/REPORT.md) records29-game folds, source-held-out tests, eleven further external games and provenance. Public match assets and intermediates are not committed.
 
 ## External quality evidence
 
@@ -93,6 +73,10 @@ On the prior ten SkillCorner confirmation games, full spellF1 improves **0.5524 
 A subsequent fixed-capacity [19 → 29 game study](docs/experiments/more-data/REPORT.md) added the ten prior confirmation games to research training, excluding every scored game and all its augmentations. Data-only weighted spellF1 gain was +0.00067; descriptive paired 95% interval [-0.00147, +0.00288]. Nine registered decoder/calibration policies then achieved at most +0.00416, below the fixed +0.005 gate. None replaces v3. Baseline v3 and unchanged data29 controls reproduced prior scores exactly. Training/held-out head diagnostics and all candidate results are reported; these reused games do not establish an unbiased final generalization estimate.
 
 A request for the PFF 64-game World Cup2022 dataset is submitted and awaits owner approval. Its prospective split is frozen before gated data/model scores: 36 training, ten development, twelve final-test games with both national teams outside PFF training/development, and six cross-country knockout games excluded to preserve that separation. Source terms, observed-ball availability and event-proxy label semantics still require verification after access. No new PFF score or promotion is claimed; see [the protocol](docs/experiments/more-data/pff_protocol.json).
+
+## Current temporal candidate v4
+
+V4 adds learned25second context and50/50probability fusion to v3. Across29whole-game neural exclusions, composite spellF1 improves0.5657→0.6143 (26wins/3losses; descriptive paired gain interval[0.0434,0.0540]). On a new Groningen/SciSports match:0.5368→0.6858; with extra gaps0.4587→0.5702. Forty screened games are covered in total, including nine conditional-only and reused cohorts; this is not40fresh tests. See the [full report](docs/experiments/temporal/REPORT.md). CPU asset checks match research external scores; final clean-source reproduction and packaging are pending.
 
 ## Review status
 
