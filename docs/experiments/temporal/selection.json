@@ -1,0 +1,60 @@
+{
+  "registered_utc": "2026-11-13T12:28:43.722761+00:00",
+  "candidate": "fusion50",
+  "development_gate_pass": true,
+  "scores": {
+    "v3": {
+      "means": [
+        0.6414464779657619,
+        0.5419021503910881,
+        0.5105315752767322,
+        0.5817108944019523,
+        0.49778437350169996
+      ],
+      "weighted": 0.5657109740651256
+    },
+    "tcn": {
+      "means": [
+        0.6185492703508877,
+        0.5410481297735731,
+        0.5137244140568902,
+        0.6661734710541992,
+        0.6224679873076776
+      ],
+      "weighted": 0.6120597146215845,
+      "gain": 0.04634874055645888,
+      "descriptive_95ci": [
+        0.037027383213760715,
+        0.055114033892680325
+      ],
+      "game_wins": 24,
+      "game_losses": 5,
+      "pass": false
+    },
+    "fusion50": {
+      "means": [
+        0.6439845393917996,
+        0.5583073298231085,
+        0.5320437101052222,
+        0.6499950032817747,
+        0.6051065870036926
+      ],
+      "weighted": 0.6143483648750938,
+      "gain": 0.048637390809968206,
+      "descriptive_95ci": [
+        0.04338784642166127,
+        0.053985406139881224
+      ],
+      "game_wins": 26,
+      "game_losses": 3,
+      "pass": true
+    }
+  },
+  "plan_sha256": "2f9facaf149ec17d84a8dd6064a4e9dc57945c784477973c0009c43461df70aa",
+  "cv_results_sha256": "d5e748441121b07c79b28319f9fd1a946bea09b45c793e1e6e4198eb87255b92",
+  "full_checkpoint_sha256": "d2628a2ddb790175f100e54d76c4e2aa89ebfce8179931e3c531d24c88816a90",
+  "baseline_checkpoint_sha256": "f2f33ae6ac086d976ed9712110e542ad68588ed489d0c0fc212a47635731c682",
+  "baseline_team_sha256": "9f0688b4a6197d7134153993576a172000e42ae40619174819fbfcf62dc7cf18",
+  "new_source_scores_seen": false,
+  "release": "v3 until external confirmation and clean reproduction"
+}
