@@ -1,0 +1,247 @@
+{
+  "version": "evaluation-1.0",
+  "registered_utc": "2026-11-13T20:16:39.898712+00:00",
+  "scope": "Prospective evaluation of candidates AFTER v4; not a retrospective approval criterion for v4.",
+  "baseline": {
+    "method": "v4 / fusion50",
+    "source_commit": "11b782f4f8a4bcfe4114e8da3b57cdbaac603a63",
+    "cv_records": "docs/experiments/temporal/cv_results.json",
+    "cv_candidate": "fusion50",
+    "cv_records_sha256": "d5e748441121b07c79b28319f9fd1a946bea09b45c793e1e6e4198eb87255b92",
+    "plan": "docs/experiments/temporal/plan.json",
+    "plan_sha256": "2f9facaf149ec17d84a8dd6064a4e9dc57945c784477973c0009c43461df70aa",
+    "asset_manifest_sha256": "25729febd8697681eebaaad12dbea2d0b0d65c90d93d3ed876bfaec5f3253cd8"
+  },
+  "metric": {
+    "primary": "unmodified official spell_f1_mean, matching maximal H/A spells at tIoU .3/.4/.5/.6/.7; unknown-reference behavior unchanged",
+    "official_commit": "f8f2629ff1e0985f81d7e59d8413678514ee1530",
+    "secondary": [
+      "macro_f1",
+      "per-class H/A/D F1",
+      "possession count and duration",
+      "transition diagnostics",
+      "runtime and peak memory"
+    ],
+    "aggregation": "Compute per game first; development composite gives .25 each to original matched, original blind, SkillCorner natural, SkillCorner blind. Original stress is a separate guard. Do not pool frames or count augmented scenarios as independent games."
+  },
+  "development": {
+    "game_count": 29,
+    "scenario_cells": 67,
+    "groups": [
+      {
+        "family": "original",
+        "scenario": "matched_seed0",
+        "games": 9,
+        "weight": 0.25
+      },
+      {
+        "family": "original",
+        "scenario": "label_blind_seed1",
+        "games": 9,
+        "weight": 0.25
+      },
+      {
+        "family": "original",
+        "scenario": "stress_seed1",
+        "games": 9,
+        "weight": 0
+      },
+      {
+        "family": "skillcorner",
+        "scenario": "natural_detected",
+        "games": 20,
+        "weight": 0.25
+      },
+      {
+        "family": "skillcorner",
+        "scenario": "label_blind_seed7",
+        "games": 20,
+        "weight": 0.25
+      }
+    ],
+    "min_composite_spell_gain": 0.02,
+    "min_game_win_fraction": 0.7,
+    "max_cohort_spell_loss": 0.01,
+    "max_cohort_macro_loss": 0.01,
+    "max_cohort_perclass_f1_loss": 0.02,
+    "max_lower_quartile_spell_loss": 0.01,
+    "large_game_loss_threshold": 0.05,
+    "max_large_game_loss_fraction": 0.1,
+    "descriptive_bootstrap": {
+      "draws": 10000,
+      "seed": 20261113,
+      "unit": "whole game, paired scenarios, stratified original/SkillCorner",
+      "require_lower_95_bound_positive": true,
+      "caveat": "Descriptive interval; does not correct historical selection, source/opponent dependence or many experiments."
+    },
+    "folds": "Reuse exact frozen five-fold mapping. All augmentation/team-swap siblings and every fitted feature/normalizer/stack component exclude the complete scored fold.",
+    "allowed_additional_training_games": [
+      "pff/3816",
+      "pff/3854",
+      "pff/3850",
+      "pff/3836",
+      "pff/3831",
+      "pff/10506",
+      "pff/3846",
+      "pff/10514",
+      "pff/3819",
+      "pff/3853",
+      "pff/3855",
+      "pff/3832",
+      "pff/3833",
+      "pff/3823",
+      "pff/3834",
+      "pff/3822",
+      "pff/10504",
+      "pff/3835",
+      "pff/3847",
+      "pff/3840",
+      "pff/3824",
+      "pff/3837",
+      "pff/3851",
+      "pff/3817",
+      "pff/3815",
+      "pff/10517",
+      "pff/3839",
+      "pff/10515",
+      "pff/3813",
+      "pff/3828",
+      "pff/3848",
+      "pff/3852",
+      "pff/10508",
+      "pff/3818",
+      "pff/3820",
+      "pff/3849"
+    ],
+    "provider_checks": "Before freeze, repeat leave-one-provider-out diagnostics on a fixed training pool. Publish full train vs excluded-game scores by provider and all failures; no universal no-overfit assertion.",
+    "seeds": "For stochastic candidates, predeclare 3 seeds (20261113/20261114/20261115), report each. Fix deployable single seed or ensemble before final test; never select the best seed using final-test scores."
+  },
+  "reserve": {
+    "source": "OpenSportsLab/PFF, subject to access, original provider terms and independently validated full H/A/D reference semantics",
+    "legacy_protocol": "docs/experiments/more-data/pff_protocol.json",
+    "legacy_protocol_sha256": "b4de537f1bfb1c3292dcb5650a310262449cb0cbf2c1a17f5707f129becdd358",
+    "policy_change": "Keep legacy match/country split untouched. This prospective v1.0 supersedes its v3 comparator, HGB-only intended candidate and .005 promotion gates BEFORE gated data/final scores. New comparator is v4, minimum mean gain .02; legacy v3 reported secondarily only. Do not rewrite original record.",
+    "train_ids": [
+      "3816",
+      "3854",
+      "3850",
+      "3836",
+      "3831",
+      "10506",
+      "3846",
+      "10514",
+      "3819",
+      "3853",
+      "3855",
+      "3832",
+      "3833",
+      "3823",
+      "3834",
+      "3822",
+      "10504",
+      "3835",
+      "3847",
+      "3840",
+      "3824",
+      "3837",
+      "3851",
+      "3817",
+      "3815",
+      "10517",
+      "3839",
+      "10515",
+      "3813",
+      "3828",
+      "3848",
+      "3852",
+      "10508",
+      "3818",
+      "3820",
+      "3849"
+    ],
+    "dev_ids": [
+      "10510",
+      "3821",
+      "10513",
+      "10516",
+      "3859",
+      "3827",
+      "10503",
+      "3858",
+      "3838",
+      "3842"
+    ],
+    "final_ids": [
+      "3812",
+      "3814",
+      "3825",
+      "3826",
+      "3829",
+      "3830",
+      "3841",
+      "3843",
+      "3844",
+      "3845",
+      "3856",
+      "3857"
+    ],
+    "excluded_bridge_ids": [
+      "10512",
+      "10511",
+      "10509",
+      "10507",
+      "10505",
+      "10502"
+    ],
+    "rules": [
+      "No final features, labels or scores in training, feature design, parser debugging or selection. Verify schema, label conversion and periods on train/dev first.",
+      "Freeze exactly one deployable candidate, code, hashes, weights, sensor scenarios and preflight checks before opening final data. Score it versus frozen v4 once; never choose a runner-up on final scores.",
+      "Final test is consumed upon opening, even after a failure. Any subsequent model change needs a newly declared untouched reserve; former final becomes development.",
+      "If full H/A/D reference coverage/semantics cannot be verified, do not silently switch to conditional H/A or fabricate D. Final full-task confirmation is unavailable.",
+      "All older external cohorts, including WCSF/Metrica3/European9, are research regression sets now, not fresh final confirmation."
+    ],
+    "final_gate": {
+      "min_natural_mean_spell_gain": 0.02,
+      "min_natural_game_wins": 9,
+      "min_group_mean_spell_gain_exclusive": 0,
+      "max_blind_mean_spell_loss": 0.01,
+      "max_natural_macro_loss": 0.01,
+      "groups": {
+        "A": [
+          "3812",
+          "3814",
+          "3829",
+          "3830",
+          "3844",
+          "3845"
+        ],
+        "H": [
+          "3825",
+          "3826",
+          "3841",
+          "3843",
+          "3856",
+          "3857"
+        ]
+      },
+      "scenarios": [
+        "natural_detected",
+        "label_blind_seed7"
+      ],
+      "bootstrap": "Report paired whole-game interval, marked descriptive due to shared national teams and only two groups; this is not proof of independent new-provider transfer."
+    }
+  },
+  "release": {
+    "needs": [
+      "development quality gates",
+      "one unopened-source confirmation with no post-test model change",
+      "two clean source generations matching exact CSV bytes",
+      "official format validator on exact packaged file",
+      "source/data/model hashes and complete technical document",
+      "public repository at agreed release time and organizer receipt"
+    ],
+    "if_reserve_unavailable": "Keep verified v4. Prospective generalization confirmation remains PENDING; development progress alone cannot become a final-test PASS.",
+    "technical_vs_quality": "A format/reproduction PASS says the algorithm runs consistently, not that its football predictions are correct."
+  },
+  "interpretation": "No absolute spellF1 threshold proves a model good across label providers. A good candidate is meaningfully better than frozen v4 on matched whole-game comparisons, robust by source/scenario, confirmed on an untouched reserve, and reproducible. Qualification and hidden organizer-match score remain unknown."
+}

@@ -29,6 +29,10 @@ The data directory contains `tactical/BAR-ATH_tactical_atd.xml` and `.txt`. Only
 
 The v4 verifier exports committed source twice, independently reads the organizer inputs, verifies frozen asset hashes, predicts onCPU and compares CSV bytes while checking input hashes. This is **frozen-weight inference reproduction**, not a claim that both checks repeat model training. The receipt says which execution mode ran. V1/v2/v3 commands and their earlier raw-retraining receipts remain available.
 
+## Fixed evaluation for future candidates
+
+Use the [evaluation contract](docs/evaluation/README.md) and [machine-readable policy](docs/evaluation/policy.json): compare against frozen v4 on complete whole-game folds; require +0.02 composite spellF1 with source, stress, class and lower-tail guards. Passing development means eligible for confirmation, not final quality PASS. Preserve the unopened PFF country-separated reserve; all prior screened cohorts are development now. The contract explicitly records prospective changes to the older v3/PFF gates without rewriting their history. The [unchanged-v4 control](docs/evaluation/v4_control.json) correctly returns KEEP_V4. No release model or submission CSV changes in this evaluation-policy update.
+
 ## Optional training and research reproduction
 
 The trained components and all source registries are inspectable. To reconstruct the public training inputs (roughly4.5GBraw plus intermediates):

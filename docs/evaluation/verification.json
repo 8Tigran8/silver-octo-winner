@@ -1,0 +1,17 @@
+{
+  "status": "PASS: prospective evaluation tooling checks",
+  "tests": 7,
+  "command": "python -m unittest tests.test_evaluation_policy -v",
+  "policy_sha256": "da916f2e709012365f90bd0e957b35432ebf2db8c69740469a1abdd920be4940",
+  "unchanged_v4_control": "KEEP_V4, gain 0; final confirmation NOT ASSESSED",
+  "coverage": [
+    "complete paired scenario cells",
+    "correct fold membership",
+    "declared reserved-game leakage rejection",
+    "finite bounded metrics",
+    "dead-ball regression guard despite average gain",
+    "development vs final-test status separation",
+    "PFF all64 match IDs and final-country isolation"
+  ],
+  "model_training_or_target_inference_performed": false
+}
