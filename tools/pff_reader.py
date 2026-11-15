@@ -8,6 +8,7 @@ import bz2
 import collections
 import hashlib
 import json
+from itertools import groupby
 import numpy as np
 from skillcorner_reader import upsample_observations
 
@@ -174,3 +175,68 @@ def reference(events,times,period,mode='deliberate_then_first'):
                 known_fraction=float(np.mean(gt[valid]!=3)),events_sha256=sha(events),
                 scope='Event-sequence-derived full-task proxy; not corrected frame-by-frame possession truth')
     return gt,info
+
+
+def tracking_reference(tracking,times,period,fps):
+    """Primary kloppy PFF ball-state/owning-team semantics, kept out of features.
+
+    The canonical result additionally resets unknown state at a new period and
+    masks contradictory reference updates at a duplicate source frame. An exact
+    last-row state-machine shadow is returned for sensitivity diagnostics.
+    """
+    alive_types={'FIRSTKICKOFF','SECONDKICKOFF','THIRDKICKOFF','FOURTHKICKOFF','OTB'}
+    dead_types={'OUT','END'}
+    sdk_alive=False;sdk_home=None;strict_alive=None;strict_home=None;last_period=0
+    frames=[];source_periods=[];canonical=[];sdk=[];conflicts=0;duplicates=0;types=collections.Counter()
+    with bz2.open(tracking,'rt') as stream:
+        source=(json.loads(line) for line in stream)
+        for frame,group in groupby(source,key=lambda r:int(r['frameNum'])):
+            rows=list(group);duplicates+=len(rows)-1
+            per={int(r.get('period') or 0) for r in rows}
+            if len(per)!=1:raise ValueError('Conflicting source period at one frame')
+            p=next(iter(per))
+            if p and p!=last_period:
+                strict_alive=None;strict_home=None;last_period=p
+            states=set();owners=set()
+            for row in rows:
+                event=row.get('game_event')
+                if not event:continue
+                kind=event.get('game_event_type');types[kind]+=1
+                if kind in dead_types:states.add(False);sdk_alive=False
+                elif kind in alive_types:states.add(True);sdk_alive=True
+                owner=event.get('home_ball')
+                if owner is not None:
+                    if not isinstance(owner,bool):raise ValueError('Non-boolean source owning-team flag')
+                    owners.add(owner);sdk_home=owner
+            if len(states)==1:strict_alive=next(iter(states))
+            if len(owners)==1:strict_home=next(iter(owners))
+            ambiguous=len(states)>1 or len(owners)>1
+            if ambiguous:conflicts+=1
+            def label(alive,home):
+                if not p:return 3
+                if alive is False:return 2
+                if alive is True and home is not None:return 0 if home else 1
+                return 3
+            canonical.append(3 if ambiguous else label(strict_alive,strict_home))
+            sdk.append(label(sdk_alive,sdk_home));frames.append(frame);source_periods.append(p)
+            if ambiguous:
+                # Mask the conflicting frame; subsequent state follows the
+                # documented primary loader's row order, never a majority vote.
+                strict_alive=sdk_alive;strict_home=sdk_home
+    frames=np.asarray(frames,np.int64);source_periods=np.asarray(source_periods,np.int8)
+    if np.any(np.diff(frames)<=0):raise ValueError('Non-monotonic unique source frames')
+    target=np.floor(times*fps+1e-7).astype(np.int64)
+    ix=np.searchsorted(frames,target,side='right')-1
+    safe=np.maximum(ix,0);valid=(ix>=0)&(period>0)&(source_periods[safe]==period)
+    gt=np.full(len(times),3,np.int8);alternate=gt.copy()
+    gt[valid]=np.asarray(canonical,np.int8)[safe[valid]]
+    alternate[valid]=np.asarray(sdk,np.int8)[safe[valid]]
+    mask=period>0
+    info={'policy':'Pinned PySport/kloppy PFF event-state machine; conservative duplicate-conflict mask and independent period resets',
+          'reference_type':'Provider event-derived full H/A/D proxy, not corrected frame-by-frame control truth',
+          'source_reference_event_types':dict(types),'duplicate_source_rows':duplicates,'conflicting_reference_frames':conflicts,
+          'known_fraction':float(np.mean(gt[mask]!=3)),'sdk_shadow_known_fraction':float(np.mean(alternate[mask]!=3)),
+          'class_frames':{s:int(np.sum(gt[mask]==k)) for k,s in enumerate(['H','A','D','X'])},
+          'period_frames':int(mask.sum()),'sdk_shadow_disagreement_fraction':float(np.mean(gt[mask]!=alternate[mask])),
+          'tracking_sha256':sha(tracking),'clock_sampling':'previous source frame at each independent25Hz timestamp; no quality-based alignment'}
+    return gt,alternate,info

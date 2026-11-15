@@ -5,17 +5,18 @@
   "games": 64,
   "gated_files_downloaded": false,
   "split": "pff_protocol.json",
-  "source_format_checked": "Public kloppy10517 schema fixture only; no full match scored",
-  "limitations": "Mirror uses a reformatted parquet/events representation. Availability of observed ball coordinates and event-derived H/A/D must be verified before model experiments. Dataset card lists GPL-3.0; original PFF source terms also need checking after access.",
+  "source_format_checked": "Actual original raw tracking on train3816/3813 and dev3821; primary kloppy reference and vendor TrackingSpec2.2 checked; all3pilot source gates PASS, no quality score yet",
+  "limitations": "Event-derived full H/A/D proxy; use only raw VISIBLE geometry, never event-smoothed or ESTIMATED coordinates. HF mirror remains pending and unused. Original vendor PDFs have proprietary notice; no raw-data redistribution.",
   "last_account_check_utc": "2026-11-15T18:37:22.492940+00:00",
   "authenticated_UI_status": "Request submitted; awaiting review from repository authors",
   "approval_email_found": false,
   "direct_provider_route": {
     "url": "https://www.blog.fc.pff.com/blog/enhanced-2022-world-cup-dataset",
     "status": "Authorized form submitted; source Google Drive access granted",
-    "data_downloaded": false,
+    "data_downloaded": true,
     "source_folder": "https://drive.google.com/drive/folders/1_a_q1e9CXeEPJ3GdCv_3-rNO3gPqacfa",
-    "newsletter_user_approved": true
+    "newsletter_user_approved": true,
+    "scope": "Two pilot training games and all10 registered development games only; final contents unopened"
   },
   "final_reserve_opened": false
 }

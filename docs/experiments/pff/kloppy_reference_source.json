@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/PySport/kloppy",
+  "commit": "a9651eba7c4dbbe2d2fc6d4cffb4aea63fadac11",
+  "path": "kloppy/infra/serializers/tracking/pff.py",
+  "url": "https://raw.githubusercontent.com/PySport/kloppy/a9651eba7c4dbbe2d2fc6d4cffb4aea63fadac11/kloppy/infra/serializers/tracking/pff.py",
+  "sha256": "6582b8501f1dc3bd632f8bff84b9d0a584232344e9308856061de46a3ff1aec2",
+  "scope": "Primary data-loader semantics for source-reference construction, not model features or competition labels."
+}

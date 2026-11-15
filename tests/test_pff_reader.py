@@ -8,7 +8,7 @@ import tempfile
 import unittest
 import numpy as np
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'tools'))
-from pff_reader import load_geometry,reference
+from pff_reader import load_geometry,reference,tracking_reference
 
 
 def event(start,sequence,home,kind='OTB',action='PA'):
@@ -84,6 +84,41 @@ class PffReaderTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             p=Path(tmp)/'events.json';p.write_text(json.dumps(rows));gt,_=reference(p,np.arange(26)/25,np.ones(26,np.int8))
         self.assertTrue((gt[:5]==3).all());self.assertTrue((gt[5:]==0).all())
+
+    def test_primary_state_machine_ignores_positions_and_preserves_side_event_state(self):
+        rows=[]
+        for i in range(26):
+            e=({'game_event_type':'FIRSTKICKOFF','home_ball':False} if i==0 else
+               {'game_event_type':'SUB','home_ball':None} if i==5 else
+               {'game_event_type':'FOUL','home_ball':None} if i==7 else
+               {'game_event_type':'OUT','home_ball':None} if i==10 else
+               {'game_event_type':'OTB','home_ball':True} if i==20 else None)
+            rows.append({'frameNum':i,'period':1,'game_event':e,'balls':[{'x':i*100,'y':-999}]})
+        with tempfile.TemporaryDirectory() as tmp:
+            path=Path(tmp)/'tracking.bz2'
+            def save():
+                with bz2.open(path,'wt') as f:
+                    for r in rows:f.write(json.dumps(r)+'\n')
+            save();times=np.arange(26)/25;period=np.ones(26,np.int8)
+            gt,shadow,_=tracking_reference(path,times,period,25)
+            for row in rows:row['balls']=[{'x':-1e20,'y':1e20}]
+            save();changed,_,_=tracking_reference(path,times,period,25)
+        np.testing.assert_array_equal(gt,changed)
+        np.testing.assert_array_equal(gt,shadow)
+        self.assertTrue((gt[:10]==1).all());self.assertTrue((gt[10:20]==2).all());self.assertTrue((gt[20:]==0).all())
+
+    def test_reference_duplicates_mask_conflict_without_majority_vote(self):
+        rows=[{'frameNum':0,'period':1,'game_event':{'game_event_type':'FIRSTKICKOFF','home_ball':True}},
+              {'frameNum':1,'period':1,'game_event':{'game_event_type':'OTB','home_ball':True}},
+              {'frameNum':1,'period':1,'game_event':{'game_event_type':'OTB','home_ball':False}},
+              {'frameNum':2,'period':1,'game_event':None}]
+        with tempfile.TemporaryDirectory() as tmp:
+            path=Path(tmp)/'tracking.bz2'
+            with bz2.open(path,'wt') as f:
+                for row in rows:f.write(json.dumps(row)+'\n')
+            gt,shadow,info=tracking_reference(path,np.arange(3)/25,np.ones(3,np.int8),25)
+        np.testing.assert_array_equal(gt,[0,3,1]);np.testing.assert_array_equal(shadow,[0,1,1])
+        self.assertEqual(info['conflicting_reference_frames'],1)
 
 
 if __name__=='__main__':unittest.main()

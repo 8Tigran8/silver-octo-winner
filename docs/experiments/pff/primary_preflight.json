@@ -1,0 +1,225 @@
+{
+  "status": "PASS source-format pilots only; no model scores",
+  "records": [
+    {
+      "game": "3816",
+      "scope": "Source/adapter train-dev preflight only; no model quality scores; final remains unopened.",
+      "status": "PASS",
+      "checks": {
+        "source_clock": true,
+        "known_reference_coverage": true,
+        "all_three_classes": true,
+        "geometry_reference_separation": true,
+        "independent_periods": true
+      },
+      "geometry": {
+        "fps": 29.97,
+        "source_rows": 199012,
+        "unique_source_frames": 198142,
+        "duplicate_rows": 870,
+        "conflicting_geometry_frames": 0,
+        "source_clock_max_error_seconds": 4.998332769901026e-07,
+        "independent_source_period_bounds": {
+          "1": [
+            3056,
+            95422
+          ],
+          "2": [
+            96816,
+            202590
+          ]
+        },
+        "frames25": 166445,
+        "visible_ball_fraction_in_periods": 0.35044953473457485,
+        "source_sha256": {
+          "tracking": "0c45a695b45eba9b11ed3e20f5b5e0dec6aeebfe32032efe8aa0ecbb94c255d4",
+          "metadata": "991040955ce536a7c22c20ff597f360f1402db945e1941320ba66806ed74794d",
+          "rosters": "197e62127728780a91cfc5f6aab0b5e8f7bf4b51c7abe10f53675527009e4b91"
+        }
+      },
+      "reference": {
+        "policy": "Pinned PySport/kloppy PFF event-state machine; conservative duplicate-conflict mask and independent period resets",
+        "reference_type": "Provider event-derived full H/A/D proxy, not corrected frame-by-frame control truth",
+        "source_reference_event_types": {
+          "FIRSTKICKOFF": 1,
+          "OTB": 45810,
+          "OUT": 108,
+          "SUB": 116,
+          "SECONDKICKOFF": 1,
+          "OFF": 1,
+          "ON": 1,
+          "END": 1
+        },
+        "duplicate_source_rows": 870,
+        "conflicting_reference_frames": 0,
+        "known_fraction": 1.0,
+        "sdk_shadow_known_fraction": 1.0,
+        "class_frames": {
+          "H": 55491,
+          "A": 26540,
+          "D": 83251,
+          "X": 0
+        },
+        "period_frames": 165282,
+        "sdk_shadow_disagreement_fraction": 0.0,
+        "tracking_sha256": "0c45a695b45eba9b11ed3e20f5b5e0dec6aeebfe32032efe8aa0ecbb94c255d4",
+        "clock_sampling": "previous source frame at each independent25Hz timestamp; no quality-based alignment"
+      },
+      "alternate_reference": {
+        "policy": "Pinned kloppy last-row shadow",
+        "known_fraction": 1.0
+      },
+      "reference_variant_disagreement_fraction": 0.0,
+      "reader_sha256": "b7b50efdfa11930c544bcea88ff7410a2fcdbce5d175622ca4520efcdca6dfa4",
+      "geometry_cache_sha256": "4176516abf60f0872d4660927085136720f444c6ae6b30032c5ee43a1394c67a",
+      "reference_cache_sha256": "df23a121e0d0b013183b5b1378997134e28b9a6b4c50e14c015a11f239d175a5"
+    },
+    {
+      "game": "3813",
+      "scope": "Source/adapter train-dev preflight only; no model quality scores; final remains unopened.",
+      "status": "PASS",
+      "checks": {
+        "source_clock": true,
+        "known_reference_coverage": true,
+        "all_three_classes": true,
+        "geometry_reference_separation": true,
+        "independent_periods": true
+      },
+      "geometry": {
+        "fps": 29.97,
+        "source_rows": 211146,
+        "unique_source_frames": 210587,
+        "duplicate_rows": 559,
+        "conflicting_geometry_frames": 0,
+        "source_clock_max_error_seconds": 4.998332769901026e-07,
+        "independent_source_period_bounds": {
+          "1": [
+            5406,
+            111551
+          ],
+          "2": [
+            114026,
+            218466
+          ]
+        },
+        "frames25": 177728,
+        "visible_ball_fraction_in_periods": 0.37700027894320376,
+        "source_sha256": {
+          "tracking": "e47f6f3e76bc6222dfefb0bc635370b154841bb9ee791132a4583ab043b005a7",
+          "metadata": "a71afff466ac489108dbd773c260b58a504b86c0a2e12a677077025cd4b46ead",
+          "rosters": "07453fd7f1b7f369b56235f6fac2a9cb12be8a875678827934eaaa3af5400964"
+        }
+      },
+      "reference": {
+        "policy": "Pinned PySport/kloppy PFF event-state machine; conservative duplicate-conflict mask and independent period resets",
+        "reference_type": "Provider event-derived full H/A/D proxy, not corrected frame-by-frame control truth",
+        "source_reference_event_types": {
+          "FIRSTKICKOFF": 1,
+          "OTB": 45737,
+          "OUT": 90,
+          "SUB": 8,
+          "G": 1,
+          "SECONDKICKOFF": 1,
+          "OFF": 3,
+          "ON": 2,
+          "END": 1
+        },
+        "duplicate_source_rows": 559,
+        "conflicting_reference_frames": 0,
+        "known_fraction": 1.0,
+        "sdk_shadow_known_fraction": 1.0,
+        "class_frames": {
+          "H": 63511,
+          "A": 21339,
+          "D": 90813,
+          "X": 0
+        },
+        "period_frames": 175663,
+        "sdk_shadow_disagreement_fraction": 0.0,
+        "tracking_sha256": "e47f6f3e76bc6222dfefb0bc635370b154841bb9ee791132a4583ab043b005a7",
+        "clock_sampling": "previous source frame at each independent25Hz timestamp; no quality-based alignment"
+      },
+      "alternate_reference": {
+        "policy": "Pinned kloppy last-row shadow",
+        "known_fraction": 1.0
+      },
+      "reference_variant_disagreement_fraction": 0.0,
+      "reader_sha256": "b7b50efdfa11930c544bcea88ff7410a2fcdbce5d175622ca4520efcdca6dfa4",
+      "geometry_cache_sha256": "0e268ec7a5ac7ec9683259d37422d4c7d7c45929c7c66d664b4591d54b16fa50",
+      "reference_cache_sha256": "1a3adf50723e8ac178de30c420c05e2c854b1a99a54e9be10b341597993c6e4d"
+    },
+    {
+      "game": "3821",
+      "scope": "Source/adapter train-dev preflight only; no model quality scores; final remains unopened.",
+      "status": "PASS",
+      "checks": {
+        "source_clock": true,
+        "known_reference_coverage": true,
+        "all_three_classes": true,
+        "geometry_reference_separation": true,
+        "independent_periods": true
+      },
+      "geometry": {
+        "fps": 29.97,
+        "source_rows": 187348,
+        "unique_source_frames": 187292,
+        "duplicate_rows": 56,
+        "conflicting_geometry_frames": 0,
+        "source_clock_max_error_seconds": 4.998332769901026e-07,
+        "independent_source_period_bounds": {
+          "1": [
+            3558,
+            95232
+          ],
+          "2": [
+            97230,
+            192846
+          ]
+        },
+        "frames25": 157898,
+        "visible_ball_fraction_in_periods": 0.42080637005459864,
+        "source_sha256": {
+          "tracking": "4245b0ddf5e1f4f7ac96b0dcf5138a694fcf393d3962eca2671d4af4c24233ec",
+          "metadata": "9ac48e5e6f8c6c25deb15a8883c16430d516b5760ec3500d32de1a560152ddb7",
+          "rosters": "bb40bf1213136b3f6d9f7eb5f00e21ffbfad11d3f17ab9acc7c286d10ac40e3f"
+        }
+      },
+      "reference": {
+        "policy": "Pinned PySport/kloppy PFF event-state machine; conservative duplicate-conflict mask and independent period resets",
+        "reference_type": "Provider event-derived full H/A/D proxy, not corrected frame-by-frame control truth",
+        "source_reference_event_types": {
+          "FIRSTKICKOFF": 1,
+          "OTB": 45286,
+          "OUT": 109,
+          "END": 2,
+          "SECONDKICKOFF": 1,
+          "SUB": 9
+        },
+        "duplicate_source_rows": 56,
+        "conflicting_reference_frames": 0,
+        "known_fraction": 1.0,
+        "sdk_shadow_known_fraction": 1.0,
+        "class_frames": {
+          "H": 65032,
+          "A": 25859,
+          "D": 65340,
+          "X": 0
+        },
+        "period_frames": 156231,
+        "sdk_shadow_disagreement_fraction": 0.0,
+        "tracking_sha256": "4245b0ddf5e1f4f7ac96b0dcf5138a694fcf393d3962eca2671d4af4c24233ec",
+        "clock_sampling": "previous source frame at each independent25Hz timestamp; no quality-based alignment"
+      },
+      "alternate_reference": {
+        "policy": "Pinned kloppy last-row shadow",
+        "known_fraction": 1.0
+      },
+      "reference_variant_disagreement_fraction": 0.0,
+      "reader_sha256": "b7b50efdfa11930c544bcea88ff7410a2fcdbce5d175622ca4520efcdca6dfa4",
+      "geometry_cache_sha256": "43f7f699b6c85e6938181d0249ae613f16746b21aa578ca663f95d6da403bc73",
+      "reference_cache_sha256": "8a58a2fb59d33cb2fa3f6235bf653ba8526f6d81797f17f7dcf52ab81c69e5f6"
+    }
+  ],
+  "tests": "21 targeted reader and leakage-guard unit tests PASS",
+  "final_opened": false
+}

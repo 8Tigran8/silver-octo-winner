@@ -1,0 +1,37 @@
+{
+  "registered_utc": "2026-11-15T19:40:21.279965+00:00",
+  "status": "Registered after training3816 source/schema inspection only; no PFF model scores or final data accessed",
+  "source_commit": "61ee327ab9eceb447629ceff6d2ff1a0ef814b82",
+  "candidate": "Frozen source_seed20261113, same full weights and inference as source-balanced audit. No PFF training, candidate replacement or threshold tuning in this validation cycle.",
+  "candidate_bundle_sha256": "687dded3ec9c9296442717ce693f563fa6c7f6a717eef39c49dcb6963a90fe51",
+  "source": "Original provider Drive, user-authorized contact/newsletter form; HF mirror still pending, not used",
+  "source_folder": "https://drive.google.com/drive/folders/1_a_q1e9CXeEPJ3GdCv_3-rNO3gPqacfa",
+  "reference_document": "PFF source Data Changelog: May1 specifies possession sequences; June3 adds attacking direction. Root event files include June3 fields; older dated archives are not primary.",
+  "reader_sha256": "b7b50efdfa11930c544bcea88ff7410a2fcdbce5d175622ca4520efcdca6dfa4",
+  "split_protocol_sha256": "b4de537f1bfb1c3292dcb5650a310262449cb0cbf2c1a17f5707f129becdd358",
+  "split": "Original36training/10development/12final/6bridges preserved; final8countries isolated from PFF train/dev",
+  "geometry": "Raw homePlayers/awayPlayers/balls VISIBLE only; no estimates/smoothed coordinates, event fields or identities as model features. Equal-geometry duplicate rows collapse; conflicts become missing, never majority-voted. Source frame/video clock checked within2ms; independent raw period field; adjacent-finite29.97\u219225Hz interpolation only.",
+  "reference": "Pinned primary kloppy PFF loader: OUT/END -> dead; FIRST/SECOND/THIRD/FOURTHKICKOFF/OTB -> alive; non-null boolean home_ball -> owning team; other events leave ball state unchanged. Canonical resets unknown state per independent period and masks contradictory duplicate-frame reference states; no majority voting. Geometry ignores all event/possession fields. 25Hz reference holds the previous source-frame state.",
+  "reference_sensitivity": "Exact primary-loader last-row state-machine shadow, masked to independent periods. Secondary sensitivity only; never choose canonical using model scores.",
+  "source_limits": "Event-sequence proxy, not corrected frame-by-frame control truth. Sequence ownership resolution is an explicitly documented inference from provider records, not a vendor-certified possession export. No universal/no-overfit claim.",
+  "preflight": "Validate source clock, periods, label construction and observation separation on training3816/3813 and dev3821 before quality scoring. All H/A/D must exist and reference coverage must be>=99%of independent period frames; a failed full-task adapter cannot be relabelled conditionalH/A.",
+  "development_gate": "All10registered PFFdev games, mean natural spell gain>=.02 vs frozenv4, >=7/10wins, naturalmacro>=-.01, eachH/A/D F1>=-.02, meanblindspell>=-.01. This is an added conservative gate before touching the reserve; no runner-up selected on it.",
+  "final_gate": "Exactly policy evaluation-1.0:12games, natural mean gain>=.02, >=9wins, bothgroupA/H mean gain>0, naturalmacro>=-.01, blindspell>=-.01. Additional reference-sensitivity mean gain>=-.01. Invalid adapter/source on any game blocks promotion; no dropping games.",
+  "final_opening": "Freeze code, candidate/baseline model hashes, reader, scenarios and preflight/dev receipts before downloading or reading any final feature/reference file. Open exactlyone candidate vs frozenv4 once, keep failures and all12games.",
+  "organizer_data": "Not used for fitting/selection/PFFevaluation; target CSV package untouched.",
+  "release": "Keep verifiedv4 unless complete quality and release gates pass. Conditional user authorization to send solution applies only after readiness.",
+  "version": "PFF-reference-v2",
+  "supersedes": {
+    "plan_sha256": "cd5ef8bcf4f50873ae00691e2c96eeb587f12082724f8ebda1504d9ff53d7767",
+    "scope": "Reference construction only, before any PFF model score/final opening. Numeric thresholds, candidate and original split unchanged.",
+    "reason": "The prototype assigned one owner per sequence; source records show both teams can have true actions in a sequence. Primary kloppy PFF loader explicitly reconstructs ball_state/ball_owning_team from raw per-frame game_event fields. This is a source-semantics correction, not a score-selected reference or relaxed coverage threshold."
+  },
+  "reference_primary_source": {
+    "repository": "https://github.com/PySport/kloppy",
+    "commit": "a9651eba7c4dbbe2d2fc6d4cffb4aea63fadac11",
+    "path": "kloppy/infra/serializers/tracking/pff.py",
+    "url": "https://raw.githubusercontent.com/PySport/kloppy/a9651eba7c4dbbe2d2fc6d4cffb4aea63fadac11/kloppy/infra/serializers/tracking/pff.py",
+    "sha256": "6582b8501f1dc3bd632f8bff84b9d0a584232344e9308856061de46a3ff1aec2",
+    "scope": "Primary data-loader semantics for source-reference construction, not model features or competition labels."
+  }
+}
