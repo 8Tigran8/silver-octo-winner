@@ -1,0 +1,32 @@
+{
+  "registered_utc": "2026-11-15T16:36:26.539260+00:00",
+  "status": "Registered after known Metrica3 failures of long and OOD variants, before any source-balanced fit/score",
+  "hypothesis": "Old sampler gives original family1/2, SkillCorner1/2, so Metrica2 of9original games receives1/9 overall. Sample DFL/Metrica/SkillCorner providers equally to limit source-semantic dominance while keeping inference source-blind.",
+  "training": {
+    "steps": 4500,
+    "seeds": [
+      20261113,
+      20261114,
+      20261115
+    ],
+    "groups": [
+      "DFL7",
+      "Metrica2",
+      "SkillCorner20"
+    ],
+    "provider_sampling": "equal1/3 each; within-provider uniform games/scenarios; original random team swaps",
+    "architecture_loss_optimizer": "unchanged original TCN/BCE/AdamW; no spell weighting, learned gate, early stopping or new label source",
+    "normalization": "unchanged train-only finite-feature normalization, excludes whole scored neural fold"
+  },
+  "fold_plan_sha256": "2f9facaf149ec17d84a8dd6064a4e9dc57945c784477973c0009c43461df70aa",
+  "evaluation_policy_sha256": "da916f2e709012365f90bd0e957b35432ebf2db8c69740469a1abdd920be4940",
+  "candidates": [
+    "three individual uniform50 probability fusions",
+    "equal probability ensemble uniform50"
+  ],
+  "selection": "Same evaluation-1.0 numeric gates; freeze one best dev-eligible candidate before reused11source regression check. No post-check runner-up selection in this cycle. Three seeds all reported.",
+  "transfer_guard": "Same prospective guard as robustness followup: WCSF/Metrica3 each natural/blind mean gain>=-.01; European conditional mean gain>=-.01. No fresh-source confirmation claim.",
+  "known_external_exposure": "All40games are research and Metrica3 failure motivates provider balancing; selecting on these repeatedly may overfit this development corpus. PFF final remains unopened.",
+  "lineage_limit": "Legacy v3 components retain per-scored-game exclusion, new neural stages exclude complete folds. Full inherited-fold compliance remains unresolved; do not claim release PASS.",
+  "user_hold": "Local only; no submission, messages, push or publication."
+}
