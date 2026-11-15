@@ -1,0 +1,250 @@
+{
+  "status": "NOT ELIGIBLE: sequence-reference hypothesis fails source coverage/ownership semantics; no PFF model scores or final files opened",
+  "attempted_reader_sha256": "ac8f3d390eabdb84cd6e799f367518f75c1b35f0e90ef0cb56c92d37775555bf",
+  "source_findings": "A sequence can contain true annotated actions by both teams; assigning one team to the whole sequence is not a reliable full-task reference. Preserve failure; use primary kloppy per-frame state semantics instead, with unchanged99%coverage threshold.",
+  "records": [
+    {
+      "game": "3816",
+      "scope": "Source/adapter train-dev preflight only; no model quality scores; final remains unopened.",
+      "status": "PASS",
+      "checks": {
+        "source_clock": true,
+        "known_reference_coverage": true,
+        "all_three_classes": true,
+        "geometry_reference_separation": true,
+        "independent_periods": true
+      },
+      "geometry": {
+        "fps": 29.97,
+        "source_rows": 199012,
+        "unique_source_frames": 198142,
+        "duplicate_rows": 870,
+        "conflicting_geometry_frames": 0,
+        "source_clock_max_error_seconds": 4.998332769901026e-07,
+        "independent_source_period_bounds": {
+          "1": [
+            3056,
+            95422
+          ],
+          "2": [
+            96816,
+            202590
+          ]
+        },
+        "frames25": 166445,
+        "visible_ball_fraction_in_periods": 0.35044953473457485,
+        "source_sha256": {
+          "tracking": "0c45a695b45eba9b11ed3e20f5b5e0dec6aeebfe32032efe8aa0ecbb94c255d4",
+          "metadata": "991040955ce536a7c22c20ff597f360f1402db945e1941320ba66806ed74794d",
+          "rosters": "197e62127728780a91cfc5f6aab0b5e8f7bf4b51c7abe10f53675527009e4b91"
+        }
+      },
+      "reference": {
+        "sequences": 280,
+        "ambiguous_sequences": 14,
+        "clear_owner_conflicts": 1,
+        "clear_first_disagreements": 0,
+        "reference_mode": "deliberate_then_first",
+        "quantization": "nearest25Hzframe from independent source clock",
+        "explicit_OUT_markers": 108,
+        "contradictory_same_frame_states": 0,
+        "period_frames": 165282,
+        "class_frames": {
+          "H": 53098,
+          "A": 25987,
+          "D": 85387,
+          "X": 810
+        },
+        "known_fraction": 0.9950992848586053,
+        "events_sha256": "130cf266b72b5d4328ea77956db26b5c400f630d1c378a11abb6cdd36237886a",
+        "scope": "Event-sequence-derived full-task proxy; not corrected frame-by-frame possession truth"
+      },
+      "alternate_reference": {
+        "sequences": 280,
+        "ambiguous_sequences": 13,
+        "clear_owner_conflicts": 0,
+        "clear_first_disagreements": 0,
+        "reference_mode": "first_control",
+        "quantization": "nearest25Hzframe from independent source clock",
+        "explicit_OUT_markers": 108,
+        "contradictory_same_frame_states": 0,
+        "period_frames": 165282,
+        "class_frames": {
+          "H": 53098,
+          "A": 26215,
+          "D": 85387,
+          "X": 582
+        },
+        "known_fraction": 0.9964787454169238,
+        "events_sha256": "130cf266b72b5d4328ea77956db26b5c400f630d1c378a11abb6cdd36237886a",
+        "scope": "Event-sequence-derived full-task proxy; not corrected frame-by-frame possession truth"
+      },
+      "reference_variant_disagreement_fraction": 0.0013794605583185102,
+      "reader_sha256": "ac8f3d390eabdb84cd6e799f367518f75c1b35f0e90ef0cb56c92d37775555bf",
+      "geometry_cache_sha256": "4176516abf60f0872d4660927085136720f444c6ae6b30032c5ee43a1394c67a",
+      "reference_cache_sha256": "baa475a2b7b278522464ecd51a4628dbddde69a755da24ea08f2e5a3cb5da617"
+    },
+    {
+      "game": "3813",
+      "scope": "Source/adapter train-dev preflight only; no model quality scores; final remains unopened.",
+      "status": "FAIL: full-task source preflight",
+      "checks": {
+        "source_clock": true,
+        "known_reference_coverage": false,
+        "all_three_classes": true,
+        "geometry_reference_separation": true,
+        "independent_periods": true
+      },
+      "geometry": {
+        "fps": 29.97,
+        "source_rows": 211146,
+        "unique_source_frames": 210587,
+        "duplicate_rows": 559,
+        "conflicting_geometry_frames": 0,
+        "source_clock_max_error_seconds": 4.998332769901026e-07,
+        "independent_source_period_bounds": {
+          "1": [
+            5406,
+            111551
+          ],
+          "2": [
+            114026,
+            218466
+          ]
+        },
+        "frames25": 177728,
+        "visible_ball_fraction_in_periods": 0.37700027894320376,
+        "source_sha256": {
+          "tracking": "e47f6f3e76bc6222dfefb0bc635370b154841bb9ee791132a4583ab043b005a7",
+          "metadata": "a71afff466ac489108dbd773c260b58a504b86c0a2e12a677077025cd4b46ead",
+          "rosters": "07453fd7f1b7f369b56235f6fac2a9cb12be8a875678827934eaaa3af5400964"
+        }
+      },
+      "reference": {
+        "sequences": 252,
+        "ambiguous_sequences": 17,
+        "clear_owner_conflicts": 5,
+        "clear_first_disagreements": 1,
+        "reference_mode": "deliberate_then_first",
+        "quantization": "nearest25Hzframe from independent source clock",
+        "explicit_OUT_markers": 90,
+        "contradictory_same_frame_states": 0,
+        "period_frames": 175663,
+        "class_frames": {
+          "H": 59574,
+          "A": 19342,
+          "D": 92885,
+          "X": 3862
+        },
+        "known_fraction": 0.9780147213698958,
+        "events_sha256": "eb45e7685ffb2a577466efd2384355edc7145f7f879a34cc9448ea7d18f16d4e",
+        "scope": "Event-sequence-derived full-task proxy; not corrected frame-by-frame possession truth"
+      },
+      "alternate_reference": {
+        "sequences": 252,
+        "ambiguous_sequences": 12,
+        "clear_owner_conflicts": 0,
+        "clear_first_disagreements": 0,
+        "reference_mode": "first_control",
+        "quantization": "nearest25Hzframe from independent source clock",
+        "explicit_OUT_markers": 90,
+        "contradictory_same_frame_states": 0,
+        "period_frames": 175663,
+        "class_frames": {
+          "H": 60827,
+          "A": 21372,
+          "D": 93016,
+          "X": 448
+        },
+        "known_fraction": 0.9974496621371604,
+        "events_sha256": "eb45e7685ffb2a577466efd2384355edc7145f7f879a34cc9448ea7d18f16d4e",
+        "scope": "Event-sequence-derived full-task proxy; not corrected frame-by-frame possession truth"
+      },
+      "reference_variant_disagreement_fraction": 0.020180686883407434,
+      "reader_sha256": "ac8f3d390eabdb84cd6e799f367518f75c1b35f0e90ef0cb56c92d37775555bf",
+      "geometry_cache_sha256": "0e268ec7a5ac7ec9683259d37422d4c7d7c45929c7c66d664b4591d54b16fa50",
+      "reference_cache_sha256": "c61e8b23fbcbd2d3e4f43422bf27ff951f629d559e56acd30d7dd3022e7d4e04"
+    },
+    {
+      "game": "3821",
+      "scope": "Source/adapter train-dev preflight only; no model quality scores; final remains unopened.",
+      "status": "PASS",
+      "checks": {
+        "source_clock": true,
+        "known_reference_coverage": true,
+        "all_three_classes": true,
+        "geometry_reference_separation": true,
+        "independent_periods": true
+      },
+      "geometry": {
+        "fps": 29.97,
+        "source_rows": 187348,
+        "unique_source_frames": 187292,
+        "duplicate_rows": 56,
+        "conflicting_geometry_frames": 0,
+        "source_clock_max_error_seconds": 4.998332769901026e-07,
+        "independent_source_period_bounds": {
+          "1": [
+            3558,
+            95232
+          ],
+          "2": [
+            97230,
+            192846
+          ]
+        },
+        "frames25": 157898,
+        "visible_ball_fraction_in_periods": 0.42080637005459864,
+        "source_sha256": {
+          "tracking": "4245b0ddf5e1f4f7ac96b0dcf5138a694fcf393d3962eca2671d4af4c24233ec",
+          "metadata": "9ac48e5e6f8c6c25deb15a8883c16430d516b5760ec3500d32de1a560152ddb7",
+          "rosters": "bb40bf1213136b3f6d9f7eb5f00e21ffbfad11d3f17ab9acc7c286d10ac40e3f"
+        }
+      },
+      "reference": {
+        "sequences": 257,
+        "ambiguous_sequences": 7,
+        "clear_owner_conflicts": 1,
+        "clear_first_disagreements": 1,
+        "reference_mode": "deliberate_then_first",
+        "quantization": "nearest25Hzframe from independent source clock",
+        "explicit_OUT_markers": 109,
+        "contradictory_same_frame_states": 0,
+        "period_frames": 156231,
+        "class_frames": {
+          "H": 61646,
+          "A": 24099,
+          "D": 69135,
+          "X": 1351
+        },
+        "known_fraction": 0.991352548469894,
+        "events_sha256": "68957b263bbdf1e16ea12f7bfbf017b90f9c111821f7c245f35a36b202b74fb7",
+        "scope": "Event-sequence-derived full-task proxy; not corrected frame-by-frame possession truth"
+      },
+      "alternate_reference": {
+        "sequences": 257,
+        "ambiguous_sequences": 6,
+        "clear_owner_conflicts": 0,
+        "clear_first_disagreements": 0,
+        "reference_mode": "first_control",
+        "quantization": "nearest25Hzframe from independent source clock",
+        "explicit_OUT_markers": 109,
+        "contradictory_same_frame_states": 0,
+        "period_frames": 156231,
+        "class_frames": {
+          "H": 61673,
+          "A": 24129,
+          "D": 70165,
+          "X": 264
+        },
+        "known_fraction": 0.9983101945196536,
+        "events_sha256": "68957b263bbdf1e16ea12f7bfbf017b90f9c111821f7c245f35a36b202b74fb7",
+        "scope": "Event-sequence-derived full-task proxy; not corrected frame-by-frame possession truth"
+      },
+      "reference_variant_disagreement_fraction": 0.013550447734444509,
+      "reader_sha256": "ac8f3d390eabdb84cd6e799f367518f75c1b35f0e90ef0cb56c92d37775555bf",
+      "geometry_cache_sha256": "43f7f699b6c85e6938181d0249ae613f16746b21aa578ca663f95d6da403bc73",
+      "reference_cache_sha256": "a3681c299a501a4b070314bbc83bed04083ac533f508a1ddd7de249fbaebd84c"
+    }
+  ]
+}
