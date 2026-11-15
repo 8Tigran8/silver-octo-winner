@@ -1,0 +1,632 @@
+{
+  "status": "All36PFFtraining source checks PASS",
+  "known_reference_frames": 5636115,
+  "class_frames": {
+    "H": 1628071,
+    "A": 1688804,
+    "D": 2319240,
+    "X": 0
+  },
+  "source_match_id_and_registered_team_pairs_verified": true,
+  "records": [
+    {
+      "game": "3816",
+      "period_frames": 165282,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.35044953473457485,
+      "source_sha256": {
+        "tracking": "0c45a695b45eba9b11ed3e20f5b5e0dec6aeebfe32032efe8aa0ecbb94c255d4",
+        "metadata": "991040955ce536a7c22c20ff597f360f1402db945e1941320ba66806ed74794d",
+        "rosters": "197e62127728780a91cfc5f6aab0b5e8f7bf4b51c7abe10f53675527009e4b91"
+      },
+      "geometry_sha256": "4176516abf60f0872d4660927085136720f444c6ae6b30032c5ee43a1394c67a",
+      "reference_sha256": "df23a121e0d0b013183b5b1378997134e28b9a6b4c50e14c015a11f239d175a5"
+    },
+    {
+      "game": "3854",
+      "period_frames": 147348,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.5378016668023997,
+      "source_sha256": {
+        "tracking": "ba148c83ce469e34f7c03124c4116e11df1021ce77765b02a00e6c9c0ce14917",
+        "metadata": "96128da72d8f727b44c1e206858b5aa8a01f3a37cdfdc5b8d458102198a001be",
+        "rosters": "39ab66abf84bab0be2254fa577d531db4bebf3d20160a3d0cfd2331095fd0743"
+      },
+      "geometry_sha256": "777f28f54a69771473523bf17053ba5663b2729d36595e65b94b98fef4b4f8d8",
+      "reference_sha256": "8a97719bef576f5b4b18c751174ba1781e76dadaac76d267ea514b58e4879de2"
+    },
+    {
+      "game": "3850",
+      "period_frames": 148681,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.5219362258795677,
+      "source_sha256": {
+        "tracking": "a2fdd69c780c374ff3dd8ecec17af843b15d09c5fadf0a5ec33d5ae81d8d81b0",
+        "metadata": "69df22d9710cb879be09b599754e9e2310d8a7330ceeb096a24e7bd2f54ce6ad",
+        "rosters": "cf07b026d234290e4e95c8098e29e2a3fc3e9c3e4bbdc3c48e00d2ff0f607ce6"
+      },
+      "geometry_sha256": "dad061865b4c4566abd504c18cd9b32b4107de5f5ce7452bb1e4ec6d4183c50b",
+      "reference_sha256": "6b5af6be29809cfb68e514a3da5553cfe3830644b54a91230896464533b41d1a"
+    },
+    {
+      "game": "3836",
+      "period_frames": 145934,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.4626749078350487,
+      "source_sha256": {
+        "tracking": "8f2b89b28350b34745ba5498b5e4f21ebcb3cbc5404454c0050e90bdd0ec1d61",
+        "metadata": "bb3d0a42379fa4e65cded6e17969c47a338c3821068a83cf1442123aa5a2d65e",
+        "rosters": "56b7695ad29b3d77657a3ebc9c772914337bd48570be98c8b74f368dac2628e0"
+      },
+      "geometry_sha256": "4b86ba0569e4d7fb949e3cad2fda9f37341105106dea1769c9dbe6a821ed3e6a",
+      "reference_sha256": "95e8c142c8a9e4d98d321f851605b0c18577f8b71b619cf3c4e0cc12ed74182b"
+    },
+    {
+      "game": "3831",
+      "period_frames": 143955,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.516696189781529,
+      "source_sha256": {
+        "tracking": "5c462263c76bd5f651e11904b7a8e557c57e281cb8397acbaf8eceffeba3ef6e",
+        "metadata": "05a72fac3fe52bb7ce3d87926f8f9e087aa2ed7599eb0af253bb5005e773b72b",
+        "rosters": "70be0f43d4595f96d513cf0bb9b328deb830bc973c8f93dea46bd531ee2af8bc"
+      },
+      "geometry_sha256": "78c06918406f5728cd621312489d6205242ec5547725fe9f0cdffc1eff12b79f",
+      "reference_sha256": "a6e10f7f4b4643194e4f8af9ad8f6e5b335f7f885f8a971bee58aeced2192f10"
+    },
+    {
+      "game": "10506",
+      "period_frames": 194375,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "visible_ball_fraction": 0.42724630225080384,
+      "source_sha256": {
+        "tracking": "43d9d915009b41ab580335eeaf432f09bc98c2e95100c72742cc4664b2246b03",
+        "metadata": "94c37503e2c329f1f33aef3130e508ddb38b2d88d575b7cf280562802513ce11",
+        "rosters": "e38979566818cdbb180c82addbb89218dfb802cd72dfade08842cbbe4d74bd41"
+      },
+      "geometry_sha256": "877774a9db75cc35184bf6d3e378680d67e024f88e7994ea89377a1ec32b76d3",
+      "reference_sha256": "a1381e8d9d388f0be5cb142d42b7f97ab3c6aeb2ef62191bd9edff611ccd7a03"
+    },
+    {
+      "game": "3846",
+      "period_frames": 148505,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.39110467661021514,
+      "source_sha256": {
+        "tracking": "a22ccc0f070cf8572a5c01508b85508e70eacffc1b1e85e54749640881f6ae10",
+        "metadata": "71cd908951545244fe37c2fbc8b3f209e7e8b599d8bbdcad2effd435e6677394",
+        "rosters": "f388717ef75fc1b2458cd61c222fd6e9dee9044baafa244f6cbaa730f6178a98"
+      },
+      "geometry_sha256": "2211eeed6dd9b06be95013f8ef46928b84cd8054433c70f69527c52e4fc3f4ac",
+      "reference_sha256": "86a2762bb1d250284f570c3c14fe5ebd6f353fbbb8b2ebd929adb115b98c2351"
+    },
+    {
+      "game": "10514",
+      "period_frames": 148848,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.3843451037299796,
+      "source_sha256": {
+        "tracking": "b40db6bc9ae1747566f171f2f712021ffee50a152cc71ace0c45e5e8ebb88990",
+        "metadata": "a84474d6bb7df1f565030c24a55224d7d929be6fcac29be292cb97b875e223c7",
+        "rosters": "9f0c1810e1ec5a7da59a3b2e73d79eb1198f055f4304e56fac3a35e317013d4e"
+      },
+      "geometry_sha256": "64fd9f2530fee824052c67adc33afa96ebcdf98611b9824c1fdad62bc366f77a",
+      "reference_sha256": "aecf5519ee4b2afff69cab7507cd41987dd7bfc26f04549a6c93d6966a1a81a3"
+    },
+    {
+      "game": "3819",
+      "period_frames": 155090,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.49050873686246693,
+      "source_sha256": {
+        "tracking": "66fc17c0e0c6eb600db509a75dc666c747521ecbce0ce416187e32b6cd7d54bf",
+        "metadata": "19d6c414653bcf8851dce5962d463e70a4e1421b387751eed9998dca768d5eaf",
+        "rosters": "88d47cf641d55fac38c4da711f7fafea0c631fa9af86223c64028cf2da828d3a"
+      },
+      "geometry_sha256": "3ee21dc9ef32660b081dafb84ff19e4d6d60e0c29c14ac9661a7f1ea88eabcd3",
+      "reference_sha256": "0754559d47f301a2f798508d20b396bd6df99e3a7c4005a0360d26e4ee48396c"
+    },
+    {
+      "game": "3853",
+      "period_frames": 148495,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.4043301121249874,
+      "source_sha256": {
+        "tracking": "0d6296eb34a0f38c3abc4c6de467c4dd3f8a102590a5c719d14887f46c0d0fb5",
+        "metadata": "baf8f30d6bd07014f241d644101317f63252a3f90aab69c40d771ab8b8a384fc",
+        "rosters": "4d71e2b0c09b85f8ffec42e91f2e1aec495115aed13ef203f19730b5af1394cc"
+      },
+      "geometry_sha256": "cd4871e68b0a8e97dfeb28de4edeb71fd2db8e42274f2e01b087536e9f9301ef",
+      "reference_sha256": "db28122b2669bf7125af0c323574e25a69dea7c2d76c9f8ac534909522804eb4"
+    },
+    {
+      "game": "3855",
+      "period_frames": 151555,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.4452311042195902,
+      "source_sha256": {
+        "tracking": "761225ecbe88491cfb60caf0ba97e6378b4cfa9dae5067c2f8d12c1c26e095b6",
+        "metadata": "c54f155039a43a45f361c8705ad4c8f8f61b7cb876d4147632ded49c4bebf054",
+        "rosters": "15be5b354781b970a683c79658ee7ddcbf118240be7674045413962a98775272"
+      },
+      "geometry_sha256": "c4815f406e69f376f57afe32148fd5211a2f78ae00b760f640e186b7da03fdeb",
+      "reference_sha256": "2175a583680c59e2f1b976b2fa442f4c21faed3e20d1395ec2ae1aa27f1a4a3d"
+    },
+    {
+      "game": "3832",
+      "period_frames": 151957,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.3499674249952289,
+      "source_sha256": {
+        "tracking": "36f866427b7ff951eabf28c08ea47601b94ea98fbdf0c1df272e7f004034a6af",
+        "metadata": "cad63a885b0d5f5dac2ac766df1ed1074ff87c802fb37367fb2a0cb25eb87734",
+        "rosters": "dfeef8745e3bbebddac23f8e015e24de04f8ef034c271eba9638625842de6dd9"
+      },
+      "geometry_sha256": "16429a178983ec5682fa0dcb1d2af082ed10140f0438994c92207327f6321c3f",
+      "reference_sha256": "0243587c39b11c8cffa3d681e63eddaf448943bbc8f813e90843dab07b38c517"
+    },
+    {
+      "game": "3833",
+      "period_frames": 160643,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.34356928095217343,
+      "source_sha256": {
+        "tracking": "f9dac7e96691a4be9127469d12bfdcf7292d1fadaebb8d085e8ddff11e0a859d",
+        "metadata": "3b26840fd9bdd6df25833e034f684eb7ff964a26e292ad3d98c03e231293e31f",
+        "rosters": "c3c4ff09ebe779bb14129015dda4915f35605cfffffc5b57441fb5a3e57df3c6"
+      },
+      "geometry_sha256": "ee2dcc532a450fb867393545b99fe21860c67491600b566bb91c5bb1b8277f56",
+      "reference_sha256": "bfba56d616e8709c6cc2c7b3eea44242acb9defc3e1cf193aff9f43d8af941f6"
+    },
+    {
+      "game": "3823",
+      "period_frames": 150022,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.42478436495980587,
+      "source_sha256": {
+        "tracking": "be45b1c86708df15fb69c52b08f751c3655447fcf49f557797966dd69939a8d8",
+        "metadata": "c258c9428e3ec596e4e8c09f21f04e29eb880a0053384bf9b294939951ce4296",
+        "rosters": "fa4cfd40dd7d82382a3239626cdcfc59d208a9dd1591383080ca436744dcca55"
+      },
+      "geometry_sha256": "5d7aee2127b898355a056d60356c00dfa8b803a18bd15420212eb8e88741dc66",
+      "reference_sha256": "7ad5a739e286d086c8dfcc64748407d1e8e4c4b1b70818753e604791abae6930"
+    },
+    {
+      "game": "3834",
+      "period_frames": 150314,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.43647963596205275,
+      "source_sha256": {
+        "tracking": "3cca88b3957a8d1fbd475e944ca3e2d11b5fa9332079340d4c4bda043147563c",
+        "metadata": "0678a253b5111fe1037c374f0781ae2e096ad562635d0a2f9c4f55c5db356989",
+        "rosters": "0aef02ab2ef6ca228fbb72367ab0add28f498b169419c18a53cb774fb4e5d4c3"
+      },
+      "geometry_sha256": "541efde34e7c46b9440b18aa2762315e0994022526423e1e6f6307f67ceada78",
+      "reference_sha256": "0a45945514c7b394b5512384c376b9d79d1898d1bfd78a6c54d519debf4b2cb7"
+    },
+    {
+      "game": "3822",
+      "period_frames": 154703,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.49968003206143385,
+      "source_sha256": {
+        "tracking": "b5c5078ca3c4de9cbfae1ecf4b5f4355a4407034fdd0fda51ac0dccbc7605512",
+        "metadata": "69a78c4e1fbf368bd06f5685182eb85fa4710259be6ae570966fb5b2f152c95e",
+        "rosters": "47df56a2bc8e072a49204e377c23f5cf2bf0b8ec09627de070f83a9efbea7b14"
+      },
+      "geometry_sha256": "359485170b616e2ac9727335f00dda28ca22342eb042bac75e8764e111a36c07",
+      "reference_sha256": "1d07e867be8f588a5b9d0402375fc7f409285cfc107ae6517f30ae95ba706638"
+    },
+    {
+      "game": "10504",
+      "period_frames": 151824,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.44384287069238065,
+      "source_sha256": {
+        "tracking": "1616d31b957fc7e43e8ed097aeafc868130d0867f29c0e453b5ed6c8d9850844",
+        "metadata": "27c93c1fe35b370e130806f8b8a973e012692cd16bed11b0fc9901eda317b3c4",
+        "rosters": "569b934d9d8f9e0ad20214285ea584f099a2a1c6110f81f01003f4bced1f747c"
+      },
+      "geometry_sha256": "d070dbc0984b7d794943a2365e9e513b215dd3210c2079cada5b668f1bb15571",
+      "reference_sha256": "fa198f3897afdbea4617abfd2f9b3897cd88ec2e349d51519412a0d576ef0067"
+    },
+    {
+      "game": "3835",
+      "period_frames": 152912,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.35621141571622894,
+      "source_sha256": {
+        "tracking": "9ac782759d7db724a670809755e17ac25ed53750a248064c90e481557d8a5c3f",
+        "metadata": "e5170a0b7b918f519a66031aec7f856738ca9c3320313cb12ccc7910645e7c63",
+        "rosters": "8feca90975b1b65e3a190f1f5897aee3ec9385db306c2f520baeded30c4d5261"
+      },
+      "geometry_sha256": "79f25a0cc70a06612e73807c9abadab92addaa6b13cc554e192df4d8fb4afa30",
+      "reference_sha256": "b5ba36a18b673c0f2f2403b2684cf3a3523847af40bbc456799bd73a36811648"
+    },
+    {
+      "game": "3847",
+      "period_frames": 160440,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.3852094240837696,
+      "source_sha256": {
+        "tracking": "d48183354814ac01ef934afe1487b4d1ee3d34aa361fe0a1091567178139d321",
+        "metadata": "8b12b8da5e92e628c913e3127455d6dfb9d7f1c8ec83bc98d489b7dd4d4a7bef",
+        "rosters": "db68768f9e5ae0f631ffc08884177269bf67e9b402d8d6431f04d6cc59527515"
+      },
+      "geometry_sha256": "aca87d30b29cb95a42382af59c6f178a02ac7c2c681f9160ea4be5bdce02d68b",
+      "reference_sha256": "e59b489ac9afe286c5a94bb962eeaff7f0870e8de575786e62dc7dd88e737838"
+    },
+    {
+      "game": "3840",
+      "period_frames": 155415,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.33327542386513526,
+      "source_sha256": {
+        "tracking": "342ae91055f1f41115246ea8e4a66c724c450abda41b795bff1cb9c23ad4de8d",
+        "metadata": "b98faec64855cdb41371fa7368ce24369610cc1eae6d57b0a853a6e4cb1597d6",
+        "rosters": "ca9575e3d78acdef2ee9c090e58ae1431d29ca3f2b3a1391074189507a755a88"
+      },
+      "geometry_sha256": "71008111df42bc1905a5ea3234844797570907e139ec44294af36e66f98bcc14",
+      "reference_sha256": "49fc416924d719fa8073e0fa7ef2b9265331bf97c11021f7713a7d43e1e61523"
+    },
+    {
+      "game": "3824",
+      "period_frames": 148738,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.5021110946765454,
+      "source_sha256": {
+        "tracking": "145b3b4e6b331f7835c4d81349e8a5e99dc7f9e43baa759a05fe85233cbd0bcb",
+        "metadata": "da7116270916ed18bea8f58756d2bc54cd629d3da3405a98586211b46fd3e316",
+        "rosters": "2ef1e5177accb46c3eef328ef9dddf2fa1b8816389ff797644bbc010f8247e88"
+      },
+      "geometry_sha256": "2f098f9afaa3d636848979bd45cee4601bc2db66f74075178ab5fc6049a32124",
+      "reference_sha256": "b893d7e6400391b37013d7b4c27fee820c6c1ebbe715631481a9cbb10f4e74d9"
+    },
+    {
+      "game": "3837",
+      "period_frames": 148458,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.4050438507860809,
+      "source_sha256": {
+        "tracking": "03626200a5789d825bacb94f2a92b791ef24a0c4951dbab3745247c3da258c4c",
+        "metadata": "0994fa90559465994d788410d44ca6c18cac097a17c34653e571f8649f3b182d",
+        "rosters": "626d0ac19e1d1d07c843880083a88f356034c3b96e2daea6c18d95662842603d"
+      },
+      "geometry_sha256": "e6464ec9cb2162e6a090b62f884cd8df2336744de08742656117f27f93db49e1",
+      "reference_sha256": "aec63c8e19d07d2c61d4db4b52d43b267e711d37d2f8a84f9e700e010605b06f"
+    },
+    {
+      "game": "3851",
+      "period_frames": 155747,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.28601513993849,
+      "source_sha256": {
+        "tracking": "9041305fc5665aa4554125f3561c6280229cbbe06d5c1bb53731486a79253484",
+        "metadata": "fe2c960b23225be049c8fd093dd64dfa8313f8d2ebf23e62e6aa14e642fe6a27",
+        "rosters": "10b339a273ad17673179f925992628c15ab6d1a60093e1f976f39cdf1de10523"
+      },
+      "geometry_sha256": "d605b519ae2084f310b2df0e1ea1bc3eaa1bc4a3b87a0046707c672511c064ac",
+      "reference_sha256": "7b05c51516b092cbb219bdce0318f90ed1c88f4cebc7ba142c1dfbb1f663df71"
+    },
+    {
+      "game": "3817",
+      "period_frames": 153360,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.3929838288993219,
+      "source_sha256": {
+        "tracking": "3b1028f44f6b083645785bb7e74a4a23f625837a3225e4c3b45669bad069961d",
+        "metadata": "de78e952d80d325109596ddae41c04a7597fd177fd1bedb9086e64eeab04a951",
+        "rosters": "57d06598ecba555b783d3fa6917b108f510eadd7656d86981efb370dbc52bd0f"
+      },
+      "geometry_sha256": "409c1b4ccf88dbb614f92d9ef0260186670d4ce1d56d3b1a3da749be6cc55b59",
+      "reference_sha256": "42d87acf5a9704593dd9c05df0d73e8b9ea84f6270033d5caad2d128c2d2e461"
+    },
+    {
+      "game": "3815",
+      "period_frames": 156759,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.4267378587513317,
+      "source_sha256": {
+        "tracking": "291ad87d4250848524c2e234738249551dd1a777883e56f6bca08c7c80c28824",
+        "metadata": "0da996e2ca7dbc873e43df24cd8ddff94e8c43a70432138c7c27275b7e801de1",
+        "rosters": "3c0286e130dec2ba73dbb518d83434ea4071b48f3583217b56387beb3d3447e8"
+      },
+      "geometry_sha256": "439467aa499f719a62b12a63681b07eb913db30c22b25d071291350d81ccc22c",
+      "reference_sha256": "bd428f509d29ce26938639fe1e9af0cc77fed636df1b464688e6e2f3a56829e7"
+    },
+    {
+      "game": "10517",
+      "period_frames": 212077,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "visible_ball_fraction": 0.3182759092216506,
+      "source_sha256": {
+        "tracking": "3c899b41eb5fcf4c74bf62c83853910a24098eb4b2485cc799fab6fce622a72c",
+        "metadata": "9416812b85807dc9c02a2e86e6269a5ef9def47d7ca353c70994626bcc5d417a",
+        "rosters": "e7053ba5aa8d626a41dd725edc2e9d867fa283d3fdf138ab22918f3692bc0057"
+      },
+      "geometry_sha256": "28ee23fe0bb2dd193c24a308937b04a9afcc82b2a1a259736697ece493c048ec",
+      "reference_sha256": "8755e57748b489d87fb0890b60942cbb03d6a3071247995f69a73b416c289f18"
+    },
+    {
+      "game": "3839",
+      "period_frames": 147149,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.4509918517964784,
+      "source_sha256": {
+        "tracking": "9659e3bc94f0445413a443601da62100224b0f7f0d7fcd464fada12968fc2bf4",
+        "metadata": "83456f051fa78f88837704bfd7a0360b405b4c5a5cd303be1924c57b1b87d43a",
+        "rosters": "f85f7205e6ae5cfa6f665797dc890da9131f495c18ec50befce7b0e19749ca6e"
+      },
+      "geometry_sha256": "bf08a0ebb128d0b8f9a5da16d392b72d311aba1d1099c95cd9cb51b1e8a83787",
+      "reference_sha256": "be66a24ae531b2e054fc523f4643db4e3a3562a1c12cce6c5b8f09909c02f465"
+    },
+    {
+      "game": "10515",
+      "period_frames": 148878,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.4300635419605314,
+      "source_sha256": {
+        "tracking": "4256d04560d53bd71536f279234b73bbdbb2d3231c57a02f7a9466110372a19b",
+        "metadata": "2e7f76327b64a149edf37bf93d44e76eabf890356ce1d397447bb3992eeb9bb7",
+        "rosters": "57b0e39e2f36e70be3f2d2c430378db65c128280a895102e81442de15fd8e7db"
+      },
+      "geometry_sha256": "57b0a3fbd015dcb8f2622d8ec013d6dd5b1adcef4a482364e22ccc324724543a",
+      "reference_sha256": "6ac11114ac0967cbac21839ea0fe8395eea3895905c9a2e5317faf3df828152a"
+    },
+    {
+      "game": "3813",
+      "period_frames": 175663,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.37700027894320376,
+      "source_sha256": {
+        "tracking": "e47f6f3e76bc6222dfefb0bc635370b154841bb9ee791132a4583ab043b005a7",
+        "metadata": "a71afff466ac489108dbd773c260b58a504b86c0a2e12a677077025cd4b46ead",
+        "rosters": "07453fd7f1b7f369b56235f6fac2a9cb12be8a875678827934eaaa3af5400964"
+      },
+      "geometry_sha256": "0e268ec7a5ac7ec9683259d37422d4c7d7c45929c7c66d664b4591d54b16fa50",
+      "reference_sha256": "1a3adf50723e8ac178de30c420c05e2c854b1a99a54e9be10b341597993c6e4d"
+    },
+    {
+      "game": "3828",
+      "period_frames": 159803,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.3550997165259726,
+      "source_sha256": {
+        "tracking": "ef67aa11ad5b12be63e8b0925272e7440b228ae258f75d2966ba45eb1b55ee2c",
+        "metadata": "8cf369595a3d2d1cd99d3dd79408c71224fc61a1458a5ff4d46f3cd9da35c962",
+        "rosters": "1ebbf10b28cb28e768675b3bbbb2edab3385392ce020049521b3e033b0e930ac"
+      },
+      "geometry_sha256": "72aba3385442f853b95dcde06e15f366834d331c4eb842d4dc1da5624d3f8ccf",
+      "reference_sha256": "62c84a75045291a69c91b72f505604a66ccc75a246800238187a99c688d37257"
+    },
+    {
+      "game": "3848",
+      "period_frames": 147069,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.410059223901706,
+      "source_sha256": {
+        "tracking": "dcfb3bde33659b07321390bd63263fda0343a6ff5b46761527ba3b1e00c1aff3",
+        "metadata": "3a6a3f8adc0deee7bc640217c43cbc0901103d8dbfa697282e6a11ec8736fec1",
+        "rosters": "bb40b3865c9e0cc32cc3a6e1d22ec35f5cf8487f118da9dbee8b5252da6ce1c6"
+      },
+      "geometry_sha256": "f6c7e5c870267e2ae25417b170d50dc087f6e172290595446c3605154b0b0342",
+      "reference_sha256": "136c573b8b59dcfabd72e1060462a97e50a149ceb555dc316da41511d9adad7a"
+    },
+    {
+      "game": "3852",
+      "period_frames": 146908,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.5167724017752607,
+      "source_sha256": {
+        "tracking": "ddfb342a41bbce1fe35d1424a2cc928114adf51c33706156331002612096b12f",
+        "metadata": "a62536f0f00c88ad72c28f77cfdc7fc0113b393cc40e6482dd93443a5bf4e2b7",
+        "rosters": "df246c14b5416e3447d1afcbd2ec9ecddaf1376b882c3fece08bc57d27e4637a"
+      },
+      "geometry_sha256": "c365e5e15b1d26e73d0b013a379242f99ec32790964d27ab05c7d8f3e22edab7",
+      "reference_sha256": "17c4896e2af597b0672a47d837b486409003a89406874d05b72a7789f1241f6d"
+    },
+    {
+      "game": "10508",
+      "period_frames": 195921,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "visible_ball_fraction": 0.45520898729589987,
+      "source_sha256": {
+        "tracking": "559da14ae0e1c9de23197618909f0b519789eb0b90dc132d20c17137edcb03a3",
+        "metadata": "8586c7242dde72efb3c60a1a25e00ad56e01278c56e0d4fc98e99a430d6a56c8",
+        "rosters": "8bb2b673e721e5d0a80bb0443cb50b1f8b1020bd2c086ac683aed505fa557351"
+      },
+      "geometry_sha256": "6f5b0aedc511e72997c9e17ceecb732b47b1c8bf2d05f21c4db219334da7e9c8",
+      "reference_sha256": "69a7b11694d9a7e4d43ca88fe4f80ed8f1a9837dd772479e0ab5585e12b876b0"
+    },
+    {
+      "game": "3818",
+      "period_frames": 148968,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.38974813382739915,
+      "source_sha256": {
+        "tracking": "5975297ab6e381412f84b0c971bd4c169ac66da667e544a13f886ad044c96e6c",
+        "metadata": "5edda42ffd3853d2fdd2ba15e6fff54691b8be230367d9273f116864644d62e3",
+        "rosters": "0a53884d9fcb1498d493225dadfc507e21cfb9ce61ee5d3cd4037e76748ffd16"
+      },
+      "geometry_sha256": "16733cf9240d7add6dea9add862cd8c70282613142365a2d402268b178c65373",
+      "reference_sha256": "057850d4f20fcca9fcdfd4c7af32cea7b9883148de4bb3db00f9488870367171"
+    },
+    {
+      "game": "3820",
+      "period_frames": 146897,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.47333846164319215,
+      "source_sha256": {
+        "tracking": "df1e79f674f7db65a72b6deba2720a79c44620c5f6749da66e28695d0331a71e",
+        "metadata": "7f5bb9cd1159103a82fbf2b6f9a5dbe9bc28eb9afaa8c58fb5179a4bf606c7c2",
+        "rosters": "470ceee270c0a1cebbd1e7237128c13478974bd80e52d6fc5e8fe34ed7de1f00"
+      },
+      "geometry_sha256": "97b815eab2f197c1840852f46072e902776682a31a8ba7bb0e8d0f1719f9021e",
+      "reference_sha256": "e70347eb26383d94e0ec7a74a44cdac53260873696b631827e9df4ad323a40e2"
+    },
+    {
+      "game": "3849",
+      "period_frames": 157422,
+      "known_fraction": 1.0,
+      "periods": [
+        "1",
+        "2"
+      ],
+      "visible_ball_fraction": 0.3882938852256991,
+      "source_sha256": {
+        "tracking": "795cc4d0ad1dc866c998b2321c7457c0dd7a0cc88ca7cf29b3fb97d78856defa",
+        "metadata": "5cba97ea553cfe46a9fc851071cc21efca5944547011600f216ab33946792529",
+        "rosters": "1072dbc18e341c7ea46e8f0646aab6463eb33cdfb946603d77f713ee4e8f9ab7"
+      },
+      "geometry_sha256": "eb09ebb13eecec8f6e3583e4d6c4a595113d095f91a0d0d5f3983db25a93890d",
+      "reference_sha256": "9d0ed6b27a90d3fd55b261e232141a701d6885f841ab5278d7fe7703df6c8193"
+    }
+  ],
+  "scope": "Unaugmented training periods; frames are not independent matches; no final data opened"
+}

@@ -49,6 +49,16 @@ def old_games():
     old_proof=json.loads((ROOT/'reports/strict_fullfold/provenance.json').read_text())
     params=decoder();torch.set_num_threads(1);torch.use_deterministic_algorithms(True)
     for fold in range(5):
+        # Local dependency wait lets scoring overlap later GPU fits. No model
+        # is selected or skipped, and root continues monitoring both jobs.
+        for name in names:
+            pending=OUT/'models'/(name+'_fold'+str(fold))/'meta.json';waiting=time.monotonic()
+            while True:
+                try:
+                    if pending.exists():json.loads(pending.read_text());break
+                except json.JSONDecodeError:pass
+                if time.monotonic()-waiting>1800:raise TimeoutError('Registered fit did not finish: '+str(pending))
+                time.sleep(2)
         folder=ROOT/'reports/strict_fullfold/folds'/('fold'+str(fold));inherited=json.loads((folder/'meta.json').read_text());_,test=trial.game_split('fold'+str(fold))
         prior_proof=old_proof['fold'+str(fold)]
         if sha(folder/'models.pkl')!=inherited['model_sha256'] or inherited['plan_sha256']!=prior_proof['audit_plan_sha256'] or any(v!=prior_proof.get(k) for k,v in inherited.items() if k!='plan_sha256'):

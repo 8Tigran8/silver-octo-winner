@@ -17,6 +17,12 @@ def download(item,dest):
     except gdown.exceptions.FileURLRetrievalError:
         with requests.Session() as session:
             page=session.get('https://drive.google.com/uc',params={'export':'download','id':item['id']},timeout=30);page.raise_for_status()
+            if 'text/html' not in page.headers.get('Content-Type',''):
+                data=page.content
+                if item['path'].endswith('.jsonl.bz2'):
+                    if data[:3]!=b'BZh':raise ValueError('Unexpected tracking payload')
+                else:json.loads(data)
+                dest.write_bytes(data);return
             if 'Google Drive - Virus scan warning' not in page.text:raise ValueError('Unexpected provider page; no access-gate bypass')
             form=BeautifulSoup(page.text,'html.parser').find('form')
             if not form or form.get('action')!='https://drive.usercontent.google.com/download' or form.get('method')!='get':raise ValueError('Unexpected provider confirmation form')

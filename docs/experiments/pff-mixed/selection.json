@@ -1,0 +1,59 @@
+{
+  "registered_plan_sha256": "e497e96e399b4ef433b1525389507d5e8c38f749dcd0006959defb32ae61da3b",
+  "decided_utc": "2026-11-15T21:00:39.582930+00:00",
+  "decisions": {
+    "mixed25": {
+      "checks": {
+        "old_historical": true,
+        "old_strict_paired": true,
+        "PFFdev": true,
+        "reused_external": true,
+        "provider_DFL": true,
+        "provider_Metrica": true,
+        "provider_SkillCorner": true
+      },
+      "eligible": true,
+      "selection_score": 0.024968150333310783,
+      "historical_gain": 0.02167597079904071,
+      "strict_paired_gain": 0.023843194770108878,
+      "PFFdev_gain": 0.02826032986758086,
+      "provider_gains": {
+        "DFL": 0.02122044800751894,
+        "Metrica": 0.014015129154344996,
+        "SkillCorner": 0.030440127951428114
+      }
+    },
+    "boundary102": {
+      "checks": {
+        "old_historical": true,
+        "old_strict_paired": true,
+        "PFFdev": true,
+        "reused_external": true,
+        "provider_DFL": true,
+        "provider_Metrica": true,
+        "provider_SkillCorner": true
+      },
+      "eligible": true,
+      "selection_score": 0.035005680759122845,
+      "historical_gain": 0.028824606485021498,
+      "strict_paired_gain": 0.030991830456089664,
+      "PFFdev_gain": 0.0411867550332242,
+      "provider_gains": {
+        "DFL": 0.025465623157103687,
+        "Metrica": 0.03342913633989786,
+        "SkillCorner": 0.03541061348699438
+      }
+    }
+  },
+  "candidate": "boundary102",
+  "status": "ELIGIBLE_FOR_UNOPENED_FINAL",
+  "scope": "Reused old29 and11regression games plus tenPFFdevelopment games; not final confirmation",
+  "final_opened": false,
+  "result_sha256": {
+    "old_results.json": "1d7d40ce171cfe1d8839e28c3c4c831cbca707bf7c681817dac62add2c6a013a",
+    "old_provenance.json": "9ce0cfd5c298460b53ab015287e2009e3773364a108fed16f16a9145254b8b0a",
+    "pff_dev_results.json": "7f08a71d580244b4b85306ec7fbaf3685de5c4ad7467368b8c8f0d0f328a6a19",
+    "reused_results.json": "ac1e565006f1088b27054ec8e4d4763fbb45d8b6d3e8f680af3fabd3021e757d"
+  },
+  "bundle_sha256": "d71bdd23e0ab2ef49823298a6a1a62e33862140ea0d8a40086f35b916ac8946b"
+}

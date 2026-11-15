@@ -1,0 +1,98 @@
+{
+  "updated_utc": "2026-11-15T20:53:39.724499+00:00",
+  "status": "BothPFFdev/regression guards PASS; original29strict audit running; no selection/final opening",
+  "candidates": {
+    "mixed25": {
+      "PFFdev": {
+        "canonical/natural_detected": {
+          "baseline": 0.6140438627826817,
+          "candidate": 0.6423041926502626,
+          "gain": 0.02826032986758086,
+          "wins": 8,
+          "macro_gain": 0.012929975871114363,
+          "class_f1_gains": {
+            "H": 0.014402433228511435,
+            "A": 0.01103515058003921,
+            "D": 0.013352343804792466
+          }
+        },
+        "canonical/label_blind_seed7": {
+          "baseline": 0.6024577730794344,
+          "candidate": 0.6341293667085114,
+          "gain": 0.03167159362907697,
+          "wins": 10,
+          "macro_gain": 0.011368558769724757,
+          "class_f1_gains": {
+            "H": 0.013674962723898088,
+            "A": 0.009733477805150836,
+            "D": 0.010697235780125158
+          }
+        }
+      },
+      "PFFdev_all_guards": true,
+      "reused11": {
+        "checks": {
+          "european/natural_detected": true,
+          "metrica3/label_blind_seed7": true,
+          "metrica3/natural_detected": true,
+          "wcsf/label_blind_seed7": true,
+          "wcsf/natural_detected": true
+        },
+        "primary_gains": {
+          "european/natural_detected": -0.00016598479641768046,
+          "metrica3/label_blind_seed7": 0.009083785412899281,
+          "metrica3/natural_detected": 0.007916988251436385,
+          "wcsf/label_blind_seed7": 0.009525627639514256,
+          "wcsf/natural_detected": -0.007204748295264629
+        },
+        "scope": "Eleven reused research games; European9conditionalH/A only, not fresh final confirmation"
+      }
+    },
+    "boundary102": {
+      "PFFdev": {
+        "canonical/natural_detected": {
+          "baseline": 0.6140438627826817,
+          "candidate": 0.6552306178159059,
+          "gain": 0.0411867550332242,
+          "wins": 10,
+          "macro_gain": 0.01771990079801833,
+          "class_f1_gains": {
+            "H": 0.018143042928980634,
+            "A": 0.01457533692193368,
+            "D": 0.020441322543140673
+          }
+        },
+        "canonical/label_blind_seed7": {
+          "baseline": 0.6024577730794344,
+          "candidate": 0.642485036863332,
+          "gain": 0.04002726378389755,
+          "wins": 10,
+          "macro_gain": 0.015585519730355313,
+          "class_f1_gains": {
+            "H": 0.017746793616627354,
+            "A": 0.012053288939943462,
+            "D": 0.01695647663449502
+          }
+        }
+      },
+      "PFFdev_all_guards": true,
+      "reused11": {
+        "checks": {
+          "european/natural_detected": true,
+          "metrica3/label_blind_seed7": true,
+          "metrica3/natural_detected": true,
+          "wcsf/label_blind_seed7": true,
+          "wcsf/natural_detected": true
+        },
+        "primary_gains": {
+          "european/natural_detected": -0.0036519531420333828,
+          "metrica3/label_blind_seed7": -0.009004115386865963,
+          "metrica3/natural_detected": 0.002988208006365789,
+          "wcsf/label_blind_seed7": 0.00960721367198547,
+          "wcsf/natural_detected": 0.01569291285842156
+        },
+        "scope": "Eleven reused research games; European9conditionalH/A only, not fresh final confirmation"
+      }
+    }
+  }
+}

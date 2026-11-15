@@ -1,0 +1,3834 @@
+{
+  "mixed_plan_sha256": "e497e96e399b4ef433b1525389507d5e8c38f749dcd0006959defb32ae61da3b",
+  "original_control_sha256": "0ccb92cd5c7d827094bb1a3e568410e9086db473680226480964b28df2e51bc5",
+  "records": [
+    {
+      "game": "10510",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6654117647058824,
+      "macro_f1": 0.857198285836334,
+      "n_gt_spells": 240,
+      "n_pred_spells": 185,
+      "per_class": {
+        "H": {
+          "precision": 0.9088977999349734,
+          "recall": 0.8272243045965674,
+          "f1": 0.8661399431964886,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.8929382614082181,
+          "recall": 0.8711197953387184,
+          "f1": 0.8818940992933836,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.7739130434782608,
+          "recall": 0.8800152120174938,
+          "f1": 0.8235608150191298,
+          "support": 42072
+        }
+      }
+    },
+    {
+      "game": "10510",
+      "scenario": "natural_detected",
+      "candidate": "mixed25",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6650943396226415,
+      "macro_f1": 0.8605768574307984,
+      "n_gt_spells": 240,
+      "n_pred_spells": 184,
+      "per_class": {
+        "H": {
+          "precision": 0.9129371007902999,
+          "recall": 0.8318011442099034,
+          "f1": 0.8704825806451614,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.8910135412392286,
+          "recall": 0.8748061156658542,
+          "f1": 0.882835449213787,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.781234203875316,
+          "recall": 0.8816552576535464,
+          "f1": 0.8284125424334465,
+          "support": 42072
+        }
+      }
+    },
+    {
+      "game": "10510",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6831775700934578,
+      "macro_f1": 0.8655869248593624,
+      "n_gt_spells": 240,
+      "n_pred_spells": 188,
+      "per_class": {
+        "H": {
+          "precision": 0.9218838992332968,
+          "recall": 0.8302229236535806,
+          "f1": 0.8736558023666183,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.9009989594172737,
+          "recall": 0.8720866990310819,
+          "f1": 0.8863071049102802,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.7798172672210245,
+          "recall": 0.9027619319262217,
+          "f1": 0.8367978673011885,
+          "support": 42072
+        }
+      }
+    },
+    {
+      "game": "10510",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6292343387470998,
+      "macro_f1": 0.838811241778382,
+      "n_gt_spells": 240,
+      "n_pred_spells": 191,
+      "per_class": {
+        "H": {
+          "precision": 0.9090081892629663,
+          "recall": 0.7883211678832117,
+          "f1": 0.8443740095087163,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.8918557794273595,
+          "recall": 0.847068065991177,
+          "f1": 0.8688851466531671,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.7309679305975241,
+          "recall": 0.891210306141852,
+          "f1": 0.8031745691732626,
+          "support": 42072
+        }
+      }
+    },
+    {
+      "game": "10510",
+      "scenario": "label_blind_seed7",
+      "candidate": "mixed25",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6676190476190477,
+      "macro_f1": 0.8452969321168687,
+      "n_gt_spells": 240,
+      "n_pred_spells": 180,
+      "per_class": {
+        "H": {
+          "precision": 0.9226614571362906,
+          "recall": 0.791970802919708,
+          "f1": 0.852335456475584,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.8972727272727272,
+          "recall": 0.8549241584916303,
+          "f1": 0.8755866849592029,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.733404399651129,
+          "recall": 0.8994105343221145,
+          "f1": 0.8079686549158189,
+          "support": 42072
+        }
+      }
+    },
+    {
+      "game": "10510",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6597647058823528,
+      "macro_f1": 0.8461574980025572,
+      "n_gt_spells": 240,
+      "n_pred_spells": 185,
+      "per_class": {
+        "H": {
+          "precision": 0.9274032893212879,
+          "recall": 0.7898204774117182,
+          "f1": 0.8531003622416364,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.8989712816116588,
+          "recall": 0.8449529641641319,
+          "f1": 0.8711255101087194,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.7329148834997622,
+          "recall": 0.9158822970146415,
+          "f1": 0.8142466216573161,
+          "support": 42072
+        }
+      }
+    },
+    {
+      "game": "10510",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6654117647058824,
+      "macro_f1": 0.857198285836334,
+      "n_gt_spells": 240,
+      "n_pred_spells": 185,
+      "per_class": {
+        "H": {
+          "precision": 0.9088977999349734,
+          "recall": 0.8272243045965674,
+          "f1": 0.8661399431964886,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.8929382614082181,
+          "recall": 0.8711197953387184,
+          "f1": 0.8818940992933836,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.7739130434782608,
+          "recall": 0.8800152120174938,
+          "f1": 0.8235608150191298,
+          "support": 42072
+        }
+      }
+    },
+    {
+      "game": "10510",
+      "scenario": "natural_detected",
+      "candidate": "mixed25",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6650943396226415,
+      "macro_f1": 0.8605768574307984,
+      "n_gt_spells": 240,
+      "n_pred_spells": 184,
+      "per_class": {
+        "H": {
+          "precision": 0.9129371007902999,
+          "recall": 0.8318011442099034,
+          "f1": 0.8704825806451614,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.8910135412392286,
+          "recall": 0.8748061156658542,
+          "f1": 0.882835449213787,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.781234203875316,
+          "recall": 0.8816552576535464,
+          "f1": 0.8284125424334465,
+          "support": 42072
+        }
+      }
+    },
+    {
+      "game": "10510",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6831775700934578,
+      "macro_f1": 0.8655869248593624,
+      "n_gt_spells": 240,
+      "n_pred_spells": 188,
+      "per_class": {
+        "H": {
+          "precision": 0.9218838992332968,
+          "recall": 0.8302229236535806,
+          "f1": 0.8736558023666183,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.9009989594172737,
+          "recall": 0.8720866990310819,
+          "f1": 0.8863071049102802,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.7798172672210245,
+          "recall": 0.9027619319262217,
+          "f1": 0.8367978673011885,
+          "support": 42072
+        }
+      }
+    },
+    {
+      "game": "10510",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6292343387470998,
+      "macro_f1": 0.838811241778382,
+      "n_gt_spells": 240,
+      "n_pred_spells": 191,
+      "per_class": {
+        "H": {
+          "precision": 0.9090081892629663,
+          "recall": 0.7883211678832117,
+          "f1": 0.8443740095087163,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.8918557794273595,
+          "recall": 0.847068065991177,
+          "f1": 0.8688851466531671,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.7309679305975241,
+          "recall": 0.891210306141852,
+          "f1": 0.8031745691732626,
+          "support": 42072
+        }
+      }
+    },
+    {
+      "game": "10510",
+      "scenario": "label_blind_seed7",
+      "candidate": "mixed25",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6676190476190477,
+      "macro_f1": 0.8452969321168687,
+      "n_gt_spells": 240,
+      "n_pred_spells": 180,
+      "per_class": {
+        "H": {
+          "precision": 0.9226614571362906,
+          "recall": 0.791970802919708,
+          "f1": 0.852335456475584,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.8972727272727272,
+          "recall": 0.8549241584916303,
+          "f1": 0.8755866849592029,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.733404399651129,
+          "recall": 0.8994105343221145,
+          "f1": 0.8079686549158189,
+          "support": 42072
+        }
+      }
+    },
+    {
+      "game": "10510",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6597647058823528,
+      "macro_f1": 0.8461574980025572,
+      "n_gt_spells": 240,
+      "n_pred_spells": 185,
+      "per_class": {
+        "H": {
+          "precision": 0.9274032893212879,
+          "recall": 0.7898204774117182,
+          "f1": 0.8531003622416364,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.8989712816116588,
+          "recall": 0.8449529641641319,
+          "f1": 0.8711255101087194,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.7329148834997622,
+          "recall": 0.9158822970146415,
+          "f1": 0.8142466216573161,
+          "support": 42072
+        }
+      }
+    },
+    {
+      "game": "3821",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.5574736842105263,
+      "macro_f1": 0.8560966818242782,
+      "n_gt_spells": 280,
+      "n_pred_spells": 195,
+      "per_class": {
+        "H": {
+          "precision": 0.9013458432669385,
+          "recall": 0.9011102226596137,
+          "f1": 0.9012280175628812,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.7894629780309195,
+          "recall": 0.7504157159982985,
+          "f1": 0.7694442792283749,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.8888888888888888,
+          "recall": 0.9065197428833792,
+          "f1": 0.8976177486815785,
+          "support": 65340
+        }
+      }
+    },
+    {
+      "game": "3821",
+      "scenario": "natural_detected",
+      "candidate": "mixed25",
+      "reference": "canonical",
+      "spell_f1_mean": 0.573109243697479,
+      "macro_f1": 0.8665230226930709,
+      "n_gt_spells": 280,
+      "n_pred_spells": 196,
+      "per_class": {
+        "H": {
+          "precision": 0.9101500577145056,
+          "recall": 0.9093523188584082,
+          "f1": 0.9097510134069704,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.7888098062475287,
+          "recall": 0.7714528790749836,
+          "f1": 0.7800348002893507,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.9054664524148804,
+          "recall": 0.9141414141414141,
+          "f1": 0.9097832543828918,
+          "support": 65340
+        }
+      }
+    },
+    {
+      "game": "3821",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.5979381443298969,
+      "macro_f1": 0.8705434376067491,
+      "n_gt_spells": 280,
+      "n_pred_spells": 205,
+      "per_class": {
+        "H": {
+          "precision": 0.9146503712871287,
+          "recall": 0.9091370402263501,
+          "f1": 0.9118853723240176,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.8034621578099839,
+          "recall": 0.7718009203758847,
+          "f1": 0.7873133592378547,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.9027879732138845,
+          "recall": 0.9222834404652587,
+          "f1": 0.9124315812583749,
+          "support": 65340
+        }
+      }
+    },
+    {
+      "game": "3821",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.5594882729211088,
+      "macro_f1": 0.8546905939531723,
+      "n_gt_spells": 280,
+      "n_pred_spells": 189,
+      "per_class": {
+        "H": {
+          "precision": 0.9110261412407336,
+          "recall": 0.8976196334112437,
+          "f1": 0.9042731997490454,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.7931380753138075,
+          "recall": 0.7330523222089022,
+          "f1": 0.7619124178540566,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.8787066338490389,
+          "recall": 0.9179216406489134,
+          "f1": 0.8978861642564149,
+          "support": 65340
+        }
+      }
+    },
+    {
+      "game": "3821",
+      "scenario": "label_blind_seed7",
+      "candidate": "mixed25",
+      "reference": "canonical",
+      "spell_f1_mean": 0.5850746268656717,
+      "macro_f1": 0.8627019097495799,
+      "n_gt_spells": 280,
+      "n_pred_spells": 189,
+      "per_class": {
+        "H": {
+          "precision": 0.9164977389677218,
+          "recall": 0.9037858285151925,
+          "f1": 0.9100973970672489,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.7912690355329949,
+          "recall": 0.7535094164507522,
+          "f1": 0.771927739481816,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.8917392850791392,
+          "recall": 0.92089072543618,
+          "f1": 0.9060805926996748,
+          "support": 65340
+        }
+      }
+    },
+    {
+      "game": "3821",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6008403361344538,
+      "macro_f1": 0.8679171703406198,
+      "n_gt_spells": 280,
+      "n_pred_spells": 196,
+      "per_class": {
+        "H": {
+          "precision": 0.923895613897186,
+          "recall": 0.9036935662443105,
+          "f1": 0.9136829340339858,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.8054777594728171,
+          "recall": 0.7562937468579605,
+          "f1": 0.7801112906120983,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.8899781975680777,
+          "recall": 0.9308539944903581,
+          "f1": 0.9099572863757752,
+          "support": 65340
+        }
+      }
+    },
+    {
+      "game": "3821",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.5574736842105263,
+      "macro_f1": 0.8560966818242782,
+      "n_gt_spells": 280,
+      "n_pred_spells": 195,
+      "per_class": {
+        "H": {
+          "precision": 0.9013458432669385,
+          "recall": 0.9011102226596137,
+          "f1": 0.9012280175628812,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.7894629780309195,
+          "recall": 0.7504157159982985,
+          "f1": 0.7694442792283749,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.8888888888888888,
+          "recall": 0.9065197428833792,
+          "f1": 0.8976177486815785,
+          "support": 65340
+        }
+      }
+    },
+    {
+      "game": "3821",
+      "scenario": "natural_detected",
+      "candidate": "mixed25",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.573109243697479,
+      "macro_f1": 0.8665230226930709,
+      "n_gt_spells": 280,
+      "n_pred_spells": 196,
+      "per_class": {
+        "H": {
+          "precision": 0.9101500577145056,
+          "recall": 0.9093523188584082,
+          "f1": 0.9097510134069704,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.7888098062475287,
+          "recall": 0.7714528790749836,
+          "f1": 0.7800348002893507,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.9054664524148804,
+          "recall": 0.9141414141414141,
+          "f1": 0.9097832543828918,
+          "support": 65340
+        }
+      }
+    },
+    {
+      "game": "3821",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.5979381443298969,
+      "macro_f1": 0.8705434376067491,
+      "n_gt_spells": 280,
+      "n_pred_spells": 205,
+      "per_class": {
+        "H": {
+          "precision": 0.9146503712871287,
+          "recall": 0.9091370402263501,
+          "f1": 0.9118853723240176,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.8034621578099839,
+          "recall": 0.7718009203758847,
+          "f1": 0.7873133592378547,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.9027879732138845,
+          "recall": 0.9222834404652587,
+          "f1": 0.9124315812583749,
+          "support": 65340
+        }
+      }
+    },
+    {
+      "game": "3821",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.5594882729211088,
+      "macro_f1": 0.8546905939531723,
+      "n_gt_spells": 280,
+      "n_pred_spells": 189,
+      "per_class": {
+        "H": {
+          "precision": 0.9110261412407336,
+          "recall": 0.8976196334112437,
+          "f1": 0.9042731997490454,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.7931380753138075,
+          "recall": 0.7330523222089022,
+          "f1": 0.7619124178540566,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.8787066338490389,
+          "recall": 0.9179216406489134,
+          "f1": 0.8978861642564149,
+          "support": 65340
+        }
+      }
+    },
+    {
+      "game": "3821",
+      "scenario": "label_blind_seed7",
+      "candidate": "mixed25",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.5850746268656717,
+      "macro_f1": 0.8627019097495799,
+      "n_gt_spells": 280,
+      "n_pred_spells": 189,
+      "per_class": {
+        "H": {
+          "precision": 0.9164977389677218,
+          "recall": 0.9037858285151925,
+          "f1": 0.9100973970672489,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.7912690355329949,
+          "recall": 0.7535094164507522,
+          "f1": 0.771927739481816,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.8917392850791392,
+          "recall": 0.92089072543618,
+          "f1": 0.9060805926996748,
+          "support": 65340
+        }
+      }
+    },
+    {
+      "game": "3821",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6008403361344538,
+      "macro_f1": 0.8679171703406198,
+      "n_gt_spells": 280,
+      "n_pred_spells": 196,
+      "per_class": {
+        "H": {
+          "precision": 0.923895613897186,
+          "recall": 0.9036935662443105,
+          "f1": 0.9136829340339858,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.8054777594728171,
+          "recall": 0.7562937468579605,
+          "f1": 0.7801112906120983,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.8899781975680777,
+          "recall": 0.9308539944903581,
+          "f1": 0.9099572863757752,
+          "support": 65340
+        }
+      }
+    },
+    {
+      "game": "10513",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6284313725490195,
+      "macro_f1": 0.87847313802305,
+      "n_gt_spells": 237,
+      "n_pred_spells": 171,
+      "per_class": {
+        "H": {
+          "precision": 0.8900916391488697,
+          "recall": 0.872916107768367,
+          "f1": 0.8814202099356648,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.8778185774513804,
+          "recall": 0.831349819680577,
+          "f1": 0.8539525038036647,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.880376286525916,
+          "recall": 0.9206162021764117,
+          "f1": 0.9000467003298209,
+          "support": 66991
+        }
+      }
+    },
+    {
+      "game": "10513",
+      "scenario": "natural_detected",
+      "candidate": "mixed25",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6273170731707317,
+      "macro_f1": 0.8901612976489451,
+      "n_gt_spells": 237,
+      "n_pred_spells": 173,
+      "per_class": {
+        "H": {
+          "precision": 0.9108058354282547,
+          "recall": 0.8817115701529146,
+          "f1": 0.8960225889684047,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.8819312956451176,
+          "recall": 0.8399021123132406,
+          "f1": 0.8604037471961999,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8912605661768878,
+          "recall": 0.9380513800361242,
+          "f1": 0.914057556782231,
+          "support": 66991
+        }
+      }
+    },
+    {
+      "game": "10513",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6370731707317073,
+      "macro_f1": 0.898231600901044,
+      "n_gt_spells": 237,
+      "n_pred_spells": 173,
+      "per_class": {
+        "H": {
+          "precision": 0.9231682053138639,
+          "recall": 0.8795270762273407,
+          "f1": 0.9008193906089005,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.8984052790761616,
+          "recall": 0.8417053065430191,
+          "f1": 0.8691315334485968,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8931273293653001,
+          "recall": 0.9586810168530101,
+          "f1": 0.9247438786456347,
+          "support": 66991
+        }
+      }
+    },
+    {
+      "game": "10513",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6161369193154034,
+      "macro_f1": 0.8730107332344991,
+      "n_gt_spells": 237,
+      "n_pred_spells": 172,
+      "per_class": {
+        "H": {
+          "precision": 0.8864953783487388,
+          "recall": 0.8674357107270149,
+          "f1": 0.876861985472155,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.8804505005561736,
+          "recall": 0.8155847501287996,
+          "f1": 0.8467772131585987,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8702746114719682,
+          "recall": 0.9220044483587347,
+          "f1": 0.8953930010727437,
+          "support": 66991
+        }
+      }
+    },
+    {
+      "game": "10513",
+      "scenario": "label_blind_seed7",
+      "candidate": "mixed25",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6285714285714284,
+      "macro_f1": 0.888483279315112,
+      "n_gt_spells": 237,
+      "n_pred_spells": 169,
+      "per_class": {
+        "H": {
+          "precision": 0.9206548608015561,
+          "recall": 0.8706932893879584,
+          "f1": 0.894977348828048,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.8798104265402844,
+          "recall": 0.8368624420401855,
+          "f1": 0.8577991946663147,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8825957221339134,
+          "recall": 0.9448731919213028,
+          "f1": 0.912673294450973,
+          "support": 66991
+        }
+      }
+    },
+    {
+      "game": "10513",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6323529411764707,
+      "macro_f1": 0.8941982616005125,
+      "n_gt_spells": 237,
+      "n_pred_spells": 171,
+      "per_class": {
+        "H": {
+          "precision": 0.9261174354677185,
+          "recall": 0.8683171731882114,
+          "f1": 0.8962864065667805,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.8941192635339379,
+          "recall": 0.8381504379185987,
+          "f1": 0.8652306874085893,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8850408651861636,
+          "recall": 0.960173754683465,
+          "f1": 0.9210776908261675,
+          "support": 66991
+        }
+      }
+    },
+    {
+      "game": "10513",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6284313725490195,
+      "macro_f1": 0.87847313802305,
+      "n_gt_spells": 237,
+      "n_pred_spells": 171,
+      "per_class": {
+        "H": {
+          "precision": 0.8900916391488697,
+          "recall": 0.872916107768367,
+          "f1": 0.8814202099356648,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.8778185774513804,
+          "recall": 0.831349819680577,
+          "f1": 0.8539525038036647,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.880376286525916,
+          "recall": 0.9206162021764117,
+          "f1": 0.9000467003298209,
+          "support": 66991
+        }
+      }
+    },
+    {
+      "game": "10513",
+      "scenario": "natural_detected",
+      "candidate": "mixed25",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6273170731707317,
+      "macro_f1": 0.8901612976489451,
+      "n_gt_spells": 237,
+      "n_pred_spells": 173,
+      "per_class": {
+        "H": {
+          "precision": 0.9108058354282547,
+          "recall": 0.8817115701529146,
+          "f1": 0.8960225889684047,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.8819312956451176,
+          "recall": 0.8399021123132406,
+          "f1": 0.8604037471961999,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8912605661768878,
+          "recall": 0.9380513800361242,
+          "f1": 0.914057556782231,
+          "support": 66991
+        }
+      }
+    },
+    {
+      "game": "10513",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6370731707317073,
+      "macro_f1": 0.898231600901044,
+      "n_gt_spells": 237,
+      "n_pred_spells": 173,
+      "per_class": {
+        "H": {
+          "precision": 0.9231682053138639,
+          "recall": 0.8795270762273407,
+          "f1": 0.9008193906089005,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.8984052790761616,
+          "recall": 0.8417053065430191,
+          "f1": 0.8691315334485968,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8931273293653001,
+          "recall": 0.9586810168530101,
+          "f1": 0.9247438786456347,
+          "support": 66991
+        }
+      }
+    },
+    {
+      "game": "10513",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6161369193154034,
+      "macro_f1": 0.8730107332344991,
+      "n_gt_spells": 237,
+      "n_pred_spells": 172,
+      "per_class": {
+        "H": {
+          "precision": 0.8864953783487388,
+          "recall": 0.8674357107270149,
+          "f1": 0.876861985472155,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.8804505005561736,
+          "recall": 0.8155847501287996,
+          "f1": 0.8467772131585987,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8702746114719682,
+          "recall": 0.9220044483587347,
+          "f1": 0.8953930010727437,
+          "support": 66991
+        }
+      }
+    },
+    {
+      "game": "10513",
+      "scenario": "label_blind_seed7",
+      "candidate": "mixed25",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6285714285714284,
+      "macro_f1": 0.888483279315112,
+      "n_gt_spells": 237,
+      "n_pred_spells": 169,
+      "per_class": {
+        "H": {
+          "precision": 0.9206548608015561,
+          "recall": 0.8706932893879584,
+          "f1": 0.894977348828048,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.8798104265402844,
+          "recall": 0.8368624420401855,
+          "f1": 0.8577991946663147,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8825957221339134,
+          "recall": 0.9448731919213028,
+          "f1": 0.912673294450973,
+          "support": 66991
+        }
+      }
+    },
+    {
+      "game": "10513",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6323529411764707,
+      "macro_f1": 0.8941982616005125,
+      "n_gt_spells": 237,
+      "n_pred_spells": 171,
+      "per_class": {
+        "H": {
+          "precision": 0.9261174354677185,
+          "recall": 0.8683171731882114,
+          "f1": 0.8962864065667805,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.8941192635339379,
+          "recall": 0.8381504379185987,
+          "f1": 0.8652306874085893,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8850408651861636,
+          "recall": 0.960173754683465,
+          "f1": 0.9210776908261675,
+          "support": 66991
+        }
+      }
+    },
+    {
+      "game": "10516",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6034188034188034,
+      "macro_f1": 0.8557160623707629,
+      "n_gt_spells": 271,
+      "n_pred_spells": 197,
+      "per_class": {
+        "H": {
+          "precision": 0.871343146274149,
+          "recall": 0.841070041070041,
+          "f1": 0.8559390002824061,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.8296199213630406,
+          "recall": 0.85604165257962,
+          "f1": 0.8426237145994875,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.8674444732520957,
+          "recall": 0.8697294768036324,
+          "f1": 0.8685854722303951,
+          "support": 57703
+        }
+      }
+    },
+    {
+      "game": "10516",
+      "scenario": "natural_detected",
+      "candidate": "mixed25",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6536170212765958,
+      "macro_f1": 0.877111537142936,
+      "n_gt_spells": 271,
+      "n_pred_spells": 199,
+      "per_class": {
+        "H": {
+          "precision": 0.8945103512444754,
+          "recall": 0.8537018537018537,
+          "f1": 0.873629806327029,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.8592345349354695,
+          "recall": 0.8703315527306331,
+          "f1": 0.8647474442093005,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.8817774774013686,
+          "recall": 0.9044243800149039,
+          "f1": 0.8929573608924783,
+          "support": 57703
+        }
+      }
+    },
+    {
+      "game": "10516",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6773784355179704,
+      "macro_f1": 0.8834416656090927,
+      "n_gt_spells": 271,
+      "n_pred_spells": 202,
+      "per_class": {
+        "H": {
+          "precision": 0.9104428131659957,
+          "recall": 0.8535464535464535,
+          "f1": 0.8810770552850186,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.870722605450639,
+          "recall": 0.8677395361417269,
+          "f1": 0.8692285114357318,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.8780121971320257,
+          "recall": 0.9231582413392718,
+          "f1": 0.9000194301065277,
+          "support": 57703
+        }
+      }
+    },
+    {
+      "game": "10516",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.5801724137931035,
+      "macro_f1": 0.8443394088600011,
+      "n_gt_spells": 271,
+      "n_pred_spells": 193,
+      "per_class": {
+        "H": {
+          "precision": 0.8681016231474947,
+          "recall": 0.8192474192474193,
+          "f1": 0.8429672777111531,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.826828724353256,
+          "recall": 0.8356436089886627,
+          "f1": 0.8312127972020134,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.8440224211495022,
+          "recall": 0.8741833180250593,
+          "f1": 0.858838151666837,
+          "support": 57703
+        }
+      }
+    },
+    {
+      "game": "10516",
+      "scenario": "label_blind_seed7",
+      "candidate": "mixed25",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6168466522678185,
+      "macro_f1": 0.8588512315059523,
+      "n_gt_spells": 271,
+      "n_pred_spells": 192,
+      "per_class": {
+        "H": {
+          "precision": 0.8926904761904761,
+          "recall": 0.8323454323454323,
+          "f1": 0.8614624619449711,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.8490171284055639,
+          "recall": 0.8323303356098001,
+          "f1": 0.8405909266804762,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.8467056150600455,
+          "recall": 0.9041817583141257,
+          "f1": 0.8745003058924097,
+          "support": 57703
+        }
+      }
+    },
+    {
+      "game": "10516",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6487179487179489,
+      "macro_f1": 0.8651144894010997,
+      "n_gt_spells": 271,
+      "n_pred_spells": 197,
+      "per_class": {
+        "H": {
+          "precision": 0.9111818738518065,
+          "recall": 0.8258186258186259,
+          "f1": 0.8664027017584722,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.8619485508089861,
+          "recall": 0.8345166452543558,
+          "f1": 0.8480108105632028,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.841762058893187,
+          "recall": 0.9239207666845745,
+          "f1": 0.8809299558816239,
+          "support": 57703
+        }
+      }
+    },
+    {
+      "game": "10516",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6034188034188034,
+      "macro_f1": 0.8557160623707629,
+      "n_gt_spells": 271,
+      "n_pred_spells": 197,
+      "per_class": {
+        "H": {
+          "precision": 0.871343146274149,
+          "recall": 0.841070041070041,
+          "f1": 0.8559390002824061,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.8296199213630406,
+          "recall": 0.85604165257962,
+          "f1": 0.8426237145994875,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.8674444732520957,
+          "recall": 0.8697294768036324,
+          "f1": 0.8685854722303951,
+          "support": 57703
+        }
+      }
+    },
+    {
+      "game": "10516",
+      "scenario": "natural_detected",
+      "candidate": "mixed25",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6536170212765958,
+      "macro_f1": 0.877111537142936,
+      "n_gt_spells": 271,
+      "n_pred_spells": 199,
+      "per_class": {
+        "H": {
+          "precision": 0.8945103512444754,
+          "recall": 0.8537018537018537,
+          "f1": 0.873629806327029,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.8592345349354695,
+          "recall": 0.8703315527306331,
+          "f1": 0.8647474442093005,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.8817774774013686,
+          "recall": 0.9044243800149039,
+          "f1": 0.8929573608924783,
+          "support": 57703
+        }
+      }
+    },
+    {
+      "game": "10516",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6773784355179704,
+      "macro_f1": 0.8834416656090927,
+      "n_gt_spells": 271,
+      "n_pred_spells": 202,
+      "per_class": {
+        "H": {
+          "precision": 0.9104428131659957,
+          "recall": 0.8535464535464535,
+          "f1": 0.8810770552850186,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.870722605450639,
+          "recall": 0.8677395361417269,
+          "f1": 0.8692285114357318,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.8780121971320257,
+          "recall": 0.9231582413392718,
+          "f1": 0.9000194301065277,
+          "support": 57703
+        }
+      }
+    },
+    {
+      "game": "10516",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.5801724137931035,
+      "macro_f1": 0.8443394088600011,
+      "n_gt_spells": 271,
+      "n_pred_spells": 193,
+      "per_class": {
+        "H": {
+          "precision": 0.8681016231474947,
+          "recall": 0.8192474192474193,
+          "f1": 0.8429672777111531,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.826828724353256,
+          "recall": 0.8356436089886627,
+          "f1": 0.8312127972020134,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.8440224211495022,
+          "recall": 0.8741833180250593,
+          "f1": 0.858838151666837,
+          "support": 57703
+        }
+      }
+    },
+    {
+      "game": "10516",
+      "scenario": "label_blind_seed7",
+      "candidate": "mixed25",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6168466522678185,
+      "macro_f1": 0.8588512315059523,
+      "n_gt_spells": 271,
+      "n_pred_spells": 192,
+      "per_class": {
+        "H": {
+          "precision": 0.8926904761904761,
+          "recall": 0.8323454323454323,
+          "f1": 0.8614624619449711,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.8490171284055639,
+          "recall": 0.8323303356098001,
+          "f1": 0.8405909266804762,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.8467056150600455,
+          "recall": 0.9041817583141257,
+          "f1": 0.8745003058924097,
+          "support": 57703
+        }
+      }
+    },
+    {
+      "game": "10516",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6487179487179489,
+      "macro_f1": 0.8651144894010997,
+      "n_gt_spells": 271,
+      "n_pred_spells": 197,
+      "per_class": {
+        "H": {
+          "precision": 0.9111818738518065,
+          "recall": 0.8258186258186259,
+          "f1": 0.8664027017584722,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.8619485508089861,
+          "recall": 0.8345166452543558,
+          "f1": 0.8480108105632028,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.841762058893187,
+          "recall": 0.9239207666845745,
+          "f1": 0.8809299558816239,
+          "support": 57703
+        }
+      }
+    },
+    {
+      "game": "3859",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.5525,
+      "macro_f1": 0.8283738481762901,
+      "n_gt_spells": 275,
+      "n_pred_spells": 205,
+      "per_class": {
+        "H": {
+          "precision": 0.7812685055321802,
+          "recall": 0.7665983669225359,
+          "f1": 0.7738639170165473,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.893487386396055,
+          "recall": 0.7990487298173998,
+          "f1": 0.843633355139108,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.8304473304473304,
+          "recall": 0.9082858395440596,
+          "f1": 0.8676242723732149,
+          "support": 68430
+        }
+      }
+    },
+    {
+      "game": "3859",
+      "scenario": "natural_detected",
+      "candidate": "mixed25",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6153191489361702,
+      "macro_f1": 0.8507463138324679,
+      "n_gt_spells": 275,
+      "n_pred_spells": 195,
+      "per_class": {
+        "H": {
+          "precision": 0.8150187734668335,
+          "recall": 0.7965992843817854,
+          "f1": 0.8057037690035417,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.9120798383640483,
+          "recall": 0.8144294201261071,
+          "f1": 0.8604931021535913,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.846996428761793,
+          "recall": 0.9288616104047932,
+          "f1": 0.8860420703402707,
+          "support": 68430
+        }
+      }
+    },
+    {
+      "game": "3859",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6208067940552018,
+      "macro_f1": 0.8570479519742454,
+      "n_gt_spells": 275,
+      "n_pred_spells": 196,
+      "per_class": {
+        "H": {
+          "precision": 0.8375441980070717,
+          "recall": 0.7968439401816569,
+          "f1": 0.8166873011644126,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.9166957988031833,
+          "recall": 0.8123701570871451,
+          "f1": 0.8613856603190245,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.8472018252386447,
+          "recall": 0.9441911442349846,
+          "f1": 0.8930708944392994,
+          "support": 68430
+        }
+      }
+    },
+    {
+      "game": "3859",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.5465838509316769,
+      "macro_f1": 0.8281122778488051,
+      "n_gt_spells": 275,
+      "n_pred_spells": 208,
+      "per_class": {
+        "H": {
+          "precision": 0.7819921568627451,
+          "recall": 0.7622863084497997,
+          "f1": 0.7720135038870134,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.8952427801348665,
+          "recall": 0.7959689470423151,
+          "f1": 0.8426921852541408,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.829756168783764,
+          "recall": 0.9135320765746018,
+          "f1": 0.8696311444052612,
+          "support": 68430
+        }
+      }
+    },
+    {
+      "game": "3859",
+      "scenario": "label_blind_seed7",
+      "candidate": "mixed25",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6127659574468085,
+      "macro_f1": 0.8500508072521457,
+      "n_gt_spells": 275,
+      "n_pred_spells": 195,
+      "per_class": {
+        "H": {
+          "precision": 0.8161132966168372,
+          "recall": 0.7930517752836478,
+          "f1": 0.8044172844867699,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.9116790417196537,
+          "recall": 0.810001093414003,
+          "f1": 0.8578376500559693,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.8464636828576728,
+          "recall": 0.9335963758585416,
+          "f1": 0.8878974872136981,
+          "support": 68430
+        }
+      }
+    },
+    {
+      "game": "3859",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.613107822410148,
+      "macro_f1": 0.8553616754258937,
+      "n_gt_spells": 275,
+      "n_pred_spells": 198,
+      "per_class": {
+        "H": {
+          "precision": 0.8420862719370182,
+          "recall": 0.7850698798128383,
+          "f1": 0.8125791339579641,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.9153860396222921,
+          "recall": 0.810875824616394,
+          "f1": 0.8599673376303355,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.8442835038812102,
+          "recall": 0.9488966827414876,
+          "f1": 0.8935385546893814,
+          "support": 68430
+        }
+      }
+    },
+    {
+      "game": "3859",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.5525,
+      "macro_f1": 0.8283738481762901,
+      "n_gt_spells": 275,
+      "n_pred_spells": 205,
+      "per_class": {
+        "H": {
+          "precision": 0.7812685055321802,
+          "recall": 0.7665983669225359,
+          "f1": 0.7738639170165473,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.893487386396055,
+          "recall": 0.7990487298173998,
+          "f1": 0.843633355139108,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.8304473304473304,
+          "recall": 0.9082858395440596,
+          "f1": 0.8676242723732149,
+          "support": 68430
+        }
+      }
+    },
+    {
+      "game": "3859",
+      "scenario": "natural_detected",
+      "candidate": "mixed25",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6153191489361702,
+      "macro_f1": 0.8507463138324679,
+      "n_gt_spells": 275,
+      "n_pred_spells": 195,
+      "per_class": {
+        "H": {
+          "precision": 0.8150187734668335,
+          "recall": 0.7965992843817854,
+          "f1": 0.8057037690035417,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.9120798383640483,
+          "recall": 0.8144294201261071,
+          "f1": 0.8604931021535913,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.846996428761793,
+          "recall": 0.9288616104047932,
+          "f1": 0.8860420703402707,
+          "support": 68430
+        }
+      }
+    },
+    {
+      "game": "3859",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6208067940552018,
+      "macro_f1": 0.8570479519742454,
+      "n_gt_spells": 275,
+      "n_pred_spells": 196,
+      "per_class": {
+        "H": {
+          "precision": 0.8375441980070717,
+          "recall": 0.7968439401816569,
+          "f1": 0.8166873011644126,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.9166957988031833,
+          "recall": 0.8123701570871451,
+          "f1": 0.8613856603190245,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.8472018252386447,
+          "recall": 0.9441911442349846,
+          "f1": 0.8930708944392994,
+          "support": 68430
+        }
+      }
+    },
+    {
+      "game": "3859",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.5465838509316769,
+      "macro_f1": 0.8281122778488051,
+      "n_gt_spells": 275,
+      "n_pred_spells": 208,
+      "per_class": {
+        "H": {
+          "precision": 0.7819921568627451,
+          "recall": 0.7622863084497997,
+          "f1": 0.7720135038870134,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.8952427801348665,
+          "recall": 0.7959689470423151,
+          "f1": 0.8426921852541408,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.829756168783764,
+          "recall": 0.9135320765746018,
+          "f1": 0.8696311444052612,
+          "support": 68430
+        }
+      }
+    },
+    {
+      "game": "3859",
+      "scenario": "label_blind_seed7",
+      "candidate": "mixed25",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6127659574468085,
+      "macro_f1": 0.8500508072521457,
+      "n_gt_spells": 275,
+      "n_pred_spells": 195,
+      "per_class": {
+        "H": {
+          "precision": 0.8161132966168372,
+          "recall": 0.7930517752836478,
+          "f1": 0.8044172844867699,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.9116790417196537,
+          "recall": 0.810001093414003,
+          "f1": 0.8578376500559693,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.8464636828576728,
+          "recall": 0.9335963758585416,
+          "f1": 0.8878974872136981,
+          "support": 68430
+        }
+      }
+    },
+    {
+      "game": "3859",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.613107822410148,
+      "macro_f1": 0.8553616754258937,
+      "n_gt_spells": 275,
+      "n_pred_spells": 198,
+      "per_class": {
+        "H": {
+          "precision": 0.8420862719370182,
+          "recall": 0.7850698798128383,
+          "f1": 0.8125791339579641,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.9153860396222921,
+          "recall": 0.810875824616394,
+          "f1": 0.8599673376303355,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.8442835038812102,
+          "recall": 0.9488966827414876,
+          "f1": 0.8935385546893814,
+          "support": 68430
+        }
+      }
+    },
+    {
+      "game": "3827",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6604651162790697,
+      "macro_f1": 0.8969772834862582,
+      "n_gt_spells": 269,
+      "n_pred_spells": 204,
+      "per_class": {
+        "H": {
+          "precision": 0.9116268257719576,
+          "recall": 0.90130810334591,
+          "f1": 0.9064380989069196,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.8910857908847185,
+          "recall": 0.8511750740256623,
+          "f1": 0.8706733065011256,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.8964703914352626,
+          "recall": 0.9318553295079117,
+          "f1": 0.913820445050729,
+          "support": 57510
+        }
+      }
+    },
+    {
+      "game": "3827",
+      "scenario": "natural_detected",
+      "candidate": "mixed25",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6925,
+      "macro_f1": 0.9016468746845452,
+      "n_gt_spells": 269,
+      "n_pred_spells": 211,
+      "per_class": {
+        "H": {
+          "precision": 0.918728941559196,
+          "recall": 0.9086817459253442,
+          "f1": 0.9136777237494583,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.8862086904142595,
+          "recall": 0.8634193186971484,
+          "f1": 0.8746655857316579,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.9046828689982217,
+          "recall": 0.928829768735872,
+          "f1": 0.9165973145725194,
+          "support": 57510
+        }
+      }
+    },
+    {
+      "game": "3827",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.7010309278350515,
+      "macro_f1": 0.906799480770332,
+      "n_gt_spells": 269,
+      "n_pred_spells": 216,
+      "per_class": {
+        "H": {
+          "precision": 0.9252954252954253,
+          "recall": 0.9087966598356731,
+          "f1": 0.9169718343881347,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.8980269583903107,
+          "recall": 0.8584042468055593,
+          "f1": 0.8777686852154938,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.9057492303852234,
+          "recall": 0.9464614849591375,
+          "f1": 0.9256579227073678,
+          "support": 57510
+        }
+      }
+    },
+    {
+      "game": "3827",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.654468085106383,
+      "macro_f1": 0.8947944727130014,
+      "n_gt_spells": 269,
+      "n_pred_spells": 201,
+      "per_class": {
+        "H": {
+          "precision": 0.9108239533487029,
+          "recall": 0.9004270967000555,
+          "f1": 0.9055956852547433,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.8878831458139469,
+          "recall": 0.8399445140982207,
+          "f1": 0.8632488005483208,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.8955928820888076,
+          "recall": 0.9363936706659711,
+          "f1": 0.9155389323359401,
+          "support": 57510
+        }
+      }
+    },
+    {
+      "game": "3827",
+      "scenario": "label_blind_seed7",
+      "candidate": "mixed25",
+      "reference": "canonical",
+      "spell_f1_mean": 0.669182389937107,
+      "macro_f1": 0.9008291076134359,
+      "n_gt_spells": 269,
+      "n_pred_spells": 208,
+      "per_class": {
+        "H": {
+          "precision": 0.9191697996201698,
+          "recall": 0.9084136134679103,
+          "f1": 0.9137600539421087,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.8840575714128157,
+          "recall": 0.8553098407447915,
+          "f1": 0.8694461392447971,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.9051061678463094,
+          "recall": 0.933907146583203,
+          "f1": 0.9192811296534018,
+          "support": 57510
+        }
+      }
+    },
+    {
+      "game": "3827",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.681081081081081,
+      "macro_f1": 0.9025774376082638,
+      "n_gt_spells": 269,
+      "n_pred_spells": 212,
+      "per_class": {
+        "H": {
+          "precision": 0.9233678382751428,
+          "recall": 0.9071687127726812,
+          "f1": 0.9151965993623805,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.88931148274512,
+          "recall": 0.8482940752794302,
+          "f1": 0.868318656563588,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.9038982628210457,
+          "recall": 0.94547035298209,
+          "f1": 0.9242170568988229,
+          "support": 57510
+        }
+      }
+    },
+    {
+      "game": "3827",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6604651162790697,
+      "macro_f1": 0.8969772834862582,
+      "n_gt_spells": 269,
+      "n_pred_spells": 204,
+      "per_class": {
+        "H": {
+          "precision": 0.9116268257719576,
+          "recall": 0.90130810334591,
+          "f1": 0.9064380989069196,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.8910857908847185,
+          "recall": 0.8511750740256623,
+          "f1": 0.8706733065011256,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.8964703914352626,
+          "recall": 0.9318553295079117,
+          "f1": 0.913820445050729,
+          "support": 57510
+        }
+      }
+    },
+    {
+      "game": "3827",
+      "scenario": "natural_detected",
+      "candidate": "mixed25",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6925,
+      "macro_f1": 0.9016468746845452,
+      "n_gt_spells": 269,
+      "n_pred_spells": 211,
+      "per_class": {
+        "H": {
+          "precision": 0.918728941559196,
+          "recall": 0.9086817459253442,
+          "f1": 0.9136777237494583,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.8862086904142595,
+          "recall": 0.8634193186971484,
+          "f1": 0.8746655857316579,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.9046828689982217,
+          "recall": 0.928829768735872,
+          "f1": 0.9165973145725194,
+          "support": 57510
+        }
+      }
+    },
+    {
+      "game": "3827",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.7010309278350515,
+      "macro_f1": 0.906799480770332,
+      "n_gt_spells": 269,
+      "n_pred_spells": 216,
+      "per_class": {
+        "H": {
+          "precision": 0.9252954252954253,
+          "recall": 0.9087966598356731,
+          "f1": 0.9169718343881347,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.8980269583903107,
+          "recall": 0.8584042468055593,
+          "f1": 0.8777686852154938,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.9057492303852234,
+          "recall": 0.9464614849591375,
+          "f1": 0.9256579227073678,
+          "support": 57510
+        }
+      }
+    },
+    {
+      "game": "3827",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.654468085106383,
+      "macro_f1": 0.8947944727130014,
+      "n_gt_spells": 269,
+      "n_pred_spells": 201,
+      "per_class": {
+        "H": {
+          "precision": 0.9108239533487029,
+          "recall": 0.9004270967000555,
+          "f1": 0.9055956852547433,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.8878831458139469,
+          "recall": 0.8399445140982207,
+          "f1": 0.8632488005483208,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.8955928820888076,
+          "recall": 0.9363936706659711,
+          "f1": 0.9155389323359401,
+          "support": 57510
+        }
+      }
+    },
+    {
+      "game": "3827",
+      "scenario": "label_blind_seed7",
+      "candidate": "mixed25",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.669182389937107,
+      "macro_f1": 0.9008291076134359,
+      "n_gt_spells": 269,
+      "n_pred_spells": 208,
+      "per_class": {
+        "H": {
+          "precision": 0.9191697996201698,
+          "recall": 0.9084136134679103,
+          "f1": 0.9137600539421087,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.8840575714128157,
+          "recall": 0.8553098407447915,
+          "f1": 0.8694461392447971,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.9051061678463094,
+          "recall": 0.933907146583203,
+          "f1": 0.9192811296534018,
+          "support": 57510
+        }
+      }
+    },
+    {
+      "game": "3827",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.681081081081081,
+      "macro_f1": 0.9025774376082638,
+      "n_gt_spells": 269,
+      "n_pred_spells": 212,
+      "per_class": {
+        "H": {
+          "precision": 0.9233678382751428,
+          "recall": 0.9071687127726812,
+          "f1": 0.9151965993623805,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.88931148274512,
+          "recall": 0.8482940752794302,
+          "f1": 0.868318656563588,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.9038982628210457,
+          "recall": 0.94547035298209,
+          "f1": 0.9242170568988229,
+          "support": 57510
+        }
+      }
+    },
+    {
+      "game": "10503",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6190687361419068,
+      "macro_f1": 0.8842563947096583,
+      "n_gt_spells": 264,
+      "n_pred_spells": 187,
+      "per_class": {
+        "H": {
+          "precision": 0.913991446277385,
+          "recall": 0.8688970759069335,
+          "f1": 0.8908739780335707,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.8840663681854095,
+          "recall": 0.870449123534903,
+          "f1": 0.8772049023963205,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.8554118498450576,
+          "recall": 0.9160440346554328,
+          "f1": 0.8846903036990836,
+          "support": 50324
+        }
+      }
+    },
+    {
+      "game": "10503",
+      "scenario": "natural_detected",
+      "candidate": "mixed25",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6504347826086956,
+      "macro_f1": 0.8921752816652538,
+      "n_gt_spells": 264,
+      "n_pred_spells": 196,
+      "per_class": {
+        "H": {
+          "precision": 0.9130650684931507,
+          "recall": 0.8849115470145043,
+          "f1": 0.8987678875423487,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.8841162730339995,
+          "recall": 0.8833367907893372,
+          "f1": 0.8837263600280179,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.877834380266585,
+          "recall": 0.9108377712423495,
+          "f1": 0.894031597425395,
+          "support": 50324
+        }
+      }
+    },
+    {
+      "game": "10503",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.661505376344086,
+      "macro_f1": 0.8943566512248928,
+      "n_gt_spells": 264,
+      "n_pred_spells": 201,
+      "per_class": {
+        "H": {
+          "precision": 0.9189193869599099,
+          "recall": 0.8805967672342262,
+          "f1": 0.8993500165250036,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.8893695110761568,
+          "recall": 0.8797064619852712,
+          "f1": 0.8845115957710308,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.8744554604176056,
+          "recall": 0.9254033860583419,
+          "f1": 0.8992083413786445,
+          "support": 50324
+        }
+      }
+    },
+    {
+      "game": "10503",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6067114093959731,
+      "macro_f1": 0.8778241488128901,
+      "n_gt_spells": 264,
+      "n_pred_spells": 183,
+      "per_class": {
+        "H": {
+          "precision": 0.9144176136363636,
+          "recall": 0.8546583026320157,
+          "f1": 0.8835286246118479,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.8875099654530959,
+          "recall": 0.8660149362099367,
+          "f1": 0.8766307058298554,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.834770635553301,
+          "recall": 0.9155869962642079,
+          "f1": 0.8733131159969674,
+          "support": 50324
+        }
+      }
+    },
+    {
+      "game": "10503",
+      "scenario": "label_blind_seed7",
+      "candidate": "mixed25",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6302222222222221,
+      "macro_f1": 0.8844609666574045,
+      "n_gt_spells": 264,
+      "n_pred_spells": 186,
+      "per_class": {
+        "H": {
+          "precision": 0.909896013864818,
+          "recall": 0.8712702047860865,
+          "f1": 0.8901642957662896,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.8936617842876166,
+          "recall": 0.8701638834145835,
+          "f1": 0.8817563128990725,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.8522524862698531,
+          "recall": 0.9127454097448533,
+          "f1": 0.8814622913068509,
+          "support": 50324
+        }
+      }
+    },
+    {
+      "game": "10503",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6274336283185841,
+      "macro_f1": 0.8854345118586681,
+      "n_gt_spells": 264,
+      "n_pred_spells": 188,
+      "per_class": {
+        "H": {
+          "precision": 0.920003529515574,
+          "recall": 0.8651465365594609,
+          "f1": 0.8917321656132667,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.8908873855949064,
+          "recall": 0.8708121564153096,
+          "f1": 0.880735388609869,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.8478443397948381,
+          "recall": 0.9230188379302122,
+          "f1": 0.8838359813528684,
+          "support": 50324
+        }
+      }
+    },
+    {
+      "game": "10503",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6190687361419068,
+      "macro_f1": 0.8842563947096583,
+      "n_gt_spells": 264,
+      "n_pred_spells": 187,
+      "per_class": {
+        "H": {
+          "precision": 0.913991446277385,
+          "recall": 0.8688970759069335,
+          "f1": 0.8908739780335707,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.8840663681854095,
+          "recall": 0.870449123534903,
+          "f1": 0.8772049023963205,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.8554118498450576,
+          "recall": 0.9160440346554328,
+          "f1": 0.8846903036990836,
+          "support": 50324
+        }
+      }
+    },
+    {
+      "game": "10503",
+      "scenario": "natural_detected",
+      "candidate": "mixed25",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6504347826086956,
+      "macro_f1": 0.8921752816652538,
+      "n_gt_spells": 264,
+      "n_pred_spells": 196,
+      "per_class": {
+        "H": {
+          "precision": 0.9130650684931507,
+          "recall": 0.8849115470145043,
+          "f1": 0.8987678875423487,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.8841162730339995,
+          "recall": 0.8833367907893372,
+          "f1": 0.8837263600280179,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.877834380266585,
+          "recall": 0.9108377712423495,
+          "f1": 0.894031597425395,
+          "support": 50324
+        }
+      }
+    },
+    {
+      "game": "10503",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.661505376344086,
+      "macro_f1": 0.8943566512248928,
+      "n_gt_spells": 264,
+      "n_pred_spells": 201,
+      "per_class": {
+        "H": {
+          "precision": 0.9189193869599099,
+          "recall": 0.8805967672342262,
+          "f1": 0.8993500165250036,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.8893695110761568,
+          "recall": 0.8797064619852712,
+          "f1": 0.8845115957710308,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.8744554604176056,
+          "recall": 0.9254033860583419,
+          "f1": 0.8992083413786445,
+          "support": 50324
+        }
+      }
+    },
+    {
+      "game": "10503",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6067114093959731,
+      "macro_f1": 0.8778241488128901,
+      "n_gt_spells": 264,
+      "n_pred_spells": 183,
+      "per_class": {
+        "H": {
+          "precision": 0.9144176136363636,
+          "recall": 0.8546583026320157,
+          "f1": 0.8835286246118479,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.8875099654530959,
+          "recall": 0.8660149362099367,
+          "f1": 0.8766307058298554,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.834770635553301,
+          "recall": 0.9155869962642079,
+          "f1": 0.8733131159969674,
+          "support": 50324
+        }
+      }
+    },
+    {
+      "game": "10503",
+      "scenario": "label_blind_seed7",
+      "candidate": "mixed25",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6302222222222221,
+      "macro_f1": 0.8844609666574045,
+      "n_gt_spells": 264,
+      "n_pred_spells": 186,
+      "per_class": {
+        "H": {
+          "precision": 0.909896013864818,
+          "recall": 0.8712702047860865,
+          "f1": 0.8901642957662896,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.8936617842876166,
+          "recall": 0.8701638834145835,
+          "f1": 0.8817563128990725,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.8522524862698531,
+          "recall": 0.9127454097448533,
+          "f1": 0.8814622913068509,
+          "support": 50324
+        }
+      }
+    },
+    {
+      "game": "10503",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6274336283185841,
+      "macro_f1": 0.8854345118586681,
+      "n_gt_spells": 264,
+      "n_pred_spells": 188,
+      "per_class": {
+        "H": {
+          "precision": 0.920003529515574,
+          "recall": 0.8651465365594609,
+          "f1": 0.8917321656132667,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.8908873855949064,
+          "recall": 0.8708121564153096,
+          "f1": 0.880735388609869,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.8478443397948381,
+          "recall": 0.9230188379302122,
+          "f1": 0.8838359813528684,
+          "support": 50324
+        }
+      }
+    },
+    {
+      "game": "3858",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.5636363636363637,
+      "macro_f1": 0.8543876702972574,
+      "n_gt_spells": 305,
+      "n_pred_spells": 223,
+      "per_class": {
+        "H": {
+          "precision": 0.8268999570631173,
+          "recall": 0.8616007516105941,
+          "f1": 0.8438937820428553,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8301588099306463,
+          "recall": 0.8227164060165355,
+          "f1": 0.8264208525115069,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9027285069855034,
+          "recall": 0.8831821752481611,
+          "f1": 0.89284837633741,
+          "support": 70015
+        }
+      }
+    },
+    {
+      "game": "3858",
+      "scenario": "natural_detected",
+      "candidate": "mixed25",
+      "reference": "canonical",
+      "spell_f1_mean": 0.5939622641509434,
+      "macro_f1": 0.869757578715825,
+      "n_gt_spells": 305,
+      "n_pred_spells": 225,
+      "per_class": {
+        "H": {
+          "precision": 0.8511547218909249,
+          "recall": 0.8780198639942735,
+          "f1": 0.8643785991917992,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8403878751620301,
+          "recall": 0.839550752066939,
+          "f1": 0.8399691050428542,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9139618903327312,
+          "recall": 0.8960651289009498,
+          "f1": 0.904925031912822,
+          "support": 70015
+        }
+      }
+    },
+    {
+      "game": "3858",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6120754716981132,
+      "macro_f1": 0.8743387791450687,
+      "n_gt_spells": 305,
+      "n_pred_spells": 225,
+      "per_class": {
+        "H": {
+          "precision": 0.8569082548719071,
+          "recall": 0.8754250178954903,
+          "f1": 0.866067674331113,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8530923267765373,
+          "recall": 0.8391772088853472,
+          "f1": 0.8460775575279009,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9129031332491679,
+          "recall": 0.9088481039777191,
+          "f1": 0.9108711055761923,
+          "support": 70015
+        }
+      }
+    },
+    {
+      "game": "3858",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.5577142857142857,
+      "macro_f1": 0.8558881893422429,
+      "n_gt_spells": 305,
+      "n_pred_spells": 220,
+      "per_class": {
+        "H": {
+          "precision": 0.8228717729891188,
+          "recall": 0.8627415891195419,
+          "f1": 0.8423351606351147,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8447493294821539,
+          "recall": 0.8157186970813826,
+          "f1": 0.8299802361526377,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9004318999263314,
+          "recall": 0.8903235021066914,
+          "f1": 0.8953491712389763,
+          "support": 70015
+        }
+      }
+    },
+    {
+      "game": "3858",
+      "scenario": "label_blind_seed7",
+      "candidate": "mixed25",
+      "reference": "canonical",
+      "spell_f1_mean": 0.5860113421550095,
+      "macro_f1": 0.8662037293155853,
+      "n_gt_spells": 305,
+      "n_pred_spells": 224,
+      "per_class": {
+        "H": {
+          "precision": 0.8403355921264924,
+          "recall": 0.8738144237652111,
+          "f1": 0.8567480726842054,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8427439701281663,
+          "recall": 0.8318308596473752,
+          "f1": 0.8372518548225386,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9129068854175757,
+          "recall": 0.8964650432050275,
+          "f1": 0.9046112604400117,
+          "support": 70015
+        }
+      }
+    },
+    {
+      "game": "3858",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6094161958568738,
+      "macro_f1": 0.8726606083657092,
+      "n_gt_spells": 305,
+      "n_pred_spells": 226,
+      "per_class": {
+        "H": {
+          "precision": 0.856043956043956,
+          "recall": 0.8712866857551896,
+          "f1": 0.863598066604585,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8528735044483076,
+          "recall": 0.8307849387389182,
+          "f1": 0.8416843273791502,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9111145903015984,
+          "recall": 0.9142897950439192,
+          "f1": 0.9126994311133924,
+          "support": 70015
+        }
+      }
+    },
+    {
+      "game": "3858",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.5636363636363637,
+      "macro_f1": 0.8543876702972574,
+      "n_gt_spells": 305,
+      "n_pred_spells": 223,
+      "per_class": {
+        "H": {
+          "precision": 0.8268999570631173,
+          "recall": 0.8616007516105941,
+          "f1": 0.8438937820428553,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8301588099306463,
+          "recall": 0.8227164060165355,
+          "f1": 0.8264208525115069,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9027285069855034,
+          "recall": 0.8831821752481611,
+          "f1": 0.89284837633741,
+          "support": 70015
+        }
+      }
+    },
+    {
+      "game": "3858",
+      "scenario": "natural_detected",
+      "candidate": "mixed25",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.5939622641509434,
+      "macro_f1": 0.869757578715825,
+      "n_gt_spells": 305,
+      "n_pred_spells": 225,
+      "per_class": {
+        "H": {
+          "precision": 0.8511547218909249,
+          "recall": 0.8780198639942735,
+          "f1": 0.8643785991917992,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8403878751620301,
+          "recall": 0.839550752066939,
+          "f1": 0.8399691050428542,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9139618903327312,
+          "recall": 0.8960651289009498,
+          "f1": 0.904925031912822,
+          "support": 70015
+        }
+      }
+    },
+    {
+      "game": "3858",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6120754716981132,
+      "macro_f1": 0.8743387791450687,
+      "n_gt_spells": 305,
+      "n_pred_spells": 225,
+      "per_class": {
+        "H": {
+          "precision": 0.8569082548719071,
+          "recall": 0.8754250178954903,
+          "f1": 0.866067674331113,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8530923267765373,
+          "recall": 0.8391772088853472,
+          "f1": 0.8460775575279009,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9129031332491679,
+          "recall": 0.9088481039777191,
+          "f1": 0.9108711055761923,
+          "support": 70015
+        }
+      }
+    },
+    {
+      "game": "3858",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.5577142857142857,
+      "macro_f1": 0.8558881893422429,
+      "n_gt_spells": 305,
+      "n_pred_spells": 220,
+      "per_class": {
+        "H": {
+          "precision": 0.8228717729891188,
+          "recall": 0.8627415891195419,
+          "f1": 0.8423351606351147,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8447493294821539,
+          "recall": 0.8157186970813826,
+          "f1": 0.8299802361526377,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9004318999263314,
+          "recall": 0.8903235021066914,
+          "f1": 0.8953491712389763,
+          "support": 70015
+        }
+      }
+    },
+    {
+      "game": "3858",
+      "scenario": "label_blind_seed7",
+      "candidate": "mixed25",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.5860113421550095,
+      "macro_f1": 0.8662037293155853,
+      "n_gt_spells": 305,
+      "n_pred_spells": 224,
+      "per_class": {
+        "H": {
+          "precision": 0.8403355921264924,
+          "recall": 0.8738144237652111,
+          "f1": 0.8567480726842054,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8427439701281663,
+          "recall": 0.8318308596473752,
+          "f1": 0.8372518548225386,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9129068854175757,
+          "recall": 0.8964650432050275,
+          "f1": 0.9046112604400117,
+          "support": 70015
+        }
+      }
+    },
+    {
+      "game": "3858",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6094161958568738,
+      "macro_f1": 0.8726606083657092,
+      "n_gt_spells": 305,
+      "n_pred_spells": 226,
+      "per_class": {
+        "H": {
+          "precision": 0.856043956043956,
+          "recall": 0.8712866857551896,
+          "f1": 0.863598066604585,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8528735044483076,
+          "recall": 0.8307849387389182,
+          "f1": 0.8416843273791502,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9111145903015984,
+          "recall": 0.9142897950439192,
+          "f1": 0.9126994311133924,
+          "support": 70015
+        }
+      }
+    },
+    {
+      "game": "3838",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6180327868852459,
+      "macro_f1": 0.8616605166957187,
+      "n_gt_spells": 278,
+      "n_pred_spells": 210,
+      "per_class": {
+        "H": {
+          "precision": 0.8434617345756269,
+          "recall": 0.8462665395437527,
+          "f1": 0.8448618091910526,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.8669391926417986,
+          "recall": 0.8635151367088092,
+          "f1": 0.8652237770796785,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.8745210084033613,
+          "recall": 0.8752712408955575,
+          "f1": 0.8748959638164255,
+          "support": 59449
+        }
+      }
+    },
+    {
+      "game": "3838",
+      "scenario": "natural_detected",
+      "candidate": "mixed25",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6585774058577405,
+      "macro_f1": 0.8875113840195602,
+      "n_gt_spells": 278,
+      "n_pred_spells": 200,
+      "per_class": {
+        "H": {
+          "precision": 0.8717390795723077,
+          "recall": 0.8664279236332348,
+          "f1": 0.8690753871991043,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.8918536735321242,
+          "recall": 0.8859708055945764,
+          "f1": 0.8889025062810221,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.9001415840759557,
+          "recall": 0.9090144493599556,
+          "f1": 0.9045562585785545,
+          "support": 59449
+        }
+      }
+    },
+    {
+      "game": "3838",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6609053497942387,
+      "macro_f1": 0.8911120190877426,
+      "n_gt_spells": 278,
+      "n_pred_spells": 208,
+      "per_class": {
+        "H": {
+          "precision": 0.8851679238937202,
+          "recall": 0.8568239425156384,
+          "f1": 0.8707653404861219,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.8999063572989283,
+          "recall": 0.8804128748549441,
+          "f1": 0.8900528948072529,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.8945225399903054,
+          "recall": 0.9312519975104712,
+          "f1": 0.9125178219698531,
+          "support": 59449
+        }
+      }
+    },
+    {
+      "game": "3838",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6110429447852761,
+      "macro_f1": 0.8589457602805127,
+      "n_gt_spells": 278,
+      "n_pred_spells": 211,
+      "per_class": {
+        "H": {
+          "precision": 0.8506162851568076,
+          "recall": 0.8312908401739414,
+          "f1": 0.840842536075927,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.870134473053268,
+          "recall": 0.8496915653820314,
+          "f1": 0.8597915207449219,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.8610425462812602,
+          "recall": 0.8919073491564198,
+          "f1": 0.8762032240206893,
+          "support": 59449
+        }
+      }
+    },
+    {
+      "game": "3838",
+      "scenario": "label_blind_seed7",
+      "candidate": "mixed25",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6583333333333334,
+      "macro_f1": 0.8788497364181111,
+      "n_gt_spells": 278,
+      "n_pred_spells": 202,
+      "per_class": {
+        "H": {
+          "precision": 0.8701751887195556,
+          "recall": 0.8524289003092808,
+          "f1": 0.8612106332742074,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.8942412778478352,
+          "recall": 0.8662228465563224,
+          "f1": 0.8800091004043475,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.8778469247555161,
+          "recall": 0.9135225150969739,
+          "f1": 0.8953294755757786,
+          "support": 59449
+        }
+      }
+    },
+    {
+      "game": "3838",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6639004149377594,
+      "macro_f1": 0.8843932495095275,
+      "n_gt_spells": 278,
+      "n_pred_spells": 204,
+      "per_class": {
+        "H": {
+          "precision": 0.8910251706171571,
+          "recall": 0.8470571820570658,
+          "f1": 0.8684850507844165,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.9005547258374227,
+          "recall": 0.8593212402532625,
+          "f1": 0.879454937544927,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.8742400501410216,
+          "recall": 0.9385187303402917,
+          "f1": 0.905239760199239,
+          "support": 59449
+        }
+      }
+    },
+    {
+      "game": "3838",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6180327868852459,
+      "macro_f1": 0.8616605166957187,
+      "n_gt_spells": 278,
+      "n_pred_spells": 210,
+      "per_class": {
+        "H": {
+          "precision": 0.8434617345756269,
+          "recall": 0.8462665395437527,
+          "f1": 0.8448618091910526,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.8669391926417986,
+          "recall": 0.8635151367088092,
+          "f1": 0.8652237770796785,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.8745210084033613,
+          "recall": 0.8752712408955575,
+          "f1": 0.8748959638164255,
+          "support": 59449
+        }
+      }
+    },
+    {
+      "game": "3838",
+      "scenario": "natural_detected",
+      "candidate": "mixed25",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6585774058577405,
+      "macro_f1": 0.8875113840195602,
+      "n_gt_spells": 278,
+      "n_pred_spells": 200,
+      "per_class": {
+        "H": {
+          "precision": 0.8717390795723077,
+          "recall": 0.8664279236332348,
+          "f1": 0.8690753871991043,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.8918536735321242,
+          "recall": 0.8859708055945764,
+          "f1": 0.8889025062810221,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.9001415840759557,
+          "recall": 0.9090144493599556,
+          "f1": 0.9045562585785545,
+          "support": 59449
+        }
+      }
+    },
+    {
+      "game": "3838",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6609053497942387,
+      "macro_f1": 0.8911120190877426,
+      "n_gt_spells": 278,
+      "n_pred_spells": 208,
+      "per_class": {
+        "H": {
+          "precision": 0.8851679238937202,
+          "recall": 0.8568239425156384,
+          "f1": 0.8707653404861219,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.8999063572989283,
+          "recall": 0.8804128748549441,
+          "f1": 0.8900528948072529,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.8945225399903054,
+          "recall": 0.9312519975104712,
+          "f1": 0.9125178219698531,
+          "support": 59449
+        }
+      }
+    },
+    {
+      "game": "3838",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6110429447852761,
+      "macro_f1": 0.8589457602805127,
+      "n_gt_spells": 278,
+      "n_pred_spells": 211,
+      "per_class": {
+        "H": {
+          "precision": 0.8506162851568076,
+          "recall": 0.8312908401739414,
+          "f1": 0.840842536075927,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.870134473053268,
+          "recall": 0.8496915653820314,
+          "f1": 0.8597915207449219,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.8610425462812602,
+          "recall": 0.8919073491564198,
+          "f1": 0.8762032240206893,
+          "support": 59449
+        }
+      }
+    },
+    {
+      "game": "3838",
+      "scenario": "label_blind_seed7",
+      "candidate": "mixed25",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6583333333333334,
+      "macro_f1": 0.8788497364181111,
+      "n_gt_spells": 278,
+      "n_pred_spells": 202,
+      "per_class": {
+        "H": {
+          "precision": 0.8701751887195556,
+          "recall": 0.8524289003092808,
+          "f1": 0.8612106332742074,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.8942412778478352,
+          "recall": 0.8662228465563224,
+          "f1": 0.8800091004043475,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.8778469247555161,
+          "recall": 0.9135225150969739,
+          "f1": 0.8953294755757786,
+          "support": 59449
+        }
+      }
+    },
+    {
+      "game": "3838",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6639004149377594,
+      "macro_f1": 0.8843932495095275,
+      "n_gt_spells": 278,
+      "n_pred_spells": 204,
+      "per_class": {
+        "H": {
+          "precision": 0.8910251706171571,
+          "recall": 0.8470571820570658,
+          "f1": 0.8684850507844165,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.9005547258374227,
+          "recall": 0.8593212402532625,
+          "f1": 0.879454937544927,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.8742400501410216,
+          "recall": 0.9385187303402917,
+          "f1": 0.905239760199239,
+          "support": 59449
+        }
+      }
+    },
+    {
+      "game": "3842",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6719999999999999,
+      "macro_f1": 0.9059350509881413,
+      "n_gt_spells": 268,
+      "n_pred_spells": 207,
+      "per_class": {
+        "H": {
+          "precision": 0.9085362276327369,
+          "recall": 0.8982424933779316,
+          "f1": 0.9033600373337481,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.8975908052751786,
+          "recall": 0.8966659306690219,
+          "f1": 0.8971281296023564,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.9119324023704036,
+          "recall": 0.9227655348529272,
+          "f1": 0.9173169860283196,
+          "support": 52865
+        }
+      }
+    },
+    {
+      "game": "3842",
+      "scenario": "natural_detected",
+      "candidate": "mixed25",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6931106471816284,
+      "macro_f1": 0.9121645432854902,
+      "n_gt_spells": 268,
+      "n_pred_spells": 211,
+      "per_class": {
+        "H": {
+          "precision": 0.9065057008718981,
+          "recall": 0.9146381547147193,
+          "f1": 0.910553769753431,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9027944748399127,
+          "recall": 0.9027501778660975,
+          "f1": 0.9027723258096173,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.9272369902486499,
+          "recall": 0.9191336422964154,
+          "f1": 0.9231675342934225,
+          "support": 52865
+        }
+      }
+    },
+    {
+      "game": "3842",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.700414937759336,
+      "macro_f1": 0.9148154292094026,
+      "n_gt_spells": 268,
+      "n_pred_spells": 214,
+      "per_class": {
+        "H": {
+          "precision": 0.9150356044982295,
+          "recall": 0.9093211654840394,
+          "f1": 0.9121694353126001,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9064992321791252,
+          "recall": 0.8978925934103678,
+          "f1": 0.9021753867011769,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.9239384041063929,
+          "recall": 0.9363472997257164,
+          "f1": 0.9301014656144307,
+          "support": 52865
+        }
+      }
+    },
+    {
+      "game": "3842",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6630252100840337,
+      "macro_f1": 0.8972676293866165,
+      "n_gt_spells": 268,
+      "n_pred_spells": 208,
+      "per_class": {
+        "H": {
+          "precision": 0.9051284594782264,
+          "recall": 0.8820981806229578,
+          "f1": 0.8934649354718681,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9028597482205729,
+          "recall": 0.8744633350506612,
+          "f1": 0.8884346959122632,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.8885923949299533,
+          "recall": 0.9322614205996406,
+          "f1": 0.9099032567757181,
+          "support": 52865
+        }
+      }
+    },
+    {
+      "game": "3842",
+      "scenario": "label_blind_seed7",
+      "candidate": "mixed25",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6866666666666668,
+      "macro_f1": 0.9016423439631752,
+      "n_gt_spells": 268,
+      "n_pred_spells": 212,
+      "per_class": {
+        "H": {
+          "precision": 0.9047609698635516,
+          "recall": 0.8910113880242068,
+          "f1": 0.8978335411471321,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9085207010799464,
+          "recall": 0.8812835798925444,
+          "f1": 0.8946948941469489,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.8957046270479107,
+          "recall": 0.9297266622529083,
+          "f1": 0.9123985965954445,
+          "support": 52865
+        }
+      }
+    },
+    {
+      "game": "3842",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6882352941176471,
+      "macro_f1": 0.9057247514008248,
+      "n_gt_spells": 268,
+      "n_pred_spells": 208,
+      "per_class": {
+        "H": {
+          "precision": 0.9117049600631102,
+          "recall": 0.8937955569304538,
+          "f1": 0.9026614336203699,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9134195820255684,
+          "recall": 0.8781923897843527,
+          "f1": 0.8954596622889306,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.897606982489676,
+          "recall": 0.9415492291686371,
+          "f1": 0.9190531582931738,
+          "support": 52865
+        }
+      }
+    },
+    {
+      "game": "3842",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6719999999999999,
+      "macro_f1": 0.9059350509881413,
+      "n_gt_spells": 268,
+      "n_pred_spells": 207,
+      "per_class": {
+        "H": {
+          "precision": 0.9085362276327369,
+          "recall": 0.8982424933779316,
+          "f1": 0.9033600373337481,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.8975908052751786,
+          "recall": 0.8966659306690219,
+          "f1": 0.8971281296023564,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.9119324023704036,
+          "recall": 0.9227655348529272,
+          "f1": 0.9173169860283196,
+          "support": 52865
+        }
+      }
+    },
+    {
+      "game": "3842",
+      "scenario": "natural_detected",
+      "candidate": "mixed25",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6931106471816284,
+      "macro_f1": 0.9121645432854902,
+      "n_gt_spells": 268,
+      "n_pred_spells": 211,
+      "per_class": {
+        "H": {
+          "precision": 0.9065057008718981,
+          "recall": 0.9146381547147193,
+          "f1": 0.910553769753431,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9027944748399127,
+          "recall": 0.9027501778660975,
+          "f1": 0.9027723258096173,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.9272369902486499,
+          "recall": 0.9191336422964154,
+          "f1": 0.9231675342934225,
+          "support": 52865
+        }
+      }
+    },
+    {
+      "game": "3842",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.700414937759336,
+      "macro_f1": 0.9148154292094026,
+      "n_gt_spells": 268,
+      "n_pred_spells": 214,
+      "per_class": {
+        "H": {
+          "precision": 0.9150356044982295,
+          "recall": 0.9093211654840394,
+          "f1": 0.9121694353126001,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9064992321791252,
+          "recall": 0.8978925934103678,
+          "f1": 0.9021753867011769,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.9239384041063929,
+          "recall": 0.9363472997257164,
+          "f1": 0.9301014656144307,
+          "support": 52865
+        }
+      }
+    },
+    {
+      "game": "3842",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6630252100840337,
+      "macro_f1": 0.8972676293866165,
+      "n_gt_spells": 268,
+      "n_pred_spells": 208,
+      "per_class": {
+        "H": {
+          "precision": 0.9051284594782264,
+          "recall": 0.8820981806229578,
+          "f1": 0.8934649354718681,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9028597482205729,
+          "recall": 0.8744633350506612,
+          "f1": 0.8884346959122632,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.8885923949299533,
+          "recall": 0.9322614205996406,
+          "f1": 0.9099032567757181,
+          "support": 52865
+        }
+      }
+    },
+    {
+      "game": "3842",
+      "scenario": "label_blind_seed7",
+      "candidate": "mixed25",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6866666666666668,
+      "macro_f1": 0.9016423439631752,
+      "n_gt_spells": 268,
+      "n_pred_spells": 212,
+      "per_class": {
+        "H": {
+          "precision": 0.9047609698635516,
+          "recall": 0.8910113880242068,
+          "f1": 0.8978335411471321,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9085207010799464,
+          "recall": 0.8812835798925444,
+          "f1": 0.8946948941469489,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.8957046270479107,
+          "recall": 0.9297266622529083,
+          "f1": 0.9123985965954445,
+          "support": 52865
+        }
+      }
+    },
+    {
+      "game": "3842",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6882352941176471,
+      "macro_f1": 0.9057247514008248,
+      "n_gt_spells": 268,
+      "n_pred_spells": 208,
+      "per_class": {
+        "H": {
+          "precision": 0.9117049600631102,
+          "recall": 0.8937955569304538,
+          "f1": 0.9026614336203699,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9134195820255684,
+          "recall": 0.8781923897843527,
+          "f1": 0.8954596622889306,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.897606982489676,
+          "recall": 0.9415492291686371,
+          "f1": 0.9190531582931738,
+          "support": 52865
+        }
+      }
+    }
+  ],
+  "decisions": {
+    "mixed25": {
+      "status": "PASS: PFF development only; final unopened",
+      "checks": {
+        "natural_gain": true,
+        "game_wins": true,
+        "macro_guard": true,
+        "H_guard": true,
+        "A_guard": true,
+        "D_guard": true,
+        "blind_guard": true,
+        "shadow_natural_detected": true,
+        "shadow_label_blind_seed7": true
+      },
+      "comparisons": {
+        "canonical/natural_detected": {
+          "baseline": 0.6140438627826817,
+          "candidate": 0.6423041926502626,
+          "gain": 0.02826032986758086,
+          "wins": 8,
+          "macro_gain": 0.012929975871114363,
+          "class_f1_gains": {
+            "H": 0.014402433228511435,
+            "A": 0.01103515058003921,
+            "D": 0.013352343804792466
+          },
+          "per_game_gain": {
+            "10510": -0.00031742508324084096,
+            "3821": 0.01563555948695261,
+            "10513": -0.0011142993782877753,
+            "10516": 0.05019821785779244,
+            "3859": 0.06281914893617024,
+            "3827": 0.03203488372093033,
+            "10503": 0.031366046466788755,
+            "3858": 0.03032590051457973,
+            "3838": 0.04054461897249462,
+            "3842": 0.021110647181628472
+          }
+        },
+        "canonical/label_blind_seed7": {
+          "baseline": 0.6024577730794344,
+          "candidate": 0.6341293667085114,
+          "gain": 0.03167159362907697,
+          "wins": 10,
+          "macro_gain": 0.011368558769724757,
+          "class_f1_gains": {
+            "H": 0.013674962723898088,
+            "A": 0.009733477805150836,
+            "D": 0.010697235780125158
+          },
+          "per_game_gain": {
+            "10510": 0.03838470887194789,
+            "3821": 0.02558635394456288,
+            "10513": 0.012434509256025073,
+            "10516": 0.03667423847471507,
+            "3859": 0.06618210651513157,
+            "3827": 0.014714304830724001,
+            "10503": 0.023510812826249006,
+            "3858": 0.028297056440723778,
+            "3838": 0.04729038854805734,
+            "3842": 0.023641456582633058
+          }
+        },
+        "sdk_shadow/natural_detected": {
+          "baseline": 0.6140438627826817,
+          "candidate": 0.6423041926502626,
+          "gain": 0.02826032986758086,
+          "wins": 8,
+          "macro_gain": 0.012929975871114363,
+          "class_f1_gains": {
+            "H": 0.014402433228511435,
+            "A": 0.01103515058003921,
+            "D": 0.013352343804792466
+          },
+          "per_game_gain": {
+            "10510": -0.00031742508324084096,
+            "3821": 0.01563555948695261,
+            "10513": -0.0011142993782877753,
+            "10516": 0.05019821785779244,
+            "3859": 0.06281914893617024,
+            "3827": 0.03203488372093033,
+            "10503": 0.031366046466788755,
+            "3858": 0.03032590051457973,
+            "3838": 0.04054461897249462,
+            "3842": 0.021110647181628472
+          }
+        },
+        "sdk_shadow/label_blind_seed7": {
+          "baseline": 0.6024577730794344,
+          "candidate": 0.6341293667085114,
+          "gain": 0.03167159362907697,
+          "wins": 10,
+          "macro_gain": 0.011368558769724757,
+          "class_f1_gains": {
+            "H": 0.013674962723898088,
+            "A": 0.009733477805150836,
+            "D": 0.010697235780125158
+          },
+          "per_game_gain": {
+            "10510": 0.03838470887194789,
+            "3821": 0.02558635394456288,
+            "10513": 0.012434509256025073,
+            "10516": 0.03667423847471507,
+            "3859": 0.06618210651513157,
+            "3827": 0.014714304830724001,
+            "10503": 0.023510812826249006,
+            "3858": 0.028297056440723778,
+            "3838": 0.04729038854805734,
+            "3842": 0.023641456582633058
+          }
+        }
+      },
+      "final_reserve_opened": false
+    },
+    "boundary102": {
+      "status": "PASS: PFF development only; final unopened",
+      "checks": {
+        "natural_gain": true,
+        "game_wins": true,
+        "macro_guard": true,
+        "H_guard": true,
+        "A_guard": true,
+        "D_guard": true,
+        "blind_guard": true,
+        "shadow_natural_detected": true,
+        "shadow_label_blind_seed7": true
+      },
+      "comparisons": {
+        "canonical/natural_detected": {
+          "baseline": 0.6140438627826817,
+          "candidate": 0.6552306178159059,
+          "gain": 0.0411867550332242,
+          "wins": 10,
+          "macro_gain": 0.01771990079801833,
+          "class_f1_gains": {
+            "H": 0.018143042928980634,
+            "A": 0.01457533692193368,
+            "D": 0.020441322543140673
+          },
+          "per_game_gain": {
+            "10510": 0.01776580538757544,
+            "3821": 0.04046446011937055,
+            "10513": 0.008641798182687843,
+            "10516": 0.073959632099167,
+            "3859": 0.06830679405520179,
+            "3827": 0.04056581155598182,
+            "10503": 0.04243664020217919,
+            "3858": 0.04843910806174945,
+            "3838": 0.04287256290899277,
+            "3842": 0.028414937759336123
+          }
+        },
+        "canonical/label_blind_seed7": {
+          "baseline": 0.6024577730794344,
+          "candidate": 0.642485036863332,
+          "gain": 0.04002726378389755,
+          "wins": 10,
+          "macro_gain": 0.015585519730355313,
+          "class_f1_gains": {
+            "H": 0.017746793616627354,
+            "A": 0.012053288939943462,
+            "D": 0.01695647663449502
+          },
+          "per_game_gain": {
+            "10510": 0.030530367135253034,
+            "3821": 0.04135206321334495,
+            "10513": 0.016216021861067298,
+            "10516": 0.06854553492484539,
+            "3859": 0.06652397147847111,
+            "3827": 0.026612995974698017,
+            "10503": 0.020722218922610947,
+            "3858": 0.05170191014258807,
+            "3838": 0.05285747015248332,
+            "3842": 0.025210084033613356
+          }
+        },
+        "sdk_shadow/natural_detected": {
+          "baseline": 0.6140438627826817,
+          "candidate": 0.6552306178159059,
+          "gain": 0.0411867550332242,
+          "wins": 10,
+          "macro_gain": 0.01771990079801833,
+          "class_f1_gains": {
+            "H": 0.018143042928980634,
+            "A": 0.01457533692193368,
+            "D": 0.020441322543140673
+          },
+          "per_game_gain": {
+            "10510": 0.01776580538757544,
+            "3821": 0.04046446011937055,
+            "10513": 0.008641798182687843,
+            "10516": 0.073959632099167,
+            "3859": 0.06830679405520179,
+            "3827": 0.04056581155598182,
+            "10503": 0.04243664020217919,
+            "3858": 0.04843910806174945,
+            "3838": 0.04287256290899277,
+            "3842": 0.028414937759336123
+          }
+        },
+        "sdk_shadow/label_blind_seed7": {
+          "baseline": 0.6024577730794344,
+          "candidate": 0.642485036863332,
+          "gain": 0.04002726378389755,
+          "wins": 10,
+          "macro_gain": 0.015585519730355313,
+          "class_f1_gains": {
+            "H": 0.017746793616627354,
+            "A": 0.012053288939943462,
+            "D": 0.01695647663449502
+          },
+          "per_game_gain": {
+            "10510": 0.030530367135253034,
+            "3821": 0.04135206321334495,
+            "10513": 0.016216021861067298,
+            "10516": 0.06854553492484539,
+            "3859": 0.06652397147847111,
+            "3827": 0.026612995974698017,
+            "10503": 0.020722218922610947,
+            "3858": 0.05170191014258807,
+            "3838": 0.05285747015248332,
+            "3842": 0.025210084033613356
+          }
+        }
+      },
+      "final_reserve_opened": false
+    }
+  }
+}

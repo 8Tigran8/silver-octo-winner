@@ -1,0 +1,375 @@
+{
+  "candidate": "boundary102",
+  "spec": {
+    "name": "boundary102",
+    "dilations": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "context_steps": 256,
+    "boundary_loss_weight": 0.15,
+    "boundary_positive_weight": 8
+  },
+  "train": [
+    "original/idsse_J03WMX",
+    "original/idsse_J03WN1",
+    "original/idsse_J03WOH",
+    "original/idsse_J03WOY",
+    "original/idsse_J03WPY",
+    "original/idsse_J03WQQ",
+    "original/idsse_J03WR9",
+    "original/metrica_1",
+    "original/metrica_2",
+    "skillcorner/1874553",
+    "skillcorner/1886347",
+    "skillcorner/1899585",
+    "skillcorner/1925299",
+    "skillcorner/1927964",
+    "skillcorner/1953632",
+    "skillcorner/1959846",
+    "skillcorner/1986691",
+    "skillcorner/1996435",
+    "skillcorner/1996436",
+    "skillcorner/2006229",
+    "skillcorner/2006363",
+    "skillcorner/2007448",
+    "skillcorner/2007721",
+    "skillcorner/2010085",
+    "skillcorner/2011166",
+    "skillcorner/2013725",
+    "skillcorner/2015213",
+    "skillcorner/2016236",
+    "skillcorner/2017461",
+    "pff/3816",
+    "pff/3854",
+    "pff/3850",
+    "pff/3836",
+    "pff/3831",
+    "pff/10506",
+    "pff/3846",
+    "pff/10514",
+    "pff/3819",
+    "pff/3853",
+    "pff/3855",
+    "pff/3832",
+    "pff/3833",
+    "pff/3823",
+    "pff/3834",
+    "pff/3822",
+    "pff/10504",
+    "pff/3835",
+    "pff/3847",
+    "pff/3840",
+    "pff/3824",
+    "pff/3837",
+    "pff/3851",
+    "pff/3817",
+    "pff/3815",
+    "pff/10517",
+    "pff/3839",
+    "pff/10515",
+    "pff/3813",
+    "pff/3828",
+    "pff/3848",
+    "pff/3852",
+    "pff/10508",
+    "pff/3818",
+    "pff/3820",
+    "pff/3849"
+  ],
+  "excluded": [],
+  "plan_sha256": "2f9facaf149ec17d84a8dd6064a4e9dc57945c784477973c0009c43461df70aa",
+  "mixed_plan_sha256": "e497e96e399b4ef433b1525389507d5e8c38f749dcd0006959defb32ae61da3b",
+  "device": "mps",
+  "seed": 20261113,
+  "steps": 6000,
+  "seconds": 245.46012408391107,
+  "model_sha256": "a727ef64efbfba338f5aab3f41782a906d2739ae90e96c308be82adc495fd944",
+  "training_loss_last100": 0.3097350715100765,
+  "source_commit": "1e18585533481c385bb8558eb61633dbafceea0d",
+  "source_sha256": {
+    "tools/pff_mixed_train.py": "013c85519dae078911e57cea0b4752caf587c027b4b3ae4a0786fd3675326931",
+    "mtah/mixed_temporal.py": "3c6ee24dfc076f0ce4e279206826e20186db80bc465dc18be56075d8b4447216",
+    "mtah/temporal.py": "800925d1d60c7ca622e62ed206655f7c8bfedb756caf0ce8feff1988c78aa268",
+    "mtah/features2.py": "753d109c3453cb3f2bb23f14fb35508760ceb6c59cad1c8758ca76983be6c88b",
+    "mtah/possession_context.py": "973319eb341eebb0576a0c82cfe1d18addbc055ae8c2e6305bff50768fce2e30",
+    "mtah/degrade.py": "c451d252a49720e08bd45a09ba62cf178d9d5f3f66d7537ab453b97b85e5e14a",
+    "tools/pff_reader.py": "b7b50efdfa11930c544bcea88ff7410a2fcdbce5d175622ca4520efcdca6dfa4"
+  },
+  "training_sequences": {
+    "original/idsse_J03WMX": [
+      "dbb63418e3ee3ef379214678fae018418b0cf81901701eb01d6acbf35eb95fdc",
+      "b984ccb77c929cb7c1ebb92cd697d5b2708343530b11fdef1202cec5e5c6737d",
+      "44450cb13a1ea377a14b184271b4edb1076b25b827164b21b47b7d361d413d2c"
+    ],
+    "original/idsse_J03WN1": [
+      "d356b84f5759db73f50b3d0fa75fa3dfca5ff2da21fcb5832f1a1de1c4cd27bf",
+      "f84bb60c832795175b0923ff8d64b92343f7fb7b2ea03bad3ed79af1397de206",
+      "67d60e62a92869977987237d47a4012e56118c460be0338e1218dd848a656e9b"
+    ],
+    "original/idsse_J03WOH": [
+      "271ed668ceec3cdc39698a52b48756e78f96395675f5cfc5ae9ed9d7964f0000",
+      "90e26588d62a5c7ccd846896d8b240042f2a19d05c0ed8e8aeabcccbdb201d33",
+      "5a2f456bca39df1054b68c05ef4260c5c7c369a5e304749192b8f45eb2d62a84"
+    ],
+    "original/idsse_J03WOY": [
+      "a28b23ad24a55b818d298dc34f5f90691369a292e6e311c36b9276fb01cc0562",
+      "bdca59c0d1c44848395062bb04c2e4cbd5478cadf9cef4a4856b142c060a41ff",
+      "62597fb38479c94e294e942996866876ab6a0e872a3ecb25a132d6878cd8562c"
+    ],
+    "original/idsse_J03WPY": [
+      "0c1d71b5c2e3f007c57b07f3991f8d0425aa769b8739b91ee1bf84e9937def62",
+      "8edfa3f7b75c4b022628e906fa21746100773a0f29c5d71dc83df64cc0c3a128",
+      "84f86f75d8c7e3058508813da1f6b8abf8e9fcb1e0cdadb417fe80e1e861f294"
+    ],
+    "original/idsse_J03WQQ": [
+      "d5bbcd48305b0dfc4fe51d6693964f0e92851de61986db926856047d57d6ee05",
+      "0de6e2e705e6f8e54824ca68163aab3d186a40cfe1b182e0da6b0f241cae4959",
+      "966547ccb265bb05b10ab9e820460e7cce6fff4e8fc1f5b22871862189be807f"
+    ],
+    "original/idsse_J03WR9": [
+      "9dbd541f4a00faee20dadf61813e5c2bc4bc3b52eef1a4bafd35341b71d0c163",
+      "6feb3dd87f4e214aaab0ab85aef6cbce41ab4e599f0caabff2c5735016c42324",
+      "53cecc30d5f91608bfdf6ddb23f1cb22693c747d0588f97d3e46cc09573b09bb"
+    ],
+    "original/metrica_1": [
+      "b4a8140558fca397299d20aae26eefaf4e9c123312ff1d4e32ad61be127133b2",
+      "9cef1f3274555d7d3c2649df6bf60325323fad6f08d47f16ed10bb1c7f023baf",
+      "ea515c4066c582e7477607bc69e84de71fb65ee88708b509b0a83d6825ea56dc"
+    ],
+    "original/metrica_2": [
+      "c88d939dab4e5ba4afdbd4faed6002f234e14916004a7ebab9b4ccbd4e7daa06",
+      "75b822ba833ee2d9fac181dc3ff33e3156595d67f34f779de22fd70d915cf4d3",
+      "492c41547c771c9609a006405d04c4332e90cf526505c0633f2e3a9853c2014c"
+    ],
+    "skillcorner/1874553": [
+      "b8412c80dd9916ceacf56ade77aa748d59a89b14f62cbc8635ab211d30e0d9e3",
+      "91d02702527b76939312668550d4b179e9b2c02067498cbfb1bb6cd39fdb8830"
+    ],
+    "skillcorner/1886347": [
+      "18a064e1ef8e3e1633e222e376dc8e9ab93075774717fc9814cbe7bcd10f1ed4",
+      "ac027d040a35a244610259f5eb2259803d39a0d74084c9b707dc4310b562e443"
+    ],
+    "skillcorner/1899585": [
+      "f7b845369cb872f20d28056bb2bab81883a445f34786e3cd72006a6323a29916",
+      "fbfb72a025143f3dc16547be930dafa0c9c76c9c86cac1747fb6f208c83115f9"
+    ],
+    "skillcorner/1925299": [
+      "14e596158d3ca7f11be6370a77b5ea160e99cb4bc28e785f500fda2c4f684ccb",
+      "4908eb76a8d789e3acdeeccf6a3a46df4f69c99948dc45164697a060fc276ae3"
+    ],
+    "skillcorner/1927964": [
+      "4a086d22e3c664d5a68193d21d21f70e87d2ba72d2ff465ccabd108335a0ff2c",
+      "2e524275f32d977f939c2a28afa047b84f2d44bad258c80bed1562ee2b30e10d"
+    ],
+    "skillcorner/1953632": [
+      "dc57957d69d01429951584dd534c6e8a9231b168a55e54b34adc4772f13a7dbc",
+      "1775540f0821bca6f8c9d6915586ae90e7eca15c1f0bc52716c6629434b57930"
+    ],
+    "skillcorner/1959846": [
+      "aa468e781be6252de8f98b69d449bc1421d9ce79668deabf3a4db803f864d5a7",
+      "f1baf36be33c06a911b5b76cc9de7418bf26d41f4d4c16d18d27d4c45a42247a"
+    ],
+    "skillcorner/1986691": [
+      "ff6b20482a704c6211a146a96743f6c50bf444f188cf75f5d0f7df86e5c9e517",
+      "0def9d03a4d218a7e4fbf6ee9b72366368c3105000a3655c11f08c6417677d15"
+    ],
+    "skillcorner/1996435": [
+      "09ad3174dfaf416f3b91ecd8244bc8376d0a32df9b5b1b35558b59f32b4114bc",
+      "16a979d78c5509ca69fec282ee2cf525e248d52f3fb387d8b420d3c385a1d346"
+    ],
+    "skillcorner/1996436": [
+      "6214f3cfcc9fc813237738ffdf8c30d96695205f736083cdd9abea3e7e784d27",
+      "f2e156b79e0e2f6d904351e6d8c62a96339d2444fafb9e79fec9b1b07893f401"
+    ],
+    "skillcorner/2006229": [
+      "65420f93f92b490bf40a1da429eb1350439c9776c8ec93b727f518fe84c82fb1",
+      "684fef401536f3f406969e8e4278faf5513fadc4b926af76a090246dcfb4b502"
+    ],
+    "skillcorner/2006363": [
+      "a8e3aa939d98e68d2a7b2aa8b4c69b531c3ae788761473af158bd5c86a72a718",
+      "1992d2f6697d5c6f3d8eb9a612c6481e91bb6464bd724d5b6aac4bcba320c6d2"
+    ],
+    "skillcorner/2007448": [
+      "f1c2f0c25e10f577d3eeeab079b4f83e7ab1e10829bea969507e777411e07602",
+      "c24c396c6dbc4a39fd968b882a68f3b0c0a5981c8b6e621d40cd2d257f2f0519"
+    ],
+    "skillcorner/2007721": [
+      "8840054a8b95246f698784f2cc6ed6a0e755413c27f53339ec1aacd2e95420ea",
+      "69f5f6886de7b58ff47214c8d4147dbf3d94c5417e36cff54119cf1f9843f655"
+    ],
+    "skillcorner/2010085": [
+      "6dc5aba0f6d2ea50cdfc59ee952e488ae619d150ce078dbbcbe37cfab1efbfa0",
+      "315a8ec8522e4c60b28e1d2841d6b85519e38c17fc3027f921e54b54a87eaeb0"
+    ],
+    "skillcorner/2011166": [
+      "45b4283ba207907a72a1646c6b275231ad709f32810ef5eae16d0167ff60a0e9",
+      "63619826816f68de19d5ef140e6f01d03b18a74c890467cc3e47c7238d0f4729"
+    ],
+    "skillcorner/2013725": [
+      "3c69d72ee896ffc7f61f538afaacf2f2653b74049be3298b8ad3126b60be12cf",
+      "2d6556255057a335f6bac831a87a932d8b0ff754b8422956d94e5fbddb3e1f16"
+    ],
+    "skillcorner/2015213": [
+      "3c509b1f759a9d8ba81d5a7e6085e5fa4819b2710e1e2314d1de04290313b70b",
+      "a6c59ab1f0c0231fdd514ebe02b9ca5ca4036c17f3cfa9a5183d92d9b668f806"
+    ],
+    "skillcorner/2016236": [
+      "1f6e044e379800b9dac1ad46dd434528d8088e9210b67708b02036a8e0b14b59",
+      "f644e09a44f93d777c3059f76b4f1551d2651fd439d26cc72691d11cdb53f8f5"
+    ],
+    "skillcorner/2017461": [
+      "fca7529990b0fd5e17df258ba49dd3a909b51785ff5072ea3955383f3895aad3",
+      "888a383946f44a7354a5e45a504d629bfb091611e26c96989b23b614e2a267e2"
+    ],
+    "pff/3816": [
+      "11b9f3bd2894c1d2a34ed985cf74815edac5194170e48754d23950de96954fff",
+      "4fdd9fc4c8e83ea5f9199e7fa5a7d3a8597eec3faf948069e647c1e7f154d55a"
+    ],
+    "pff/3854": [
+      "1ab3cafdd743947f7ec1501a38e11e9b7108d7e9e510b858169827aebca4fc34",
+      "60d7ede7f63e4ff8e5f5a5f0b3daf6078ffef2cd52307e15c76b820d1cfbd0aa"
+    ],
+    "pff/3850": [
+      "d7b5c3bd87b31c2cf2260e7590fb72a23a6b2e0ae3abc5c5dec45ca1aedc756c",
+      "7bb87c51b306f838c00f82a7353438155fba3631f94774a38daf8a3164a2b199"
+    ],
+    "pff/3836": [
+      "e18b02f738329c0732a8e9f2b2f8f8922f2ea79bfa2a81da85a8513021f83dc7",
+      "d865a54f10a9534e43886fde156928c012e4bd80cbbfd19fa07bba9974113516"
+    ],
+    "pff/3831": [
+      "8dd7be064b50367dcaeb6429a7f2c177184b16c1cdfd308ceaa0236c112a6676",
+      "f3f1649af6c2ca1776e0bcb79833aedbf71e9a777382d6fab1de97c46ae89a34"
+    ],
+    "pff/10506": [
+      "1d24f8694a8ac805853a893cc37dfa88f6d86af06989515ab9a47ca308055d32",
+      "ccc902892a252f2357ca7a74c1e7b130a00d1dcf356aa4113c9692aa5c4eaed5"
+    ],
+    "pff/3846": [
+      "35bc536bd7abf30b01610faac2bdb1468c1bfb91f2eb2f6319aeb9806a4ea99f",
+      "28cfa96000f5da2c9f44e1fe0bd139136d786ec3c9f3895f7a658858064b791e"
+    ],
+    "pff/10514": [
+      "7d3b41f8dde75cbb3dc5c83d5467ba9231200d6237baf96c5545cb3f66e523b8",
+      "490249cfd13de03370a2adeaee65b59c66345bb1d2dc22dd192c2a910d2fb5ae"
+    ],
+    "pff/3819": [
+      "601301b05f7372e45c12f675edeefecdbd618f88adbf028d07b9e5b2dd4b9e6f",
+      "1a3b4d6c1375d9b657c8893a21fb7302af997b40e668125592a12d266c5421fe"
+    ],
+    "pff/3853": [
+      "9d992d76f6d011aaf8f45510c3e5b1bbbf70cf12218687329839f956695cdd8a",
+      "f7e7cac7d5b14581d5e3a3b5423af0c653662758ea8817acc06bf3fa59e31534"
+    ],
+    "pff/3855": [
+      "08a75067c3d01e76a0b41497a5a4669d4a77b28f07872fef367567f20a11c761",
+      "7edb12e2ea730dcbbebf7489c004c48015023cf545d231f6557816d54b589e7c"
+    ],
+    "pff/3832": [
+      "41f628d63905fdf3fe19c9ea891f2120df4c3644e9515e1cd3be129300e00885",
+      "29454509941283571380aa179acedb1094281b6bfe80d80c76354f62c4759efc"
+    ],
+    "pff/3833": [
+      "19b2b691aca12078a0d2b7163212c5ddd3972d4143aeaefd3e01b893887f7504",
+      "4ceb1d21d022eef57b782e507f3e394767553fd4f5334e1d23418384a62a5daf"
+    ],
+    "pff/3823": [
+      "c02adfbbb00d94f5281770b17f0d014b49f5b535e725260dac1b5f7e840a6bf6",
+      "cc26aa8fa49e9a92341e207f0d6714812febd3b276cc4386bb5159acd751c440"
+    ],
+    "pff/3834": [
+      "c64b513dfbab51c8415062ee582da7fce28618bb1ecb0a07573928ee8dc23ae6",
+      "08d38d260309dbb5651834445d75c5f6766ef1dabd7bc9e3fa3f222943d0eb15"
+    ],
+    "pff/3822": [
+      "eabcfae56b3a7daa5837d59ff5e9535b6d374d8320d9150a54a2f56d37c88793",
+      "e0c7554da135e3025ef5e162ca0dabc9ab1af7c924e8fe35c84460fb37dea482"
+    ],
+    "pff/10504": [
+      "15b3ab2e838125d304d812ec29ee1f6290bf982a520e64bc142141a03a5b89c4",
+      "b9906b87ff01f0158440eb19c24ba0c286d9ad73e2a0886faa678f15fd8d2cfa"
+    ],
+    "pff/3835": [
+      "c235dd07b1077a14f76a3283d2f171959069033fd6ec7425e422df09a02fe73e",
+      "3fee158413596d36caf889cd1f1fb94e8bcddb9a3b15bacfedeface57cb3e9c2"
+    ],
+    "pff/3847": [
+      "675616f17b5297cb8598016541acb1ace77942f0fa2fc31e2a4c3253729325ac",
+      "582c71edbe1fe4a8556d7c6f9bcd0599f28f3f94c40dc34f1ffc3bb937b713f9"
+    ],
+    "pff/3840": [
+      "db1b2ea6baaec78e2146daea5a0ca323f2fa9e18e2f7cbebf37c6cd603186669",
+      "14d0ee67b4ec89824bd42bada20388dc2905187aa0e167aa52efcff4451b70fb"
+    ],
+    "pff/3824": [
+      "bb204a65cc83dd32986828fbcc634fb5edc7317dc7ddfc496c821b76f9665a33",
+      "7cc430e1a65ae92298a29b8a832f7a4d89afdb3ba30b61c2291d0b25e0f21712"
+    ],
+    "pff/3837": [
+      "c44be855bc62352c06b53cd3b53dbed74a0e8b1102bbb1404ba95c3b82553964",
+      "0bbae74b63090511e55076017c5f9c9449fcc7afd07a64f13f0e974d0eb555c0"
+    ],
+    "pff/3851": [
+      "fd342e59c7d7a11c62d05c3d3be5922c64b5c80426279e2f8ba050ae3e4c7490",
+      "e229d0723d72f964ce907198975052d2a226036cf771a53bc65bf866367cc95f"
+    ],
+    "pff/3817": [
+      "b933a674d4778ee74d232aa9e3f864983cb2b445cac73d5ab9279b45730d2853",
+      "07d88260160b518b66b5659d36bf82f87aa95448680fc5185e9a2c60b5ae8b09"
+    ],
+    "pff/3815": [
+      "1f2a7616d19142c1f701bc1f20bf758bc00205c4555343e92af7a8061fe6d912",
+      "756452f919136d0301b70dd8ff5c038c5bd8b3e7e8931ec658de519d671b4313"
+    ],
+    "pff/10517": [
+      "0af64e044f7720a3f32b61662e09b6a97a38212daa6345c25fa5eda7b8950d0c",
+      "7ce6e2731ca1a14d5303242237933c0a983127459eab08cd35b02b31eaf05a0f"
+    ],
+    "pff/3839": [
+      "05965e5035939ca82f4c4ee9f06dd4eebb32c70653cce816657f2dadc4b6f306",
+      "65d14073c0670eb31afed5ea1d688aca5ad45c394cacf8c7b9c6e7763a50f039"
+    ],
+    "pff/10515": [
+      "4000ed269985c7abe96d31fc30b5b51cc6fcc6dcfafc033685d85c8237386779",
+      "a497354c417af77671e2e01d39dfe023c8dad9f03dabfc5949d2dc79fda257c4"
+    ],
+    "pff/3813": [
+      "ac94da888664407260800110f3554abf56942def0f2b4ba1fa7ee6f0d28e6022",
+      "5c907c513d8afad003dba4a27df3a7aaab3d3cf5d04b070cd3f0fabdb1c2e9c8"
+    ],
+    "pff/3828": [
+      "7ae50a29a29c3ad6c9f96541179f3b68c7678d6b33d29932f266544e5a92315c",
+      "2d2a78b262e1fb872b3bcda71e070764c9455a1214e4a6f0abcfe7162c7e9604"
+    ],
+    "pff/3848": [
+      "61b4c5651b0e5614b4a7d531334c0dc860c816cf642e29a28a498aa20ed037fe",
+      "d3820aeaca56b98cfe78a68e323ae36aa7b6adf032947d4da9728804a29fd76b"
+    ],
+    "pff/3852": [
+      "2458c072695f32772be0ec389f9d2c37b46c7251d311db3f4420820f223dcf27",
+      "023ed044ec79d6184190f907e93e7f8d4c30453aaa13753731387c9478ba12b6"
+    ],
+    "pff/10508": [
+      "57dcf28367615d9fa7351d73a9c14c413801a9276c1c356bee6f259cb47425e9",
+      "c7f7652d38255f0bd2eb45e2600c1b64eeff8795a334e5f6059f7ef9dc9d0b3d"
+    ],
+    "pff/3818": [
+      "f7a8ce4685beae4740bf09222393c27a3b986b1c5d2e0924565a1241e69eac90",
+      "0442e0569abed5dabb31d6bd8622618c2de0ff8d18fca2a24e5726fd623420f7"
+    ],
+    "pff/3820": [
+      "3a2db0c82cccc373729457abfa46a3a757e9ce745fb114f25cd535b404a38b1f",
+      "38642d0d86c8c01d7c9d7b983872a9c741f7c88229b15475dc157c772bfa994d"
+    ],
+    "pff/3849": [
+      "dc773f9390975b462aefaa0f1bdf16bcaa205e514a9ac6a543609ffccd84a583",
+      "73a8b928701645c44983b38b982c57f11f46b9f7f53148514a1cd4da694594d8"
+    ]
+  }
+}
