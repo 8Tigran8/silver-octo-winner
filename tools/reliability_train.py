@@ -11,13 +11,13 @@ OUT=ROOT/'reports/reliability'
 
 def fit(fold,seed,device):
     p=json.loads(PLAN.read_text());cfg=trial.plan()['architecture']
-    if seed not in p['training']['seeds'] or fold not in range(5):raise ValueError('Unregistered fit')
+    if seed not in p['training']['seeds'] or fold not in list(range(5))+['full']:raise ValueError('Unregistered fit')
     key=f'seed{seed}_fold{fold}';dest=OUT/'models'/key;dest.mkdir(parents=True,exist_ok=True)
     if (dest/'meta.json').exists():
         meta=json.loads((dest/'meta.json').read_text())
         if meta['research_plan_sha256']!=trial.sha(PLAN) or meta['model_sha256']!=trial.sha(dest/'model.pt'):raise ValueError('Stale or changed fit')
         print(key,'cached verified',flush=True);return
-    train,test=trial.game_split(f'fold{fold}');seq=trial.sequences(train);mean,scale=trial.normalization(seq)
+    train,test=trial.game_split('full' if fold=='full' else f'fold{fold}');seq=trial.sequences(train);mean,scale=trial.normalization(seq)
     if set(train)&set(test):raise ValueError('Fold leak')
     torch.manual_seed(seed);rng=np.random.default_rng(seed);torch.set_num_threads(2);torch.use_deterministic_algorithms(True)
     model=trial.temporal.Temporal().to(device)
@@ -45,6 +45,11 @@ def fit(fold,seed,device):
 
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--device',default='mps');args=parser.parse_args()
-    for seed in json.loads(PLAN.read_text())['training']['seeds']:
-        for fold in range(5):fit(fold,seed,args.device)
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--device',default='mps');parser.add_argument('--full',action='store_true');args=parser.parse_args()
+    seeds=json.loads(PLAN.read_text())['training']['seeds']
+    if args.full:
+        selection=json.loads((ROOT/'reports/reliability/selection.json').read_text())
+        if selection.get('family')!='long':raise ValueError('Freeze this candidate family before full fitting')
+        seeds=selection['seeds']
+    for seed in seeds:
+        for fold in (['full'] if args.full else range(5)):fit(fold,seed,args.device)
