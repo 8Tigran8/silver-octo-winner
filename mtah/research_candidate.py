@@ -9,8 +9,15 @@ from . import v4,features2,possession_context as context,temporal,reliability
 
 def load_bundle(path):
     path=Path(path);bundle=json.loads(path.read_text());states=[]
+    from .config import ROOT
+    allowed=json.loads((Path(ROOT)/'assets/v4/manifest.json').read_text())['model_training_games']
+    if set(bundle['training_games'])!=set(allowed) or not bundle['full_fit_only_public_external_games']:raise ValueError('Unapproved training source in research bundle')
     for item in bundle['models']:
         file=path.parent/item['path']
+        metadata=path.parent/item['metadata_path']
+        if hashlib.sha256(metadata.read_bytes()).hexdigest()!=item['metadata_sha256']:raise ValueError('Research metadata changed')
+        info=json.loads(metadata.read_text())
+        if set(info['train'])!=set(allowed) or info['excluded']:raise ValueError('Full fit does not match public training registry')
         if hashlib.sha256(file.read_bytes()).hexdigest()!=item['sha256']:raise ValueError('Research model hash changed')
         state=torch.load(file,map_location='cpu',weights_only=True);model=temporal.Temporal();model.load_state_dict(state['state_dict']);model.eval()
         states.append((model,state['mean'].numpy(),state['scale'].numpy()))
