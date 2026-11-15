@@ -1,0 +1,106 @@
+{
+  "registered_utc": "2026-11-15T15:47:59.917632+00:00",
+  "status": "Frozen before new candidate scores or fitting; baseline research scores already known",
+  "baseline": "v4 / fusion50",
+  "baseline_asset_manifest_sha256": "25729febd8697681eebaaad12dbea2d0b0d65c90d93d3ed876bfaec5f3253cd8",
+  "fold_plan": "docs/experiments/temporal/plan.json",
+  "fold_plan_sha256": "2f9facaf149ec17d84a8dd6064a4e9dc57945c784477973c0009c43461df70aa",
+  "evaluation_policy_sha256": "da916f2e709012365f90bd0e957b35432ebf2db8c69740469a1abdd920be4940",
+  "isolation": "Exact original five whole-game folds; normalization and neural training exclude full scored fold; v3 base uses original excluded-game predictions; all augmentations stay with game. Adaptive rules are reference-blind and not fitted on in-sample component probabilities. No stacked learned gate is fitted from globally OOF predictions, because such training would indirectly expose outer-fold labels.",
+  "rules": [
+    {
+      "name": "uniform50",
+      "kind": "fixed",
+      "dead": 0.5,
+      "home": 0.5
+    },
+    {
+      "name": "dead65",
+      "kind": "fixed",
+      "dead": 0.65,
+      "home": 0.5
+    },
+    {
+      "name": "home65",
+      "kind": "fixed",
+      "dead": 0.5,
+      "home": 0.65
+    },
+    {
+      "name": "uniform65",
+      "kind": "fixed",
+      "dead": 0.65,
+      "home": 0.65
+    },
+    {
+      "name": "gap5",
+      "kind": "gap",
+      "scale_seconds": 5.0,
+      "low": 0.35,
+      "high": 0.8
+    },
+    {
+      "name": "gap10",
+      "kind": "gap",
+      "scale_seconds": 10.0,
+      "low": 0.35,
+      "high": 0.8
+    },
+    {
+      "name": "visibility6",
+      "kind": "visibility",
+      "window_column": "seen_w151",
+      "low": 0.35,
+      "high": 0.8
+    },
+    {
+      "name": "confidence",
+      "kind": "confidence",
+      "low": 0.25,
+      "high": 0.8
+    }
+  ],
+  "stages": [
+    {
+      "name": "adaptive_rules",
+      "neural": "existing original1500-update single-seed excluded-fold TCN",
+      "candidates": [
+        "uniform50",
+        "dead65",
+        "home65",
+        "uniform65",
+        "gap5",
+        "gap10",
+        "visibility6",
+        "confidence"
+      ]
+    },
+    {
+      "name": "long_tcn",
+      "neural": "same48-channel25second model with4500fixedupdates; seeds20261113/20261114/20261115",
+      "candidates": [
+        "each_seed_uniform50",
+        "three_seed_probability_mean_uniform50",
+        "three_seed_probability_mean_gap5",
+        "three_seed_probability_mean_visibility6",
+        "three_seed_probability_mean_confidence"
+      ]
+    }
+  ],
+  "training": {
+    "steps": 4500,
+    "seeds": [
+      20261113,
+      20261114,
+      20261115
+    ],
+    "architecture": "unchanged mtah.temporal.Temporal",
+    "loss_sampling_optimizer": "unchanged temporal plan; no early stopping or frame labels from organizer",
+    "normalization": "recomputed from training games only",
+    "fit_keys": "fivefolds for each seed; provider-held-out and full fit only after a development-qualified candidate is frozen"
+  },
+  "selection": "Evaluate every registered candidate with unchanged evaluation-1.0. Select highest composite only among candidates passing all automatic dev guards. Publish every failure and all seeds. No tiny-gain promotion. Passing dev is eligible for confirmation only.",
+  "external_policy": "PFF reserve unopened; old40games are reused research. No new external scoring until one candidate frozen; no release promotion without independent confirmation.",
+  "user_hold": "No form submission, outgoing messages, repository publication/push or other external sending in this cycle. All new work local. Existing v4 package preserved.",
+  "metrics": "Unmodified official metrics, geometry-derived period resets, all67fixed scenario cells; exact reproduction of v4 control required."
+}
