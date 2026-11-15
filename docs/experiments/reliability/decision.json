@@ -1,5 +1,5 @@
 {
-  "status": "NUMERIC_DEVELOPMENT_GATES_PASS_MANUAL_LINEAGE_AND_CONFIRMATION_PENDING",
+  "status": "NOT_ADOPTED: known Metrica3 transfer regressions; further local followup registered",
   "best_development_candidate": "long/long_seed20261115_uniform50",
   "best_development": {
     "status": "ELIGIBLE_FOR_CONFIRMATION",
@@ -34,5 +34,59 @@
     "spell": 268
   },
   "research_limit": "All29games are reused development; no fresh confirmation opened. Numeric checker validates declared neural exclusions only.",
-  "lineage_limit": "New neural fits exclude the entire scored fold. Inherited unchanged v3 probability paths retain scored-game exclusions as in frozen v4, not full neural-fold exclusions. This must be audited/resolved before claiming compliance with stricter all-stage fold-isolation language or promotion."
+  "lineage_limit": "New neural fits exclude the entire scored fold. Inherited unchanged v3 probability paths retain scored-game exclusions as in frozen v4, not full neural-fold exclusions. This must be audited/resolved before claiming compliance with stricter all-stage fold-isolation language or promotion.",
+  "reused_external": [
+    {
+      "cohort": "wcsf",
+      "scenario": "label_blind_seed7",
+      "games": 1,
+      "v4": 0.5702247191011237,
+      "candidate": 0.5829370629370629,
+      "gain": 0.012712343835939222,
+      "wins": 1
+    },
+    {
+      "cohort": "wcsf",
+      "scenario": "natural_detected",
+      "games": 1,
+      "v4": 0.6857849196538937,
+      "candidate": 0.7134734239802226,
+      "gain": 0.027688504326328967,
+      "wins": 1
+    },
+    {
+      "cohort": "metrica3",
+      "scenario": "label_blind_seed7",
+      "games": 1,
+      "v4": 0.4613924050632912,
+      "candidate": 0.4196825396825397,
+      "gain": -0.0417098653807515,
+      "wins": 0
+    },
+    {
+      "cohort": "metrica3",
+      "scenario": "natural_detected",
+      "games": 1,
+      "v4": 0.5526627218934911,
+      "candidate": 0.528862973760933,
+      "gain": -0.02379974813255803,
+      "wins": 0
+    },
+    {
+      "cohort": "european",
+      "scenario": "natural_detected",
+      "games": 9,
+      "v4": 0.8409807166071098,
+      "candidate": 0.8404705454044945,
+      "gain": -0.0005101712026153788,
+      "wins": 3
+    }
+  ],
+  "reproduction": "PASS: clean frozen-weight CPU generation and official format; not final quality confirmation",
+  "research_candidate_csv_sha256": "4cd6fec5649de20af1c6682d712390f13b2cc6efeb97d3c73d0fb4f1644808a2",
+  "full_fit_games": 29,
+  "full_fit_updates": 4500,
+  "independent_confirmation": "NOT ASSESSED",
+  "production_release": "v4 unchanged",
+  "candidate_adopted": false
 }

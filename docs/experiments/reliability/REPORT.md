@@ -1,6 +1,6 @@
 # Local reliability and spell-aware training study
 
-**Release: verified v4, unchanged.** New work remains local under the user hold. No organizer reference or tracking input was used.
+**Release: verified v4, unchanged. The selected longer model was not adopted: reused Metrica3 transfer checks regressed.** New work remains local under the user hold. No organizer reference or tracking input was used.
 
 ## Registered experiments
 
@@ -58,3 +58,21 @@ No public/private competition GT was scored or used to fit/choose these variants
 ```
 
 The earlier pinned public-data preparation and original temporal outputs are prerequisites. Completed score files refuse overwrite; model metadata verifies folds and hashes. Research files remain under ignored reports/. See original source manifests and temporal reproduction instructions.
+
+## Frozen full-fit and reused-source outcome
+
+After choosing one candidate, fit seed20261115 on all29public games for4500updates. No competition input was used for fitting. The checkpoint is in assets/research-v5 with hash-verified provenance; this is a research artifact, not the default release.
+
+The paired game win count averages the two primary scenarios for each game:29/29. Across all67scenario cells,65improve and2decline; the worst spellF1 change is -0.00613 on DFL J03WOH matched.
+
+| Reused source | Scenario | V4 | Candidate | Gain |
+|---|---|---:|---:|---:|
+| wcsf (1) | label_blind_seed7 | 0.5702 | 0.5829 | +0.0127 |
+| wcsf (1) | natural_detected | 0.6858 | 0.7135 | +0.0277 |
+| metrica3 (1) | label_blind_seed7 | 0.4614 | 0.4197 | -0.0417 |
+| metrica3 (1) | natural_detected | 0.5527 | 0.5289 | -0.0238 |
+| european (9) | natural_detected | 0.8410 | 0.8405 | -0.0005 |
+
+All eleven external games had already been used in research. These are regression checks, not new independent confirmation. Metrica3 natural and blind regressions exceed0.01; WCSF improves, while European conditional-only ownership changes slightly. Thus the CV improvement is not universal. Original proxy-label, WCSF ambiguity and Metrica3 period limitations remain. A separately registered robustness followup tests old/new temporal blending and reference-blind feature outlier scores; no failure is erased.
+
+Two clean offline source copies regenerated the same candidate CSV and passed the official format validator (26.512s/26.280s), with input hashes unchanged. See reproduction.json. This repeats frozen-weight CPU inference, not training or a target-quality assessment. The verified v4 submission folder was preserved.

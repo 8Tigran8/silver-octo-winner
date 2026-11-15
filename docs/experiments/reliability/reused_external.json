@@ -1,0 +1,306 @@
+{
+  "candidate": "long/long_seed20261115_uniform50",
+  "bundle_sha256": "31a11e252296d4ba5dcdd0ca9df9429a8aaae219a20ea6f828be24f1cd9dcab7",
+  "fresh_independent_test": false,
+  "scope": "Same11previously used external games; European9 conditional-only. WCSF ambiguity/identity caveats unchanged. No competition quality score. No candidate retuning/runner-up selection in this check.",
+  "records": [
+    {
+      "cohort": "wcsf",
+      "match": "wcsf",
+      "scenario": "natural_detected",
+      "candidate": "long/long_seed20261115_uniform50",
+      "primary_metric": "spell_f1_mean",
+      "v4_primary": 0.6857849196538937,
+      "candidate_primary": 0.7134734239802226,
+      "gain": 0.027688504326328967,
+      "spell_f1_mean": 0.7134734239802226,
+      "macro_f1": 0.9277706244329894,
+      "n_gt_spells": 411,
+      "n_pred_spells": 398,
+      "per_class": {
+        "H": {
+          "precision": 0.8911463801230984,
+          "recall": 0.9488854305942178,
+          "f1": 0.9191099976645932,
+          "support": 45623
+        },
+        "A": {
+          "precision": 0.8766103987946992,
+          "recall": 0.9316688997091598,
+          "f1": 0.9033014384386288,
+          "support": 30601
+        },
+        "D": {
+          "precision": 0.9986626492435107,
+          "recall": 0.9258899628030653,
+          "f1": 0.960900437195746,
+          "support": 66941
+        }
+      }
+    },
+    {
+      "cohort": "wcsf",
+      "match": "wcsf",
+      "scenario": "label_blind_seed7",
+      "candidate": "long/long_seed20261115_uniform50",
+      "primary_metric": "spell_f1_mean",
+      "v4_primary": 0.5702247191011237,
+      "candidate_primary": 0.5829370629370629,
+      "gain": 0.012712343835939222,
+      "spell_f1_mean": 0.5829370629370629,
+      "macro_f1": 0.852225764440271,
+      "n_gt_spells": 411,
+      "n_pred_spells": 304,
+      "per_class": {
+        "H": {
+          "precision": 0.9036129484866707,
+          "recall": 0.7905004054972272,
+          "f1": 0.8432805284386509,
+          "support": 45623
+        },
+        "A": {
+          "precision": 0.8448882822041813,
+          "recall": 0.768602333257083,
+          "f1": 0.804941905234518,
+          "support": 30601
+        },
+        "D": {
+          "precision": 0.8574156334946629,
+          "recall": 0.9659550947849599,
+          "f1": 0.9084548596476439,
+          "support": 66941
+        }
+      }
+    },
+    {
+      "cohort": "metrica3",
+      "match": "metrica_3",
+      "scenario": "natural_detected",
+      "candidate": "long/long_seed20261115_uniform50",
+      "primary_metric": "spell_f1_mean",
+      "v4_primary": 0.5526627218934911,
+      "candidate_primary": 0.528862973760933,
+      "gain": -0.02379974813255803,
+      "spell_f1_mean": 0.528862973760933,
+      "macro_f1": 0.7916253351516785,
+      "n_gt_spells": 368,
+      "n_pred_spells": 318,
+      "per_class": {
+        "H": {
+          "precision": 0.8212963899282031,
+          "recall": 0.7692846859134652,
+          "f1": 0.7944401514188179,
+          "support": 52788
+        },
+        "A": {
+          "precision": 0.8579814047272319,
+          "recall": 0.7748462285529297,
+          "f1": 0.8142974090730286,
+          "support": 49424
+        },
+        "D": {
+          "precision": 0.7020650787774075,
+          "recall": 0.843081559057452,
+          "f1": 0.7661384449631891,
+          "support": 40486
+        }
+      }
+    },
+    {
+      "cohort": "metrica3",
+      "match": "metrica_3",
+      "scenario": "label_blind_seed7",
+      "candidate": "long/long_seed20261115_uniform50",
+      "primary_metric": "spell_f1_mean",
+      "v4_primary": 0.4613924050632912,
+      "candidate_primary": 0.4196825396825397,
+      "gain": -0.0417098653807515,
+      "spell_f1_mean": 0.4196825396825397,
+      "macro_f1": 0.6693964472339289,
+      "n_gt_spells": 368,
+      "n_pred_spells": 262,
+      "per_class": {
+        "H": {
+          "precision": 0.8043899113837765,
+          "recall": 0.5588580738046526,
+          "f1": 0.6595128712428603,
+          "support": 52788
+        },
+        "A": {
+          "precision": 0.8551626591230551,
+          "recall": 0.6116461638070573,
+          "f1": 0.7131903649703918,
+          "support": 49424
+        },
+        "D": {
+          "precision": 0.4997665303581283,
+          "recall": 0.8724003359185891,
+          "f1": 0.6354861054885345,
+          "support": 40486
+        }
+      }
+    },
+    {
+      "cohort": "european",
+      "match": "2068",
+      "scenario": "natural_detected",
+      "candidate": "long/long_seed20261115_uniform50",
+      "primary_metric": "all_conditional_team_macroF1",
+      "v4_primary": 0.8334911028122844,
+      "candidate_primary": 0.8310413857293066,
+      "gain": -0.002449717082977809,
+      "reference_live_frames": 88206,
+      "reference_live_missing_ball": 20210,
+      "all_conditional_team_macroF1": 0.8310413857293066,
+      "all_accuracy": 0.7964424188830692,
+      "all_false_dead_on_live": 0.08568578101262952,
+      "missing_conditional_team_macroF1": 0.6011910456263877,
+      "missing_accuracy": 0.5187530925284513,
+      "missing_false_dead_on_live": 0.27367639782285996
+    },
+    {
+      "cohort": "european",
+      "match": "2269",
+      "scenario": "natural_detected",
+      "candidate": "long/long_seed20261115_uniform50",
+      "primary_metric": "all_conditional_team_macroF1",
+      "v4_primary": 0.8207429204879205,
+      "candidate_primary": 0.8198518105010371,
+      "gain": -0.0008911099868834649,
+      "reference_live_frames": 91471,
+      "reference_live_missing_ball": 25019,
+      "all_conditional_team_macroF1": 0.8198518105010371,
+      "all_accuracy": 0.790720556241869,
+      "all_false_dead_on_live": 0.08928512861999978,
+      "missing_conditional_team_macroF1": 0.6486683528709449,
+      "missing_accuracy": 0.5685678884048123,
+      "missing_false_dead_on_live": 0.2830648706982693
+    },
+    {
+      "cohort": "european",
+      "match": "2417",
+      "scenario": "natural_detected",
+      "candidate": "long/long_seed20261115_uniform50",
+      "primary_metric": "all_conditional_team_macroF1",
+      "v4_primary": 0.8223915796575059,
+      "candidate_primary": 0.8252834543943104,
+      "gain": 0.0028918747368045228,
+      "reference_live_frames": 100173,
+      "reference_live_missing_ball": 26817,
+      "all_conditional_team_macroF1": 0.8252834543943104,
+      "all_accuracy": 0.7974603935192117,
+      "all_false_dead_on_live": 0.08571171872660298,
+      "missing_conditional_team_macroF1": 0.6542071983253489,
+      "missing_accuracy": 0.5650147294626543,
+      "missing_false_dead_on_live": 0.2833277398665026
+    },
+    {
+      "cohort": "european",
+      "match": "2440",
+      "scenario": "natural_detected",
+      "candidate": "long/long_seed20261115_uniform50",
+      "primary_metric": "all_conditional_team_macroF1",
+      "v4_primary": 0.8209510084663705,
+      "candidate_primary": 0.8192091924878546,
+      "gain": -0.0017418159785158593,
+      "reference_live_frames": 90910,
+      "reference_live_missing_ball": 15833,
+      "all_conditional_team_macroF1": 0.8192091924878546,
+      "all_accuracy": 0.7827631723682763,
+      "all_false_dead_on_live": 0.09019909800901992,
+      "missing_conditional_team_macroF1": 0.5429410978979613,
+      "missing_accuracy": 0.4330828017431946,
+      "missing_false_dead_on_live": 0.3829975367902482
+    },
+    {
+      "cohort": "european",
+      "match": "2841",
+      "scenario": "natural_detected",
+      "candidate": "long/long_seed20261115_uniform50",
+      "primary_metric": "all_conditional_team_macroF1",
+      "v4_primary": 0.8556139197386998,
+      "candidate_primary": 0.8521901578355406,
+      "gain": -0.0034237619031591837,
+      "reference_live_frames": 97416,
+      "reference_live_missing_ball": 16863,
+      "all_conditional_team_macroF1": 0.8521901578355406,
+      "all_accuracy": 0.8221852673072185,
+      "all_false_dead_on_live": 0.07053256138621992,
+      "missing_conditional_team_macroF1": 0.5270092758299447,
+      "missing_accuracy": 0.438000355808575,
+      "missing_false_dead_on_live": 0.3594259621656882
+    },
+    {
+      "cohort": "european",
+      "match": "3442",
+      "scenario": "natural_detected",
+      "candidate": "long/long_seed20261115_uniform50",
+      "primary_metric": "all_conditional_team_macroF1",
+      "v4_primary": 0.8621390328473834,
+      "candidate_primary": 0.8597700872383102,
+      "gain": -0.002368945609073192,
+      "reference_live_frames": 98851,
+      "reference_live_missing_ball": 16369,
+      "all_conditional_team_macroF1": 0.8597700872383102,
+      "all_accuracy": 0.8373410486489767,
+      "all_false_dead_on_live": 0.057429869197074386,
+      "missing_conditional_team_macroF1": 0.6316174389178613,
+      "missing_accuracy": 0.5566619830166779,
+      "missing_false_dead_on_live": 0.24864072331846784
+    },
+    {
+      "cohort": "european",
+      "match": "3518",
+      "scenario": "natural_detected",
+      "candidate": "long/long_seed20261115_uniform50",
+      "primary_metric": "all_conditional_team_macroF1",
+      "v4_primary": 0.8751330046788464,
+      "candidate_primary": 0.8738357818158937,
+      "gain": -0.0012972228629526406,
+      "reference_live_frames": 95810,
+      "reference_live_missing_ball": 19194,
+      "all_conditional_team_macroF1": 0.8738357818158937,
+      "all_accuracy": 0.8462373447448074,
+      "all_false_dead_on_live": 0.06362592631249347,
+      "missing_conditional_team_macroF1": 0.6748915883738524,
+      "missing_accuracy": 0.5873710534542045,
+      "missing_false_dead_on_live": 0.25763259351880796
+    },
+    {
+      "cohort": "european",
+      "match": "3749",
+      "scenario": "natural_detected",
+      "candidate": "long/long_seed20261115_uniform50",
+      "primary_metric": "all_conditional_team_macroF1",
+      "v4_primary": 0.8295569765796489,
+      "candidate_primary": 0.830907428425424,
+      "gain": 0.0013504518457750914,
+      "reference_live_frames": 103559,
+      "reference_live_missing_ball": 35231,
+      "all_conditional_team_macroF1": 0.830907428425424,
+      "all_accuracy": 0.8057725547755386,
+      "all_false_dead_on_live": 0.06097007502969322,
+      "missing_conditional_team_macroF1": 0.7044113410616601,
+      "missing_accuracy": 0.6475547103403253,
+      "missing_false_dead_on_live": 0.16161902869631858
+    },
+    {
+      "cohort": "european",
+      "match": "4039",
+      "scenario": "natural_detected",
+      "candidate": "long/long_seed20261115_uniform50",
+      "primary_metric": "all_conditional_team_macroF1",
+      "v4_primary": 0.848806904195329,
+      "candidate_primary": 0.8521456102127731,
+      "gain": 0.0033387060174441263,
+      "reference_live_frames": 91075,
+      "reference_live_missing_ball": 20092,
+      "all_conditional_team_macroF1": 0.8521456102127731,
+      "all_accuracy": 0.8227614603348888,
+      "all_false_dead_on_live": 0.06897611858358496,
+      "missing_conditional_team_macroF1": 0.6327697175456863,
+      "missing_accuracy": 0.549074258411308,
+      "missing_false_dead_on_live": 0.26557833963766675
+    }
+  ]
+}
