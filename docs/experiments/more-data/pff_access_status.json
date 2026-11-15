@@ -1,5 +1,5 @@
 {
-  "status": "REQUEST SUBMITTED; owner approval pending",
+  "status": "Original PFF provider access granted; HF mirror request remains pending",
   "dataset": "https://huggingface.co/datasets/OpenSportsLab/PFF",
   "provider_release": "https://www.blog.fc.pff.com/blog/pff-fc-release-2022-world-cup-data",
   "games": 64,
@@ -12,8 +12,10 @@
   "approval_email_found": false,
   "direct_provider_route": {
     "url": "https://www.blog.fc.pff.com/blog/enhanced-2022-world-cup-dataset",
-    "status": "Prepared form; explicit contact-sharing and newsletter consent pending; not submitted",
-    "data_downloaded": false
+    "status": "Authorized form submitted; source Google Drive access granted",
+    "data_downloaded": false,
+    "source_folder": "https://drive.google.com/drive/folders/1_a_q1e9CXeEPJ3GdCv_3-rNO3gPqacfa",
+    "newsletter_user_approved": true
   },
   "final_reserve_opened": false
 }

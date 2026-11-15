@@ -82,7 +82,7 @@
     }
   ],
   "reused_source_guard_pass": true,
-  "status": "RESEARCH_CANDIDATE: numeric/provider/reused-source guards pass; independent confirmation and strict inherited-fold audit pending",
+  "status": "RESEARCH_CANDIDATE: numeric/provider/reused-source and strict inherited full-fold audit pass; independent confirmation pending",
   "fresh_independent_games": 0,
   "lineage": "New neural fits exclude whole folds; inherited legacy components retain scored-game exclusions, not every other member of that fold.",
   "release": "verified v4 unchanged",
@@ -102,5 +102,15 @@
     ]
   },
   "local_artifact": "out/candidates/source-balanced/Ruses Cules.csv",
-  "production_package_unchanged": true
+  "production_package_unchanged": true,
+  "strict_fullfold_reassessment": {
+    "report": "../strict-fullfold/REPORT.md",
+    "isolation": "PASS",
+    "strict_paired_gain": 0.023386717222919295,
+    "strict_paired_wins": 29,
+    "historical_gain": 0.02121949325185113,
+    "historical_wins": 28,
+    "independent_confirmation": "PENDING",
+    "updated_utc": "2026-11-15T19:00:19.035924+00:00"
+  }
 }

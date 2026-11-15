@@ -1,0 +1,295 @@
+{
+  "policy": "evaluation-1.0",
+  "policy_sha256": "da916f2e709012365f90bd0e957b35432ebf2db8c69740469a1abdd920be4940",
+  "candidate": "strict_source",
+  "status": "ELIGIBLE_FOR_CONFIRMATION",
+  "scope": "Additional paired reconstruction audit under identical exclusions; immutable historical-v4 gates and untouched confirmation remain separately required.",
+  "final_confirmation": "NOT ASSESSED",
+  "baseline_composite": 0.6121811409040256,
+  "candidate_composite": 0.6355678581269449,
+  "gain": 0.023386717222919295,
+  "descriptive_95ci": [
+    0.019251130619179397,
+    0.027882906018660742
+  ],
+  "game_wins": 29,
+  "game_losses": 0,
+  "large_game_losses": 0,
+  "lower_quartile_score_gain": 0.02140632675988252,
+  "checks": {
+    "original/matched_seed0/spell_guard": true,
+    "original/matched_seed0/macro_guard": true,
+    "original/matched_seed0/class_guard": true,
+    "original/label_blind_seed1/spell_guard": true,
+    "original/label_blind_seed1/macro_guard": true,
+    "original/label_blind_seed1/class_guard": true,
+    "original/stress_seed1/spell_guard": true,
+    "original/stress_seed1/macro_guard": true,
+    "original/stress_seed1/class_guard": true,
+    "skillcorner/natural_detected/spell_guard": true,
+    "skillcorner/natural_detected/macro_guard": true,
+    "skillcorner/natural_detected/class_guard": true,
+    "skillcorner/label_blind_seed7/spell_guard": true,
+    "skillcorner/label_blind_seed7/macro_guard": true,
+    "skillcorner/label_blind_seed7/class_guard": true,
+    "meaningful_gain": true,
+    "majority_games": true,
+    "positive_descriptive_lower_bound": true,
+    "lower_quartile_guard": true,
+    "large_game_losses": true
+  },
+  "cohorts": [
+    {
+      "family": "original",
+      "scenario": "matched_seed0",
+      "games": 9,
+      "weight": 0.25,
+      "baseline": 0.6422382100095496,
+      "candidate": 0.6674877102392583,
+      "spell_gain": 0.025249500229708732,
+      "macro_gain": 0.007062872928000563,
+      "class_f1_gains": {
+        "H": 0.009401988684798222,
+        "A": 0.00914200309483209,
+        "D": 0.0026446270043713905
+      }
+    },
+    {
+      "family": "original",
+      "scenario": "label_blind_seed1",
+      "games": 9,
+      "weight": 0.25,
+      "baseline": 0.555270890980179,
+      "candidate": 0.575719822084262,
+      "spell_gain": 0.020448931104082968,
+      "macro_gain": 0.0035485967600784227,
+      "class_f1_gains": {
+        "H": 0.007088638207548435,
+        "A": 0.003240381257398512,
+        "D": 0.00031677081528830927
+      }
+    },
+    {
+      "family": "original",
+      "scenario": "stress_seed1",
+      "games": 9,
+      "weight": 0,
+      "baseline": 0.5322635359846374,
+      "candidate": 0.5538322215440474,
+      "spell_gain": 0.02156868555941005,
+      "macro_gain": -0.0013129295184592567,
+      "class_f1_gains": {
+        "H": 0.0005925887722892068,
+        "A": 0.0029817877331899854,
+        "D": -0.007513165060857098
+      }
+    },
+    {
+      "family": "skillcorner",
+      "scenario": "natural_detected",
+      "games": 20,
+      "weight": 0.25,
+      "baseline": 0.6486478956035873,
+      "candidate": 0.6778210003057132,
+      "spell_gain": 0.029173104702125974,
+      "macro_gain": 0.01545182947926232,
+      "class_f1_gains": {
+        "H": 0.013426674068579803,
+        "A": 0.012772033989960695,
+        "D": 0.020156780379246453
+      }
+    },
+    {
+      "family": "skillcorner",
+      "scenario": "label_blind_seed7",
+      "games": 20,
+      "weight": 0.25,
+      "baseline": 0.6025675670227867,
+      "candidate": 0.6212428998785461,
+      "spell_gain": 0.018675332855759397,
+      "macro_gain": 0.010712397597230711,
+      "class_f1_gains": {
+        "H": 0.008898355305998917,
+        "A": 0.01010867119911335,
+        "D": 0.013130166286579764
+      }
+    }
+  ],
+  "games": [
+    {
+      "game": "original/idsse_J03WMX",
+      "baseline": 0.539698841363748,
+      "candidate": 0.5456410746116629,
+      "gain": 0.005942233247914874
+    },
+    {
+      "game": "original/idsse_J03WN1",
+      "baseline": 0.534193246741759,
+      "candidate": 0.5648469714432065,
+      "gain": 0.03065372470144745
+    },
+    {
+      "game": "original/idsse_J03WOH",
+      "baseline": 0.5936440030557677,
+      "candidate": 0.6132570162481537,
+      "gain": 0.019613013192385953
+    },
+    {
+      "game": "original/idsse_J03WOY",
+      "baseline": 0.5664572364054689,
+      "candidate": 0.5924823399950303,
+      "gain": 0.02602510358956145
+    },
+    {
+      "game": "original/idsse_J03WPY",
+      "baseline": 0.586576291490772,
+      "candidate": 0.6059572640395146,
+      "gain": 0.019380972548742603
+    },
+    {
+      "game": "original/idsse_J03WQQ",
+      "baseline": 0.622839424041855,
+      "candidate": 0.6376850588158836,
+      "gain": 0.01484563477402856
+    },
+    {
+      "game": "original/idsse_J03WR9",
+      "baseline": 0.6354897304810694,
+      "candidate": 0.6609432398415995,
+      "gain": 0.025453509360530147
+    },
+    {
+      "game": "original/metrica_1",
+      "baseline": 0.6618374193267762,
+      "candidate": 0.6797385620915033,
+      "gain": 0.017901142764727096
+    },
+    {
+      "game": "original/metrica_2",
+      "baseline": 0.6480547615465624,
+      "candidate": 0.6938823683692872,
+      "gain": 0.0458276068227248
+    },
+    {
+      "game": "skillcorner/1874553",
+      "baseline": 0.643081190031983,
+      "candidate": 0.6795581048058648,
+      "gain": 0.03647691477388171
+    },
+    {
+      "game": "skillcorner/1886347",
+      "baseline": 0.6205717044905843,
+      "candidate": 0.665971035617032,
+      "gain": 0.04539933112644767
+    },
+    {
+      "game": "skillcorner/1899585",
+      "baseline": 0.6197832990846255,
+      "candidate": 0.6569213051823417,
+      "gain": 0.037138006097716225
+    },
+    {
+      "game": "skillcorner/1925299",
+      "baseline": 0.5931626590350576,
+      "candidate": 0.605765191342005,
+      "gain": 0.012602532306947412
+    },
+    {
+      "game": "skillcorner/1927964",
+      "baseline": 0.7262672811059907,
+      "candidate": 0.7369442450346974,
+      "gain": 0.010676963928706651
+    },
+    {
+      "game": "skillcorner/1953632",
+      "baseline": 0.626615456753439,
+      "candidate": 0.6718742985409651,
+      "gain": 0.04525884178752615
+    },
+    {
+      "game": "skillcorner/1959846",
+      "baseline": 0.5756536796536796,
+      "candidate": 0.5987191809911259,
+      "gain": 0.023065501337446226
+    },
+    {
+      "game": "skillcorner/1986691",
+      "baseline": 0.6123835025011934,
+      "candidate": 0.6333448675065254,
+      "gain": 0.020961365005331967
+    },
+    {
+      "game": "skillcorner/1996435",
+      "baseline": 0.6643082224186104,
+      "candidate": 0.6816513216513217,
+      "gain": 0.017343099232711268
+    },
+    {
+      "game": "skillcorner/1996436",
+      "baseline": 0.6142156862745098,
+      "candidate": 0.6231281761716545,
+      "gain": 0.00891248989714466
+    },
+    {
+      "game": "skillcorner/2006229",
+      "baseline": 0.6386435008826535,
+      "candidate": 0.6497945597337079,
+      "gain": 0.011151058851054385
+    },
+    {
+      "game": "skillcorner/2006363",
+      "baseline": 0.6714288881498724,
+      "candidate": 0.678934583460318,
+      "gain": 0.007505695310445537
+    },
+    {
+      "game": "skillcorner/2007448",
+      "baseline": 0.6213726693415152,
+      "candidate": 0.644765479846813,
+      "gain": 0.023392810505297734
+    },
+    {
+      "game": "skillcorner/2007721",
+      "baseline": 0.6552700158356088,
+      "candidate": 0.6861904480983001,
+      "gain": 0.030920432262691255
+    },
+    {
+      "game": "skillcorner/2010085",
+      "baseline": 0.5854644279410182,
+      "candidate": 0.6148288867934992,
+      "gain": 0.029364458852481068
+    },
+    {
+      "game": "skillcorner/2011166",
+      "baseline": 0.6563489186903466,
+      "candidate": 0.6657461954333472,
+      "gain": 0.009397276743000615
+    },
+    {
+      "game": "skillcorner/2013725",
+      "baseline": 0.5961082949605954,
+      "candidate": 0.6240281055567476,
+      "gain": 0.027919810596152228
+    },
+    {
+      "game": "skillcorner/2015213",
+      "baseline": 0.575613880220313,
+      "candidate": 0.6022110662167267,
+      "gain": 0.026597185996413697
+    },
+    {
+      "game": "skillcorner/2016236",
+      "baseline": 0.6240106594038717,
+      "candidate": 0.6510074916042367,
+      "gain": 0.026996832200364973
+    },
+    {
+      "game": "skillcorner/2017461",
+      "baseline": 0.5918506894882711,
+      "candidate": 0.6192544582553628,
+      "gain": 0.02740376876709172
+    }
+  ],
+  "comparison_control": "strict_v4"
+}

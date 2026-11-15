@@ -1,0 +1,94 @@
+{
+  "candidate": "source_seed20261113",
+  "all_stage_wholefold_isolation": "PASS",
+  "scope": "Retrospective audit on29reused research matches; this is not untouched confirmation.",
+  "strict_paired": {
+    "status": "ELIGIBLE_FOR_CONFIRMATION",
+    "baseline_composite": 0.6121811409040256,
+    "candidate_composite": 0.6355678581269449,
+    "gain": 0.023386717222919295,
+    "descriptive_95ci": [
+      0.019251130619179397,
+      0.027882906018660742
+    ],
+    "game_wins": 29,
+    "game_losses": 0,
+    "checks": {
+      "original/matched_seed0/spell_guard": true,
+      "original/matched_seed0/macro_guard": true,
+      "original/matched_seed0/class_guard": true,
+      "original/label_blind_seed1/spell_guard": true,
+      "original/label_blind_seed1/macro_guard": true,
+      "original/label_blind_seed1/class_guard": true,
+      "original/stress_seed1/spell_guard": true,
+      "original/stress_seed1/macro_guard": true,
+      "original/stress_seed1/class_guard": true,
+      "skillcorner/natural_detected/spell_guard": true,
+      "skillcorner/natural_detected/macro_guard": true,
+      "skillcorner/natural_detected/class_guard": true,
+      "skillcorner/label_blind_seed7/spell_guard": true,
+      "skillcorner/label_blind_seed7/macro_guard": true,
+      "skillcorner/label_blind_seed7/class_guard": true,
+      "meaningful_gain": true,
+      "majority_games": true,
+      "positive_descriptive_lower_bound": true,
+      "lower_quartile_guard": true,
+      "large_game_losses": true
+    }
+  },
+  "against_historical_frozen_v4": {
+    "status": "ELIGIBLE_FOR_CONFIRMATION",
+    "baseline_composite": 0.6143483648750938,
+    "candidate_composite": 0.6355678581269449,
+    "gain": 0.02121949325185113,
+    "game_wins": 28,
+    "game_losses": 1,
+    "checks": {
+      "original/matched_seed0/spell_guard": true,
+      "original/matched_seed0/macro_guard": true,
+      "original/matched_seed0/class_guard": true,
+      "original/label_blind_seed1/spell_guard": true,
+      "original/label_blind_seed1/macro_guard": true,
+      "original/label_blind_seed1/class_guard": true,
+      "original/stress_seed1/spell_guard": true,
+      "original/stress_seed1/macro_guard": true,
+      "original/stress_seed1/class_guard": true,
+      "skillcorner/natural_detected/spell_guard": true,
+      "skillcorner/natural_detected/macro_guard": true,
+      "skillcorner/natural_detected/class_guard": true,
+      "skillcorner/label_blind_seed7/spell_guard": true,
+      "skillcorner/label_blind_seed7/macro_guard": true,
+      "skillcorner/label_blind_seed7/class_guard": true,
+      "meaningful_gain": true,
+      "majority_games": true,
+      "positive_descriptive_lower_bound": true,
+      "lower_quartile_guard": true,
+      "large_game_losses": true
+    }
+  },
+  "strict_reconstructed_v4_composite": 0.6121811409040256,
+  "provider_guards": {
+    "DFL": {
+      "games": 7,
+      "paired_primary_gain": 0.022454201579900097
+    },
+    "Metrica": {
+      "games": 2,
+      "paired_primary_gain": 0.03503304550403896
+    },
+    "SkillCorner": {
+      "games": 20,
+      "paired_primary_gain": 0.029173104702126078
+    }
+  },
+  "provider_guards_pass": true,
+  "numeric_audit_pass": true,
+  "independent_confirmation": "PENDING; no fresh final data opened",
+  "release": "Keep verified v4; no research promotion before unopened confirmation.",
+  "source_sha256": {
+    "scores": "45e87d5afdd9273ca2fb8ac133a0ee8a511df10412c24d280bc6476d74f53266",
+    "provenance": "b0dd20a41f6530c4b9ec307708716076f3c3e22dd25ecca945379f9b2cb2e78b",
+    "plan": "81bf1b663a188b059f7d8253f17ad6d69c7f997cd7f9bd187ddde4c861eb4b9c",
+    "checker": "8f148307c4cf1f7a3abc99b8e5444326ed1036144c4e2329c3386276fc8c67b9"
+  }
+}
