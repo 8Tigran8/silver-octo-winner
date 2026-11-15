@@ -1,0 +1,5866 @@
+{
+  "scope": "Neural branch only; no inherited components enter these source-held-out fits. Retrospective diagnostics, never independent confirmation. Fixed seed20261113; no selection.",
+  "source_heldout": [
+    {
+      "heldout_provider": "DFL",
+      "scenario": "matched_seed0",
+      "games": 7,
+      "control": 0.5531039152941805,
+      "candidate": 0.576893788745355,
+      "gain": 0.02378987345117456,
+      "wins": 7
+    },
+    {
+      "heldout_provider": "DFL",
+      "scenario": "label_blind_seed1",
+      "games": 7,
+      "control": 0.4125294132835728,
+      "candidate": 0.4370743323159877,
+      "gain": 0.024544919032414902,
+      "wins": 6
+    },
+    {
+      "heldout_provider": "DFL",
+      "scenario": "stress_seed1",
+      "games": 7,
+      "control": 0.4014051856078633,
+      "candidate": 0.41757517524069876,
+      "gain": 0.016169989632835446,
+      "wins": 6
+    },
+    {
+      "heldout_provider": "Metrica",
+      "scenario": "matched_seed0",
+      "games": 2,
+      "control": 0.643682647716278,
+      "candidate": 0.717149063416836,
+      "gain": 0.07346641570055801,
+      "wins": 2
+    },
+    {
+      "heldout_provider": "Metrica",
+      "scenario": "label_blind_seed1",
+      "games": 2,
+      "control": 0.6346968457412963,
+      "candidate": 0.6948980584413058,
+      "gain": 0.060201212700009554,
+      "wins": 2
+    },
+    {
+      "heldout_provider": "Metrica",
+      "scenario": "stress_seed1",
+      "games": 2,
+      "control": 0.5863363173133673,
+      "candidate": 0.6245277954368863,
+      "gain": 0.038191478123518974,
+      "wins": 2
+    },
+    {
+      "heldout_provider": "SkillCorner",
+      "scenario": "natural_detected",
+      "games": 20,
+      "control": 0.5035338207981326,
+      "candidate": 0.5751566713734695,
+      "gain": 0.0716228505753369,
+      "wins": 20
+    },
+    {
+      "heldout_provider": "SkillCorner",
+      "scenario": "label_blind_seed7",
+      "games": 20,
+      "control": 0.459882043194578,
+      "candidate": 0.5120414496124783,
+      "gain": 0.052159406417900345,
+      "wins": 20
+    }
+  ],
+  "train_vs_cv": [
+    {
+      "provider": "DFL",
+      "full_fit_training": 0.6777503556135531,
+      "wholefold_out": 0.6576166503065888,
+      "train_minus_cv": 0.020133705306964345
+    },
+    {
+      "provider": "Metrica",
+      "full_fit_training": 0.8215470233387365,
+      "wholefold_out": 0.7012695476710947,
+      "train_minus_cv": 0.1202774756676418
+    },
+    {
+      "provider": "SkillCorner",
+      "full_fit_training": 0.7249658383975522,
+      "wholefold_out": 0.7086416159718399,
+      "train_minus_cv": 0.016324222425712298
+    }
+  ],
+  "raw": {
+    "plan_sha256": "56724a0bb99cfa029b2b998498b5cc2971390c78088999a0165be8bc03fca7b1",
+    "neural_branch_only": true,
+    "fresh_final_test": false,
+    "records": [
+      {
+        "game": "original/idsse_J03WMX",
+        "omitted_provider": "DFL",
+        "kind": "control",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.5121175030599755,
+        "macro_f1": 0.8683224932049289,
+        "n_gt_spells": 511,
+        "n_pred_spells": 306,
+        "per_class": {
+          "H": {
+            "precision": 0.8436976987447699,
+            "recall": 0.8249085934903224,
+            "f1": 0.8341973600858424,
+            "support": 39111
+          },
+          "A": {
+            "precision": 0.854615466894855,
+            "recall": 0.863612780492023,
+            "f1": 0.8590905669709579,
+            "support": 46258
+          },
+          "D": {
+            "precision": 0.9088091568003673,
+            "recall": 0.9145681375622958,
+            "f1": 0.9116795525579865,
+            "support": 60598
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WMX",
+        "omitted_provider": "DFL",
+        "kind": "candidate",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.5394896719319563,
+        "macro_f1": 0.8782519546269865,
+        "n_gt_spells": 511,
+        "n_pred_spells": 312,
+        "per_class": {
+          "H": {
+            "precision": 0.877873681326209,
+            "recall": 0.8191557362378871,
+            "f1": 0.8474988757506018,
+            "support": 39111
+          },
+          "A": {
+            "precision": 0.8748541873005392,
+            "recall": 0.8592892040295733,
+            "f1": 0.8670018431068893,
+            "support": 46258
+          },
+          "D": {
+            "precision": 0.8955447631837844,
+            "recall": 0.9463678669263011,
+            "f1": 0.9202551450234684,
+            "support": 60598
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WMX",
+        "omitted_provider": "DFL",
+        "kind": "control",
+        "scenario": "label_blind_seed1",
+        "spell_f1_mean": 0.3830911492734478,
+        "macro_f1": 0.7794247202014848,
+        "n_gt_spells": 511,
+        "n_pred_spells": 246,
+        "per_class": {
+          "H": {
+            "precision": 0.8250478011472275,
+            "recall": 0.6619621078468972,
+            "f1": 0.7345618589607184,
+            "support": 39111
+          },
+          "A": {
+            "precision": 0.831028457314029,
+            "recall": 0.7196809200570712,
+            "f1": 0.7713570750017378,
+            "support": 46258
+          },
+          "D": {
+            "precision": 0.7545721684758544,
+            "recall": 0.9280174263177002,
+            "f1": 0.8323552266419981,
+            "support": 60598
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WMX",
+        "omitted_provider": "DFL",
+        "kind": "candidate",
+        "scenario": "label_blind_seed1",
+        "spell_f1_mean": 0.41047120418848165,
+        "macro_f1": 0.8014511134692636,
+        "n_gt_spells": 511,
+        "n_pred_spells": 253,
+        "per_class": {
+          "H": {
+            "precision": 0.8444065695692594,
+            "recall": 0.696709365651607,
+            "f1": 0.7634804779983468,
+            "support": 39111
+          },
+          "A": {
+            "precision": 0.8444279346210996,
+            "recall": 0.7371265510830559,
+            "f1": 0.7871372838708188,
+            "support": 46258
+          },
+          "D": {
+            "precision": 0.7796827475210387,
+            "recall": 0.9433314630845903,
+            "f1": 0.8537355785386253,
+            "support": 60598
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WMX",
+        "omitted_provider": "DFL",
+        "kind": "control",
+        "scenario": "stress_seed1",
+        "spell_f1_mean": 0.35335120643431633,
+        "macro_f1": 0.7434808040509506,
+        "n_gt_spells": 511,
+        "n_pred_spells": 235,
+        "per_class": {
+          "H": {
+            "precision": 0.7501590668080594,
+            "recall": 0.6330444120579888,
+            "f1": 0.6866437406400799,
+            "support": 39111
+          },
+          "A": {
+            "precision": 0.8154623154623155,
+            "recall": 0.6806390246011501,
+            "f1": 0.7419757741433757,
+            "support": 46258
+          },
+          "D": {
+            "precision": 0.7276603184850441,
+            "recall": 0.8928182448265619,
+            "f1": 0.801822897369396,
+            "support": 60598
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WMX",
+        "omitted_provider": "DFL",
+        "kind": "candidate",
+        "scenario": "stress_seed1",
+        "spell_f1_mean": 0.3643617021276596,
+        "macro_f1": 0.754330874494492,
+        "n_gt_spells": 511,
+        "n_pred_spells": 241,
+        "per_class": {
+          "H": {
+            "precision": 0.7442409923213231,
+            "recall": 0.6443200122727621,
+            "f1": 0.6906853407518055,
+            "support": 39111
+          },
+          "A": {
+            "precision": 0.8340354482404315,
+            "recall": 0.7019110207964028,
+            "f1": 0.7622904634455557,
+            "support": 46258
+          },
+          "D": {
+            "precision": 0.7403965726936059,
+            "recall": 0.8940889138255388,
+            "f1": 0.8100168192861148,
+            "support": 60598
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WN1",
+        "omitted_provider": "DFL",
+        "kind": "control",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.5200980392156863,
+        "macro_f1": 0.8309154590839931,
+        "n_gt_spells": 500,
+        "n_pred_spells": 316,
+        "per_class": {
+          "H": {
+            "precision": 0.8267688679245283,
+            "recall": 0.7699953323631971,
+            "f1": 0.7973727982257858,
+            "support": 36421
+          },
+          "A": {
+            "precision": 0.7520656447660835,
+            "recall": 0.8260107648016022,
+            "f1": 0.787305753571748,
+            "support": 31956
+          },
+          "D": {
+            "precision": 0.9120797320210082,
+            "recall": 0.904091058154788,
+            "f1": 0.9080678254544456,
+            "support": 73184
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WN1",
+        "omitted_provider": "DFL",
+        "kind": "candidate",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.526342072409488,
+        "macro_f1": 0.8227224125049727,
+        "n_gt_spells": 500,
+        "n_pred_spells": 301,
+        "per_class": {
+          "H": {
+            "precision": 0.8256730626208538,
+            "recall": 0.7620603497981934,
+            "f1": 0.7925923810611686,
+            "support": 36421
+          },
+          "A": {
+            "precision": 0.7461286182803365,
+            "recall": 0.8187194892977845,
+            "f1": 0.7807403649602364,
+            "support": 31956
+          },
+          "D": {
+            "precision": 0.896694611764383,
+            "recall": 0.8929820725841714,
+            "f1": 0.8948344914935132,
+            "support": 73184
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WN1",
+        "omitted_provider": "DFL",
+        "kind": "control",
+        "scenario": "label_blind_seed1",
+        "spell_f1_mean": 0.38888888888888895,
+        "macro_f1": 0.7585937404165503,
+        "n_gt_spells": 500,
+        "n_pred_spells": 256,
+        "per_class": {
+          "H": {
+            "precision": 0.8132088520055325,
+            "recall": 0.6457263666565992,
+            "f1": 0.7198543028114047,
+            "support": 36421
+          },
+          "A": {
+            "precision": 0.7064346684175968,
+            "recall": 0.6733633746401302,
+            "f1": 0.689502691617534,
+            "support": 31956
+          },
+          "D": {
+            "precision": 0.8189970917852059,
+            "recall": 0.9196818976825536,
+            "f1": 0.8664242268207125,
+            "support": 73184
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WN1",
+        "omitted_provider": "DFL",
+        "kind": "candidate",
+        "scenario": "label_blind_seed1",
+        "spell_f1_mean": 0.38835978835978835,
+        "macro_f1": 0.7660054667277896,
+        "n_gt_spells": 500,
+        "n_pred_spells": 256,
+        "per_class": {
+          "H": {
+            "precision": 0.8161965738016957,
+            "recall": 0.6475385080036243,
+            "f1": 0.7221507746953273,
+            "support": 36421
+          },
+          "A": {
+            "precision": 0.7256485140010307,
+            "recall": 0.6609087495306046,
+            "f1": 0.6917672491442982,
+            "support": 31956
+          },
+          "D": {
+            "precision": 0.8292026184464044,
+            "recall": 0.9467779842588544,
+            "f1": 0.8840983763437431,
+            "support": 73184
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WN1",
+        "omitted_provider": "DFL",
+        "kind": "control",
+        "scenario": "stress_seed1",
+        "spell_f1_mean": 0.3822341857335128,
+        "macro_f1": 0.7299457588385704,
+        "n_gt_spells": 500,
+        "n_pred_spells": 243,
+        "per_class": {
+          "H": {
+            "precision": 0.7204281060958585,
+            "recall": 0.6376266439691387,
+            "f1": 0.6765031461197855,
+            "support": 36421
+          },
+          "A": {
+            "precision": 0.6996735933813787,
+            "recall": 0.6774940543246964,
+            "f1": 0.6884052210686975,
+            "support": 31956
+          },
+          "D": {
+            "precision": 0.7975709018537183,
+            "recall": 0.8542304328815041,
+            "f1": 0.8249289093272281,
+            "support": 73184
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WN1",
+        "omitted_provider": "DFL",
+        "kind": "candidate",
+        "scenario": "stress_seed1",
+        "spell_f1_mean": 0.3818181818181819,
+        "macro_f1": 0.7341098427380857,
+        "n_gt_spells": 500,
+        "n_pred_spells": 248,
+        "per_class": {
+          "H": {
+            "precision": 0.7037371910789633,
+            "recall": 0.6411136432278082,
+            "f1": 0.6709673711584605,
+            "support": 36421
+          },
+          "A": {
+            "precision": 0.7166564427081652,
+            "recall": 0.6946113405933159,
+            "f1": 0.7054617108169525,
+            "support": 31956
+          },
+          "D": {
+            "precision": 0.8033665770979743,
+            "recall": 0.8497349147354613,
+            "f1": 0.8259004462388438,
+            "support": 73184
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WOH",
+        "omitted_provider": "DFL",
+        "kind": "control",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.5684830633284242,
+        "macro_f1": 0.8408123258543859,
+        "n_gt_spells": 402,
+        "n_pred_spells": 277,
+        "per_class": {
+          "H": {
+            "precision": 0.8127027361644175,
+            "recall": 0.8388539590042428,
+            "f1": 0.8255713045993636,
+            "support": 39126
+          },
+          "A": {
+            "precision": 0.7961843263868505,
+            "recall": 0.8265334105243913,
+            "f1": 0.811075064659361,
+            "support": 32819
+          },
+          "D": {
+            "precision": 0.9035038799216049,
+            "recall": 0.8687585224225896,
+            "f1": 0.8857906083044333,
+            "support": 65269
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WOH",
+        "omitted_provider": "DFL",
+        "kind": "candidate",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.5688235294117646,
+        "macro_f1": 0.8368272530529429,
+        "n_gt_spells": 402,
+        "n_pred_spells": 278,
+        "per_class": {
+          "H": {
+            "precision": 0.7876116736152472,
+            "recall": 0.8449624290752952,
+            "f1": 0.8152797129505185,
+            "support": 39126
+          },
+          "A": {
+            "precision": 0.8034900916888494,
+            "recall": 0.8277522167037387,
+            "f1": 0.8154407240090651,
+            "support": 32819
+          },
+          "D": {
+            "precision": 0.9072587865666053,
+            "recall": 0.8538816283381084,
+            "f1": 0.8797613221992453,
+            "support": 65269
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WOH",
+        "omitted_provider": "DFL",
+        "kind": "control",
+        "scenario": "label_blind_seed1",
+        "spell_f1_mean": 0.3623376623376623,
+        "macro_f1": 0.7587293510455032,
+        "n_gt_spells": 402,
+        "n_pred_spells": 214,
+        "per_class": {
+          "H": {
+            "precision": 0.8044992969848461,
+            "recall": 0.658079026734141,
+            "f1": 0.7239600174326244,
+            "support": 39126
+          },
+          "A": {
+            "precision": 0.7277570093457943,
+            "recall": 0.711813278893324,
+            "f1": 0.7196968530014325,
+            "support": 32819
+          },
+          "D": {
+            "precision": 0.787892051594195,
+            "recall": 0.8825322894482832,
+            "f1": 0.8325311827024526,
+            "support": 65269
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WOH",
+        "omitted_provider": "DFL",
+        "kind": "candidate",
+        "scenario": "label_blind_seed1",
+        "spell_f1_mean": 0.4276972624798711,
+        "macro_f1": 0.7996460164250457,
+        "n_gt_spells": 402,
+        "n_pred_spells": 219,
+        "per_class": {
+          "H": {
+            "precision": 0.8123797574236721,
+            "recall": 0.7446710627204417,
+            "f1": 0.7770532463895667,
+            "support": 39126
+          },
+          "A": {
+            "precision": 0.7898857526881721,
+            "recall": 0.7162619214479418,
+            "f1": 0.7512743891720864,
+            "support": 32819
+          },
+          "D": {
+            "precision": 0.8321809216499741,
+            "recall": 0.9127610351008901,
+            "f1": 0.8706104137134841,
+            "support": 65269
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WOH",
+        "omitted_provider": "DFL",
+        "kind": "control",
+        "scenario": "stress_seed1",
+        "spell_f1_mean": 0.4038709677419354,
+        "macro_f1": 0.7370051190736802,
+        "n_gt_spells": 402,
+        "n_pred_spells": 218,
+        "per_class": {
+          "H": {
+            "precision": 0.764398665312636,
+            "recall": 0.6733374226856822,
+            "f1": 0.7159842915573915,
+            "support": 39126
+          },
+          "A": {
+            "precision": 0.7523316062176166,
+            "recall": 0.6415186324994667,
+            "f1": 0.692520228932307,
+            "support": 32819
+          },
+          "D": {
+            "precision": 0.7515515488737895,
+            "recall": 0.8608834209195789,
+            "f1": 0.8025108367313418,
+            "support": 65269
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WOH",
+        "omitted_provider": "DFL",
+        "kind": "candidate",
+        "scenario": "stress_seed1",
+        "spell_f1_mean": 0.40714285714285714,
+        "macro_f1": 0.7543555906935094,
+        "n_gt_spells": 402,
+        "n_pred_spells": 214,
+        "per_class": {
+          "H": {
+            "precision": 0.7541482965931864,
+            "recall": 0.7213617543321577,
+            "f1": 0.7373907591017753,
+            "support": 39126
+          },
+          "A": {
+            "precision": 0.7807926267281106,
+            "recall": 0.6453274018099272,
+            "f1": 0.7066261844388096,
+            "support": 32819
+          },
+          "D": {
+            "precision": 0.7773725641307938,
+            "recall": 0.8654491412462272,
+            "f1": 0.8190498285399433,
+            "support": 65269
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WOY",
+        "omitted_provider": "DFL",
+        "kind": "control",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.5424802110817942,
+        "macro_f1": 0.8456070265998398,
+        "n_gt_spells": 456,
+        "n_pred_spells": 302,
+        "per_class": {
+          "H": {
+            "precision": 0.8198340576847096,
+            "recall": 0.8231513805141225,
+            "f1": 0.8214893701254998,
+            "support": 37812
+          },
+          "A": {
+            "precision": 0.8160925543861481,
+            "recall": 0.8122108436866455,
+            "f1": 0.8141470722334397,
+            "support": 38474
+          },
+          "D": {
+            "precision": 0.900980687990344,
+            "recall": 0.901388679245283,
+            "f1": 0.9011846374405795,
+            "support": 66250
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WOY",
+        "omitted_provider": "DFL",
+        "kind": "candidate",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.5781333333333333,
+        "macro_f1": 0.8462835820226036,
+        "n_gt_spells": 456,
+        "n_pred_spells": 294,
+        "per_class": {
+          "H": {
+            "precision": 0.8527405771089328,
+            "recall": 0.816724849254205,
+            "f1": 0.8343442257554675,
+            "support": 37812
+          },
+          "A": {
+            "precision": 0.7881142016909692,
+            "recall": 0.8358631803295732,
+            "f1": 0.8112867215782238,
+            "support": 38474
+          },
+          "D": {
+            "precision": 0.8982233347579217,
+            "recall": 0.8882716981132075,
+            "f1": 0.8932197987341195,
+            "support": 66250
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WOY",
+        "omitted_provider": "DFL",
+        "kind": "control",
+        "scenario": "label_blind_seed1",
+        "spell_f1_mean": 0.368,
+        "macro_f1": 0.7739191744709927,
+        "n_gt_spells": 456,
+        "n_pred_spells": 219,
+        "per_class": {
+          "H": {
+            "precision": 0.7955889110124061,
+            "recall": 0.6868718925208929,
+            "f1": 0.7372439927899286,
+            "support": 37812
+          },
+          "A": {
+            "precision": 0.7992305324715298,
+            "recall": 0.674923324842751,
+            "f1": 0.7318358604362776,
+            "support": 38474
+          },
+          "D": {
+            "precision": 0.7912559269260087,
+            "recall": 0.9244377358490566,
+            "f1": 0.852677670186772,
+            "support": 66250
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WOY",
+        "omitted_provider": "DFL",
+        "kind": "candidate",
+        "scenario": "label_blind_seed1",
+        "spell_f1_mean": 0.3882525697503671,
+        "macro_f1": 0.7908776010022729,
+        "n_gt_spells": 456,
+        "n_pred_spells": 225,
+        "per_class": {
+          "H": {
+            "precision": 0.8174969249692496,
+            "recall": 0.7030836771395325,
+            "f1": 0.7559858954672126,
+            "support": 37812
+          },
+          "A": {
+            "precision": 0.8262597809076683,
+            "recall": 0.6861516868534595,
+            "f1": 0.7497160059070772,
+            "support": 38474
+          },
+          "D": {
+            "precision": 0.8013219583429406,
+            "recall": 0.9442415094339622,
+            "f1": 0.8669309016325286,
+            "support": 66250
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WOY",
+        "omitted_provider": "DFL",
+        "kind": "control",
+        "scenario": "stress_seed1",
+        "spell_f1_mean": 0.4028943560057887,
+        "macro_f1": 0.7666159613095624,
+        "n_gt_spells": 456,
+        "n_pred_spells": 235,
+        "per_class": {
+          "H": {
+            "precision": 0.7800030115946394,
+            "recall": 0.6849677351105469,
+            "f1": 0.7294028190433276,
+            "support": 37812
+          },
+          "A": {
+            "precision": 0.7929920780012187,
+            "recall": 0.676456827987732,
+            "f1": 0.730103515022302,
+            "support": 38474
+          },
+          "D": {
+            "precision": 0.7839918443099685,
+            "recall": 0.9054188679245283,
+            "f1": 0.8403415498630579,
+            "support": 66250
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WOY",
+        "omitted_provider": "DFL",
+        "kind": "candidate",
+        "scenario": "stress_seed1",
+        "spell_f1_mean": 0.42543352601156076,
+        "macro_f1": 0.7747538137598617,
+        "n_gt_spells": 456,
+        "n_pred_spells": 236,
+        "per_class": {
+          "H": {
+            "precision": 0.7632122154672699,
+            "recall": 0.7138210092034275,
+            "f1": 0.7376908044877489,
+            "support": 37812
+          },
+          "A": {
+            "precision": 0.7862150220913108,
+            "recall": 0.6937672194209076,
+            "f1": 0.7371037225229206,
+            "support": 38474
+          },
+          "D": {
+            "precision": 0.8090301962551727,
+            "recall": 0.8941584905660377,
+            "f1": 0.849466914268916,
+            "support": 66250
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WPY",
+        "omitted_provider": "DFL",
+        "kind": "control",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.5591954022988506,
+        "macro_f1": 0.8644402961094698,
+        "n_gt_spells": 421,
+        "n_pred_spells": 275,
+        "per_class": {
+          "H": {
+            "precision": 0.852029992684711,
+            "recall": 0.9100836068135646,
+            "f1": 0.8801004987154298,
+            "support": 51192
+          },
+          "A": {
+            "precision": 0.8330298161042671,
+            "recall": 0.7707479846702788,
+            "f1": 0.8006795600020593,
+            "support": 30268
+          },
+          "D": {
+            "precision": 0.9213392941472783,
+            "recall": 0.9039088199410048,
+            "f1": 0.9125408296109203,
+            "support": 64751
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WPY",
+        "omitted_provider": "DFL",
+        "kind": "candidate",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.5850658857979502,
+        "macro_f1": 0.8755152887018417,
+        "n_gt_spells": 421,
+        "n_pred_spells": 262,
+        "per_class": {
+          "H": {
+            "precision": 0.8784410646387832,
+            "recall": 0.9026019690576652,
+            "f1": 0.8903576383536302,
+            "support": 51192
+          },
+          "A": {
+            "precision": 0.8420698210171894,
+            "recall": 0.7849544072948328,
+            "f1": 0.8125096181796418,
+            "support": 30268
+          },
+          "D": {
+            "precision": 0.9191234937916692,
+            "recall": 0.9282790999366806,
+            "f1": 0.9236786095722529,
+            "support": 64751
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WPY",
+        "omitted_provider": "DFL",
+        "kind": "control",
+        "scenario": "label_blind_seed1",
+        "spell_f1_mean": 0.46293494704992433,
+        "macro_f1": 0.8082579791005636,
+        "n_gt_spells": 421,
+        "n_pred_spells": 240,
+        "per_class": {
+          "H": {
+            "precision": 0.8295264623955432,
+            "recall": 0.8435107047976246,
+            "f1": 0.8364601392776546,
+            "support": 51192
+          },
+          "A": {
+            "precision": 0.7911724137931034,
+            "recall": 0.6632747456059205,
+            "f1": 0.7216002012831804,
+            "support": 30268
+          },
+          "D": {
+            "precision": 0.8413224582370131,
+            "recall": 0.8936850396132878,
+            "f1": 0.866713596740856,
+            "support": 64751
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WPY",
+        "omitted_provider": "DFL",
+        "kind": "candidate",
+        "scenario": "label_blind_seed1",
+        "spell_f1_mean": 0.4676737160120846,
+        "macro_f1": 0.8292798049716391,
+        "n_gt_spells": 421,
+        "n_pred_spells": 241,
+        "per_class": {
+          "H": {
+            "precision": 0.8585071675729116,
+            "recall": 0.848159868729489,
+            "f1": 0.8533021509919719,
+            "support": 51192
+          },
+          "A": {
+            "precision": 0.8319833852544133,
+            "recall": 0.6617549887670147,
+            "f1": 0.7371694606481054,
+            "support": 30268
+          },
+          "D": {
+            "precision": 0.8546694428529507,
+            "recall": 0.9445568408209912,
+            "f1": 0.8973678032748401,
+            "support": 64751
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WPY",
+        "omitted_provider": "DFL",
+        "kind": "control",
+        "scenario": "stress_seed1",
+        "spell_f1_mean": 0.4310975609756097,
+        "macro_f1": 0.7999987309017579,
+        "n_gt_spells": 421,
+        "n_pred_spells": 235,
+        "per_class": {
+          "H": {
+            "precision": 0.8214137008030138,
+            "recall": 0.8092670729801531,
+            "f1": 0.815295147942968,
+            "support": 51192
+          },
+          "A": {
+            "precision": 0.7968298555377207,
+            "recall": 0.6560393815250429,
+            "f1": 0.7196129593389867,
+            "support": 30268
+          },
+          "D": {
+            "precision": 0.8278198035452184,
+            "recall": 0.9058701796111257,
+            "f1": 0.8650880854233189,
+            "support": 64751
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WPY",
+        "omitted_provider": "DFL",
+        "kind": "candidate",
+        "scenario": "stress_seed1",
+        "spell_f1_mean": 0.4395136778115501,
+        "macro_f1": 0.8089969322193444,
+        "n_gt_spells": 421,
+        "n_pred_spells": 237,
+        "per_class": {
+          "H": {
+            "precision": 0.8354951533926251,
+            "recall": 0.8166119706204095,
+            "f1": 0.8259456469123851,
+            "support": 51192
+          },
+          "A": {
+            "precision": 0.8112716174974568,
+            "recall": 0.658682436897053,
+            "f1": 0.7270572361103513,
+            "support": 30268
+          },
+          "D": {
+            "precision": 0.8321811147888996,
+            "recall": 0.9202174483791756,
+            "f1": 0.8739879136352968,
+            "support": 64751
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WQQ",
+        "omitted_provider": "DFL",
+        "kind": "control",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.5892908827785818,
+        "macro_f1": 0.8483629161685369,
+        "n_gt_spells": 401,
+        "n_pred_spells": 290,
+        "per_class": {
+          "H": {
+            "precision": 0.777760736196319,
+            "recall": 0.8216581150418579,
+            "f1": 0.799107025607354,
+            "support": 37030
+          },
+          "A": {
+            "precision": 0.8686985867960346,
+            "recall": 0.8703140188495837,
+            "f1": 0.8695055525060169,
+            "support": 47322
+          },
+          "D": {
+            "precision": 0.8935769954313356,
+            "recall": 0.8600175883296259,
+            "f1": 0.8764761703922396,
+            "support": 57993
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WQQ",
+        "omitted_provider": "DFL",
+        "kind": "candidate",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.5967883211678833,
+        "macro_f1": 0.8623685148691078,
+        "n_gt_spells": 401,
+        "n_pred_spells": 284,
+        "per_class": {
+          "H": {
+            "precision": 0.8273073781649878,
+            "recall": 0.8206049149338375,
+            "f1": 0.8239425162689805,
+            "support": 37030
+          },
+          "A": {
+            "precision": 0.8716924719701015,
+            "recall": 0.8625375089810237,
+            "f1": 0.8670908260486261,
+            "support": 47322
+          },
+          "D": {
+            "precision": 0.8899982990304474,
+            "recall": 0.9022295794320004,
+            "f1": 0.8960722022897168,
+            "support": 57993
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WQQ",
+        "omitted_provider": "DFL",
+        "kind": "control",
+        "scenario": "label_blind_seed1",
+        "spell_f1_mean": 0.45887708649468895,
+        "macro_f1": 0.7866403295791548,
+        "n_gt_spells": 401,
+        "n_pred_spells": 258,
+        "per_class": {
+          "H": {
+            "precision": 0.7405176967776017,
+            "recall": 0.7571158520118823,
+            "f1": 0.7487247963680063,
+            "support": 37030
+          },
+          "A": {
+            "precision": 0.7924679322729605,
+            "recall": 0.8159629770508432,
+            "f1": 0.8040438535300427,
+            "support": 47322
+          },
+          "D": {
+            "precision": 0.8233142037302726,
+            "recall": 0.7916127808528616,
+            "f1": 0.8071523388394153,
+            "support": 57993
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WQQ",
+        "omitted_provider": "DFL",
+        "kind": "candidate",
+        "scenario": "label_blind_seed1",
+        "spell_f1_mean": 0.4973293768545995,
+        "macro_f1": 0.8268537647632689,
+        "n_gt_spells": 401,
+        "n_pred_spells": 273,
+        "per_class": {
+          "H": {
+            "precision": 0.7933605289070192,
+            "recall": 0.7615446934917635,
+            "f1": 0.7771271098863245,
+            "support": 37030
+          },
+          "A": {
+            "precision": 0.8407038371846512,
+            "recall": 0.8380034656185283,
+            "f1": 0.8393514794903273,
+            "support": 47322
+          },
+          "D": {
+            "precision": 0.8522220358879758,
+            "recall": 0.8762781715034573,
+            "f1": 0.8640827049131546,
+            "support": 57993
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WQQ",
+        "omitted_provider": "DFL",
+        "kind": "control",
+        "scenario": "stress_seed1",
+        "spell_f1_mean": 0.42252663622526637,
+        "macro_f1": 0.7611728619868962,
+        "n_gt_spells": 401,
+        "n_pred_spells": 256,
+        "per_class": {
+          "H": {
+            "precision": 0.7673746046091279,
+            "recall": 0.6879017013232515,
+            "f1": 0.7254681381274475,
+            "support": 37030
+          },
+          "A": {
+            "precision": 0.7649349275208973,
+            "recall": 0.7638519082033727,
+            "f1": 0.7643930342472273,
+            "support": 47322
+          },
+          "D": {
+            "precision": 0.7686404394539139,
+            "recall": 0.8203576293690618,
+            "f1": 0.7936574135860136,
+            "support": 57993
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WQQ",
+        "omitted_provider": "DFL",
+        "kind": "candidate",
+        "scenario": "stress_seed1",
+        "spell_f1_mean": 0.46082949308755766,
+        "macro_f1": 0.7912298088475992,
+        "n_gt_spells": 401,
+        "n_pred_spells": 250,
+        "per_class": {
+          "H": {
+            "precision": 0.7936639526276832,
+            "recall": 0.7238995409127734,
+            "f1": 0.7571781653838007,
+            "support": 37030
+          },
+          "A": {
+            "precision": 0.7820480135967708,
+            "recall": 0.7778834368792528,
+            "f1": 0.7799601661157726,
+            "support": 47322
+          },
+          "D": {
+            "precision": 0.8126991869918699,
+            "recall": 0.8618453951338955,
+            "f1": 0.8365510950432243,
+            "support": 57993
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WR9",
+        "omitted_provider": "DFL",
+        "kind": "control",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.5800623052959503,
+        "macro_f1": 0.854425403025218,
+        "n_gt_spells": 370,
+        "n_pred_spells": 272,
+        "per_class": {
+          "H": {
+            "precision": 0.8293214721786151,
+            "recall": 0.8930483292323297,
+            "f1": 0.8600059691233529,
+            "support": 53239
+          },
+          "A": {
+            "precision": 0.8336166194523135,
+            "recall": 0.8256383078218038,
+            "f1": 0.8296082822998732,
+            "support": 32077
+          },
+          "D": {
+            "precision": 0.9023046265811818,
+            "recall": 0.8467817998503919,
+            "f1": 0.8736619576524278,
+            "support": 61494
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WR9",
+        "omitted_provider": "DFL",
+        "kind": "candidate",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.6436137071651091,
+        "macro_f1": 0.8607811261494579,
+        "n_gt_spells": 370,
+        "n_pred_spells": 272,
+        "per_class": {
+          "H": {
+            "precision": 0.8185622679716503,
+            "recall": 0.9111365728131633,
+            "f1": 0.8623721099743108,
+            "support": 53239
+          },
+          "A": {
+            "precision": 0.8586653864618339,
+            "recall": 0.8363936777130031,
+            "f1": 0.8473832159439056,
+            "support": 32077
+          },
+          "D": {
+            "precision": 0.9127963768759435,
+            "recall": 0.8357725957003935,
+            "f1": 0.8725880525301574,
+            "support": 61494
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WR9",
+        "omitted_provider": "DFL",
+        "kind": "control",
+        "scenario": "label_blind_seed1",
+        "spell_f1_mean": 0.46357615894039733,
+        "macro_f1": 0.7902226474532705,
+        "n_gt_spells": 370,
+        "n_pred_spells": 234,
+        "per_class": {
+          "H": {
+            "precision": 0.8471044005165392,
+            "recall": 0.8008978380510527,
+            "f1": 0.823353351227142,
+            "support": 53239
+          },
+          "A": {
+            "precision": 0.7827984132708258,
+            "recall": 0.6767154035601833,
+            "f1": 0.7259016503084924,
+            "support": 32077
+          },
+          "D": {
+            "precision": 0.7780929522147065,
+            "recall": 0.8698409600936676,
+            "f1": 0.821412940824177,
+            "support": 61494
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WR9",
+        "omitted_provider": "DFL",
+        "kind": "candidate",
+        "scenario": "label_blind_seed1",
+        "spell_f1_mean": 0.4797364085667216,
+        "macro_f1": 0.8054701928909677,
+        "n_gt_spells": 370,
+        "n_pred_spells": 237,
+        "per_class": {
+          "H": {
+            "precision": 0.8773032336790726,
+            "recall": 0.8102518830180883,
+            "f1": 0.8424454881895146,
+            "support": 53239
+          },
+          "A": {
+            "precision": 0.8265863453815261,
+            "recall": 0.641643545219316,
+            "f1": 0.722466960352423,
+            "support": 32077
+          },
+          "D": {
+            "precision": 0.7856750068737971,
+            "recall": 0.9293589618499366,
+            "f1": 0.8514981301309654,
+            "support": 61494
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WR9",
+        "omitted_provider": "DFL",
+        "kind": "control",
+        "scenario": "stress_seed1",
+        "spell_f1_mean": 0.41386138613861395,
+        "macro_f1": 0.7406094463941401,
+        "n_gt_spells": 370,
+        "n_pred_spells": 236,
+        "per_class": {
+          "H": {
+            "precision": 0.7803906325915849,
+            "recall": 0.7542403125528279,
+            "f1": 0.7670926700670525,
+            "support": 53239
+          },
+          "A": {
+            "precision": 0.7477285687131724,
+            "recall": 0.6131807837391278,
+            "f1": 0.6738035695933678,
+            "support": 32077
+          },
+          "D": {
+            "precision": 0.7382041998551774,
+            "recall": 0.8289101375743975,
+            "f1": 0.7809320995220002,
+            "support": 61494
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WR9",
+        "omitted_provider": "DFL",
+        "kind": "candidate",
+        "scenario": "stress_seed1",
+        "spell_f1_mean": 0.44392678868552415,
+        "macro_f1": 0.7588593908594996,
+        "n_gt_spells": 370,
+        "n_pred_spells": 231,
+        "per_class": {
+          "H": {
+            "precision": 0.777301363422661,
+            "recall": 0.7763669490411165,
+            "f1": 0.7768338752419793,
+            "support": 53239
+          },
+          "A": {
+            "precision": 0.7464838881965462,
+            "recall": 0.6535835645478069,
+            "f1": 0.6969515641102357,
+            "support": 32077
+          },
+          "D": {
+            "precision": 0.7779557589626239,
+            "recall": 0.8292678960548997,
+            "f1": 0.8027927332262839,
+            "support": 61494
+          }
+        }
+      },
+      {
+        "game": "original/metrica_1",
+        "omitted_provider": "Metrica",
+        "kind": "control",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.6653721682847896,
+        "macro_f1": 0.828724096646407,
+        "n_gt_spells": 326,
+        "n_pred_spells": 292,
+        "per_class": {
+          "H": {
+            "precision": 0.8249085923217551,
+            "recall": 0.8040180858409248,
+            "f1": 0.8143293817747048,
+            "support": 44897
+          },
+          "A": {
+            "precision": 0.8518034435088602,
+            "recall": 0.8194854185810321,
+            "f1": 0.8353319612023811,
+            "support": 41354
+          },
+          "D": {
+            "precision": 0.8180960283757179,
+            "recall": 0.8557739766828355,
+            "f1": 0.8365109469621348,
+            "support": 58755
+          }
+        }
+      },
+      {
+        "game": "original/metrica_1",
+        "omitted_provider": "Metrica",
+        "kind": "candidate",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.7202380952380953,
+        "macro_f1": 0.8390258244230813,
+        "n_gt_spells": 326,
+        "n_pred_spells": 346,
+        "per_class": {
+          "H": {
+            "precision": 0.8381654759161097,
+            "recall": 0.8100318506804464,
+            "f1": 0.8238585522217314,
+            "support": 44897
+          },
+          "A": {
+            "precision": 0.8681200946804535,
+            "recall": 0.8425303477293611,
+            "f1": 0.8551338217428119,
+            "support": 41354
+          },
+          "D": {
+            "precision": 0.8195052129926319,
+            "recall": 0.8575270189771084,
+            "f1": 0.8380850993047007,
+            "support": 58755
+          }
+        }
+      },
+      {
+        "game": "original/metrica_1",
+        "omitted_provider": "Metrica",
+        "kind": "control",
+        "scenario": "label_blind_seed1",
+        "spell_f1_mean": 0.6421052631578948,
+        "macro_f1": 0.8244591833910343,
+        "n_gt_spells": 326,
+        "n_pred_spells": 282,
+        "per_class": {
+          "H": {
+            "precision": 0.8215377542811171,
+            "recall": 0.7960665523308907,
+            "f1": 0.8086016153480691,
+            "support": 44897
+          },
+          "A": {
+            "precision": 0.8488694565896315,
+            "recall": 0.8215892053973014,
+            "f1": 0.8350065741776136,
+            "support": 41354
+          },
+          "D": {
+            "precision": 0.8114060771683258,
+            "recall": 0.8489830652710407,
+            "f1": 0.8297693606474204,
+            "support": 58755
+          }
+        }
+      },
+      {
+        "game": "original/metrica_1",
+        "omitted_provider": "Metrica",
+        "kind": "candidate",
+        "scenario": "label_blind_seed1",
+        "spell_f1_mean": 0.696206373292868,
+        "macro_f1": 0.8347910577388354,
+        "n_gt_spells": 326,
+        "n_pred_spells": 333,
+        "per_class": {
+          "H": {
+            "precision": 0.8341773615446872,
+            "recall": 0.8034835289663006,
+            "f1": 0.8185428059268,
+            "support": 44897
+          },
+          "A": {
+            "precision": 0.8628352490421456,
+            "recall": 0.8440779610194903,
+            "f1": 0.8533535430087156,
+            "support": 41354
+          },
+          "D": {
+            "precision": 0.8151567546406551,
+            "recall": 0.8505488894562165,
+            "f1": 0.8324768242809906,
+            "support": 58755
+          }
+        }
+      },
+      {
+        "game": "original/metrica_1",
+        "omitted_provider": "Metrica",
+        "kind": "control",
+        "scenario": "stress_seed1",
+        "spell_f1_mean": 0.6175559380378657,
+        "macro_f1": 0.8161830170339499,
+        "n_gt_spells": 326,
+        "n_pred_spells": 255,
+        "per_class": {
+          "H": {
+            "precision": 0.8464821938205733,
+            "recall": 0.7597166848564492,
+            "f1": 0.800755939524838,
+            "support": 44897
+          },
+          "A": {
+            "precision": 0.8564219567843242,
+            "recall": 0.7715335880446873,
+            "f1": 0.8117645562212977,
+            "support": 41354
+          },
+          "D": {
+            "precision": 0.7821098197343453,
+            "recall": 0.8979320908858821,
+            "f1": 0.836028555355714,
+            "support": 58755
+          }
+        }
+      },
+      {
+        "game": "original/metrica_1",
+        "omitted_provider": "Metrica",
+        "kind": "candidate",
+        "scenario": "stress_seed1",
+        "spell_f1_mean": 0.6651239669421487,
+        "macro_f1": 0.8208445159860767,
+        "n_gt_spells": 326,
+        "n_pred_spells": 279,
+        "per_class": {
+          "H": {
+            "precision": 0.862846956964604,
+            "recall": 0.7547052141568479,
+            "f1": 0.8051611676785437,
+            "support": 44897
+          },
+          "A": {
+            "precision": 0.8528331584470095,
+            "recall": 0.786139188470281,
+            "f1": 0.8181291994866247,
+            "support": 41354
+          },
+          "D": {
+            "precision": 0.7842522479886418,
+            "recall": 0.9025274444728109,
+            "f1": 0.8392431807930617,
+            "support": 58755
+          }
+        }
+      },
+      {
+        "game": "original/metrica_2",
+        "omitted_provider": "Metrica",
+        "kind": "control",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.6219931271477663,
+        "macro_f1": 0.7904731797043106,
+        "n_gt_spells": 326,
+        "n_pred_spells": 256,
+        "per_class": {
+          "H": {
+            "precision": 0.8840646651270208,
+            "recall": 0.7385398981324278,
+            "f1": 0.8047765210444435,
+            "support": 51832
+          },
+          "A": {
+            "precision": 0.8436603072767179,
+            "recall": 0.7850570069126492,
+            "f1": 0.8133043468151645,
+            "support": 44556
+          },
+          "D": {
+            "precision": 0.675680468126607,
+            "recall": 0.8511660114367405,
+            "f1": 0.7533386712533238,
+            "support": 44768
+          }
+        }
+      },
+      {
+        "game": "original/metrica_2",
+        "omitted_provider": "Metrica",
+        "kind": "candidate",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.7140600315955766,
+        "macro_f1": 0.8080542941170048,
+        "n_gt_spells": 326,
+        "n_pred_spells": 307,
+        "per_class": {
+          "H": {
+            "precision": 0.8977894257064722,
+            "recall": 0.7600517055101096,
+            "f1": 0.8231987629555332,
+            "support": 51832
+          },
+          "A": {
+            "precision": 0.8726702750361245,
+            "recall": 0.799712721070114,
+            "f1": 0.8346001147715694,
+            "support": 44556
+          },
+          "D": {
+            "precision": 0.6870936309681991,
+            "recall": 0.8663107576840601,
+            "f1": 0.7663640046239119,
+            "support": 44768
+          }
+        }
+      },
+      {
+        "game": "original/metrica_2",
+        "omitted_provider": "Metrica",
+        "kind": "control",
+        "scenario": "label_blind_seed1",
+        "spell_f1_mean": 0.6272884283246978,
+        "macro_f1": 0.7942060711878752,
+        "n_gt_spells": 326,
+        "n_pred_spells": 253,
+        "per_class": {
+          "H": {
+            "precision": 0.8849381574384464,
+            "recall": 0.7385013119308536,
+            "f1": 0.8051153154479581,
+            "support": 51832
+          },
+          "A": {
+            "precision": 0.8438118870940803,
+            "recall": 0.7937202621420235,
+            "f1": 0.8179999306093654,
+            "support": 44556
+          },
+          "D": {
+            "precision": 0.6833898910519736,
+            "recall": 0.854695318084346,
+            "f1": 0.7595029675063022,
+            "support": 44768
+          }
+        }
+      },
+      {
+        "game": "original/metrica_2",
+        "omitted_provider": "Metrica",
+        "kind": "candidate",
+        "scenario": "label_blind_seed1",
+        "spell_f1_mean": 0.6935897435897436,
+        "macro_f1": 0.8089629378853593,
+        "n_gt_spells": 326,
+        "n_pred_spells": 298,
+        "per_class": {
+          "H": {
+            "precision": 0.8944962474414373,
+            "recall": 0.7588169470597315,
+            "f1": 0.8210893300766163,
+            "support": 51832
+          },
+          "A": {
+            "precision": 0.8721567284645111,
+            "recall": 0.8003187000628422,
+            "f1": 0.8346948807378104,
+            "support": 44556
+          },
+          "D": {
+            "precision": 0.6921314387211368,
+            "recall": 0.8704208363116511,
+            "f1": 0.7711046028416513,
+            "support": 44768
+          }
+        }
+      },
+      {
+        "game": "original/metrica_2",
+        "omitted_provider": "Metrica",
+        "kind": "control",
+        "scenario": "stress_seed1",
+        "spell_f1_mean": 0.555116696588869,
+        "macro_f1": 0.7708670838340649,
+        "n_gt_spells": 326,
+        "n_pred_spells": 231,
+        "per_class": {
+          "H": {
+            "precision": 0.8784082535003684,
+            "recall": 0.6899212841487884,
+            "f1": 0.7728382788355558,
+            "support": 51832
+          },
+          "A": {
+            "precision": 0.8279765367461702,
+            "recall": 0.7666532004668283,
+            "f1": 0.7961357385913392,
+            "support": 44556
+          },
+          "D": {
+            "precision": 0.6530326068592668,
+            "recall": 0.8634068977841315,
+            "f1": 0.7436272340752996,
+            "support": 44768
+          }
+        }
+      },
+      {
+        "game": "original/metrica_2",
+        "omitted_provider": "Metrica",
+        "kind": "candidate",
+        "scenario": "stress_seed1",
+        "spell_f1_mean": 0.5839316239316239,
+        "macro_f1": 0.7870223821411484,
+        "n_gt_spells": 326,
+        "n_pred_spells": 259,
+        "per_class": {
+          "H": {
+            "precision": 0.9059979838709677,
+            "recall": 0.6935869732983485,
+            "f1": 0.7856893085059883,
+            "support": 51832
+          },
+          "A": {
+            "precision": 0.8546880836757564,
+            "recall": 0.7702666307568005,
+            "f1": 0.8102843786521231,
+            "support": 44556
+          },
+          "D": {
+            "precision": 0.6618287373004355,
+            "recall": 0.9065403859899929,
+            "f1": 0.765093459265334,
+            "support": 44768
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1874553",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.5348837209302325,
+        "macro_f1": 0.7516751508189105,
+        "n_gt_spells": 250,
+        "n_pred_spells": 352,
+        "per_class": {
+          "H": {
+            "precision": 0.6164472264191668,
+            "recall": 0.8978308707953474,
+            "f1": 0.7309956488354237,
+            "support": 31810
+          },
+          "A": {
+            "precision": 0.7140879354936863,
+            "recall": 0.9388902224355897,
+            "f1": 0.8112027099427941,
+            "support": 49992
+          },
+          "D": {
+            "precision": 0.9919254658385093,
+            "recall": 0.556300618305321,
+            "f1": 0.7128270936785137,
+            "support": 68898
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1874553",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.5906040268456376,
+        "macro_f1": 0.8133679884699685,
+        "n_gt_spells": 250,
+        "n_pred_spells": 346,
+        "per_class": {
+          "H": {
+            "precision": 0.7069610778443114,
+            "recall": 0.8907576233888714,
+            "f1": 0.7882876617053832,
+            "support": 31810
+          },
+          "A": {
+            "precision": 0.7586540036024234,
+            "recall": 0.926768282925268,
+            "f1": 0.8343267724334157,
+            "support": 49992
+          },
+          "D": {
+            "precision": 0.9770938446014127,
+            "recall": 0.7027054486342129,
+            "f1": 0.8174895312711064,
+            "support": 68898
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1874553",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.48184818481848185,
+        "macro_f1": 0.7265537528755007,
+        "n_gt_spells": 250,
+        "n_pred_spells": 356,
+        "per_class": {
+          "H": {
+            "precision": 0.5658710730314157,
+            "recall": 0.8720213769254951,
+            "f1": 0.686354076456761,
+            "support": 31810
+          },
+          "A": {
+            "precision": 0.7116377287658376,
+            "recall": 0.9100456072971675,
+            "f1": 0.7987043766787802,
+            "support": 49992
+          },
+          "D": {
+            "precision": 0.9811655629139073,
+            "recall": 0.5375918023745246,
+            "f1": 0.694602805490961,
+            "support": 68898
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1874553",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.5368055555555556,
+        "macro_f1": 0.7726574481894893,
+        "n_gt_spells": 250,
+        "n_pred_spells": 326,
+        "per_class": {
+          "H": {
+            "precision": 0.6753556910569106,
+            "recall": 0.8356491669286388,
+            "f1": 0.7470001405086412,
+            "support": 31810
+          },
+          "A": {
+            "precision": 0.7228895700439069,
+            "recall": 0.8727396383421347,
+            "f1": 0.7907781815545507,
+            "support": 49992
+          },
+          "D": {
+            "precision": 0.9172501716191036,
+            "recall": 0.6787715173154518,
+            "f1": 0.7801940225052759,
+            "support": 68898
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1886347",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.49523809523809526,
+        "macro_f1": 0.7791949203865712,
+        "n_gt_spells": 237,
+        "n_pred_spells": 372,
+        "per_class": {
+          "H": {
+            "precision": 0.7422713212549713,
+            "recall": 0.9156600235489076,
+            "f1": 0.8198990599099936,
+            "support": 45862
+          },
+          "A": {
+            "precision": 0.6396005299093039,
+            "recall": 0.9198886120474864,
+            "f1": 0.7545563837460927,
+            "support": 34115
+          },
+          "D": {
+            "precision": 0.9964966634890372,
+            "recall": 0.618325126066575,
+            "f1": 0.7631293175036274,
+            "support": 67623
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1886347",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.5913043478260869,
+        "macro_f1": 0.8355723646161758,
+        "n_gt_spells": 237,
+        "n_pred_spells": 338,
+        "per_class": {
+          "H": {
+            "precision": 0.8411740808450132,
+            "recall": 0.9029479743578562,
+            "f1": 0.8709670634753713,
+            "support": 45862
+          },
+          "A": {
+            "precision": 0.6791075942411254,
+            "recall": 0.9056426791733841,
+            "f1": 0.7761838964954151,
+            "support": 34115
+          },
+          "D": {
+            "precision": 0.9794420803782506,
+            "recall": 0.7658341096964051,
+            "f1": 0.8595661338777408,
+            "support": 67623
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1886347",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.46275862068965523,
+        "macro_f1": 0.7628406265170788,
+        "n_gt_spells": 237,
+        "n_pred_spells": 343,
+        "per_class": {
+          "H": {
+            "precision": 0.7283978873239436,
+            "recall": 0.9021194016833108,
+            "f1": 0.8060041690206698,
+            "support": 45862
+          },
+          "A": {
+            "precision": 0.620881285640228,
+            "recall": 0.8776784405686648,
+            "f1": 0.7272771435511295,
+            "support": 34115
+          },
+          "D": {
+            "precision": 0.9774045801526717,
+            "recall": 0.6153675524599619,
+            "f1": 0.7552405669794371,
+            "support": 67623
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1886347",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.5209471766848817,
+        "macro_f1": 0.8150232808238843,
+        "n_gt_spells": 237,
+        "n_pred_spells": 312,
+        "per_class": {
+          "H": {
+            "precision": 0.8124130773222625,
+            "recall": 0.8533862456936026,
+            "f1": 0.8323957591160926,
+            "support": 45862
+          },
+          "A": {
+            "precision": 0.6859663568991883,
+            "recall": 0.8546680345888905,
+            "f1": 0.7610806577916992,
+            "support": 34115
+          },
+          "D": {
+            "precision": 0.9316584680252986,
+            "recall": 0.7842006417934726,
+            "f1": 0.8515934255638614,
+            "support": 67623
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1899585",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.49848942598187307,
+        "macro_f1": 0.7531039135085984,
+        "n_gt_spells": 278,
+        "n_pred_spells": 384,
+        "per_class": {
+          "H": {
+            "precision": 0.6563220675944333,
+            "recall": 0.883314603735217,
+            "f1": 0.7530852932454319,
+            "support": 37374
+          },
+          "A": {
+            "precision": 0.6306409887898822,
+            "recall": 0.8935892910478156,
+            "f1": 0.7394342462983352,
+            "support": 36829
+          },
+          "D": {
+            "precision": 0.9890346382455422,
+            "recall": 0.6261028648536433,
+            "f1": 0.7667922009820279,
+            "support": 77072
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1899585",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.575767366720517,
+        "macro_f1": 0.787569134308372,
+        "n_gt_spells": 278,
+        "n_pred_spells": 341,
+        "per_class": {
+          "H": {
+            "precision": 0.7277932494151721,
+            "recall": 0.8740568309519987,
+            "f1": 0.7942474379703132,
+            "support": 37374
+          },
+          "A": {
+            "precision": 0.6497795198432141,
+            "recall": 0.9002416573895572,
+            "f1": 0.7547749675598152,
+            "support": 36829
+          },
+          "D": {
+            "precision": 0.9731960624943556,
+            "recall": 0.6990995432842018,
+            "f1": 0.8136849973949878,
+            "support": 77072
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1899585",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.48944881889763786,
+        "macro_f1": 0.7472346954220698,
+        "n_gt_spells": 278,
+        "n_pred_spells": 357,
+        "per_class": {
+          "H": {
+            "precision": 0.6561536922153292,
+            "recall": 0.8772943757692514,
+            "f1": 0.7507785308664591,
+            "support": 37374
+          },
+          "A": {
+            "precision": 0.6228501459922765,
+            "recall": 0.8977707784626245,
+            "f1": 0.7354583268456524,
+            "support": 36829
+          },
+          "D": {
+            "precision": 0.9814807133969308,
+            "recall": 0.6140621756279843,
+            "f1": 0.7554672285540976,
+            "support": 77072
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1899585",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.5322314049586777,
+        "macro_f1": 0.7504176596087078,
+        "n_gt_spells": 278,
+        "n_pred_spells": 327,
+        "per_class": {
+          "H": {
+            "precision": 0.6952012383900928,
+            "recall": 0.8411462514047199,
+            "f1": 0.7612417366878949,
+            "support": 37374
+          },
+          "A": {
+            "precision": 0.6191672435960834,
+            "recall": 0.8499280458334465,
+            "f1": 0.7164240593243615,
+            "support": 36829
+          },
+          "D": {
+            "precision": 0.9239279279279279,
+            "recall": 0.6653259290014532,
+            "f1": 0.7735871828138672,
+            "support": 77072
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1925299",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.4783258594917788,
+        "macro_f1": 0.7510206172079474,
+        "n_gt_spells": 258,
+        "n_pred_spells": 411,
+        "per_class": {
+          "H": {
+            "precision": 0.7413744740532959,
+            "recall": 0.9314278295062507,
+            "f1": 0.8256048138496822,
+            "support": 53914
+          },
+          "A": {
+            "precision": 0.6188095955033625,
+            "recall": 0.8759626040749056,
+            "f1": 0.7252664517798745,
+            "support": 35191
+          },
+          "D": {
+            "precision": 0.982328190743338,
+            "recall": 0.546376472423746,
+            "f1": 0.7021905859942854,
+            "support": 64095
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1925299",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.5500784929356358,
+        "macro_f1": 0.8292069145239559,
+        "n_gt_spells": 258,
+        "n_pred_spells": 379,
+        "per_class": {
+          "H": {
+            "precision": 0.839067947954758,
+            "recall": 0.9150313462180509,
+            "f1": 0.8754048035205707,
+            "support": 53914
+          },
+          "A": {
+            "precision": 0.69362292051756,
+            "recall": 0.8530590207723565,
+            "f1": 0.7651234213913419,
+            "support": 35191
+          },
+          "D": {
+            "precision": 0.9545427872860636,
+            "recall": 0.761385443482331,
+            "f1": 0.8470925186599549,
+            "support": 64095
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1925299",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.4213967310549777,
+        "macro_f1": 0.6954313460784748,
+        "n_gt_spells": 258,
+        "n_pred_spells": 415,
+        "per_class": {
+          "H": {
+            "precision": 0.6819704713231118,
+            "recall": 0.8910116110843195,
+            "f1": 0.7726008009392541,
+            "support": 53914
+          },
+          "A": {
+            "precision": 0.5775450015254754,
+            "recall": 0.8068824415333465,
+            "f1": 0.6732182654464413,
+            "support": 35191
+          },
+          "D": {
+            "precision": 0.9312100014883167,
+            "recall": 0.4880879943833372,
+            "f1": 0.6404749718497287,
+            "support": 64095
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1925299",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.46369426751592363,
+        "macro_f1": 0.750310790430668,
+        "n_gt_spells": 258,
+        "n_pred_spells": 370,
+        "per_class": {
+          "H": {
+            "precision": 0.7491469816272965,
+            "recall": 0.8470527135808881,
+            "f1": 0.795097236972683,
+            "support": 53914
+          },
+          "A": {
+            "precision": 0.6445783132530121,
+            "recall": 0.775340285868546,
+            "f1": 0.7039382876897873,
+            "support": 35191
+          },
+          "D": {
+            "precision": 0.8587457423362052,
+            "recall": 0.6686949059989079,
+            "f1": 0.7518968466295337,
+            "support": 64095
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1927964",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.5930470347648261,
+        "macro_f1": 0.8046596925221484,
+        "n_gt_spells": 205,
+        "n_pred_spells": 284,
+        "per_class": {
+          "H": {
+            "precision": 0.7904088050314465,
+            "recall": 0.9355652515560702,
+            "f1": 0.8568831144234319,
+            "support": 48359
+          },
+          "A": {
+            "precision": 0.7283041435284067,
+            "recall": 0.9589201349831271,
+            "f1": 0.8278514202476328,
+            "support": 44450
+          },
+          "D": {
+            "precision": 0.9919648462021343,
+            "recall": 0.5765469935785172,
+            "f1": 0.7292445428953805,
+            "support": 54816
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1927964",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.6508620689655172,
+        "macro_f1": 0.8432712179593022,
+        "n_gt_spells": 205,
+        "n_pred_spells": 259,
+        "per_class": {
+          "H": {
+            "precision": 0.8643256801080456,
+            "recall": 0.9263632415889493,
+            "f1": 0.8942698300212597,
+            "support": 48359
+          },
+          "A": {
+            "precision": 0.7409274547690146,
+            "recall": 0.9489538807649044,
+            "f1": 0.8321365160781219,
+            "support": 44450
+          },
+          "D": {
+            "precision": 0.9682747973755307,
+            "recall": 0.6865148861646234,
+            "f1": 0.803407307778525,
+            "support": 54816
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1927964",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.5333333333333333,
+        "macro_f1": 0.7741509554672761,
+        "n_gt_spells": 205,
+        "n_pred_spells": 290,
+        "per_class": {
+          "H": {
+            "precision": 0.7720226843100189,
+            "recall": 0.8867429020451209,
+            "f1": 0.8254157684016014,
+            "support": 48359
+          },
+          "A": {
+            "precision": 0.68678259449751,
+            "recall": 0.9462767154105737,
+            "f1": 0.795912767869814,
+            "support": 44450
+          },
+          "D": {
+            "precision": 0.9737635803470083,
+            "recall": 0.5477597781669585,
+            "f1": 0.701124330130413,
+            "support": 54816
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1927964",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.5798245614035087,
+        "macro_f1": 0.7788705484928894,
+        "n_gt_spells": 205,
+        "n_pred_spells": 251,
+        "per_class": {
+          "H": {
+            "precision": 0.8348238203173295,
+            "recall": 0.8377758018155876,
+            "f1": 0.8362972060811856,
+            "support": 48359
+          },
+          "A": {
+            "precision": 0.6967508387780329,
+            "recall": 0.8876715410573678,
+            "f1": 0.7807083498219232,
+            "support": 44450
+          },
+          "D": {
+            "precision": 0.8242552690450959,
+            "recall": 0.6385361938120256,
+            "f1": 0.7196060895755594,
+            "support": 54816
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1953632",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.4907063197026023,
+        "macro_f1": 0.7603455361311703,
+        "n_gt_spells": 219,
+        "n_pred_spells": 319,
+        "per_class": {
+          "H": {
+            "precision": 0.5963876755991028,
+            "recall": 0.930455282157065,
+            "f1": 0.7268750989165935,
+            "support": 27148
+          },
+          "A": {
+            "precision": 0.7523352763225855,
+            "recall": 0.9319951738510475,
+            "f1": 0.8325834714657827,
+            "support": 54702
+          },
+          "D": {
+            "precision": 0.9903043077328415,
+            "recall": 0.5675651189127973,
+            "f1": 0.7215780380111345,
+            "support": 66225
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1953632",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.58046875,
+        "macro_f1": 0.8115174172735471,
+        "n_gt_spells": 219,
+        "n_pred_spells": 293,
+        "per_class": {
+          "H": {
+            "precision": 0.636060918946825,
+            "recall": 0.90765433917784,
+            "f1": 0.7479662457503644,
+            "support": 27148
+          },
+          "A": {
+            "precision": 0.8242181103651547,
+            "recall": 0.9201674527439582,
+            "f1": 0.8695539508689492,
+            "support": 54702
+          },
+          "D": {
+            "precision": 0.9690458924686626,
+            "recall": 0.706243865609664,
+            "f1": 0.8170320552013276,
+            "support": 66225
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1953632",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.4833333333333334,
+        "macro_f1": 0.7579486900447288,
+        "n_gt_spells": 219,
+        "n_pred_spells": 309,
+        "per_class": {
+          "H": {
+            "precision": 0.5914183551847437,
+            "recall": 0.9138794754678061,
+            "f1": 0.7181105097108453,
+            "support": 27148
+          },
+          "A": {
+            "precision": 0.7470034374532954,
+            "recall": 0.9137143066067054,
+            "f1": 0.8219912508634016,
+            "support": 54702
+          },
+          "D": {
+            "precision": 0.9864337625908454,
+            "recall": 0.5841147602869007,
+            "f1": 0.7337443095599393,
+            "support": 66225
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1953632",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.5346379647749512,
+        "macro_f1": 0.7794536051183042,
+        "n_gt_spells": 219,
+        "n_pred_spells": 292,
+        "per_class": {
+          "H": {
+            "precision": 0.614608650202535,
+            "recall": 0.8662884927066451,
+            "f1": 0.7190619601608242,
+            "support": 27148
+          },
+          "A": {
+            "precision": 0.789758691206544,
+            "recall": 0.8824905853533692,
+            "f1": 0.8335534892555276,
+            "support": 54702
+          },
+          "D": {
+            "precision": 0.9272876656054226,
+            "recall": 0.6816912042280105,
+            "f1": 0.7857453659385606,
+            "support": 66225
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1959846",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.47368421052631576,
+        "macro_f1": 0.7239392069079802,
+        "n_gt_spells": 283,
+        "n_pred_spells": 363,
+        "per_class": {
+          "H": {
+            "precision": 0.5988941548183254,
+            "recall": 0.9169062911504663,
+            "f1": 0.7245410433102218,
+            "support": 37211
+          },
+          "A": {
+            "precision": 0.6591017450176408,
+            "recall": 0.9269143087032319,
+            "f1": 0.7703967900133749,
+            "support": 37285
+          },
+          "D": {
+            "precision": 0.9968851570964247,
+            "recall": 0.5123974996171463,
+            "f1": 0.6768797874003439,
+            "support": 71829
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1959846",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.5569377990430622,
+        "macro_f1": 0.7866862709910561,
+        "n_gt_spells": 283,
+        "n_pred_spells": 344,
+        "per_class": {
+          "H": {
+            "precision": 0.6872554950594878,
+            "recall": 0.9158850877428717,
+            "f1": 0.7852674508358198,
+            "support": 37211
+          },
+          "A": {
+            "precision": 0.6913517882400485,
+            "recall": 0.9176612578785034,
+            "f1": 0.7885911840968021,
+            "support": 37285
+          },
+          "D": {
+            "precision": 0.9907503439517409,
+            "recall": 0.651658800762923,
+            "f1": 0.7862001780405462,
+            "support": 71829
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1959846",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.4127272727272727,
+        "macro_f1": 0.7067917801238082,
+        "n_gt_spells": 283,
+        "n_pred_spells": 377,
+        "per_class": {
+          "H": {
+            "precision": 0.5948909090909091,
+            "recall": 0.8792830077127731,
+            "f1": 0.7096550303109174,
+            "support": 37211
+          },
+          "A": {
+            "precision": 0.6207784986098239,
+            "recall": 0.8982432613651603,
+            "f1": 0.7341700005480353,
+            "support": 37285
+          },
+          "D": {
+            "precision": 0.9883879598662207,
+            "recall": 0.5142908852970248,
+            "f1": 0.6765503095124721,
+            "support": 71829
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1959846",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.4786991869918699,
+        "macro_f1": 0.757838176949681,
+        "n_gt_spells": 283,
+        "n_pred_spells": 332,
+        "per_class": {
+          "H": {
+            "precision": 0.6824970196163433,
+            "recall": 0.8461745182876032,
+            "f1": 0.7555731528807622,
+            "support": 37211
+          },
+          "A": {
+            "precision": 0.6493933620776096,
+            "recall": 0.8684993965401636,
+            "f1": 0.7431325301204819,
+            "support": 37285
+          },
+          "D": {
+            "precision": 0.940347739692002,
+            "recall": 0.6588286068301104,
+            "f1": 0.7748088478477988,
+            "support": 71829
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1986691",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.49435897435897436,
+        "macro_f1": 0.7940003629667846,
+        "n_gt_spells": 240,
+        "n_pred_spells": 345,
+        "per_class": {
+          "H": {
+            "precision": 0.6781643973777105,
+            "recall": 0.9240325417766051,
+            "f1": 0.7822333903372538,
+            "support": 36384
+          },
+          "A": {
+            "precision": 0.730683442951101,
+            "recall": 0.9011567760744851,
+            "f1": 0.8070156968848369,
+            "support": 42532
+          },
+          "D": {
+            "precision": 0.9934713550224559,
+            "recall": 0.6595063918905162,
+            "f1": 0.7927520016782631,
+            "support": 68759
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1986691",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.5804347826086957,
+        "macro_f1": 0.827203552160376,
+        "n_gt_spells": 240,
+        "n_pred_spells": 312,
+        "per_class": {
+          "H": {
+            "precision": 0.7329161176987264,
+            "recall": 0.917353781882146,
+            "f1": 0.814828377520629,
+            "support": 36384
+          },
+          "A": {
+            "precision": 0.7619898477157361,
+            "recall": 0.8823474090096868,
+            "f1": 0.8177638316881306,
+            "support": 42532
+          },
+          "D": {
+            "precision": 0.9764394440767703,
+            "recall": 0.7510144126587065,
+            "f1": 0.8490184472723685,
+            "support": 68759
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1986691",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.47425569176882665,
+        "macro_f1": 0.7671551163021205,
+        "n_gt_spells": 240,
+        "n_pred_spells": 331,
+        "per_class": {
+          "H": {
+            "precision": 0.6412864918357248,
+            "recall": 0.8905288038698329,
+            "f1": 0.7456304870611788,
+            "support": 36384
+          },
+          "A": {
+            "precision": 0.7091347939101373,
+            "recall": 0.8980062070911314,
+            "f1": 0.7924724043489086,
+            "support": 42532
+          },
+          "D": {
+            "precision": 0.9879186879186879,
+            "recall": 0.6219840311813726,
+            "f1": 0.763362457496274,
+            "support": 68759
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1986691",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.5195571955719558,
+        "macro_f1": 0.7967304355003213,
+        "n_gt_spells": 240,
+        "n_pred_spells": 302,
+        "per_class": {
+          "H": {
+            "precision": 0.7164767547857794,
+            "recall": 0.8640886103781882,
+            "f1": 0.7833898136150703,
+            "support": 36384
+          },
+          "A": {
+            "precision": 0.734937260188738,
+            "recall": 0.8331374024264083,
+            "f1": 0.7809624560591535,
+            "support": 42532
+          },
+          "D": {
+            "precision": 0.9237495501979129,
+            "recall": 0.7466949781119563,
+            "f1": 0.8258390368267399,
+            "support": 68759
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1996435",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.5170731707317072,
+        "macro_f1": 0.7412267597650987,
+        "n_gt_spells": 234,
+        "n_pred_spells": 340,
+        "per_class": {
+          "H": {
+            "precision": 0.7157313707451702,
+            "recall": 0.8965819254615438,
+            "f1": 0.7960137921155755,
+            "support": 43387
+          },
+          "A": {
+            "precision": 0.6127390833634068,
+            "recall": 0.9206452487461028,
+            "f1": 0.7357781268620335,
+            "support": 36885
+          },
+          "D": {
+            "precision": 0.9900087642418931,
+            "recall": 0.5317599799146372,
+            "f1": 0.6918883603176871,
+            "support": 63728
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1996435",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.5767441860465116,
+        "macro_f1": 0.7979108296061436,
+        "n_gt_spells": 234,
+        "n_pred_spells": 325,
+        "per_class": {
+          "H": {
+            "precision": 0.7875550999487443,
+            "recall": 0.8853573651093646,
+            "f1": 0.8335973611683775,
+            "support": 43387
+          },
+          "A": {
+            "precision": 0.6583212314841708,
+            "recall": 0.9217568117120781,
+            "f1": 0.7680786174178245,
+            "support": 36885
+          },
+          "D": {
+            "precision": 0.9751491509866912,
+            "recall": 0.6668497363796133,
+            "f1": 0.7920565102322287,
+            "support": 63728
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1996435",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.4921985815602836,
+        "macro_f1": 0.7375203404801757,
+        "n_gt_spells": 234,
+        "n_pred_spells": 330,
+        "per_class": {
+          "H": {
+            "precision": 0.6979340340703153,
+            "recall": 0.8876391545854749,
+            "f1": 0.7814380066350807,
+            "support": 43387
+          },
+          "A": {
+            "precision": 0.6166356531447711,
+            "recall": 0.8984139894265962,
+            "f1": 0.7313213793103449,
+            "support": 36885
+          },
+          "D": {
+            "precision": 0.9855473204104903,
+            "recall": 0.5425087873462214,
+            "f1": 0.6998016354951015,
+            "support": 63728
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1996435",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.5659655831739963,
+        "macro_f1": 0.7928342310785697,
+        "n_gt_spells": 234,
+        "n_pred_spells": 289,
+        "per_class": {
+          "H": {
+            "precision": 0.7980733442802408,
+            "recall": 0.8401594947795422,
+            "f1": 0.8185758235835711,
+            "support": 43387
+          },
+          "A": {
+            "precision": 0.6676150627615063,
+            "recall": 0.8651755456147485,
+            "f1": 0.7536635767845545,
+            "support": 36885
+          },
+          "D": {
+            "precision": 0.9116081147946561,
+            "recall": 0.7227435350238514,
+            "f1": 0.8062632928675832,
+            "support": 63728
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1996436",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.4890965732087227,
+        "macro_f1": 0.7527375268677469,
+        "n_gt_spells": 252,
+        "n_pred_spells": 390,
+        "per_class": {
+          "H": {
+            "precision": 0.6878412969283276,
+            "recall": 0.8830407755292056,
+            "f1": 0.7733131887238149,
+            "support": 36517
+          },
+          "A": {
+            "precision": 0.5684783725470051,
+            "recall": 0.8912119064493267,
+            "f1": 0.6941673880587652,
+            "support": 31042
+          },
+          "D": {
+            "precision": 0.991525269939207,
+            "recall": 0.6575682083498815,
+            "f1": 0.7907320038206606,
+            "support": 83091
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1996436",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.568,
+        "macro_f1": 0.8083748845186656,
+        "n_gt_spells": 252,
+        "n_pred_spells": 348,
+        "per_class": {
+          "H": {
+            "precision": 0.8024703806402823,
+            "recall": 0.8717583591204097,
+            "f1": 0.8356806279286492,
+            "support": 36517
+          },
+          "A": {
+            "precision": 0.6151273706654696,
+            "recall": 0.882900586302429,
+            "f1": 0.7250816831355741,
+            "support": 31042
+          },
+          "D": {
+            "precision": 0.9727963869025217,
+            "recall": 0.777677486129665,
+            "f1": 0.8643623424917735,
+            "support": 83091
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1996436",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.4480769230769231,
+        "macro_f1": 0.732657300537844,
+        "n_gt_spells": 252,
+        "n_pred_spells": 372,
+        "per_class": {
+          "H": {
+            "precision": 0.6503054989816701,
+            "recall": 0.8743872716816825,
+            "f1": 0.74587990702781,
+            "support": 36517
+          },
+          "A": {
+            "precision": 0.5605122284034848,
+            "recall": 0.8601249919463952,
+            "f1": 0.6787244048451263,
+            "support": 31042
+          },
+          "D": {
+            "precision": 0.9826207919873876,
+            "recall": 0.6375901120458293,
+            "f1": 0.7733675897405954,
+            "support": 83091
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1996436",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.4984402079722704,
+        "macro_f1": 0.771524382990199,
+        "n_gt_spells": 252,
+        "n_pred_spells": 325,
+        "per_class": {
+          "H": {
+            "precision": 0.7530767344937485,
+            "recall": 0.841197250595613,
+            "f1": 0.7947016440943253,
+            "support": 36517
+          },
+          "A": {
+            "precision": 0.5885654885654885,
+            "recall": 0.820791186134914,
+            "f1": 0.6855459290749609,
+            "support": 31042
+          },
+          "D": {
+            "precision": 0.9378548895899054,
+            "recall": 0.751381015994512,
+            "f1": 0.8343255758013111,
+            "support": 83091
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2006229",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.5380281690140845,
+        "macro_f1": 0.7476174318742327,
+        "n_gt_spells": 244,
+        "n_pred_spells": 324,
+        "per_class": {
+          "H": {
+            "precision": 0.7443288590604027,
+            "recall": 0.924516505501834,
+            "f1": 0.8246951219512195,
+            "support": 47984
+          },
+          "A": {
+            "precision": 0.589408891060088,
+            "recall": 0.9035437198574124,
+            "f1": 0.7134274699023155,
+            "support": 33383
+          },
+          "D": {
+            "precision": 0.9821686746987952,
+            "recall": 0.5495071751700171,
+            "f1": 0.7047297037691628,
+            "support": 66758
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2006229",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.6133333333333334,
+        "macro_f1": 0.8098629490430622,
+        "n_gt_spells": 244,
+        "n_pred_spells": 326,
+        "per_class": {
+          "H": {
+            "precision": 0.8410740063516504,
+            "recall": 0.9106785595198399,
+            "f1": 0.8744934409990093,
+            "support": 47984
+          },
+          "A": {
+            "precision": 0.6297624010004168,
+            "recall": 0.9051313542821197,
+            "f1": 0.7427454739869473,
+            "support": 33383
+          },
+          "D": {
+            "precision": 0.9688524590163935,
+            "recall": 0.6993768537104167,
+            "f1": 0.81234993214323,
+            "support": 66758
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2006229",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.4628975265017668,
+        "macro_f1": 0.7402756308016799,
+        "n_gt_spells": 244,
+        "n_pred_spells": 322,
+        "per_class": {
+          "H": {
+            "precision": 0.7270568421052631,
+            "recall": 0.8996540513504502,
+            "f1": 0.8041989958922867,
+            "support": 47984
+          },
+          "A": {
+            "precision": 0.5834961997828447,
+            "recall": 0.8853907677560435,
+            "f1": 0.7034198814821866,
+            "support": 33383
+          },
+          "D": {
+            "precision": 0.9815198844992781,
+            "recall": 0.5600976661973097,
+            "f1": 0.7132080150305665,
+            "support": 66758
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2006229",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.5504520795660037,
+        "macro_f1": 0.7741586379041929,
+        "n_gt_spells": 244,
+        "n_pred_spells": 309,
+        "per_class": {
+          "H": {
+            "precision": 0.7956649313771889,
+            "recall": 0.8759378126042014,
+            "f1": 0.8338739596662997,
+            "support": 47984
+          },
+          "A": {
+            "precision": 0.6077027734170591,
+            "recall": 0.8696941557079951,
+            "f1": 0.7154685921289337,
+            "support": 33383
+          },
+          "D": {
+            "precision": 0.9295739084692267,
+            "recall": 0.6617633841636957,
+            "f1": 0.7731333619173454,
+            "support": 66758
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2006363",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.5048414023372286,
+        "macro_f1": 0.7813745952633259,
+        "n_gt_spells": 235,
+        "n_pred_spells": 364,
+        "per_class": {
+          "H": {
+            "precision": 0.7765097479790775,
+            "recall": 0.9145999955194122,
+            "f1": 0.8399168826893798,
+            "support": 44637
+          },
+          "A": {
+            "precision": 0.6216336771675495,
+            "recall": 0.9194546004343404,
+            "f1": 0.7417666496640128,
+            "support": 36377
+          },
+          "D": {
+            "precision": 0.9966097590507326,
+            "recall": 0.6173774770855522,
+            "f1": 0.7624402534365852,
+            "support": 66661
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2006363",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.574340949033392,
+        "macro_f1": 0.8294838297026362,
+        "n_gt_spells": 235,
+        "n_pred_spells": 334,
+        "per_class": {
+          "H": {
+            "precision": 0.8450716002926727,
+            "recall": 0.9056164168738938,
+            "f1": 0.8742970845228825,
+            "support": 44637
+          },
+          "A": {
+            "precision": 0.669785495403473,
+            "recall": 0.9012837782115073,
+            "f1": 0.768478910544142,
+            "support": 36377
+          },
+          "D": {
+            "precision": 0.9767144822165454,
+            "recall": 0.7456383792622373,
+            "f1": 0.8456754940408843,
+            "support": 66661
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2006363",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.4514469453376206,
+        "macro_f1": 0.752557671753518,
+        "n_gt_spells": 235,
+        "n_pred_spells": 387,
+        "per_class": {
+          "H": {
+            "precision": 0.7376234829240756,
+            "recall": 0.8782176221520264,
+            "f1": 0.8018040130085292,
+            "support": 44637
+          },
+          "A": {
+            "precision": 0.5911702615878843,
+            "recall": 0.8852846578882261,
+            "f1": 0.7089332100559151,
+            "support": 36377
+          },
+          "D": {
+            "precision": 0.9950068655598552,
+            "recall": 0.5978758194446528,
+            "f1": 0.7469357921961092,
+            "support": 66661
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2006363",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.47785234899328854,
+        "macro_f1": 0.783507429862687,
+        "n_gt_spells": 235,
+        "n_pred_spells": 361,
+        "per_class": {
+          "H": {
+            "precision": 0.8036980968858132,
+            "recall": 0.832560431928669,
+            "f1": 0.8178747097725497,
+            "support": 44637
+          },
+          "A": {
+            "precision": 0.626497577069801,
+            "recall": 0.8351980647112186,
+            "f1": 0.7159487227825432,
+            "support": 36377
+          },
+          "D": {
+            "precision": 0.9225349452210049,
+            "recall": 0.7326472750183766,
+            "f1": 0.816698857032968,
+            "support": 66661
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2007448",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.47891156462585033,
+        "macro_f1": 0.7413659236846617,
+        "n_gt_spells": 226,
+        "n_pred_spells": 362,
+        "per_class": {
+          "H": {
+            "precision": 0.5923244162964363,
+            "recall": 0.87838178810732,
+            "f1": 0.7075335350706832,
+            "support": 35669
+          },
+          "A": {
+            "precision": 0.6923030303030303,
+            "recall": 0.9162099296847847,
+            "f1": 0.7886724278793598,
+            "support": 37403
+          },
+          "D": {
+            "precision": 0.9774997076365337,
+            "recall": 0.5798301839673686,
+            "f1": 0.7278918081039422,
+            "support": 72078
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2007448",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.5460317460317461,
+        "macro_f1": 0.8033577046933682,
+        "n_gt_spells": 226,
+        "n_pred_spells": 341,
+        "per_class": {
+          "H": {
+            "precision": 0.6744511196067723,
+            "recall": 0.8655415066304074,
+            "f1": 0.7581405628407248,
+            "support": 35669
+          },
+          "A": {
+            "precision": 0.7522604773952261,
+            "recall": 0.9142047429350587,
+            "f1": 0.825363875546115,
+            "support": 37403
+          },
+          "D": {
+            "precision": 0.9657455489614243,
+            "recall": 0.722453453203474,
+            "f1": 0.8265686756932649,
+            "support": 72078
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2007448",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.43809523809523804,
+        "macro_f1": 0.7473347224783001,
+        "n_gt_spells": 226,
+        "n_pred_spells": 362,
+        "per_class": {
+          "H": {
+            "precision": 0.6318177152827671,
+            "recall": 0.8629061650172418,
+            "f1": 0.729498483124763,
+            "support": 35669
+          },
+          "A": {
+            "precision": 0.6557840616966581,
+            "recall": 0.8866401090821592,
+            "f1": 0.7539358666863697,
+            "support": 37403
+          },
+          "D": {
+            "precision": 0.9753406737163415,
+            "recall": 0.6206332029190599,
+            "f1": 0.7585698176237674,
+            "support": 72078
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2007448",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.5220588235294118,
+        "macro_f1": 0.8013270142208103,
+        "n_gt_spells": 226,
+        "n_pred_spells": 318,
+        "per_class": {
+          "H": {
+            "precision": 0.6891247289740956,
+            "recall": 0.8465053688076482,
+            "f1": 0.7597503900156005,
+            "support": 35669
+          },
+          "A": {
+            "precision": 0.7439799521585602,
+            "recall": 0.8731117824773413,
+            "f1": 0.8033899972939064,
+            "support": 37403
+          },
+          "D": {
+            "precision": 0.9479805013927577,
+            "recall": 0.7554593634673548,
+            "f1": 0.840840655352924,
+            "support": 72078
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2007721",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.5263843648208469,
+        "macro_f1": 0.7611606861364821,
+        "n_gt_spells": 248,
+        "n_pred_spells": 366,
+        "per_class": {
+          "H": {
+            "precision": 0.711846960574869,
+            "recall": 0.8986882432266765,
+            "f1": 0.7944296938499052,
+            "support": 40785
+          },
+          "A": {
+            "precision": 0.6824642169582322,
+            "recall": 0.9553347549973051,
+            "f1": 0.7961682681040544,
+            "support": 42673
+          },
+          "D": {
+            "precision": 0.9877394636015325,
+            "recall": 0.533597165187442,
+            "f1": 0.6928840964554867,
+            "support": 60392
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2007721",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.6192644483362522,
+        "macro_f1": 0.8437610783497232,
+        "n_gt_spells": 248,
+        "n_pred_spells": 323,
+        "per_class": {
+          "H": {
+            "precision": 0.7952052545155993,
+            "recall": 0.8905479955866127,
+            "f1": 0.8401804302567663,
+            "support": 40785
+          },
+          "A": {
+            "precision": 0.7706340167046317,
+            "recall": 0.9513509713401916,
+            "f1": 0.8515096536029281,
+            "support": 42673
+          },
+          "D": {
+            "precision": 0.9770524233432245,
+            "recall": 0.736041197509604,
+            "f1": 0.8395931511894756,
+            "support": 60392
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2007721",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.4901694915254238,
+        "macro_f1": 0.7154772582971288,
+        "n_gt_spells": 248,
+        "n_pred_spells": 342,
+        "per_class": {
+          "H": {
+            "precision": 0.676684430909783,
+            "recall": 0.8717175432144171,
+            "f1": 0.7619180283953925,
+            "support": 40785
+          },
+          "A": {
+            "precision": 0.6399485571899365,
+            "recall": 0.9328615283668831,
+            "f1": 0.7591296554091421,
+            "support": 42673
+          },
+          "D": {
+            "precision": 0.9615186394090363,
+            "recall": 0.4633891906212743,
+            "f1": 0.625384091086852,
+            "support": 60392
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2007721",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.5496402877697841,
+        "macro_f1": 0.7781697362489454,
+        "n_gt_spells": 248,
+        "n_pred_spells": 308,
+        "per_class": {
+          "H": {
+            "precision": 0.7367525098210388,
+            "recall": 0.8277062645580483,
+            "f1": 0.779585474279776,
+            "support": 40785
+          },
+          "A": {
+            "precision": 0.7188971962616822,
+            "recall": 0.9012959013896374,
+            "f1": 0.7998294739687855,
+            "support": 42673
+          },
+          "D": {
+            "precision": 0.8895800583876039,
+            "recall": 0.6559312491720758,
+            "f1": 0.7550942604982748,
+            "support": 60392
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2010085",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.4926666666666667,
+        "macro_f1": 0.7246006123705278,
+        "n_gt_spells": 232,
+        "n_pred_spells": 368,
+        "per_class": {
+          "H": {
+            "precision": 0.6745227976662105,
+            "recall": 0.9321521003384432,
+            "f1": 0.7826821012160977,
+            "support": 50230
+          },
+          "A": {
+            "precision": 0.6112739067218432,
+            "recall": 0.8905364009646093,
+            "f1": 0.7249406427822949,
+            "support": 30686
+          },
+          "D": {
+            "precision": 0.9982585197417805,
+            "recall": 0.49988723330677054,
+            "f1": 0.6661790931131905,
+            "support": 66509
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2010085",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.5552028218694885,
+        "macro_f1": 0.8048773361245388,
+        "n_gt_spells": 232,
+        "n_pred_spells": 335,
+        "per_class": {
+          "H": {
+            "precision": 0.7452724358974359,
+            "recall": 0.9258411307983276,
+            "f1": 0.8258012962798543,
+            "support": 50230
+          },
+          "A": {
+            "precision": 0.6994360655737705,
+            "recall": 0.868995633187773,
+            "f1": 0.775050500646699,
+            "support": 30686
+          },
+          "D": {
+            "precision": 0.9839019189765459,
+            "recall": 0.6938158745432949,
+            "f1": 0.8137802114470633,
+            "support": 66509
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2010085",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.4296540362438221,
+        "macro_f1": 0.7434005826936891,
+        "n_gt_spells": 232,
+        "n_pred_spells": 375,
+        "per_class": {
+          "H": {
+            "precision": 0.7078359660726792,
+            "recall": 0.9054748158471033,
+            "f1": 0.7945495043018735,
+            "support": 50230
+          },
+          "A": {
+            "precision": 0.5920604488553062,
+            "recall": 0.8554063742423255,
+            "f1": 0.6997773956625478,
+            "support": 30686
+          },
+          "D": {
+            "precision": 0.9980687524140595,
+            "recall": 0.5827782706099927,
+            "f1": 0.7358748481166464,
+            "support": 66509
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2010085",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.4528695652173913,
+        "macro_f1": 0.7588220468859647,
+        "n_gt_spells": 232,
+        "n_pred_spells": 343,
+        "per_class": {
+          "H": {
+            "precision": 0.7142857142857143,
+            "recall": 0.8515827194903444,
+            "f1": 0.776915043363756,
+            "support": 50230
+          },
+          "A": {
+            "precision": 0.6494707957663661,
+            "recall": 0.8098807273675291,
+            "f1": 0.7208597409754753,
+            "support": 30686
+          },
+          "D": {
+            "precision": 0.9148655504819888,
+            "recall": 0.6778030041047076,
+            "f1": 0.7786913563186624,
+            "support": 66509
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2011166",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.5015673981191222,
+        "macro_f1": 0.7560472093044875,
+        "n_gt_spells": 271,
+        "n_pred_spells": 367,
+        "per_class": {
+          "H": {
+            "precision": 0.5892580287929126,
+            "recall": 0.8990301760551481,
+            "f1": 0.711906131677883,
+            "support": 29593
+          },
+          "A": {
+            "precision": 0.6774250788643533,
+            "recall": 0.8988855169526999,
+            "f1": 0.7725984889368591,
+            "support": 38224
+          },
+          "D": {
+            "precision": 0.9935822748543597,
+            "recall": 0.646938115610387,
+            "f1": 0.7836370072987203,
+            "support": 80408
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2011166",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.5664556962025317,
+        "macro_f1": 0.7972764341812651,
+        "n_gt_spells": 271,
+        "n_pred_spells": 361,
+        "per_class": {
+          "H": {
+            "precision": 0.6528557114228457,
+            "recall": 0.880681242185652,
+            "f1": 0.7498453526678464,
+            "support": 29593
+          },
+          "A": {
+            "precision": 0.7272947925860547,
+            "recall": 0.862311636668062,
+            "f1": 0.7890692329790291,
+            "support": 38224
+          },
+          "D": {
+            "precision": 0.9708819560212749,
+            "recall": 0.7605089045866082,
+            "f1": 0.8529147168969197,
+            "support": 80408
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2011166",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.4764612954186414,
+        "macro_f1": 0.725369852132474,
+        "n_gt_spells": 271,
+        "n_pred_spells": 362,
+        "per_class": {
+          "H": {
+            "precision": 0.5499791492910759,
+            "recall": 0.8913256513364647,
+            "f1": 0.6802315835622091,
+            "support": 29593
+          },
+          "A": {
+            "precision": 0.6508944027697634,
+            "recall": 0.8853076601088321,
+            "f1": 0.7502161527035714,
+            "support": 38224
+          },
+          "D": {
+            "precision": 0.9938270326255826,
+            "recall": 0.5966694856233211,
+            "f1": 0.7456618201316413,
+            "support": 80408
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2011166",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.5108974358974359,
+        "macro_f1": 0.7548866975091677,
+        "n_gt_spells": 271,
+        "n_pred_spells": 353,
+        "per_class": {
+          "H": {
+            "precision": 0.580547398097028,
+            "recall": 0.8350285540499442,
+            "f1": 0.6849136616868537,
+            "support": 29593
+          },
+          "A": {
+            "precision": 0.7148834565093803,
+            "recall": 0.8224413980745081,
+            "f1": 0.7648998162994683,
+            "support": 38224
+          },
+          "D": {
+            "precision": 0.9385101726513739,
+            "recall": 0.7199781116306835,
+            "f1": 0.8148466145411808,
+            "support": 80408
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2013725",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.4958277254374159,
+        "macro_f1": 0.7083822126267298,
+        "n_gt_spells": 306,
+        "n_pred_spells": 437,
+        "per_class": {
+          "H": {
+            "precision": 0.6317336132048469,
+            "recall": 0.8657200387019168,
+            "f1": 0.7304459104648853,
+            "support": 38241
+          },
+          "A": {
+            "precision": 0.6121260119676171,
+            "recall": 0.8780641740930549,
+            "f1": 0.7213655359790939,
+            "support": 39611
+          },
+          "D": {
+            "precision": 0.9958473282442748,
+            "recall": 0.5086162531384995,
+            "f1": 0.6733351914362102,
+            "support": 64123
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2013725",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.5661538461538461,
+        "macro_f1": 0.7892419882512277,
+        "n_gt_spells": 306,
+        "n_pred_spells": 409,
+        "per_class": {
+          "H": {
+            "precision": 0.7237288135593221,
+            "recall": 0.8486179754713528,
+            "f1": 0.7812135145219726,
+            "support": 38241
+          },
+          "A": {
+            "precision": 0.6858680486346422,
+            "recall": 0.8686980889146955,
+            "f1": 0.7665318942760718,
+            "support": 39611
+          },
+          "D": {
+            "precision": 0.9697647184073246,
+            "recall": 0.7102755641501489,
+            "f1": 0.8199805559556388,
+            "support": 64123
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2013725",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.44930747922437675,
+        "macro_f1": 0.6789558963967112,
+        "n_gt_spells": 306,
+        "n_pred_spells": 416,
+        "per_class": {
+          "H": {
+            "precision": 0.6090263502149131,
+            "recall": 0.8522005177688868,
+            "f1": 0.7103791784285731,
+            "support": 38241
+          },
+          "A": {
+            "precision": 0.5751602286506149,
+            "recall": 0.8382520007068743,
+            "f1": 0.6822202360772953,
+            "support": 39611
+          },
+          "D": {
+            "precision": 0.9942085570196844,
+            "recall": 0.47653727991516304,
+            "f1": 0.644268274684265,
+            "support": 64123
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2013725",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.48856304985337246,
+        "macro_f1": 0.7581589928170315,
+        "n_gt_spells": 306,
+        "n_pred_spells": 376,
+        "per_class": {
+          "H": {
+            "precision": 0.675672131147541,
+            "recall": 0.8083470620538166,
+            "f1": 0.736078865592742,
+            "support": 38241
+          },
+          "A": {
+            "precision": 0.6853184991273996,
+            "recall": 0.7930877786473455,
+            "f1": 0.7352751869492458,
+            "support": 39611
+          },
+          "D": {
+            "precision": 0.9126128808177036,
+            "recall": 0.7170905915194236,
+            "f1": 0.8031229259091066,
+            "support": 64123
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2015213",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.47908309455587395,
+        "macro_f1": 0.6813706266875362,
+        "n_gt_spells": 296,
+        "n_pred_spells": 402,
+        "per_class": {
+          "H": {
+            "precision": 0.5628284758719542,
+            "recall": 0.8923431203223949,
+            "f1": 0.6902775173448341,
+            "support": 33003
+          },
+          "A": {
+            "precision": 0.6102483742066912,
+            "recall": 0.9061147563869887,
+            "f1": 0.7293174646278313,
+            "support": 42978
+          },
+          "D": {
+            "precision": 0.9976197560249925,
+            "recall": 0.45452696932315745,
+            "f1": 0.6245168980899432,
+            "support": 73769
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2015213",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.5502235469448584,
+        "macro_f1": 0.7725604191240104,
+        "n_gt_spells": 296,
+        "n_pred_spells": 375,
+        "per_class": {
+          "H": {
+            "precision": 0.6750790120566545,
+            "recall": 0.8737387510226343,
+            "f1": 0.7616682955175784,
+            "support": 33003
+          },
+          "A": {
+            "precision": 0.6717721628896414,
+            "recall": 0.9000884173297966,
+            "f1": 0.7693485675646112,
+            "support": 42978
+          },
+          "D": {
+            "precision": 0.9801011122345804,
+            "recall": 0.6569968414916835,
+            "f1": 0.7866643942898416,
+            "support": 73769
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2015213",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.4261248185776488,
+        "macro_f1": 0.6669689346328419,
+        "n_gt_spells": 296,
+        "n_pred_spells": 393,
+        "per_class": {
+          "H": {
+            "precision": 0.5506285937043173,
+            "recall": 0.8559827894433839,
+            "f1": 0.6701617877307017,
+            "support": 33003
+          },
+          "A": {
+            "precision": 0.5919458913161781,
+            "recall": 0.8858253059704966,
+            "f1": 0.7096641905809326,
+            "support": 42978
+          },
+          "D": {
+            "precision": 0.9817462642836214,
+            "recall": 0.45421518524041266,
+            "f1": 0.6210808255868915,
+            "support": 73769
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2015213",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.475925925925926,
+        "macro_f1": 0.7512468674894147,
+        "n_gt_spells": 296,
+        "n_pred_spells": 352,
+        "per_class": {
+          "H": {
+            "precision": 0.6594634873323398,
+            "recall": 0.8044723206981184,
+            "f1": 0.7247860447975103,
+            "support": 33003
+          },
+          "A": {
+            "precision": 0.6573553126679806,
+            "recall": 0.8536227837498255,
+            "f1": 0.7427420334453576,
+            "support": 42978
+          },
+          "D": {
+            "precision": 0.9333271236959761,
+            "recall": 0.6791606230259323,
+            "f1": 0.7862125242253764,
+            "support": 73769
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2016236",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.5179063360881544,
+        "macro_f1": 0.7195151714219593,
+        "n_gt_spells": 300,
+        "n_pred_spells": 426,
+        "per_class": {
+          "H": {
+            "precision": 0.6546080964685616,
+            "recall": 0.8895362447004967,
+            "f1": 0.7542010320645701,
+            "support": 38447
+          },
+          "A": {
+            "precision": 0.6162865403148089,
+            "recall": 0.8904618240891158,
+            "f1": 0.7284290460370193,
+            "support": 43090
+          },
+          "D": {
+            "precision": 0.9889310296389943,
+            "recall": 0.5134110234382976,
+            "f1": 0.6759154361642887,
+            "support": 68563
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2016236",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.5362193362193362,
+        "macro_f1": 0.7887873794205028,
+        "n_gt_spells": 300,
+        "n_pred_spells": 393,
+        "per_class": {
+          "H": {
+            "precision": 0.7070882852292021,
+            "recall": 0.8665955731266418,
+            "f1": 0.7787581661154417,
+            "support": 38447
+          },
+          "A": {
+            "precision": 0.6924642464246424,
+            "recall": 0.8764678579716871,
+            "f1": 0.7736761241421695,
+            "support": 43090
+          },
+          "D": {
+            "precision": 0.9829892650701899,
+            "recall": 0.6944853638259703,
+            "f1": 0.8139278480038973,
+            "support": 68563
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2016236",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.4482468443197757,
+        "macro_f1": 0.6955851409343206,
+        "n_gt_spells": 300,
+        "n_pred_spells": 413,
+        "per_class": {
+          "H": {
+            "precision": 0.6381356749975876,
+            "recall": 0.8600150857023955,
+            "f1": 0.7326449668742107,
+            "support": 38447
+          },
+          "A": {
+            "precision": 0.5858372760412627,
+            "recall": 0.8764446507310281,
+            "f1": 0.7022639579749894,
+            "support": 43090
+          },
+          "D": {
+            "precision": 0.9866646954464814,
+            "recall": 0.4866910724443213,
+            "f1": 0.6518464979537619,
+            "support": 68563
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2016236",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.47773049645390075,
+        "macro_f1": 0.7422523898893885,
+        "n_gt_spells": 300,
+        "n_pred_spells": 405,
+        "per_class": {
+          "H": {
+            "precision": 0.6828589500316256,
+            "recall": 0.8424064296304002,
+            "f1": 0.7542881097383466,
+            "support": 38447
+          },
+          "A": {
+            "precision": 0.6352200125978583,
+            "recall": 0.8191227663030866,
+            "f1": 0.715544067710709,
+            "support": 43090
+          },
+          "D": {
+            "precision": 0.92932809680501,
+            "recall": 0.6384784796464565,
+            "f1": 0.7569249922191098,
+            "support": 68563
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2017461",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.47055630936227955,
+        "macro_f1": 0.7494147778166437,
+        "n_gt_spells": 283,
+        "n_pred_spells": 454,
+        "per_class": {
+          "H": {
+            "precision": 0.648294701986755,
+            "recall": 0.8838652882488375,
+            "f1": 0.7479704303642719,
+            "support": 44302
+          },
+          "A": {
+            "precision": 0.6207549617330393,
+            "recall": 0.8789259082393565,
+            "f1": 0.7276182946113612,
+            "support": 27223
+          },
+          "D": {
+            "precision": 0.9971810089020772,
+            "recall": 0.630656836461126,
+            "f1": 0.7726556084742979,
+            "support": 74600
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2017461",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.5547058823529412,
+        "macro_f1": 0.7985240543769351,
+        "n_gt_spells": 283,
+        "n_pred_spells": 397,
+        "per_class": {
+          "H": {
+            "precision": 0.7192755498059509,
+            "recall": 0.878515642634644,
+            "f1": 0.7909604519774011,
+            "support": 44302
+          },
+          "A": {
+            "precision": 0.6664317925591883,
+            "recall": 0.8685670205341072,
+            "f1": 0.7541903896145319,
+            "support": 27223
+          },
+          "D": {
+            "precision": 0.9862916777217653,
+            "recall": 0.7474530831099195,
+            "f1": 0.8504213215388722,
+            "support": 74600
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2017461",
+        "omitted_provider": "SkillCorner",
+        "kind": "control",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.42585969738651996,
+        "macro_f1": 0.7296980115317028,
+        "n_gt_spells": 283,
+        "n_pred_spells": 444,
+        "per_class": {
+          "H": {
+            "precision": 0.637038895859473,
+            "recall": 0.8595323010247844,
+            "f1": 0.7317466875486419,
+            "support": 44302
+          },
+          "A": {
+            "precision": 0.5850184407986774,
+            "recall": 0.8448738199316754,
+            "f1": 0.6913342751510415,
+            "support": 27223
+          },
+          "D": {
+            "precision": 0.9904751780588923,
+            "recall": 0.6244906166219839,
+            "f1": 0.7660130718954249,
+            "support": 74600
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2017461",
+        "omitted_provider": "SkillCorner",
+        "kind": "candidate",
+        "scenario": "label_blind_seed7",
+        "spell_f1_mean": 0.504035874439462,
+        "macro_f1": 0.7688328473523266,
+        "n_gt_spells": 283,
+        "n_pred_spells": 386,
+        "per_class": {
+          "H": {
+            "precision": 0.7352756702073849,
+            "recall": 0.8203015665206989,
+            "f1": 0.7754649140589158,
+            "support": 44302
+          },
+          "A": {
+            "precision": 0.5955503512880562,
+            "recall": 0.8407229181207068,
+            "f1": 0.697211094694835,
+            "support": 27223
+          },
+          "D": {
+            "precision": 0.950660717350266,
+            "recall": 0.7425603217158177,
+            "f1": 0.8338225333032288,
+            "support": 74600
+          }
+        }
+      }
+    ],
+    "train_vs_cv": [
+      {
+        "game": "original/idsse_J03WMX",
+        "provider": "DFL",
+        "scope": "full_fit_training",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.6152727272727273,
+        "macro_f1": 0.9246879329040443,
+        "n_gt_spells": 511,
+        "n_pred_spells": 314,
+        "per_class": {
+          "H": {
+            "precision": 0.908153825822651,
+            "recall": 0.8785252230830202,
+            "f1": 0.893093858030307,
+            "support": 39111
+          },
+          "A": {
+            "precision": 0.9145703338806787,
+            "recall": 0.9030437978295646,
+            "f1": 0.9087705176595998,
+            "support": 46258
+          },
+          "D": {
+            "precision": 0.9577309188721841,
+            "recall": 0.9871117858675204,
+            "f1": 0.9721994230222258,
+            "support": 60598
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WMX",
+        "provider": "DFL",
+        "scope": "wholefold_out",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.6004866180048661,
+        "macro_f1": 0.9193547266750405,
+        "n_gt_spells": 511,
+        "n_pred_spells": 311,
+        "per_class": {
+          "H": {
+            "precision": 0.9024021234240213,
+            "recall": 0.869269514970213,
+            "f1": 0.8855260073450889,
+            "support": 39111
+          },
+          "A": {
+            "precision": 0.9168666666666667,
+            "recall": 0.8919322063210688,
+            "f1": 0.904227574568805,
+            "support": 46258
+          },
+          "D": {
+            "precision": 0.9477027112431271,
+            "recall": 0.9898346480081851,
+            "f1": 0.9683105981112278,
+            "support": 60598
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WN1",
+        "provider": "DFL",
+        "scope": "full_fit_training",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.6512396694214876,
+        "macro_f1": 0.9128745207322665,
+        "n_gt_spells": 500,
+        "n_pred_spells": 347,
+        "per_class": {
+          "H": {
+            "precision": 0.9010758858126524,
+            "recall": 0.8623321710002471,
+            "f1": 0.8812784106852237,
+            "support": 36421
+          },
+          "A": {
+            "precision": 0.8724628807592224,
+            "recall": 0.8918200025034423,
+            "f1": 0.8820352516983643,
+            "support": 31956
+          },
+          "D": {
+            "precision": 0.969665455625937,
+            "recall": 0.9810204416265851,
+            "f1": 0.9753098998132111,
+            "support": 73184
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WN1",
+        "provider": "DFL",
+        "scope": "wholefold_out",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.622864019253911,
+        "macro_f1": 0.8989266527663785,
+        "n_gt_spells": 500,
+        "n_pred_spells": 331,
+        "per_class": {
+          "H": {
+            "precision": 0.8904355375488352,
+            "recall": 0.8448148046456715,
+            "f1": 0.867025473399459,
+            "support": 36421
+          },
+          "A": {
+            "precision": 0.8395587495933516,
+            "recall": 0.8883464764050569,
+            "f1": 0.8632638477094071,
+            "support": 31956
+          },
+          "D": {
+            "precision": 0.9664312160999002,
+            "recall": 0.9665500655881067,
+            "f1": 0.9664906371902691,
+            "support": 73184
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WOH",
+        "provider": "DFL",
+        "scope": "full_fit_training",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.7114845938375349,
+        "macro_f1": 0.9271846984046102,
+        "n_gt_spells": 402,
+        "n_pred_spells": 312,
+        "per_class": {
+          "H": {
+            "precision": 0.9082618163186884,
+            "recall": 0.9061493635945407,
+            "f1": 0.9072043602308058,
+            "support": 39126
+          },
+          "A": {
+            "precision": 0.8962460425146992,
+            "recall": 0.9056948718730004,
+            "f1": 0.9009456838021339,
+            "support": 32819
+          },
+          "D": {
+            "precision": 0.9753130095056449,
+            "recall": 0.9715025509813234,
+            "f1": 0.9734040511808908,
+            "support": 65269
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WOH",
+        "provider": "DFL",
+        "scope": "wholefold_out",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.6821173104434907,
+        "macro_f1": 0.9181208242769512,
+        "n_gt_spells": 402,
+        "n_pred_spells": 297,
+        "per_class": {
+          "H": {
+            "precision": 0.9015864826518767,
+            "recall": 0.8932679036957522,
+            "f1": 0.8974079161905739,
+            "support": 39126
+          },
+          "A": {
+            "precision": 0.8763329383886256,
+            "recall": 0.9014595203997684,
+            "f1": 0.8887186650445336,
+            "support": 32819
+          },
+          "D": {
+            "precision": 0.9725764813183075,
+            "recall": 0.9639338736613093,
+            "f1": 0.9682358915957462,
+            "support": 65269
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WOY",
+        "provider": "DFL",
+        "scope": "full_fit_training",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.6809045226130653,
+        "macro_f1": 0.9181076121931193,
+        "n_gt_spells": 456,
+        "n_pred_spells": 340,
+        "per_class": {
+          "H": {
+            "precision": 0.8896342268585765,
+            "recall": 0.8908812017348989,
+            "f1": 0.8902572776404984,
+            "support": 37812
+          },
+          "A": {
+            "precision": 0.8980749219562956,
+            "recall": 0.8972812808649997,
+            "f1": 0.8976779259952674,
+            "support": 38474
+          },
+          "D": {
+            "precision": 0.9665262490374598,
+            "recall": 0.9662490566037736,
+            "f1": 0.966387632943592,
+            "support": 66250
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WOY",
+        "provider": "DFL",
+        "scope": "wholefold_out",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.656060606060606,
+        "macro_f1": 0.9054551744938796,
+        "n_gt_spells": 456,
+        "n_pred_spells": 336,
+        "per_class": {
+          "H": {
+            "precision": 0.8708036890645586,
+            "recall": 0.873981804718079,
+            "f1": 0.8723898524326179,
+            "support": 37812
+          },
+          "A": {
+            "precision": 0.8750799130545966,
+            "recall": 0.8894318240889951,
+            "f1": 0.8821975019012878,
+            "support": 38474
+          },
+          "D": {
+            "precision": 0.9674256654602098,
+            "recall": 0.9561962264150944,
+            "f1": 0.961778169147733,
+            "support": 66250
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WPY",
+        "provider": "DFL",
+        "scope": "full_fit_training",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.6773925104022192,
+        "macro_f1": 0.92807977953683,
+        "n_gt_spells": 421,
+        "n_pred_spells": 300,
+        "per_class": {
+          "H": {
+            "precision": 0.9279510346837657,
+            "recall": 0.9328996718237225,
+            "f1": 0.9304187731961776,
+            "support": 51192
+          },
+          "A": {
+            "precision": 0.8971300910809418,
+            "recall": 0.862362891502577,
+            "f1": 0.8794029951316477,
+            "support": 30268
+          },
+          "D": {
+            "precision": 0.9677384959863521,
+            "recall": 0.9811894796991553,
+            "f1": 0.9744175702826644,
+            "support": 64751
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WPY",
+        "provider": "DFL",
+        "scope": "wholefold_out",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.6617977528089888,
+        "macro_f1": 0.9247732542529978,
+        "n_gt_spells": 421,
+        "n_pred_spells": 291,
+        "per_class": {
+          "H": {
+            "precision": 0.9283681679913649,
+            "recall": 0.9240701672136271,
+            "f1": 0.9262141815227075,
+            "support": 51192
+          },
+          "A": {
+            "precision": 0.8854326024137344,
+            "recall": 0.8604797145500198,
+            "f1": 0.8727778429368497,
+            "support": 30268
+          },
+          "D": {
+            "precision": 0.967254446317644,
+            "recall": 0.9835369337925283,
+            "f1": 0.9753277382994364,
+            "support": 64751
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WQQ",
+        "provider": "DFL",
+        "scope": "full_fit_training",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.6858725761772854,
+        "macro_f1": 0.9273543176413072,
+        "n_gt_spells": 401,
+        "n_pred_spells": 321,
+        "per_class": {
+          "H": {
+            "precision": 0.8989355895196507,
+            "recall": 0.8894679989197948,
+            "f1": 0.8941767340844307,
+            "support": 37030
+          },
+          "A": {
+            "precision": 0.9267617719618149,
+            "recall": 0.9129157685643041,
+            "f1": 0.9197866655311538,
+            "support": 47322
+          },
+          "D": {
+            "precision": 0.9591132171264173,
+            "recall": 0.9772558757091373,
+            "f1": 0.9680995533083369,
+            "support": 57993
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WQQ",
+        "provider": "DFL",
+        "scope": "wholefold_out",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.6753173483779972,
+        "macro_f1": 0.9204817099760693,
+        "n_gt_spells": 401,
+        "n_pred_spells": 308,
+        "per_class": {
+          "H": {
+            "precision": 0.8891644204851752,
+            "recall": 0.8908452605995139,
+            "f1": 0.8900040469445568,
+            "support": 37030
+          },
+          "A": {
+            "precision": 0.9173488022343969,
+            "recall": 0.9022864629559191,
+            "f1": 0.9097552920621732,
+            "support": 47322
+          },
+          "D": {
+            "precision": 0.9558943781942079,
+            "recall": 0.9675478074940079,
+            "f1": 0.9616857909214778,
+            "support": 57993
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WR9",
+        "provider": "DFL",
+        "scope": "full_fit_training",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.7220858895705522,
+        "macro_f1": 0.944974832618763,
+        "n_gt_spells": 370,
+        "n_pred_spells": 282,
+        "per_class": {
+          "H": {
+            "precision": 0.9450601496637302,
+            "recall": 0.9370010706437011,
+            "f1": 0.9410133554666867,
+            "support": 53239
+          },
+          "A": {
+            "precision": 0.9241576605212969,
+            "recall": 0.9063815194687782,
+            "f1": 0.9151832790342634,
+            "support": 32077
+          },
+          "D": {
+            "precision": 0.9703508351314633,
+            "recall": 0.9872507886948321,
+            "f1": 0.9787278633553389,
+            "support": 61494
+          }
+        }
+      },
+      {
+        "game": "original/idsse_J03WR9",
+        "provider": "DFL",
+        "scope": "wholefold_out",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.7046728971962617,
+        "macro_f1": 0.9340404328511993,
+        "n_gt_spells": 370,
+        "n_pred_spells": 272,
+        "per_class": {
+          "H": {
+            "precision": 0.9259363033529466,
+            "recall": 0.9310843554537087,
+            "f1": 0.9285031936613782,
+            "support": 53239
+          },
+          "A": {
+            "precision": 0.9127895906061568,
+            "recall": 0.896654924088911,
+            "f1": 0.9046503216066177,
+            "support": 32077
+          },
+          "D": {
+            "precision": 0.9668420626568445,
+            "recall": 0.9711028718248935,
+            "f1": 0.9689677832856018,
+            "support": 61494
+          }
+        }
+      },
+      {
+        "game": "original/metrica_1",
+        "provider": "Metrica",
+        "scope": "full_fit_training",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.8293460925039872,
+        "macro_f1": 0.9397819222407316,
+        "n_gt_spells": 326,
+        "n_pred_spells": 301,
+        "per_class": {
+          "H": {
+            "precision": 0.910404866792532,
+            "recall": 0.96663474174221,
+            "f1": 0.9376775740814761,
+            "support": 44897
+          },
+          "A": {
+            "precision": 0.9140802598005103,
+            "recall": 0.9528945204816947,
+            "f1": 0.9330839174086002,
+            "support": 41354
+          },
+          "D": {
+            "precision": 0.9881975436137647,
+            "recall": 0.9120245085524636,
+            "f1": 0.9485842752321186,
+            "support": 58755
+          }
+        }
+      },
+      {
+        "game": "original/metrica_1",
+        "provider": "Metrica",
+        "scope": "wholefold_out",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.6920127795527158,
+        "macro_f1": 0.8438891643041452,
+        "n_gt_spells": 326,
+        "n_pred_spells": 300,
+        "per_class": {
+          "H": {
+            "precision": 0.8695487833687692,
+            "recall": 0.8198320600485556,
+            "f1": 0.8439588659474704,
+            "support": 44897
+          },
+          "A": {
+            "precision": 0.8932203389830509,
+            "recall": 0.7901049475262368,
+            "f1": 0.8385043754972156,
+            "support": 41354
+          },
+          "D": {
+            "precision": 0.8020455095618494,
+            "recall": 0.902255127223215,
+            "f1": 0.8492042514677495,
+            "support": 58755
+          }
+        }
+      },
+      {
+        "game": "original/metrica_2",
+        "provider": "Metrica",
+        "scope": "full_fit_training",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.813747954173486,
+        "macro_f1": 0.9487519088880986,
+        "n_gt_spells": 326,
+        "n_pred_spells": 285,
+        "per_class": {
+          "H": {
+            "precision": 0.952506241597849,
+            "recall": 0.9568799197407007,
+            "f1": 0.9546880714519452,
+            "support": 51832
+          },
+          "A": {
+            "precision": 0.9216846726638833,
+            "recall": 0.9611949007989945,
+            "f1": 0.9410252466436685,
+            "support": 44556
+          },
+          "D": {
+            "precision": 0.9744955419990615,
+            "recall": 0.927738563259471,
+            "f1": 0.9505424085686821,
+            "support": 44768
+          }
+        }
+      },
+      {
+        "game": "original/metrica_2",
+        "provider": "Metrica",
+        "scope": "wholefold_out",
+        "scenario": "matched_seed0",
+        "spell_f1_mean": 0.7105263157894737,
+        "macro_f1": 0.8270623856894689,
+        "n_gt_spells": 326,
+        "n_pred_spells": 282,
+        "per_class": {
+          "H": {
+            "precision": 0.9201407811080835,
+            "recall": 0.7818143231980244,
+            "f1": 0.8453563084112149,
+            "support": 51832
+          },
+          "A": {
+            "precision": 0.887037545901926,
+            "recall": 0.7969521501032408,
+            "f1": 0.8395852790617944,
+            "support": 44556
+          },
+          "D": {
+            "precision": 0.7103442235263204,
+            "recall": 0.9057809149392423,
+            "f1": 0.7962455695953973,
+            "support": 44768
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1874553",
+        "provider": "SkillCorner",
+        "scope": "full_fit_training",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.7618661257606492,
+        "macro_f1": 0.919425022766208,
+        "n_gt_spells": 250,
+        "n_pred_spells": 243,
+        "per_class": {
+          "H": {
+            "precision": 0.8727107613137581,
+            "recall": 0.9063187676831185,
+            "f1": 0.8891973166782328,
+            "support": 31810
+          },
+          "A": {
+            "precision": 0.9041088073045463,
+            "recall": 0.9507321171387422,
+            "f1": 0.9268345001072522,
+            "support": 49992
+          },
+          "D": {
+            "precision": 0.9697672632306629,
+            "recall": 0.9162384974890417,
+            "f1": 0.9422432515131388,
+            "support": 68898
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1874553",
+        "provider": "SkillCorner",
+        "scope": "wholefold_out",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.7211618257261411,
+        "macro_f1": 0.9045029544901112,
+        "n_gt_spells": 250,
+        "n_pred_spells": 232,
+        "per_class": {
+          "H": {
+            "precision": 0.8445979714831692,
+            "recall": 0.9031436655139893,
+            "f1": 0.8728902392707937,
+            "support": 31810
+          },
+          "A": {
+            "precision": 0.883941401511617,
+            "recall": 0.9474715954552728,
+            "f1": 0.914604593683926,
+            "support": 49992
+          },
+          "D": {
+            "precision": 0.9685578446909667,
+            "recall": 0.8870504223634939,
+            "f1": 0.9260140305156139,
+            "support": 68898
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1886347",
+        "provider": "SkillCorner",
+        "scope": "full_fit_training",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.7514348785871965,
+        "macro_f1": 0.9208064252375134,
+        "n_gt_spells": 237,
+        "n_pred_spells": 216,
+        "per_class": {
+          "H": {
+            "precision": 0.9005114288696379,
+            "recall": 0.9406262265056038,
+            "f1": 0.9201318160973477,
+            "support": 45862
+          },
+          "A": {
+            "precision": 0.8798988621997471,
+            "recall": 0.9180712296643705,
+            "f1": 0.8985798307272989,
+            "support": 34115
+          },
+          "D": {
+            "precision": 0.9696411856474259,
+            "recall": 0.9191251497271639,
+            "f1": 0.9437076288878935,
+            "support": 67623
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1886347",
+        "provider": "SkillCorner",
+        "scope": "wholefold_out",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.7415929203539824,
+        "macro_f1": 0.9181647659352663,
+        "n_gt_spells": 237,
+        "n_pred_spells": 215,
+        "per_class": {
+          "H": {
+            "precision": 0.9008092485549133,
+            "recall": 0.9344555405346474,
+            "f1": 0.9173239723021929,
+            "support": 45862
+          },
+          "A": {
+            "precision": 0.8625809935205183,
+            "recall": 0.936538179686355,
+            "f1": 0.8980394912514931,
+            "support": 34115
+          },
+          "D": {
+            "precision": 0.9737080257204096,
+            "recall": 0.9069251585998847,
+            "f1": 0.9391308342521132,
+            "support": 67623
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1899585",
+        "provider": "SkillCorner",
+        "scope": "full_fit_training",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.7115384615384615,
+        "macro_f1": 0.9060705283248504,
+        "n_gt_spells": 278,
+        "n_pred_spells": 242,
+        "per_class": {
+          "H": {
+            "precision": 0.8980148226574908,
+            "recall": 0.9077701075614063,
+            "f1": 0.9028661149107167,
+            "support": 37374
+          },
+          "A": {
+            "precision": 0.850581545619023,
+            "recall": 0.893562138532135,
+            "f1": 0.8715422608879884,
+            "support": 36829
+          },
+          "D": {
+            "precision": 0.9581044047857763,
+            "recall": 0.9299226697114387,
+            "f1": 0.9438032091758463,
+            "support": 77072
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1899585",
+        "provider": "SkillCorner",
+        "scope": "wholefold_out",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.7049360146252285,
+        "macro_f1": 0.8988407709937745,
+        "n_gt_spells": 278,
+        "n_pred_spells": 269,
+        "per_class": {
+          "H": {
+            "precision": 0.8890405565034781,
+            "recall": 0.9061914700058864,
+            "f1": 0.8975340868436047,
+            "support": 37374
+          },
+          "A": {
+            "precision": 0.8244041002840559,
+            "recall": 0.9062423633549649,
+            "f1": 0.8633882608583181,
+            "support": 36829
+          },
+          "D": {
+            "precision": 0.9637664213494739,
+            "recall": 0.9090331118953706,
+            "f1": 0.9355999652794008,
+            "support": 77072
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1925299",
+        "provider": "SkillCorner",
+        "scope": "full_fit_training",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.6645290581162324,
+        "macro_f1": 0.8973893526709199,
+        "n_gt_spells": 258,
+        "n_pred_spells": 241,
+        "per_class": {
+          "H": {
+            "precision": 0.882069025170833,
+            "recall": 0.9457283822383796,
+            "f1": 0.9127901252248947,
+            "support": 53914
+          },
+          "A": {
+            "precision": 0.8664549653579676,
+            "recall": 0.8528885226336279,
+            "f1": 0.8596182211338804,
+            "support": 35191
+          },
+          "D": {
+            "precision": 0.945041560365402,
+            "recall": 0.8957953038458538,
+            "f1": 0.9197597116539847,
+            "support": 64095
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1925299",
+        "provider": "SkillCorner",
+        "scope": "wholefold_out",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.64,
+        "macro_f1": 0.8935628338976241,
+        "n_gt_spells": 258,
+        "n_pred_spells": 242,
+        "per_class": {
+          "H": {
+            "precision": 0.8748519948519948,
+            "recall": 0.9456170938902697,
+            "f1": 0.9088591573148883,
+            "support": 53914
+          },
+          "A": {
+            "precision": 0.8581491515756452,
+            "recall": 0.8550765820806456,
+            "f1": 0.8566101115918925,
+            "support": 35191
+          },
+          "D": {
+            "precision": 0.9475943869027731,
+            "recall": 0.8849832280209065,
+            "f1": 0.9152192327860916,
+            "support": 64095
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1927964",
+        "provider": "SkillCorner",
+        "scope": "full_fit_training",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.831527093596059,
+        "macro_f1": 0.9490439573292626,
+        "n_gt_spells": 205,
+        "n_pred_spells": 201,
+        "per_class": {
+          "H": {
+            "precision": 0.943063882571842,
+            "recall": 0.943278396989185,
+            "f1": 0.943171127583248,
+            "support": 48359
+          },
+          "A": {
+            "precision": 0.9337909992372235,
+            "recall": 0.9639370078740157,
+            "f1": 0.9486245641224332,
+            "support": 44450
+          },
+          "D": {
+            "precision": 0.9682780588345512,
+            "recall": 0.9427356976065382,
+            "f1": 0.9553361802821067,
+            "support": 54816
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1927964",
+        "provider": "SkillCorner",
+        "scope": "wholefold_out",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.7911764705882354,
+        "macro_f1": 0.9390063008883014,
+        "n_gt_spells": 205,
+        "n_pred_spells": 203,
+        "per_class": {
+          "H": {
+            "precision": 0.9267197387221882,
+            "recall": 0.9388118033871669,
+            "f1": 0.932726581680346,
+            "support": 48359
+          },
+          "A": {
+            "precision": 0.922822659562901,
+            "recall": 0.9546906636670416,
+            "f1": 0.9384862055620059,
+            "support": 44450
+          },
+          "D": {
+            "precision": 0.9652611585944919,
+            "recall": 0.9271198190309399,
+            "f1": 0.9458061154225522,
+            "support": 54816
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1953632",
+        "provider": "SkillCorner",
+        "scope": "full_fit_training",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.7489559164733178,
+        "macro_f1": 0.9255823886568434,
+        "n_gt_spells": 219,
+        "n_pred_spells": 212,
+        "per_class": {
+          "H": {
+            "precision": 0.8732980599647266,
+            "recall": 0.9119640489170473,
+            "f1": 0.892212331975927,
+            "support": 27148
+          },
+          "A": {
+            "precision": 0.9250729636508358,
+            "recall": 0.956071076011846,
+            "f1": 0.9403166212681031,
+            "support": 54702
+          },
+          "D": {
+            "precision": 0.9668934958062985,
+            "recall": 0.9225821064552662,
+            "f1": 0.9442182127265001,
+            "support": 66225
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1953632",
+        "provider": "SkillCorner",
+        "scope": "wholefold_out",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.7290780141843971,
+        "macro_f1": 0.9225813384654021,
+        "n_gt_spells": 219,
+        "n_pred_spells": 204,
+        "per_class": {
+          "H": {
+            "precision": 0.8755799539578537,
+            "recall": 0.9106379843819066,
+            "f1": 0.8927649278659516,
+            "support": 27148
+          },
+          "A": {
+            "precision": 0.9170727416659337,
+            "recall": 0.9529998903147965,
+            "f1": 0.9346912063973033,
+            "support": 54702
+          },
+          "D": {
+            "precision": 0.9643939995237717,
+            "recall": 0.9173574933937335,
+            "f1": 0.9402878811329516,
+            "support": 66225
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1959846",
+        "provider": "SkillCorner",
+        "scope": "full_fit_training",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.68,
+        "macro_f1": 0.9188989292389916,
+        "n_gt_spells": 283,
+        "n_pred_spells": 237,
+        "per_class": {
+          "H": {
+            "precision": 0.8718639798488665,
+            "recall": 0.9301819354491951,
+            "f1": 0.900079312452055,
+            "support": 37211
+          },
+          "A": {
+            "precision": 0.8755230902562833,
+            "recall": 0.9483170175673864,
+            "f1": 0.9104673619157977,
+            "support": 37285
+          },
+          "D": {
+            "precision": 0.9860658212560387,
+            "recall": 0.9093402386222835,
+            "f1": 0.9461501133491226,
+            "support": 71829
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1959846",
+        "provider": "SkillCorner",
+        "scope": "wholefold_out",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.6879699248120301,
+        "macro_f1": 0.9178079134099365,
+        "n_gt_spells": 283,
+        "n_pred_spells": 249,
+        "per_class": {
+          "H": {
+            "precision": 0.8731207004377736,
+            "recall": 0.9379753298755744,
+            "f1": 0.9043868058974426,
+            "support": 37211
+          },
+          "A": {
+            "precision": 0.8703204255845602,
+            "recall": 0.9433820571275312,
+            "f1": 0.9053796653796654,
+            "support": 37285
+          },
+          "D": {
+            "precision": 0.9858345340107681,
+            "recall": 0.9049409013072715,
+            "f1": 0.9436572689527017,
+            "support": 71829
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1986691",
+        "provider": "SkillCorner",
+        "scope": "full_fit_training",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.7097046413502109,
+        "macro_f1": 0.9154467658251365,
+        "n_gt_spells": 240,
+        "n_pred_spells": 234,
+        "per_class": {
+          "H": {
+            "precision": 0.8971342794759826,
+            "recall": 0.9034465699208444,
+            "f1": 0.9002793602103418,
+            "support": 36384
+          },
+          "A": {
+            "precision": 0.8891999544782064,
+            "recall": 0.9185319289005925,
+            "f1": 0.9036279736778192,
+            "support": 42532
+          },
+          "D": {
+            "precision": 0.9540834575260805,
+            "recall": 0.9310635698599457,
+            "f1": 0.9424329635872485,
+            "support": 68759
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1986691",
+        "provider": "SkillCorner",
+        "scope": "wholefold_out",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.702771855010661,
+        "macro_f1": 0.9031942016226893,
+        "n_gt_spells": 240,
+        "n_pred_spells": 229,
+        "per_class": {
+          "H": {
+            "precision": 0.8782364729458918,
+            "recall": 0.9033641160949868,
+            "f1": 0.8906230947445434,
+            "support": 36384
+          },
+          "A": {
+            "precision": 0.8741657207718502,
+            "recall": 0.9053653719552337,
+            "f1": 0.8894920422258669,
+            "support": 42532
+          },
+          "D": {
+            "precision": 0.9474320241691843,
+            "recall": 0.9121714975494117,
+            "f1": 0.9294674678976578,
+            "support": 68759
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1996435",
+        "provider": "SkillCorner",
+        "scope": "full_fit_training",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.7215189873417721,
+        "macro_f1": 0.9115116544701672,
+        "n_gt_spells": 234,
+        "n_pred_spells": 240,
+        "per_class": {
+          "H": {
+            "precision": 0.8982122905027933,
+            "recall": 0.9264295756793509,
+            "f1": 0.9121027491291966,
+            "support": 43387
+          },
+          "A": {
+            "precision": 0.8456295206571043,
+            "recall": 0.9350413447200759,
+            "f1": 0.8880906398867,
+            "support": 36885
+          },
+          "D": {
+            "precision": 0.9763961344394082,
+            "recall": 0.8957601054481547,
+            "f1": 0.9343415743946053,
+            "support": 63728
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1996435",
+        "provider": "SkillCorner",
+        "scope": "wholefold_out",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.7220338983050848,
+        "macro_f1": 0.9047604828171956,
+        "n_gt_spells": 234,
+        "n_pred_spells": 238,
+        "per_class": {
+          "H": {
+            "precision": 0.8858279902719434,
+            "recall": 0.9234563348468435,
+            "f1": 0.9042508773711591,
+            "support": 43387
+          },
+          "A": {
+            "precision": 0.83922618323397,
+            "recall": 0.9350142334282229,
+            "f1": 0.8845344960246216,
+            "support": 36885
+          },
+          "D": {
+            "precision": 0.974061551798873,
+            "recall": 0.8815434345970374,
+            "f1": 0.925496075055806,
+            "support": 63728
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1996436",
+        "provider": "SkillCorner",
+        "scope": "full_fit_training",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.70061099796334,
+        "macro_f1": 0.9109836218827959,
+        "n_gt_spells": 252,
+        "n_pred_spells": 239,
+        "per_class": {
+          "H": {
+            "precision": 0.8938412529864613,
+            "recall": 0.9220636963605991,
+            "f1": 0.9077331607963659,
+            "support": 36517
+          },
+          "A": {
+            "precision": 0.8306517909571345,
+            "recall": 0.9114103472714387,
+            "f1": 0.8691591656170317,
+            "support": 31042
+          },
+          "D": {
+            "precision": 0.9813228585909782,
+            "recall": 0.9320624375684491,
+            "f1": 0.9560585392349903,
+            "support": 83091
+          }
+        }
+      },
+      {
+        "game": "skillcorner/1996436",
+        "provider": "SkillCorner",
+        "scope": "wholefold_out",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.7015625,
+        "macro_f1": 0.9042546088450489,
+        "n_gt_spells": 252,
+        "n_pred_spells": 260,
+        "per_class": {
+          "H": {
+            "precision": 0.8908801696712619,
+            "recall": 0.9202289344688775,
+            "f1": 0.9053167557956275,
+            "support": 36517
+          },
+          "A": {
+            "precision": 0.8184029304029304,
+            "recall": 0.8996842986920945,
+            "f1": 0.8571209354427856,
+            "support": 31042
+          },
+          "D": {
+            "precision": 0.9761690248080706,
+            "recall": 0.9258162737239893,
+            "f1": 0.9503261352967338,
+            "support": 83091
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2006229",
+        "provider": "SkillCorner",
+        "scope": "full_fit_training",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.7282051282051282,
+        "macro_f1": 0.9229800981867374,
+        "n_gt_spells": 244,
+        "n_pred_spells": 224,
+        "per_class": {
+          "H": {
+            "precision": 0.9215366001209921,
+            "recall": 0.9523799599866623,
+            "f1": 0.9367044499559309,
+            "support": 47984
+          },
+          "A": {
+            "precision": 0.8606352807714124,
+            "recall": 0.9090255519276278,
+            "f1": 0.8841688154655245,
+            "support": 33383
+          },
+          "D": {
+            "precision": 0.9741604109047807,
+            "recall": 0.9233350310075197,
+            "f1": 0.9480670291387571,
+            "support": 66758
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2006229",
+        "provider": "SkillCorner",
+        "scope": "wholefold_out",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.7181818181818181,
+        "macro_f1": 0.9131090147397415,
+        "n_gt_spells": 244,
+        "n_pred_spells": 240,
+        "per_class": {
+          "H": {
+            "precision": 0.919438270357648,
+            "recall": 0.9482952650883628,
+            "f1": 0.9336438434864682,
+            "support": 47984
+          },
+          "A": {
+            "precision": 0.8314781895255026,
+            "recall": 0.9107330078183506,
+            "f1": 0.8693029107336879,
+            "support": 33383
+          },
+          "D": {
+            "precision": 0.971741582084743,
+            "recall": 0.9035022019832829,
+            "f1": 0.9363802899990685,
+            "support": 66758
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2006363",
+        "provider": "SkillCorner",
+        "scope": "full_fit_training",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.7898947368421052,
+        "macro_f1": 0.9338908923763592,
+        "n_gt_spells": 235,
+        "n_pred_spells": 240,
+        "per_class": {
+          "H": {
+            "precision": 0.9194956353055286,
+            "recall": 0.9557093890718462,
+            "f1": 0.9372528341682046,
+            "support": 44637
+          },
+          "A": {
+            "precision": 0.8900683131897005,
+            "recall": 0.9312477664458312,
+            "f1": 0.9101925117884923,
+            "support": 36377
+          },
+          "D": {
+            "precision": 0.9801961404618792,
+            "recall": 0.9295990159163529,
+            "f1": 0.9542273311723809,
+            "support": 66661
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2006363",
+        "provider": "SkillCorner",
+        "scope": "wholefold_out",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.7594936708860759,
+        "macro_f1": 0.9252270752959179,
+        "n_gt_spells": 235,
+        "n_pred_spells": 239,
+        "per_class": {
+          "H": {
+            "precision": 0.9099187687045746,
+            "recall": 0.9536035127808768,
+            "f1": 0.9312491112156381,
+            "support": 44637
+          },
+          "A": {
+            "precision": 0.8731814651825006,
+            "recall": 0.9272617313137422,
+            "f1": 0.8994093884570773,
+            "support": 36377
+          },
+          "D": {
+            "precision": 0.9783827190235285,
+            "recall": 0.9138626783276579,
+            "f1": 0.9450227262150381,
+            "support": 66661
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2007448",
+        "provider": "SkillCorner",
+        "scope": "full_fit_training",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.7128089887640449,
+        "macro_f1": 0.9103901810091273,
+        "n_gt_spells": 226,
+        "n_pred_spells": 219,
+        "per_class": {
+          "H": {
+            "precision": 0.8568901795142555,
+            "recall": 0.910005887465306,
+            "f1": 0.8826496621300085,
+            "support": 35669
+          },
+          "A": {
+            "precision": 0.8795132354786099,
+            "recall": 0.9371708151752534,
+            "f1": 0.9074270625695721,
+            "support": 37403
+          },
+          "D": {
+            "precision": 0.9736408811095454,
+            "recall": 0.9106523488443076,
+            "f1": 0.9410938183278015,
+            "support": 72078
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2007448",
+        "provider": "SkillCorner",
+        "scope": "wholefold_out",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.7013333333333334,
+        "macro_f1": 0.9050241369229118,
+        "n_gt_spells": 226,
+        "n_pred_spells": 224,
+        "per_class": {
+          "H": {
+            "precision": 0.8491380444795368,
+            "recall": 0.9045109198463652,
+            "f1": 0.8759502606429193,
+            "support": 35669
+          },
+          "A": {
+            "precision": 0.8709430231120998,
+            "recall": 0.9420099991979253,
+            "f1": 0.9050836137583805,
+            "support": 37403
+          },
+          "D": {
+            "precision": 0.9716941529235382,
+            "recall": 0.8991925414134687,
+            "f1": 0.9340385363674357,
+            "support": 72078
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2007721",
+        "provider": "SkillCorner",
+        "scope": "full_fit_training",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.749498997995992,
+        "macro_f1": 0.9254133886650151,
+        "n_gt_spells": 248,
+        "n_pred_spells": 251,
+        "per_class": {
+          "H": {
+            "precision": 0.9002381519409384,
+            "recall": 0.9268358465121981,
+            "f1": 0.9133434007852612,
+            "support": 40785
+          },
+          "A": {
+            "precision": 0.8860175457597748,
+            "recall": 0.9585217819229958,
+            "f1": 0.9208446835813504,
+            "support": 42673
+          },
+          "D": {
+            "precision": 0.9817757428853577,
+            "recall": 0.9054179361504835,
+            "f1": 0.9420520816284338,
+            "support": 60392
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2007721",
+        "provider": "SkillCorner",
+        "scope": "wholefold_out",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.7237322515212983,
+        "macro_f1": 0.9173205369135359,
+        "n_gt_spells": 248,
+        "n_pred_spells": 245,
+        "per_class": {
+          "H": {
+            "precision": 0.8922496166096496,
+            "recall": 0.9272526664214785,
+            "f1": 0.90941445232656,
+            "support": 40785
+          },
+          "A": {
+            "precision": 0.8642608420386199,
+            "recall": 0.9596934829986173,
+            "f1": 0.9094805569743942,
+            "support": 42673
+          },
+          "D": {
+            "precision": 0.9875184911242604,
+            "recall": 0.8843058683269307,
+            "f1": 0.9330666014396534,
+            "support": 60392
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2010085",
+        "provider": "SkillCorner",
+        "scope": "full_fit_training",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.7025862068965517,
+        "macro_f1": 0.9141861916517969,
+        "n_gt_spells": 232,
+        "n_pred_spells": 232,
+        "per_class": {
+          "H": {
+            "precision": 0.9084474885844749,
+            "recall": 0.9505872984272348,
+            "f1": 0.9290397898628271,
+            "support": 50230
+          },
+          "A": {
+            "precision": 0.8314064362336114,
+            "recall": 0.9092745877598905,
+            "f1": 0.8685988232730443,
+            "support": 30686
+          },
+          "D": {
+            "precision": 0.9850256912160509,
+            "recall": 0.9079523072065435,
+            "f1": 0.944919961819519,
+            "support": 66509
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2010085",
+        "provider": "SkillCorner",
+        "scope": "wholefold_out",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.6749464668094218,
+        "macro_f1": 0.9012838824333,
+        "n_gt_spells": 232,
+        "n_pred_spells": 235,
+        "per_class": {
+          "H": {
+            "precision": 0.8938290102069483,
+            "recall": 0.9501493131594665,
+            "f1": 0.9211290711700845,
+            "support": 50230
+          },
+          "A": {
+            "precision": 0.8085701663967015,
+            "recall": 0.8947076842859936,
+            "f1": 0.8494608684890395,
+            "support": 30686
+          },
+          "D": {
+            "precision": 0.983237619642114,
+            "recall": 0.8881204047572508,
+            "f1": 0.9332617076407761,
+            "support": 66509
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2011166",
+        "provider": "SkillCorner",
+        "scope": "full_fit_training",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.7201596806387226,
+        "macro_f1": 0.9121630107362053,
+        "n_gt_spells": 271,
+        "n_pred_spells": 230,
+        "per_class": {
+          "H": {
+            "precision": 0.8583830885912538,
+            "recall": 0.8987598418544926,
+            "f1": 0.8781075638020402,
+            "support": 29593
+          },
+          "A": {
+            "precision": 0.8843240531728116,
+            "recall": 0.9224047718710757,
+            "f1": 0.9029630957563961,
+            "support": 38224
+          },
+          "D": {
+            "precision": 0.9741760372237301,
+            "recall": 0.9373694159785096,
+            "f1": 0.9554183726501795,
+            "support": 80408
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2011166",
+        "provider": "SkillCorner",
+        "scope": "wholefold_out",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.7166666666666666,
+        "macro_f1": 0.9100837397761463,
+        "n_gt_spells": 271,
+        "n_pred_spells": 233,
+        "per_class": {
+          "H": {
+            "precision": 0.8552771941166963,
+            "recall": 0.8940627851181022,
+            "f1": 0.8742400211472376,
+            "support": 29593
+          },
+          "A": {
+            "precision": 0.8776389060759807,
+            "recall": 0.9277155713687736,
+            "f1": 0.9019827290185555,
+            "support": 38224
+          },
+          "D": {
+            "precision": 0.9758860636014828,
+            "recall": 0.9331285444234405,
+            "f1": 0.9540284691626455,
+            "support": 80408
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2013725",
+        "provider": "SkillCorner",
+        "scope": "full_fit_training",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.7011308562197092,
+        "macro_f1": 0.8898752819130773,
+        "n_gt_spells": 306,
+        "n_pred_spells": 313,
+        "per_class": {
+          "H": {
+            "precision": 0.8600413009808983,
+            "recall": 0.8712638267827724,
+            "f1": 0.8656161910081708,
+            "support": 38241
+          },
+          "A": {
+            "precision": 0.8328770248688113,
+            "recall": 0.9215874378329252,
+            "f1": 0.8749895135484953,
+            "support": 39611
+          },
+          "D": {
+            "precision": 0.9659119602727043,
+            "recall": 0.8948427241395444,
+            "f1": 0.9290201411825659,
+            "support": 64123
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2013725",
+        "provider": "SkillCorner",
+        "scope": "wholefold_out",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.6775777414075287,
+        "macro_f1": 0.8769610092801002,
+        "n_gt_spells": 306,
+        "n_pred_spells": 305,
+        "per_class": {
+          "H": {
+            "precision": 0.8400051387461459,
+            "recall": 0.8549201119217593,
+            "f1": 0.847397001075673,
+            "support": 38241
+          },
+          "A": {
+            "precision": 0.8153570227552965,
+            "recall": 0.918154048117947,
+            "f1": 0.8637076090054147,
+            "support": 39611
+          },
+          "D": {
+            "precision": 0.9644140290846878,
+            "recall": 0.8790917455515181,
+            "f1": 0.9197784177592129,
+            "support": 64123
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2015213",
+        "provider": "SkillCorner",
+        "scope": "full_fit_training",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.689241622574956,
+        "macro_f1": 0.8879026121648047,
+        "n_gt_spells": 296,
+        "n_pred_spells": 271,
+        "per_class": {
+          "H": {
+            "precision": 0.8057421451787649,
+            "recall": 0.9013726024906826,
+            "f1": 0.8508788238490911,
+            "support": 33003
+          },
+          "A": {
+            "precision": 0.8516576057989553,
+            "recall": 0.9294755456279957,
+            "f1": 0.8888666377401733,
+            "support": 42978
+          },
+          "D": {
+            "precision": 0.9789306029579067,
+            "recall": 0.8748390245224958,
+            "f1": 0.9239623749051499,
+            "support": 73769
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2015213",
+        "provider": "SkillCorner",
+        "scope": "wholefold_out",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.6537102473498233,
+        "macro_f1": 0.8691598605992711,
+        "n_gt_spells": 296,
+        "n_pred_spells": 270,
+        "per_class": {
+          "H": {
+            "precision": 0.7748947368421053,
+            "recall": 0.8922219192194649,
+            "f1": 0.8294297424052506,
+            "support": 33003
+          },
+          "A": {
+            "precision": 0.8244161801501251,
+            "recall": 0.9199823165340407,
+            "f1": 0.869581473091557,
+            "support": 42978
+          },
+          "D": {
+            "precision": 0.9795265715629409,
+            "recall": 0.8470224620097873,
+            "f1": 0.9084683663010054,
+            "support": 73769
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2016236",
+        "provider": "SkillCorner",
+        "scope": "full_fit_training",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.7066666666666667,
+        "macro_f1": 0.908660455547499,
+        "n_gt_spells": 300,
+        "n_pred_spells": 270,
+        "per_class": {
+          "H": {
+            "precision": 0.8750589695841092,
+            "recall": 0.9166644991806903,
+            "f1": 0.8953786743222986,
+            "support": 38447
+          },
+          "A": {
+            "precision": 0.8630594963158473,
+            "recall": 0.9106289162218613,
+            "f1": 0.8862063124611823,
+            "support": 43090
+          },
+          "D": {
+            "precision": 0.975233064014916,
+            "recall": 0.9154500240654581,
+            "f1": 0.9443963798590161,
+            "support": 68563
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2016236",
+        "provider": "SkillCorner",
+        "scope": "wholefold_out",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.693950177935943,
+        "macro_f1": 0.9032959323569104,
+        "n_gt_spells": 300,
+        "n_pred_spells": 262,
+        "per_class": {
+          "H": {
+            "precision": 0.8671761370639715,
+            "recall": 0.9149478502874087,
+            "f1": 0.890421708094973,
+            "support": 38447
+          },
+          "A": {
+            "precision": 0.8512123518538653,
+            "recall": 0.908401021118589,
+            "f1": 0.8788773505472915,
+            "support": 43090
+          },
+          "D": {
+            "precision": 0.9776868607395751,
+            "recall": 0.9062030541254029,
+            "f1": 0.9405887384284667,
+            "support": 68563
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2017461",
+        "provider": "SkillCorner",
+        "scope": "full_fit_training",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.7174377224199289,
+        "macro_f1": 0.9190882413306071,
+        "n_gt_spells": 283,
+        "n_pred_spells": 279,
+        "per_class": {
+          "H": {
+            "precision": 0.9052527035974398,
+            "recall": 0.9258498487652927,
+            "f1": 0.9154354327545418,
+            "support": 44302
+          },
+          "A": {
+            "precision": 0.8489368998628258,
+            "recall": 0.9093413657568967,
+            "f1": 0.8781015554333754,
+            "support": 27223
+          },
+          "D": {
+            "precision": 0.9835322029167539,
+            "recall": 0.9447050938337802,
+            "f1": 0.9637277358039041,
+            "support": 74600
+          }
+        }
+      },
+      {
+        "game": "skillcorner/2017461",
+        "provider": "SkillCorner",
+        "scope": "wholefold_out",
+        "scenario": "natural_detected",
+        "spell_f1_mean": 0.7109565217391304,
+        "macro_f1": 0.9099280128541566,
+        "n_gt_spells": 283,
+        "n_pred_spells": 292,
+        "per_class": {
+          "H": {
+            "precision": 0.8815432968462122,
+            "recall": 0.9180172452710939,
+            "f1": 0.8994106394506673,
+            "support": 44302
+          },
+          "A": {
+            "precision": 0.854985106010163,
+            "recall": 0.8961907210814385,
+            "f1": 0.8751031242153594,
+            "support": 27223
+          },
+          "D": {
+            "precision": 0.9762927716744805,
+            "recall": 0.9351340482573727,
+            "f1": 0.9552702748964431,
+            "support": 74600
+          }
+        }
+      }
+    ]
+  }
+}

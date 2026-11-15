@@ -1,0 +1,24 @@
+{
+  "derived_from_sha256": "a383f1d30184d39cb995d301332430ec048d345e1c37e500fcab614db180407d",
+  "scope": "Neural-only descriptive differences; no new scoring",
+  "rows": [
+    {
+      "provider": "DFL",
+      "wholefold_out": 0.6576166503065888,
+      "wholeprovider_out": 0.576893788745355,
+      "difference": -0.08072286156123376
+    },
+    {
+      "provider": "Metrica",
+      "wholefold_out": 0.7012695476710947,
+      "wholeprovider_out": 0.717149063416836,
+      "difference": 0.015879515745741313
+    },
+    {
+      "provider": "SkillCorner",
+      "wholefold_out": 0.7086416159718399,
+      "wholeprovider_out": 0.5751566713734695,
+      "difference": -0.13348494459837046
+    }
+  ]
+}

@@ -6,5 +6,14 @@
   "gated_files_downloaded": false,
   "split": "pff_protocol.json",
   "source_format_checked": "Public kloppy10517 schema fixture only; no full match scored",
-  "limitations": "Mirror uses a reformatted parquet/events representation. Availability of observed ball coordinates and event-derived H/A/D must be verified before model experiments. Dataset card lists GPL-3.0; original PFF source terms also need checking after access."
+  "limitations": "Mirror uses a reformatted parquet/events representation. Availability of observed ball coordinates and event-derived H/A/D must be verified before model experiments. Dataset card lists GPL-3.0; original PFF source terms also need checking after access.",
+  "last_account_check_utc": "2026-11-15T18:37:22.492940+00:00",
+  "authenticated_UI_status": "Request submitted; awaiting review from repository authors",
+  "approval_email_found": false,
+  "direct_provider_route": {
+    "url": "https://www.blog.fc.pff.com/blog/enhanced-2022-world-cup-dataset",
+    "status": "Prepared form; explicit contact-sharing and newsletter consent pending; not submitted",
+    "data_downloaded": false
+  },
+  "final_reserve_opened": false
 }
