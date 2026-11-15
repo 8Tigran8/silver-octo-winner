@@ -1,0 +1,4 @@
+-r requirements-temporal.txt
+gdown==5.2.0
+matplotlib==3.9.4
+pypdf==7.1.0
