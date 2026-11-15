@@ -1,0 +1,103 @@
+{
+  "registered_utc": "2026-11-15T16:24:01.075159+00:00",
+  "known_evidence": "First study completed19candidates. Selected longer TCN improved29-game dev composite+.03019, all3seeds positive. Frozen reused-source checks then showed WCSF gains but Metrica3 regressions(-.0238natural,-.0417blind) and European conditional macro slightly lower. All those external games are already research, never fresh final tests.",
+  "purpose": "Limited correction of transfer regression using old/new neural blending or unsupervised normalized-feature outlier scores. No additional fitting or organizer labels.",
+  "long_model": "Previously frozen seed20261115,4500updates; same new fold checkpoints and full public-data checkpoint",
+  "old_model": "Frozen original1500update TCN seed20261113",
+  "baseline_and_folds_sha256": "da916f2e709012365f90bd0e957b35432ebf2db8c69740469a1abdd920be4940",
+  "rules": [
+    {
+      "name": "old_control",
+      "kind": "alpha",
+      "dead": 0.0,
+      "home": 0.0
+    },
+    {
+      "name": "long_control",
+      "kind": "alpha",
+      "dead": 1.0,
+      "home": 1.0
+    },
+    {
+      "name": "alpha75",
+      "kind": "alpha",
+      "dead": 0.75,
+      "home": 0.75
+    },
+    {
+      "name": "alpha67",
+      "kind": "alpha",
+      "dead": 0.67,
+      "home": 0.67
+    },
+    {
+      "name": "alpha50",
+      "kind": "alpha",
+      "dead": 0.5,
+      "home": 0.5
+    },
+    {
+      "name": "old_dead",
+      "kind": "alpha",
+      "dead": 0.0,
+      "home": 1.0
+    },
+    {
+      "name": "old_home",
+      "kind": "alpha",
+      "dead": 1.0,
+      "home": 0.0
+    },
+    {
+      "name": "new_dead_half_home",
+      "kind": "alpha",
+      "dead": 1.0,
+      "home": 0.5
+    },
+    {
+      "name": "new_home_half_dead",
+      "kind": "alpha",
+      "dead": 0.5,
+      "home": 1.0
+    },
+    {
+      "name": "ood2to4",
+      "kind": "ood",
+      "low": 2,
+      "high": 4,
+      "top_features": 8,
+      "smooth_steps": 25
+    },
+    {
+      "name": "ood3to6",
+      "kind": "ood",
+      "low": 3,
+      "high": 6,
+      "top_features": 8,
+      "smooth_steps": 25
+    },
+    {
+      "name": "ood4to8",
+      "kind": "ood",
+      "low": 4,
+      "high": 8,
+      "top_features": 8,
+      "smooth_steps": 25
+    },
+    {
+      "name": "temperature1.5",
+      "kind": "temperature",
+      "temperature": 1.5
+    },
+    {
+      "name": "temperature2.0",
+      "kind": "temperature",
+      "temperature": 2.0
+    }
+  ],
+  "formula": "For each neural channel mix old/new outputs by reference-blind alpha, then retain .5v3+.5neural. Temperature variants soften only long neural logits. OODalpha=clip((high-mean(top8absolute training-normalized finite features))/(high-low),0,1), period-reset25-step mean at5Hz. Missing allfeatures givesalpha0. Training-only means/scales from same excluded fold.",
+  "selection": "Use unchanged evaluation-1.0. Pick best eligible development composite, freeze one rule before repeating old external checks; publish controls/failures. Check selected rule with two other predeclared seed folds before any external repeat. No retuning or runner-up selection after those results in this followup.",
+  "external_guard": "Diagnostic regression gate on reused sources: WCSF/Metrica3 each scenario gain>=-.01; European conditional mean gain>=-.01. These are added prospective transfer guards, not final confirmation or rewriting the original dev threshold. PFF unopened.",
+  "lineage_limit": "Unchanged legacy components keep scored-game exclusion, not full neural-fold exclusion. Stricter inherited-fold review still pending; no final release promotion claim.",
+  "user_hold": "No submission, messages, push, publication; local research only."
+}
