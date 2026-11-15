@@ -21,6 +21,7 @@ def gate_features(x,meta,columns):
 
 
 def neural(seed,fold,x,xs,meta,game,scenario,device):
+    if device!='cpu':raise ValueError('New-trial inference is fixed to CPU for consistent cached scoring')
     key=f'seed{seed}_fold{fold}';folder=OUT/'models'/key;info=json.loads((folder/'meta.json').read_text())
     train,test=trial.game_split(f'fold{fold}')
     if info['train']!=train or info['excluded']!=test or info['research_plan_sha256']!=trial.sha(PLAN) or info['model_sha256']!=trial.sha(folder/'model.pt'):raise ValueError('Wrong neural fold or model')
@@ -86,4 +87,4 @@ def score(stage,device):
 
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('stage',choices=['adaptive','long']);parser.add_argument('--device',default='mps');args=parser.parse_args();score(args.stage,args.device)
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('stage',choices=['adaptive','long']);parser.add_argument('--device',default='cpu');args=parser.parse_args();score(args.stage,args.device)

@@ -43,4 +43,4 @@ def run(device):
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--device',default='mps');a=p.parse_args();run(a.device)
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--device',default='cpu');a=p.parse_args();run(a.device)
