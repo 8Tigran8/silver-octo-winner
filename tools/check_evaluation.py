@@ -83,6 +83,23 @@ def evaluate(payload, candidate, provenance):
     baseline = index_records(baseline_payload, policy['baseline']['cv_candidate'], policy, plan)
     current = index_records(payload, candidate, policy, plan)
     check_provenance(provenance, policy, plan)
+    return compare_records(policy, candidate, baseline, current)
+
+
+def evaluate_paired_audit(payload, candidate, control, provenance):
+    """Additional matched isolation audit; does not replace frozen v4 gates."""
+    policy, plan, _ = load_inputs()
+    baseline = index_records(payload, control, policy, plan)
+    current = index_records(payload, candidate, policy, plan)
+    check_provenance(provenance, policy, plan)
+    result = compare_records(policy, candidate, baseline, current)
+    result.update(comparison_control=control,
+                  scope='Additional paired reconstruction audit under identical exclusions; immutable historical-v4 gates and untouched confirmation remain separately required.')
+    return result
+
+
+def compare_records(policy, candidate, baseline, current):
+    """Apply the exact frozen numeric thresholds to an explicitly indexed pair."""
     rules = policy['development']
     groups = []
     checks = {}
@@ -103,7 +120,7 @@ def evaluate(payload, candidate, provenance):
     per_game = []
     for family in ['original', 'skillcorner']:
         scenarios = [g['scenario'] for g in rules['groups'] if g['family'] == family and g['weight'] > 0]
-        games = sorted(game for game in plan['training_games'] if game.startswith(family + '/'))
+        games = sorted({game for game, _ in baseline if game.startswith(family + '/')})
         deltas = []
         for game in games:
             b = float(np.mean([baseline[game, s]['spell_f1_mean'] for s in scenarios]))

@@ -74,6 +74,34 @@ class EvaluationPolicyTests(unittest.TestCase):
         self.assertEqual(result['status'], 'ELIGIBLE_FOR_CONFIRMATION')
         self.assertEqual(result['final_confirmation'], 'NOT ASSESSED')
 
+    def test_paired_reconstruction_does_not_replace_historical_control(self):
+        payload = copy.deepcopy(self.payload)
+        rows = []
+        for original in payload['records']:
+            for name in ['strict_control', 'strict_candidate']:
+                row = copy.deepcopy(original)
+                row['candidate'] = name
+                row['spell_f1_mean'] -= .04
+                if name == 'strict_candidate':
+                    row['spell_f1_mean'] += .03
+                rows.append(row)
+        payload['records'] = rows
+        paired = CHECK.evaluate_paired_audit(payload, 'strict_candidate', 'strict_control', self.provenance)
+        historical = CHECK.evaluate(payload, 'strict_candidate', self.provenance)
+        self.assertEqual(paired['status'], 'ELIGIBLE_FOR_CONFIRMATION')
+        self.assertEqual(historical['status'], 'KEEP_V4')
+        self.assertEqual(paired['final_confirmation'], 'NOT ASSESSED')
+        self.assertEqual(paired['comparison_control'], 'strict_control')
+
+    def test_paired_reconstruction_requires_complete_control_grid(self):
+        payload = copy.deepcopy(self.payload)
+        control = copy.deepcopy(payload['records'])
+        for row in control:
+            row['candidate'] = 'strict_control'
+        payload['records'] += control[:-1]
+        with self.assertRaises(ValueError):
+            CHECK.evaluate_paired_audit(payload, 'fusion50', 'strict_control', self.provenance)
+
 
 if __name__ == '__main__':
     unittest.main()
