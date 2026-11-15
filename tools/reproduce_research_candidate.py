@@ -8,7 +8,7 @@ sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--data-dir',type=Path,required=True);a=p.parse_args()
     if subprocess.check_output(['git','status','--porcelain'],cwd=ROOT,text=True):p.error('Commit local source before clean generation')
-    source=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip();bundle=ROOT/'reports/reliability/full_bundle.json';b=json.loads(bundle.read_text());data=a.data_dir.resolve()
+    source=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip();bundle=ROOT/'assets/research-v5/bundle.json';b=json.loads(bundle.read_text());data=a.data_dir.resolve()
     files=[data/'tactical'/('BAR-ATH_tactical_atd.'+ext) for ext in ['xml','txt']]+[bundle]+[bundle.parent/m['path'] for m in b['models']]
     inputs={str(path):sha(path) for path in files};folder=Path(tempfile.mkdtemp(prefix='candidate-reproduction-',dir=ROOT/'reports/reliability'));archive=folder/'source.tar'
     subprocess.run(['git','archive','--format=tar','-o',str(archive),source],cwd=ROOT,check=True)
@@ -21,7 +21,7 @@ def main():
                 clean=Path(temporary)
                 with tarfile.open(archive) as source_tar:source_tar.extractall(clean,filter='data')
                 with log.open('wb') as stream:
-                    subprocess.run([sys.executable,'tools/generate_research_candidate.py','--bundle',str(bundle),'--data-dir',str(data),'--output',str(output)],cwd=clean,env=env,stdout=stream,stderr=subprocess.STDOUT,check=True)
+                    subprocess.run([sys.executable,'tools/generate_research_candidate.py','--bundle',str(clean/'assets/research-v5/bundle.json'),'--data-dir',str(data),'--output',str(output)],cwd=clean,env=env,stdout=stream,stderr=subprocess.STDOUT,check=True)
                     subprocess.run([sys.executable,str(ROOT/'ref/official/evaluation/validate_submission.py'),str(output)],cwd=clean,env=env,stdout=stream,stderr=subprocess.STDOUT,check=True)
             receipt['runs'].append({'run':number,'seconds':round(time.perf_counter()-start,3),'csv_sha256':sha(output),'official_format':'PASS'});print('Research clean run',number,'format PASS',flush=True)
         if inputs!={str(path):sha(path) for path in files}:raise ValueError('Input hashes changed')

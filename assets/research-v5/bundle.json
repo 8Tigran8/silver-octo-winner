@@ -1,0 +1,54 @@
+{
+  "candidate": "long/long_seed20261115_uniform50",
+  "family": "long",
+  "rule": {
+    "name": "uniform50",
+    "kind": "fixed",
+    "dead": 0.5,
+    "home": 0.5
+  },
+  "models": [
+    {
+      "seed": 20261115,
+      "path": "seed20261115/model.pt",
+      "sha256": "1de80b43c4eeca3f9cd15a15187a7c936206a138efab2da05b5603c22ca337db",
+      "metadata_path": "seed20261115/meta.json",
+      "metadata_sha256": "4c01f79e6564cb7b79a174319e7fc93defed3450e786283006b55c3faf64f544"
+    }
+  ],
+  "training_games": [
+    "original/idsse_J03WMX",
+    "original/idsse_J03WN1",
+    "original/idsse_J03WOH",
+    "original/idsse_J03WOY",
+    "original/idsse_J03WPY",
+    "original/idsse_J03WQQ",
+    "original/idsse_J03WR9",
+    "original/metrica_1",
+    "original/metrica_2",
+    "skillcorner/1874553",
+    "skillcorner/1886347",
+    "skillcorner/1899585",
+    "skillcorner/1925299",
+    "skillcorner/1927964",
+    "skillcorner/1953632",
+    "skillcorner/1959846",
+    "skillcorner/1986691",
+    "skillcorner/1996435",
+    "skillcorner/1996436",
+    "skillcorner/2006229",
+    "skillcorner/2006363",
+    "skillcorner/2007448",
+    "skillcorner/2007721",
+    "skillcorner/2010085",
+    "skillcorner/2011166",
+    "skillcorner/2013725",
+    "skillcorner/2015213",
+    "skillcorner/2016236",
+    "skillcorner/2017461"
+  ],
+  "selection_sha256": "34c773882e1f7c4fd3f3f7d66f941d16463085317fa45cdd27802ff9ea45657b",
+  "full_fit_only_public_external_games": true,
+  "release_status": "RESEARCH CANDIDATE ONLY; independent confirmation/inherited-lineage audit pending; current v4 package unchanged",
+  "user_hold": "No submission/messages/push/publication"
+}
