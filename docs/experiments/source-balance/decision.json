@@ -88,5 +88,19 @@
   "release": "verified v4 unchanged",
   "organizer_GT_used": false,
   "organizer_data_used_for_training_or_quality": false,
-  "user_hold": "No submission/messages/push/publication"
+  "user_hold": "No submission/messages/push/publication",
+  "technical_reproduction": "PASS: clean frozen-weight CPU generation and official format; not final quality confirmation",
+  "candidate_csv_sha256": "0b1f9a3d19ef94a50910abe2989e7b76873c53d6a8854228aeb51ccf55b13f5e",
+  "scenario_cells": {
+    "wins": 64,
+    "losses": 3,
+    "ties": 0,
+    "worst": [
+      -0.008084803996981749,
+      "skillcorner/1925299",
+      "natural_detected"
+    ]
+  },
+  "local_artifact": "out/candidates/source-balanced/Ruses Cules.csv",
+  "production_package_unchanged": true
 }

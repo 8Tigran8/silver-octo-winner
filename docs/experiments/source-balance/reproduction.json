@@ -1,0 +1,23 @@
+{
+  "candidate": "source_seed20261113",
+  "source_commit": "71f264cd6e67ea9ac0842d700adf0eb7d74bee33",
+  "mode": "frozen_public_external_weights_CPU_inference",
+  "training_repeated": false,
+  "target_quality_assessed": false,
+  "runs": [
+    {
+      "run": 1,
+      "seconds": 26.3,
+      "csv_sha256": "0b1f9a3d19ef94a50910abe2989e7b76873c53d6a8854228aeb51ccf55b13f5e",
+      "official_format": "PASS"
+    },
+    {
+      "run": 2,
+      "seconds": 25.857,
+      "csv_sha256": "0b1f9a3d19ef94a50910abe2989e7b76873c53d6a8854228aeb51ccf55b13f5e",
+      "official_format": "PASS"
+    }
+  ],
+  "status": "PASS: clean frozen-weight CPU generation and official format; not final quality confirmation",
+  "inputs_unchanged": true
+}
