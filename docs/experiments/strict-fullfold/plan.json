@@ -1,0 +1,82 @@
+{
+  "registered_utc": "2026-11-15T18:23:53.482736+00:00",
+  "source_commit": "b8df0fa8df245ead572dc61099a23070f987c25b",
+  "purpose": "Close inherited whole-fold isolation gap without selecting another model.",
+  "candidate": "source_seed20261113",
+  "control": "v4 architecture reconstructed under the same complete-fold exclusions",
+  "historical_control": "Frozen v4 aggregate scores remain immutable; report separately, not as strict-paired control.",
+  "fold_plan_sha256": "2f9facaf149ec17d84a8dd6064a4e9dc57945c784477973c0009c43461df70aa",
+  "policy_sha256": "da916f2e709012365f90bd0e957b35432ebf2db8c69740469a1abdd920be4940",
+  "inherited_training_games": [
+    "original/idsse_J03WMX",
+    "original/idsse_J03WN1",
+    "original/idsse_J03WOH",
+    "original/idsse_J03WOY",
+    "original/idsse_J03WPY",
+    "original/idsse_J03WQQ",
+    "original/idsse_J03WR9",
+    "original/metrica_1",
+    "original/metrica_2",
+    "skillcorner/1925299",
+    "skillcorner/1959846",
+    "skillcorner/1996436",
+    "skillcorner/2006229",
+    "skillcorner/2007448",
+    "skillcorner/2010085",
+    "skillcorner/2011166",
+    "skillcorner/2013725",
+    "skillcorner/2015213",
+    "skillcorner/2017461"
+  ],
+  "neural_assets": {
+    "control_fold0": {
+      "model_sha256": "747cce3d4665f97fbdcd6d5874db9b6ced00c1ac228ee502297b12dc4b6fdb01",
+      "meta_sha256": "e4a932fdb49ac784fa932ff6df726dcf901a547a023422ac7c0d4ad218985fb9"
+    },
+    "candidate_fold0": {
+      "model_sha256": "266b51083b8076d810c1ce950815768759009ab5d0f5a3f7097a1958e1e18df9",
+      "meta_sha256": "35feba26f4224f9721f5ee08d6b71df225139f9811bece5627825c39239d8923"
+    },
+    "control_fold1": {
+      "model_sha256": "a99355b19a062829e03e53881b53d41e4de7c96e2475711a06a9b156692f5881",
+      "meta_sha256": "a3331ecbc162de59c79fb557ed5b1b5ced2e062104b1765688a9a408970d7b21"
+    },
+    "candidate_fold1": {
+      "model_sha256": "c7d06609fb198f15745fb00e85648743637be84afd9e6ca43ecd3e47a3db7d1d",
+      "meta_sha256": "6c9a9535c63bf9b19e4659e1c3ea2b74cc3d43ca90cd2ad26ddb060c5fafc718"
+    },
+    "control_fold2": {
+      "model_sha256": "a7c76980ca3e4c3c547fe52199cc7731fb41c11982093964a1033768902d1f01",
+      "meta_sha256": "27000ba64d825b09d5c62745afb6da61bd345dae9911da7171ca9c3cabec248b"
+    },
+    "candidate_fold2": {
+      "model_sha256": "c72de1d16e1c54b1a71f4aed749525575b03f7b9b9eedaccc04164e6ed00228d",
+      "meta_sha256": "4f427edde89c8341fe8863b0f4392d95c08aefe6db51b0e4c64dbb24e0e455c4"
+    },
+    "control_fold3": {
+      "model_sha256": "03ff4b005aba983e3042082920adb81506aaa9b53d23c7d9ad8124b538240c0b",
+      "meta_sha256": "3882e5ae05fa88b9dedc17d93ed1bc647633d588412aa395f4b2ad9db4f13638"
+    },
+    "candidate_fold3": {
+      "model_sha256": "646b6180e3ce51695079de6262db7e33927f81961416fb10f084fb111b451e5f",
+      "meta_sha256": "ab1fdc75f6dd88a20acbdbefca1137b7c6621bf95eec4c6d983a7aadbd19a563"
+    },
+    "control_fold4": {
+      "model_sha256": "13c98b9519bf29a1ad5fe9d3ff389dc03e0b75d53b246b9833492cbc40c5c8a8",
+      "meta_sha256": "3ac1f5f18ae3d6a81a1e71eeb30eb9f28b4c495d4ec79e9da8188c511fa7fd62"
+    },
+    "candidate_fold4": {
+      "model_sha256": "0e7eb8ce578da370165af1cd00ea7d4bc5c88672e08f3ca3fc9925e476d28a8d",
+      "meta_sha256": "0627dee53642a0c165ca79d0ba2dfb92d4383e02cb752ca04970ba61238183e7"
+    }
+  },
+  "first_stage": "Same nine original-game registry/model/augmentation. Exclude every original game in outer fold. Reuse exact matching audited checkpoint only after train/model hash checks.",
+  "stack": "Within each outer train set, fit from inner game-out predictions. Every inner first-stage fit also excludes the entire outer fold. Same stack parameters, no tuning.",
+  "team": "Same inherited nineteen-game registry, features/scenarios/stride/HGB; remove every outer-fold game. No new training games.",
+  "features": "Verify cached training/evaluation period spans equal independently observed geometry/metadata spans. Predictors never receive reference labels. Full25Hz features; unchanged fivefold neural checkpoints/normalization.",
+  "scenarios": "Unchanged complete29-game/67-cell grid. Decode within independent full periods, same cost9/durations.",
+  "decisions": "Apply original evaluation-1.0 numeric/provider guards both against immutable historical v4 and against reconstructed strict control. No threshold relaxation. No candidate/seed/ensemble switching after audit.",
+  "scope": "Retrospective research audit only; no untouched final test. PFF final remains unopened.",
+  "organizer_data": "Blocked from audit. No competition input, GT, model fitting or score.",
+  "sending": "No submission/publication unless complete quality/release requirements are actually met; no outbound message in this audit."
+}
