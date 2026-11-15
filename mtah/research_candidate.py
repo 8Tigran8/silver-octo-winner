@@ -24,9 +24,9 @@ def load_bundle(path):
     return bundle,states
 
 
-def probabilities(data,segments,assets,states,spec):
+def probabilities(data,segments,assets,states,spec,temporal_blend=None):
     torch.set_num_threads(1);torch.use_deterministic_algorithms(True)
-    bd,bh,_,_=v4.components(data,segments,assets)
+    bd,bh,old_dead,old_home=v4.components(data,segments,assets)
     with threadpool_limits(1):
         x,columns=features2.build(data,segments);xs,_=features2.build(data,segments,swap=True)
         gap=x[:,columns.index('gap')];seen=x[:,columns.index('seen_w151')]
@@ -36,4 +36,8 @@ def probabilities(data,segments,assets,states,spec):
             pd,ph=temporal.probabilities(model,x[::5],xs[::5],spans,mean,scale,device='cpu')
             pairs.append(v4.neural_upsample(pd,ph,segments,len(x)))
         nd=np.mean([p[0] for p in pairs],axis=0);nh=np.mean([p[1] for p in pairs],axis=0)
+    if temporal_blend is not None:
+        from . import robust_temporal
+        meta={'full_length':len(x),'full_segments':segments,'segments':spans}
+        nd,nh=robust_temporal.combine(temporal_blend,old_dead,old_home,nd,nh,x[::5],states[0][1],states[0][2],meta)
     return reliability.mix(spec,bd,bh,nd,nh,gap,seen)

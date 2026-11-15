@@ -1,6 +1,6 @@
 """Frozen local candidate check on already-used external cohorts; not fresh tests."""
 from pathlib import Path
-import json,sys,hashlib
+import json,sys,hashlib,argparse
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 from mtah import v4,research_candidate,degrade,expanded_team as expanded
 from mtah.methods import boost,boost_train
@@ -13,9 +13,10 @@ import numpy as np
 
 
 def main():
-    out=ROOT/'reports/reliability/reused_external.json'
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--bundle',type=Path,default=ROOT/'reports/reliability/full_bundle.json');parser.add_argument('--output',type=Path,default=ROOT/'reports/reliability/reused_external.json');args=parser.parse_args()
+    out=args.output
     if out.exists():raise ValueError('Do not overwrite external research checks')
-    bundle_path=ROOT/'reports/reliability/full_bundle.json';bundle,states=research_candidate.load_bundle(bundle_path);assets=v4.load()
+    bundle_path=args.bundle;bundle,states=research_candidate.load_bundle(bundle_path);assets=v4.load()
     original=json.loads((ROOT/'docs/experiments/temporal/deployment_cpu_results.json').read_text())['records']
     baseline={(r['cohort'],r['match'],r['scenario']):r for r in original if r['candidate']=='fusion50'}
     params=dict(boost_train.decoder_params(),**json.loads((ROOT/'mtah/methods/v2_params.json').read_text())['decoder']);games=[];records=[]
@@ -31,7 +32,7 @@ def main():
         if cohort!='european':cases.append(('label_blind_seed7',degrade.degrade(data,seed=7,params=expanded.BLIND)))
         predictions=[]
         for scenario,data in cases:
-            pd,ph=research_candidate.probabilities(data,spans,assets,states,bundle['rule'])
+            pd,ph=research_candidate.probabilities(data,spans,assets,states,bundle['rule'],bundle.get('temporal_blend'))
             pred=boost.label(pd,ph,spans,len(dummy),params);predictions.append((scenario,pred,np.isfinite(data['ball'][:,0])))
         gt=labels(ROOT/'external/wcsf',ROOT/'reports/temporal/selection.json') if cohort=='wcsf' else event_labels(source/'Sample_Game_3_events.json',len(dummy),metrica_teams)[0] if cohort=='metrica3' else clean['gt']
         for scenario,pred,seen in predictions:

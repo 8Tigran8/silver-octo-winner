@@ -14,7 +14,7 @@ def main():
     from mtah.submission import write
     import numpy as np
     data=atd.load();assets=v4.load();bundle,states=research_candidate.load_bundle(a.bundle)
-    segs=[(first,last+1) for _,first,last in HALVES];pd,ph=research_candidate.probabilities(data,segs,assets,states,bundle['rule'])
+    segs=[(first,last+1) for _,first,last in HALVES];pd,ph=research_candidate.probabilities(data,segs,assets,states,bundle['rule'],bundle.get('temporal_blend'))
     params=dict(boost_train.decoder_params(),**json.loads((ROOT/'mtah/methods/v2_params.json').read_text())['decoder'])
     play=[(max(first,boost.KICKOFF.get(i,first)),last) for i,(first,last) in enumerate(segs)]
     codes=boost.label(pd,ph,play,N_FRAMES,params,boost.kick_frames(data,params))
