@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "bundle_sha256": "d71bdd23e0ab2ef49823298a6a1a62e33862140ea0d8a40086f35b916ac8946b",
+  "scope": "Previously used dev3821; both sensor cases; no reference labels or organizer score",
+  "different_frame_labels": {
+    "natural_detected/v4": 0,
+    "natural_detected/boundary102": 0,
+    "label_blind_seed7/v4": 0,
+    "label_blind_seed7/boundary102": 0
+  },
+  "original_predictions_sha256": "657b4f902e446a06e3798e9d9c007d6a58a3373d8677d9cca360fe4b4ae68195",
+  "inference_source_sha256": "384c306fa2fbed04a6c8029705fa4d6f8eff5d233aac086fa0975427f04eafca"
+}
