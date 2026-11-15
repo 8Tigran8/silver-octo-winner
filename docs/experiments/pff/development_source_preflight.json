@@ -1,0 +1,186 @@
+{
+  "status": "PASS: all10source/identity checks; no quality result",
+  "scope": "All provider-supplied periods in these10clips, not a claim that extra-time/penalties are supplied",
+  "records": [
+    {
+      "game": "10510",
+      "source_match_id_verified": true,
+      "source_teams_match_original_split": true,
+      "source_periods": [
+        "1",
+        "2"
+      ],
+      "known_reference_fraction": 1.0,
+      "raw_sha256": {
+        "tracking": "3ec85fb616794da6bfeccf9972d40a09a56409edc60b7d16cbd6a9751d86963a",
+        "metadata": "4ae9d5cde65ec4e26738f9f66f04982e0d9d2e97a0cfbd819425f00ff3e91eaa",
+        "rosters": "efccd29f528f5249aa0a5321f9125d449eddb6d588cfcc7edae1239fc5137cb8"
+      },
+      "geometry_sha256": "fc185b4bcf5c35914e6322c70f47474485695a6ab46cd0c5772ab4c041fc7163",
+      "reference_sha256": "f3c51678eba648b61adde448cd5e9c094ff7d6541f1cbf2b4e22abb454af4f30"
+    },
+    {
+      "game": "3821",
+      "source_match_id_verified": true,
+      "source_teams_match_original_split": true,
+      "source_periods": [
+        "1",
+        "2"
+      ],
+      "known_reference_fraction": 1.0,
+      "raw_sha256": {
+        "tracking": "4245b0ddf5e1f4f7ac96b0dcf5138a694fcf393d3962eca2671d4af4c24233ec",
+        "metadata": "9ac48e5e6f8c6c25deb15a8883c16430d516b5760ec3500d32de1a560152ddb7",
+        "rosters": "bb40bf1213136b3f6d9f7eb5f00e21ffbfad11d3f17ab9acc7c286d10ac40e3f"
+      },
+      "geometry_sha256": "43f7f699b6c85e6938181d0249ae613f16746b21aa578ca663f95d6da403bc73",
+      "reference_sha256": "8a58a2fb59d33cb2fa3f6235bf653ba8526f6d81797f17f7dcf52ab81c69e5f6"
+    },
+    {
+      "game": "10513",
+      "source_match_id_verified": true,
+      "source_teams_match_original_split": true,
+      "source_periods": [
+        "1",
+        "2"
+      ],
+      "known_reference_fraction": 1.0,
+      "raw_sha256": {
+        "tracking": "2cea80c7d5cc86a9782ec053f519c0cffda8c222c84e84ff9cf82e2c68e4b543",
+        "metadata": "d4dda4248b2e88257431faf90d58fe593ec14a31394798e1c5e3f9c8a46a1fc9",
+        "rosters": "72968c25869b8171fa633608bea400f9bfadb3ad3c47086a099e9a167553fec8"
+      },
+      "geometry_sha256": "76082ebe5f9a2a4a9d30948616a2ce39f30a761007b72707c346a622d8d6755a",
+      "reference_sha256": "20a136bc51318cecef60e572fa947c37c3211ffc04d8e18e4f2dbc9584328f8e"
+    },
+    {
+      "game": "10516",
+      "source_match_id_verified": true,
+      "source_teams_match_original_split": true,
+      "source_periods": [
+        "1",
+        "2"
+      ],
+      "known_reference_fraction": 1.0,
+      "raw_sha256": {
+        "tracking": "11f49b3e09f15f2fc623791cf2595592f7e60da631bd93d3a451e12e5cf8a09c",
+        "metadata": "d0f3c85fc79d576e47f1ce44de2ea98f9aa7f1ad8ada003422b29546a3836edf",
+        "rosters": "e5eb536e8996e781fe2eb0658bfe380ab1d270c64f04395cacdad8f4f6346fc6"
+      },
+      "geometry_sha256": "4235e18b269f72d20b017357a7da35c87af7ce3701a5ac04a0e9bd1978497928",
+      "reference_sha256": "ac7abce27661e8174a48db151fe9ec516562d566348c6ba4d20a791d591c647f"
+    },
+    {
+      "game": "3859",
+      "source_match_id_verified": true,
+      "source_teams_match_original_split": true,
+      "source_periods": [
+        "1",
+        "2"
+      ],
+      "known_reference_fraction": 1.0,
+      "raw_sha256": {
+        "tracking": "723e716003d819fd38222fd10096e061e0f4f6362012964f740b2cb7bde23e36",
+        "metadata": "080065929986102fcfd986a0b2a1d5da95ab834a318b36b79eeedb171c75fe1d",
+        "rosters": "0f816d22b57dacca5ebb84ad9f7fd7a8b0ad550acda7f7b950b4bf7fe2d55a5e"
+      },
+      "geometry_sha256": "151ba59ec0031c605390fc14ef27aa79daf9a49dfb4273d62c4edb44243f8eb2",
+      "reference_sha256": "ade3d5509996f978bf1873da21e8e9772f4ed78c342ee140846382fb0bd6e14a"
+    },
+    {
+      "game": "3827",
+      "source_match_id_verified": true,
+      "source_teams_match_original_split": true,
+      "source_periods": [
+        "1",
+        "2"
+      ],
+      "known_reference_fraction": 1.0,
+      "raw_sha256": {
+        "tracking": "2efcdf10c55a5998eac96a11722565194ff75a27f2fbe86a70fed78a89eca522",
+        "metadata": "d52868be3f95526c3aaacbdf08619e4028baf72db99a6585e10246f3281cab80",
+        "rosters": "793bc4b3b2451bd8f0d27b35a978a40997bef8dc5a3333bae39841184c89647d"
+      },
+      "geometry_sha256": "850e9c8681cf9879ed4f480eeb45e49aae08881afb727bf92eff40239ee7d054",
+      "reference_sha256": "1b9bebea3392188ab33e00d8e5f8b4edac24db9467a7623bd290393bfd91ff65"
+    },
+    {
+      "game": "10503",
+      "source_match_id_verified": true,
+      "source_teams_match_original_split": true,
+      "source_periods": [
+        "1",
+        "2"
+      ],
+      "known_reference_fraction": 1.0,
+      "raw_sha256": {
+        "tracking": "c0bfe17968ade6bd1ee5388c9eeb0def2651d5bbe2cec2fc15387afcbe391893",
+        "metadata": "589c3998594bb59dd5dd80c12f45e1d801209085a48b3a7f926d0661b266c460",
+        "rosters": "23e1f6b1c422088ac1845e143e7960b8816b43401ba5300ed647e9b9d4781679"
+      },
+      "geometry_sha256": "fae6eb20eb179daf96e606f9b0d2709eff6dfac2f213a68892100b13b8f8853e",
+      "reference_sha256": "fb5fd93178a465cf93f13f1e399a43c6946d4f304541c3998babea966895f861"
+    },
+    {
+      "game": "3858",
+      "source_match_id_verified": true,
+      "source_teams_match_original_split": true,
+      "source_periods": [
+        "1",
+        "2"
+      ],
+      "known_reference_fraction": 1.0,
+      "raw_sha256": {
+        "tracking": "be77cacd80e666fe6eb1ef6d982f5a556ae46a50343de14d61401e76a3a6cc7d",
+        "metadata": "6d093858986add1a4ba949f4b5b5d3facd0101f55a3084fa5114cc070fe43219",
+        "rosters": "feffd058269fa94798c583c5e2a020de4240902e596bc1829a9aef27251d39bb"
+      },
+      "geometry_sha256": "40dd6bac86abf509c6c6b765056e09569aaff592f97c9768239e3ee6b481fbe5",
+      "reference_sha256": "ba7a6abf1e806157c9bb6e9d3f92418db2fa24bb973e4587501498a269b10bab"
+    },
+    {
+      "game": "3838",
+      "source_match_id_verified": true,
+      "source_teams_match_original_split": true,
+      "source_periods": [
+        "1",
+        "2"
+      ],
+      "known_reference_fraction": 1.0,
+      "raw_sha256": {
+        "tracking": "05d87e04fbb3c6de1ca8a274a13806342a34bc685e486229002f396017aa7535",
+        "metadata": "2b6c4c6a3581f681a7e5176a58084a7cb433f20a451ac6d018e15e7782793866",
+        "rosters": "bf5d843bafd4d460375a5a04400f003831a8b5b1aed791e101e711e2986efbe1"
+      },
+      "geometry_sha256": "c71ff93def3691b01ec492cfc1f5d76b9255b56acef38e751cb4681277c046ae",
+      "reference_sha256": "b2d955b180f528dffb72f99f303cdf61a1aaca9010c66271bcce60e719b61b35"
+    },
+    {
+      "game": "3842",
+      "source_match_id_verified": true,
+      "source_teams_match_original_split": true,
+      "source_periods": [
+        "1",
+        "2"
+      ],
+      "known_reference_fraction": 1.0,
+      "raw_sha256": {
+        "tracking": "fa9d57d6c924318b472b06ce191c4c40ee33f23c1841eeaecbae0e6712b5db8a",
+        "metadata": "63ec5ef6852c0900ff27c107756bb4c0e9dc5bb1a46a3c8734e03a9b0b4bef16",
+        "rosters": "aad552179898e991aab2968c549131f4249ec95cab81df040fc905de823b7dce"
+      },
+      "geometry_sha256": "8a4ee14ebcc733bd5f9015d7d10c3c3ead49e293d3c85a55e05ec6bbda439978",
+      "reference_sha256": "fa9aa53e7786b296b209181ebce1934dfe13c3f02f43b6b2c8c2d4385c5b767b"
+    }
+  ],
+  "inference_equivalence": {
+    "status": "PASS",
+    "max_absolute_probability_error": {
+      "v4": 0.0,
+      "candidate": 0.0
+    },
+    "game": "training3816",
+    "no_quality_scores": true
+  },
+  "final_contents_opened": false
+}
