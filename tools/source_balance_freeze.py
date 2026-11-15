@@ -17,7 +17,7 @@ def main():
         for name,prefix in [('DFL','original/idsse_'),('Metrica','original/metrica_'),('SkillCorner','skillcorner/')]:
             subset=[r for r in rows if r['candidate']==candidate and r['game'].startswith(prefix) and r['scenario'] in ['matched_seed0','natural_detected']]
             provider[candidate][name]=statistics.mean(r['spell_f1_mean']-baseline[r['game'],r['scenario']]['spell_f1_mean'] for r in subset)
-    (folder/'provider_guards.json').write_text(json.dumps(provider,indent=2)+'\n')
+    (folder/'provider_guards.json').write_text(json.dumps(provider,indent=2)+chr(10))
     eligible=[n for n,r in summary.items() if r['status']=='ELIGIBLE_FOR_CONFIRMATION' and min(provider[n].values())>=-.01-1e-12]
     if not eligible:result={'candidate':None,'status':'No source-balanced candidate passed development; v4 unchanged'}
     else:
