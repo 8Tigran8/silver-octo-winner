@@ -1,0 +1,32 @@
+{
+  "candidate": "source_seed20261113",
+  "family": "source",
+  "seeds": [
+    20261113
+  ],
+  "rule": {
+    "name": "uniform50",
+    "kind": "fixed",
+    "dead": 0.5,
+    "home": 0.5
+  },
+  "development": {
+    "status": "ELIGIBLE_FOR_CONFIRMATION",
+    "candidate_composite": 0.6374341842567186,
+    "gain": 0.023085819381624795,
+    "descriptive_95ci": [
+      0.018818273400998068,
+      0.027560635107141303
+    ],
+    "game_wins": 29,
+    "game_losses": 0,
+    "large_game_losses": 0
+  },
+  "status": "Frozen source-balanced research candidate; reused-source guards and independent confirmation pending",
+  "frozen_utc": "2026-11-15T16:48:07.378330+00:00",
+  "source_commit": "3f80f37a166fc0a2a10fdf5329e2d79df0f59d86",
+  "summary_sha256": "1d3fb5c7c7f0ba80309a634ed20c56daa89bf867955868638b22f2038c3eca88",
+  "external_source_balance_scores_seen": false,
+  "release": "v4 unchanged",
+  "user_hold": "No submission/messages/push/publication"
+}

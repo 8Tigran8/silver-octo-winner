@@ -33,6 +33,12 @@ The v4 verifier exports committed source twice, independently reads the organize
 
 Use the [evaluation contract](docs/evaluation/README.md) and [machine-readable policy](docs/evaluation/policy.json): compare against frozen v4 on complete whole-game folds; require +0.02 composite spellF1 with source, stress, class and lower-tail guards. Passing development means eligible for confirmation, not final quality PASS. Preserve the unopened PFF country-separated reserve; all prior screened cohorts are development now. The contract explicitly records prospective changes to the older v3/PFF gates without rewriting their history. The [unchanged-v4 control](docs/evaluation/v4_control.json) correctly returns KEEP_V4. No release model or submission CSV changes in this evaluation-policy update.
 
+## Local research after v4 (not published)
+
+[Provider-balanced training](docs/experiments/source-balance/REPORT.md) improves the fixed reused-development composite from 0.61435 to 0.63743, with 29 paired game wins. Reused WCSF and Metrica3 checks improve on natural tracking; Metrica3 with extra gaps falls by 0.00246, and nine European conditional-only scores fall by 0.00206. All registered numeric/provider/reused-source guards pass. No fresh independent test has been opened; strict inherited full-fold isolation remains unresolved. This is a research candidate, and the default verified release remains v4.
+
+[The prior study](docs/experiments/reliability/REPORT.md) records 19 configurations and [the robustness followup](docs/experiments/robust-followup/REPORT.md) records 14. Their higher-scoring long/OOD candidates were not adopted after Metrica3 regressions. All failures are retained. Provider-balanced weights are frozen locally under `assets/research-balanced`; nothing is submitted, messaged, pushed or published under the user's hold.
+
 ## Optional training and research reproduction
 
 The trained components and all source registries are inspectable. To reconstruct the public training inputs (roughly4.5GBraw plus intermediates):

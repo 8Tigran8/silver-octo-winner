@@ -1,0 +1,92 @@
+{
+  "candidate": "source_seed20261113",
+  "development": {
+    "status": "ELIGIBLE_FOR_CONFIRMATION",
+    "candidate_composite": 0.6374341842567186,
+    "gain": 0.023085819381624795,
+    "descriptive_95ci": [
+      0.018818273400998068,
+      0.027560635107141303
+    ],
+    "game_wins": 29,
+    "game_losses": 0,
+    "large_game_losses": 0
+  },
+  "provider_guard_gains": {
+    "source_ensemble": {
+      "DFL": 0.024266331713192417,
+      "Metrica": 0.023208787744226134,
+      "SkillCorner": 0.024076085516416594
+    },
+    "source_seed20261113": {
+      "DFL": 0.02045895790107804,
+      "Metrica": 0.028543655009854618,
+      "SkillCorner": 0.03168241603931521
+    },
+    "source_seed20261114": {
+      "DFL": 0.018985872729512656,
+      "Metrica": 0.02940650913066667,
+      "SkillCorner": 0.017591420223044534
+    },
+    "source_seed20261115": {
+      "DFL": 0.018422260160625044,
+      "Metrica": 0.02713883310534898,
+      "SkillCorner": 0.02090445616886541
+    }
+  },
+  "reused_sources": [
+    {
+      "cohort": "wcsf",
+      "scenario": "label_blind_seed7",
+      "games": 1,
+      "v4": 0.5702247191011237,
+      "candidate": 0.5835883171070932,
+      "gain": 0.013363598005969535,
+      "wins": 1
+    },
+    {
+      "cohort": "wcsf",
+      "scenario": "natural_detected",
+      "games": 1,
+      "v4": 0.6857849196538937,
+      "candidate": 0.7090234857849197,
+      "gain": 0.02323856613102604,
+      "wins": 1
+    },
+    {
+      "cohort": "metrica3",
+      "scenario": "label_blind_seed7",
+      "games": 1,
+      "v4": 0.4613924050632912,
+      "candidate": 0.4589341692789969,
+      "gain": -0.002458235784294327,
+      "wins": 0
+    },
+    {
+      "cohort": "metrica3",
+      "scenario": "natural_detected",
+      "games": 1,
+      "v4": 0.5526627218934911,
+      "candidate": 0.5630057803468208,
+      "gain": 0.010343058453329723,
+      "wins": 1
+    },
+    {
+      "cohort": "european",
+      "scenario": "natural_detected",
+      "games": 9,
+      "v4": 0.8409807166071098,
+      "candidate": 0.8389255323182714,
+      "gain": -0.0020551842888384903,
+      "wins": 1
+    }
+  ],
+  "reused_source_guard_pass": true,
+  "status": "RESEARCH_CANDIDATE: numeric/provider/reused-source guards pass; independent confirmation and strict inherited-fold audit pending",
+  "fresh_independent_games": 0,
+  "lineage": "New neural fits exclude whole folds; inherited legacy components retain scored-game exclusions, not every other member of that fold.",
+  "release": "verified v4 unchanged",
+  "organizer_GT_used": false,
+  "organizer_data_used_for_training_or_quality": false,
+  "user_hold": "No submission/messages/push/publication"
+}
