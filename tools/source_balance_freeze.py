@@ -8,7 +8,17 @@ ROOT=Path(__file__).resolve().parents[1]
 def main():
     folder=ROOT/'reports/source_balance';path=folder/'selection.json'
     if path.exists():raise ValueError('Selection already frozen')
-    summary=json.loads((folder/'summary.json').read_text());eligible=[n for n,r in summary.items() if r['status']=='ELIGIBLE_FOR_CONFIRMATION']
+    summary=json.loads((folder/'summary.json').read_text());rows=json.loads((folder/'results.json').read_text())['records']
+    baseline={(r['game'],r['scenario']):r for r in json.loads((ROOT/'docs/experiments/temporal/cv_results.json').read_text())['records'] if r['candidate']=='fusion50'}
+    import statistics
+    provider={}
+    for candidate in summary:
+        provider[candidate]={}
+        for name,prefix in [('DFL','original/idsse_'),('Metrica','original/metrica_'),('SkillCorner','skillcorner/')]:
+            subset=[r for r in rows if r['candidate']==candidate and r['game'].startswith(prefix) and r['scenario'] in ['matched_seed0','natural_detected']]
+            provider[candidate][name]=statistics.mean(r['spell_f1_mean']-baseline[r['game'],r['scenario']]['spell_f1_mean'] for r in subset)
+    (folder/'provider_guards.json').write_text(json.dumps(provider,indent=2)+'\n')
+    eligible=[n for n,r in summary.items() if r['status']=='ELIGIBLE_FOR_CONFIRMATION' and min(provider[n].values())>=-.01-1e-12]
     if not eligible:result={'candidate':None,'status':'No source-balanced candidate passed development; v4 unchanged'}
     else:
         name=max(eligible,key=lambda n:summary[n]['candidate_composite']);seeds=[int(name[len('source_seed'):])] if name.startswith('source_seed') else [20261113,20261114,20261115]

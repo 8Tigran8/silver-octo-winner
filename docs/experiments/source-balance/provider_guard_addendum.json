@@ -1,0 +1,7 @@
+{
+  "registered_utc": "2026-11-15T16:40:48.124701+00:00",
+  "timing": "Before any source-balanced development scores; fitting in progress",
+  "purpose": "Equal-provider sampling must not hide degradation on corrected DFL labels inside the combined original9cohort",
+  "guard": "In addition to unchanged evaluation-1.0, require primary matched/natural mean spellF1 gain>=-.01 separately for DFL7, Metrica2, SkillCorner20; publish all three.",
+  "selection": "Highest composite among numeric-gate candidates satisfying this stronger provider guard; no post-external runnerup selection."
+}
