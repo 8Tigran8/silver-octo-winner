@@ -1,0 +1,13 @@
+{
+  "robust_ood4to8": {
+    "status": "ELIGIBLE_FOR_CONFIRMATION",
+    "candidate_composite": 0.6428299792841692,
+    "gain": 0.028481614409075373,
+    "descriptive_95ci": [
+      0.024333221895249387,
+      0.03258650437715753
+    ],
+    "game_wins": 29,
+    "game_losses": 0
+  }
+}

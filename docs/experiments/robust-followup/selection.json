@@ -1,0 +1,29 @@
+{
+  "candidate": "robust_ood4to8",
+  "temporal_blend": {
+    "name": "ood4to8",
+    "kind": "ood",
+    "low": 4,
+    "high": 8,
+    "top_features": 8,
+    "smooth_steps": 25
+  },
+  "development": {
+    "status": "ELIGIBLE_FOR_CONFIRMATION",
+    "candidate_composite": 0.6443270865010191,
+    "gain": 0.029978721625925298,
+    "descriptive_95ci": [
+      0.02561354578730001,
+      0.034465172172700446
+    ],
+    "game_wins": 29,
+    "game_losses": 0
+  },
+  "status": "Frozen local rule; seed diagnostics and reused-source transfer guards pending",
+  "frozen_utc": "2026-11-15T16:29:28.690792+00:00",
+  "summary_sha256": "48b1758df9f40e8a65324d6a7269ed3eba51a07b8d59b6b4b545e538f64f173b",
+  "parent_bundle_sha256": "5344a29f78e5007ebb3ca0a80abe682f33328ebaf3a207dbc0aef033cdad5d21",
+  "external_followup_scores_seen": false,
+  "release": "v4 unchanged",
+  "user_hold": "No submission/messages/push/publication"
+}

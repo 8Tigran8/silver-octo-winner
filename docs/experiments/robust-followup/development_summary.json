@@ -1,0 +1,156 @@
+{
+  "robust_old_control": {
+    "status": "KEEP_V4",
+    "candidate_composite": 0.6143483648750938,
+    "gain": 0.0,
+    "descriptive_95ci": [
+      0.0,
+      0.0
+    ],
+    "game_wins": 0,
+    "game_losses": 0
+  },
+  "robust_long_control": {
+    "status": "ELIGIBLE_FOR_CONFIRMATION",
+    "candidate_composite": 0.6445402061672818,
+    "gain": 0.030191841292187993,
+    "descriptive_95ci": [
+      0.025935117682808196,
+      0.03458052759891702
+    ],
+    "game_wins": 29,
+    "game_losses": 0
+  },
+  "robust_alpha75": {
+    "status": "ELIGIBLE_FOR_CONFIRMATION",
+    "candidate_composite": 0.6379173362967946,
+    "gain": 0.02356897142170078,
+    "descriptive_95ci": [
+      0.020148473410990277,
+      0.027155031585428712
+    ],
+    "game_wins": 29,
+    "game_losses": 0
+  },
+  "robust_alpha67": {
+    "status": "ELIGIBLE_FOR_CONFIRMATION",
+    "candidate_composite": 0.6356383016761041,
+    "gain": 0.021289936801010323,
+    "descriptive_95ci": [
+      0.01803653084845264,
+      0.02471323708128634
+    ],
+    "game_wins": 29,
+    "game_losses": 0
+  },
+  "robust_alpha50": {
+    "status": "KEEP_V4",
+    "candidate_composite": 0.6300186254131157,
+    "gain": 0.015670260538021896,
+    "descriptive_95ci": [
+      0.013324585013863391,
+      0.018063553194405096
+    ],
+    "game_wins": 29,
+    "game_losses": 0
+  },
+  "robust_old_dead": {
+    "status": "KEEP_V4",
+    "candidate_composite": 0.6282550524260588,
+    "gain": 0.013906687550965025,
+    "descriptive_95ci": [
+      0.010421475779130851,
+      0.017194643470572996
+    ],
+    "game_wins": 24,
+    "game_losses": 5
+  },
+  "robust_old_home": {
+    "status": "KEEP_V4",
+    "candidate_composite": 0.6300173515497043,
+    "gain": 0.015668986674610474,
+    "descriptive_95ci": [
+      0.012713734662206365,
+      0.018925104639823043
+    ],
+    "game_wins": 28,
+    "game_losses": 1
+  },
+  "robust_new_dead_half_home": {
+    "status": "ELIGIBLE_FOR_CONFIRMATION",
+    "candidate_composite": 0.6384144139759584,
+    "gain": 0.024066049100864628,
+    "descriptive_95ci": [
+      0.02056142737671329,
+      0.027751622718577312
+    ],
+    "game_wins": 29,
+    "game_losses": 0
+  },
+  "robust_new_home_half_dead": {
+    "status": "ELIGIBLE_FOR_CONFIRMATION",
+    "candidate_composite": 0.6359034967893047,
+    "gain": 0.02155513191421088,
+    "descriptive_95ci": [
+      0.018200101993150215,
+      0.024840962678824092
+    ],
+    "game_wins": 29,
+    "game_losses": 0
+  },
+  "robust_ood2to4": {
+    "status": "ELIGIBLE_FOR_CONFIRMATION",
+    "candidate_composite": 0.6406169827164792,
+    "gain": 0.026268617841385344,
+    "descriptive_95ci": [
+      0.02228572013515828,
+      0.03032419469763299
+    ],
+    "game_wins": 28,
+    "game_losses": 1
+  },
+  "robust_ood3to6": {
+    "status": "ELIGIBLE_FOR_CONFIRMATION",
+    "candidate_composite": 0.6432941175395123,
+    "gain": 0.028945752664418456,
+    "descriptive_95ci": [
+      0.02457950704876442,
+      0.033411286202151606
+    ],
+    "game_wins": 29,
+    "game_losses": 0
+  },
+  "robust_ood4to8": {
+    "status": "ELIGIBLE_FOR_CONFIRMATION",
+    "candidate_composite": 0.6443270865010191,
+    "gain": 0.029978721625925298,
+    "descriptive_95ci": [
+      0.02561354578730001,
+      0.034465172172700446
+    ],
+    "game_wins": 29,
+    "game_losses": 0
+  },
+  "robust_temperature1.5": {
+    "status": "ELIGIBLE_FOR_CONFIRMATION",
+    "candidate_composite": 0.6395997746735287,
+    "gain": 0.025251409798434876,
+    "descriptive_95ci": [
+      0.021233615240479894,
+      0.02974026910428673
+    ],
+    "game_wins": 29,
+    "game_losses": 0
+  },
+  "robust_temperature2.0": {
+    "status": "KEEP_V4",
+    "candidate_composite": 0.6325666097449167,
+    "gain": 0.01821824486982293,
+    "descriptive_95ci": [
+      0.013927378649994682,
+      0.02299866334368796
+    ],
+    "game_wins": 29,
+    "game_losses": 0
+  }
+}

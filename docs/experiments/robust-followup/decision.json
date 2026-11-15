@@ -1,0 +1,96 @@
+{
+  "candidate": "robust_ood4to8",
+  "development": {
+    "status": "ELIGIBLE_FOR_CONFIRMATION",
+    "candidate_composite": 0.6443270865010191,
+    "gain": 0.029978721625925298,
+    "descriptive_95ci": [
+      0.02561354578730001,
+      0.034465172172700446
+    ],
+    "game_wins": 29,
+    "game_losses": 0
+  },
+  "other_seed_diagnostics": {
+    "20261113": {
+      "robust_ood4to8": {
+        "status": "ELIGIBLE_FOR_CONFIRMATION",
+        "candidate_composite": 0.6409738593684562,
+        "gain": 0.02662549449336238,
+        "descriptive_95ci": [
+          0.022110311929178013,
+          0.030874202618102267
+        ],
+        "game_wins": 28,
+        "game_losses": 1
+      }
+    },
+    "20261114": {
+      "robust_ood4to8": {
+        "status": "ELIGIBLE_FOR_CONFIRMATION",
+        "candidate_composite": 0.6428299792841692,
+        "gain": 0.028481614409075373,
+        "descriptive_95ci": [
+          0.024333221895249387,
+          0.03258650437715753
+        ],
+        "game_wins": 29,
+        "game_losses": 0
+      }
+    }
+  },
+  "reused_source_guard_pass": false,
+  "reused_sources": [
+    {
+      "cohort": "wcsf",
+      "scenario": "label_blind_seed7",
+      "games": 1,
+      "v4": 0.5702247191011237,
+      "candidate": 0.5829370629370629,
+      "gain": 0.012712343835939222,
+      "wins": 1
+    },
+    {
+      "cohort": "wcsf",
+      "scenario": "natural_detected",
+      "games": 1,
+      "v4": 0.6857849196538937,
+      "candidate": 0.7134734239802226,
+      "gain": 0.027688504326328967,
+      "wins": 1
+    },
+    {
+      "cohort": "metrica3",
+      "scenario": "label_blind_seed7",
+      "games": 1,
+      "v4": 0.4613924050632912,
+      "candidate": 0.42034976152623216,
+      "gain": -0.041042643537059054,
+      "wins": 0
+    },
+    {
+      "cohort": "metrica3",
+      "scenario": "natural_detected",
+      "games": 1,
+      "v4": 0.5526627218934911,
+      "candidate": 0.528862973760933,
+      "gain": -0.02379974813255803,
+      "wins": 0
+    },
+    {
+      "cohort": "european",
+      "scenario": "natural_detected",
+      "games": 9,
+      "v4": 0.8409807166071098,
+      "candidate": 0.8404496115977069,
+      "gain": -0.0005311050094028867,
+      "wins": 3
+    }
+  ],
+  "status": "NOT_ADOPTED: reused-source guard failed",
+  "independent_confirmation": "NOT ASSESSED; reserve unopened",
+  "fresh_games_this_cycle": 0,
+  "no_post_external_runnerup_selection": true,
+  "production_release": "v4 unchanged",
+  "user_hold": "No submission/messages/push/publication"
+}
