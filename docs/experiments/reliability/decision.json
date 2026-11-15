@@ -24,7 +24,6 @@
   ],
   "release": "v4 unchanged",
   "organizer_GT_used": false,
-  "organizer_tracking_used": false,
   "user_hold": "No submission, messages, push or publication",
   "new_candidate_fits": 30,
   "scenario_cells_per_candidate": 67,
@@ -88,5 +87,7 @@
   "full_fit_updates": 4500,
   "independent_confirmation": "NOT ASSESSED",
   "production_release": "v4 unchanged",
-  "candidate_adopted": false
+  "candidate_adopted": false,
+  "organizer_tracking_used_for_fitting_or_quality": false,
+  "organizer_tracking_used_for_local_inference": true
 }

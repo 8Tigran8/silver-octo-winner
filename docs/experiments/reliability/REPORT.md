@@ -1,6 +1,6 @@
 # Local reliability and spell-aware training study
 
-**Release: verified v4, unchanged. The selected longer model was not adopted: reused Metrica3 transfer checks regressed.** New work remains local under the user hold. No organizer reference or tracking input was used.
+**Release: verified v4, unchanged. The selected longer model was not adopted: reused Metrica3 transfer checks regressed.** New work remains local under the user hold. Only public external games were used for fitting and quality evaluation. Local CSV generation separately uses organizer automatic tracking, without scoring its GT.
 
 ## Registered experiments
 
