@@ -1,0 +1,30 @@
+{
+  "registered_utc": "2026-11-15T15:54:43.625253+00:00",
+  "status": "Prospective objective trial, registered after adaptive-rule results but before any weighted-loss fit or score",
+  "motivation": "Official spellF1 counts whole H/A possessions while BCE counts frames; give short live spells and boundary neighborhoods more loss weight without organizer labels.",
+  "known_evidence": "Adaptive rules best gain+.00450 failed+.02 gate. Longer-TCN fits in progress; no long scores seen at registration.",
+  "baseline": "unchanged v4",
+  "fold_plan_sha256": "2f9facaf149ec17d84a8dd6064a4e9dc57945c784477973c0009c43461df70aa",
+  "evaluation_policy_sha256": "da916f2e709012365f90bd0e957b35432ebf2db8c69740469a1abdd920be4940",
+  "training": {
+    "steps": 1500,
+    "seeds": [
+      20261113,
+      20261114,
+      20261115
+    ],
+    "architecture": "unchanged48-channel TCN at5Hz; original optimizer/scenarios/sampling/normalization",
+    "live_run_weight": "sqrt(25/run_length_steps), clipped[.5,3]; each maximal H/A run inside one source period",
+    "boundary_weight": "factor2 within5 steps each side of a valid H/A/D state transition; combined weight capped4",
+    "dead_weight": "base1; retain SkillCorner D proxy multiplier.25",
+    "unknown_weight": 0,
+    "application": "weighted BCE for dead and conditional-team heads, each normalized by its applicable known weight sum. Weights use training labels only and never become features."
+  },
+  "candidates": [
+    "three individual seeds,50/50fusionwithv3",
+    "equal probability ensemble of three seeds,50/50fusionwithv3"
+  ],
+  "isolation": "Same whole-game neural folds; no learned baseline probabilities enter neural fitting. Legacy v3 components retain per-game exclusion as in fixed control; inherited all-stage fold-lineage requirement still needs manual audit before any promotion.",
+  "selection": "No threshold changes; automatic evaluation-1.0. Publish all seeds and failures. Dev eligibility only, no fresh final-test claim.",
+  "user_hold": "Local work only; no outgoing messages/push/submission/publication. Preserve v4 package."
+}
