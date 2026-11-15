@@ -1,0 +1,38 @@
+{
+  "status": "NUMERIC_DEVELOPMENT_GATES_PASS_MANUAL_LINEAGE_AND_CONFIRMATION_PENDING",
+  "best_development_candidate": "long/long_seed20261115_uniform50",
+  "best_development": {
+    "status": "ELIGIBLE_FOR_CONFIRMATION",
+    "candidate_composite": 0.6445402061672818,
+    "gain": 0.030191841292187993,
+    "descriptive_95ci": [
+      0.025935117682808196,
+      0.03458052759891702
+    ],
+    "game_wins": 29,
+    "game_losses": 0,
+    "large_game_losses": 0
+  },
+  "automatic_gate_eligible": [
+    "long/long_seed20261115_uniform50",
+    "long/long_ensemble_uniform50",
+    "long/long_ensemble_visibility6",
+    "long/long_seed20261114_uniform50",
+    "long/long_seed20261113_uniform50",
+    "long/long_ensemble_confidence",
+    "long/long_ensemble_gap5"
+  ],
+  "release": "v4 unchanged",
+  "organizer_GT_used": false,
+  "organizer_tracking_used": false,
+  "user_hold": "No submission, messages, push or publication",
+  "new_candidate_fits": 30,
+  "scenario_cells_per_candidate": 67,
+  "record_counts": {
+    "adaptive": 536,
+    "long": 469,
+    "spell": 268
+  },
+  "research_limit": "All29games are reused development; no fresh confirmation opened. Numeric checker validates declared neural exclusions only.",
+  "lineage_limit": "New neural fits exclude the entire scored fold. Inherited unchanged v3 probability paths retain scored-game exclusions as in frozen v4, not full neural-fold exclusions. This must be audited/resolved before claiming compliance with stricter all-stage fold-isolation language or promotion."
+}

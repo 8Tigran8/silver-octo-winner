@@ -1,0 +1,98 @@
+{
+  "confidence": {
+    "status": "KEEP_V4",
+    "candidate_composite": 0.6117310954793918,
+    "gain": -0.00261726939570206,
+    "descriptive_95ci": [
+      -0.004014266271216199,
+      -0.0011960484636654655
+    ],
+    "game_wins": 10,
+    "game_losses": 19,
+    "large_game_losses": 0
+  },
+  "dead65": {
+    "status": "KEEP_V4",
+    "candidate_composite": 0.6188498893438246,
+    "gain": 0.004501524468730755,
+    "descriptive_95ci": [
+      0.0023666364754878675,
+      0.006709292266744245
+    ],
+    "game_wins": 23,
+    "game_losses": 6,
+    "large_game_losses": 0
+  },
+  "gap10": {
+    "status": "KEEP_V4",
+    "candidate_composite": 0.6095899671802731,
+    "gain": -0.004758397694820671,
+    "descriptive_95ci": [
+      -0.00741001794521674,
+      -0.0021455957409253494
+    ],
+    "game_wins": 8,
+    "game_losses": 21,
+    "large_game_losses": 0
+  },
+  "gap5": {
+    "status": "KEEP_V4",
+    "candidate_composite": 0.6088493650871993,
+    "gain": -0.005498999787894476,
+    "descriptive_95ci": [
+      -0.008459163765200032,
+      -0.0025350192183697775
+    ],
+    "game_wins": 8,
+    "game_losses": 21,
+    "large_game_losses": 0
+  },
+  "home65": {
+    "status": "KEEP_V4",
+    "candidate_composite": 0.6129817157193096,
+    "gain": -0.0013666491557842164,
+    "descriptive_95ci": [
+      -0.003165494729927503,
+      0.0004497588937663256
+    ],
+    "game_wins": 15,
+    "game_losses": 14,
+    "large_game_losses": 0
+  },
+  "uniform50": {
+    "status": "KEEP_V4",
+    "candidate_composite": 0.6143483648750938,
+    "gain": 0.0,
+    "descriptive_95ci": [
+      0.0,
+      0.0
+    ],
+    "game_wins": 0,
+    "game_losses": 0,
+    "large_game_losses": 0
+  },
+  "uniform65": {
+    "status": "KEEP_V4",
+    "candidate_composite": 0.6178040021766482,
+    "gain": 0.003455637301554404,
+    "descriptive_95ci": [
+      0.0011083364667704078,
+      0.005741616549275961
+    ],
+    "game_wins": 19,
+    "game_losses": 10,
+    "large_game_losses": 0
+  },
+  "visibility6": {
+    "status": "KEEP_V4",
+    "candidate_composite": 0.6125994891081095,
+    "gain": -0.001748875766984348,
+    "descriptive_95ci": [
+      -0.004567396732609011,
+      0.001094947272488542
+    ],
+    "game_wins": 12,
+    "game_losses": 17,
+    "large_game_losses": 0
+  }
+}

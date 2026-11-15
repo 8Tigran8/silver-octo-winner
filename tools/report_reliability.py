@@ -12,7 +12,7 @@ def main():
         values=json.loads(summary.read_text());combined.update({stage+'/'+k:v for k,v in values.items()});counts[stage]=len(json.loads(records.read_text())['records'])
         shutil.copy2(summary,DEST/f'{stage}_summary.json');shutil.copy2(records,DEST/f'{stage}_results.json')
     for family,base in [('long',ROOT/'reports/reliability'),('spell',ROOT/'reports/spell_trial')]:
-        fits={p.parent.name:json.loads(p.read_text()) for p in (base/'models').glob('*/meta.json')}
+        fits={p.parent.name:json.loads(p.read_text()) for p in (base/'models').glob('*/meta.json') if not p.parent.name.endswith('foldfull')}
         if len(fits)!=15:raise ValueError('Missing fits in '+family)
         provenance[family]=fits
     (DEST/'training_provenance.json').write_text(json.dumps(provenance,indent=2)+'\n')
@@ -21,14 +21,14 @@ def main():
     (DEST/'decision.json').write_text(json.dumps(decision,indent=2)+'\n')
     lines=['# Local reliability and spell-aware training study','','**Release: verified v4, unchanged.** New work remains local under the user hold. No organizer reference or tracking input was used.','',
       '## Registered experiments','',
-      'The [original plan](plan.json) was committed before new scores/fits. Eight rule-based probability mixtures use only gap length, observed visibility or symmetric model confidence. No learned gate was fitted from globally OOF component probabilities: those would require nested outer-game exclusions to avoid indirect label leakage. The uniform50 control exactly reproduced v4 spellF1 and macroF1 in all67cells.','',
-      'The longer family keeps architecture, sources, sampling, loss and optimizer unchanged and increases fixed updates1500→4500. Allfive neural folds were trained with each of three predeclared seeds. Three individual uniform50 fusions and four equal-probability ensemble/rule mixtures were scored.','',
-      'The [spell objective](spell_plan.json) was registered after adaptive-rule failures, while long training ran and before any long-family or spell-family score. It weights short H/A runs by clipped inverse-square-root duration and valid transition neighborhoods by2, capped4. It retains the .25SkillCorner dead-proxy multiplier. Weights affect training loss only; unknowns contribute no gradient. This family fits the samefive folds and three seeds for1500updates, scoring three individual uniform50 fusions and their equal-probability ensemble.','',
+      'The [original plan](plan.json) was committed before new scores/fits. Eight rule-based probability mixtures use only gap length, observed visibility or symmetric model confidence. No learned gate was fitted from globally OOF component probabilities: those would require nested outer-game exclusions to avoid indirect label leakage. The uniform50 control exactly reproduced v4 spellF1 and macroF1 in all 67 cells.','',
+      'The longer family keeps architecture, sources, sampling, loss and optimizer unchanged and increases fixed updates1500 to 4500. All five neural folds were trained with each of three predeclared seeds. Three individual uniform50 fusions and four equal-probability ensemble/rule mixtures were scored.','',
+      'The [spell objective](spell_plan.json) was registered after adaptive-rule failures, while long training ran and before any long-family or spell-family score. It weights short H/A runs by clipped inverse-square-root duration and valid transition neighborhoods by2, capped4. It retains the .25 SkillCorner dead-proxy multiplier. Weights affect training loss only; unknowns contribute no gradient. This family fits the same five folds and three seeds for1500updates, scoring three individual uniform50 fusions and their equal-probability ensemble.','',
       'All hypotheses, seeds, failures and selection exposure are disclosed. These are reused development games. No new independent source was opened. Engineering thresholds are the previously frozen evaluation-1.0, not post-hoc adjusted.','',
       '## Complete candidate comparison','',
       '| Candidate | Composite spellF1 | Gain vs v4 | Wins /29 | Automatic status |','|---|---:|---:|---:|---|']
     for name,value in ranked:lines.append(f"| {name} | {value['candidate_composite']:.5f} | {value['gain']:+.5f} | {value['game_wins']} | {value['status']} |")
-    lines += ['','The primary composite weights original matched/blind and SkillCorner natural/blind byone quarter each. Original stress and macro/per-class/lower-tail guards remain required. Bootstrap intervals in summaryJSONs are descriptive paired whole-game intervals stratified by source family; they do not correct repeated selection or shared opponents.','',
+    lines += ['','The primary composite weights original matched/blind and SkillCorner natural/blind by one quarter each. Original stress and macro/per-class/lower-tail guards remain required. Bootstrap intervals in summary JSONs are descriptive paired whole-game intervals stratified by source family; they do not correct repeated selection or shared opponents.','',
       '## Isolation and decision limits','',
       decision['lineage_limit'],'',
       'The gate checker covers metric completeness, numeric quality guards and declared neural training memberships. Its ELIGIBLE_FOR_CONFIRMATION status is not a release PASS and does not replace component-lineage review, provider-held-out checks, an unopened reserve and exact clean inference reproduction. A candidate satisfying only numeric checks cannot silently replace v4.','',

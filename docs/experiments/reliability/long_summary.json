@@ -1,0 +1,86 @@
+{
+  "long_ensemble_confidence": {
+    "status": "ELIGIBLE_FOR_CONFIRMATION",
+    "candidate_composite": 0.6410660784506544,
+    "gain": 0.02671771357556063,
+    "descriptive_95ci": [
+      0.023015623097295525,
+      0.030344206344454457
+    ],
+    "game_wins": 29,
+    "game_losses": 0,
+    "large_game_losses": 0
+  },
+  "long_ensemble_gap5": {
+    "status": "ELIGIBLE_FOR_CONFIRMATION",
+    "candidate_composite": 0.6367185868415803,
+    "gain": 0.022370221966486525,
+    "descriptive_95ci": [
+      0.017225631360477972,
+      0.027297076174616762
+    ],
+    "game_wins": 26,
+    "game_losses": 3,
+    "large_game_losses": 0
+  },
+  "long_ensemble_uniform50": {
+    "status": "ELIGIBLE_FOR_CONFIRMATION",
+    "candidate_composite": 0.6441406094731998,
+    "gain": 0.029792244598106032,
+    "descriptive_95ci": [
+      0.025861012416670312,
+      0.03356101233665655
+    ],
+    "game_wins": 29,
+    "game_losses": 0,
+    "large_game_losses": 0
+  },
+  "long_ensemble_visibility6": {
+    "status": "ELIGIBLE_FOR_CONFIRMATION",
+    "candidate_composite": 0.6432787903252277,
+    "gain": 0.028930425450133912,
+    "descriptive_95ci": [
+      0.02396425505328741,
+      0.033809268221995856
+    ],
+    "game_wins": 29,
+    "game_losses": 0,
+    "large_game_losses": 0
+  },
+  "long_seed20261113_uniform50": {
+    "status": "ELIGIBLE_FOR_CONFIRMATION",
+    "candidate_composite": 0.6412007570712503,
+    "gain": 0.026852392196156538,
+    "descriptive_95ci": [
+      0.022360000317689355,
+      0.03109227990181304
+    ],
+    "game_wins": 28,
+    "game_losses": 1,
+    "large_game_losses": 0
+  },
+  "long_seed20261114_uniform50": {
+    "status": "ELIGIBLE_FOR_CONFIRMATION",
+    "candidate_composite": 0.6430213928729377,
+    "gain": 0.02867302799784388,
+    "descriptive_95ci": [
+      0.02459578302244999,
+      0.03274245896316779
+    ],
+    "game_wins": 29,
+    "game_losses": 0,
+    "large_game_losses": 0
+  },
+  "long_seed20261115_uniform50": {
+    "status": "ELIGIBLE_FOR_CONFIRMATION",
+    "candidate_composite": 0.6445402061672818,
+    "gain": 0.030191841292187993,
+    "descriptive_95ci": [
+      0.025935117682808196,
+      0.03458052759891702
+    ],
+    "game_wins": 29,
+    "game_losses": 0,
+    "large_game_losses": 0
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "candidate": "long/long_seed20261115_uniform50",
+  "family": "long",
+  "seeds": [
+    20261115
+  ],
+  "rule": {
+    "name": "uniform50",
+    "kind": "fixed",
+    "dead": 0.5,
+    "home": 0.5
+  },
+  "development": {
+    "status": "ELIGIBLE_FOR_CONFIRMATION",
+    "candidate_composite": 0.6445402061672818,
+    "gain": 0.030191841292187993,
+    "descriptive_95ci": [
+      0.025935117682808196,
+      0.03458052759891702
+    ],
+    "game_wins": 29,
+    "game_losses": 0,
+    "large_game_losses": 0
+  },
+  "status": "Frozen research candidate; inherited-lineage audit and independent confirmation pending",
+  "release": "v4 unchanged",
+  "frozen_utc": "2026-11-15T16:13:13.102208+00:00",
+  "source_commit": "089d8a24019cd2ac9d97660981ae63fd5e5e95b9",
+  "summary_sha256": {
+    "adaptive": "af758ab4f5485dc78f6c0341f355daaafdf167f8513c05d474d8c9d45332245e",
+    "long": "e536fb355bf727d3d937a91f6aac448f7a4de4a807a6e270dd26a3ae648c0375",
+    "spell": "b7d392c5e89c4461856bf937b0b12700b933d6e8c66b13930cbf89afaf9cb507"
+  },
+  "external_candidate_scores_seen_this_cycle": false,
+  "user_hold": "Local only; no submission, messages, push or publication"
+}
