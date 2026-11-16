@@ -31,7 +31,7 @@ For two independent generations from committed source:
 .venv/bin/python tools/reproduce_mixed_candidate.py --data-dir /absolute/path/to/data
 ```
 
-The verifier requires a clean checkout and refuses to overwrite completed receipts. Two verified Apple M4 CPU runs produced identical bytes in 26.779 s and 26.838 s, with about 1.50 GiB peak child RSS. This verifies frozen-weight inference, not repeat training. Independent Linux ARM reproduction reported by VV concerns the historical **v4** file; reproduction of the current boundary102 file on that platform is pending. No Linux/x86 identity claim is made for the new file yet.
+The verifier requires a clean checkout and refuses to overwrite completed receipts. Two verified Apple M4 CPU runs produced identical bytes in 26.779 s and 26.838 s, with about 1.50 GiB peak child RSS. This verifies frozen-weight inference, not repeat training. VV also reports two byte-identical boundary102 CPU runs on Linux ARM (aarch64, Python 3.12.3, Torch 2.8.0), with both official format checks passing. He used an archive of review commit `072feab`, initialized locally as Git; this is teammate-reported archive-source reproduction, not an audited fresh upstream clone or Linux/x86 evidence. See [the scoped report](docs/experiments/pff-mixed/linux_arm_report.json).
 
 ## Method and measured quality
 
