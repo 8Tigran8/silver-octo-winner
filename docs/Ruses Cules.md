@@ -35,7 +35,7 @@ Total: 9,880,446 unaugmented reference-period frames. Frames and augmented copie
 
 Sources: [IDSSE/DFL paper](https://doi.org/10.1038/s41597-025-04505-y), [Metrica sample data](https://github.com/metrica-sports/sample-data), [SkillCorner Open Data](https://github.com/SkillCorner/opendata), [PFF original provider release](https://www.blog.fc.pff.com/blog/enhanced-2022-world-cup-dataset).
 
-**Original PFF access was obtained on 15 November 2026 through the provider's form.** Organizers can use the same request route. The original article states no standard dataset license; the GPL-3.0 label on the separate Hugging Face mirror is not treated as a license for the original release. That mirror remains unused. [The access record](data/PFF.md) explains the route and source terms. Raw files and vendor PDFs are not committed.
+**Original PFF access was obtained on 15 November 2026 through the provider's form.** Organizers can use the same request route. The original article states no standard dataset license; the GPL-3.0 label on the separate Hugging Face mirror is not treated as a license for the original release. That mirror remains unused. [The access record](PFF_SOURCE.md) explains the route and source terms. Raw files and vendor PDFs are not committed.
 
 PFF predictors use only raw VISIBLE observations. ESTIMATED tracks, event-informed smoothed coordinates, event/possession fields and identities are excluded from features. References are reconstructed separately: OUT/END means dead, kickoff/OTB means live, and home_ball supplies ownership. Period state resets and duplicate-conflict masking are fixed. A fixed SDK last-row shadow checks sensitivity. These are provider-event-derived approximations, not corrected frame-by-frame competition truth.
 
