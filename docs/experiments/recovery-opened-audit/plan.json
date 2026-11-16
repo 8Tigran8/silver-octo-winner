@@ -1,0 +1,167 @@
+{
+  "scope": "User-authorized re-evaluation of 18 previously opened matches; no untouched-holdout claim. No fit or parameter search on these outcomes.",
+  "fixtures": [
+    {
+      "game_id": "10502",
+      "home": "Netherlands",
+      "away": "United States",
+      "date": "2022-12-03T15:00:00",
+      "cohort": "bridge6",
+      "historical_scores": "reports/unseen_bridge_audit/10502_scores.json"
+    },
+    {
+      "game_id": "10505",
+      "home": "England",
+      "away": "Senegal",
+      "date": "2022-12-04T19:00:00",
+      "cohort": "bridge6",
+      "historical_scores": "reports/unseen_bridge_audit/10505_scores.json"
+    },
+    {
+      "game_id": "10507",
+      "home": "Brazil",
+      "away": "South Korea",
+      "date": "2022-12-05T19:00:00",
+      "cohort": "bridge6",
+      "historical_scores": "reports/unseen_bridge_audit/10507_scores.json"
+    },
+    {
+      "game_id": "10509",
+      "home": "Portugal",
+      "away": "Switzerland",
+      "date": "2022-12-06T19:00:00",
+      "cohort": "bridge6",
+      "historical_scores": "reports/unseen_bridge_audit/10509_scores.json"
+    },
+    {
+      "game_id": "10511",
+      "home": "Netherlands",
+      "away": "Argentina",
+      "date": "2022-12-09T19:00:00",
+      "cohort": "bridge6",
+      "historical_scores": "reports/unseen_bridge_audit/10511_scores.json"
+    },
+    {
+      "game_id": "10512",
+      "home": "Morocco",
+      "away": "Portugal",
+      "date": "2022-12-10T15:00:00",
+      "cohort": "bridge6",
+      "historical_scores": "reports/unseen_bridge_audit/10512_scores.json"
+    },
+    {
+      "game_id": "3812",
+      "home": "Senegal",
+      "away": "Netherlands",
+      "date": "2022-11-21T16:00:00",
+      "cohort": "original_final12",
+      "historical_scores": "reports/pff_mixed_final/3812_scores.json"
+    },
+    {
+      "game_id": "3814",
+      "home": "Qatar",
+      "away": "Ecuador",
+      "date": "2022-11-20T16:00:00",
+      "cohort": "original_final12",
+      "historical_scores": "reports/pff_mixed_final/3814_scores.json"
+    },
+    {
+      "game_id": "3825",
+      "home": "Uruguay",
+      "away": "South Korea",
+      "date": "2022-11-24T13:00:00",
+      "cohort": "original_final12",
+      "historical_scores": "reports/pff_mixed_final/3825_scores.json"
+    },
+    {
+      "game_id": "3826",
+      "home": "Portugal",
+      "away": "Ghana",
+      "date": "2022-11-24T16:00:00",
+      "cohort": "original_final12",
+      "historical_scores": "reports/pff_mixed_final/3826_scores.json"
+    },
+    {
+      "game_id": "3829",
+      "home": "Qatar",
+      "away": "Senegal",
+      "date": "2022-11-25T13:00:00",
+      "cohort": "original_final12",
+      "historical_scores": "reports/pff_mixed_final/3829_scores.json"
+    },
+    {
+      "game_id": "3830",
+      "home": "Netherlands",
+      "away": "Ecuador",
+      "date": "2022-11-25T16:00:00",
+      "cohort": "original_final12",
+      "historical_scores": "reports/pff_mixed_final/3830_scores.json"
+    },
+    {
+      "game_id": "3841",
+      "home": "South Korea",
+      "away": "Ghana",
+      "date": "2022-11-28T13:00:00",
+      "cohort": "original_final12",
+      "historical_scores": "reports/pff_mixed_final/3841_scores.json"
+    },
+    {
+      "game_id": "3843",
+      "home": "Portugal",
+      "away": "Uruguay",
+      "date": "2022-11-28T19:00:00",
+      "cohort": "original_final12",
+      "historical_scores": "reports/pff_mixed_final/3843_scores.json"
+    },
+    {
+      "game_id": "3844",
+      "home": "Ecuador",
+      "away": "Senegal",
+      "date": "2022-11-29T15:00:00",
+      "cohort": "original_final12",
+      "historical_scores": "reports/pff_mixed_final/3844_scores.json"
+    },
+    {
+      "game_id": "3845",
+      "home": "Netherlands",
+      "away": "Qatar",
+      "date": "2022-11-29T15:00:00",
+      "cohort": "original_final12",
+      "historical_scores": "reports/pff_mixed_final/3845_scores.json"
+    },
+    {
+      "game_id": "3856",
+      "home": "Ghana",
+      "away": "Uruguay",
+      "date": "2022-12-02T15:00:00",
+      "cohort": "original_final12",
+      "historical_scores": "reports/pff_mixed_final/3856_scores.json"
+    },
+    {
+      "game_id": "3857",
+      "home": "South Korea",
+      "away": "Portugal",
+      "date": "2022-12-02T15:00:00",
+      "cohort": "original_final12",
+      "historical_scores": "reports/pff_mixed_final/3857_scores.json"
+    }
+  ],
+  "candidates": [
+    "boundary102 (current audited preprocessing)",
+    "weighted_short_gap (exact adopted checkpoint and decoder)"
+  ],
+  "scenarios": [
+    "natural_detected",
+    "label_blind_seed7"
+  ],
+  "references": [
+    "canonical",
+    "sdk_shadow"
+  ],
+  "controls": "Freeze source, weights, original raw hashes, parser, scorer, prior results and exact comparison before predictions. Regenerate parent with same current source. Save predictions before loading references. No GT input, no discarded matches.",
+  "primary": "Equal-weight per-game official Spell F1; report bridge6 and original_final12 separately, then all18.",
+  "review_guards": "Each cohort/scenario/reference mean Spell gain>=0,mean macro gain>=-.002,worst game Spell gain>=-.02. Flags require investigation, not automatic alternate-model selection or threshold relaxation.",
+  "diagnosis": "All matches: duration-stratified recall, missing/visible confusion, whole-spell IoU thresholds, typed transitions at1s, same-team overlap fragmentation/merge counts, period scores. Netherlands-USA priority; reference coverage, clock integrity and current/parent comparison.",
+  "followup": "If a verified implementation error exists fix it with independent tests and rerun. Model changes must be developed on original development only; log reuse of these audit outcomes. Further36-training-game current inference may quantify descriptive train/audit gap; never claim this proves no overfit.",
+  "target": "No organizer GT access/scoring, no target tuning, no submission or publication"
+}
