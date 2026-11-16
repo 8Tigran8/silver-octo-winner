@@ -1,0 +1,119 @@
+{
+  "frozen_utc": "2026-11-16T12:30:21.291983+00:00",
+  "source_commit": "237c04df092c933bd975c07db8689a4f919b6f56",
+  "games": [
+    {
+      "game_id": "10512",
+      "home": "Morocco",
+      "away": "Portugal",
+      "date": "2022-12-10T15:00:00",
+      "teams_seen_in_pff_train_dev": [
+        "Morocco"
+      ]
+    },
+    {
+      "game_id": "10511",
+      "home": "Netherlands",
+      "away": "Argentina",
+      "date": "2022-12-09T19:00:00",
+      "teams_seen_in_pff_train_dev": [
+        "Argentina"
+      ]
+    },
+    {
+      "game_id": "10509",
+      "home": "Portugal",
+      "away": "Switzerland",
+      "date": "2022-12-06T19:00:00",
+      "teams_seen_in_pff_train_dev": [
+        "Switzerland"
+      ]
+    },
+    {
+      "game_id": "10507",
+      "home": "Brazil",
+      "away": "South Korea",
+      "date": "2022-12-05T19:00:00",
+      "teams_seen_in_pff_train_dev": [
+        "Brazil"
+      ]
+    },
+    {
+      "game_id": "10505",
+      "home": "England",
+      "away": "Senegal",
+      "date": "2022-12-04T19:00:00",
+      "teams_seen_in_pff_train_dev": [
+        "England"
+      ]
+    },
+    {
+      "game_id": "10502",
+      "home": "Netherlands",
+      "away": "United States",
+      "date": "2022-12-03T15:00:00",
+      "teams_seen_in_pff_train_dev": [
+        "United States"
+      ]
+    }
+  ],
+  "previously_present_content": false,
+  "scope": "New match holdout; same provider, one previously seen country per game; no training or selection",
+  "files_sha256": {
+    "assets/pff-mixed-candidate/README.md": "9a68c3bc049b8463c61fb3930d692a05d673b0e1f1af2fa163bb71063ab9d9a7",
+    "assets/pff-mixed-candidate/bundle.json": "d71bdd23e0ab2ef49823298a6a1a62e33862140ea0d8a40086f35b916ac8946b",
+    "assets/pff-mixed-candidate/meta.json": "a5f5e2188eba9a87afbf4571b80eec77294e7ba1d8c073306bd478f78b032e62",
+    "assets/pff-mixed-candidate/model.pt": "a727ef64efbfba338f5aab3f41782a906d2739ae90e96c308be82adc495fd944",
+    "assets/v4/README.md": "8f6217877f00e1b58e5827be749c24f3c7768c76e715a0a3b2813cffd3cafe2f",
+    "assets/v4/base_external.pkl": "f2f33ae6ac086d976ed9712110e542ad68588ed489d0c0fc212a47635731c682",
+    "assets/v4/manifest.json": "25729febd8697681eebaaad12dbea2d0b0d65c90d93d3ed876bfaec5f3253cd8",
+    "assets/v4/team_external.pkl": "9f0688b4a6197d7134153993576a172000e42ae40619174819fbfcf62dc7cf18",
+    "assets/v4/temporal_state.pt": "d2628a2ddb790175f100e54d76c4e2aa89ebfce8179931e3c531d24c88816a90",
+    "docs/experiments/more-data/pff_protocol.json": "b4de537f1bfb1c3292dcb5650a310262449cb0cbf2c1a17f5707f129becdd358",
+    "docs/experiments/unseen-bridge-audit/plan.json": "d4ba2ebd31fa43ed92bfd89b437c8be30359fe4a4a8a54faabb826802d254916",
+    "mtah/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mtah/atd.py": "877baa1edef0343c6128b1cd64a6fda124142baf01b56c8b3834a20653139f0d",
+    "mtah/config.py": "9c6bd4f888989aecafe2f28e9e56c146628ddd5169fb801fe0f39d166e773914",
+    "mtah/degrade.py": "c451d252a49720e08bd45a09ba62cf178d9d5f3f66d7537ab453b97b85e5e14a",
+    "mtah/expanded_team.py": "8165633688f6da6ae03451fd3a6a62b39ed671a4eb032e2cda7b8aaf58d5bf3a",
+    "mtah/expanded_team_training.json": "659a8d7ee9f4f3f9947a8394d2f8a72142b7405b24f182f96fb0e726250a87a8",
+    "mtah/external.py": "6497791710cb3aacbbd41ab485d4e878604ec2ec74c0766a5c972491975b2b67",
+    "mtah/features.py": "5d6f7b88847ae35da393e0c2b8eee02f4ece315354803f00d4e1302802a0c604",
+    "mtah/features2.py": "c1ef648580d9feccee0abe64dc6477b0c483a91caf636715808aa419c3dd8d53",
+    "mtah/methods/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mtah/methods/baseline.py": "9d2f816da3b604df0d66434f1a8527d9146686d51462d22bd9d263484859e5ac",
+    "mtah/methods/boost.py": "60807b94a981b9fc3eb7c450eed474a078fc6e065fae882529d590d28c8ce9e6",
+    "mtah/methods/boost_train.py": "c3e8156605e7c6950f29ae2eabbc10f73f1ac8a049fc9189ea301d5f48f3408f",
+    "mtah/methods/v1_params.json": "01f8e02238da5dc7f3aa3fd49b2a7f2be6089ea2c974a616bd170e611ba34c6d",
+    "mtah/methods/v2_params.json": "22888607bace4e71118aa6445d7360ee18ac7019869bf37c46bc8a2b6506201a",
+    "mtah/methods/v3_params.json": "946109d611a251e60ecc434f8690d83b83a6f63e236c647027c3168c75cc4da5",
+    "mtah/methods/viterbi.py": "a6630d3880526214e7cc386d16490b06255ae78590900c64c35d70fbd01b72eb",
+    "mtah/metrics.py": "49890b17f7906e4238225af51da8bcd4005ffb63b5e5bcf9870b050276d8a4fc",
+    "mtah/mixed_candidate.py": "384c306fa2fbed04a6c8029705fa4d6f8eff5d233aac086fa0975427f04eafca",
+    "mtah/mixed_temporal.py": "3c6ee24dfc076f0ce4e279206826e20186db80bc465dc18be56075d8b4447216",
+    "mtah/possession_context.py": "973319eb341eebb0576a0c82cfe1d18addbc055ae8c2e6305bff50768fce2e30",
+    "mtah/reliability.py": "7b45ba722be976503540d678871a533ddb70470610b772c9ec8a59351a744875",
+    "mtah/research_candidate.py": "6cd8bbaf28ecee6dc5d0eb482e482035b9263e96e59a671a3c6e3c9cdead6ee4",
+    "mtah/robust_temporal.py": "6e87ac3928dddfcd4059396dd059cbbf73f2816b4bc91a5ba0129006b78da87d",
+    "mtah/spell_loss.py": "9b08242e2d8426a35eb78bbcf0a8d3e24aadf202f1c6cde7817f699fd36f0393",
+    "mtah/stack.py": "755acfeb73d4294e9752fb1d365dfead4e2b1cbdc05d763d9e81d50aa0eb0f38",
+    "mtah/submission.py": "b92d4c3c9ed7e351c5b1c25ec4cd98cb13b729df00e0b2c9fed66322aa00d34b",
+    "mtah/tagging.py": "c3f1d798017e0f274edc12785a2a1401ad02c2012e618adeddc94b32d9c848db",
+    "mtah/temporal.py": "800925d1d60c7ca622e62ed206655f7c8bfedb756caf0ce8feff1988c78aa268",
+    "mtah/v4.py": "e10fa8ae504c0f5065de588f476f6a853136f96da8b34dca1dfb3860308ecf22",
+    "ref/official/evaluation/possession_metrics.py": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+    "reports/pff_access/browser_complete_listing.json": "c6d4ea3365a5c15c8cce585c902d998119cbbaf0829b2b69dc89b3ecf715b5d6",
+    "requirements-temporal.txt": "d9d6c90d86692baeb4dca7cdd45464d0761c9146d05ac8f0564a782d6cfcc267",
+    "requirements-validation.txt": "b5df8401e92074936bdfaef5b289f105ce30af422e02388984d41a0c70971e87",
+    "requirements.txt": "24f1e583a029343299ea351cb1902ca940396b27b1b2243dc0db33fde4cebcc6",
+    "submission_manifest.json": "c540d5815cceaaacc5e48ced1df8bf6402a12ca053fed46ad3e7165ce733cb2f",
+    "tools/decoder_development.py": "09a65a2bf48d9dbf8c315a23432952e3b43a6c63fb792ac382ac7c6b0aff002d",
+    "tools/fetch_pff_training.py": "1cb5800cdce5ee16a781fb20914fb31ed874404d7d94981898f05f79a29b4b55",
+    "tools/pff_development.py": "73096cfa2a5fd24ef0ed55fe6c55989ace957e10856b69e571051c7f093e3152",
+    "tools/pff_mixed_score.py": "ce753dc40ecef456c53c3c820576315f516a9a5ba99c3481124af76cfe56ade4",
+    "tools/pff_reader.py": "b7b50efdfa11930c544bcea88ff7410a2fcdbce5d175622ca4520efcdca6dfa4",
+    "tools/pff_unseen_audit.py": "e52897fba3e5e3c355f90145e7fdd01e8e897922fa673e360c0fcbf61185c186",
+    "tools/quality_audit.py": "6060e2479287324c49720ec4e895ff11422e9364b4ce940b380c089edc4707a9",
+    "tools/skillcorner_reader.py": "295d997df551757cfa1c96d380dc0924cbf59516cd7a4d7b7a190714f1abe877"
+  }
+}
