@@ -1,0 +1,8 @@
+{
+  "scope": "Reporter and added tests frozen before any new development scores",
+  "sha256": {
+    "tools/report_team_gap_specialist.py": "9eba78c058cd15ee5264b25c5354420cfbaf43086e74d1e62816ce9b30254442",
+    "tests/test_team_gap_report.py": "2e67f00e813a607a2cabd9544262086c77b99b675507aa2bf990e149244c124d",
+    "docs/experiments/team-gap-specialist/plan.json": "d39d91d1f992cd02daae9398849997ad39fc223d6202eda360b7845211aee962"
+  }
+}
