@@ -17,6 +17,7 @@ STYLES.add(ParagraphStyle(name='TitleTeam',fontName='Helvetica-Bold',fontSize=25
 STYLES.add(ParagraphStyle(name='SubtitleTeam',fontName='Helvetica',fontSize=12,leading=16,textColor=GRAY,spaceAfter=15))
 STYLES.add(ParagraphStyle(name='SectionTeam',fontName='Helvetica-Bold',fontSize=15,leading=19,textColor=NAVY,spaceBefore=9,spaceAfter=9,keepWithNext=True))
 STYLES.add(ParagraphStyle(name='BodyTeam',fontName='Helvetica',fontSize=10.3,leading=14,spaceAfter=8))
+STYLES.add(ParagraphStyle(name='BodyCompact',parent=STYLES['BodyTeam'],fontSize=10,leading=13,spaceAfter=7))
 STYLES.add(ParagraphStyle(name='SmallTeam',fontName='Helvetica',fontSize=8.6,leading=11.4,textColor=GRAY,spaceAfter=6))
 STYLES.add(ParagraphStyle(name='CellTeam',fontName='Helvetica',fontSize=8.7,leading=11.2))
 STYLES.add(ParagraphStyle(name='HeadTeam',fontName='Helvetica-Bold',fontSize=8.6,leading=11,textColor=colors.white))
@@ -61,8 +62,8 @@ def main():
     if selection['candidate']!='boundary102' or proof['candidate']!='boundary102':raise ValueError('Document template/candidate mismatch')
     natural=decision['comparisons']['canonical/natural_detected'];blind=decision['comparisons']['canonical/label_blind_seed7'];h=old['decisions']['boundary102']['historical'];paired=old['decisions']['boundary102']['paired'];d=dev['decisions']['boundary102']['comparisons']['canonical/natural_detected']
     folder=ROOT/'out/review-ready';folder.mkdir(exist_ok=True);pdf=folder/'Ruses Cules.pdf';csv=folder/'Ruses Cules.csv';shutil.copy2(ROOT/'out/candidates/pff-mixed/Ruses Cules.csv',csv)
-    story=[]
-    def add(text,style='BodyTeam'):story.append(P(text,style))
+    story=[];compact=False
+    def add(text,style='BodyTeam'):story.append(P(text,'BodyCompact' if compact and style=='BodyTeam' else style))
     add('Ruses Cules','TitleTeam');add('Possession from noisy tracking<br/>Validated method: boundary102','SubtitleTeam')
     add('1. Task and method','SectionTeam')
     add('We label every video frame as home possession (H), away possession (A), dead ball (D), or outside the published playing periods (X). The output contains exactly 199,319 ordered rows, with header <font name="Courier">frame,label</font>. The method uses the supplied automatic tactical XML/TXT; no manual correction of the provided game is made.')
@@ -99,10 +100,11 @@ def main():
         ['Sealed PFF final - natural',f"{natural['baseline']:.4f}",f"{natural['candidate']:.4f}",f"{natural['gain']:+.4f}",f"{natural['wins']}/12"],
         ['Sealed PFF final - sensor stress',f"{blind['baseline']:.4f}",f"{blind['candidate']:.4f}",f"{blind['gain']:+.4f}",f"{blind['wins']}/12"]
     ],[219,73,69,75,75]));story.append(Spacer(1,10))
-    add(f"All predeclared gates pass. Final group gains: A {decision['group_gains']['A']:+.4f}, H {decision['group_gains']['H']:+.4f}. Final natural macroF1 gain is {natural['macro_gain']:+.4f}; H/A/D F1 gains are {natural['class_f1_gains']['H']:+.4f} / {natural['class_f1_gains']['A']:+.4f} / {natural['class_f1_gains']['D']:+.4f}. The descriptive paired whole-game 95% gain interval is [{decision['descriptive_paired_game_95ci'][0]:.4f}, {decision['descriptive_paired_game_95ci'][1]:.4f}]. Shared national teams and only two groups limit independence assumptions.")
+    add(f"All original predeclared development/final gates pass. Final group gains: A {decision['group_gains']['A']:+.4f}, H {decision['group_gains']['H']:+.4f}. Final natural macroF1 gain is {natural['macro_gain']:+.4f}; H/A/D F1 gains are {natural['class_f1_gains']['H']:+.4f} / {natural['class_f1_gains']['A']:+.4f} / {natural['class_f1_gains']['D']:+.4f}. The descriptive paired whole-game 95% gain interval is [{decision['descriptive_paired_game_95ci'][0]:.4f}, {decision['descriptive_paired_game_95ci'][1]:.4f}]. Shared national teams and only two groups limit independence assumptions.")
     story.append(Image(str(base/'final_game_gains.png'),width=511,height=209));story.append(Spacer(1,6))
     add('The data-expanded 25-second control also passes development, but the combined longer-context/boundary model scores higher under the predeclared selection rule. The two changes are not separately ablated. Reused external losses remain: noisy Metrica3 spellF1 -0.0090 and European conditional H/A macroF1 -0.0037, both within the fixed 0.01 guard.', 'SmallTeam')
 
+    compact=True
     story.append(PageBreak());add('4. Reproduce and interpret','SectionTeam')
     add('Use Python 3.12 and the pinned requirements. Frozen public-trained weights are included; generating the organizer file requires only the organizer tactical XML/TXT. It does not download external matches, retrain, read video or score target ground truth. The data directory must contain tactical/BAR-ATH_tactical_atd.xml and .txt.')
     commands="""python3.12 -m venv .venv
@@ -117,14 +119,17 @@ def main():
     story.append(Preformatted(commands,STYLES['CodeTeam']))
     add(f"Two clean committed-source CPU generations passed the official validator and produced identical CSV bytes in {proof['runs'][0]['seconds']:.3f}s and {proof['runs'][1]['seconds']:.3f}s. Observed peak child RSS was {proof['peak_child_RSS_mb']/1024:.2f} GiB. Organizer/model input hashes remained unchanged. This repeats frozen-weight inference, not training. Source: {proof['source_commit'][:12]}; the same inference core remained frozen through final validation.")
     digest=proof['runs'][0]['csv_sha256'];add('CSV SHA-256:<br/><font name="Courier" size="8.7">'+digest[:32]+'<br/>'+digest[32:]+'</font>')
-    add('Model checks verify the bundle, checkpoint, metadata and inherited asset hashes before loading. The new checkpoint uses weights-only deserialization. Optional raw-data fitting and all whole-fold provenance are documented. The source repository contains neither organizer match assets nor raw PFF tracking, references or frame predictions.')
+    add('Bundle/checkpoint/metadata and inherited hashes are checked before loading; the new checkpoint uses weights-only deserialization. Optional fitting and whole-fold provenance are documented. Organizer assets, raw PFF tracking, references and frame predictions are excluded from the repository.')
     add('Overfit and remaining limits','SectionTeam')
     rows=[['Standalone neural branch','Full-fit spellF1','Whole-fold-out','Gap']]
     for provider,r in gaps['summary'].items():rows.append([provider+f" ({r['games']} games)",f"{r['full_fit_spellF1']:.4f}",f"{r['wholefold_out_spellF1']:.4f}",f"{r['optimism_gap']:+.4f}"])
     story.append(table(rows,[219,99,108,85]));story.append(Spacer(1,8))
-    add('The 0.151 Metrica gap indicates a material source-specific overfit risk on only two games. This diagnostic is for the standalone neural branch, not the deployed 50/50 fusion. It was descriptive after selection and did not change the frozen model. The untouched-country final supports generalization beyond memorizing training games; it cannot prove absence of overfit on all football or predict competition rank.')
+    add('The 0.151 Metrica gap is a material overfit risk on only two games. It concerns the standalone neural branch; deployment uses the 50/50 fusion. This post-selection diagnostic did not change the model. The untouched-country final supports generalization, but cannot prove no overfit across all football or predict competition rank.')
     add(f"Short possessions remain difficult: on PFF development, the mean per-game predicted/reference spell-count ratio is {diagnostic['spell_count_ratio']:.3f}; predicted mean duration is {diagnostic['mean_predicted_spell_seconds']:.2f}s versus reference {diagnostic['mean_reference_spell_seconds']:.2f}s. Long occlusions, incomplete player coverage, ambiguous control, annotation differences and anonymous WCSF provenance remain limitations. The method is offline and uses future context.")
-    add('Next work: add independent Metrica-like games, reduce the two-game source\'s sampling weight, and improve short-spell duration modelling. A changed model requires a new untouched reserve.')
+    supplemental=ROOT/'docs/experiments/provider-stress/results.json'
+    if supplemental.exists():
+        add('A later two-game sensor pilot loses to same-exclusion v4 in all six distinct combined perturbation cases (spellF1 losses 0.0064-0.0694). One-factor probes retain cadence-only/burst-only gains but reveal sensitivity to independent coordinate jitter. These familiar-game copies are supplemental diagnostics, not new independent matches. No model change follows.')
+    add('Next work: improve jitter robustness, add independent Metrica-like games, reduce tiny-source sampling weight, and improve short spells. A changed model requires a new untouched reserve.')
     add('Source and full evidence: <a href="https://github.com/8Tigran8/silver-octo-winner" color="#157d69">github.com/8Tigran8/silver-octo-winner</a><br/>Experiment records: docs/experiments/pff-mixed/REPORT.md', 'SmallTeam')
     doc=SimpleDocTemplate(str(pdf),pagesize=A4,rightMargin=42,leftMargin=42,topMargin=42,bottomMargin=48,title='Ruses Cules - Possession from noisy tracking',author='Ruses Cules',pageCompression=1)
     doc.build(story,onFirstPage=footer,onLaterPages=footer);print(pdf)

@@ -34,3 +34,5 @@ Technical quality status: **PASS within the declared evaluation contract**. Loca
 Publication, form submission and messages remain on user hold. The original 12-game final is consumed; no changed candidate may be selected using it.
 
 The largest material weakness is the standalone neural Metrica full-fit/whole-fold-out gap (0.8565 vs 0.7056 on two games). Independent full-pipeline final improvement is separately positive on 12/12 games. Both facts remain visible in the technical document.
+
+Supplemental update, 16 November: the two-game synthetic sensor diagnostic reveals material coordinate-jitter regressions. These are explicitly visible in PDF page 4, the current technical Markdown and the linked supplemental report; the original fixed final PASS does not certify arbitrary sensor robustness.

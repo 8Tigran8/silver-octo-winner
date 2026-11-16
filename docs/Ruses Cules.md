@@ -56,7 +56,11 @@ The standalone neural branch's full-fit/whole-fold-out spellF1 is DFL.68989/.667
 
 Short possessions remain under-segmented: PFFdevelopment predicted/reference spell-count ratio is.755; predicted mean duration17.54s versus reference13.75s. Long ball gaps, incomplete players, ambiguous control, provider annotation differences and anonymous WCSF provenance remain limitations. No hidden competition quality or qualification probability is known.
 
-With more time: collect independent Metrica-like games, reduce the tiny source's sampling weight, and improve short-spell duration modelling. Any changed model requires a new untouched reserve; the consumed final cannot become a tuning set.
+With more time: improve coordinate-jitter robustness using development-only augmentation, collect independent Metrica-like games, reduce the tiny source's sampling weight, and improve short-spell duration modelling. Any changed model requires a new untouched reserve; the consumed final cannot become a tuning set.
+
+## Supplemental sensor diagnostic
+
+A later [two-game sensor pilot](experiments/provider-stress/REPORT.md) loses to same-exclusion v4 in all six distinct combined perturbation cases: spellF1 gains range from -0.00638 to -0.06944. Clean/native controls improve. Post-hoc one-factor probes retain gains for cadence-only/burst-only changes but lose under independent per-observation coordinate noise. This is a material jitter-robustness limitation, not six new independent matches or a new promotion gate. All direct/nested components and neural normalizers exclude the full original fold. The original PFF final, model, mixture, decoder and candidate CSV remain unchanged.
 
 ## Exact-file reproduction
 

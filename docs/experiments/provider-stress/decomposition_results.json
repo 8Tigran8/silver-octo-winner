@@ -1,0 +1,703 @@
+{
+  "plan_sha256": "7236bb1ee048d03e195bbf88671679ca9f19df72f7ce856ac760928c29aa2c91",
+  "runner_sha256": "4d59b9b043c237ebc930f077fe71fdc81dfecd55f274f21c012b63058d6fcacc",
+  "shared_runner_sha256": "f67805dd3f997c05a7619dcac28aadc6cd6d0bcb370ee95a71f37d466141532c",
+  "scope": "Post-hoc explanation after all six distinct combined stress cases lost to strict v4. Not an independent confirmation, tuning, model switch or new gate.",
+  "records": [
+    {
+      "game": "original/idsse_J03WMX",
+      "scenario": "noise_only_0.5",
+      "candidate": "strict_v4",
+      "spell_f1_mean": 0.3799227799227799,
+      "macro_f1": 0.44479900615107176,
+      "n_gt_spells": 511,
+      "n_pred_spells": 266,
+      "per_class": {
+        "H": {
+          "precision": 0.4758310211631576,
+          "recall": 0.8945053821175628,
+          "f1": 0.6212101034314378,
+          "support": 39111
+        },
+        "A": {
+          "precision": 0.5842938586198805,
+          "recall": 0.9150417225128626,
+          "f1": 0.7131869150217774,
+          "support": 46258
+        },
+        "D": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 60598
+        }
+      }
+    },
+    {
+      "game": "original/idsse_J03WMX",
+      "scenario": "noise_only_0.5",
+      "candidate": "boundary102",
+      "spell_f1_mean": 0.319015047879617,
+      "macro_f1": 0.4433930709700063,
+      "n_gt_spells": 511,
+      "n_pred_spells": 220,
+      "per_class": {
+        "H": {
+          "precision": 0.47485817609628844,
+          "recall": 0.8796246580245967,
+          "f1": 0.6167622803872355,
+          "support": 39111
+        },
+        "A": {
+          "precision": 0.5722625541746988,
+          "recall": 0.9048596999437936,
+          "f1": 0.7011164060602507,
+          "support": 46258
+        },
+        "D": {
+          "precision": 1.0,
+          "recall": 0.006188323046965247,
+          "f1": 0.012300526462532596,
+          "support": 60598
+        }
+      }
+    },
+    {
+      "game": "original/idsse_J03WMX",
+      "scenario": "noise_only_2.0",
+      "candidate": "strict_v4",
+      "spell_f1_mean": 0.3557271557271557,
+      "macro_f1": 0.43374967571175943,
+      "n_gt_spells": 511,
+      "n_pred_spells": 266,
+      "per_class": {
+        "H": {
+          "precision": 0.4663597106621804,
+          "recall": 0.8753291912761115,
+          "f1": 0.6085140419480981,
+          "support": 39111
+        },
+        "A": {
+          "precision": 0.5671876292069793,
+          "recall": 0.8896623286782827,
+          "f1": 0.6927349851871802,
+          "support": 46258
+        },
+        "D": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 60598
+        }
+      }
+    },
+    {
+      "game": "original/idsse_J03WMX",
+      "scenario": "noise_only_2.0",
+      "candidate": "boundary102",
+      "spell_f1_mean": 0.28205841446453406,
+      "macro_f1": 0.4266212849739912,
+      "n_gt_spells": 511,
+      "n_pred_spells": 208,
+      "per_class": {
+        "H": {
+          "precision": 0.4591863498943939,
+          "recall": 0.8504768479455908,
+          "f1": 0.5963783056925145,
+          "support": 39111
+        },
+        "A": {
+          "precision": 0.5567402894135567,
+          "recall": 0.8849496303342125,
+          "f1": 0.6834855492294591,
+          "support": 46258
+        },
+        "D": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 60598
+        }
+      }
+    },
+    {
+      "game": "original/idsse_J03WMX",
+      "scenario": "burst_only",
+      "candidate": "strict_v4",
+      "spell_f1_mean": 0.6193069306930692,
+      "macro_f1": 0.9344395846596824,
+      "n_gt_spells": 511,
+      "n_pred_spells": 297,
+      "per_class": {
+        "H": {
+          "precision": 0.903860103626943,
+          "recall": 0.892050829689857,
+          "f1": 0.8979166398579352,
+          "support": 39111
+        },
+        "A": {
+          "precision": 0.9112662442272581,
+          "recall": 0.9171170392148386,
+          "f1": 0.9141822804994991,
+          "support": 46258
+        },
+        "D": {
+          "precision": 0.989475761362889,
+          "recall": 0.9929700650186475,
+          "f1": 0.9912198336216127,
+          "support": 60598
+        }
+      }
+    },
+    {
+      "game": "original/idsse_J03WMX",
+      "scenario": "burst_only",
+      "candidate": "boundary102",
+      "spell_f1_mean": 0.6418491484184915,
+      "macro_f1": 0.936884324069021,
+      "n_gt_spells": 511,
+      "n_pred_spells": 311,
+      "per_class": {
+        "H": {
+          "precision": 0.9109958506224066,
+          "recall": 0.8981616425046662,
+          "f1": 0.9045332234682185,
+          "support": 39111
+        },
+        "A": {
+          "precision": 0.9171059767870702,
+          "recall": 0.9138743568680012,
+          "f1": 0.9154873149762326,
+          "support": 46258
+        },
+        "D": {
+          "precision": 0.9848643006263048,
+          "recall": 0.9964685303145319,
+          "f1": 0.9906324337626118,
+          "support": 60598
+        }
+      }
+    },
+    {
+      "game": "original/idsse_J03WMX",
+      "scenario": "rate_only_10",
+      "candidate": "strict_v4",
+      "spell_f1_mean": 0.5875621890547263,
+      "macro_f1": 0.9302163988783346,
+      "n_gt_spells": 511,
+      "n_pred_spells": 293,
+      "per_class": {
+        "H": {
+          "precision": 0.9027573529411764,
+          "recall": 0.8789598834087596,
+          "f1": 0.8906996929693876,
+          "support": 39111
+        },
+        "A": {
+          "precision": 0.9030400342539071,
+          "recall": 0.9118638938129621,
+          "f1": 0.9074305137251527,
+          "support": 46258
+        },
+        "D": {
+          "precision": 0.9878222207692433,
+          "recall": 0.9972606356645434,
+          "f1": 0.9925189899404638,
+          "support": 60598
+        }
+      }
+    },
+    {
+      "game": "original/idsse_J03WMX",
+      "scenario": "rate_only_10",
+      "candidate": "boundary102",
+      "spell_f1_mean": 0.5945137157107232,
+      "macro_f1": 0.9289799976671751,
+      "n_gt_spells": 511,
+      "n_pred_spells": 291,
+      "per_class": {
+        "H": {
+          "precision": 0.9067530064754856,
+          "recall": 0.8771701055968909,
+          "f1": 0.8917162685519716,
+          "support": 39111
+        },
+        "A": {
+          "precision": 0.9120165145588874,
+          "recall": 0.9073241385273899,
+          "f1": 0.9096642753419015,
+          "support": 46258
+        },
+        "D": {
+          "precision": 0.9735477846470891,
+          "recall": 0.997871216871844,
+          "f1": 0.9855594491076524,
+          "support": 60598
+        }
+      }
+    },
+    {
+      "game": "original/idsse_J03WMX",
+      "scenario": "rate_only_15",
+      "candidate": "strict_v4",
+      "spell_f1_mean": 0.6081582200247219,
+      "macro_f1": 0.9359915113909641,
+      "n_gt_spells": 511,
+      "n_pred_spells": 298,
+      "per_class": {
+        "H": {
+          "precision": 0.9029792746113989,
+          "recall": 0.8911815090383779,
+          "f1": 0.8970416028618857,
+          "support": 39111
+        },
+        "A": {
+          "precision": 0.9089413524196133,
+          "recall": 0.9196895672099961,
+          "f1": 0.9142838722155958,
+          "support": 46258
+        },
+        "D": {
+          "precision": 0.9969452792179915,
+          "recall": 0.9963530149509885,
+          "f1": 0.996649059095411,
+          "support": 60598
+        }
+      }
+    },
+    {
+      "game": "original/idsse_J03WMX",
+      "scenario": "rate_only_15",
+      "candidate": "boundary102",
+      "spell_f1_mean": 0.6428915662650603,
+      "macro_f1": 0.9406112451734007,
+      "n_gt_spells": 511,
+      "n_pred_spells": 319,
+      "per_class": {
+        "H": {
+          "precision": 0.9115035055829654,
+          "recall": 0.8974968678888292,
+          "f1": 0.9044459617886912,
+          "support": 39111
+        },
+        "A": {
+          "precision": 0.9178387650085763,
+          "recall": 0.925418306022742,
+          "f1": 0.9216129518396521,
+          "support": 46258
+        },
+        "D": {
+          "precision": 0.9939819458375125,
+          "recall": 0.9975741773655896,
+          "f1": 0.9957748218918586,
+          "support": 60598
+        }
+      }
+    },
+    {
+      "game": "skillcorner/1925299",
+      "scenario": "noise_only_0.5",
+      "candidate": "strict_v4",
+      "spell_f1_mean": 0.526865671641791,
+      "macro_f1": 0.785103536636283,
+      "n_gt_spells": 258,
+      "n_pred_spells": 278,
+      "per_class": {
+        "H": {
+          "precision": 0.7408959953903774,
+          "recall": 0.9539822680565345,
+          "f1": 0.8340441403019443,
+          "support": 53914
+        },
+        "A": {
+          "precision": 0.7011161731207289,
+          "recall": 0.8746270353215311,
+          "f1": 0.7783186456107521,
+          "support": 35191
+        },
+        "D": {
+          "precision": 0.9685055165496489,
+          "recall": 0.6026055074498791,
+          "f1": 0.7429478239961529,
+          "support": 64095
+        }
+      }
+    },
+    {
+      "game": "skillcorner/1925299",
+      "scenario": "noise_only_0.5",
+      "candidate": "boundary102",
+      "spell_f1_mean": 0.5232514177693761,
+      "macro_f1": 0.7983724852725625,
+      "n_gt_spells": 258,
+      "n_pred_spells": 271,
+      "per_class": {
+        "H": {
+          "precision": 0.7626442343482469,
+          "recall": 0.9500871758726861,
+          "f1": 0.8461087389225217,
+          "support": 53914
+        },
+        "A": {
+          "precision": 0.7038928326081978,
+          "recall": 0.8734903810633401,
+          "f1": 0.7795741874944522,
+          "support": 35191
+        },
+        "D": {
+          "precision": 0.9667650182934026,
+          "recall": 0.6390046025431001,
+          "f1": 0.7694345294007138,
+          "support": 64095
+        }
+      }
+    },
+    {
+      "game": "skillcorner/1925299",
+      "scenario": "noise_only_2.0",
+      "candidate": "strict_v4",
+      "spell_f1_mean": 0.4387096774193549,
+      "macro_f1": 0.7592408052031513,
+      "n_gt_spells": 258,
+      "n_pred_spells": 300,
+      "per_class": {
+        "H": {
+          "precision": 0.7107434525485778,
+          "recall": 0.9362503245910153,
+          "f1": 0.808058654969824,
+          "support": 53914
+        },
+        "A": {
+          "precision": 0.668545581071677,
+          "recall": 0.8189878093830809,
+          "f1": 0.736159180597949,
+          "support": 35191
+        },
+        "D": {
+          "precision": 0.968415664192475,
+          "recall": 0.590311256728294,
+          "f1": 0.7335045800416808,
+          "support": 64095
+        }
+      }
+    },
+    {
+      "game": "skillcorner/1925299",
+      "scenario": "noise_only_2.0",
+      "candidate": "boundary102",
+      "spell_f1_mean": 0.3939597315436242,
+      "macro_f1": 0.7539707352766566,
+      "n_gt_spells": 258,
+      "n_pred_spells": 338,
+      "per_class": {
+        "H": {
+          "precision": 0.7074614186606258,
+          "recall": 0.9268093630596876,
+          "f1": 0.802415210688592,
+          "support": 53914
+        },
+        "A": {
+          "precision": 0.6533943017938797,
+          "recall": 0.7917933562558609,
+          "f1": 0.7159669047741404,
+          "support": 35191
+        },
+        "D": {
+          "precision": 0.9685911083281152,
+          "recall": 0.6033387939776894,
+          "f1": 0.7435300903672372,
+          "support": 64095
+        }
+      }
+    },
+    {
+      "game": "skillcorner/1925299",
+      "scenario": "burst_only",
+      "candidate": "strict_v4",
+      "spell_f1_mean": 0.6088,
+      "macro_f1": 0.8772871166189778,
+      "n_gt_spells": 258,
+      "n_pred_spells": 242,
+      "per_class": {
+        "H": {
+          "precision": 0.8622782206222679,
+          "recall": 0.9329858663797901,
+          "f1": 0.8962396101524289,
+          "support": 53914
+        },
+        "A": {
+          "precision": 0.8329590117911286,
+          "recall": 0.8431132960131852,
+          "f1": 0.8380053946420755,
+          "support": 35191
+        },
+        "D": {
+          "precision": 0.9343573297324669,
+          "recall": 0.8636555113503394,
+          "f1": 0.897616345062429,
+          "support": 64095
+        }
+      }
+    },
+    {
+      "game": "skillcorner/1925299",
+      "scenario": "burst_only",
+      "candidate": "boundary102",
+      "spell_f1_mean": 0.633904761904762,
+      "macro_f1": 0.8868268433780268,
+      "n_gt_spells": 258,
+      "n_pred_spells": 267,
+      "per_class": {
+        "H": {
+          "precision": 0.8822039153157941,
+          "recall": 0.9236190970805357,
+          "f1": 0.902436593300048,
+          "support": 53914
+        },
+        "A": {
+          "precision": 0.8469192280200143,
+          "recall": 0.8417208945469012,
+          "f1": 0.8443120599720662,
+          "support": 35191
+        },
+        "D": {
+          "precision": 0.9308514082227258,
+          "recall": 0.89723067321944,
+          "f1": 0.9137318768619663,
+          "support": 64095
+        }
+      }
+    }
+  ],
+  "exports": [
+    {
+      "game": "original/idsse_J03WMX",
+      "scenario": "noise_only_0.5",
+      "parameters": {
+        "observation_hz": 25,
+        "noise_std_m": 0.5,
+        "ball_bursts_per_minute": 0,
+        "burst_min_s": 2,
+        "burst_max_s": 6
+      },
+      "checks": {
+        "schema": true,
+        "unchanged_reference": true,
+        "unchanged_period": true,
+        "baseline_missing_ball_fraction": 0.0017097875076085543,
+        "missing_ball_rows": 250,
+        "missing_ball_fraction": 0.0017097875076085543
+      },
+      "array_sha256": {
+        "players": "5f50e709156812777de378042aa10141e370d46b516d6d4b8254635eead202ec",
+        "ball": "343c4ce8d76d16d6ddc55f8089980b6ca93d5495e74325a8d114389e54cd40ea",
+        "slot_team": "0e35a53871304db5962bedd5562462cf086ab5dd2fa0fdc00cf15902211feaa1",
+        "pitch": "90de9b6473fb38c4fb3dd057cae6c7898238b88fc77f56da56c50e8149b3d842",
+        "period": "4d28102a0c1baf26b06f51c1a7a7ddc9407604a12a93cefef1d3b9de705be867",
+        "gt": "6bbf3d7462c09655d3cf43ca61eab3726261da930a46af3f9d5fbd6cd205a570"
+      }
+    },
+    {
+      "game": "original/idsse_J03WMX",
+      "scenario": "noise_only_2.0",
+      "parameters": {
+        "observation_hz": 25,
+        "noise_std_m": 2.0,
+        "ball_bursts_per_minute": 0,
+        "burst_min_s": 2,
+        "burst_max_s": 6
+      },
+      "checks": {
+        "schema": true,
+        "unchanged_reference": true,
+        "unchanged_period": true,
+        "baseline_missing_ball_fraction": 0.0017097875076085543,
+        "missing_ball_rows": 250,
+        "missing_ball_fraction": 0.0017097875076085543
+      },
+      "array_sha256": {
+        "players": "32e2eaa277ea414d92f9469e614d7a9ba3446df98bf437ba41aac0eba7606152",
+        "ball": "e9036010d8b6b660ab6df1226389446a159b7ce7ffe56064066822e512bd6026",
+        "slot_team": "0e35a53871304db5962bedd5562462cf086ab5dd2fa0fdc00cf15902211feaa1",
+        "pitch": "90de9b6473fb38c4fb3dd057cae6c7898238b88fc77f56da56c50e8149b3d842",
+        "period": "4d28102a0c1baf26b06f51c1a7a7ddc9407604a12a93cefef1d3b9de705be867",
+        "gt": "6bbf3d7462c09655d3cf43ca61eab3726261da930a46af3f9d5fbd6cd205a570"
+      }
+    },
+    {
+      "game": "original/idsse_J03WMX",
+      "scenario": "burst_only",
+      "parameters": {
+        "observation_hz": 25,
+        "noise_std_m": 0,
+        "ball_bursts_per_minute": 2,
+        "burst_min_s": 2,
+        "burst_max_s": 6
+      },
+      "checks": {
+        "schema": true,
+        "unchanged_reference": true,
+        "unchanged_period": true,
+        "baseline_missing_ball_fraction": 0.0017097875076085543,
+        "missing_ball_rows": 17290,
+        "missing_ball_fraction": 0.11824890402620762
+      },
+      "array_sha256": {
+        "players": "f99fe2b4897e7669b5bd560c3a2d3fc0b1e71cab6c8513cab4e5d1b31a7f5639",
+        "ball": "c8285ca9b51cee06ada951fd3b918d7275f5aab36b606bb782d8f24d5d67c128",
+        "slot_team": "0e35a53871304db5962bedd5562462cf086ab5dd2fa0fdc00cf15902211feaa1",
+        "pitch": "90de9b6473fb38c4fb3dd057cae6c7898238b88fc77f56da56c50e8149b3d842",
+        "period": "4d28102a0c1baf26b06f51c1a7a7ddc9407604a12a93cefef1d3b9de705be867",
+        "gt": "6bbf3d7462c09655d3cf43ca61eab3726261da930a46af3f9d5fbd6cd205a570"
+      }
+    },
+    {
+      "game": "original/idsse_J03WMX",
+      "scenario": "rate_only_10",
+      "parameters": {
+        "observation_hz": 10,
+        "noise_std_m": 0,
+        "ball_bursts_per_minute": 0,
+        "burst_min_s": 2,
+        "burst_max_s": 6
+      },
+      "checks": {
+        "schema": true,
+        "unchanged_reference": true,
+        "unchanged_period": true,
+        "baseline_missing_ball_fraction": 0.0017097875076085543,
+        "missing_ball_rows": 87830,
+        "missing_ball_fraction": 0.6006825471730374
+      },
+      "array_sha256": {
+        "players": "8c46484c424d5474f0d98ef6a756db1076d2e4fea448598323442a3ccf3e709d",
+        "ball": "7ebbf7f7554733af6d46d85bdef6041545c6de3635e76b24caf63e01da50f38d",
+        "slot_team": "0e35a53871304db5962bedd5562462cf086ab5dd2fa0fdc00cf15902211feaa1",
+        "pitch": "90de9b6473fb38c4fb3dd057cae6c7898238b88fc77f56da56c50e8149b3d842",
+        "period": "4d28102a0c1baf26b06f51c1a7a7ddc9407604a12a93cefef1d3b9de705be867",
+        "gt": "6bbf3d7462c09655d3cf43ca61eab3726261da930a46af3f9d5fbd6cd205a570"
+      }
+    },
+    {
+      "game": "original/idsse_J03WMX",
+      "scenario": "rate_only_15",
+      "parameters": {
+        "observation_hz": 15,
+        "noise_std_m": 0,
+        "ball_bursts_per_minute": 0,
+        "burst_min_s": 2,
+        "burst_max_s": 6
+      },
+      "checks": {
+        "schema": true,
+        "unchanged_reference": true,
+        "unchanged_period": true,
+        "baseline_missing_ball_fraction": 0.0017097875076085543,
+        "missing_ball_rows": 58637,
+        "missing_ball_fraction": 0.4010272403345712
+      },
+      "array_sha256": {
+        "players": "4f327ef2ab2167802768f9bd42ed40569bfb344ddfe246cb0169f06793b769ce",
+        "ball": "da14029148580650608983d08c82ea17f28a0b2db444e357d583d693a1dad235",
+        "slot_team": "0e35a53871304db5962bedd5562462cf086ab5dd2fa0fdc00cf15902211feaa1",
+        "pitch": "90de9b6473fb38c4fb3dd057cae6c7898238b88fc77f56da56c50e8149b3d842",
+        "period": "4d28102a0c1baf26b06f51c1a7a7ddc9407604a12a93cefef1d3b9de705be867",
+        "gt": "6bbf3d7462c09655d3cf43ca61eab3726261da930a46af3f9d5fbd6cd205a570"
+      }
+    },
+    {
+      "game": "skillcorner/1925299",
+      "scenario": "noise_only_0.5",
+      "parameters": {
+        "observation_hz": 10,
+        "noise_std_m": 0.5,
+        "ball_bursts_per_minute": 0,
+        "burst_min_s": 2,
+        "burst_max_s": 6
+      },
+      "checks": {
+        "schema": true,
+        "unchanged_reference": true,
+        "unchanged_period": true,
+        "baseline_missing_ball_fraction": 0.3727610260291939,
+        "missing_ball_rows": 114746,
+        "missing_ball_fraction": 0.7487455220520584
+      },
+      "array_sha256": {
+        "players": "91288c46b4b8eb73753ce877237422042846886c9dc4238297a2ce09c7f110e4",
+        "ball": "2171351ff4e71dfb26216bfe4d45b05047a77ebd9dbbe1b798c26aec8e1fc55a",
+        "slot_team": "a0d6872de9c23eb0b75ea9196f60602e8fc8575dbd0f0f940d2bcf3551d7b895",
+        "pitch": "90de9b6473fb38c4fb3dd057cae6c7898238b88fc77f56da56c50e8149b3d842",
+        "period": "cee2aefdd41e202f69d8446419fc499f47e80191add452cbd468818c58d50d05",
+        "gt": "cc75d859fb45b80054d8a60e55076bd2e6761ddd555eb6a868227c8aad66ab87"
+      }
+    },
+    {
+      "game": "skillcorner/1925299",
+      "scenario": "noise_only_2.0",
+      "parameters": {
+        "observation_hz": 10,
+        "noise_std_m": 2.0,
+        "ball_bursts_per_minute": 0,
+        "burst_min_s": 2,
+        "burst_max_s": 6
+      },
+      "checks": {
+        "schema": true,
+        "unchanged_reference": true,
+        "unchanged_period": true,
+        "baseline_missing_ball_fraction": 0.3727610260291939,
+        "missing_ball_rows": 114746,
+        "missing_ball_fraction": 0.7487455220520584
+      },
+      "array_sha256": {
+        "players": "f2e63409e210d7495b291ce99bc3fe0e0613b55e3268ec11483b39cfa1eae564",
+        "ball": "5c26f067b84105df048a7536edeb4aca0a498318e17a2bab5cc49aeb2401e4e5",
+        "slot_team": "a0d6872de9c23eb0b75ea9196f60602e8fc8575dbd0f0f940d2bcf3551d7b895",
+        "pitch": "90de9b6473fb38c4fb3dd057cae6c7898238b88fc77f56da56c50e8149b3d842",
+        "period": "cee2aefdd41e202f69d8446419fc499f47e80191add452cbd468818c58d50d05",
+        "gt": "cc75d859fb45b80054d8a60e55076bd2e6761ddd555eb6a868227c8aad66ab87"
+      }
+    },
+    {
+      "game": "skillcorner/1925299",
+      "scenario": "burst_only",
+      "parameters": {
+        "observation_hz": 10,
+        "noise_std_m": 0,
+        "ball_bursts_per_minute": 2,
+        "burst_min_s": 2,
+        "burst_max_s": 6
+      },
+      "checks": {
+        "schema": true,
+        "unchanged_reference": true,
+        "unchanged_period": true,
+        "baseline_missing_ball_fraction": 0.3727610260291939,
+        "missing_ball_rows": 119476,
+        "missing_ball_fraction": 0.7796099209793085
+      },
+      "array_sha256": {
+        "players": "edf5af99d40bb6767a6e89ecbe2e9e4aa4e57b3507f5dde683095e83b0ff4295",
+        "ball": "c6fc5fc71823729f90be088a45289ada4fdeaa789b63eeae9af724c5a4fad987",
+        "slot_team": "a0d6872de9c23eb0b75ea9196f60602e8fc8575dbd0f0f940d2bcf3551d7b895",
+        "pitch": "90de9b6473fb38c4fb3dd057cae6c7898238b88fc77f56da56c50e8149b3d842",
+        "period": "cee2aefdd41e202f69d8446419fc499f47e80191add452cbd468818c58d50d05",
+        "gt": "cc75d859fb45b80054d8a60e55076bd2e6761ddd555eb6a868227c8aad66ab87"
+      }
+    }
+  ],
+  "provenance_sha256": "f74d163431c18e3c23ab66b78e1ce1d1fd8f975300c40b9ab4708bac8924ebc5",
+  "frozen_before": {
+    "files": 67,
+    "unchanged": true,
+    "freeze_sha256": "88f0a690176cd20e5dcf1fef9c4fd8b3e8cbd341876990a5ebb5c1263dd21354"
+  },
+  "frozen_after": {
+    "files": 67,
+    "unchanged": true,
+    "freeze_sha256": "88f0a690176cd20e5dcf1fef9c4fd8b3e8cbd341876990a5ebb5c1263dd21354"
+  },
+  "model_changed": false,
+  "final_reserve_used": false
+}

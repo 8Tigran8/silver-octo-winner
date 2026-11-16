@@ -1,0 +1,70 @@
+{
+  "registered_utc": "2026-11-16T08:50:10.595852+00:00",
+  "reason": "Post-hoc explanation after all six distinct combined stress cases lost to strict v4. Not an independent confirmation, tuning, model switch or new gate.",
+  "cases": {
+    "idsse_J03WMX": {
+      "noise_only_0.5": {
+        "observation_hz": 25,
+        "noise_std_m": 0.5,
+        "ball_bursts_per_minute": 0,
+        "burst_min_s": 2,
+        "burst_max_s": 6
+      },
+      "noise_only_2.0": {
+        "observation_hz": 25,
+        "noise_std_m": 2.0,
+        "ball_bursts_per_minute": 0,
+        "burst_min_s": 2,
+        "burst_max_s": 6
+      },
+      "burst_only": {
+        "observation_hz": 25,
+        "noise_std_m": 0,
+        "ball_bursts_per_minute": 2,
+        "burst_min_s": 2,
+        "burst_max_s": 6
+      },
+      "rate_only_10": {
+        "observation_hz": 10,
+        "noise_std_m": 0,
+        "ball_bursts_per_minute": 0,
+        "burst_min_s": 2,
+        "burst_max_s": 6
+      },
+      "rate_only_15": {
+        "observation_hz": 15,
+        "noise_std_m": 0,
+        "ball_bursts_per_minute": 0,
+        "burst_min_s": 2,
+        "burst_max_s": 6
+      }
+    },
+    "skillcorner_1925299": {
+      "noise_only_0.5": {
+        "observation_hz": 10,
+        "noise_std_m": 0.5,
+        "ball_bursts_per_minute": 0,
+        "burst_min_s": 2,
+        "burst_max_s": 6
+      },
+      "noise_only_2.0": {
+        "observation_hz": 10,
+        "noise_std_m": 2.0,
+        "ball_bursts_per_minute": 0,
+        "burst_min_s": 2,
+        "burst_max_s": 6
+      },
+      "burst_only": {
+        "observation_hz": 10,
+        "noise_std_m": 0,
+        "ball_bursts_per_minute": 2,
+        "burst_min_s": 2,
+        "burst_max_s": 6
+      }
+    }
+  },
+  "seed": 20261113,
+  "models": "Same frozen complete-fold-out boundary102 and strict_v4",
+  "all_results_retained": true,
+  "model_or_inference_change": false
+}

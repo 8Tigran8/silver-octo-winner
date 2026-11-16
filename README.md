@@ -34,6 +34,10 @@ The data directory contains `tactical/BAR-ATH_tactical_atd.xml` and `.txt`. The 
 
 The method is not perfect: short possessions remain under-segmented and the two-game Metrica source shows a large standalone-neural train/CV gap. The final held-out gain does not establish universal absence of overfit or competition rank. Losses, annotation proxies and source caveats are documented. No target labels, private GT or manual correction enter fitting/selection. No organizer assets or raw external matches are redistributed.
 
+### Supplemental sensor diagnostic
+
+VV's [stress pilot](docs/experiments/provider-stress/REPORT.md) found a material limitation after the original final: boundary102 loses all six distinct combined-noise cases on two familiar development games, by 0.0064-0.0694 spellF1. Separate probes show gains under cadence-only and burst-only changes, but losses under independent coordinate jitter. This does not change the frozen 12-game PFF result or weights; it prevents an unconditional sensor-robustness claim. All losses and duplicate SkillCorner presets are retained.
+
 ### Historical v4 control
 
 V4 remains available with `run.py v4`; its original verified package is preserved. Its earlier recipe and provenance are archived in [TECHNICAL_V4.md](docs/experiments/temporal/TECHNICAL_V4.md). The primary current recipe above regenerates boundary102.

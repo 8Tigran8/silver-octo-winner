@@ -97,3 +97,7 @@ The two-game Metrica gap of.151indicates a material source-specific overfit risk
 Generalization remains conditional on sensor/reference semantics and sampled matches; no universal/no-overfit or competition-rank claim. The provided match is never used for supervised fitting, candidate selection or quality scoring. Publication and organizer submission are separate steps and remain on hold.
 
 ![PFF paired game gains](game_comparison.png)
+
+## Later supplemental sensor diagnostic
+
+The [two-game provider/sensor pilot](../provider-stress/REPORT.md), run after the original final, found losses to same-exclusion v4 in all six distinct combined perturbation cases (-0.00638 to -0.06944 spellF1). One-factor probes retain advantages for cadence-only and burst-only changes but reveal a coordinate-jitter weakness. These are familiar development games and synthetic copies; no independent sample or new promotion gate is claimed. This negative evidence is retained alongside the original final PASS. No inference policy or model is changed and the original final is not reused.

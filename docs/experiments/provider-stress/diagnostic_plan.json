@@ -1,0 +1,104 @@
+{
+  "registered_utc": "2026-11-16T08:45:50.438944+00:00",
+  "source_commit": "8f419d7440b06c8211b50cce5fa2e47e59cc0edb",
+  "purpose": "Additional diagnostics of already frozen boundary102 versus same-exclusion v4; no fitting, selection, retuning, promotion gate or final reserve access",
+  "converter_sha256": "e0d331d116d49a6586a7a11a77882fcd9d83b15ef0964bd5b192b9f3662f3d1d",
+  "config_sha256": "9133d5e67cda508d38bad7afe1ceb71a0920ef639aca319e570d33b3d5aec2bb",
+  "fold_plan_sha256": "2f9facaf149ec17d84a8dd6064a4e9dc57945c784477973c0009c43461df70aa",
+  "sources": {
+    "idsse_J03WMX": {
+      "description": "Original DFL development game, CC BY 4.0, IDSSE / Sportec / DFL.",
+      "provider": "idsse",
+      "game_id": "J03WMX",
+      "fold_key": "original/idsse_J03WMX",
+      "fold": 2,
+      "source_hz": 25,
+      "source_revision": "a715a38dfbaf5f58e431727c2b78d174101a703c",
+      "clock_description": "Within each GameSection, raw N advances at 25 Hz. Reader concatenates firstHalf, 250 empty grid rows, secondHalf. Native timestamps use this concatenated clock, not wall time; source_frame retains raw N.",
+      "raw_files": {
+        "metadata": {
+          "path": "idsse/DFL_02_01_matchinformation_DFL-COM-000001_DFL-MAT-J03WMX.xml",
+          "sha256": "a884728647a564cf8b20e5223a1d04a5da6f6725e1e506c8651505327c197ba9"
+        },
+        "tracking": {
+          "path": "idsse/DFL_04_03_positions_raw_observed_DFL-COM-000001_DFL-MAT-J03WMX.xml",
+          "sha256": "d3dd92e509421a6466acb0a083c009035f1751bc5fd9ef42ffa8f20d01cf7d49"
+        }
+      }
+    },
+    "skillcorner_1925299": {
+      "description": "Prior SkillCorner development game in expanded_team_training.json, MIT; credit SkillCorner.",
+      "provider": "skillcorner",
+      "game_id": "1925299",
+      "fold_key": "skillcorner/1925299",
+      "fold": 4,
+      "source_hz": 10,
+      "source_revision": "4340d274572876239c154c90bc507a9b3250a656",
+      "clock_description": "Native frame f has time f/10 seconds, matching the existing reader. match_periods supplies half-open native frame ranges independently of phases. Canonical period/gt use the reader floor mapping.",
+      "raw_files": {
+        "metadata": {
+          "path": "skillcorner/1925299/1925299_match.json",
+          "sha256": "f4345b32c0fdd7c9990df70050b3a74f57b1992cf762e20f2a4d309bd2fba7d2"
+        },
+        "reference": {
+          "path": "skillcorner/1925299/1925299_phases_of_play.csv",
+          "sha256": "a1682a736a9cf1c311cb799f0a949f7e023dca4ebaa9dd294b138e8929271274"
+        },
+        "tracking": {
+          "path": "skillcorner/1925299/1925299_tracking_extrapolated.jsonl",
+          "sha256": "48528be40ad82fa3e2b232e1af8d311705f7d6d119925ef199d2b59ea36fd3c9"
+        }
+      }
+    }
+  },
+  "seed": 20261113,
+  "presets": {
+    "hz10_noise0p5": {
+      "description": "10 Hz requested, 0.5 m xy standard deviation, 2 Poisson burst starts per minute, uniform 2-6 s duration.",
+      "observation_hz": 10,
+      "noise_std_m": 0.5,
+      "ball_bursts_per_minute": 2.0,
+      "burst_min_s": 2.0,
+      "burst_max_s": 6.0
+    },
+    "hz15_noise0p5": {
+      "description": "15 Hz requested, 0.5 m xy standard deviation, 2 Poisson burst starts per minute, uniform 2-6 s duration.",
+      "observation_hz": 15,
+      "noise_std_m": 0.5,
+      "ball_bursts_per_minute": 2.0,
+      "burst_min_s": 2.0,
+      "burst_max_s": 6.0
+    },
+    "hz10_noise2": {
+      "description": "10 Hz requested, 2 m xy standard deviation, 2 Poisson burst starts per minute, uniform 2-6 s duration.",
+      "observation_hz": 10,
+      "noise_std_m": 2,
+      "ball_bursts_per_minute": 2.0,
+      "burst_min_s": 2.0,
+      "burst_max_s": 6.0
+    },
+    "hz15_noise2": {
+      "description": "15 Hz requested, 2 m xy standard deviation, 2 Poisson burst starts per minute, uniform 2-6 s duration.",
+      "observation_hz": 15,
+      "noise_std_m": 2,
+      "ball_bursts_per_minute": 2.0,
+      "burst_min_s": 2.0,
+      "burst_max_s": 6.0
+    }
+  },
+  "additional_controls": {
+    "baseline": "Exact unchanged canonical reader arrays",
+    "native_observed_only": "Same converter with source-native observation_hz, zero coordinate noise and zero burst starts; separates resampling/observed-only representation from perturbation"
+  },
+  "models": [
+    "strict_v4",
+    "boundary102"
+  ],
+  "isolation": "All original game copies use the same excluded outer-fold neural models and same fully excluded inherited components. Verify actual train-only normalizers, lineage and asset hashes. No full-fit release models on familiar games.",
+  "scoring": "Unchanged official spellF1 plus macroF1 and H/A/D F1; preserve every condition and loss. Aggregate per-game paired candidate-control gains; no treating copies as independent games. SkillCorner 15Hz capped at10Hz and duplicates explicitly retained as aliases.",
+  "scope": "Two previously used development games only, not independent external confirmation; synthetic corruption is not real camera/provider variation",
+  "storage": "Process one condition in memory; persist aggregate scores, hashes and predicted labels only locally. Do not materialize every full tracking NPZ.",
+  "frozen_candidate_files": 67,
+  "target_match_used": false,
+  "final_reserve_reopened": false
+}
