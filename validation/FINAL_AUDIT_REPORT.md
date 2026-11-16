@@ -2,6 +2,8 @@
 
 **CONDITIONALLY READY**, 16 November 2026. The audited output is reproducible and format-valid. Confirmed implementation defects were repaired; no protected-target label use was found in the inspected code and evidence. The private repository, source-access qualifications, unverified team eligibility and limited fresh generalization evidence prevent an unconditional READY claim.
 
+**Later same-day real-match validation completed:** six previously unopened PFF bridge fixtures now provide prospective evidence for the corrected source. Current Spell F1 **0.613896**, v4 **0.546054**, gains on all six. All 36 PFF training fixtures score **0.625242** under the same frozen current inference, a training-minus-new gap of **0.011345**. This supersedes the earlier assertion that corrected-source evidence was development-only. Partial country overlap, shared provider and proxy reference definitions remain explicit. No fitting or selection used the six outcomes. See [the new-match audit](../docs/experiments/unseen-bridge-audit/REPORT.md).
+
 This verdict supersedes earlier conversational claims of full technical readiness. The audit sought failures rather than defending the existing model. The complete raw organizer specification was retrieved at current commit `f8f2629ff1e0985f81d7e59d8413678514ee1530`; local copies and the original user brief were preserved. Source hashes are recorded.
 
 ## Critical issues and fixes
@@ -34,6 +36,9 @@ The subsequent continuous loop also fixed P2 partial-coordinate visibility, lone
 | Same ten, fixed blind observation stress | Same independent reference, degraded geometry | 0.642574 | 0.877913 | Familiar-data regression; mean spell change +0.000088 |
 | One frozen output, public five-minute window | Organizer's public corrected-tracking reference, 17 possessions | 0.600000 | 0.7548 | **DIAGNOSTIC ONLY — NOT A GENERALIZATION ESTIMATE** |
 | Original source, previously sealed twelve-game PFF final, natural | PFF event-derived reference proxies | 0.604277 | 0.880511 | Original one-shot evidence; v4 spell 0.541801, 12/12 gains. Not rerun or retuned in this audit. |
+| Corrected frozen source, six newly opened PFF bridges, natural | PFF event-state proxies, one familiar country per game | 0.613896 | 0.882073 | Prospective match holdout; v4 0.546054, 6/6 gains; no post-test tuning. |
+| Same six, fixed blind observation stress | Same references, label-blind degraded geometry | 0.594795 | 0.870640 | V4 0.527951, 6/6 gains. |
+| Corrected frozen source, all 36 PFF training matches | Same canonical reference policy | 0.625242 | 0.876044 | In-sample performance only; gap to new six +0.011345 Spell F1. |
 
 All ten external games and both observation cases were retained; canonical and SDK-shadow results agree. No game loses Spell F1 in this correctness-fix regression. Tiny macro differences (~0.00002 natural / ~0.00004 blind mean loss) are retained. No improvement claim is made from these small changes. The previous twelve final matches were not reopened for corrected-model selection. Exhaustive cross-provider near-duplicate detection is not established. National-team overlap and only two final groups limit uncertainty estimates.
 
@@ -70,7 +75,7 @@ Package: `out/audit-ready/Ruses Cules.csv`, `out/audit-ready/Ruses Cules.md`, `o
 
 ## Confidence assessment
 
-Format correctness: high for the exact hashed file. Implementation correctness: strengthened by failing-then-passing synthetic tests, including partial XY/Inf/corrupted-cache contracts, but not exhaustive football semantic or numeric-corruption verification. Rule compliance: no prohibited-use evidence found within the inspected scope; source access and eligibility remain conditions. Reproducibility: directly demonstrated on macOS ARM, Linux ARM and emulated Linux x86-64 on one host. Generalization: meaningful historical external-match evidence with provider/proxy/shared-team limitations; corrected source has familiar development regression only. No calibrated success probability is available.
+Format correctness: high for the exact hashed file. Implementation correctness: strengthened by failing-then-passing synthetic tests, including partial XY/Inf/corrupted-cache contracts, but not exhaustive football semantic or numeric-corruption verification. Rule compliance: no prohibited-use evidence found within the inspected scope; source access and eligibility remain conditions. Reproducibility: directly demonstrated on macOS ARM, Linux ARM and emulated Linux x86-64 on one host. Generalization: historical external-match evidence plus six prospectively frozen new fixtures for the corrected source, with provider/proxy/shared-team limitations. No calibrated success probability is available.
 
 The most likely quality failures remain short possessions, long missing-ball stretches, coordinate jitter, ambiguous control and provider-definition shift. A sparse four-player synthetic end-to-end fixture produced all D: its passing CSV validator proves execution only. Synthetic latent-state decoder tests must not be described as learned recognition of football semantics.
 

@@ -1,5 +1,7 @@
 # Fresh external validation search — 16 November 2026
 
+**Later same-day correction:** this is the earlier search snapshot. Its treatment of unused PFF bridges was too restrictive: excluded from training/selection does not prohibit a separately frozen evaluation-only audit. All six were subsequently evaluated under a committed prospective plan, without changing the old partition or tuning the model. See [new-match results and training/test comparison](../docs/experiments/unseen-bridge-audit/REPORT.md) and [continued search](../docs/experiments/unseen-bridge-audit/SEARCH.md). The statement below about unopened bridges describes this snapshot, not their current status.
+
 This is a bounded source recheck, not a claim that no suitable dataset exists anywhere. No new target labels, closed final games or excluded bridges were opened.
 
 | Primary source | What was checked | Eligibility decision |

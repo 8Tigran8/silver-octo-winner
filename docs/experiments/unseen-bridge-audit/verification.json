@@ -1,0 +1,42 @@
+{
+  "recorded_utc": "2026-11-16T12:46:05.961897+00:00",
+  "source_commit_before_documentation_commit": "265ca7be31f150f58a717df91e49f66352e25500",
+  "checks": {
+    "frozen_inference_model_reference_policy": "PASS",
+    "six_match_complete_unique_48_score_grid": "PASS",
+    "six_matches_24_diagnostic_rows": "PASS",
+    "all_36_training_matches_and_reference_preflight_hashes": "PASS",
+    "saved_prediction_hashes_all_six": "PASS",
+    "local_and_shared_aggregate_identity": "PASS"
+  },
+  "executed_tests": {
+    "command": ".venv/bin/python -m unittest tests.test_unseen_audit tests.test_unseen_report",
+    "tests": 5,
+    "failures": 0,
+    "errors": 0,
+    "result": "OK; observed completed session 87212"
+  },
+  "executed_submission_gate": {
+    "command": ".venv/bin/python tools/final_submission_gate.py --csv 'out/audit-ready/Ruses Cules.csv'",
+    "status": "PASS; observed completed session 87212",
+    "rows": 199319,
+    "csv_sha256": "cfbd16ea35075a199d2401c18f162d4c1f953be4049cd776d502ff42ea389c97"
+  },
+  "aggregate_sha256": {
+    "plan.json": "d4ba2ebd31fa43ed92bfd89b437c8be30359fe4a4a8a54faabb826802d254916",
+    "freeze.json": "93c1f962045fe6f94517a38140e1d78ff8c50deb446aa190e28f6f4533c03d83",
+    "results.json": "70bcaadd311f66fc8af073465e7e837cd7e500cc41210e07aae07127af784d63",
+    "summary.json": "964192ca68c2ac2ad4491ada68a740e7ceb6929719860a773b48e5c893797787",
+    "training_gap_plan.json": "a3feb78ccb91e069ce82e792821a90a1036fd23a12efa1f00e2ca447ac109eae",
+    "training_gap.json": "7fc2c0efb57778a17cdce0de926a10547600934a052f2770044740cc21ef3f77"
+  },
+  "new_tool_sha256": {
+    "pff_unseen_audit.py": "e52897fba3e5e3c355f90145e7fdd01e8e897922fa673e360c0fcbf61185c186",
+    "report_unseen_audit.py": "2c7aa1aa840b2c398cb81ff79b0c9c1225b3a73432cee1e7052c56cac0550144",
+    "audit_training_gap.py": "0de10e1b9f748d280f23c37237b536f7514a6e7bd9c5c042ffb5cb6584a23091",
+    "report_training_gap.py": "eeee1bab818146d9d3a514cbd90a5fa2bd1ce01837c348bfd9ce1a57a06aa53b"
+  },
+  "production_change": false,
+  "target_labels_accessed": false,
+  "organizer_submission": false
+}

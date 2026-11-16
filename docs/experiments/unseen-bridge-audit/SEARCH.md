@@ -1,0 +1,15 @@
+# Additional-match search, 16 November 2026
+
+This continues `validation/FRESH_DATA_RECHECK.md` and corrects its overly restrictive treatment of unused PFF bridge fixtures. It is a bounded search, not proof that no other suitable data exists.
+
+| Primary source | Finding and action |
+|---|---|
+| [PFF original release](https://www.blog.fc.pff.com/blog/enhanced-2022-world-cup-dataset) and the original local split registry | Six original-provider bridge fixtures had not been opened. Keep them excluded from fitting/selection; prospectively evaluate the frozen model on all six, reporting partial country overlap and common provider. **Completed**, results in REPORT.md. |
+| [PySport IDSSE actual file inventory](https://huggingface.co/api/datasets/pysport/idsse-data/tree/main?recursive=true) | Actual files contain J03WMX, J03WN1, J03WOH, J03WOY, J03WPY, J03WQQ, J03WR9: the same seven DFL games already used. README name differences do not establish new fixtures. Local inventory receipt retained; no rebranding as new data. |
+| [SoccerNet-GAR card](https://huggingface.co/datasets/OpenSportsLab/SoccerNet-GAR/blob/main/README.md) | Derived from the same 64 World Cup 2022 games supplied by Gradient Sports/PFF; event-centred action clips, not a new full-match possession holdout. Separate gated NDA access was not requested. |
+| [Metrica official sample data](https://github.com/metrica-sports/sample-data) | Games 1/2 and the game 3 added in 2021 are already represented in previous training/validation work; not new fixtures. |
+| [SkillCorner official data](https://github.com/SkillCorner/opendata) | Previous same-day inventory checked all 20 release IDs against training. No unused released fixture was found. See prior receipt in FRESH_DATA_RECHECK.md. |
+| [SoccerTrack v2 card](https://huggingface.co/datasets/atomscott/soccertrack-v2) and [author repository](https://github.com/AtomScott/SoccerTrack-v2) | Ten genuinely different university fixtures, but event-anchored auxiliary ball coordinates cannot independently validate possession reconstructed from those same events. Player-only inference plus independent reference validation would be a different pipeline requiring separate evidence. No gated access or training in this audit. |
+| [Uppsala course's Signality player-movement page](https://uppsala.instructure.com/courses/28112/pages/4-player-movements-on-the-pitch) and [Friends of Tracking API example](https://github.com/Friends-of-Tracking-Data-FoTD/SoccermaticsForPython/blob/master/12GetSignalityAPI.py) | A distinct historical source worth following up, but the course page was inaccessible through the browser fetch and the API example requires credentials. No accessible full-match independent H/A/D reference was established. No account/permission bypass or new agreement. |
+
+Additional sources must have genuinely different match identities, usable measured observations and a separately justified continuous reference. More clips, duplicate mirrors, event-derived input trajectories and already used matches do not enlarge the independent test sample.

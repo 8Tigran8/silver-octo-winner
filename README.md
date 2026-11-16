@@ -4,6 +4,8 @@ This branch contains correctness repairs to period isolation, tracking caches, i
 
 # Ruses Cules · More Than a Hack 2027
 
+**Additional real-match audit:** the corrected frozen model was evaluated on all six previously unopened PFF bridge fixtures, without fitting or selection. Spell F1 is **0.613896 vs v4 0.546054**, with gains on 6/6 games; all 36 PFF training games score **0.625242** with the same current model. This strengthens within-provider unseen-match evidence, not a universal no-overfitting claim. Each new fixture shares one country with training/development, and references remain event-derived proxies. Full outcomes, training/test comparison and failures: [six-match audit](docs/experiments/unseen-bridge-audit/REPORT.md).
+
 Ball possession from automatic tracking. **Current selected model: boundary102.** The organizer submission remains on hold. This branch makes the current code, frozen weights and evidence available for team review; it does not change repository visibility or submit the solution.
 
 ## Generate the current CSV

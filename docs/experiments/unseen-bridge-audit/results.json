@@ -1,0 +1,1862 @@
+{
+  "freeze_sha256": "93c1f962045fe6f94517a38140e1d78ff8c50deb446aa190e28f6f4533c03d83",
+  "records": [
+    {
+      "game": "10512",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.4,
+      "macro_f1": 0.7396988324808916,
+      "n_gt_spells": 278,
+      "n_pred_spells": 233,
+      "per_class": {
+        "H": {
+          "precision": 0.5167585446527012,
+          "recall": 0.740588583843571,
+          "f1": 0.6087507102849258,
+          "support": 25315
+        },
+        "A": {
+          "precision": 0.9255387241305739,
+          "recall": 0.6376598559459062,
+          "f1": 0.7550913838120105,
+          "support": 61227
+        },
+        "D": {
+          "precision": 0.8075526406627546,
+          "recall": 0.9089453889907687,
+          "f1": 0.8552544033457385,
+          "support": 64346
+        }
+      }
+    },
+    {
+      "game": "10512",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.549266247379455,
+      "macro_f1": 0.8290824651049099,
+      "n_gt_spells": 278,
+      "n_pred_spells": 199,
+      "per_class": {
+        "H": {
+          "precision": 0.7293408516430099,
+          "recall": 0.7408650997432352,
+          "f1": 0.7350578091318831,
+          "support": 25315
+        },
+        "A": {
+          "precision": 0.9368556457257439,
+          "recall": 0.8088751694513858,
+          "f1": 0.8681742484003856,
+          "support": 61227
+        },
+        "D": {
+          "precision": 0.8353339787028073,
+          "recall": 0.9387219096758151,
+          "f1": 0.8840153377824612,
+          "support": 64346
+        }
+      }
+    },
+    {
+      "game": "10512",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.38590998043052843,
+      "macro_f1": 0.7372902283249769,
+      "n_gt_spells": 278,
+      "n_pred_spells": 233,
+      "per_class": {
+        "H": {
+          "precision": 0.5194986072423399,
+          "recall": 0.7367173612482718,
+          "f1": 0.6093277791390999,
+          "support": 25315
+        },
+        "A": {
+          "precision": 0.9195813365758291,
+          "recall": 0.6299508386822807,
+          "f1": 0.7476979742173113,
+          "support": 61227
+        },
+        "D": {
+          "precision": 0.8039427750017113,
+          "recall": 0.9126286016224785,
+          "f1": 0.8548449316185195,
+          "support": 64346
+        }
+      }
+    },
+    {
+      "game": "10512",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.5363825363825364,
+      "macro_f1": 0.8247014448590312,
+      "n_gt_spells": 278,
+      "n_pred_spells": 203,
+      "per_class": {
+        "H": {
+          "precision": 0.7117468738158393,
+          "recall": 0.7419711633418922,
+          "f1": 0.7265448215839861,
+          "support": 25315
+        },
+        "A": {
+          "precision": 0.9371726747964372,
+          "recall": 0.8008068335864896,
+          "f1": 0.8636399665330926,
+          "support": 61227
+        },
+        "D": {
+          "precision": 0.83595178719867,
+          "recall": 0.9377272868554378,
+          "f1": 0.883919546460015,
+          "support": 64346
+        }
+      }
+    },
+    {
+      "game": "10512",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.4,
+      "macro_f1": 0.7396988324808916,
+      "n_gt_spells": 278,
+      "n_pred_spells": 233,
+      "per_class": {
+        "H": {
+          "precision": 0.5167585446527012,
+          "recall": 0.740588583843571,
+          "f1": 0.6087507102849258,
+          "support": 25315
+        },
+        "A": {
+          "precision": 0.9255387241305739,
+          "recall": 0.6376598559459062,
+          "f1": 0.7550913838120105,
+          "support": 61227
+        },
+        "D": {
+          "precision": 0.8075526406627546,
+          "recall": 0.9089453889907687,
+          "f1": 0.8552544033457385,
+          "support": 64346
+        }
+      }
+    },
+    {
+      "game": "10512",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.549266247379455,
+      "macro_f1": 0.8290824651049099,
+      "n_gt_spells": 278,
+      "n_pred_spells": 199,
+      "per_class": {
+        "H": {
+          "precision": 0.7293408516430099,
+          "recall": 0.7408650997432352,
+          "f1": 0.7350578091318831,
+          "support": 25315
+        },
+        "A": {
+          "precision": 0.9368556457257439,
+          "recall": 0.8088751694513858,
+          "f1": 0.8681742484003856,
+          "support": 61227
+        },
+        "D": {
+          "precision": 0.8353339787028073,
+          "recall": 0.9387219096758151,
+          "f1": 0.8840153377824612,
+          "support": 64346
+        }
+      }
+    },
+    {
+      "game": "10512",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.38590998043052843,
+      "macro_f1": 0.7372902283249769,
+      "n_gt_spells": 278,
+      "n_pred_spells": 233,
+      "per_class": {
+        "H": {
+          "precision": 0.5194986072423399,
+          "recall": 0.7367173612482718,
+          "f1": 0.6093277791390999,
+          "support": 25315
+        },
+        "A": {
+          "precision": 0.9195813365758291,
+          "recall": 0.6299508386822807,
+          "f1": 0.7476979742173113,
+          "support": 61227
+        },
+        "D": {
+          "precision": 0.8039427750017113,
+          "recall": 0.9126286016224785,
+          "f1": 0.8548449316185195,
+          "support": 64346
+        }
+      }
+    },
+    {
+      "game": "10512",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.5363825363825364,
+      "macro_f1": 0.8247014448590312,
+      "n_gt_spells": 278,
+      "n_pred_spells": 203,
+      "per_class": {
+        "H": {
+          "precision": 0.7117468738158393,
+          "recall": 0.7419711633418922,
+          "f1": 0.7265448215839861,
+          "support": 25315
+        },
+        "A": {
+          "precision": 0.9371726747964372,
+          "recall": 0.8008068335864896,
+          "f1": 0.8636399665330926,
+          "support": 61227
+        },
+        "D": {
+          "precision": 0.83595178719867,
+          "recall": 0.9377272868554378,
+          "f1": 0.883919546460015,
+          "support": 64346
+        }
+      }
+    },
+    {
+      "game": "10511",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.5639913232104121,
+      "macro_f1": 0.8737466556726622,
+      "n_gt_spells": 267,
+      "n_pred_spells": 194,
+      "per_class": {
+        "H": {
+          "precision": 0.8767386530014641,
+          "recall": 0.9050974909310762,
+          "f1": 0.8906923992265359,
+          "support": 52928
+        },
+        "A": {
+          "precision": 0.841156499245527,
+          "recall": 0.8184201557297538,
+          "f1": 0.8296325825526544,
+          "support": 38143
+        },
+        "D": {
+          "precision": 0.9052173913043479,
+          "recall": 0.8966532835053694,
+          "f1": 0.9009149852387965,
+          "support": 71981
+        }
+      }
+    },
+    {
+      "game": "10511",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.616421052631579,
+      "macro_f1": 0.8925971297733829,
+      "n_gt_spells": 267,
+      "n_pred_spells": 208,
+      "per_class": {
+        "H": {
+          "precision": 0.8971234816305239,
+          "recall": 0.9098019951632407,
+          "f1": 0.9034182582267083,
+          "support": 52928
+        },
+        "A": {
+          "precision": 0.8701706484641638,
+          "recall": 0.8355399417979708,
+          "f1": 0.8525037449176118,
+          "support": 38143
+        },
+        "D": {
+          "precision": 0.9169908317411445,
+          "recall": 0.9268001278115058,
+          "f1": 0.9218693861758285,
+          "support": 71981
+        }
+      }
+    },
+    {
+      "game": "10511",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.5591304347826087,
+      "macro_f1": 0.8718476914050503,
+      "n_gt_spells": 267,
+      "n_pred_spells": 193,
+      "per_class": {
+        "H": {
+          "precision": 0.8734416457674554,
+          "recall": 0.908063784764208,
+          "f1": 0.8904162884191416,
+          "support": 52928
+        },
+        "A": {
+          "precision": 0.8482924936245704,
+          "recall": 0.8023228377421807,
+          "f1": 0.8246675379619774,
+          "support": 38143
+        },
+        "D": {
+          "precision": 0.9006532314107019,
+          "recall": 0.9002653478001139,
+          "f1": 0.9004592478340315,
+          "support": 71981
+        }
+      }
+    },
+    {
+      "game": "10511",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6168067226890758,
+      "macro_f1": 0.8911172336148604,
+      "n_gt_spells": 267,
+      "n_pred_spells": 209,
+      "per_class": {
+        "H": {
+          "precision": 0.8955229419077129,
+          "recall": 0.9119180773881499,
+          "f1": 0.903646150245729,
+          "support": 52928
+        },
+        "A": {
+          "precision": 0.872116585704372,
+          "recall": 0.8236897989146108,
+          "f1": 0.8472117355193615,
+          "support": 38143
+        },
+        "D": {
+          "precision": 0.9152468207302065,
+          "recall": 0.9298564899070588,
+          "f1": 0.9224938150794909,
+          "support": 71981
+        }
+      }
+    },
+    {
+      "game": "10511",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.5639913232104121,
+      "macro_f1": 0.8737466556726622,
+      "n_gt_spells": 267,
+      "n_pred_spells": 194,
+      "per_class": {
+        "H": {
+          "precision": 0.8767386530014641,
+          "recall": 0.9050974909310762,
+          "f1": 0.8906923992265359,
+          "support": 52928
+        },
+        "A": {
+          "precision": 0.841156499245527,
+          "recall": 0.8184201557297538,
+          "f1": 0.8296325825526544,
+          "support": 38143
+        },
+        "D": {
+          "precision": 0.9052173913043479,
+          "recall": 0.8966532835053694,
+          "f1": 0.9009149852387965,
+          "support": 71981
+        }
+      }
+    },
+    {
+      "game": "10511",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.616421052631579,
+      "macro_f1": 0.8925971297733829,
+      "n_gt_spells": 267,
+      "n_pred_spells": 208,
+      "per_class": {
+        "H": {
+          "precision": 0.8971234816305239,
+          "recall": 0.9098019951632407,
+          "f1": 0.9034182582267083,
+          "support": 52928
+        },
+        "A": {
+          "precision": 0.8701706484641638,
+          "recall": 0.8355399417979708,
+          "f1": 0.8525037449176118,
+          "support": 38143
+        },
+        "D": {
+          "precision": 0.9169908317411445,
+          "recall": 0.9268001278115058,
+          "f1": 0.9218693861758285,
+          "support": 71981
+        }
+      }
+    },
+    {
+      "game": "10511",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.5591304347826087,
+      "macro_f1": 0.8718476914050503,
+      "n_gt_spells": 267,
+      "n_pred_spells": 193,
+      "per_class": {
+        "H": {
+          "precision": 0.8734416457674554,
+          "recall": 0.908063784764208,
+          "f1": 0.8904162884191416,
+          "support": 52928
+        },
+        "A": {
+          "precision": 0.8482924936245704,
+          "recall": 0.8023228377421807,
+          "f1": 0.8246675379619774,
+          "support": 38143
+        },
+        "D": {
+          "precision": 0.9006532314107019,
+          "recall": 0.9002653478001139,
+          "f1": 0.9004592478340315,
+          "support": 71981
+        }
+      }
+    },
+    {
+      "game": "10511",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6168067226890758,
+      "macro_f1": 0.8911172336148604,
+      "n_gt_spells": 267,
+      "n_pred_spells": 209,
+      "per_class": {
+        "H": {
+          "precision": 0.8955229419077129,
+          "recall": 0.9119180773881499,
+          "f1": 0.903646150245729,
+          "support": 52928
+        },
+        "A": {
+          "precision": 0.872116585704372,
+          "recall": 0.8236897989146108,
+          "f1": 0.8472117355193615,
+          "support": 38143
+        },
+        "D": {
+          "precision": 0.9152468207302065,
+          "recall": 0.9298564899070588,
+          "f1": 0.9224938150794909,
+          "support": 71981
+        }
+      }
+    },
+    {
+      "game": "10509",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6041570438799077,
+      "macro_f1": 0.8737132605809691,
+      "n_gt_spells": 255,
+      "n_pred_spells": 178,
+      "per_class": {
+        "H": {
+          "precision": 0.8569737272979169,
+          "recall": 0.8607463630613535,
+          "f1": 0.8588559022518428,
+          "support": 39525
+        },
+        "A": {
+          "precision": 0.8565616797900263,
+          "recall": 0.8781505067719078,
+          "f1": 0.8672217547278446,
+          "support": 44596
+        },
+        "D": {
+          "precision": 0.9044853597209831,
+          "recall": 0.885833214177907,
+          "f1": 0.8950621247632196,
+          "support": 62943
+        }
+      }
+    },
+    {
+      "game": "10509",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6383561643835617,
+      "macro_f1": 0.8938418601590952,
+      "n_gt_spells": 255,
+      "n_pred_spells": 183,
+      "per_class": {
+        "H": {
+          "precision": 0.8975277022789044,
+          "recall": 0.8688931056293485,
+          "f1": 0.8829783131291057,
+          "support": 39525
+        },
+        "A": {
+          "precision": 0.8732603164066821,
+          "recall": 0.8849896851735581,
+          "f1": 0.8790858772037287,
+          "support": 44596
+        },
+        "D": {
+          "precision": 0.9146765191415769,
+          "recall": 0.9242965857998506,
+          "f1": 0.919461390144451,
+          "support": 62943
+        }
+      }
+    },
+    {
+      "game": "10509",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.5963302752293578,
+      "macro_f1": 0.8737193830523641,
+      "n_gt_spells": 255,
+      "n_pred_spells": 181,
+      "per_class": {
+        "H": {
+          "precision": 0.8564363929959126,
+          "recall": 0.8587982289690069,
+          "f1": 0.8576156848873786,
+          "support": 39525
+        },
+        "A": {
+          "precision": 0.861082217550072,
+          "recall": 0.8724549286931563,
+          "f1": 0.8667312683084395,
+          "support": 44596
+        },
+        "D": {
+          "precision": 0.9018395051811391,
+          "recall": 0.891838647665348,
+          "f1": 0.8968111959612743,
+          "support": 62943
+        }
+      }
+    },
+    {
+      "game": "10509",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.636697247706422,
+      "macro_f1": 0.894063880357875,
+      "n_gt_spells": 255,
+      "n_pred_spells": 181,
+      "per_class": {
+        "H": {
+          "precision": 0.897895372973541,
+          "recall": 0.8645920303605313,
+          "f1": 0.8809290575376365,
+          "support": 39525
+        },
+        "A": {
+          "precision": 0.8765985939069301,
+          "recall": 0.880706789846623,
+          "f1": 0.8786478898446326,
+          "support": 44596
+        },
+        "D": {
+          "precision": 0.913582554517134,
+          "recall": 0.9318272087444196,
+          "f1": 0.9226146936913555,
+          "support": 62943
+        }
+      }
+    },
+    {
+      "game": "10509",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6041570438799077,
+      "macro_f1": 0.8737132605809691,
+      "n_gt_spells": 255,
+      "n_pred_spells": 178,
+      "per_class": {
+        "H": {
+          "precision": 0.8569737272979169,
+          "recall": 0.8607463630613535,
+          "f1": 0.8588559022518428,
+          "support": 39525
+        },
+        "A": {
+          "precision": 0.8565616797900263,
+          "recall": 0.8781505067719078,
+          "f1": 0.8672217547278446,
+          "support": 44596
+        },
+        "D": {
+          "precision": 0.9044853597209831,
+          "recall": 0.885833214177907,
+          "f1": 0.8950621247632196,
+          "support": 62943
+        }
+      }
+    },
+    {
+      "game": "10509",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6383561643835617,
+      "macro_f1": 0.8938418601590952,
+      "n_gt_spells": 255,
+      "n_pred_spells": 183,
+      "per_class": {
+        "H": {
+          "precision": 0.8975277022789044,
+          "recall": 0.8688931056293485,
+          "f1": 0.8829783131291057,
+          "support": 39525
+        },
+        "A": {
+          "precision": 0.8732603164066821,
+          "recall": 0.8849896851735581,
+          "f1": 0.8790858772037287,
+          "support": 44596
+        },
+        "D": {
+          "precision": 0.9146765191415769,
+          "recall": 0.9242965857998506,
+          "f1": 0.919461390144451,
+          "support": 62943
+        }
+      }
+    },
+    {
+      "game": "10509",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.5963302752293578,
+      "macro_f1": 0.8737193830523641,
+      "n_gt_spells": 255,
+      "n_pred_spells": 181,
+      "per_class": {
+        "H": {
+          "precision": 0.8564363929959126,
+          "recall": 0.8587982289690069,
+          "f1": 0.8576156848873786,
+          "support": 39525
+        },
+        "A": {
+          "precision": 0.861082217550072,
+          "recall": 0.8724549286931563,
+          "f1": 0.8667312683084395,
+          "support": 44596
+        },
+        "D": {
+          "precision": 0.9018395051811391,
+          "recall": 0.891838647665348,
+          "f1": 0.8968111959612743,
+          "support": 62943
+        }
+      }
+    },
+    {
+      "game": "10509",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.636697247706422,
+      "macro_f1": 0.894063880357875,
+      "n_gt_spells": 255,
+      "n_pred_spells": 181,
+      "per_class": {
+        "H": {
+          "precision": 0.897895372973541,
+          "recall": 0.8645920303605313,
+          "f1": 0.8809290575376365,
+          "support": 39525
+        },
+        "A": {
+          "precision": 0.8765985939069301,
+          "recall": 0.880706789846623,
+          "f1": 0.8786478898446326,
+          "support": 44596
+        },
+        "D": {
+          "precision": 0.913582554517134,
+          "recall": 0.9318272087444196,
+          "f1": 0.9226146936913555,
+          "support": 62943
+        }
+      }
+    },
+    {
+      "game": "10507",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6746543778801842,
+      "macro_f1": 0.9016250374562764,
+      "n_gt_spells": 236,
+      "n_pred_spells": 198,
+      "per_class": {
+        "H": {
+          "precision": 0.9025594149908592,
+          "recall": 0.8957724331189646,
+          "f1": 0.8991531168739186,
+          "support": 49603
+        },
+        "A": {
+          "precision": 0.9104101675332178,
+          "recall": 0.8873023737669474,
+          "f1": 0.8987077568803677,
+          "support": 44402
+        },
+        "D": {
+          "precision": 0.8948563054046326,
+          "recall": 0.9195070888121648,
+          "f1": 0.9070142386145429,
+          "support": 54452
+        }
+      }
+    },
+    {
+      "game": "10507",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6997722095671982,
+      "macro_f1": 0.9105107234593904,
+      "n_gt_spells": 236,
+      "n_pred_spells": 203,
+      "per_class": {
+        "H": {
+          "precision": 0.9125317613578616,
+          "recall": 0.905025905691188,
+          "f1": 0.908763335290188,
+          "support": 49603
+        },
+        "A": {
+          "precision": 0.9093820990458882,
+          "recall": 0.9015584883563803,
+          "f1": 0.9054533939517314,
+          "support": 44402
+        },
+        "D": {
+          "precision": 0.910756308605771,
+          "recall": 0.9239697348123118,
+          "f1": 0.9173154411362517,
+          "support": 54452
+        }
+      }
+    },
+    {
+      "game": "10507",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6343529411764706,
+      "macro_f1": 0.885044137498165,
+      "n_gt_spells": 236,
+      "n_pred_spells": 189,
+      "per_class": {
+        "H": {
+          "precision": 0.9062822719449225,
+          "recall": 0.849222829264359,
+          "f1": 0.8768252448403984,
+          "support": 49603
+        },
+        "A": {
+          "precision": 0.9083736860753514,
+          "recall": 0.8660871131930994,
+          "f1": 0.8867265411531411,
+          "support": 44402
+        },
+        "D": {
+          "precision": 0.8527883035444821,
+          "recall": 0.9340703739072945,
+          "f1": 0.8915806265009555,
+          "support": 54452
+        }
+      }
+    },
+    {
+      "game": "10507",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6666666666666666,
+      "macro_f1": 0.8920011207669057,
+      "n_gt_spells": 236,
+      "n_pred_spells": 193,
+      "per_class": {
+        "H": {
+          "precision": 0.9127668659265585,
+          "recall": 0.8619236739713324,
+          "f1": 0.8866169654614643,
+          "support": 49603
+        },
+        "A": {
+          "precision": 0.9026513835822624,
+          "recall": 0.8779109049141931,
+          "f1": 0.8901092627901402,
+          "support": 44402
+        },
+        "D": {
+          "precision": 0.8686507393209201,
+          "recall": 0.9321420700800706,
+          "f1": 0.8992771340491125,
+          "support": 54452
+        }
+      }
+    },
+    {
+      "game": "10507",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6746543778801842,
+      "macro_f1": 0.9016250374562764,
+      "n_gt_spells": 236,
+      "n_pred_spells": 198,
+      "per_class": {
+        "H": {
+          "precision": 0.9025594149908592,
+          "recall": 0.8957724331189646,
+          "f1": 0.8991531168739186,
+          "support": 49603
+        },
+        "A": {
+          "precision": 0.9104101675332178,
+          "recall": 0.8873023737669474,
+          "f1": 0.8987077568803677,
+          "support": 44402
+        },
+        "D": {
+          "precision": 0.8948563054046326,
+          "recall": 0.9195070888121648,
+          "f1": 0.9070142386145429,
+          "support": 54452
+        }
+      }
+    },
+    {
+      "game": "10507",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6997722095671982,
+      "macro_f1": 0.9105107234593904,
+      "n_gt_spells": 236,
+      "n_pred_spells": 203,
+      "per_class": {
+        "H": {
+          "precision": 0.9125317613578616,
+          "recall": 0.905025905691188,
+          "f1": 0.908763335290188,
+          "support": 49603
+        },
+        "A": {
+          "precision": 0.9093820990458882,
+          "recall": 0.9015584883563803,
+          "f1": 0.9054533939517314,
+          "support": 44402
+        },
+        "D": {
+          "precision": 0.910756308605771,
+          "recall": 0.9239697348123118,
+          "f1": 0.9173154411362517,
+          "support": 54452
+        }
+      }
+    },
+    {
+      "game": "10507",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6343529411764706,
+      "macro_f1": 0.885044137498165,
+      "n_gt_spells": 236,
+      "n_pred_spells": 189,
+      "per_class": {
+        "H": {
+          "precision": 0.9062822719449225,
+          "recall": 0.849222829264359,
+          "f1": 0.8768252448403984,
+          "support": 49603
+        },
+        "A": {
+          "precision": 0.9083736860753514,
+          "recall": 0.8660871131930994,
+          "f1": 0.8867265411531411,
+          "support": 44402
+        },
+        "D": {
+          "precision": 0.8527883035444821,
+          "recall": 0.9340703739072945,
+          "f1": 0.8915806265009555,
+          "support": 54452
+        }
+      }
+    },
+    {
+      "game": "10507",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6666666666666666,
+      "macro_f1": 0.8920011207669057,
+      "n_gt_spells": 236,
+      "n_pred_spells": 193,
+      "per_class": {
+        "H": {
+          "precision": 0.9127668659265585,
+          "recall": 0.8619236739713324,
+          "f1": 0.8866169654614643,
+          "support": 49603
+        },
+        "A": {
+          "precision": 0.9026513835822624,
+          "recall": 0.8779109049141931,
+          "f1": 0.8901092627901402,
+          "support": 44402
+        },
+        "D": {
+          "precision": 0.8686507393209201,
+          "recall": 0.9321420700800706,
+          "f1": 0.8992771340491125,
+          "support": 54452
+        }
+      }
+    },
+    {
+      "game": "10505",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6235565819861432,
+      "macro_f1": 0.8968813472977524,
+      "n_gt_spells": 256,
+      "n_pred_spells": 177,
+      "per_class": {
+        "H": {
+          "precision": 0.8963604533308762,
+          "recall": 0.9201505807574439,
+          "f1": 0.9080997320936832,
+          "support": 52862
+        },
+        "A": {
+          "precision": 0.8726111032230583,
+          "recall": 0.8566530066070085,
+          "f1": 0.8645584221928369,
+          "support": 35871
+        },
+        "D": {
+          "precision": 0.9240061806433488,
+          "recall": 0.9120435362831245,
+          "f1": 0.9179858876067369,
+          "support": 57699
+        }
+      }
+    },
+    {
+      "game": "10505",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6751131221719457,
+      "macro_f1": 0.9169071106878972,
+      "n_gt_spells": 256,
+      "n_pred_spells": 186,
+      "per_class": {
+        "H": {
+          "precision": 0.925673113386424,
+          "recall": 0.9235367560818736,
+          "f1": 0.9246037006874871,
+          "support": 52862
+        },
+        "A": {
+          "precision": 0.892459757130754,
+          "recall": 0.880990214936857,
+          "f1": 0.886687897195606,
+          "support": 35871
+        },
+        "D": {
+          "precision": 0.9347311348272194,
+          "recall": 0.9441758089394964,
+          "f1": 0.9394297341805986,
+          "support": 57699
+        }
+      }
+    },
+    {
+      "game": "10505",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.5967058823529412,
+      "macro_f1": 0.882472875329702,
+      "n_gt_spells": 256,
+      "n_pred_spells": 169,
+      "per_class": {
+        "H": {
+          "precision": 0.8962809137247498,
+          "recall": 0.8981120653777761,
+          "f1": 0.8971955552195933,
+          "support": 52862
+        },
+        "A": {
+          "precision": 0.8709629848104999,
+          "recall": 0.8232276769535279,
+          "f1": 0.8464228387984408,
+          "support": 35871
+        },
+        "D": {
+          "precision": 0.8897023019964068,
+          "recall": 0.9183521378186797,
+          "f1": 0.903800231971072,
+          "support": 57699
+        }
+      }
+    },
+    {
+      "game": "10505",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6427586206896552,
+      "macro_f1": 0.8937879654095702,
+      "n_gt_spells": 256,
+      "n_pred_spells": 179,
+      "per_class": {
+        "H": {
+          "precision": 0.9271854174833398,
+          "recall": 0.8948772274980137,
+          "f1": 0.9107448836179511,
+          "support": 52862
+        },
+        "A": {
+          "precision": 0.8826797385620915,
+          "recall": 0.8282735357252377,
+          "f1": 0.8546116120866951,
+          "support": 35871
+        },
+        "D": {
+          "precision": 0.8859470138618992,
+          "recall": 0.9481793445293679,
+          "f1": 0.9160074005240642,
+          "support": 57699
+        }
+      }
+    },
+    {
+      "game": "10505",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6235565819861432,
+      "macro_f1": 0.8968813472977524,
+      "n_gt_spells": 256,
+      "n_pred_spells": 177,
+      "per_class": {
+        "H": {
+          "precision": 0.8963604533308762,
+          "recall": 0.9201505807574439,
+          "f1": 0.9080997320936832,
+          "support": 52862
+        },
+        "A": {
+          "precision": 0.8726111032230583,
+          "recall": 0.8566530066070085,
+          "f1": 0.8645584221928369,
+          "support": 35871
+        },
+        "D": {
+          "precision": 0.9240061806433488,
+          "recall": 0.9120435362831245,
+          "f1": 0.9179858876067369,
+          "support": 57699
+        }
+      }
+    },
+    {
+      "game": "10505",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6751131221719457,
+      "macro_f1": 0.9169071106878972,
+      "n_gt_spells": 256,
+      "n_pred_spells": 186,
+      "per_class": {
+        "H": {
+          "precision": 0.925673113386424,
+          "recall": 0.9235367560818736,
+          "f1": 0.9246037006874871,
+          "support": 52862
+        },
+        "A": {
+          "precision": 0.892459757130754,
+          "recall": 0.880990214936857,
+          "f1": 0.886687897195606,
+          "support": 35871
+        },
+        "D": {
+          "precision": 0.9347311348272194,
+          "recall": 0.9441758089394964,
+          "f1": 0.9394297341805986,
+          "support": 57699
+        }
+      }
+    },
+    {
+      "game": "10505",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.5967058823529412,
+      "macro_f1": 0.882472875329702,
+      "n_gt_spells": 256,
+      "n_pred_spells": 169,
+      "per_class": {
+        "H": {
+          "precision": 0.8962809137247498,
+          "recall": 0.8981120653777761,
+          "f1": 0.8971955552195933,
+          "support": 52862
+        },
+        "A": {
+          "precision": 0.8709629848104999,
+          "recall": 0.8232276769535279,
+          "f1": 0.8464228387984408,
+          "support": 35871
+        },
+        "D": {
+          "precision": 0.8897023019964068,
+          "recall": 0.9183521378186797,
+          "f1": 0.903800231971072,
+          "support": 57699
+        }
+      }
+    },
+    {
+      "game": "10505",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6427586206896552,
+      "macro_f1": 0.8937879654095702,
+      "n_gt_spells": 256,
+      "n_pred_spells": 179,
+      "per_class": {
+        "H": {
+          "precision": 0.9271854174833398,
+          "recall": 0.8948772274980137,
+          "f1": 0.9107448836179511,
+          "support": 52862
+        },
+        "A": {
+          "precision": 0.8826797385620915,
+          "recall": 0.8282735357252377,
+          "f1": 0.8546116120866951,
+          "support": 35871
+        },
+        "D": {
+          "precision": 0.8859470138618992,
+          "recall": 0.9481793445293679,
+          "f1": 0.9160074005240642,
+          "support": 57699
+        }
+      }
+    },
+    {
+      "game": "10502",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.4099616858237548,
+      "macro_f1": 0.8043471769902918,
+      "n_gt_spells": 309,
+      "n_pred_spells": 213,
+      "per_class": {
+        "H": {
+          "precision": 0.8472835156684592,
+          "recall": 0.5941848066370186,
+          "f1": 0.6985141249847132,
+          "support": 38451
+        },
+        "A": {
+          "precision": 0.7848091485087313,
+          "recall": 0.8985473911428016,
+          "f1": 0.837835831360483,
+          "support": 56519
+        },
+        "D": {
+          "precision": 0.8504835695233256,
+          "recall": 0.90456615717153,
+          "f1": 0.8766915746256791,
+          "support": 51816
+        }
+      }
+    },
+    {
+      "game": "10502",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.5044487427466151,
+      "macro_f1": 0.8494981325526347,
+      "n_gt_spells": 309,
+      "n_pred_spells": 208,
+      "per_class": {
+        "H": {
+          "precision": 0.87841796875,
+          "recall": 0.701802293828509,
+          "f1": 0.7802402741033093,
+          "support": 38451
+        },
+        "A": {
+          "precision": 0.8492348636061211,
+          "recall": 0.9033422388931156,
+          "f1": 0.8754533217877383,
+          "support": 56519
+        },
+        "D": {
+          "precision": 0.8598469953169128,
+          "recall": 0.9283811949976841,
+          "f1": 0.8928008017668566,
+          "support": 51816
+        }
+      }
+    },
+    {
+      "game": "10502",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "canonical",
+      "spell_f1_mean": 0.3952755905511811,
+      "macro_f1": 0.7849579267479623,
+      "n_gt_spells": 309,
+      "n_pred_spells": 199,
+      "per_class": {
+        "H": {
+          "precision": 0.8497735774758811,
+          "recall": 0.5612337780551871,
+          "f1": 0.6760016289195878,
+          "support": 38451
+        },
+        "A": {
+          "precision": 0.787710478014524,
+          "recall": 0.8732284718413277,
+          "f1": 0.8282679107859097,
+          "support": 56519
+        },
+        "D": {
+          "precision": 0.800497139743939,
+          "recall": 0.9074031187278061,
+          "f1": 0.8506042405383891,
+          "support": 51816
+        }
+      }
+    },
+    {
+      "game": "10502",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "canonical",
+      "spell_f1_mean": 0.46946107784431135,
+      "macro_f1": 0.8281658881592825,
+      "n_gt_spells": 309,
+      "n_pred_spells": 192,
+      "per_class": {
+        "H": {
+          "precision": 0.8842773772742877,
+          "recall": 0.6699175574107306,
+          "f1": 0.7623148518074607,
+          "support": 38451
+        },
+        "A": {
+          "precision": 0.8530633527418093,
+          "recall": 0.868398237760753,
+          "f1": 0.8606624932049731,
+          "support": 56519
+        },
+        "D": {
+          "precision": 0.8020159345320271,
+          "recall": 0.9305619885749575,
+          "f1": 0.8615203194654136,
+          "support": 51816
+        }
+      }
+    },
+    {
+      "game": "10502",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.4099616858237548,
+      "macro_f1": 0.8043471769902918,
+      "n_gt_spells": 309,
+      "n_pred_spells": 213,
+      "per_class": {
+        "H": {
+          "precision": 0.8472835156684592,
+          "recall": 0.5941848066370186,
+          "f1": 0.6985141249847132,
+          "support": 38451
+        },
+        "A": {
+          "precision": 0.7848091485087313,
+          "recall": 0.8985473911428016,
+          "f1": 0.837835831360483,
+          "support": 56519
+        },
+        "D": {
+          "precision": 0.8504835695233256,
+          "recall": 0.90456615717153,
+          "f1": 0.8766915746256791,
+          "support": 51816
+        }
+      }
+    },
+    {
+      "game": "10502",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.5044487427466151,
+      "macro_f1": 0.8494981325526347,
+      "n_gt_spells": 309,
+      "n_pred_spells": 208,
+      "per_class": {
+        "H": {
+          "precision": 0.87841796875,
+          "recall": 0.701802293828509,
+          "f1": 0.7802402741033093,
+          "support": 38451
+        },
+        "A": {
+          "precision": 0.8492348636061211,
+          "recall": 0.9033422388931156,
+          "f1": 0.8754533217877383,
+          "support": 56519
+        },
+        "D": {
+          "precision": 0.8598469953169128,
+          "recall": 0.9283811949976841,
+          "f1": 0.8928008017668566,
+          "support": 51816
+        }
+      }
+    },
+    {
+      "game": "10502",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.3952755905511811,
+      "macro_f1": 0.7849579267479623,
+      "n_gt_spells": 309,
+      "n_pred_spells": 199,
+      "per_class": {
+        "H": {
+          "precision": 0.8497735774758811,
+          "recall": 0.5612337780551871,
+          "f1": 0.6760016289195878,
+          "support": 38451
+        },
+        "A": {
+          "precision": 0.787710478014524,
+          "recall": 0.8732284718413277,
+          "f1": 0.8282679107859097,
+          "support": 56519
+        },
+        "D": {
+          "precision": 0.800497139743939,
+          "recall": 0.9074031187278061,
+          "f1": 0.8506042405383891,
+          "support": 51816
+        }
+      }
+    },
+    {
+      "game": "10502",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.46946107784431135,
+      "macro_f1": 0.8281658881592825,
+      "n_gt_spells": 309,
+      "n_pred_spells": 192,
+      "per_class": {
+        "H": {
+          "precision": 0.8842773772742877,
+          "recall": 0.6699175574107306,
+          "f1": 0.7623148518074607,
+          "support": 38451
+        },
+        "A": {
+          "precision": 0.8530633527418093,
+          "recall": 0.868398237760753,
+          "f1": 0.8606624932049731,
+          "support": 56519
+        },
+        "D": {
+          "precision": 0.8020159345320271,
+          "recall": 0.9305619885749575,
+          "f1": 0.8615203194654136,
+          "support": 51816
+        }
+      }
+    }
+  ],
+  "source_receipts": [
+    {
+      "game": "10512",
+      "fixture": {
+        "game_id": "10512",
+        "home": "Morocco",
+        "away": "Portugal",
+        "date": "2022-12-10T15:00:00"
+      },
+      "geometry": {
+        "fps": 29.97,
+        "source_rows": 181528,
+        "unique_source_frames": 180885,
+        "duplicate_rows": 643,
+        "conflicting_geometry_frames": 0,
+        "source_clock_max_error_seconds": 4.998332769901026e-07,
+        "independent_source_period_bounds": {
+          "1": [
+            3276,
+            88849
+          ],
+          "2": [
+            90300,
+            185610
+          ]
+        },
+        "frames25": 152098,
+        "visible_ball_fraction_in_periods": 0.3481854090451196,
+        "source_sha256": {
+          "tracking": "610852a02058302b2c91b4440b8ec1d67c1ec91c60d9876e0c3241b0c64e6b4a",
+          "metadata": "df97043d3ad1d1e3ddbf31589b1312759ee711414297f750b3d7cc5ae1476927",
+          "rosters": "cedfa69e27559936e1d2afcf690ce3801c39b07cac65d784bbbf0644469a630f"
+        }
+      },
+      "reference": {
+        "policy": "Pinned PySport/kloppy PFF event-state machine; conservative duplicate-conflict mask and independent period resets",
+        "reference_type": "Provider event-derived full H/A/D proxy, not corrected frame-by-frame control truth",
+        "source_reference_event_types": {
+          "FIRSTKICKOFF": 1,
+          "OTB": 49447,
+          "OUT": 107,
+          "G": 1,
+          "SECONDKICKOFF": 1,
+          "SUB": 27,
+          "OFF": 3,
+          "ON": 2,
+          "END": 1
+        },
+        "duplicate_source_rows": 643,
+        "conflicting_reference_frames": 0,
+        "known_fraction": 1.0,
+        "sdk_shadow_known_fraction": 1.0,
+        "class_frames": {
+          "H": 25315,
+          "A": 61227,
+          "D": 64346,
+          "X": 0
+        },
+        "period_frames": 150888,
+        "sdk_shadow_disagreement_fraction": 0.0,
+        "tracking_sha256": "610852a02058302b2c91b4440b8ec1d67c1ec91c60d9876e0c3241b0c64e6b4a",
+        "clock_sampling": "previous source frame at each independent25Hz timestamp; no quality-based alignment"
+      },
+      "reference_eligibility": true,
+      "predictions_sha256": "bd648fc6e39e7a957255a79889ecedf96e2d3a589b076d7a38d5bfffef4c40e5",
+      "predictions_saved_before_reference_utc": "2026-11-16T12:31:34.902551+00:00",
+      "source_files": {
+        "external/pff/Tracking Data/10512.jsonl.bz2": "610852a02058302b2c91b4440b8ec1d67c1ec91c60d9876e0c3241b0c64e6b4a",
+        "external/pff/Metadata/10512.json": "df97043d3ad1d1e3ddbf31589b1312759ee711414297f750b3d7cc5ae1476927",
+        "external/pff/Rosters/10512.json": "cedfa69e27559936e1d2afcf690ce3801c39b07cac65d784bbbf0644469a630f"
+      }
+    },
+    {
+      "game": "10511",
+      "fixture": {
+        "game_id": "10511",
+        "home": "Netherlands",
+        "away": "Argentina",
+        "date": "2022-12-09T19:00:00"
+      },
+      "geometry": {
+        "fps": 29.97,
+        "source_rows": 196098,
+        "unique_source_frames": 195468,
+        "duplicate_rows": 630,
+        "conflicting_geometry_frames": 0,
+        "source_clock_max_error_seconds": 4.998332769901026e-07,
+        "independent_source_period_bounds": {
+          "1": [
+            2718,
+            94499
+          ],
+          "2": [
+            96501,
+            200186
+          ]
+        },
+        "frames25": 164722,
+        "visible_ball_fraction_in_periods": 0.38249147511223414,
+        "source_sha256": {
+          "tracking": "7bf1753dc849ad526aac078d60eb72878077978dfdda2a399ad223f8a506f5bc",
+          "metadata": "ce8cb53e1999e862f2949f875e4e036b49fd2099765240376ab577a7553352e6",
+          "rosters": "2a8454c2eb104961241669b71e566c0c4f2c3795b17f31a433e3ec0b5749c5c1"
+        }
+      },
+      "reference": {
+        "policy": "Pinned PySport/kloppy PFF event-state machine; conservative duplicate-conflict mask and independent period resets",
+        "reference_type": "Provider event-derived full H/A/D proxy, not corrected frame-by-frame control truth",
+        "source_reference_event_types": {
+          "FIRSTKICKOFF": 1,
+          "OTB": 52692,
+          "OUT": 99,
+          "OFF": 1,
+          "ON": 1,
+          "END": 1,
+          "SECONDKICKOFF": 1,
+          "SUB": 6
+        },
+        "duplicate_source_rows": 630,
+        "conflicting_reference_frames": 0,
+        "known_fraction": 1.0,
+        "sdk_shadow_known_fraction": 1.0,
+        "class_frames": {
+          "H": 52928,
+          "A": 38143,
+          "D": 71981,
+          "X": 0
+        },
+        "period_frames": 163052,
+        "sdk_shadow_disagreement_fraction": 0.0,
+        "tracking_sha256": "7bf1753dc849ad526aac078d60eb72878077978dfdda2a399ad223f8a506f5bc",
+        "clock_sampling": "previous source frame at each independent25Hz timestamp; no quality-based alignment"
+      },
+      "reference_eligibility": true,
+      "predictions_sha256": "aeb2652aa14c733ee395a0ee233844d6fbdf01276b344728ec3b187bb835e92b",
+      "predictions_saved_before_reference_utc": "2026-11-16T12:33:08.683244+00:00",
+      "source_files": {
+        "external/pff/Tracking Data/10511.jsonl.bz2": "7bf1753dc849ad526aac078d60eb72878077978dfdda2a399ad223f8a506f5bc",
+        "external/pff/Metadata/10511.json": "ce8cb53e1999e862f2949f875e4e036b49fd2099765240376ab577a7553352e6",
+        "external/pff/Rosters/10511.json": "2a8454c2eb104961241669b71e566c0c4f2c3795b17f31a433e3ec0b5749c5c1"
+      }
+    },
+    {
+      "game": "10509",
+      "fixture": {
+        "game_id": "10509",
+        "home": "Portugal",
+        "away": "Switzerland",
+        "date": "2022-12-06T19:00:00"
+      },
+      "geometry": {
+        "fps": 29.97,
+        "source_rows": 176708,
+        "unique_source_frames": 176301,
+        "duplicate_rows": 407,
+        "conflicting_geometry_frames": 0,
+        "source_clock_max_error_seconds": 4.998332769901026e-07,
+        "independent_source_period_bounds": {
+          "1": [
+            2351,
+            90389
+          ],
+          "2": [
+            91738,
+            179999
+          ]
+        },
+        "frames25": 148189,
+        "visible_ball_fraction_in_periods": 0.37968503508676493,
+        "source_sha256": {
+          "tracking": "bee42c9a50257327833ada4fd2280a336b0d661c0418ad68c8af6ce5ef399388",
+          "metadata": "2b47197f7925e1408d396c49a779986b5aee02ac8c2777bfead34c3de09b9198",
+          "rosters": "91418bb8430b56e038603801db6782a0d7b3221a62c54b0b0d1ff5015981596b"
+        }
+      },
+      "reference": {
+        "policy": "Pinned PySport/kloppy PFF event-state machine; conservative duplicate-conflict mask and independent period resets",
+        "reference_type": "Provider event-derived full H/A/D proxy, not corrected frame-by-frame control truth",
+        "source_reference_event_types": {
+          "FIRSTKICKOFF": 1,
+          "OTB": 47541,
+          "OUT": 103,
+          "OFF": 1,
+          "ON": 1,
+          "SECONDKICKOFF": 1,
+          "SUB": 9,
+          "END": 1
+        },
+        "duplicate_source_rows": 407,
+        "conflicting_reference_frames": 0,
+        "known_fraction": 1.0,
+        "sdk_shadow_known_fraction": 1.0,
+        "class_frames": {
+          "H": 39525,
+          "A": 44596,
+          "D": 62943,
+          "X": 0
+        },
+        "period_frames": 147064,
+        "sdk_shadow_disagreement_fraction": 0.0,
+        "tracking_sha256": "bee42c9a50257327833ada4fd2280a336b0d661c0418ad68c8af6ce5ef399388",
+        "clock_sampling": "previous source frame at each independent25Hz timestamp; no quality-based alignment"
+      },
+      "reference_eligibility": true,
+      "predictions_sha256": "e2e45162ecfa88d829f22cd51e8fa229b799d4deb58131f23a57dbcac4e932e6",
+      "predictions_saved_before_reference_utc": "2026-11-16T12:34:33.714403+00:00",
+      "source_files": {
+        "external/pff/Tracking Data/10509.jsonl.bz2": "bee42c9a50257327833ada4fd2280a336b0d661c0418ad68c8af6ce5ef399388",
+        "external/pff/Metadata/10509.json": "2b47197f7925e1408d396c49a779986b5aee02ac8c2777bfead34c3de09b9198",
+        "external/pff/Rosters/10509.json": "91418bb8430b56e038603801db6782a0d7b3221a62c54b0b0d1ff5015981596b"
+      }
+    },
+    {
+      "game": "10507",
+      "fixture": {
+        "game_id": "10507",
+        "home": "Brazil",
+        "away": "South Korea",
+        "date": "2022-12-05T19:00:00"
+      },
+      "geometry": {
+        "fps": 29.97,
+        "source_rows": 178414,
+        "unique_source_frames": 177972,
+        "duplicate_rows": 442,
+        "conflicting_geometry_frames": 0,
+        "source_clock_max_error_seconds": 4.998332769901026e-07,
+        "independent_source_period_bounds": {
+          "1": [
+            2771,
+            92675
+          ],
+          "2": [
+            94691,
+            182757
+          ]
+        },
+        "frames25": 150139,
+        "visible_ball_fraction_in_periods": 0.46436341836356654,
+        "source_sha256": {
+          "tracking": "41cd9896ef663fbcb811c2f97fd9bc7c5fdb92dcf75e1d66ff748a2ddba4acbe",
+          "metadata": "097d70bd7b3dca46d0ad18f3f8c291ca17bbc578a28042bb9cd8351c8ac1aeef",
+          "rosters": "e27385e17e5a50e6b67fa4e9545760cf193819ad7cc5a3bae1b41aa4d2ac8ed9"
+        }
+      },
+      "reference": {
+        "policy": "Pinned PySport/kloppy PFF event-state machine; conservative duplicate-conflict mask and independent period resets",
+        "reference_type": "Provider event-derived full H/A/D proxy, not corrected frame-by-frame control truth",
+        "source_reference_event_types": {
+          "FIRSTKICKOFF": 1,
+          "OTB": 53820,
+          "OUT": 83,
+          "SECONDKICKOFF": 1,
+          "SUB": 8
+        },
+        "duplicate_source_rows": 442,
+        "conflicting_reference_frames": 0,
+        "known_fraction": 1.0,
+        "sdk_shadow_known_fraction": 1.0,
+        "class_frames": {
+          "H": 49603,
+          "A": 44402,
+          "D": 54452,
+          "X": 0
+        },
+        "period_frames": 148457,
+        "sdk_shadow_disagreement_fraction": 0.0,
+        "tracking_sha256": "41cd9896ef663fbcb811c2f97fd9bc7c5fdb92dcf75e1d66ff748a2ddba4acbe",
+        "clock_sampling": "previous source frame at each independent25Hz timestamp; no quality-based alignment"
+      },
+      "reference_eligibility": true,
+      "predictions_sha256": "c1dee79ea0637ab2c70bec46021c11367412e9cfcd99c278fddff0e9ba013dd3",
+      "predictions_saved_before_reference_utc": "2026-11-16T12:35:57.390675+00:00",
+      "source_files": {
+        "external/pff/Tracking Data/10507.jsonl.bz2": "41cd9896ef663fbcb811c2f97fd9bc7c5fdb92dcf75e1d66ff748a2ddba4acbe",
+        "external/pff/Metadata/10507.json": "097d70bd7b3dca46d0ad18f3f8c291ca17bbc578a28042bb9cd8351c8ac1aeef",
+        "external/pff/Rosters/10507.json": "e27385e17e5a50e6b67fa4e9545760cf193819ad7cc5a3bae1b41aa4d2ac8ed9"
+      }
+    },
+    {
+      "game": "10505",
+      "fixture": {
+        "game_id": "10505",
+        "home": "England",
+        "away": "Senegal",
+        "date": "2022-12-04T19:00:00"
+      },
+      "geometry": {
+        "fps": 29.97,
+        "source_rows": 176158,
+        "unique_source_frames": 175545,
+        "duplicate_rows": 613,
+        "conflicting_geometry_frames": 0,
+        "source_clock_max_error_seconds": 4.998332769901026e-07,
+        "independent_source_period_bounds": {
+          "1": [
+            2832,
+            89920
+          ],
+          "2": [
+            90979,
+            179434
+          ]
+        },
+        "frames25": 147316,
+        "visible_ball_fraction_in_periods": 0.4608009178321678,
+        "source_sha256": {
+          "tracking": "46b5d55556fb2f37d730e47d4470d710315a52b995103496a924c6b3b52b01e8",
+          "metadata": "ad5df7809235696008727f431161f8ac2bc86ede452a6b1bb32a8adeada26ff7",
+          "rosters": "38b791fa2d176bf4a0dcd7789fac67ff6920b92f01a684bc8b9b8eeb99f2cd24"
+        }
+      },
+      "reference": {
+        "policy": "Pinned PySport/kloppy PFF event-state machine; conservative duplicate-conflict mask and independent period resets",
+        "reference_type": "Provider event-derived full H/A/D proxy, not corrected frame-by-frame control truth",
+        "source_reference_event_types": {
+          "FIRSTKICKOFF": 1,
+          "OTB": 49915,
+          "OUT": 91,
+          "SECONDKICKOFF": 1,
+          "SUB": 7,
+          "END": 1
+        },
+        "duplicate_source_rows": 613,
+        "conflicting_reference_frames": 0,
+        "known_fraction": 1.0,
+        "sdk_shadow_known_fraction": 1.0,
+        "class_frames": {
+          "H": 52862,
+          "A": 35871,
+          "D": 57699,
+          "X": 0
+        },
+        "period_frames": 146432,
+        "sdk_shadow_disagreement_fraction": 0.0,
+        "tracking_sha256": "46b5d55556fb2f37d730e47d4470d710315a52b995103496a924c6b3b52b01e8",
+        "clock_sampling": "previous source frame at each independent25Hz timestamp; no quality-based alignment"
+      },
+      "reference_eligibility": true,
+      "predictions_sha256": "aecabb90bcad7099aed7822d51ebf365cbb389b1e4de8e475fa12b48d5e6cd90",
+      "predictions_saved_before_reference_utc": "2026-11-16T12:37:31.568444+00:00",
+      "source_files": {
+        "external/pff/Tracking Data/10505.jsonl.bz2": "46b5d55556fb2f37d730e47d4470d710315a52b995103496a924c6b3b52b01e8",
+        "external/pff/Metadata/10505.json": "ad5df7809235696008727f431161f8ac2bc86ede452a6b1bb32a8adeada26ff7",
+        "external/pff/Rosters/10505.json": "38b791fa2d176bf4a0dcd7789fac67ff6920b92f01a684bc8b9b8eeb99f2cd24"
+      }
+    },
+    {
+      "game": "10502",
+      "fixture": {
+        "game_id": "10502",
+        "home": "Netherlands",
+        "away": "United States",
+        "date": "2022-12-03T15:00:00"
+      },
+      "geometry": {
+        "fps": 29.97,
+        "source_rows": 176818,
+        "unique_source_frames": 175969,
+        "duplicate_rows": 849,
+        "conflicting_geometry_frames": 0,
+        "source_clock_max_error_seconds": 4.998332769901026e-07,
+        "independent_source_period_bounds": {
+          "1": [
+            5366,
+            89315
+          ],
+          "2": [
+            90535,
+            182553
+          ]
+        },
+        "frames25": 147804,
+        "visible_ball_fraction_in_periods": 0.4621898546182878,
+        "source_sha256": {
+          "tracking": "9ce40889d587737a16e701d9f1474e57b9926a074e50ffe245165fb5cf1e3f19",
+          "metadata": "b4b121e8e81c8c25bfb985e70c11ba43512f33a8d49df643c4aef9b9523e1e46",
+          "rosters": "3cf5165b553ea3a07bc2ba0a0017d2c79becf6b6c2747430e8e05870a959f9ca"
+        }
+      },
+      "reference": {
+        "policy": "Pinned PySport/kloppy PFF event-state machine; conservative duplicate-conflict mask and independent period resets",
+        "reference_type": "Provider event-derived full H/A/D proxy, not corrected frame-by-frame control truth",
+        "source_reference_event_types": {
+          "FIRSTKICKOFF": 1,
+          "OTB": 55969,
+          "OUT": 81,
+          "SECONDKICKOFF": 1,
+          "SUB": 7,
+          "END": 1
+        },
+        "duplicate_source_rows": 849,
+        "conflicting_reference_frames": 0,
+        "known_fraction": 1.0,
+        "sdk_shadow_known_fraction": 1.0,
+        "class_frames": {
+          "H": 38451,
+          "A": 56519,
+          "D": 51816,
+          "X": 0
+        },
+        "period_frames": 146786,
+        "sdk_shadow_disagreement_fraction": 0.0,
+        "tracking_sha256": "9ce40889d587737a16e701d9f1474e57b9926a074e50ffe245165fb5cf1e3f19",
+        "clock_sampling": "previous source frame at each independent25Hz timestamp; no quality-based alignment"
+      },
+      "reference_eligibility": true,
+      "predictions_sha256": "53de701840dd6d4930a8dbd587cf51ddcf32f61b255947bf3bd3f52a79cbbe3e",
+      "predictions_saved_before_reference_utc": "2026-11-16T12:39:20.031220+00:00",
+      "source_files": {
+        "external/pff/Tracking Data/10502.jsonl.bz2": "9ce40889d587737a16e701d9f1474e57b9926a074e50ffe245165fb5cf1e3f19",
+        "external/pff/Metadata/10502.json": "b4b121e8e81c8c25bfb985e70c11ba43512f33a8d49df643c4aef9b9523e1e46",
+        "external/pff/Rosters/10502.json": "3cf5165b553ea3a07bc2ba0a0017d2c79becf6b6c2747430e8e05870a959f9ca"
+      }
+    }
+  ],
+  "purpose": "Report all outcomes; no model/threshold selection from this audit"
+}

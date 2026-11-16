@@ -1,0 +1,1042 @@
+{
+  "scope": "New match holdout with partial country overlap; no training/selection; same provider proxy labels",
+  "source_result_sha256": "70bcaadd311f66fc8af073465e7e837cd7e500cc41210e07aae07127af784d63",
+  "freeze_sha256": "93c1f962045fe6f94517a38140e1d78ff8c50deb446aa190e28f6f4533c03d83",
+  "shared_team_components": [
+    [
+      "10502",
+      "10511"
+    ],
+    [
+      "10505"
+    ],
+    [
+      "10507"
+    ],
+    [
+      "10509",
+      "10512"
+    ]
+  ],
+  "summary": {
+    "canonical/natural_detected": {
+      "v4_spell": 0.546053502130067,
+      "current_spell": 0.6138962564800591,
+      "spell_gain": 0.06784275434999211,
+      "wins": 6,
+      "ties": 0,
+      "losses": 0,
+      "worst_gain": 0.02511783168701398,
+      "v4_macro": 0.8483353850798072,
+      "current_macro": 0.8820729036228849,
+      "per_class_current": {
+        "H": 0.8558436150947802,
+        "A": 0.8778930805761336,
+        "D": 0.9124820151977412
+      },
+      "descriptive_match_bootstrap_gain_95": [
+        0.03848271747563566,
+        0.10467357662511362
+      ],
+      "descriptive_shared_team_cluster_bootstrap_gain_95": [
+        0.03833718593640828,
+        0.08599323483358992
+      ],
+      "per_game_gain": {
+        "10512": 0.14926624737945493,
+        "10511": 0.05242972942116686,
+        "10509": 0.034199120503654035,
+        "10507": 0.02511783168701398,
+        "10505": 0.05155654018580258,
+        "10502": 0.0944870569228603
+      }
+    },
+    "canonical/label_blind_seed7": {
+      "v4_spell": 0.527950850753848,
+      "current_spell": 0.5947954786631112,
+      "spell_gain": 0.06684462790926325,
+      "wins": 6,
+      "ties": 0,
+      "losses": 0,
+      "worst_gain": 0.032313725490196066,
+      "v4_macro": 0.8392220403930368,
+      "current_macro": 0.8706395888612541,
+      "per_class_current": {
+        "H": 0.8451327883757047,
+        "A": 0.8658138266631492,
+        "D": 0.9009721515449086
+      },
+      "descriptive_match_bootstrap_gain_95": [
+        0.041867647575744404,
+        0.10200381099382205
+      ],
+      "descriptive_shared_team_cluster_bootstrap_gain_95": [
+        0.03918323191345502,
+        0.08804754506085175
+      ],
+      "per_game_gain": {
+        "10512": 0.15047255595200798,
+        "10511": 0.05767628790646706,
+        "10509": 0.04036697247706422,
+        "10507": 0.032313725490196066,
+        "10505": 0.04605273833671397,
+        "10502": 0.07418548729313024
+      }
+    },
+    "sdk_shadow/natural_detected": {
+      "v4_spell": 0.546053502130067,
+      "current_spell": 0.6138962564800591,
+      "spell_gain": 0.06784275434999211,
+      "wins": 6,
+      "ties": 0,
+      "losses": 0,
+      "worst_gain": 0.02511783168701398,
+      "v4_macro": 0.8483353850798072,
+      "current_macro": 0.8820729036228849,
+      "per_class_current": {
+        "H": 0.8558436150947802,
+        "A": 0.8778930805761336,
+        "D": 0.9124820151977412
+      },
+      "descriptive_match_bootstrap_gain_95": [
+        0.03848271747563566,
+        0.10467357662511362
+      ],
+      "descriptive_shared_team_cluster_bootstrap_gain_95": [
+        0.03833718593640828,
+        0.08599323483358992
+      ],
+      "per_game_gain": {
+        "10512": 0.14926624737945493,
+        "10511": 0.05242972942116686,
+        "10509": 0.034199120503654035,
+        "10507": 0.02511783168701398,
+        "10505": 0.05155654018580258,
+        "10502": 0.0944870569228603
+      }
+    },
+    "sdk_shadow/label_blind_seed7": {
+      "v4_spell": 0.527950850753848,
+      "current_spell": 0.5947954786631112,
+      "spell_gain": 0.06684462790926325,
+      "wins": 6,
+      "ties": 0,
+      "losses": 0,
+      "worst_gain": 0.032313725490196066,
+      "v4_macro": 0.8392220403930368,
+      "current_macro": 0.8706395888612541,
+      "per_class_current": {
+        "H": 0.8451327883757047,
+        "A": 0.8658138266631492,
+        "D": 0.9009721515449086
+      },
+      "descriptive_match_bootstrap_gain_95": [
+        0.041867647575744404,
+        0.10200381099382205
+      ],
+      "descriptive_shared_team_cluster_bootstrap_gain_95": [
+        0.03918323191345502,
+        0.08804754506085175
+      ],
+      "per_game_gain": {
+        "10512": 0.15047255595200798,
+        "10511": 0.05767628790646706,
+        "10509": 0.04036697247706422,
+        "10507": 0.032313725490196066,
+        "10505": 0.04605273833671397,
+        "10502": 0.07418548729313024
+      }
+    }
+  },
+  "diagnostics": [
+    {
+      "game": "10512",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "short_spell_bins": {
+        "under_1s": {
+          "reference_spells": 14,
+          "matched_spells": 0
+        },
+        "1_to_3s": {
+          "reference_spells": 54,
+          "matched_spells": 6
+        },
+        "3_to_10s": {
+          "reference_spells": 98,
+          "matched_spells": 37
+        },
+        "10s_plus": {
+          "reference_spells": 112,
+          "matched_spells": 65
+        }
+      },
+      "observation": {
+        "ball_seen": {
+          "graded_frames": 52537,
+          "correct_frames": 40821,
+          "reference_live_frames": 47406,
+          "false_dead_frames": 827
+        },
+        "ball_missing": {
+          "graded_frames": 98351,
+          "correct_frames": 75456,
+          "reference_live_frames": 39136,
+          "false_dead_frames": 13111
+        }
+      }
+    },
+    {
+      "game": "10512",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "short_spell_bins": {
+        "under_1s": {
+          "reference_spells": 14,
+          "matched_spells": 0
+        },
+        "1_to_3s": {
+          "reference_spells": 54,
+          "matched_spells": 9
+        },
+        "3_to_10s": {
+          "reference_spells": 98,
+          "matched_spells": 42
+        },
+        "10s_plus": {
+          "reference_spells": 112,
+          "matched_spells": 86
+        }
+      },
+      "observation": {
+        "ball_seen": {
+          "graded_frames": 52537,
+          "correct_frames": 48148,
+          "reference_live_frames": 47406,
+          "false_dead_frames": 431
+        },
+        "ball_missing": {
+          "graded_frames": 98351,
+          "correct_frames": 80535,
+          "reference_live_frames": 39136,
+          "false_dead_frames": 11476
+        }
+      }
+    },
+    {
+      "game": "10512",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "short_spell_bins": {
+        "under_1s": {
+          "reference_spells": 14,
+          "matched_spells": 0
+        },
+        "1_to_3s": {
+          "reference_spells": 54,
+          "matched_spells": 5
+        },
+        "3_to_10s": {
+          "reference_spells": 98,
+          "matched_spells": 35
+        },
+        "10s_plus": {
+          "reference_spells": 112,
+          "matched_spells": 61
+        }
+      },
+      "observation": {
+        "ball_seen": {
+          "graded_frames": 52537,
+          "correct_frames": 40720,
+          "reference_live_frames": 47406,
+          "false_dead_frames": 823
+        },
+        "ball_missing": {
+          "graded_frames": 98351,
+          "correct_frames": 75224,
+          "reference_live_frames": 39136,
+          "false_dead_frames": 13498
+        }
+      }
+    },
+    {
+      "game": "10512",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "short_spell_bins": {
+        "under_1s": {
+          "reference_spells": 14,
+          "matched_spells": 0
+        },
+        "1_to_3s": {
+          "reference_spells": 54,
+          "matched_spells": 9
+        },
+        "3_to_10s": {
+          "reference_spells": 98,
+          "matched_spells": 41
+        },
+        "10s_plus": {
+          "reference_spells": 112,
+          "matched_spells": 86
+        }
+      },
+      "observation": {
+        "ball_seen": {
+          "graded_frames": 52537,
+          "correct_frames": 47891,
+          "reference_live_frames": 47406,
+          "false_dead_frames": 364
+        },
+        "ball_missing": {
+          "graded_frames": 98351,
+          "correct_frames": 80262,
+          "reference_live_frames": 39136,
+          "false_dead_frames": 11477
+        }
+      }
+    },
+    {
+      "game": "10511",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "short_spell_bins": {
+        "under_1s": {
+          "reference_spells": 9,
+          "matched_spells": 0
+        },
+        "1_to_3s": {
+          "reference_spells": 53,
+          "matched_spells": 6
+        },
+        "3_to_10s": {
+          "reference_spells": 93,
+          "matched_spells": 44
+        },
+        "10s_plus": {
+          "reference_spells": 112,
+          "matched_spells": 85
+        }
+      },
+      "observation": {
+        "ball_seen": {
+          "graded_frames": 62366,
+          "correct_frames": 56834,
+          "reference_live_frames": 54529,
+          "false_dead_frames": 104
+        },
+        "ball_missing": {
+          "graded_frames": 100686,
+          "correct_frames": 86830,
+          "reference_live_frames": 36542,
+          "false_dead_frames": 6654
+        }
+      }
+    },
+    {
+      "game": "10511",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "short_spell_bins": {
+        "under_1s": {
+          "reference_spells": 9,
+          "matched_spells": 0
+        },
+        "1_to_3s": {
+          "reference_spells": 53,
+          "matched_spells": 10
+        },
+        "3_to_10s": {
+          "reference_spells": 93,
+          "matched_spells": 50
+        },
+        "10s_plus": {
+          "reference_spells": 112,
+          "matched_spells": 91
+        }
+      },
+      "observation": {
+        "ball_seen": {
+          "graded_frames": 62366,
+          "correct_frames": 58301,
+          "reference_live_frames": 54529,
+          "false_dead_frames": 135
+        },
+        "ball_missing": {
+          "graded_frames": 100686,
+          "correct_frames": 88435,
+          "reference_live_frames": 36542,
+          "false_dead_frames": 5904
+        }
+      }
+    },
+    {
+      "game": "10511",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "short_spell_bins": {
+        "under_1s": {
+          "reference_spells": 9,
+          "matched_spells": 0
+        },
+        "1_to_3s": {
+          "reference_spells": 53,
+          "matched_spells": 8
+        },
+        "3_to_10s": {
+          "reference_spells": 93,
+          "matched_spells": 41
+        },
+        "10s_plus": {
+          "reference_spells": 112,
+          "matched_spells": 85
+        }
+      },
+      "observation": {
+        "ball_seen": {
+          "graded_frames": 62366,
+          "correct_frames": 56947,
+          "reference_live_frames": 54529,
+          "false_dead_frames": 99
+        },
+        "ball_missing": {
+          "graded_frames": 100686,
+          "correct_frames": 86520,
+          "reference_live_frames": 36542,
+          "false_dead_frames": 7049
+        }
+      }
+    },
+    {
+      "game": "10511",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "short_spell_bins": {
+        "under_1s": {
+          "reference_spells": 9,
+          "matched_spells": 0
+        },
+        "1_to_3s": {
+          "reference_spells": 53,
+          "matched_spells": 11
+        },
+        "3_to_10s": {
+          "reference_spells": 93,
+          "matched_spells": 49
+        },
+        "10s_plus": {
+          "reference_spells": 112,
+          "matched_spells": 91
+        }
+      },
+      "observation": {
+        "ball_seen": {
+          "graded_frames": 62366,
+          "correct_frames": 58149,
+          "reference_live_frames": 54529,
+          "false_dead_frames": 144
+        },
+        "ball_missing": {
+          "graded_frames": 100686,
+          "correct_frames": 88467,
+          "reference_live_frames": 36542,
+          "false_dead_frames": 6054
+        }
+      }
+    },
+    {
+      "game": "10509",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "short_spell_bins": {
+        "under_1s": {
+          "reference_spells": 6,
+          "matched_spells": 0
+        },
+        "1_to_3s": {
+          "reference_spells": 55,
+          "matched_spells": 4
+        },
+        "3_to_10s": {
+          "reference_spells": 92,
+          "matched_spells": 44
+        },
+        "10s_plus": {
+          "reference_spells": 102,
+          "matched_spells": 88
+        }
+      },
+      "observation": {
+        "ball_seen": {
+          "graded_frames": 55838,
+          "correct_frames": 50768,
+          "reference_live_frames": 51597,
+          "false_dead_frames": 102
+        },
+        "ball_missing": {
+          "graded_frames": 91226,
+          "correct_frames": 78172,
+          "reference_live_frames": 32524,
+          "false_dead_frames": 5786
+        }
+      }
+    },
+    {
+      "game": "10509",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "short_spell_bins": {
+        "under_1s": {
+          "reference_spells": 6,
+          "matched_spells": 0
+        },
+        "1_to_3s": {
+          "reference_spells": 55,
+          "matched_spells": 6
+        },
+        "3_to_10s": {
+          "reference_spells": 92,
+          "matched_spells": 50
+        },
+        "10s_plus": {
+          "reference_spells": 102,
+          "matched_spells": 89
+        }
+      },
+      "observation": {
+        "ball_seen": {
+          "graded_frames": 55838,
+          "correct_frames": 51813,
+          "reference_live_frames": 51597,
+          "false_dead_frames": 103
+        },
+        "ball_missing": {
+          "graded_frames": 91226,
+          "correct_frames": 80175,
+          "reference_live_frames": 32524,
+          "false_dead_frames": 5324
+        }
+      }
+    },
+    {
+      "game": "10509",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "short_spell_bins": {
+        "under_1s": {
+          "reference_spells": 6,
+          "matched_spells": 0
+        },
+        "1_to_3s": {
+          "reference_spells": 55,
+          "matched_spells": 4
+        },
+        "3_to_10s": {
+          "reference_spells": 92,
+          "matched_spells": 48
+        },
+        "10s_plus": {
+          "reference_spells": 102,
+          "matched_spells": 87
+        }
+      },
+      "observation": {
+        "ball_seen": {
+          "graded_frames": 55838,
+          "correct_frames": 50572,
+          "reference_live_frames": 51597,
+          "false_dead_frames": 118
+        },
+        "ball_missing": {
+          "graded_frames": 91226,
+          "correct_frames": 78415,
+          "reference_live_frames": 32524,
+          "false_dead_frames": 5992
+        }
+      }
+    },
+    {
+      "game": "10509",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "short_spell_bins": {
+        "under_1s": {
+          "reference_spells": 6,
+          "matched_spells": 0
+        },
+        "1_to_3s": {
+          "reference_spells": 55,
+          "matched_spells": 6
+        },
+        "3_to_10s": {
+          "reference_spells": 92,
+          "matched_spells": 53
+        },
+        "10s_plus": {
+          "reference_spells": 102,
+          "matched_spells": 89
+        }
+      },
+      "observation": {
+        "ball_seen": {
+          "graded_frames": 55838,
+          "correct_frames": 51903,
+          "reference_live_frames": 51597,
+          "false_dead_frames": 110
+        },
+        "ball_missing": {
+          "graded_frames": 91226,
+          "correct_frames": 80198,
+          "reference_live_frames": 32524,
+          "false_dead_frames": 5438
+        }
+      }
+    },
+    {
+      "game": "10507",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "short_spell_bins": {
+        "under_1s": {
+          "reference_spells": 5,
+          "matched_spells": 0
+        },
+        "1_to_3s": {
+          "reference_spells": 43,
+          "matched_spells": 9
+        },
+        "3_to_10s": {
+          "reference_spells": 72,
+          "matched_spells": 38
+        },
+        "10s_plus": {
+          "reference_spells": 116,
+          "matched_spells": 103
+        }
+      },
+      "observation": {
+        "ball_seen": {
+          "graded_frames": 68938,
+          "correct_frames": 65183,
+          "reference_live_frames": 64714,
+          "false_dead_frames": 148
+        },
+        "ball_missing": {
+          "graded_frames": 79519,
+          "correct_frames": 68717,
+          "reference_live_frames": 29291,
+          "false_dead_frames": 5735
+        }
+      }
+    },
+    {
+      "game": "10507",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "short_spell_bins": {
+        "under_1s": {
+          "reference_spells": 5,
+          "matched_spells": 0
+        },
+        "1_to_3s": {
+          "reference_spells": 43,
+          "matched_spells": 11
+        },
+        "3_to_10s": {
+          "reference_spells": 72,
+          "matched_spells": 41
+        },
+        "10s_plus": {
+          "reference_spells": 116,
+          "matched_spells": 106
+        }
+      },
+      "observation": {
+        "ball_seen": {
+          "graded_frames": 68938,
+          "correct_frames": 65621,
+          "reference_live_frames": 64714,
+          "false_dead_frames": 140
+        },
+        "ball_missing": {
+          "graded_frames": 79519,
+          "correct_frames": 69614,
+          "reference_live_frames": 29291,
+          "false_dead_frames": 4790
+        }
+      }
+    },
+    {
+      "game": "10507",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "short_spell_bins": {
+        "under_1s": {
+          "reference_spells": 5,
+          "matched_spells": 0
+        },
+        "1_to_3s": {
+          "reference_spells": 43,
+          "matched_spells": 6
+        },
+        "3_to_10s": {
+          "reference_spells": 72,
+          "matched_spells": 35
+        },
+        "10s_plus": {
+          "reference_spells": 116,
+          "matched_spells": 97
+        }
+      },
+      "observation": {
+        "ball_seen": {
+          "graded_frames": 59377,
+          "correct_frames": 55820,
+          "reference_live_frames": 55443,
+          "false_dead_frames": 201
+        },
+        "ball_missing": {
+          "graded_frames": 89080,
+          "correct_frames": 75622,
+          "reference_live_frames": 38562,
+          "false_dead_frames": 8579
+        }
+      }
+    },
+    {
+      "game": "10507",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "short_spell_bins": {
+        "under_1s": {
+          "reference_spells": 5,
+          "matched_spells": 0
+        },
+        "1_to_3s": {
+          "reference_spells": 43,
+          "matched_spells": 9
+        },
+        "3_to_10s": {
+          "reference_spells": 72,
+          "matched_spells": 36
+        },
+        "10s_plus": {
+          "reference_spells": 116,
+          "matched_spells": 100
+        }
+      },
+      "observation": {
+        "ball_seen": {
+          "graded_frames": 59377,
+          "correct_frames": 56324,
+          "reference_live_frames": 55443,
+          "false_dead_frames": 161
+        },
+        "ball_missing": {
+          "graded_frames": 89080,
+          "correct_frames": 76168,
+          "reference_live_frames": 38562,
+          "false_dead_frames": 7514
+        }
+      }
+    },
+    {
+      "game": "10505",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "short_spell_bins": {
+        "under_1s": {
+          "reference_spells": 10,
+          "matched_spells": 0
+        },
+        "1_to_3s": {
+          "reference_spells": 45,
+          "matched_spells": 4
+        },
+        "3_to_10s": {
+          "reference_spells": 96,
+          "matched_spells": 47
+        },
+        "10s_plus": {
+          "reference_spells": 105,
+          "matched_spells": 87
+        }
+      },
+      "observation": {
+        "ball_seen": {
+          "graded_frames": 67476,
+          "correct_frames": 62089,
+          "reference_live_frames": 61885,
+          "false_dead_frames": 81
+        },
+        "ball_missing": {
+          "graded_frames": 78956,
+          "correct_frames": 69905,
+          "reference_live_frames": 26848,
+          "false_dead_frames": 4247
+        }
+      }
+    },
+    {
+      "game": "10505",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "short_spell_bins": {
+        "under_1s": {
+          "reference_spells": 10,
+          "matched_spells": 0
+        },
+        "1_to_3s": {
+          "reference_spells": 45,
+          "matched_spells": 4
+        },
+        "3_to_10s": {
+          "reference_spells": 96,
+          "matched_spells": 59
+        },
+        "10s_plus": {
+          "reference_spells": 105,
+          "matched_spells": 91
+        }
+      },
+      "observation": {
+        "ball_seen": {
+          "graded_frames": 67476,
+          "correct_frames": 63888,
+          "reference_live_frames": 61885,
+          "false_dead_frames": 70
+        },
+        "ball_missing": {
+          "graded_frames": 78956,
+          "correct_frames": 71012,
+          "reference_live_frames": 26848,
+          "false_dead_frames": 3734
+        }
+      }
+    },
+    {
+      "game": "10505",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "short_spell_bins": {
+        "under_1s": {
+          "reference_spells": 10,
+          "matched_spells": 0
+        },
+        "1_to_3s": {
+          "reference_spells": 45,
+          "matched_spells": 3
+        },
+        "3_to_10s": {
+          "reference_spells": 96,
+          "matched_spells": 43
+        },
+        "10s_plus": {
+          "reference_spells": 105,
+          "matched_spells": 86
+        }
+      },
+      "observation": {
+        "ball_seen": {
+          "graded_frames": 58651,
+          "correct_frames": 54033,
+          "reference_live_frames": 53827,
+          "false_dead_frames": 88
+        },
+        "ball_missing": {
+          "graded_frames": 87781,
+          "correct_frames": 75961,
+          "reference_live_frames": 34906,
+          "false_dead_frames": 6481
+        }
+      }
+    },
+    {
+      "game": "10505",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "short_spell_bins": {
+        "under_1s": {
+          "reference_spells": 10,
+          "matched_spells": 0
+        },
+        "1_to_3s": {
+          "reference_spells": 45,
+          "matched_spells": 3
+        },
+        "3_to_10s": {
+          "reference_spells": 96,
+          "matched_spells": 52
+        },
+        "10s_plus": {
+          "reference_spells": 105,
+          "matched_spells": 91
+        }
+      },
+      "observation": {
+        "ball_seen": {
+          "graded_frames": 58651,
+          "correct_frames": 55439,
+          "reference_live_frames": 53827,
+          "false_dead_frames": 124
+        },
+        "ball_missing": {
+          "graded_frames": 87781,
+          "correct_frames": 76286,
+          "reference_live_frames": 34906,
+          "false_dead_frames": 6919
+        }
+      }
+    },
+    {
+      "game": "10502",
+      "scenario": "natural_detected",
+      "candidate": "v4",
+      "short_spell_bins": {
+        "under_1s": {
+          "reference_spells": 10,
+          "matched_spells": 0
+        },
+        "1_to_3s": {
+          "reference_spells": 66,
+          "matched_spells": 2
+        },
+        "3_to_10s": {
+          "reference_spells": 115,
+          "matched_spells": 35
+        },
+        "10s_plus": {
+          "reference_spells": 118,
+          "matched_spells": 71
+        }
+      },
+      "observation": {
+        "ball_seen": {
+          "graded_frames": 67843,
+          "correct_frames": 57445,
+          "reference_live_frames": 62825,
+          "false_dead_frames": 220
+        },
+        "ball_missing": {
+          "graded_frames": 78943,
+          "correct_frames": 63058,
+          "reference_live_frames": 32145,
+          "false_dead_frames": 8020
+        }
+      }
+    },
+    {
+      "game": "10502",
+      "scenario": "natural_detected",
+      "candidate": "boundary102",
+      "short_spell_bins": {
+        "under_1s": {
+          "reference_spells": 10,
+          "matched_spells": 0
+        },
+        "1_to_3s": {
+          "reference_spells": 66,
+          "matched_spells": 3
+        },
+        "3_to_10s": {
+          "reference_spells": 115,
+          "matched_spells": 39
+        },
+        "10s_plus": {
+          "reference_spells": 118,
+          "matched_spells": 85
+        }
+      },
+      "observation": {
+        "ball_seen": {
+          "graded_frames": 67843,
+          "correct_frames": 61563,
+          "reference_live_frames": 62825,
+          "false_dead_frames": 251
+        },
+        "ball_missing": {
+          "graded_frames": 78943,
+          "correct_frames": 64583,
+          "reference_live_frames": 32145,
+          "false_dead_frames": 7590
+        }
+      }
+    },
+    {
+      "game": "10502",
+      "scenario": "label_blind_seed7",
+      "candidate": "v4",
+      "short_spell_bins": {
+        "under_1s": {
+          "reference_spells": 10,
+          "matched_spells": 0
+        },
+        "1_to_3s": {
+          "reference_spells": 66,
+          "matched_spells": 0
+        },
+        "3_to_10s": {
+          "reference_spells": 115,
+          "matched_spells": 32
+        },
+        "10s_plus": {
+          "reference_spells": 118,
+          "matched_spells": 69
+        }
+      },
+      "observation": {
+        "ball_seen": {
+          "graded_frames": 58618,
+          "correct_frames": 49116,
+          "reference_live_frames": 54092,
+          "false_dead_frames": 272
+        },
+        "ball_missing": {
+          "graded_frames": 88168,
+          "correct_frames": 68836,
+          "reference_live_frames": 40878,
+          "false_dead_frames": 11446
+        }
+      }
+    },
+    {
+      "game": "10502",
+      "scenario": "label_blind_seed7",
+      "candidate": "boundary102",
+      "short_spell_bins": {
+        "under_1s": {
+          "reference_spells": 10,
+          "matched_spells": 0
+        },
+        "1_to_3s": {
+          "reference_spells": 66,
+          "matched_spells": 1
+        },
+        "3_to_10s": {
+          "reference_spells": 115,
+          "matched_spells": 36
+        },
+        "10s_plus": {
+          "reference_spells": 118,
+          "matched_spells": 77
+        }
+      },
+      "observation": {
+        "ball_seen": {
+          "graded_frames": 58618,
+          "correct_frames": 53073,
+          "reference_live_frames": 54092,
+          "false_dead_frames": 288
+        },
+        "ball_missing": {
+          "graded_frames": 88168,
+          "correct_frames": 69985,
+          "reference_live_frames": 40878,
+          "false_dead_frames": 11615
+        }
+      }
+    }
+  ],
+  "uncertainty_warning": "Both intervals are descriptive; six matches/four shared-team components, common provider and prior selection preclude a calibrated universal no-overfitting conclusion."
+}
