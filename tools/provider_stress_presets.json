@@ -1,0 +1,119 @@
+{
+  "description": "Fixed geometry-only development pilot. Presets declared before model scores. No fitting or scoring.",
+  "seed": 20261113,
+  "grid_hz": 25,
+  "fold_plan_sha256": "2f9facaf149ec17d84a8dd6064a4e9dc57945c784477973c0009c43461df70aa",
+  "parameter_descriptions": {
+    "seed": "Integer seed shared by copies. Independent NumPy PCG64 streams per contiguous period and for noise versus dropout. Same seed pairs rate/noise comparisons.",
+    "grid_hz": "Canonical output rows per second. Reference labels and periods retain their exact reader grid.",
+    "fold_plan_sha256": "SHA-256 of the immutable development fold plan; checked before loading raw files.",
+    "source_hz": "Sampling rate of raw source frame clocks, not the upsampled reader output.",
+    "raw_files": "Exact relative paths under --external-root and SHA-256 for every raw input, including labels read only by the baseline reader.",
+    "observation_hz": "Requested sensor rate, capped at source_hz. Select nearest source tick per period, ties forward; use actual selected source times. No synthetic observations above the source rate.",
+    "noise_std_m": "Independent zero-mean Gaussian standard deviation in metres PER x/y coordinate, for every player and ball observation. Height unchanged. No clipping or correlation.",
+    "ball_bursts_per_minute": "Poisson start rate per minute of metadata period time, including existing gaps. Exponential waiting times restart each period; overlapping bursts form a union.",
+    "burst_min_s": "Minimum uniform burst duration in seconds before clipping to the period end.",
+    "burst_max_s": "Maximum uniform burst duration in seconds before clipping to the period end.",
+    "fold": "Unchanged fold number of the original game; copies are dependent diagnostics, not new independent matches.",
+    "fold_key": "Exact game identifier used in the frozen fold plan and development allowlist.",
+    "game_id": "Public provider match identifier.",
+    "provider": "Selects the corresponding existing reader and observed-only adapter.",
+    "source_revision": "Pinned public dataset revision already recorded by the repository."
+  },
+  "stress_timing": {
+    "grid": "Row i is i/25 seconds on the source-aligned reader clock; gt and period are copied without remapping.",
+    "mapping": "native_timestamps_s[j] is the actual selected raw observation time, mapped to grid_index[j] = floor(time*25 + 0.5). Samples leaving their period are rejected.",
+    "source_index": "NPZ source_index indexes the native arrays; source_frame gives the original provider frame ID.",
+    "missingness": "Only mapped rows may contain observations. All other geometry rows are NaN. Raw missing detections and pre-existing canonical xy gaps remain NaN. No interpolation or hold.",
+    "speed": "Backward displacement between consecutive coarse observations divided by their actual elapsed seconds. NaN at each period start and across any missing native track frame, even one not sampled.",
+    "masks": "NPZ observation_mask marks selected sensor ticks, including ticks with missing detections. ball_dropout_mask marks selected ticks covered by a burst; all three ball channels there are NaN.",
+    "rate_limit": "SkillCorner is native 10 Hz: its 15 Hz preset has effective 10 Hz observations and is identical to the corresponding 10 Hz preset at the same seed. It cannot test true 15 Hz acquisition.",
+    "burst_counts": "dropped_ball_observations counts finite xy lost specifically to bursts; dropout_grid_rows includes already missing observations. Unselected rows are not counted as burst losses."
+  },
+  "baseline_timing": {
+    "grid": "Exact existing-reader arrays on the 25 Hz canonical grid; gt unchanged. DFL period is supplied separately from raw FrameSet clocks.",
+    "native_mapping": "DFL row i corresponds to source_frame = period first frame + (i - period grid start); a 250-row synthetic inter-half gap is retained. SkillCorner native frame f has time f/10 and maps to floor(2.5*f+0.5).",
+    "interpolation": "SkillCorner baseline retains existing-reader linear 10-to-25 Hz interpolation between adjacent finite detections; baseline finite rows must not be treated as measured observations. Stress copies reopen detected-only native geometry.",
+    "reference": "Only the unchanged existing readers read reference fields, to construct the baseline reference. The corruption function receives no reference arrays."
+  },
+  "sources": {
+    "idsse_J03WMX": {
+      "description": "Original DFL development game, CC BY 4.0, IDSSE / Sportec / DFL.",
+      "provider": "idsse",
+      "game_id": "J03WMX",
+      "fold_key": "original/idsse_J03WMX",
+      "fold": 2,
+      "source_hz": 25,
+      "source_revision": "a715a38dfbaf5f58e431727c2b78d174101a703c",
+      "clock_description": "Within each GameSection, raw N advances at 25 Hz. Reader concatenates firstHalf, 250 empty grid rows, secondHalf. Native timestamps use this concatenated clock, not wall time; source_frame retains raw N.",
+      "raw_files": {
+        "metadata": {
+          "path": "idsse/DFL_02_01_matchinformation_DFL-COM-000001_DFL-MAT-J03WMX.xml",
+          "sha256": "a884728647a564cf8b20e5223a1d04a5da6f6725e1e506c8651505327c197ba9"
+        },
+        "tracking": {
+          "path": "idsse/DFL_04_03_positions_raw_observed_DFL-COM-000001_DFL-MAT-J03WMX.xml",
+          "sha256": "d3dd92e509421a6466acb0a083c009035f1751bc5fd9ef42ffa8f20d01cf7d49"
+        }
+      }
+    },
+    "skillcorner_1925299": {
+      "description": "Prior SkillCorner development game in expanded_team_training.json, MIT; credit SkillCorner.",
+      "provider": "skillcorner",
+      "game_id": "1925299",
+      "fold_key": "skillcorner/1925299",
+      "fold": 4,
+      "source_hz": 10,
+      "source_revision": "4340d274572876239c154c90bc507a9b3250a656",
+      "clock_description": "Native frame f has time f/10 seconds, matching the existing reader. match_periods supplies half-open native frame ranges independently of phases. Canonical period/gt use the reader floor mapping.",
+      "raw_files": {
+        "metadata": {
+          "path": "skillcorner/1925299/1925299_match.json",
+          "sha256": "f4345b32c0fdd7c9990df70050b3a74f57b1992cf762e20f2a4d309bd2fba7d2"
+        },
+        "reference": {
+          "path": "skillcorner/1925299/1925299_phases_of_play.csv",
+          "sha256": "a1682a736a9cf1c311cb799f0a949f7e023dca4ebaa9dd294b138e8929271274"
+        },
+        "tracking": {
+          "path": "skillcorner/1925299/1925299_tracking_extrapolated.jsonl",
+          "sha256": "48528be40ad82fa3e2b232e1af8d311705f7d6d119925ef199d2b59ea36fd3c9"
+        }
+      }
+    }
+  },
+  "presets": {
+    "hz10_noise0p5": {
+      "description": "10 Hz requested, 0.5 m xy standard deviation, 2 Poisson burst starts per minute, uniform 2-6 s duration.",
+      "observation_hz": 10,
+      "noise_std_m": 0.5,
+      "ball_bursts_per_minute": 2.0,
+      "burst_min_s": 2.0,
+      "burst_max_s": 6.0
+    },
+    "hz15_noise0p5": {
+      "description": "15 Hz requested, 0.5 m xy standard deviation, 2 Poisson burst starts per minute, uniform 2-6 s duration.",
+      "observation_hz": 15,
+      "noise_std_m": 0.5,
+      "ball_bursts_per_minute": 2.0,
+      "burst_min_s": 2.0,
+      "burst_max_s": 6.0
+    },
+    "hz10_noise2": {
+      "description": "10 Hz requested, 2 m xy standard deviation, 2 Poisson burst starts per minute, uniform 2-6 s duration.",
+      "observation_hz": 10,
+      "noise_std_m": 2,
+      "ball_bursts_per_minute": 2.0,
+      "burst_min_s": 2.0,
+      "burst_max_s": 6.0
+    },
+    "hz15_noise2": {
+      "description": "15 Hz requested, 2 m xy standard deviation, 2 Poisson burst starts per minute, uniform 2-6 s duration.",
+      "observation_hz": 15,
+      "noise_std_m": 2,
+      "ball_bursts_per_minute": 2.0,
+      "burst_min_s": 2.0,
+      "burst_max_s": 6.0
+    }
+  }
+}
