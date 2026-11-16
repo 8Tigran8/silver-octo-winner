@@ -3,7 +3,7 @@
   "one_label_tamper": "REJECTED as required",
   "official_validator": "PASS",
   "source_model_config_hashes": "PASS",
-  "manifest_sha256": "015cf2d2fd4ba1b469f260d1cc0748660f4c2541e24655188b9f9a690b09c619",
+  "manifest_sha256": "c540d5815cceaaacc5e48ced1df8bf6402a12ca053fed46ad3e7165ce733cb2f",
   "six_reproduction_outputs_identical": true,
   "unit_tests_mac": 114,
   "unit_tests_linux_arm64": 114,

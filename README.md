@@ -8,7 +8,7 @@ Ball possession from automatic tracking. **Current selected model: boundary102.*
 
 ## Generate the current CSV
 
-Use Python 3.12 and the organizer data bundle. The data directory must contain `tactical/BAR-ATH_tactical_atd.xml` and `tactical/BAR-ATH_tactical_atd.txt`.
+Use branch `codex/independent-audit`; default `main` still contains historical v4 and does not represent this package. Use Python 3.12 and the organizer data bundle. The data directory must contain `tactical/BAR-ATH_tactical_atd.xml` and `tactical/BAR-ATH_tactical_atd.txt`.
 
 ```bash
 python3.12 -m venv .venv

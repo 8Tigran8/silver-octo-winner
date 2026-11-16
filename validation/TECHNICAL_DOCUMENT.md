@@ -54,9 +54,11 @@ The one frozen-candidate public-window diagnostic is 0.6000 Spell F1 / 0.7548 ma
 
 ## Reproduction
 
-Use Python 3.12 and the audited source commit in `submission_manifest.json`:
+Use Python 3.12 and branch `codex/independent-audit`. Default `main` still contains historical v4. The manifest records the tested inference commits and hashes; the current audit branch also contains the updated gate and documentation. An organizer repository link must identify this branch (or a subsequently verified release), not the old default branch.
 
 ```sh
+git clone --branch codex/independent-audit --single-branch https://github.com/8Tigran8/silver-octo-winner.git ruses-cules
+cd ruses-cules
 python3.12 -m venv .venv
 .venv/bin/pip install -r requirements-temporal.txt
 .venv/bin/python tools/fetch_reference.py
