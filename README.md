@@ -72,3 +72,7 @@ Organizer tracking, video, tagging, homography and target labels stay local. Do 
 ## Historical versions
 
 `run.py v4` still generates the historical control, not the current candidate. Its [method](docs/experiments/temporal/TECHNICAL_V4.md) and assets remain available. Earlier v1/v2/v3 releases, failed studies, training recipes and receipts are preserved in [HISTORY.md](HISTORY.md) and their experiment directories.
+
+## Later research
+
+The separate boundary-event head on `codex/boundary-events` failed its predeclared meaningful-improvement gate (+0.00297 Spell F1, 7/10 development wins; required +0.020 and 8/10). It is not part of this release. See [the complete negative result](https://github.com/8Tigran8/silver-octo-winner/blob/codex/boundary-events/docs/experiments/boundary-events/REPORT.md).

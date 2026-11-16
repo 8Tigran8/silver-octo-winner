@@ -20,6 +20,10 @@ At 11:43 CET on 16 November, VV reported two matching boundary102 runs on Linux 
 
 The preregistered roughness diagnostic uses geometry, clocks and independent periods only. Synthetic calibration recovers 0.5 m iid jitter within 0.02 m. It reads no target labels and changes no model or threshold. Target aggregates stay in ignored local reports. Short-timescale roughness differs substantially from the independent 0.5/2 m jitter probes; this does not identify true coordinate error or exclude smooth/correlated bias. It supplies no automatic model-switch rule.
 
+## Subsequent development study
+
+A separate boundary head trained on the existing 36 PFF training games was evaluated on all ten development games, two observation cases and two fixed references. Its strongest registered policy gains only 0.002967 Spell F1 with 7/10 natural wins, below the predeclared +0.020 / 8-win gate. It is rejected; current weights and output remain unchanged. The old final and six excluded bridges were not used in that study. Full source, negative results, duration/false-positive diagnostics and provenance are on [codex/boundary-events](https://github.com/8Tigran8/silver-octo-winner/blob/codex/boundary-events/docs/experiments/boundary-events/REPORT.md).
+
 ## Remaining release actions
 
 Complete joint team review; Linux ARM reproduction is now reported with the evidence limitations above. Repository publication, final team identity fields and the organizer form are separate pending actions. No organizer submission or public visibility change has occurred. The original final reserve is consumed; further model selection requires a new untouched reserve.
