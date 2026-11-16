@@ -1,0 +1,18 @@
+{
+  "status": "registered before any candidate external scores",
+  "hypothesis": "Some missing-ball gaps are incorrectly decoded D despite continuous visible player control. Player-relative interpolation under strict observable endpoint constraints may recover these spells.",
+  "trigger": "Independent 22-player synthetic geometry, 10 second ball dropout; original ownership becomes fragmented by false D. This is not evidence of real-match improvement.",
+  "candidates_seconds": [2, 10],
+  "fixed_conditions": {"endpoint_distance_metres": 2, "same_nearest_player_both_endpoints": true, "all_player_xy_finite": true, "max_player_speed_metres_per_second": 12, "period_local_only": true},
+  "training": "none; frozen boundary102 weights and decoder",
+  "development_games": ["10510", "3821", "10513", "10516", "3859", "3827", "10503", "3858", "3838", "3842"],
+  "scenarios": ["natural_detected", "label_blind_seed7"],
+  "primary_reference": "canonical original PFF event-derived proxy",
+  "shadow_reference": "SDK alternate reconstruction",
+  "promotion_gate_each_scenario": {"mean_spell_gain_at_least": 0.02, "positive_games_at_least": 8, "worst_game_spell_gain_at_least": -0.02, "mean_macro_gain_at_least": -0.002},
+  "selection_if_both_pass": "larger minimum of natural and blind mean spell gain; shorter gap on tie",
+  "prohibited": ["provided-match public/private GT", "old twelve final matches", "six excluded bridges", "target geometry for selecting thresholds"],
+  "if_pass": "Do not automatically promote: obtain separately declared legitimate fresh validation or retain as unverified candidate.",
+  "if_fail": "Reject all failed candidates, keep original production inference. No threshold sweep or tuning on diagnostic examples.",
+  "known_risk": "A true stoppage with the same player near the ball on both sides is observationally ambiguous; interpolation can erase correct D. Slot continuity does not guarantee identity continuity."
+}
