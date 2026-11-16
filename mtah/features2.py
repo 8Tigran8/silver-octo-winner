@@ -52,7 +52,7 @@ def _smooth(x, w):
     """Скользящее среднее по центру с учётом NaN (NaN -> не участвует)."""
     ok = np.isfinite(x)
     v = np.where(ok, x, 0.0)
-    k = np.ones(w)
+    k = np.ones(min(w, len(x)))
     num = np.convolve(v, k, mode="same")
     den = np.convolve(ok.astype(float), k, mode="same")
     with np.errstate(invalid="ignore", divide="ignore"):
@@ -71,7 +71,21 @@ def _attack_dir(cx_home, cx_away, segments, n, L):
 def build(d, segments, swap=False):
     with warnings.catch_warnings():
         warnings.simplefilter("ignore", RuntimeWarning)
-        return _build(d, segments, swap)
+        n = len(d["ball"])
+        result = None
+        previous = 0
+        for a, b in segments:
+            if not (previous <= a < b <= n):
+                raise ValueError("Periods must be ordered, disjoint and within input")
+            previous = b
+            local = dict(d, ball=d["ball"][a:b], players=d["players"][a:b])
+            part, names = _build(local, [(0, b-a)], swap)
+            if result is None:
+                result = np.full((n, len(names)), np.nan, np.float32)
+            result[a:b] = part
+        if result is None:
+            raise ValueError("At least one nonempty period required")
+        return result, names
 
 
 def _team_stats(pl, sp, mask, ball_i, L):
@@ -84,7 +98,10 @@ def _team_stats(pl, sp, mask, ball_i, L):
     d1[d1 >= 1e3] = np.nan
     d2[d2 >= 1e3] = np.nan
     order = np.argmin(np.where(np.isfinite(dist), dist, 1e3), axis=1)
-    near_speed = np.where(mask, sp, np.nan)[np.arange(len(order)), order]
+    # Duplicate/equidistant detections must not make slot order a predictor.
+    closest = np.min(np.where(np.isfinite(dist), dist, np.inf), axis=1)
+    tied = mask & np.isfinite(dist) & (dist == closest[:, None])
+    near_speed = np.nanmean(np.where(tied, sp, np.nan), axis=1)
     out = {
         "d1": d1, "d2": d2,
         "n3": (dist < 3).sum(axis=1).astype(float),

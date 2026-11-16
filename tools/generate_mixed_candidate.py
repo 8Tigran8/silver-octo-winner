@@ -16,7 +16,9 @@ def main():
     from mtah.config import HALVES,N_FRAMES,D,LABELS
     from mtah.submission import write
     import numpy as np
-    data=atd.load();bundle,state=mixed_candidate.load_bundle(a.bundle);parts=[(first,last+1) for _,first,last in HALVES]
+    data=atd.load();
+    if len(data['frame_ids']) != N_FRAMES:raise ValueError('Tactical frame count mismatch')
+    bundle,state=mixed_candidate.load_bundle(a.bundle);parts=[(first,last+1) for _,first,last in HALVES]
     pd,ph=mixed_candidate.probabilities(data,parts,v4.load(),state)
     params=dict(boost_train.decoder_params(),**json.loads((ROOT/'mtah/methods/v2_params.json').read_text())['decoder'])
     play=[(max(first,boost.KICKOFF.get(i,first)),last) for i,(first,last) in enumerate(parts)]

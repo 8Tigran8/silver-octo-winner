@@ -78,7 +78,12 @@ def fit(rows_list):
     return clf().fit(Xd, yd), clf().fit(Xt, yt)
 
 
-def predict(models, pD, pH):
+def predict(models, pD, pH, segments=None):
+    if segments is not None:
+        qD = np.full(len(pD), .5); qH = qD.copy()
+        for a, b in segments:
+            qD[a:b], qH[a:b] = predict(models, pD[a:b], pH[a:b])
+        return qD, qH
     md, mt = models
     F, Fs = features(pD, pH), features(pD, pH, swap=True)
     qD = 0.5 * (md.predict_proba(F)[:, 1] + md.predict_proba(Fs)[:, 1])

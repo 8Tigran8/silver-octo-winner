@@ -1,0 +1,19 @@
+{
+  "retrieved_utc": "2026-11-16T11:35:37.062443+00:00",
+  "commit": "f8f2629ff1e0985f81d7e59d8413678514ee1530",
+  "sha256": {
+    "README.md": "19aa75a0928ff8a26b1865c5753c47b892a7461691ae42d8b9a74baee9bab92e",
+    "CHALLENGE.md": "ce3d0517ee74282fb0443ed9c05aa5398a4c178b98e55ebabd4b1d970243848c",
+    "DATA.md": "b70aaa434e96a559f501fe5c3d65dbda6fba25c0fbd80ebe897ef23254de8c24",
+    "EVALUATION.md": "25b61f6d8a2bcbe77396bd9a9cae564b27424538e0a958aa1cd365e1e58ae571",
+    "RULES.md": "b6f63456d215e2e6016619f6268580ed8921bb96ba41c7d3037f2733f8d10153",
+    "SUBMISSION.md": "acb90eebc0f113fc072d90ac77be501e63de1dde65e9227186b4718bc24f22d2",
+    "evaluation/possession_metrics.py": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+    "evaluation/run_evaluation.py": "1c61564fe52499ba4af3006fb5eb4147b825e92bf516651add80de49d267b19f",
+    "evaluation/validate_submission.py": "07ac29499acbd337e1dc1de1832d63f6e1fa1d981e22f6ad08212529e2bbee14",
+    "starter/baseline.py": "84d8a414fb1bdf8c7e1fbe4a8789fe6f9cc0c2cccec4685201285b75dbc0cfe6",
+    "games.py": "3b2122794e9e0476e2b3a871d14880e5fa47c4feaeacf99caef054c2309076ce",
+    "starter/load_atd.py": "6c63ee807ae5c1456d0f4dec933f61ad05227c1c663e7e80c96ead1255eeed30",
+    "starter/load_smart_tagging.py": "cacfe90acf1deb37b3aa3e4666d6a9d5595c1766d59fe24c9150e1a1d51d0c64"
+  }
+}

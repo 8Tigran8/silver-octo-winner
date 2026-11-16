@@ -26,6 +26,11 @@ def read_meta(meta_path):
     teams = list(root.iter("Team"))
     if len(teams) != 2:
         raise ValueError("ожидалось 2 команды, найдено {}".format(len(teams)))
+    team_ids = [t.get("id") for t in teams]
+    if None in team_ids or len(set(team_ids)) != 2:
+        raise ValueError("Invalid team identifiers")
+    if any(p.get("teamId") not in team_ids for p in root.iter("Player")):
+        raise ValueError("Player references an unknown team")
     home_id = teams[0].get("id")
     names = tuple(t.findtext("Name") for t in teams)
     slot_team = np.array([HOME if p.get("teamId") == home_id else AWAY
@@ -84,9 +89,14 @@ def load(source="tactical", use_cache=True):
                           "(или задай MTAH_DATA_DIR).".format(p))
     names, slot_team = read_meta(meta_path)
     # имя кэша зависит от пути к данным, чтобы синтетика и настоящий матч не перепутались
-    key = hashlib.md5(os.path.abspath(raw_path).encode()).hexdigest()[:8]
+    digest = hashlib.sha256()
+    for file in (meta_path, raw_path):
+        with open(file, "rb") as stream:
+            for block in iter(lambda: stream.read(1024*1024), b""):
+                digest.update(block)
+    key = digest.hexdigest()
     cache = os.path.join(CACHE_DIR, "atd_{}_{}.npz".format(source, key))
-    if use_cache and os.path.isfile(cache) and os.path.getmtime(cache) > os.path.getmtime(raw_path):
+    if use_cache and os.path.isfile(cache):
         d = dict(np.load(cache))
     else:
         d = parse_raw(raw_path, len(slot_team))
@@ -94,7 +104,7 @@ def load(source="tactical", use_cache=True):
         np.savez(cache, **d)
     d = dict(d)
     ids = d["frame_ids"]
-    if not (ids[0] == 1 and np.array_equal(ids, np.arange(1, len(ids) + 1))):
+    if not (len(ids) and ids[0] == 1 and np.array_equal(ids, np.arange(1, len(ids) + 1))):
         raise ValueError("frame_id не идут 1..N подряд — выравнивание не то, что в DATA.md")
     d["slot_team"] = slot_team
     d["team_names"] = names
