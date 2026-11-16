@@ -4,7 +4,7 @@
 
 The system estimates H/A/D possession from the supplied automatic tactical XML/TXT. It reads no target reference labels, video, broadcast, homography or raw Smart Tagging events. Published playing blocks and the published second-half kickoff define output coverage and pre-restart D. The output is exactly 199,319 ordered rows with header `frame,label`.
 
-ATD frame IDs are 1-based and must be consecutive; row i is video frame i. XML supplies team membership of anonymous track slots. Coordinates become metres using pitch dimensions. Slots are not persistent player identities. Missing observations remain NaN. The cache is keyed by SHA-256 of both input files, so changing bytes invalidates it.
+ATD frame IDs are 1-based and must be consecutive; row i is video frame i. XML supplies team membership of anonymous track slots. Coordinates become metres using pitch dimensions. Slots are not persistent player identities. An observation requires both finite coordinates; nonfinite numeric fields become missing, and a lone ball observation is retained by endpoint interpolation. The cache is keyed by SHA-256 of both input files and a parser version. Damaged cache shapes/IDs/archives are rebuilt from source; writes are atomic.
 
 ## Implemented architecture
 
@@ -46,7 +46,11 @@ Before this audit, frozen boundary102 improved the one-shot 12-game PFF final fr
 
 This audit repaired cross-period features/stacking, stale cache selection, equal-distance slot dependence and short-input feature shape. Corrected-source regression on the existing ten PFF development games gives Spell F1 0.655317 natural and 0.642574 blind; mean gains versus original boundary102 are only +0.000086/+0.000088. These are regression checks, not independent fresh generalization evidence.
 
-Two clean-source runs in a new pinned environment generate exactly the same target CSV as before the repairs. The one frozen-candidate public-window diagnostic is 0.6000 Spell F1 / 0.7548 macroF1 on 17 possessions: **DIAGNOSTIC ONLY — NOT A GENERALIZATION ESTIMATE**. It was not used for model selection or tuning.
+Further missing-coordinate/cache repairs leave all ten development-game metrics unchanged in both scenarios. Two fresh-source runs each on macOS ARM, local Linux ARM and emulated Linux x86-64 generate exactly the same target CSV as before the repairs. Linux inference has network disabled and only the two original tracking files mounted read-only. These are cross-OS/architecture checks on the same physical host, not independent hardware validation.
+
+Full-model toy geometry with 22 moving players recognizes obvious constant H/A control (synthetic Spell F1 1.0). A ten-second hidden-ball interval instead introduces false D (synthetic Spell F1 0.4). This is a diagnostic limitation, not a real-match estimate; success on injected decoder evidence does not resolve it. Experimental player-relative gap filling is separate from production inference.
+
+The one frozen-candidate public-window diagnostic is 0.6000 Spell F1 / 0.7548 macroF1 on 17 possessions: **DIAGNOSTIC ONLY — NOT A GENERALIZATION ESTIMATE**. It was not used for model selection or tuning and was not rerun after these repairs.
 
 ## Reproduction
 

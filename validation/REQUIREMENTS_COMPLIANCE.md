@@ -10,10 +10,10 @@ The complete user's audit brief and the original organizer specification were re
 | Frame conventions / periods / resampling | Synthetic mapping, global-phase upsample and full-predictor half-isolation tests | PASS after repairs |
 | Official metrics and CSV | METRIC_PARITY_REPORT, mutation tests, unchanged official CLI validator | PASS |
 | Decoder and football semantics | 60 brute-force cases; probability-conditioned transition/restart scenarios | PASS for tested algorithm contracts; real semantic recognition NOT VERIFIED by synthetic inputs |
-| Missing sensors and track identities | Real predictor tests, permutation/swap tests, tie fix | PASS for covered cases; arbitrary corrupt tokens/Inf and full physics coverage NOT VERIFIED |
+| Missing sensors and track identities | Real predictor tests, permutation/swap tests, tie fix, finite-XY and corruption contracts | PASS for covered cases including Inf/partial XY/damaged cache; arbitrary numeric corruption and full football physics are not exhaustively verified |
 | Smart Tagging | XML synthetic round conversion/N/A/overlap; conflicting unused tags cannot alter features | Not used by release; case-insensitive group names not certified for legacy parser |
 | Homography and broadcast | Neither is read by release inference | NOT APPLICABLE; not added |
-| Determinism and clean environment | New venv pinned installation, fresh committed-source archive, two matching CSVs | PASS |
+| Determinism and clean environment | Pinned macOS environment and Linux ARM container, fresh archives, two matching CSVs each, Linux networking disabled | PASS on tested platforms; one physical host |
 | Public window protocol | One fixed candidate freeze and official diagnostic call; no tuning | PASS; diagnostic only |
 | External validation | Prior sealed PFF final explicitly old code; corrected-code PFF development regression | Independent quality evidence limited; cross-provider near-duplicates not exhaustively proven absent |
 | History / protected data | All reachable refs scanned for named protected assets, large blobs and known credential forms | PASS within stated scan limits |

@@ -1,6 +1,6 @@
 # Independent audit status — 16 November 2026
 
-This branch contains correctness repairs to period isolation, tracking cache identity and equidistant slot handling. **CONDITIONALLY READY**: 105 tests pass; a newly installed environment reproduces the same CSV twice. Original final metrics belong to the pre-audit source; corrected development regression and source limitations are reported separately. See [final audit](validation/FINAL_AUDIT_REPORT.md), [audited technical document](validation/TECHNICAL_DOCUMENT.md), and [submission manifest](submission_manifest.json). Public repository access, source-access qualifications and team eligibility remain unresolved conditions. No organizer submission has occurred.
+This branch contains correctness repairs to period isolation, tracking caches, incomplete observations and equidistant slot handling. **CONDITIONALLY READY**: 114 tests pass on macOS and Linux ARM; six fresh-source runs across macOS ARM, Linux ARM and emulated Linux x86-64 reproduce the same CSV. Original final metrics belong to the pre-audit source; corrected development regression and source limitations are reported separately. See [final audit](validation/FINAL_AUDIT_REPORT.md), [continuous improvements](validation/CONTINUOUS_IMPROVEMENT.md), [audited technical document](validation/TECHNICAL_DOCUMENT.md), and [submission manifest](submission_manifest.json). Public repository access, source-access qualifications and team eligibility remain unresolved conditions. No organizer submission has occurred.
 
 # Ruses Cules · More Than a Hack 2027
 

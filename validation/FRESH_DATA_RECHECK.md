@@ -1,0 +1,13 @@
+# Fresh external validation search — 16 November 2026
+
+This is a bounded source recheck, not a claim that no suitable dataset exists anywhere. No new target labels, closed final games or excluded bridges were opened.
+
+| Primary source | What was checked | Eligibility decision |
+|---|---|---|
+| [SkillCorner official repository](https://github.com/SkillCorner/opendata) | Current recursive tree `4340d274572876239c154c90bc507a9b3250a656` contains 20 match IDs; every ID matches the frozen training registry. README headline still says ten. | No fresh matches in this release; API inventory receipt retained. |
+| [PFF original release](https://www.blog.fc.pff.com/blog/enhanced-2022-world-cup-dataset) | Provider still describes 64 World Cup games and the form-based access route. | Existing 36/10/12/6 registry already accounts for all 64. Final is consumed; bridge exclusion is preserved. No standard original-data license found on the release page. |
+| [SoccerTrack v2 dataset card](https://huggingface.co/datasets/atomscott/soccertrack-v2), [author code/license](https://github.com/AtomScott/SoccerTrack-v2) | Ten new university matches, CC BY 4.0, gated access. Crucially, auxiliary ball trajectories interpolate annotated event anchors; the card says they carry event timing. | Ball-informed evaluation against possession reconstructed from those events would be circular. A player-only adapter plus independently validated reference semantics is a separate research project, not a ready holdout for the current input contract. No access request, download or scores. |
+| [SoccerNet GSR](https://github.com/SoccerNet/sn-gamestate) | Athlete tracking/identity reconstruction on a minimap; task differs from continuous possession segmentation. | No directly compatible new full-match H/A/D reference established. |
+| [PathCRF official paper](https://arxiv.org/abs/2602.12080) | Ball-free possession-path inference is relevant to missing-ball weakness. Existing repository research already checked the official checkpoint and source overlap. | Not a drop-in replacement: finite persistent player paths and in-play episode assumptions need an adapter; no new validated H/A/D result. See `docs/experiments/temporal/INDUSTRY.md`. |
+
+The provider card does not establish generalization for us. Obtaining more event-only data, interpolating an event-derived ball, or recounting familiar matches would not provide the independent evidence required to promote a speculative architecture. No claim is made that synthetic tests or repeated development wins prove absence of overfitting.

@@ -1,4 +1,8 @@
-FROM python:3.12.11-slim@sha256:47ae396f09c1303b8653019811a8498470603d7ffefc29cb07c88f1f8cb3d19f
+FROM python:3.12.11-slim@sha256:47ae396f09c1303b8653019811a8498470603d7ffefc29cb07c88f1f8cb3d19f AS runtime
 COPY requirements.txt requirements-validation.txt requirements-temporal.txt /setup/
 RUN python -m pip install --no-cache-dir torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu \
     && python -m pip install --no-cache-dir -r /setup/requirements-temporal.txt
+
+FROM runtime AS audit
+COPY requirements-audit.txt /setup/
+RUN python -m pip install --no-cache-dir -r /setup/requirements-audit.txt

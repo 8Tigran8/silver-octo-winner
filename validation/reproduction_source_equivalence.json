@@ -1,0 +1,20 @@
+{
+  "scope": "All manifest inference sources, not the entire repository",
+  "records": [
+    {
+      "commit": "1160825bed54d099af0ae86f8b64110be2da76b0",
+      "checked_inference_files": 27,
+      "mismatches": []
+    },
+    {
+      "commit": "3e2348e9a5cd60c6aaf1cad8babcb785837404bc",
+      "checked_inference_files": 27,
+      "mismatches": []
+    },
+    {
+      "commit": "8e1bfb493ba048895f693149455f32e66da076e2",
+      "checked_inference_files": 27,
+      "mismatches": []
+    }
+  ]
+}

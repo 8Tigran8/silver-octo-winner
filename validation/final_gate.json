@@ -3,5 +3,9 @@
   "one_label_tamper": "REJECTED as required",
   "official_validator": "PASS",
   "source_model_config_hashes": "PASS",
+  "manifest_sha256": "015cf2d2fd4ba1b469f260d1cc0748660f4c2541e24655188b9f9a690b09c619",
+  "six_reproduction_outputs_identical": true,
+  "unit_tests_mac": 114,
+  "unit_tests_linux_arm64": 114,
   "command": "python tools/final_submission_gate.py --csv \"out/audit-ready/Ruses Cules.csv\""
 }

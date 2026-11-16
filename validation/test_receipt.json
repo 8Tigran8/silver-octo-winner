@@ -1,5 +1,5 @@
 {
-  "run": 105,
+  "run": 114,
   "failures": 0,
   "errors": 0,
   "skipped": 0,
@@ -69,12 +69,28 @@
       "command": "python -m unittest tests.test_audit_contracts.MetricParity.test_ungraded_invariance_and_abstention_semantics"
     },
     {
+      "test": "tests.test_audit_contracts.PredictorContracts.test_complete_predictor_short_periods",
+      "purpose": "test complete predictor short periods",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_audit_contracts.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_audit_contracts.PredictorContracts.test_complete_predictor_short_periods"
+    },
+    {
       "test": "tests.test_audit_contracts.PredictorContracts.test_missing_sensor_and_determinism",
       "purpose": "test missing sensor and determinism",
       "input_and_expected": "See concrete fixture and assertions in tests/test_audit_contracts.py",
       "actual": "PASS",
       "detail": "",
       "command": "python -m unittest tests.test_audit_contracts.PredictorContracts.test_missing_sensor_and_determinism"
+    },
+    {
+      "test": "tests.test_audit_contracts.PredictorContracts.test_partial_xy_is_missing_in_complete_predictor",
+      "purpose": "test partial xy is missing in complete predictor",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_audit_contracts.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_audit_contracts.PredictorContracts.test_partial_xy_is_missing_in_complete_predictor"
     },
     {
       "test": "tests.test_audit_contracts.PredictorContracts.test_predictor_period_isolation",
@@ -107,6 +123,46 @@
       "actual": "PASS",
       "detail": "",
       "command": "python -m unittest tests.test_audit_contracts.SubmissionContract.test_mutations_rejected_and_strict_extra_column"
+    },
+    {
+      "test": "tests.test_audit_corruption.CacheContracts.test_damaged_cache_is_rebuilt_from_source",
+      "purpose": "test damaged cache is rebuilt from source",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_audit_corruption.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_audit_corruption.CacheContracts.test_damaged_cache_is_rebuilt_from_source"
+    },
+    {
+      "test": "tests.test_audit_corruption.ObservationContracts.test_infinity_cannot_be_an_observed_coordinate_or_speed",
+      "purpose": "test infinity cannot be an observed coordinate or speed",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_audit_corruption.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_audit_corruption.ObservationContracts.test_infinity_cannot_be_an_observed_coordinate_or_speed"
+    },
+    {
+      "test": "tests.test_audit_corruption.ObservationContracts.test_malformed_player_group_has_actionable_error",
+      "purpose": "test malformed player group has actionable error",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_audit_corruption.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_audit_corruption.ObservationContracts.test_malformed_player_group_has_actionable_error"
+    },
+    {
+      "test": "tests.test_audit_corruption.ObservationContracts.test_partial_xy_equals_missing_observation",
+      "purpose": "test partial xy equals missing observation",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_audit_corruption.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_audit_corruption.ObservationContracts.test_partial_xy_equals_missing_observation"
+    },
+    {
+      "test": "tests.test_audit_corruption.ObservationContracts.test_single_observation_is_retained",
+      "purpose": "test single observation is retained",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_audit_corruption.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_audit_corruption.ObservationContracts.test_single_observation_is_retained"
     },
     {
       "test": "tests.test_audit_optional_assets.OptionalAssetsAudit.test_conflicting_unused_tags_cannot_change_features",
@@ -163,6 +219,22 @@
       "actual": "PASS",
       "detail": "",
       "command": "python -m unittest tests.test_audit_tracking.TrackingAudit.test_resampling_global_phase_and_periods"
+    },
+    {
+      "test": "tests.test_controlled_gap.ControlledGapTests.test_ambiguous_or_unobserved_player_and_period_edges_not_filled",
+      "purpose": "test ambiguous or unobserved player and period edges not filled",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_controlled_gap.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_controlled_gap.ControlledGapTests.test_ambiguous_or_unobserved_player_and_period_edges_not_filled"
+    },
+    {
+      "test": "tests.test_controlled_gap.ControlledGapTests.test_stationary_offset_recovered_without_mutating_input",
+      "purpose": "test stationary offset recovered without mutating input",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_controlled_gap.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_controlled_gap.ControlledGapTests.test_stationary_offset_recovered_without_mutating_input"
     },
     {
       "test": "tests.test_evaluation_policy.EvaluationPolicyTests.test_average_gain_cannot_hide_failed_dead_ball_detection",

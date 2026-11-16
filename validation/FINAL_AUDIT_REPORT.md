@@ -10,6 +10,8 @@ P1: feature interpolation/rolling/derivative state crossed period boundaries; st
 
 Pre-fix failures and post-fix execution receipts are retained. No P0 competition-rule violation was confirmed in the bounded audit. Public source access is still a submission condition, not silently marked complete.
 
+The subsequent continuous loop also fixed P2 partial-coordinate visibility, lone-ball interpolation, nonfinite parser values and recovery from corrupted cache archives. Full-predictor synthetic contracts and all ten familiar external games show no regression. These repairs are not claimed as a significant quality gain. See CONTINUOUS_IMPROVEMENT.md for hypotheses, failing tests and decisions.
+
 ## Acceptance gates
 
 | Gate | Result | Evidence / scope |
@@ -19,10 +21,10 @@ Pre-fix failures and post-fix execution receipts are retained. No P0 competition
 | 3 Metric parity | PASS | Current official metric hash equals pinned; named synthetic edge cases and 100 random cases match legacy helper to 14 decimals. Actual evaluation uses official code. |
 | 4 Temporal correctness | PASS for tested contracts | Full-predictor period isolation, 60 brute-force decoder cases, restart/transition contracts; one-second short-possession suppression explicitly retained as a quality limitation. |
 | 5 Submission format | PASS | Exact audited output passes official CLI; strict two-column contract and mutation tests also pass. |
-| 6 Reproducibility | PASS locally; access conditional | New pinned venv + fresh committed-source archive + two matching outputs. Corrected Linux/x86 independent run not performed; repository still private. |
+| 6 Reproducibility | PASS in tested environments; access conditional | Six identical outputs: two each on macOS ARM, Linux ARM and emulated Linux x86-64; fresh source and pinned dependencies, unchanged inputs. One host/operator; repository still private. |
 | 7 Evidence quality | PASS with disclosed limits | Development, old-source final, synthetic and public diagnostic evidence distinguished; no claimed hidden score, guaranteed generalization or finalist probability. |
 
-105 unittest cases pass, zero errors/failures/skips, plus the existing 60 exhaustive-decoder comparisons. `test_receipt.json` records test purpose, fixture/assertion location, actual status and rerun command. The test count is not a quality guarantee. Some requirements are conditional or not verified despite green tests; see REQUIREMENTS_COMPLIANCE.md.
+114 unittest cases pass on macOS and Linux ARM, zero errors/failures/skips, plus the existing 60 exhaustive-decoder comparisons. `test_receipt.json` and `test_receipt_linux.json` record test purpose, fixture/assertion location, actual status and rerun command. Initial corruption and Linux optional-dependency failures remain recorded. The test count is not a quality guarantee. Some requirements are conditional or not verified despite green tests; see REQUIREMENTS_COMPLIANCE.md.
 
 ## Measured quality
 
@@ -39,7 +41,7 @@ The published official baseline's full-match score 0.2433 is a reference from th
 
 ## Exact reproduction
 
-Audited inference source commit: `0136646` (full SHA in submission_manifest.json). Model weights remain boundary102; preprocessing/stacking correctness repairs are explicit. New-environment CPU runs take 58.872 / 28.555 seconds; both official validators pass. The output is byte-identical to the preserved pre-audit CSV.
+Audited inference source commit: `1160825` (full SHA in submission_manifest.json). Later Linux-tested commits have identical inference-file hashes. Model weights remain boundary102; preprocessing/stacking/observation correctness repairs are explicit. Latest macOS runs take 33.280 / 25.567 seconds, Linux ARM 28.506 / 21.936, emulated Linux x86-64 59.649 / 42.986. All six official validators pass. The output is byte-identical to the preserved pre-audit CSV.
 
 ```sh
 python3.12 -m venv .venv
@@ -61,16 +63,20 @@ Package: `out/audit-ready/Ruses Cules.csv`, `out/audit-ready/Ruses Cules.md`, `o
 - CSV: complete and official-format PASS; 199319 rows, exact expected bytes.
 - Code and weights: inspectable on the private audit branch; public URL requirement remains pending user hold.
 - Technical document: updated Markdown describes actual repairs, data provenance and limitations. Earlier PDF describes the original source and should not substitute for this audited document.
-- Reproduction: locally demonstrated with freshly installed dependencies and fresh committed source; corrected-source independent Linux rerun remains unverified.
+- Reproduction: locally demonstrated with separately installed macOS/Linux dependencies and fresh committed source; an independent hardware/operator rerun of corrected code remains unverified.
 - PFF source: original-provider request path documented; licensing/access qualifications remain explicit, not inferred from a mirror.
 - Team: three to five humans required; registered names/eligibility not independently verified here.
 - Form: not submitted.
 
 ## Confidence assessment
 
-Format correctness: high for the exact hashed file. Implementation correctness: strengthened by independent failing-then-passing tests, but not exhaustive football semantic or numeric-corruption verification. Rule compliance: no prohibited-use evidence found within the inspected scope; source access and eligibility remain conditions. Reproducibility: directly demonstrated on this macOS ARM environment; broader platforms not asserted. Generalization: meaningful historical external-match evidence with provider/proxy/shared-team limitations; corrected source has familiar development regression only. No calibrated success probability is available.
+Format correctness: high for the exact hashed file. Implementation correctness: strengthened by failing-then-passing synthetic tests, including partial XY/Inf/corrupted-cache contracts, but not exhaustive football semantic or numeric-corruption verification. Rule compliance: no prohibited-use evidence found within the inspected scope; source access and eligibility remain conditions. Reproducibility: directly demonstrated on macOS ARM, Linux ARM and emulated Linux x86-64 on one host. Generalization: meaningful historical external-match evidence with provider/proxy/shared-team limitations; corrected source has familiar development regression only. No calibrated success probability is available.
 
 The most likely quality failures remain short possessions, long missing-ball stretches, coordinate jitter, ambiguous control and provider-definition shift. A sparse four-player synthetic end-to-end fixture produced all D: its passing CSV validator proves execution only. Synthetic latent-state decoder tests must not be described as learned recognition of football semantics.
+
+The added 22-player moving-controller fixture passes obvious uninterrupted H/A possession, but a ten-second ball dropout creates false D. This is preserved as a failure, and prompted the registered controlled-gap study. No claim of real-match improvement comes from the synthetic score. The fresh-data recheck found no unused SkillCorner games; SoccerTrack's event-anchored ball is ineligible as independent measured-ball evidence against targets from the same events.
+
+Both controlled-gap candidates were rejected after all ten development games: natural Spell changes −0.000057 / −0.000385; blind changes zero. They are not in the submission. Continuous execution ends at condition B: confirmed implementation fixes and reproducibility work are complete, while a substantially different model cannot be safely promoted without further independent data/validated reference semantics. This is a concrete validation limitation, not a proof that quality cannot improve. The user's public-release/submission hold is preserved. See the stopping boundary in CONTINUOUS_IMPROVEMENT.md.
 
 ## Evidence index
 
@@ -81,3 +87,5 @@ The most likely quality failures remain short possessions, long missing-ball str
 - FAILURE_ANALYSIS.md — severity, pre-fix evidence, repairs, remaining risks.
 - REPRODUCIBILITY_REPORT.md — clean environment, repeated output and scan scope.
 - TECHNICAL_DOCUMENT.md — organizer-facing implemented method and reproduction.
+- CONTINUOUS_IMPROVEMENT.md — additional corrective iterations and model-quality hypothesis.
+- FRESH_DATA_RECHECK.md — primary-source availability and circular-reference checks.

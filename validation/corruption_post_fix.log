@@ -1,0 +1,8 @@
+/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/mtah/atd.py:141: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/np/lrx7_1px5zz6jcrn64vjsdf00000gn/T/tmpciifw44y/cache/atd_tactical_4fd764bd15c74a11359a1f158b850401d6648439dafca902249b58a9487b8b82.npz'>
+  d = None  # Cache is disposable; the source remains authoritative.
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.......................
+----------------------------------------------------------------------
+Ran 23 tests in 0.702s
+
+OK

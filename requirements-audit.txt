@@ -1,0 +1,12 @@
+-r requirements-temporal.txt
+# Mocked optional-download tests also import the transport libraries.
+gdown==5.2.0
+beautifulsoup4==4.15.0
+requests==2.34.2
+certifi==2026.10.23
+charset-normalizer==3.5.2
+idna==3.20
+soupsieve==4.1.1
+PySocks==1.7.1
+tqdm==4.70.1
+urllib3==2.8.0

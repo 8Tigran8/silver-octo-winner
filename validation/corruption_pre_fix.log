@@ -1,0 +1,157 @@
+E/opt/homebrew/Cellar/python@3.12/3.12.11/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ast.py:101: ResourceWarning: unclosed file <_io.FileIO name='/var/folders/np/lrx7_1px5zz6jcrn64vjsdf00000gn/T/tmp36he_mrz/cache/atd_tactical_09a60159783cd336d25e888658ea1b7b775723a074c46b5953b4da9b2acff9b5.npz' mode='rb' closefd=True>
+  return dict(zip(map(_convert, node.keys),
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+FEFEFFF
+======================================================================
+ERROR: test_damaged_cache_is_rebuilt_from_source (tests.test_audit_corruption.CacheContracts.test_damaged_cache_is_rebuilt_from_source) (damage='truncated')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/tests/test_audit_corruption.py", line 70, in test_damaged_cache_is_rebuilt_from_source
+    actual = atd.load()
+             ^^^^^^^^^^
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/mtah/atd.py", line 100, in load
+    d = dict(np.load(cache))
+             ^^^^^^^^^^^^^^
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 471, in load
+    ret = NpzFile(fid, own_fid=own_fid, allow_pickle=allow_pickle,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 197, in __init__
+    _zip = zipfile_factory(fid)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 112, in zipfile_factory
+    return zipfile.ZipFile(file, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.11/Frameworks/Python.framework/Versions/3.12/lib/python3.12/zipfile/__init__.py", line 1354, in __init__
+    self._RealGetContents()
+  File "/opt/homebrew/Cellar/python@3.12/3.12.11/Frameworks/Python.framework/Versions/3.12/lib/python3.12/zipfile/__init__.py", line 1421, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+
+======================================================================
+ERROR: test_damaged_cache_is_rebuilt_from_source (tests.test_audit_corruption.CacheContracts.test_damaged_cache_is_rebuilt_from_source) (damage='nonconsecutive_ids')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/tests/test_audit_corruption.py", line 70, in test_damaged_cache_is_rebuilt_from_source
+    actual = atd.load()
+             ^^^^^^^^^^
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/mtah/atd.py", line 108, in load
+    raise ValueError("frame_id не идут 1..N подряд — выравнивание не то, что в DATA.md")
+ValueError: frame_id не идут 1..N подряд — выравнивание не то, что в DATA.md
+
+======================================================================
+ERROR: test_malformed_player_group_has_actionable_error (tests.test_audit_corruption.ObservationContracts.test_malformed_player_group_has_actionable_error)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/tests/test_audit_corruption.py", line 46, in test_malformed_player_group_has_actionable_error
+    atd.parse_raw(path, 2)
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/mtah/atd.py", line 72, in parse_raw
+    players[i, s, 1] = _f(v[1])
+                          ~^^^
+IndexError: list index out of range
+
+======================================================================
+FAIL: test_damaged_cache_is_rebuilt_from_source (tests.test_audit_corruption.CacheContracts.test_damaged_cache_is_rebuilt_from_source) (damage='shape')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/tests/test_audit_corruption.py", line 72, in test_damaged_cache_is_rebuilt_from_source
+    np.testing.assert_array_equal(actual[key], expected[key])
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 1128, in assert_array_equal
+    assert_array_compare(operator.__eq__, actual, desired, err_msg=err_msg,
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 847, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError:
+Arrays are not equal
+
+(shapes (1, 1, 3), (1, 2, 3) mismatch)
+ ACTUAL: array([[[0.1, 0.2, 0. ]]])
+ DESIRED: array([[[0.1, 0.2, 0. ],
+        [0.7, 0.8, 0. ]]])
+
+======================================================================
+FAIL: test_infinity_cannot_be_an_observed_coordinate_or_speed (tests.test_audit_corruption.ObservationContracts.test_infinity_cannot_be_an_observed_coordinate_or_speed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/tests/test_audit_corruption.py", line 38, in test_infinity_cannot_be_an_observed_coordinate_or_speed
+    self.assertFalse(np.isinf(data['players']).any())
+AssertionError: np.True_ is not false
+
+======================================================================
+FAIL: test_partial_xy_equals_missing_observation (tests.test_audit_corruption.ObservationContracts.test_partial_xy_equals_missing_observation) (kind='ball', coordinate=1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/tests/test_audit_corruption.py", line 31, in test_partial_xy_equals_missing_observation
+    np.testing.assert_allclose(a, b, equal_nan=True)
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 1780, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 852, in assert_array_compare
+    flagged = func_assert_same_pos(x, y, func=isnan, hasval='nan')
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 795, in func_assert_same_pos
+    raise AssertionError(msg)
+AssertionError:
+Not equal to tolerance rtol=1e-07, atol=0
+
+nan location mismatch:
+ ACTUAL: array([[26.25    ,       nan, 47.736805, ...,  1.      ,  0.      ,
+         0.      ],
+       [26.25    ,       nan, 47.736805, ...,  1.      ,  0.      ,...
+ DESIRED: array([[26.25    ,       nan, 47.736805, ...,  1.      ,  0.      ,
+         0.      ],
+       [26.25    ,       nan, 47.736805, ...,  1.      ,  0.      ,...
+
+======================================================================
+FAIL: test_partial_xy_equals_missing_observation (tests.test_audit_corruption.ObservationContracts.test_partial_xy_equals_missing_observation) (kind='player', coordinate=1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/tests/test_audit_corruption.py", line 31, in test_partial_xy_equals_missing_observation
+    np.testing.assert_allclose(a, b, equal_nan=True)
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 1780, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 988, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError:
+Not equal to tolerance rtol=1e-07, atol=0
+
+Mismatched elements: 1212 / 52200 (2.32%)
+First 5 mismatches are at indices:
+ [25, 73]: 4.0 (ACTUAL), 3.9900989532470703 (DESIRED)
+ [26, 73]: 4.0 (ACTUAL), 3.9803922176361084 (DESIRED)
+ [27, 73]: 4.0 (ACTUAL), 3.9708738327026367 (DESIRED)
+ [28, 73]: 4.0 (ACTUAL), 3.961538553237915 (DESIRED)
+ [29, 73]: 4.0 (ACTUAL), 3.952380895614624 (DESIRED)
+Max absolute difference among violations: 1.
+Max relative difference among violations: 1.
+ ACTUAL: array([[26.25    ,       nan, 47.736805, ...,  1.      ,  0.      ,
+         0.      ],
+       [26.25    ,       nan, 47.736805, ...,  1.      ,  0.      ,...
+ DESIRED: array([[26.25    ,       nan, 47.736805, ...,  1.      ,  0.      ,
+         0.      ],
+       [26.25    ,       nan, 47.736805, ...,  1.      ,  0.      ,...
+
+======================================================================
+FAIL: test_single_observation_is_retained (tests.test_audit_corruption.ObservationContracts.test_single_observation_is_retained)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/tests/test_audit_corruption.py", line 16, in test_single_observation_is_retained
+    np.testing.assert_array_equal(features2._interp(x, np.isfinite(x)), [17., 17., 17.])
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 1128, in assert_array_equal
+    assert_array_compare(operator.__eq__, actual, desired, err_msg=err_msg,
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 988, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError:
+Arrays are not equal
+
+Mismatched elements: 3 / 3 (100%)
+Mismatch at indices:
+ [0]: 0.0 (ACTUAL), 17.0 (DESIRED)
+ [1]: 0.0 (ACTUAL), 17.0 (DESIRED)
+ [2]: 0.0 (ACTUAL), 17.0 (DESIRED)
+Max absolute difference among violations: 17.
+Max relative difference among violations: 1.
+ ACTUAL: array([0., 0., 0.])
+ DESIRED: array([17., 17., 17.])
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.047s
+
+FAILED (failures=5, errors=3)
