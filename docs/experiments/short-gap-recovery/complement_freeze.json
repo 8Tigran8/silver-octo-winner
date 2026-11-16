@@ -1,0 +1,33 @@
+{
+  "source_commit": "a30b7b2d1726b9c3197637af60ceb6a35ec1f059",
+  "frozen_utc": "2026-11-16T13:18:24.952445+00:00",
+  "files_sha256": {
+    "docs/experiments/short-gap-recovery/complement_plan.json": "d3be6f3df723421e6bf69c861cc442f5ec862f35dc38d51a18130b8135e4a7b1",
+    "docs/experiments/short-gap-recovery/result.json": "7f4da96de37ba30517b4316f3c9c1e3a08dad0de43fb97e4f47519168327ae76",
+    "docs/experiments/short-gap-recovery/scores.json": "396205fcff57ac79f88fb1ce49c691a9a9c31dbf5114e1f4990dfa389361467f",
+    "tools/short_gap_complement.py": "166c66bbcb11cca57aea667c5b551f0d52d5abeaf8d3baaacd7f0ce5a7d45095",
+    "tools/report_short_gap.py": "83daeeb63a9926e94b2ec737781e3b53c1d9a717d7dd9515302e1ace52907fbc",
+    "reports/short_gap_recovery/gap_expert.pkl": "287dbb28ebf592e761b8b958d413362e28d18ca5a1953c75af5d5029dd7599e2",
+    "reports/short_gap_recovery/expert_meta.json": "adc0a8115e626d62b6f751aba999751ff52db047c6ec189776298acf23f09e62",
+    "reports/short_gap_recovery/development/3842_natural_detected.npz": "d14668bc1a437e72f24c8d405e3d23ff1d94b1304f4fcfeec78cc6d78adf7e1a",
+    "reports/short_gap_recovery/development/10510_label_blind_seed7.npz": "4c94846198cfc0c4c0ed814fc79647c2f39a4021529fe6b50a16363709793857",
+    "reports/short_gap_recovery/development/3827_label_blind_seed7.npz": "575a52576e703ad0e21e5411752320d64786cc41f7ff809813187fc99905ee1e",
+    "reports/short_gap_recovery/development/3821_label_blind_seed7.npz": "8faac4c63baaa2800837926259198957a60f75e423bf049b519a5362bc7dbb31",
+    "reports/short_gap_recovery/development/3859_label_blind_seed7.npz": "73f164c600fd408ceec6c008da0db464e48c86cd1f0d3c5e0fbdc3d532766b2c",
+    "reports/short_gap_recovery/development/10516_label_blind_seed7.npz": "579ab5b63e7a7dd685efeccb729134a37800a4cfd9a1cc46c806ec0d3a0adad2",
+    "reports/short_gap_recovery/development/10513_natural_detected.npz": "4d7d494f504a9a5f51f3ba618b25550fb402e984fc8c30ce544c474ba5ea7e56",
+    "reports/short_gap_recovery/development/10516_natural_detected.npz": "2f9f8c135a65a8801dae46d52ace3fba9b37cdcd52f925e56493177c3ae1fa8f",
+    "reports/short_gap_recovery/development/3827_natural_detected.npz": "4bb1b8d001758960a74357863d70bcad168a87107457c2da18d21433738cfca2",
+    "reports/short_gap_recovery/development/3821_natural_detected.npz": "968ae791273b858c7c014a48db39b1bfae7dd3f73988032ce2c973169a1a5afa",
+    "reports/short_gap_recovery/development/3858_natural_detected.npz": "3c202564577b7ce1e3956652781a5b758c8b028adec353139fc7badc9cc10b46",
+    "reports/short_gap_recovery/development/10513_label_blind_seed7.npz": "6357f1a6c914dacfa61082cb09c4602f13ff07de0165577900ad78f5fa4ab9f7",
+    "reports/short_gap_recovery/development/3842_label_blind_seed7.npz": "7b8b3a08d3995a3cc99cba4fa4f8947dae3a7dfccaaaabc1254a705a979934c3",
+    "reports/short_gap_recovery/development/10510_natural_detected.npz": "2af96d660ea70ee2ed737c17ac8aea2cf55acc5f475365152711463e57a8ebfc",
+    "reports/short_gap_recovery/development/3838_label_blind_seed7.npz": "bee1fa0d80cc1ce13dfc3d10aed42d3166c7849b7f5a1fd9564a29ef69a52a9a",
+    "reports/short_gap_recovery/development/3858_label_blind_seed7.npz": "745d4328e2124c05a3adb819e8e91cde52e6e0e1522b74c440a02899d27f613b",
+    "reports/short_gap_recovery/development/3859_natural_detected.npz": "0cb8fc69e60d2e84dee6e4f77fc470f984fc81b53cf8d641902debcf78077d6e",
+    "reports/short_gap_recovery/development/10503_label_blind_seed7.npz": "20997d5e4c8eec5b3b9c9ab128eb66d83db8548bea69db64fd0a261535a452a3",
+    "reports/short_gap_recovery/development/3838_natural_detected.npz": "4f5d0e52ea186c8df8f118f724cc23ecac4d58dbe617691404d6c08f87d6ba03",
+    "reports/short_gap_recovery/development/10503_natural_detected.npz": "78af92cfc9cfdeebb2e975fb23b65c50a9b093b605f7ac5169ebbea039af742d"
+  }
+}
