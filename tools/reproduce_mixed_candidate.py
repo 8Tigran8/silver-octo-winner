@@ -24,7 +24,8 @@ def main():
     data=a.data_dir.resolve();files=[data/'tactical'/('BAR-ATH_tactical_atd.'+ext) for ext in ['xml','txt']]
     files+=[bundle,bundle.parent/b['model_path'],bundle.parent/b['metadata_path'],ROOT/'assets/v4/manifest.json']
     manifest=json.loads((ROOT/'assets/v4/manifest.json').read_text());files.extend(ROOT/'assets/v4'/f['path'] for f in manifest['files']);inputs={str(f):sha(f) for f in set(files)}
-    folder=Path(tempfile.mkdtemp(prefix='mixed-clean-',dir=ROOT/'reports/pff_mixed'));archive=folder/'source.tar';subprocess.run(['git','archive','--format=tar','-o',str(archive),source],cwd=ROOT,check=True)
+    work=ROOT/'reports/pff_mixed';work.mkdir(parents=True,exist_ok=True)
+    folder=Path(tempfile.mkdtemp(prefix='mixed-clean-',dir=work));archive=folder/'source.tar';subprocess.run(['git','archive','--format=tar','-o',str(archive),source],cwd=ROOT,check=True)
     env=os.environ.copy();env.update(OMP_NUM_THREADS='1',OPENBLAS_NUM_THREADS='1',VECLIB_MAXIMUM_THREADS='1',MKL_NUM_THREADS='1',PYTHONHASHSEED='0')
     inference_files=list((ROOT/'mtah').rglob('*.py'))+list((ROOT/'mtah').rglob('*.json'))+[ROOT/'tools/generate_mixed_candidate.py']
     inference_hashes={str(f.relative_to(ROOT)):sha(f) for f in inference_files}

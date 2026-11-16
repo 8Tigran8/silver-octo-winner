@@ -1,0 +1,17 @@
+{
+  "registered_utc": "2026-11-16T10:20:23.059517+00:00",
+  "purpose": "Label-free sensor-domain characterization only; no model/threshold/selection change",
+  "geometry": "Only player/ball xy, source frame clocks and independently supplied periods. No target GT, events, tagging or possession predictions.",
+  "statistic": "Per-axis median absolute deviation of consecutive 3-frame second differences / (0.67448975*sqrt(6)); iid-equivalent roughness in metres, not an identified true noise variance",
+  "period_policy": "All published playing-period frames; finite consecutive triples within a period; no manually selected windows",
+  "confounds": [
+    "True acceleration",
+    "identity/fragment changes",
+    "camera motion/correlated errors",
+    "different tracking systems"
+  ],
+  "comparison": "One original DFL development game at native25Hz, clean and same seeded iid0.5m/2m jitter without bursts. Target raw25Hz tactical geometry.",
+  "outbound": "Only aggregate figures; target aggregates remain in ignored local reports",
+  "inference_change": false,
+  "final_reserve_access": false
+}
