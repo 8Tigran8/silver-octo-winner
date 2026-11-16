@@ -21,11 +21,11 @@ def main():
     models=[f for folder in ['assets/v4','assets/pff-mixed-candidate','assets/recovery-candidate'] for f in (ROOT/folder).rglob('*') if f.is_file()]
     source_hashes={str(f.relative_to(ROOT)):sha(f) for f in code};model_hashes={str(f.relative_to(ROOT)):sha(f) for f in models}
     official=work/'official';(official/'evaluation').mkdir(parents=True)
-    for name in ['evaluation/validate_submission.py','games.py']:
+    for name in ['evaluation/validate_submission.py','evaluation/possession_metrics.py','games.py']:
         shutil.copy2(ROOT/'ref/official'/name,official/name)
     receipt=dict(status='IN_PROGRESS',candidate='weighted_short_gap',source_commit=source,
         input_sha256=input_hashes,inference_source_sha256=source_hashes,model_file_sha256=model_hashes,
-        official_sha256={name:sha(official/name) for name in ['evaluation/validate_submission.py','games.py']},
+        official_sha256={name:sha(official/name) for name in ['evaluation/validate_submission.py','evaluation/possession_metrics.py','games.py']},
         host_platform=platform.platform(),python=platform.python_version(),
         packages={name:importlib.metadata.version(name) for name in ['numpy','scipy','scikit-learn','torch','cloudpickle','threadpoolctl']},
         target_quality_assessed=False,training_repeated=False,one_physical_host=True,runs=[])
