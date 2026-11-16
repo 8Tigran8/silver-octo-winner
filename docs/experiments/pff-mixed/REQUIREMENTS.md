@@ -25,7 +25,7 @@ Reviewed 15 November 2026 against complete original RULES.md, SUBMISSION.md and 
 | RULES: do not redistribute organizer assets or reconstructive data | Raw tracking/video/reference arrays excluded; tracked history audited; aggregate-only receipts | PDF p4; .gitignore; local history audit | PASS: bounded payload audit |
 | EVALUATION: spellF1 ranking, macro/class guard, unchanged scorer | Pinned official metric; same-game comparisons; all predeclared guards; final consumed once | PDF p3; final_results.json and final_freeze.json | PASS |
 | SUBMISSION: short technical document and team filenames | Four-page PDF plus exact team CSV, both under 10 MB | out/review-ready | PASS |
-| SUBMISSION: public repository URL | Current source is committed locally; remote remains private | README and PDF p4 URL | PENDING: publication on explicit user hold |
+| SUBMISSION: public repository URL | Current source and weights are in the private review branch; remote main is historical v4 | README and PDF p4 URL | PENDING: publication on explicit user hold |
 | SUBMISSION: one team form response, member identity fields | No form submission or outbound message made | Local package only | PENDING: user hold; names intentionally deferred |
 | RULES: 3-5 registered human team members for later stages | Registration membership must be confirmed separately; AI is not a member | Organizer registration/form | NOT independently verified; no eligibility claim |
 
