@@ -1,0 +1,15 @@
+{
+  "tests": 140,
+  "failures": 0,
+  "errors": 0,
+  "skips": 0,
+  "extra_bruteforce_decoder_cases": 60,
+  "command": ".venv/bin/python -m unittest discover -s tests -v",
+  "exact_artifact_gate": "PASS",
+  "inference_or_model_changed": false,
+  "csv_sha256": "1f4602b5b8b04e4066c5478549a9b5e53f13852ca6513f01422906d1dcb1a1c0",
+  "logs_sha256": {
+    "tests.txt": "cd883103c7389872d440f423946f169448faf7ceb21b20b13756ff09ca673c9c",
+    "exact_gate.txt": "b3b40c86e2bfa4e33cfaf8e88b4b5a838161e4038a89ba27204b7af9fb0202f3"
+  }
+}
