@@ -14,7 +14,7 @@
 
 ## Independent Linux check
 
-VV reported that historical v4 reproduces byte for byte on Linux ARM. A new Linux run of boundary102 was requested with the branch, pinned review commit, command and expected SHA-256. It remains pending; the v4 result is not presented as evidence for the new file.
+At 11:43 CET on 16 November, VV reported two matching boundary102 runs on Linux ARM (aarch64), Python 3.12.3 and Torch 2.8.0 CPU; both official format checks passed. The reported CSV SHA-256 equals our frozen candidate. He used the archive of review commit `072feab`, initialized as a local Git repository, and reports matching code/weight/data fingerprints. This is teammate-reported archive-source evidence; the original machine receipt was not imported or independently audited here. It is not a fresh upstream-clone or Linux/x86 claim. See [the scoped report](experiments/pff-mixed/linux_arm_report.json).
 
 ## Label-free sensor characterization
 
@@ -22,4 +22,4 @@ The preregistered roughness diagnostic uses geometry, clocks and independent per
 
 ## Remaining release actions
 
-Wait for independent boundary102 platform evidence and joint team review. Repository publication, final team identity fields and the organizer form are separate pending actions. No organizer submission or public visibility change has occurred. The original final reserve is consumed; further model selection requires a new untouched reserve.
+Complete joint team review; Linux ARM reproduction is now reported with the evidence limitations above. Repository publication, final team identity fields and the organizer form are separate pending actions. No organizer submission or public visibility change has occurred. The original final reserve is consumed; further model selection requires a new untouched reserve.

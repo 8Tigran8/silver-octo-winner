@@ -1,0 +1,18 @@
+{
+  "candidate": "boundary102",
+  "reported_by": "VV",
+  "channel": "Telegram",
+  "reported_local": "2026-11-16 11:43 Europe/Madrid",
+  "review_source_commit": "072feab1f0db535141f98023ebc59bdaa761cb36",
+  "source_material": "Archive of the review commit, initialized as a local Git repository for the verifier; the receipt commit is consequently local, not the upstream commit.",
+  "platform": "Linux ARM (aarch64)",
+  "python": "3.12.3",
+  "torch": "2.8.0",
+  "device": "CPU",
+  "runs": 2,
+  "both_csv_sha256": "cfbd16ea35075a199d2401c18f162d4c1f953be4049cd776d502ff42ea389c97",
+  "both_official_format_checks": "PASS (teammate report)",
+  "code_weights_data_fingerprints": "VV reports equality with the shared receipt",
+  "evidence_level": "Teammate-reported reproduction; original machine receipt/log not independently imported or audited here.",
+  "scope": "Reported archive-source reproduction on Linux ARM, not an authenticated fresh upstream clone and not Linux x86 evidence."
+}
