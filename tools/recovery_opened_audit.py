@@ -21,8 +21,17 @@ def now():return datetime.now(timezone.utc).isoformat()
 def plan():return json.loads((DOC/'plan.json').read_text())
 def check():
     f=json.loads((DOC/'freeze.json').read_text())
+    amendment=DOC/'reporting_amendment.json'
+    replacements={}
+    if amendment.exists():
+        a=json.loads(amendment.read_text())
+        if a['original_freeze_sha256']!=sha(DOC/'freeze.json'):raise ValueError('Wrong audit amendment')
+        if set(a['changes'])!={'tools/recovery_opened_audit.py'}:raise ValueError('Only reporting-tool amendment allowed')
+        for name,item in a['changes'].items():
+            if f['files_sha256'][name]!=item['before']:raise ValueError('Wrong original reporting source')
+            replacements[name]=item['after']
     for name,h in f['files_sha256'].items():
-        if sha(ROOT/name)!=h:raise ValueError('Frozen evidence/source changed: '+name)
+        if sha(ROOT/name)!=replacements.get(name,h):raise ValueError('Frozen evidence/source changed: '+name)
     return f
 
 def raw_paths(game):
@@ -108,7 +117,7 @@ def worker(fixture):
     data,geo=load_geometry(paths['tracking'],paths['metadata'],paths['rosters']);parts=spans(data['period']);n=len(data['ball'])
     if 'gt' in data:raise ValueError('Reference in inference geometry')
     print('Loaded',game,'geometry',round(time.monotonic()-started,1),flush=True)
-    dummy=np.where(data['period']>0,0,3).astype(np.int8);blind=degrade.degrade(dict(data,gt=dummy),seed=7,params=expanded_team.BLIND);blind.pop('gt')
+    dummy=np.where(data['period']>0,0,3).astype(np.int8);blind=degrade.degrade(dict(data,gt=dummy),seed=7,params=expanded_team.BLIND);blind.pop('gt');blind['period']=data['period']
     predictions={};prob_arrays={};parity=[];observed={'natural_detected':data,'label_blind_seed7':blind}
     for scenario,d in observed.items():
         current,parent=probabilities(d,parts,CURRENT[0],CURRENT[1],CURRENT[2],PARENT)
@@ -158,12 +167,49 @@ def summary(records):
     return result
 
 
+def finish_saved(fixture):
+    """Finish only reporting from immutable predictions/reference arrays after report failure."""
+    game=fixture['game_id'];folder=OUT/game;predpath=folder/'predictions.npz';inputpath=folder/'diagnostic_inputs.npz'
+    with np.load(predpath,allow_pickle=False) as z:predictions=dict(z)
+    with np.load(inputpath,allow_pickle=False) as z:inputs=dict(z)
+    expected={s+'__'+m for s in SCENARIOS for m in ['boundary102','weighted_short_gap']}
+    if set(predictions)!=expected:raise ValueError('Incomplete saved predictions')
+    gt,alt=inputs['gt'],inputs['alternate'];period=inputs['period'];valid=period>0
+    historic=json.loads((ROOT/fixture['historical_scores']).read_text());prior=historic['source']
+    # Metadata comes from the original receipt, whose raw inputs and reader hashes
+    # are still identical. Validate actual regenerated reference counts/coverage.
+    for truth in [gt,alt]:
+        if len(truth)!=prior['geometry']['frames25']:raise ValueError('Changed frame clock')
+        if any(int(((truth==i)&valid).sum())!=prior['reference']['class_frames'][label] for i,label in enumerate(['H','A','D','X'])):raise ValueError('Changed reference counts')
+    if not all(len(a)==len(gt) for a in predictions.values()):raise ValueError('Prediction length mismatch')
+    rows=[];diags=[];comparison=[];hist={(r['scenario'],r['reference']):r for r in historic['records'] if r['candidate']=='boundary102'}
+    with np.load((ROOT/fixture['historical_scores']).with_name(game+'_predictions.npz')) as old:
+        for scenario in SCENARIOS:comparison.append(dict(scenario=scenario,differing_parent_frames=int(np.sum(predictions[scenario+'__boundary102']!=old[scenario+'__boundary102']))))
+    for reference,truth in [('canonical',gt),('sdk_shadow',alt)]:
+        for key,pred in predictions.items():
+            scenario,name=key.split('__');r=dict(game=game,cohort=fixture['cohort'],scenario=scenario,candidate=name,reference=reference,**metric(truth,pred))
+            if name=='boundary102':r['historical_parent_spell_delta']=r['spell_f1_mean']-hist[scenario,reference]['spell_f1_mean']
+            rows.append(r)
+            if reference=='canonical':
+                seen=inputs[scenario+'__seen'];observation=dict(period=period,ball=np.where(seen[:,None],np.zeros((len(gt),3)),np.nan))
+                diags.append(dict(game=game,cohort=fixture['cohort'],scenario=scenario,candidate=name,**diagnostic(gt,pred,observation)))
+    receipt=dict(game=game,fixture=fixture,geometry=prior['geometry'],reference=prior['reference'],predictions_sha256=sha(predpath),diagnostic_inputs_sha256=sha(inputpath),
+        metadata_origin='Original receipt for unchanged raw source and reader; current regenerated reference counts checked exactly',
+        recovery='Predictions and reference arrays were saved by original frozen worker before missing-period reporting error. No fitting or inference change.',
+        paired_packaged_parity='For10502, original worker asserted zero current/parent probability differences in both scenarios before saving these predictions' if game=='10502' else 'Shared paired runtime; independently checked on10502',
+        historical_parent_comparison=comparison)
+    result=dict(records=rows,diagnostics=diags,source=receipt,freeze_sha256=sha(DOC/'freeze.json'),reporting_amendment_sha256=sha(DOC/'reporting_amendment.json'))
+    (folder/'result.json').write_text(json.dumps(result,indent=2)+'\n');print('Recovered report',game,flush=True);return result
+
+
 def run(resume=False):
     check();OUT.mkdir(exist_ok=resume);rows=[];diags=[];sources=[];pending=[]
     for g in plan()['fixtures']:
         dest=OUT/g['game_id']/'result.json'
         if dest.exists():
             r=json.loads(dest.read_text());assert r['freeze_sha256']==sha(DOC/'freeze.json');rows.extend(r['records']);diags.extend(r['diagnostics']);sources.append(r['source'])
+        elif (OUT/g['game_id']/'diagnostic_inputs.npz').exists():
+            r=finish_saved(g);rows.extend(r['records']);diags.extend(r['diagnostics']);sources.append(r['source'])
         else:pending.append(g)
     with ProcessPoolExecutor(max_workers=2,mp_context=get_context('spawn'),initializer=initialize) as pool:
         for f in as_completed([pool.submit(worker,g) for g in pending]):

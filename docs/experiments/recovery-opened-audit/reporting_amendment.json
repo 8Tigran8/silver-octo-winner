@@ -1,0 +1,15 @@
+{
+  "original_freeze_sha256": "b0b2e9856a2924c86ca4ae1f327d3fbeb6cdbd3ed8e7cdc86115d2ee24240fcc",
+  "reason": "Audit diagnostic-only KeyError: 'period': blind augmentation returns geometry without period metadata. Inference used independent original period spans correctly. Restore metadata for diagnostics; complete saved arrays without changing prediction or reference bytes.",
+  "changes": {
+    "tools/recovery_opened_audit.py": {
+      "before": "afd9400e9dfee3d1caeb59649510ebfe0bea2e7d986a173b535820f4d4a4231b",
+      "after": "9635146e4cb6ace47f6b112caed135bbe90e4a8acab31c5652ccfa7db796364a"
+    }
+  },
+  "inference_changed": false,
+  "weights_changed": false,
+  "thresholds_changed": false,
+  "reference_policy_changed": false,
+  "old_failure_preserved": "reports/recovery_opened_audit.log"
+}
