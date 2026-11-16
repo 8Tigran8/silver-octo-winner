@@ -1,0 +1,220 @@
+{
+  "source_commit": "1160825bed54d099af0ae86f8b64110be2da76b0",
+  "model": "boundary102 weights; audited preprocessing/stack period reset and observation integrity",
+  "python": "Python 3.12.11",
+  "platform": "macOS-15.6.1-arm64-arm-64bit",
+  "dependencies": [
+    "cloudpickle==3.1.2",
+    "filelock==4.2.10",
+    "fsspec==2026.9.0",
+    "Jinja2==3.1.6",
+    "joblib==1.6.0",
+    "MarkupSafe==3.0.4",
+    "mpmath==1.3.0",
+    "narwhals==2.28.0",
+    "networkx==3.7",
+    "numpy==2.5.4",
+    "pandas==2.3.3",
+    "python-dateutil==2.9.0.post0",
+    "pytz==2025.2",
+    "scikit-learn==1.9.1",
+    "scipy==1.17.1",
+    "setuptools==84.2.1",
+    "six==1.17.0",
+    "sympy==1.14.0",
+    "threadpoolctl==3.8.0",
+    "torch==2.8.0",
+    "typing_extensions==4.16.0",
+    "tzdata==2025.2"
+  ],
+  "input_sha256": {
+    "tactical/BAR-ATH_tactical_atd.xml": "327e35e32e46a647389b88f883d4f9a2ab931e3e6148aef2fcf8f22b1e93c43a",
+    "tactical/BAR-ATH_tactical_atd.txt": "f130e350d2bfdf734b7e32f072931fccc6d015c1e837d082064875fe0a700431"
+  },
+  "runs": [
+    {
+      "run": 1,
+      "seconds": 33.28023829101585,
+      "sha256": "cfbd16ea35075a199d2401c18f162d4c1f953be4049cd776d502ff42ea389c97",
+      "official_validator": "PASS"
+    },
+    {
+      "run": 2,
+      "seconds": 25.567019375041127,
+      "sha256": "cfbd16ea35075a199d2401c18f162d4c1f953be4049cd776d502ff42ea389c97",
+      "official_validator": "PASS"
+    }
+  ],
+  "original_csv_sha256": "cfbd16ea35075a199d2401c18f162d4c1f953be4049cd776d502ff42ea389c97",
+  "output_changed_from_original": false,
+  "command": "python tools/generate_mixed_candidate.py --bundle assets/pff-mixed-candidate/bundle.json --data-dir /path/to/data --output \"Ruses Cules.csv\"",
+  "environment": "Separately installed pinned venv, fresh git archive, minimal env, no copied cache. Second run exercises content-keyed cache.",
+  "public_diagnostic_used_for_selection": false,
+  "output_path": "out/audit-ready/Ruses Cules.csv",
+  "output_bytes": 1682773,
+  "status": "CONDITIONALLY READY; technical reproduction verified, further model promotion blocked by independent-validation limits; public release and submission on user hold",
+  "official_source_commit": "f8f2629ff1e0985f81d7e59d8413678514ee1530",
+  "inference_source_sha256": {
+    "mtah/atd.py": "877baa1edef0343c6128b1cd64a6fda124142baf01b56c8b3834a20653139f0d",
+    "mtah/expanded_team.py": "8165633688f6da6ae03451fd3a6a62b39ed671a4eb032e2cda7b8aaf58d5bf3a",
+    "mtah/metrics.py": "49890b17f7906e4238225af51da8bcd4005ffb63b5e5bcf9870b050276d8a4fc",
+    "mtah/features2.py": "c1ef648580d9feccee0abe64dc6477b0c483a91caf636715808aa419c3dd8d53",
+    "mtah/robust_temporal.py": "6e87ac3928dddfcd4059396dd059cbbf73f2816b4bc91a5ba0129006b78da87d",
+    "mtah/v4.py": "e10fa8ae504c0f5065de588f476f6a853136f96da8b34dca1dfb3860308ecf22",
+    "mtah/temporal.py": "800925d1d60c7ca622e62ed206655f7c8bfedb756caf0ce8feff1988c78aa268",
+    "mtah/spell_loss.py": "9b08242e2d8426a35eb78bbcf0a8d3e24aadf202f1c6cde7817f699fd36f0393",
+    "mtah/config.py": "9c6bd4f888989aecafe2f28e9e56c146628ddd5169fb801fe0f39d166e773914",
+    "mtah/reliability.py": "7b45ba722be976503540d678871a533ddb70470610b772c9ec8a59351a744875",
+    "mtah/research_candidate.py": "6cd8bbaf28ecee6dc5d0eb482e482035b9263e96e59a671a3c6e3c9cdead6ee4",
+    "mtah/submission.py": "b92d4c3c9ed7e351c5b1c25ec4cd98cb13b729df00e0b2c9fed66322aa00d34b",
+    "mtah/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mtah/mixed_temporal.py": "3c6ee24dfc076f0ce4e279206826e20186db80bc465dc18be56075d8b4447216",
+    "mtah/mixed_candidate.py": "384c306fa2fbed04a6c8029705fa4d6f8eff5d233aac086fa0975427f04eafca",
+    "mtah/features.py": "5d6f7b88847ae35da393e0c2b8eee02f4ece315354803f00d4e1302802a0c604",
+    "mtah/degrade.py": "c451d252a49720e08bd45a09ba62cf178d9d5f3f66d7537ab453b97b85e5e14a",
+    "mtah/stack.py": "755acfeb73d4294e9752fb1d365dfead4e2b1cbdc05d763d9e81d50aa0eb0f38",
+    "mtah/possession_context.py": "973319eb341eebb0576a0c82cfe1d18addbc055ae8c2e6305bff50768fce2e30",
+    "mtah/external.py": "6497791710cb3aacbbd41ab485d4e878604ec2ec74c0766a5c972491975b2b67",
+    "mtah/tagging.py": "c3f1d798017e0f274edc12785a2a1401ad02c2012e618adeddc94b32d9c848db",
+    "mtah/methods/baseline.py": "9d2f816da3b604df0d66434f1a8527d9146686d51462d22bd9d263484859e5ac",
+    "mtah/methods/boost.py": "60807b94a981b9fc3eb7c450eed474a078fc6e065fae882529d590d28c8ce9e6",
+    "mtah/methods/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mtah/methods/boost_train.py": "c3e8156605e7c6950f29ae2eabbc10f73f1ac8a049fc9189ea301d5f48f3408f",
+    "mtah/methods/viterbi.py": "a6630d3880526214e7cc386d16490b06255ae78590900c64c35d70fbd01b72eb",
+    "tools/generate_mixed_candidate.py": "e756a06948b7040d5b60ecf64ff60cf908d107858b3789e9d8dac367c85c98f1"
+  },
+  "model_file_sha256": {
+    "assets/v4/temporal_state.pt": "d2628a2ddb790175f100e54d76c4e2aa89ebfce8179931e3c531d24c88816a90",
+    "assets/v4/README.md": "8f6217877f00e1b58e5827be749c24f3c7768c76e715a0a3b2813cffd3cafe2f",
+    "assets/v4/manifest.json": "25729febd8697681eebaaad12dbea2d0b0d65c90d93d3ed876bfaec5f3253cd8",
+    "assets/v4/team_external.pkl": "9f0688b4a6197d7134153993576a172000e42ae40619174819fbfcf62dc7cf18",
+    "assets/v4/base_external.pkl": "f2f33ae6ac086d976ed9712110e542ad68588ed489d0c0fc212a47635731c682",
+    "assets/pff-mixed-candidate/model.pt": "a727ef64efbfba338f5aab3f41782a906d2739ae90e96c308be82adc495fd944",
+    "assets/pff-mixed-candidate/bundle.json": "d71bdd23e0ab2ef49823298a6a1a62e33862140ea0d8a40086f35b916ac8946b",
+    "assets/pff-mixed-candidate/README.md": "9a68c3bc049b8463c61fb3930d692a05d673b0e1f1af2fa163bb71063ab9d9a7",
+    "assets/pff-mixed-candidate/meta.json": "a5f5e2188eba9a87afbf4571b80eec77294e7ba1d8c073306bd478f78b032e62",
+    "mtah/expanded_team_training.json": "659a8d7ee9f4f3f9947a8394d2f8a72142b7405b24f182f96fb0e726250a87a8",
+    "mtah/methods/v3_params.json": "946109d611a251e60ecc434f8690d83b83a6f63e236c647027c3168c75cc4da5",
+    "mtah/methods/v2_params.json": "22888607bace4e71118aa6445d7360ee18ac7019869bf37c46bc8a2b6506201a",
+    "mtah/methods/v1_params.json": "01f8e02238da5dc7f3aa3fd49b2a7f2be6089ea2c974a616bd170e611ba34c6d"
+  },
+  "additional_reproduction": {
+    "linux_arm64": {
+      "source_commit": "3e2348e9a5cd60c6aaf1cad8babcb785837404bc",
+      "image_id": "sha256:047088ca4edff82cf4197acc48fe81a07452eb5b793fdc0facdb52afffc36aa3",
+      "image_architecture": "arm64",
+      "runtime": {
+        "python": "3.12.11",
+        "platform": "Linux-6.10.14-linuxkit-aarch64-with-glibc2.41",
+        "dependencies": [
+          "cloudpickle==3.1.2",
+          "filelock==4.2.10",
+          "fsspec==2026.9.0",
+          "Jinja2==3.1.6",
+          "joblib==1.6.0",
+          "MarkupSafe==3.0.4",
+          "mpmath==1.3.0",
+          "narwhals==2.28.0",
+          "networkx==3.7",
+          "numpy==2.5.4",
+          "pandas==2.3.3",
+          "python-dateutil==2.9.0.post0",
+          "pytz==2025.2",
+          "scikit-learn==1.9.1",
+          "scipy==1.17.1",
+          "setuptools==84.2.1",
+          "six==1.17.0",
+          "sympy==1.14.0",
+          "threadpoolctl==3.8.0",
+          "torch==2.8.0+cpu",
+          "typing_extensions==4.16.0",
+          "tzdata==2025.2"
+        ]
+      },
+      "input_sha256": {
+        "tactical/BAR-ATH_tactical_atd.xml": "327e35e32e46a647389b88f883d4f9a2ab931e3e6148aef2fcf8f22b1e93c43a",
+        "tactical/BAR-ATH_tactical_atd.txt": "f130e350d2bfdf734b7e32f072931fccc6d015c1e837d082064875fe0a700431"
+      },
+      "inputs_unchanged": true,
+      "runs": [
+        {
+          "run": 1,
+          "seconds": 28.506147208972834,
+          "sha256": "cfbd16ea35075a199d2401c18f162d4c1f953be4049cd776d502ff42ea389c97",
+          "official_validator": "PASS"
+        },
+        {
+          "run": 2,
+          "seconds": 21.93585837504361,
+          "sha256": "cfbd16ea35075a199d2401c18f162d4c1f953be4049cd776d502ff42ea389c97",
+          "official_validator": "PASS"
+        }
+      ],
+      "original_csv_sha256": "cfbd16ea35075a199d2401c18f162d4c1f953be4049cd776d502ff42ea389c97",
+      "all_outputs_identical": true,
+      "network": "disabled during both inference runs",
+      "scope": "Local Linux container on ARM host, not independent hardware/operator"
+    },
+    "linux_amd64_emulated": {
+      "source_commit": "8e1bfb493ba048895f693149455f32e66da076e2",
+      "image_id": "sha256:3bc0d12985d15f5c631a67ff2e45f831727c240b489fa06bd9cbdbd7f76cf562",
+      "image_architecture": "amd64",
+      "runtime": {
+        "python": "3.12.11",
+        "platform": "Linux-6.10.14-linuxkit-x86_64-with-glibc2.41",
+        "dependencies": [
+          "cloudpickle==3.1.2",
+          "filelock==4.2.10",
+          "fsspec==2026.9.0",
+          "Jinja2==3.1.6",
+          "joblib==1.6.0",
+          "MarkupSafe==3.0.4",
+          "mpmath==1.3.0",
+          "narwhals==2.28.0",
+          "networkx==3.7",
+          "numpy==2.5.4",
+          "pandas==2.3.3",
+          "python-dateutil==2.9.0.post0",
+          "pytz==2025.2",
+          "scikit-learn==1.9.1",
+          "scipy==1.17.1",
+          "setuptools==84.2.1",
+          "six==1.17.0",
+          "sympy==1.14.0",
+          "threadpoolctl==3.8.0",
+          "torch==2.8.0+cpu",
+          "typing_extensions==4.16.0",
+          "tzdata==2025.2"
+        ]
+      },
+      "input_sha256": {
+        "tactical/BAR-ATH_tactical_atd.xml": "327e35e32e46a647389b88f883d4f9a2ab931e3e6148aef2fcf8f22b1e93c43a",
+        "tactical/BAR-ATH_tactical_atd.txt": "f130e350d2bfdf734b7e32f072931fccc6d015c1e837d082064875fe0a700431"
+      },
+      "inputs_unchanged": true,
+      "runs": [
+        {
+          "run": 1,
+          "seconds": 59.648933207965456,
+          "sha256": "cfbd16ea35075a199d2401c18f162d4c1f953be4049cd776d502ff42ea389c97",
+          "official_validator": "PASS"
+        },
+        {
+          "run": 2,
+          "seconds": 42.98612504103221,
+          "sha256": "cfbd16ea35075a199d2401c18f162d4c1f953be4049cd776d502ff42ea389c97",
+          "official_validator": "PASS"
+        }
+      ],
+      "original_csv_sha256": "cfbd16ea35075a199d2401c18f162d4c1f953be4049cd776d502ff42ea389c97",
+      "all_outputs_identical": true,
+      "network": "disabled during both inference runs",
+      "scope": "Local Linux container on ARM host, not independent hardware/operator"
+    }
+  },
+  "source_equivalence_receipt": "validation/reproduction_source_equivalence.json",
+  "technical_document_sha256": "fe224c6a4ac71783a5dbc5b794a42d26bbb7a4d824df7b8e0b9aafe4e91d23a7",
+  "technical_document_path": "out/audit-ready/Ruses Cules.md",
+  "release_branch": "codex/independent-audit",
+  "repository_url": "https://github.com/8Tigran8/silver-octo-winner/tree/codex/independent-audit"
+}

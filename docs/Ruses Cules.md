@@ -1,101 +1,75 @@
-# Ruses Cules: boundary102 technical method
+# Ruses Cules — short-possession and missing-ball recovery
 
-Updated 16 November 2026. Current source, frozen model and candidate CSV are prepared for team review. The organizer submission and public release remain pending. No competition-match quality score is claimed.
+## Inputs and contract
 
-## Method and supplied assets
+The implemented offline model estimates H/A/D from the organizer tactical ATD XML/TXT only. No target labels, video, Smart Tagging or homography enter prediction, training or selection. The output has header frame,label and exactly199,319 rows, indexed0–199318. ATD1-based IDs map to output frame_id−1; IDs/counts/team references are validated. Published graded periods and second-half kickoff determine output coverage and pre-restart D. Outside playing blocks is X.
 
-The algorithm assigns H/A/D/X to exactly 199,319 ordered frames using the supplied automatic tactical XML/TXT. Tracking IDs 1 through 199319 map to video frames 0 through 199318. Video, homography and Smart Tagging are unused. No human labels, public/private target ground truth or manual corrections of the provided game enter fitting, selection or calibration.
+Coordinates are converted to metres; a detection requires both finite coordinates. XML track slots determine teams, not persistent player identities. Interpolation, derivatives, smoothing and network context reset at periods. Content-hashed, versioned caches are rebuilt on corruption and written atomically. Missing-ball indicators remain available; the new model does not fill gaps with fabricated player-contact locations.
 
-```text
-Automatic tracking -> 87 geometry + 21 contact features
-                   -> frozen 9-game boosted path + 19-game team head
-                   -> 108 features + 108 missing masks -> 102-second TCN
-                   -> fixed 50/50 probability mixture -> duration decoder
-                   -> H/A/D/X CSV
+## Implemented architecture
+
+```mermaid
+flowchart LR
+ A[ATD XML and TXT] --> B[Validate and preprocess each period]
+ B --> C[108 geometry and contact features plus finite masks]
+ C --> D[Inherited boosted dead/team models]
+ C --> E[102-second weighted temporal network]
+ B --> F[64 player-only activity features]
+ F --> G[Missing-ball dead-state expert]
+ D --> H[Observed D and H/A: 50/50 fusion]
+ E --> H
+ E --> I[Missing D: 75% neural and 25% activity]
+ G --> I
+ H --> J[Duration Viterbi]
+ I --> J
+ J --> K[H A D X CSV and official validator]
 ```
 
-Missing ball observations make nearest-player rules unstable. The temporal network uses surrounding observations and team context to retain possession through occlusions; an auxiliary change loss encourages useful boundaries. The inherited boosted path supplies a complementary geometry estimate. This creates a possession timeline for match analysis from existing tracking, without requiring a new video detector.
+The network runs at5Hz with108 standardized features plus finite masks, width48, seven residual dilation blocks and101.8-second receptive field. Geometry includes distances, nearby counts, team shape, speeds, observation gaps and period-local contact context. Direct and team-swapped predictions are averaged. The inherited boosted models, out-of-fold temporal stacking and geometry paths are unchanged from the audited parent. Future context is allowed because prediction is offline.
 
-The TCN has 48 channels, dropout 0.15, and seven residual blocks with two 3-tap convolutions per block. Dilations 1/2/4/8/16/32/64 give 509 steps at 5 Hz: 101.8 seconds of receptive field. Two logits predict dead probability and home ownership conditional on live play. Direct and team-swapped predictions impose home/away symmetry. Both probability channels are mixed 50/50 with the inherited v3 path. The original v4 temporal branch is a comparison control.
+The parent network is continued for3000 steps, seed20261116, learning rate0.0001, AdamW weight decay0.001, batch16, preserving the train-only normalizer. H/A supervision weights each training spell by clip(sqrt(10/duration_seconds),1,4). Dead/live loss is doubled on missing-ball frames regardless of class. SkillCorner proxy-D weight0.25 and auxiliary boundary loss0.15 with positive weight8 are retained. Durations use full period-local training reference spells, never development/target labels.
 
-The duration Viterbi decoder retains cost-9 transitions and one-second minimum live/dead intervals. Internal states are H, A, dead-after-H and dead-after-A; both dead states output D. Loose balls and challenges use learned contact/context probabilities and the transition penalty. A nearest touch does not automatically transfer possession. A stoppage separates possessions even when the same team restarts. Restart snapping is disabled. Published period/kickoff alignment is retained. Inference is offline and uses future context.
+The activity expert is a HistGradientBoosting classifier trained on676,547 sampled missing-ball rows from36 PFF training games, with equal match weights. Its64 features describe period-local player geometry/activity; they exclude ball coordinates, gap duration, identities and network outputs. Fixed settings:150 iterations, learning rate0.05,15 leaves, minimum leaf200,L2=10,max bins128,seed20261116. It affects only D probabilities on missing-ball frames. H/A and observed-ball D keep50/50 inherited/new-neural fusion; missing-ball D uses75% new neural and25% activity expert.
 
-## Training data, annotation and access
+The four-state decoder models H,A,dead-after-H,dead-after-A; both dead states emit D. Minimum live duration is0.4s, minimum D1s, H/A switch cost4.5, other transition costs9, stride5. Restart snapping is disabled. Loose balls and challenges have no separate live class; a touch need not switch ownership, and H-D-H contains two possessions.
 
-The temporal branch trains on 65 external games, all outside the provided game. The inherited boosted and team components retain their separate 9-game and 19-game registries, which overlap this corpus.
+## Training provenance
 
-| Source | Games | Unaugmented H/A/D frames | Reference and source terms |
-|---|---:|---:|---|
-| IDSSE / DFL | 7 | 1,002,644 | Provider BallStatus/BallPossession; CC BY 4.0 |
-| Metrica samples 1/2 | 2 | 286,162 | Provider events converted by code to possession intervals; event-derived proxies; acknowledge Metrica |
-| SkillCorner A-League | 20 | 2,955,525 | Automatic H/A phases; metadata-period complement is a D proxy; MIT; credit SkillCorner/PySport |
-| Original PFF World Cup 2022 | 36 | 5,636,115 | Embedded provider events reconstructed using primary SDK semantics; original provider access by request; no raw redistribution |
 
-Total: 9,880,446 unaugmented reference-period frames. Frames and augmented copies are not independent matches. Provider annotation workflows were not independently audited. Validation-only sources also include Metrica sample 3, one Groningen/SciSports WCSF sample and nine European SkillCorner games; the last have conditional H/A references only.
+The neural model uses 65 distinct external games: IDSSE/DFL 7, Metrica samples 1/2, SkillCorner A-League 20 and original PFF World Cup release 36. Reference-frame counts before augmentation are 1,002,644 / 286,162 / 2,955,525 / 5,636,115 respectively. The inherited components retain separate overlapping 9-game and 19-game training registries. No supplied-match labels enter fitting or selection.
 
-Sources: [IDSSE/DFL paper](https://doi.org/10.1038/s41597-025-04505-y), [Metrica sample data](https://github.com/metrica-sports/sample-data), [SkillCorner Open Data](https://github.com/SkillCorner/opendata), [PFF original provider release](https://www.blog.fc.pff.com/blog/enhanced-2022-world-cup-dataset).
+DFL labels use provider BallStatus/BallPossession (CC BY 4.0). Metrica sample event intervals form an event-derived reference proxy with attribution. SkillCorner automatic H/A phases use complementary within-period D as a proxy (MIT, attribution). PFF references are reconstructed separately through the pinned primary SDK state machine; predictor geometry uses raw visible detections only, excluding estimated/event-informed ball positions, labels and IDs. The original PFF provider grants requested dataset access; a standard permissive license for that release has not been established. The Hugging Face mirror's GPL label is not applied to it. Original provider access and inspection terms remain a qualification to the source-compliance assessment; raw data are not redistributed. See `docs/PFF_SOURCE.md` and the training registries.
 
-**Original PFF access was obtained on 15 November 2026 through the provider's form.** Organizers can use the same request route. The original article states no standard dataset license; the GPL-3.0 label on the separate Hugging Face mirror is not treated as a license for the original release. That mirror remains unused. [The access record](PFF_SOURCE.md) explains the route and source terms. Raw files and vendor PDFs are not committed.
 
-PFF predictors use only raw VISIBLE observations. ESTIMATED tracks, event-informed smoothed coordinates, event/possession fields and identities are excluded from features. References are reconstructed separately: OUT/END means dead, kickoff/OTB means live, and home_ball supplies ownership. Period state resets and duplicate-conflict masking are fixed. A fixed SDK last-row shadow checks sensitivity. These are provider-event-derived approximations, not corrected frame-by-frame competition truth.
+All139 scenarios for the65 existing training games were regenerated with corrected features before continuation. The additional activity expert uses only the original36 PFF training games. Runtime checks training registries, normalization shapes, feature schema and model hashes. No extra development match was moved into training.
 
-## Fitting and isolation
+## Measured quality and limitations
 
-Normalization uses training observations only, with a 0.01 standard-deviation floor, clipping to [-8, 8] and explicit missing masks. Training uses seed 20261113, 6,000 AdamW updates, learning rate 0.001, weight decay 0.001, batch 16, 256 supervised 5-Hz steps and 256 context steps on each side. Provider groups are sampled equally, then games/scenarios uniformly. Team swaps are random. The boundary BCE weight is 0.15, with positive weight 8; unknown/context-only adjacent pairs are masked. SkillCorner D-proxy loss has weight 0.25.
+On all ten original development games, official Spell F1 improves0.655317→0.680009 naturally and0.642574→0.667271 under fixed blind sensor stress;9/10 games improve in each. Macro F1 improves0.885608→0.895472 and0.877913→0.892163. Canonical and SDK-shadow event references agree. The unchanged preregistered gates require≥0.020 mean Spell gain,≥8/10 wins,worst loss≤0.020 and mean macro loss≤0.002 in both scenarios/references; the selected model passes.
 
-All direct and nested learned components and normalizers exclude the complete scored fold on the reused 29-game/67-cell grid. Actual normalizers and checkpoint lineage are verified. The original PFF split is 36 training, 10 development, 12 final and 6 excluded country bridges. Both national teams in final groups A/H are absent from PFF training/development. One candidate and source/model/reader/scenario hashes were sealed before opening final contents. No model switch or post-test tuning followed.
+Natural short-possession recall (<3s,IoU0.5) improves65/578→87/578. Missing-ball false D among reference-live frames decreases20.99%→19.78% (blind22.14%→18.28%), while false-live among reference-D decreases4.42%→2.86% (blind4.21%→3.16%). Recall15.05% still leaves most brief possessions unresolved. Full official Spell F1, not recall alone, determined adoption.
 
-## Fixed evaluation and results
+This is repeated development selection across22 changed policies, not a fresh holdout. The six PFF bridges, twelve old final games and all supplied-match labels were excluded from this improvement round. Earlier holdout and public-window scores describe the parent model only. A frozen supplementary check on six DFL/Metrica/SkillCorner training games improves all12 game/scenario cells, but is in-sample. Proxy references, shared provider/countries, sensor jitter and long occlusions limit generalization claims. There is no hidden-match score or finalist-probability estimate.
 
-The unmodified official spellF1 metric matches maximal H/A possessions at temporal IoU thresholds 0.3/0.4/0.5/0.6/0.7 and averages F1. MacroF1 and H/A/D F1 guard frame quality. Compare models on the same games; absolute values across different cohorts are not train/test gaps.
+All136 tests pass; portable predictions exactly match all20 development outputs. Four clean-source CPU generations across macOS ARM/Linux ARM/emulated Linux AMD64 pass official validation and yield identical CSV bytes. One physical host was used. This reproduces inference, not weight training. The original uniform-continuation control and all rejected experiments remain in docs/experiments/.
 
-| Comparison | V4 | boundary102 | Gain | Game wins |
-|---|---:|---:|---:|---:|
-| 29 reused development games, historical control | 0.61435 | 0.64317 | +0.02882 | 27/29 |
-| 29 games, identical complete-fold exclusions | 0.61218 | 0.64317 | +0.03099 | 29/29 |
-| 10 PFF development games, natural | 0.61404 | 0.65523 | +0.04119 | 10/10 |
-| 12 originally untouched final games, natural | 0.54180 | 0.60428 | +0.06248 | 12/12 |
-| Same 12 final games, fixed label-blind sensor stress | 0.52648 | 0.58696 | +0.06048 | 12/12 |
+## Reproduction and delivery
 
-All original predeclared source/cohort, macro, class, stress, lower-tail, large-loss and final gates pass. Final natural macroF1 gain is +0.02572; H/A/D F1 gains are +0.02577/+0.03175/+0.01964. Group gains are A +0.07076 and H +0.05420. The descriptive paired whole-game 95% gain interval is [0.04827, 0.08266]. Shared teams and only two groups limit independence assumptions. Canonical and fixed SDK-shadow results agree.
+Use Python3.12 and branch codex/short-possession-recovery. main remains historical. Model weights are bundled; inference needs no external training download, labels, API key or research cache.
 
-The data-expanded 25-second control also passes development, but the longer-context/boundary variant wins the predeclared selection rule. Those two changes are not separately ablated. All eleven reused external guards pass. Losses remain on noisy Metrica3 spellF1 (-0.00900) and European conditional H/A macroF1 (-0.00365), within the original 0.01 guard. [The full study](experiments/pff-mixed/REPORT.md) preserves every candidate, prior failure, split and source identity.
-
-## Overfit and sensor limitations
-
-| Standalone neural branch | Full-fit spellF1 | Whole-fold-out | Gap |
-|---|---:|---:|---:|
-| DFL, 7 games | 0.68989 | 0.66764 | +0.02225 |
-| Metrica, 2 games | 0.85653 | 0.70556 | +0.15097 |
-| SkillCorner, 20 games | 0.70864 | 0.71486 | -0.00622 |
-
-The Metrica gap is a material source-specific overfit risk. This is a descriptive post-selection diagnostic of the neural branch; deployment uses a 50/50 fusion. The independent final supports generalization beyond memorizing training games, but cannot prove absence of overfit everywhere.
-
-A later [two-game sensor pilot](experiments/provider-stress/REPORT.md) loses to same-exclusion v4 in all six distinct combined perturbation cases: -0.00638 to -0.06944 spellF1. Clean/native controls improve. Post-hoc one-factor probes retain gains for cadence-only/burst-only changes but lose under independent coordinate jitter. These familiar-game copies are supplemental diagnostics, not new independent matches or a new promotion gate. No inference policy or candidate CSV changes follow.
-
-Short possessions remain under-segmented: the PFF development predicted/reference spell-count ratio is 0.755, with mean predicted duration 17.54 s versus reference 13.75 s. Long gaps, incomplete players, ambiguous control, annotation differences and anonymous WCSF provenance remain limitations. Hidden competition quality and qualification probability are unknown.
-
-Further work would improve jitter robustness using development-only augmentation, add independent Metrica-like games, reduce tiny-source sampling weight and improve short-spell duration modelling. Any replacement requires a new untouched reserve; the consumed final cannot become a tuning set.
-
-## Exact-file reproduction
-
-Use Python 3.12 and the pinned dependencies. No external training download/cache or retraining is needed to generate labels; frozen weights are bundled. Model, metadata and inherited hashes are checked before loading. The new checkpoint uses weights-only deserialization.
-
-```bash
+```sh
+git clone --branch codex/short-possession-recovery --single-branch https://github.com/8Tigran8/silver-octo-winner.git ruses-cules
+cd ruses-cules
 python3.12 -m venv .venv
 .venv/bin/pip install -r requirements-temporal.txt
 .venv/bin/python tools/fetch_reference.py
-.venv/bin/python tools/generate_mixed_candidate.py \
-  --bundle assets/pff-mixed-candidate/bundle.json \
+.venv/bin/python tools/generate_recovery_candidate.py \
+  --bundle assets/recovery-candidate/bundle.json \
   --data-dir /absolute/path/to/data \
   --output 'Ruses Cules.csv'
-.venv/bin/python ref/official/evaluation/validate_submission.py 'Ruses Cules.csv'
+.venv/bin/python tools/final_submission_gate.py --csv 'Ruses Cules.csv'
 ```
 
-Two clean committed-source Apple M4 CPU generations passed the official validator and produced identical bytes in 26.779 s and 26.838 s, with about 1.50 GiB peak child RSS. This repeats frozen-weight inference, not training. Input/model hashes remained unchanged. Tested inference source: `d10dd97438c3`; all 67 frozen files remained unchanged through final validation and later sensor diagnosis. The deployment loader also exactly reproduces previously scored PFF development predictions.
+The data directory contains tactical/BAR-ATH_tactical_atd.xml and .txt. The generator refuses existing output. Expected CSV SHA-256: `1f4602b5b8b04e4066c5478549a9b5e53f13852ca6513f01422906d1dcb1a1c0`. Tested inference source: `dfc9e860bd28810d0aa768a584eb518e96cee0b6`; the manifest verifies source/model files in the later documentation commit.
 
-VV independently reported byte-identical Linux ARM reproduction of the historical v4 CSV. That is not yet a Linux reproduction result for boundary102. Current-platform verification remains explicit in the receipts.
-
-CSV SHA-256: `cfbd16ea35075a199d2401c18f162d4c1f953be4049cd776d502ff42ea389c97`.
-
-The four-page PDF and exact CSV are prepared locally under `out/review-ready/`. The organizer form has not been submitted. Historical v4 remains available under its explicit command and [archived method](experiments/temporal/TECHNICAL_V4.md).
+The local package is out/recovery-ready/. The repository remains private and organizer submission remains on user hold. Public source availability, original-provider access qualifications and team eligibility must be resolved for unconditional submission readiness. Protected data and per-frame outputs are not committed or redistributed. Full results: docs/experiments/spell-weighted-finetune/REPORT.md.

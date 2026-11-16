@@ -1,6 +1,8 @@
 # Short-possession and missing-ball recovery: development experiments
 
-16 November 2026. **Completed: 16 changed policies plus the unchanged control, all ten original development games, two observation scenarios and two reference reconstructions. No candidate reaches the unchanged +0.02 Spell F1 promotion gate in both scenarios. Production inference, weights and submission remain unchanged.**
+16 November 2026. Historical first-stage result; the subsequent [weighted composition study](../spell-weighted-finetune/REPORT.md) qualifies and is now adopted. Statements about unchanged production below describe this first-stage checkpoint.
+
+**Completed: 16 changed policies plus the unchanged control, all ten original development games, two observation scenarios and two reference reconstructions. No candidate reaches the unchanged +0.02 Spell F1 promotion gate in both scenarios. Production inference, weights and submission remain unchanged.**
 
 The strongest minimum-scenario gain comes from `neural_expert25`: natural Spell F1 0.655317 → 0.666956 (+0.011639, 9/10 wins), blind 0.642574 → 0.654964 (+0.012391, 10/10 wins). This is positive reused-development evidence and a retained research prototype, not an approved production improvement or independent generalization result.
 

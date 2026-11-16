@@ -1,0 +1,27 @@
+{
+  "selected": "weighted_short_gap",
+  "production_adopted": true,
+  "selection_sha256": "842aae8038da614d0873a68377b24ba5a58f1ff600031d0828d6e1470afb07b4",
+  "source_commit": "dfc9e860bd28810d0aa768a584eb518e96cee0b6",
+  "development_gates": "PASS",
+  "supplementary_provider_guards": "PASS (in-sample)",
+  "portable_parity": "PASS: 20/20 exactly identical",
+  "unittest": {
+    "tests": 136,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "log_sha256": "6f2df25bb17eb77216c2a37b4efb53e4af88dcabf67a84cc601e102310115ba4",
+    "command": ".venv/bin/python -m unittest discover -s tests -v"
+  },
+  "clean_source_reproduction_sha256": "1ebd3c247949dce5bc906075ffe53f6bd2699dfe683c5dfd0416b20be1b9bfb3",
+  "csv_sha256": "1f4602b5b8b04e4066c5478549a9b5e53f13852ca6513f01422906d1dcb1a1c0",
+  "new_holdout_claim": false,
+  "organizer_submission": false,
+  "repository_visibility_changed": false,
+  "final_exact_artifact_gate": "PASS",
+  "verification_logs_sha256": {
+    "tests.txt": "6f2df25bb17eb77216c2a37b4efb53e4af88dcabf67a84cc601e102310115ba4",
+    "final_gate.txt": "b3b40c86e2bfa4e33cfaf8e88b4b5a838161e4038a89ba27204b7af9fb0202f3"
+  }
+}

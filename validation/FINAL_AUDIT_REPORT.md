@@ -1,96 +1,60 @@
-# Independent audit — final verdict
+# Current candidate audit — 16 November 2026
 
-**CONDITIONALLY READY**, 16 November 2026. The audited output is reproducible and format-valid. Confirmed implementation defects were repaired; no protected-target label use was found in the inspected code and evidence. The private repository, source-access qualifications, unverified team eligibility and limited fresh generalization evidence prevent an unconditional READY claim.
+**CONDITIONALLY READY overall.** The selected weighted_short_gap package passes technical checks and the unchanged meaningful-development-gain gates. No known unresolved P0/P1 implementation defect was found in the tested scope. Public source access, original-provider source-access qualifications, unverified team eligibility and new-model generalization remain conditions. Organizer submission and repository publication remain on user hold.
 
-**Later same-day real-match validation completed:** six previously unopened PFF bridge fixtures now provide prospective evidence for the corrected source. Current Spell F1 **0.613896**, v4 **0.546054**, gains on all six. All 36 PFF training fixtures score **0.625242** under the same frozen current inference, a training-minus-new gap of **0.011345**. This supersedes the earlier assertion that corrected-source evidence was development-only. Partial country overlap, shared provider and proxy reference definitions remain explicit. No fitting or selection used the six outcomes. See [the new-match audit](../docs/experiments/unseen-bridge-audit/REPORT.md).
-
-This verdict supersedes earlier conversational claims of full technical readiness. The audit sought failures rather than defending the existing model. The complete raw organizer specification was retrieved at current commit `f8f2629ff1e0985f81d7e59d8413678514ee1530`; local copies and the original user brief were preserved. Source hashes are recorded.
-
-## Critical issues and fixes
-
-P1: feature interpolation/rolling/derivative state crossed period boundaries; stacking also lacked period-local windows. Independent synthetic mutation exposed the feature leak, and the repaired full predictor now passes exact other-half invariance. P1: ATD cache reused stale bytes when contents changed without increasing mtime; it now hashes XML and raw contents. P2: tied nearest-player speed depended on slot ordering; tied finite observations are averaged. P2: short periods crashed feature shape; rolling kernels now respect input length. The generator also rejects incorrect tactical frame counts, and metadata rejects unknown team references.
-
-Pre-fix failures and post-fix execution receipts are retained. No P0 competition-rule violation was confirmed in the bounded audit. Public source access is still a submission condition, not silently marked complete.
-
-The subsequent continuous loop also fixed P2 partial-coordinate visibility, lone-ball interpolation, nonfinite parser values and recovery from corrupted cache archives. Full-predictor synthetic contracts and all ten familiar external games show no regression. These repairs are not claimed as a significant quality gain. See CONTINUOUS_IMPROVEMENT.md for hypotheses, failing tests and decisions.
+This report supersedes the parent verdict for the current candidate. The historical audit, its repaired defects, old independent-match scores and limitations are preserved in PARENT_FINAL_AUDIT_REPORT.md. Those historical scores must not be reassigned to the modified model.
 
 ## Acceptance gates
 
-| Gate | Result | Evidence / scope |
+| Gate | Current result | Evidence and limit |
 |---|---|---|
-| 1 Rules compliance | CONDITIONAL | No prohibited target use found; external-only registries and published-anchor provenance checked. Original PFF access/terms and organizer access are qualified; team eligibility not independently verified. |
-| 2 Data alignment | PASS for used inputs | ATD mapping, exact frame count, metre geometry, period isolation and resampling tests; no broadcast/homography dependency. |
-| 3 Metric parity | PASS | Current official metric hash equals pinned; named synthetic edge cases and 100 random cases match legacy helper to 14 decimals. Actual evaluation uses official code. |
-| 4 Temporal correctness | PASS for tested contracts | Full-predictor period isolation, 60 brute-force decoder cases, restart/transition contracts; one-second short-possession suppression explicitly retained as a quality limitation. |
-| 5 Submission format | PASS | Exact audited output passes official CLI; strict two-column contract and mutation tests also pass. |
-| 6 Reproducibility | PASS in tested environments; access conditional | Six identical outputs: two each on macOS ARM, Linux ARM and emulated Linux x86-64; fresh source and pinned dependencies, unchanged inputs. One host/operator; repository still private. |
-| 7 Evidence quality | PASS with disclosed limits | Development, old-source final, synthetic and public diagnostic evidence distinguished; no claimed hidden score, guaranteed generalization or finalist probability. |
+| 1 Rules compliance | CONDITIONAL | No target labels used; training registries exclude development/final/bridge fixtures. PFF original-provider access terms remain qualified; eligibility and organizer repository access unresolved. |
+| 2 Data alignment | PASS for used inputs | Inherited audited ATD index/count/mapping/cache contracts, period reset and observation-integrity tests pass. |
+| 3 Metric parity | PASS | Official scorer used; canonical/SDK-shadow references agree. Original metric contracts retained; official source pinned at f8f2629ff1e0985f81d7e59d8413678514ee1530. |
+| 4 Temporal correctness | PASS for tested contracts |136 tests pass without skips/errors/failures, plus60 brute-force decoder comparisons. New period/team-swap/loss-masking/activity contracts included. Short-possession recall remains low. |
+| 5 Submission format | PASS | All four clean-source outputs pass official validator;199,319 exact ordered rows,frame/label schema. Exact artifact/source/model gate also checked. |
+| 6 Reproducibility | PASS in tested environments; access conditional | Four byte-identical fresh-source outputs:2macOS ARM,1Linux ARM,1emulated Linux AMD64. Linux network disabled; original two tracking files only. One physical host/operator; training not repeated; repository private. |
+| 7 Evidence quality | PASS with stated limits | Development improvement, in-sample provider regression, technical contracts and historical holdouts separated. No hidden score or no-overfit claim. |
 
-114 unittest cases pass on macOS and Linux ARM, zero errors/failures/skips, plus the existing 60 exhaustive-decoder comparisons. `test_receipt.json` and `test_receipt_linux.json` record test purpose, fixture/assertion location, actual status and rerun command. Initial corruption and Linux optional-dependency failures remain recorded. The test count is not a quality guarantee. Some requirements are conditional or not verified despite green tests; see REQUIREMENTS_COMPLIANCE.md.
+## Model quality and selection
 
-## Measured quality
+| Ten reused PFF development matches | Audited boundary102 | weighted_short_gap | Gain | Wins | Worst game gain |
+|---|---:|---:|---:|---:|---:|
+| Natural Spell F1 |0.655317|0.680009|+0.024692|9/10|−0.002849|
+| Fixed blind sensor stress Spell F1 |0.642574|0.667271|+0.024698|9/10|−0.000622|
+| Natural macro F1 |0.885608|0.895472|+0.009864|—|—|
+| Blind macro F1 |0.877913|0.892163|+0.014250|—|—|
 
-| Scope | Reference source | Spell F1 | Macro F1 | Interpretation |
-|---|---|---:|---:|---|
-| Corrected code, ten existing PFF development games, natural | Original PFF event annotations reconstructed via SDK | 0.655317 | 0.885608 | Familiar-data regression; mean spell change +0.000086 vs pre-audit |
-| Same ten, fixed blind observation stress | Same independent reference, degraded geometry | 0.642574 | 0.877913 | Familiar-data regression; mean spell change +0.000088 |
-| One frozen output, public five-minute window | Organizer's public corrected-tracking reference, 17 possessions | 0.600000 | 0.7548 | **DIAGNOSTIC ONLY — NOT A GENERALIZATION ESTIMATE** |
-| Original source, previously sealed twelve-game PFF final, natural | PFF event-derived reference proxies | 0.604277 | 0.880511 | Original one-shot evidence; v4 spell 0.541801, 12/12 gains. Not rerun or retuned in this audit. |
-| Corrected frozen source, six newly opened PFF bridges, natural | PFF event-state proxies, one familiar country per game | 0.613896 | 0.882073 | Prospective match holdout; v4 0.546054, 6/6 gains; no post-test tuning. |
-| Same six, fixed blind observation stress | Same references, label-blind degraded geometry | 0.594795 | 0.870640 | V4 0.527951, 6/6 gains. |
-| Corrected frozen source, all 36 PFF training matches | Same canonical reference policy | 0.625242 | 0.876044 | In-sample performance only; gap to new six +0.011345 Spell F1. |
+Provider event-derived references are proxies for organizer possession semantics. All ten matches, both scenarios and both reference reconstructions are retained. No six-bridge or twelve-final candidate scores were produced. The selection rule and gates were frozen before composed results; the selected model was frozen before supplementary checks.22 changed policies were evaluated adaptively; the complete failures remain visible. The score increase is development evidence, not independent confirmation of the new model's generalization.
 
-All ten external games and both observation cases were retained; canonical and SDK-shadow results agree. No game loses Spell F1 in this correctness-fix regression. Tiny macro differences (~0.00002 natural / ~0.00004 blind mean loss) are retained. No improvement claim is made from these small changes. The previous twelve final matches were not reopened for corrected-model selection. Exhaustive cross-provider near-duplicate detection is not established. National-team overlap and only two final groups limit uncertainty estimates.
+Natural recall of H/A possessions shorter than3s at IoU0.5 rises65/578→87/578 (11.25%→15.05%). Missing-ball false D on live reference decreases20.99%→19.78%; false live on actual D decreases4.42%→2.86%. Blind equivalents improve22.14%→18.28% and4.21%→3.16%. These frame/recall diagnostics do not replace the official multi-threshold Spell F1.
 
-The published official baseline's full-match score 0.2433 is a reference from the organizers, not a local target test. External PFF scores do not establish superiority over it on the hidden competition match.
+Six preregistered DFL/Metrica/SkillCorner training matches, two scenarios each, all improve and satisfy provider-regression guards. This is explicitly in-sample evidence and is not the six untouched PFF bridges. Portable inference exactly matches all20 development prediction arrays.
 
-## Exact reproduction
+## Implemented changes and rejected alternatives
 
-Audited inference source commit: `1160825` (full SHA in submission_manifest.json). Later Linux-tested commits have identical inference-file hashes. Model weights remain boundary102; preprocessing/stacking/observation correctness repairs are explicit. Latest macOS runs take 33.280 / 25.567 seconds, Linux ARM 28.506 / 21.936, emulated Linux x86-64 59.649 / 42.986. All six official validators pass. The output is byte-identical to the preserved pre-audit CSV.
+The same65-game neural parent was continued with training-only short-spell/missing-ball weights for3000 steps. A matched uniform-loss continuation isolates the effect of weighting. A64-feature player-only activity expert trained on36PFF training games contributes25% of the dead-state estimate when the ball is missing; new neural contributes75%. Other probabilities keep50/50 inherited/new neural fusion. Minimum live duration0.4s and H/A transition cost4.5 are adopted only as part of the qualifying combined model. Minimum D1s and other transition costs9 are retained.
+
+Endpoint gap bridging and visible-contact corrections failed and are absent from production. Decoder-only and old-network gap changes failed the meaningful-gain gate and are not separately promoted. Objective, model, source and selection provenance are in docs/experiments/spell-weighted-finetune/. Portable code lives in mtah/recovery_candidate.py and mtah/recovery_features.py; tools/generate_recovery_candidate.py is the current generator. Regressions cover the real packaged model as well as synthetic contracts.
+
+## Exact reproduction and checklist
+
+Tested source commit: dfc9e860bd28810d0aa768a584eb518e96cee0b6. Later documentation/adoption changes do not alter hashed inference sources or models. Four successful generation times:35.51s,35.30s,39.27s,52.11s. CSV SHA-256:
+
+`1f4602b5b8b04e4066c5478549a9b5e53f13852ca6513f01422906d1dcb1a1c0`
 
 ```sh
-python3.12 -m venv .venv
-.venv/bin/pip install -r requirements-temporal.txt
-.venv/bin/python tools/fetch_reference.py
-.venv/bin/python tools/generate_mixed_candidate.py \
-  --bundle assets/pff-mixed-candidate/bundle.json \
+.venv/bin/python tools/generate_recovery_candidate.py \
+  --bundle assets/recovery-candidate/bundle.json \
   --data-dir /absolute/path/to/data \
   --output 'Ruses Cules.csv'
-.venv/bin/python ref/official/evaluation/validate_submission.py 'Ruses Cules.csv'
+.venv/bin/python tools/final_submission_gate.py --csv 'Ruses Cules.csv'
 ```
 
-CSV SHA-256: `cfbd16ea35075a199d2401c18f162d4c1f953be4049cd776d502ff42ea389c97`.
+CSV: ready locally in out/recovery-ready/. Technical document: ready and copied there. Frozen-weight inference: reproduced on all listed environments. Source: branch codex/short-possession-recovery, private; public access is pending. Organizer upload: not performed. Current manifest binds source/model/input/output/document hashes; parent package is preserved. Full technical setup is in TECHNICAL_DOCUMENT.md.
 
-Package: `out/audit-ready/Ruses Cules.csv`, `out/audit-ready/Ruses Cules.md`, `out/audit-ready/submission_manifest.json`. Organizer source/data and per-frame predictions remain local and ignored. No public visibility change or organizer upload was performed.
+## Confidence and stopping scope
 
-## Submission checklist
+Format confidence is supported by exact contracts and the official validator. Implementation confidence is supported by136 passing tests, real-model invariance and exact20-output parity; this is bounded coverage. Reproducibility confidence is supported across OS/architectures on one host, not independent hardware or repeated training. Rules confidence remains conditional on original provider terms, eligibility and public source access. Generalization evidence for this changed model is limited to reused-development gains and in-sample provider regressions; earlier unseen-match evidence is for its parent.
 
-- CSV: complete and official-format PASS; 199319 rows, exact expected bytes.
-- Code and weights: inspectable on the private audit branch; public URL requirement remains pending user hold.
-- Technical document: updated Markdown describes actual repairs, data provenance and limitations. Earlier PDF describes the original source and should not substitute for this audited document.
-- Reproduction: locally demonstrated with separately installed macOS/Linux dependencies and fresh committed source; an independent hardware/operator rerun of corrected code remains unverified.
-- PFF source: original-provider request path documented; licensing/access qualifications remain explicit, not inferred from a mirror.
-- Team: three to five humans required; registered names/eligibility not independently verified here.
-- Form: not submitted.
-
-## Confidence assessment
-
-Format correctness: high for the exact hashed file. Implementation correctness: strengthened by failing-then-passing synthetic tests, including partial XY/Inf/corrupted-cache contracts, but not exhaustive football semantic or numeric-corruption verification. Rule compliance: no prohibited-use evidence found within the inspected scope; source access and eligibility remain conditions. Reproducibility: directly demonstrated on macOS ARM, Linux ARM and emulated Linux x86-64 on one host. Generalization: historical external-match evidence plus six prospectively frozen new fixtures for the corrected source, with provider/proxy/shared-team limitations. No calibrated success probability is available.
-
-The most likely quality failures remain short possessions, long missing-ball stretches, coordinate jitter, ambiguous control and provider-definition shift. A sparse four-player synthetic end-to-end fixture produced all D: its passing CSV validator proves execution only. Synthetic latent-state decoder tests must not be described as learned recognition of football semantics.
-
-The added 22-player moving-controller fixture passes obvious uninterrupted H/A possession, but a ten-second ball dropout creates false D. This is preserved as a failure, and prompted the registered controlled-gap study. No claim of real-match improvement comes from the synthetic score. The fresh-data recheck found no unused SkillCorner games; SoccerTrack's event-anchored ball is ineligible as independent measured-ball evidence against targets from the same events.
-
-Both controlled-gap candidates were rejected after all ten development games: natural Spell changes −0.000057 / −0.000385; blind changes zero. They are not in the submission. Continuous execution ends at condition B: confirmed implementation fixes and reproducibility work are complete, while a substantially different model cannot be safely promoted without further independent data/validated reference semantics. This is a concrete validation limitation, not a proof that quality cannot improve. The user's public-release/submission hold is preserved. See the stopping boundary in CONTINUOUS_IMPROVEMENT.md.
-
-## Evidence index
-
-- REQUIREMENTS_COMPLIANCE.md — requirement map and unverified conditions.
-- DATA_ALIGNMENT_AUDIT.md — contracts, indices, dimensions, NaN and period handling.
-- METRIC_PARITY_REPORT.md — exact metric and CSV differences.
-- TEMPORAL_SEGMENTATION_AUDIT.md — output morphology and semantic limitations.
-- FAILURE_ANALYSIS.md — severity, pre-fix evidence, repairs, remaining risks.
-- REPRODUCIBILITY_REPORT.md — clean environment, repeated output and scan scope.
-- TECHNICAL_DOCUMENT.md — organizer-facing implemented method and reproduction.
-- CONTINUOUS_IMPROVEMENT.md — additional corrective iterations and model-quality hypothesis.
-- FRESH_DATA_RECHECK.md — primary-source availability and circular-reference checks.
+The requested changes are complete and meet the original adoption gates. Further search on the same ten matches would increase selection bias; no additional change is retained without evidence. A fresh provider-diverse labeled evaluation would strengthen the new model's generalization assessment. Short possessions, sensor jitter, long ball occlusions and cross-provider reference definitions remain risks. No finalist probability is assigned.
