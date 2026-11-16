@@ -1,0 +1,16 @@
+{
+  "purpose": "Evaluate the already selected, audited boundary102 on six previously unopened matches; not training, development, selection or a replacement for the original country-disjoint final.",
+  "user_request": "Find additional independent matches and test overfitting, 16 November 2026, after code/test audit.",
+  "games": ["10512", "10511", "10509", "10507", "10505", "10502"],
+  "old_protocol_preserved": "These six remain excluded from training and model selection. Their first read is registered as a separate match-held-out audit. Previous plans and results are not relabelled.",
+  "models": ["audited current boundary102", "audited v4 control, identical inherited feature repair"],
+  "scenarios": ["natural_detected", "label_blind_seed7"],
+  "references": ["canonical original-provider event-state proxy", "fixed SDK last-row shadow"],
+  "inputs": "Raw VISIBLE geometry only; no labels, estimated ball or event fields. Predictions must be saved before reference decoding.",
+  "primary_metric": "Current pinned official Spell F1 at IoU .3/.4/.5/.6/.7, whole-game equal weight",
+  "secondary": ["macro F1", "per-class F1", "possession counts", "per-match gains", "known-label coverage", "observation coverage", "short-spell recall at IoU .5"],
+  "uncertainty": "Descriptive paired whole-match bootstrap, seed 20261116, 10000 replicates; also resample connected components of shared-team graph. Small n and shared provider/team dependence prevent population-level no-overfitting claims.",
+  "interpretation": "Report all six matches, failures and both scenarios regardless of result. Positive gains support transfer to unseen matches, not universal generalization. Regressions remain visible. No post-test tuning or model switching.",
+  "constraints": ["Old twelve final matches are not reopened", "No provided-match GT access", "No selection on this audit", "No source-file redistribution", "Unusable references count as incomplete audit, never silently dropped"],
+  "known_limitations": "One team in each bridge appeared in PFF train/dev. Same vendor/event-derived references; not a new-provider or wholly unseen-team test. Source identities and hashes will be checked before scoring."
+}
