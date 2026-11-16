@@ -1,0 +1,15 @@
+{
+  "registered_utc": "2026-11-16T16:05:32.437843+00:00",
+  "stage": "Adaptive follow-up after mechanical and learned outcomes, before routing follow-up outcomes",
+  "reason": "Full-match ownership specialization worsens standard fusion; missing-only neural routing improves. Test retaining exact parent observed-ball ownership and switching only missing-ball ownership. Uniform gap100 is matched no-focus comparison.",
+  "candidates": [
+    "control",
+    "uniform_gap100",
+    "uniform_missing_only",
+    "focus_missing_only"
+  ],
+  "training": "Reuse immutable4000step uniform/focus fits, no additional training or parameter search",
+  "routing": "missing_only: parent ownership wherever ball observed, corresponding neural ownership alone where missing. uniform_gap100:50/50boost/uniform where observed, uniform alone missing. Parent D path/decoder exact unchanged.",
+  "gates": "All original mean+.02,8/10wins,worst-.02,macro-.002 and short/missing-wrong guards in both scenarios and both references; no threshold changes.",
+  "prohibited": "No18match/targetGT access, no selection using their metrics"
+}

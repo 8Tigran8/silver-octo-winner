@@ -1,0 +1,10 @@
+{
+  "scope": "Runtime open audit hook probes; paths were rejected before opening contents",
+  "blocked_before_read": [
+    "external/pff/Metadata/10502.json",
+    "external/pff/Metadata/3812.json",
+    "reports/recovery_opened_audit/10502/result.json"
+  ],
+  "fit_score_allowlists": "Only frozen65training and10development identities accepted",
+  "target_or_18match_data_read": false
+}

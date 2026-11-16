@@ -1,0 +1,145 @@
+{
+  "all20_exact_parent_predictions": true,
+  "records": [
+    {
+      "game": "3821",
+      "scenario": "natural_detected",
+      "cache_sha256": "ed226975eef84f1269ec90d42b54c7447593d48fc6b4eb7fe5dc0e7df712cf8f",
+      "geometry_sha256": "43f7f699b6c85e6938181d0249ae613f16746b21aa578ca663f95d6da403bc73",
+      "parent_prediction_equal": true
+    },
+    {
+      "game": "3821",
+      "scenario": "label_blind_seed7",
+      "cache_sha256": "53252af079328e128e99aeefea93ef8aaad2343558ae92e76d0f4c3ba13aa0b8",
+      "geometry_sha256": "43f7f699b6c85e6938181d0249ae613f16746b21aa578ca663f95d6da403bc73",
+      "parent_prediction_equal": true
+    },
+    {
+      "game": "10510",
+      "scenario": "natural_detected",
+      "cache_sha256": "523ca9afa889bf89f226cd8fe554ffb7d1d9471a67d18a6830d682c874275548",
+      "geometry_sha256": "fc185b4bcf5c35914e6322c70f47474485695a6ab46cd0c5772ab4c041fc7163",
+      "parent_prediction_equal": true
+    },
+    {
+      "game": "10510",
+      "scenario": "label_blind_seed7",
+      "cache_sha256": "6231f496ce1938709547eb2c86357b49b0711f554286994c610efa271fdec635",
+      "geometry_sha256": "fc185b4bcf5c35914e6322c70f47474485695a6ab46cd0c5772ab4c041fc7163",
+      "parent_prediction_equal": true
+    },
+    {
+      "game": "10513",
+      "scenario": "natural_detected",
+      "cache_sha256": "de256f4be55acfbf67d78f3a2959958de89ada89dcbff4e41df9725a696f1679",
+      "geometry_sha256": "76082ebe5f9a2a4a9d30948616a2ce39f30a761007b72707c346a622d8d6755a",
+      "parent_prediction_equal": true
+    },
+    {
+      "game": "10513",
+      "scenario": "label_blind_seed7",
+      "cache_sha256": "82154390a8124cd3a7b216dd5d63c0d0bbbce403b0d8a85c15f2e7dafec72dd9",
+      "geometry_sha256": "76082ebe5f9a2a4a9d30948616a2ce39f30a761007b72707c346a622d8d6755a",
+      "parent_prediction_equal": true
+    },
+    {
+      "game": "10516",
+      "scenario": "natural_detected",
+      "cache_sha256": "485640c2b2589c12941f62ca7c7656fb7e6eeb03a6f11a82f248552bc930bc51",
+      "geometry_sha256": "4235e18b269f72d20b017357a7da35c87af7ce3701a5ac04a0e9bd1978497928",
+      "parent_prediction_equal": true
+    },
+    {
+      "game": "10516",
+      "scenario": "label_blind_seed7",
+      "cache_sha256": "44daa20e80b2989800b58249752bc8b07e7539f079202ee5d426ef626dfd2e79",
+      "geometry_sha256": "4235e18b269f72d20b017357a7da35c87af7ce3701a5ac04a0e9bd1978497928",
+      "parent_prediction_equal": true
+    },
+    {
+      "game": "3859",
+      "scenario": "natural_detected",
+      "cache_sha256": "634e7f13a87367d1225bdddfb701184411643cb621c9b7bc3d87ac083160e455",
+      "geometry_sha256": "151ba59ec0031c605390fc14ef27aa79daf9a49dfb4273d62c4edb44243f8eb2",
+      "parent_prediction_equal": true
+    },
+    {
+      "game": "3859",
+      "scenario": "label_blind_seed7",
+      "cache_sha256": "0f0eddfbf0288a4eee54582528d75a24d527c6f0c183ebfa8ac7ae6b4f79a542",
+      "geometry_sha256": "151ba59ec0031c605390fc14ef27aa79daf9a49dfb4273d62c4edb44243f8eb2",
+      "parent_prediction_equal": true
+    },
+    {
+      "game": "3827",
+      "scenario": "natural_detected",
+      "cache_sha256": "17435df1bf6e79de2d09c28e193bdd994e8394c3d294e40f2d836eb5e196f685",
+      "geometry_sha256": "850e9c8681cf9879ed4f480eeb45e49aae08881afb727bf92eff40239ee7d054",
+      "parent_prediction_equal": true
+    },
+    {
+      "game": "3827",
+      "scenario": "label_blind_seed7",
+      "cache_sha256": "b8e94ab1affaad5906d0b7a73dc9d3cef8920bde47c357d58de58b999a578ffc",
+      "geometry_sha256": "850e9c8681cf9879ed4f480eeb45e49aae08881afb727bf92eff40239ee7d054",
+      "parent_prediction_equal": true
+    },
+    {
+      "game": "10503",
+      "scenario": "natural_detected",
+      "cache_sha256": "69d2e4af534c0636b34bd6b5e71b984f97f6f4473c069b7906e9596b77765f67",
+      "geometry_sha256": "fae6eb20eb179daf96e606f9b0d2709eff6dfac2f213a68892100b13b8f8853e",
+      "parent_prediction_equal": true
+    },
+    {
+      "game": "10503",
+      "scenario": "label_blind_seed7",
+      "cache_sha256": "cfc679edacf10b2332b3668446c4dbfeb9e56b2df1a22a25f6120c4197a9903c",
+      "geometry_sha256": "fae6eb20eb179daf96e606f9b0d2709eff6dfac2f213a68892100b13b8f8853e",
+      "parent_prediction_equal": true
+    },
+    {
+      "game": "3858",
+      "scenario": "natural_detected",
+      "cache_sha256": "c52ae37ddec50c73bd771fcea43a53ccdddc5571f5fab58e95c3715acbc3bf64",
+      "geometry_sha256": "40dd6bac86abf509c6c6b765056e09569aaff592f97c9768239e3ee6b481fbe5",
+      "parent_prediction_equal": true
+    },
+    {
+      "game": "3858",
+      "scenario": "label_blind_seed7",
+      "cache_sha256": "8729985d49706a39e244e20ebfb6e6718035eb00f506b930c00192fb3877c2eb",
+      "geometry_sha256": "40dd6bac86abf509c6c6b765056e09569aaff592f97c9768239e3ee6b481fbe5",
+      "parent_prediction_equal": true
+    },
+    {
+      "game": "3838",
+      "scenario": "natural_detected",
+      "cache_sha256": "cb7e543461dc3941879253178674bd83d430bc41862e96ccc3aafdae6e1ec18a",
+      "geometry_sha256": "c71ff93def3691b01ec492cfc1f5d76b9255b56acef38e751cb4681277c046ae",
+      "parent_prediction_equal": true
+    },
+    {
+      "game": "3838",
+      "scenario": "label_blind_seed7",
+      "cache_sha256": "2277acd16386d17bd91f5b1d79702c9a30c955d92b47c2799c3d45124f897c09",
+      "geometry_sha256": "c71ff93def3691b01ec492cfc1f5d76b9255b56acef38e751cb4681277c046ae",
+      "parent_prediction_equal": true
+    },
+    {
+      "game": "3842",
+      "scenario": "natural_detected",
+      "cache_sha256": "22c3bc140550e98aaa01a112c67af1b39639497fb30a5fcaa60fb67ccf679a0d",
+      "geometry_sha256": "8a4ee14ebcc733bd5f9015d7d10c3c3ead49e293d3c85a55e05ec6bbda439978",
+      "parent_prediction_equal": true
+    },
+    {
+      "game": "3842",
+      "scenario": "label_blind_seed7",
+      "cache_sha256": "c95217517ae88d8f3a1325ab8c5c00dfd1bd4714349ca75d9cd115348e7b5df4",
+      "geometry_sha256": "8a4ee14ebcc733bd5f9015d7d10c3c3ead49e293d3c85a55e05ec6bbda439978",
+      "parent_prediction_equal": true
+    }
+  ]
+}
