@@ -1,0 +1,16 @@
+{
+  "registered_utc": "2026-11-16T16:07:57.233811+00:00",
+  "stage": "After routing study, before loss/link candidate fit or scoring",
+  "reason": "focus_missing_only improves natural+.0225 but blind+.0162 below unchanged+.02 gate. Focal loss can soften probabilities, which may suppress short spells under fixed transition penalties. Test analytic posterior link and exact matched gamma0/BCE fit.",
+  "candidates": [
+    "control",
+    "focus_link_missing_only",
+    "focus_bce_missing_only",
+    "focus_bce_gap100"
+  ],
+  "fit": "Same parent,65train games,139scenarios,normalizer,4000steps,seed20261117,optimizer,50%short windows and missing lossx3 as focus; only replace gamma1 focal with BCE. Assert same focused window count and training hashes. No dev-fitting, early stopping or temperature grid.",
+  "link": "For gamma1 binary focal stationary optimum q=A/(A+B), A=p/(1-p)-ln(1-p), B=(1-p)/p-ln(p). Apply separately to direct/swapped logits before symmetry average and upsample. No fitted parameters. This is a hypothesis, not a claim of empirical calibration.",
+  "routing": "missing_only retains parent observed-ball H/A. gap100 uses50/50inherited/newBCE on observed. All new candidates use corresponding NN alone missing. D/decoder frozen.",
+  "gates": "Unchanged original gates in both scenarios/references including mean+.02 and8/10wins; short recall and missing wrong-team may not worsen.",
+  "prohibited": "No18match/targetGT access; no numerical tuning using prior audit outcomes"
+}

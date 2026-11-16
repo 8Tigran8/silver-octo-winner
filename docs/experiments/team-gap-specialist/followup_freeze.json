@@ -1,0 +1,14 @@
+{
+  "frozen_utc": "2026-11-16T16:05:58.513075+00:00",
+  "source_commit": "0e979f11e7ec8d1cab4e0bd81648e209738ce4f0",
+  "files_sha256": {
+    "tools/team_gap_followup.py": "a95d69f24d1d189b179ab2b8eea0ce866c14c374fb116b4f9fa767cf28fc28e5",
+    "tests/test_team_gap_followup.py": "3ab7bc7242411adbc5727041ba2ee46a5033ba6661b092bd706ddab3b3d0d25d",
+    "tools/report_team_gap_specialist.py": "9eba78c058cd15ee5264b25c5354420cfbaf43086e74d1e62816ce9b30254442",
+    "docs/experiments/team-gap-specialist/followup_plan.json": "5caa7b5104a4048ba9927ef67ae7b3f17ea57c4d107ed69506363ac937bdfa77",
+    "reports/team_gap_specialist/uniform/model.pt": "6ca12d983f25d5cf2269510abcfdcbd707ac689bd95d943190dc0b57a17845c5",
+    "reports/team_gap_specialist/uniform/meta.json": "cdf42723c36a66aeda45c371cd4b9db8894026fb91a94dce9a8dc8d902117c6a",
+    "reports/team_gap_specialist/focus/model.pt": "2b931e44c4b38a977309ae5c47c8cd24345dc87ee11d5e03c8c560916dafb73c",
+    "reports/team_gap_specialist/focus/meta.json": "2e6769fab97a6d3fa92941c6a57598e208c17326096c416711df3405efe30ad0"
+  }
+}
