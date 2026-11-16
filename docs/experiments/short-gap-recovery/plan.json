@@ -1,0 +1,113 @@
+{
+  "status": "Registered before candidate development scores",
+  "purpose": "Improve short possessions and missing-ball false stoppages; all six new bridge audit fixtures and old twelve final games stay excluded from experiments.",
+  "training_games": [
+    "3816",
+    "3854",
+    "3850",
+    "3836",
+    "3831",
+    "10506",
+    "3846",
+    "10514",
+    "3819",
+    "3853",
+    "3855",
+    "3832",
+    "3833",
+    "3823",
+    "3834",
+    "3822",
+    "10504",
+    "3835",
+    "3847",
+    "3840",
+    "3824",
+    "3837",
+    "3851",
+    "3817",
+    "3815",
+    "10517",
+    "3839",
+    "10515",
+    "3813",
+    "3828",
+    "3848",
+    "3852",
+    "10508",
+    "3818",
+    "3820",
+    "3849"
+  ],
+  "development_games": [
+    "10510",
+    "3821",
+    "10513",
+    "10516",
+    "3859",
+    "3827",
+    "10503",
+    "3858",
+    "3838",
+    "3842"
+  ],
+  "scenarios": [
+    "natural_detected",
+    "label_blind_seed7"
+  ],
+  "mechanical_candidates": [
+    "control",
+    "short04",
+    "short04_ha45",
+    "neural",
+    "bridge",
+    "short_neural",
+    "short_bridge"
+  ],
+  "expert_candidates": [
+    "control",
+    "expert25",
+    "expert50",
+    "short_expert25",
+    "short_expert50"
+  ],
+  "hypotheses": {
+    "short": "Reduce minimum live duration to .4 s; separately reduce H/A switch cost from 9 to 4.5 while preserving D transition costs and duration.",
+    "neural": "Use existing temporal D probability rather than equal mixture on missing-ball frames only; no H/A change.",
+    "bridge": "Subtract one from D log odds inside gaps <=10s with finite interior endpoints [.03,.97] and endpoint D<=.2; do not fill coordinates.",
+    "expert": "Binary D classifier on period-local, team/slot/reflection-invariant player activity at .4/1s displacement and .5/2/6s context, without ball/features/probability/identity inputs. Fit on all36 original training matches, natural plus fixed blind degradation, missing-ball frames only, sample every10 frames, equal-match weights. Blend D .25/.5 on missing frames only; fixed short-policy combinations."
+  },
+  "expert_parameters": {
+    "max_iter": 150,
+    "learning_rate": 0.05,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 200,
+    "l2_regularization": 10.0,
+    "max_bins": 128,
+    "early_stopping": false,
+    "random_state": 20261116
+  },
+  "gate_each_scenario": {
+    "mean_spell_gain_at_least": 0.02,
+    "positive_games_at_least": 8,
+    "worst_game_spell_gain_at_least": -0.02,
+    "mean_macro_gain_at_least": -0.002
+  },
+  "additional_reporting": [
+    "H/A/D F1",
+    "under3s spell recall at IoU .5",
+    "false D conditional on missing-ball live reference",
+    "false live conditional on missing-ball dead reference",
+    "per-game differences",
+    "canonical and SDK-shadow reference"
+  ],
+  "selection": "Only candidates passing gates on both scenarios and both reference reconstructions. Rank by minimum scenario Spell gain, then simplicity. Retain no failed policy in production; preserve failed experiment evidence. No further threshold search based on these results.",
+  "limitations": "Adaptive development on ten familiar games, not fresh confirmation. Existing six-match and original final scores describe the old frozen model only and cannot be assigned to any changed candidate.",
+  "prohibited": [
+    "six bridge data/predictions/references/results for any candidate comparison",
+    "old twelve final data/predictions/references",
+    "provided-match GT",
+    "target-specific thresholds or manual corrections"
+  ],
+  "production": "Unchanged until a candidate qualifies and all needed invariance, reproduction and official-validator checks pass. No organizer submission."
+}
