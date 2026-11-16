@@ -1,0 +1,7 @@
+{
+  "scope": "All36 existing PFF training games, current weighted_short_gap, natural detections only; no fitting/selection",
+  "purpose": "Measure current in-sample level alongside18 reopened audit and10 existing development results. Do not infer absence of overfit from small gap or different fixture difficulty.",
+  "data": "Only original verified training geometry/reference caches; keep heldout identities excluded from fitting",
+  "control": "Stored prior boundary102 scores on exact36 training games; same audited source/models retained",
+  "freeze": "New script and original caches are hashed before current training scores"
+}
