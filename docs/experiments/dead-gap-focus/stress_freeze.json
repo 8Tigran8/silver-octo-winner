@@ -1,0 +1,12 @@
+{
+  "frozen_utc": "2026-11-16T21:32:53.707385+00:00",
+  "source_commit": "36124590f6a25f1c5473b22ea4c07ed4c4dfcf09",
+  "files_sha256": {
+    "tools/dead_gap_novel_stress.py": "dd16e78342fd4cb36e74e21fea0c98a3e99d67d7af62011cb839b09bdda9b064",
+    "docs/experiments/dead-gap-focus/stress_plan.json": "1600b90e9942c72b16c30875bb1f737e1435abec4e54762a29e6f2a5475c9945",
+    "reports/dead_gap_focus/uniform/model.pt": "2a45f288a0465f5581514d19c8eebb5711797ec78d768ec3d96e560087f15dc8",
+    "reports/dead_gap_focus/uniform/meta.json": "ce5aa8e1fe7e397d45f82f531ad43db5a0cdca369acbac81e85ee8b89a6ec125",
+    "reports/dead_gap_focus/focus/model.pt": "e53bd4ba9c2764128a4802d7573d11345a2bb99a66ab20784040b15753b8433b",
+    "reports/dead_gap_focus/focus/meta.json": "aef3d0f2147163adc8a8fa2e25d819def42c2b1f857399ae88d590fe9c09126c"
+  }
+}

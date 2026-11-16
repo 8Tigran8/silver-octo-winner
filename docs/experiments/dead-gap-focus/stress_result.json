@@ -1,0 +1,215 @@
+{
+  "summary": [
+    {
+      "scenario": "novel_23",
+      "reference": "canonical",
+      "baseline_spell": 0.667221492167738,
+      "candidate_spell": 0.6870053326190463,
+      "gain": 0.019783840451308377,
+      "wins": 8,
+      "worst": -0.012193635921460277,
+      "macro_gain": 0.004576517122307278,
+      "dead_f1_gain": 0.0022374797869789353,
+      "counts": {
+        "short_reference": 578,
+        "short_matched": 123,
+        "missing_live": 381590,
+        "missing_false_dead": 67375,
+        "missing_dead": 539887,
+        "missing_false_live": 17032,
+        "missing_wrong_team": 32841
+      },
+      "control_counts": {
+        "short_reference": 578,
+        "short_matched": 79,
+        "missing_live": 381590,
+        "missing_false_dead": 70940,
+        "missing_dead": 539887,
+        "missing_false_live": 16355,
+        "missing_wrong_team": 35789
+      },
+      "gates": {
+        "mean_gain": false,
+        "wins": true,
+        "worst": true,
+        "macro": true,
+        "dead_f1": true,
+        "missing_false_live": true,
+        "short_recall": true,
+        "missing_wrong_team": true
+      },
+      "pass_all": false,
+      "per_game_gain": {
+        "10510": -0.012193635921460277,
+        "3821": 0.04270045128468736,
+        "10513": 0.02823412643709866,
+        "10516": 0.020206043557093545,
+        "3859": 0.03749657013145735,
+        "3827": -0.0017157660100006744,
+        "10503": 0.004612565629514842,
+        "3858": 0.03495092551612833,
+        "3838": 0.026313138251591317,
+        "3842": 0.017233985636973315
+      }
+    },
+    {
+      "scenario": "novel_23",
+      "reference": "sdk_shadow",
+      "baseline_spell": 0.667221492167738,
+      "candidate_spell": 0.6870053326190463,
+      "gain": 0.019783840451308377,
+      "wins": 8,
+      "worst": -0.012193635921460277,
+      "macro_gain": 0.004576517122307278,
+      "dead_f1_gain": 0.0022374797869789353,
+      "counts": {
+        "short_reference": 578,
+        "short_matched": 123,
+        "missing_live": 381590,
+        "missing_false_dead": 67375,
+        "missing_dead": 539887,
+        "missing_false_live": 17032,
+        "missing_wrong_team": 32841
+      },
+      "control_counts": {
+        "short_reference": 578,
+        "short_matched": 79,
+        "missing_live": 381590,
+        "missing_false_dead": 70940,
+        "missing_dead": 539887,
+        "missing_false_live": 16355,
+        "missing_wrong_team": 35789
+      },
+      "gates": {
+        "mean_gain": false,
+        "wins": true,
+        "worst": true,
+        "macro": true,
+        "dead_f1": true,
+        "missing_false_live": true,
+        "short_recall": true,
+        "missing_wrong_team": true
+      },
+      "pass_all": false,
+      "per_game_gain": {
+        "10510": -0.012193635921460277,
+        "3821": 0.04270045128468736,
+        "10513": 0.02823412643709866,
+        "10516": 0.020206043557093545,
+        "3859": 0.03749657013145735,
+        "3827": -0.0017157660100006744,
+        "10503": 0.004612565629514842,
+        "3858": 0.03495092551612833,
+        "3838": 0.026313138251591317,
+        "3842": 0.017233985636973315
+      }
+    },
+    {
+      "scenario": "novel_101",
+      "reference": "canonical",
+      "baseline_spell": 0.6629578761744046,
+      "candidate_spell": 0.6884003467394291,
+      "gain": 0.025442470565024723,
+      "wins": 10,
+      "worst": 0.015937966000596493,
+      "macro_gain": 0.004095880944815699,
+      "dead_f1_gain": 0.0020932075357498305,
+      "counts": {
+        "short_reference": 578,
+        "short_matched": 126,
+        "missing_live": 379749,
+        "missing_false_dead": 66821,
+        "missing_dead": 540683,
+        "missing_false_live": 17003,
+        "missing_wrong_team": 32897
+      },
+      "control_counts": {
+        "short_reference": 578,
+        "short_matched": 78,
+        "missing_live": 379749,
+        "missing_false_dead": 70430,
+        "missing_dead": 540683,
+        "missing_false_live": 16148,
+        "missing_wrong_team": 35574
+      },
+      "gates": {
+        "mean_gain": true,
+        "wins": true,
+        "worst": true,
+        "macro": true,
+        "dead_f1": true,
+        "missing_false_live": true,
+        "short_recall": true,
+        "missing_wrong_team": true
+      },
+      "pass_all": true,
+      "per_game_gain": {
+        "10510": 0.020684146175791285,
+        "3821": 0.04389785557323633,
+        "10513": 0.023352944536471076,
+        "10516": 0.032047325102880664,
+        "3859": 0.015937966000596493,
+        "3827": 0.016691522454898133,
+        "10503": 0.02212837765121678,
+        "3858": 0.022547039017627335,
+        "3838": 0.029137529137529095,
+        "3842": 0.028000000000000025
+      }
+    },
+    {
+      "scenario": "novel_101",
+      "reference": "sdk_shadow",
+      "baseline_spell": 0.6629578761744046,
+      "candidate_spell": 0.6884003467394291,
+      "gain": 0.025442470565024723,
+      "wins": 10,
+      "worst": 0.015937966000596493,
+      "macro_gain": 0.004095880944815699,
+      "dead_f1_gain": 0.0020932075357498305,
+      "counts": {
+        "short_reference": 578,
+        "short_matched": 126,
+        "missing_live": 379749,
+        "missing_false_dead": 66821,
+        "missing_dead": 540683,
+        "missing_false_live": 17003,
+        "missing_wrong_team": 32897
+      },
+      "control_counts": {
+        "short_reference": 578,
+        "short_matched": 78,
+        "missing_live": 379749,
+        "missing_false_dead": 70430,
+        "missing_dead": 540683,
+        "missing_false_live": 16148,
+        "missing_wrong_team": 35574
+      },
+      "gates": {
+        "mean_gain": true,
+        "wins": true,
+        "worst": true,
+        "macro": true,
+        "dead_f1": true,
+        "missing_false_live": true,
+        "short_recall": true,
+        "missing_wrong_team": true
+      },
+      "pass_all": true,
+      "per_game_gain": {
+        "10510": 0.020684146175791285,
+        "3821": 0.04389785557323633,
+        "10513": 0.023352944536471076,
+        "10516": 0.032047325102880664,
+        "3859": 0.015937966000596493,
+        "3827": 0.016691522454898133,
+        "10503": 0.02212837765121678,
+        "3858": 0.022547039017627335,
+        "3838": 0.029137529137529095,
+        "3842": 0.028000000000000025
+      }
+    }
+  ],
+  "decision": "Diagnostic only; original registration failed, so no automatic adoption regardless of this outcome",
+  "independent_matches": false,
+  "original18read": false
+}

@@ -1,0 +1,178 @@
+{
+  "scope": "Original ten development games; canonical event proxy; exploratory diagnosis after selection rejection, not new acceptance criteria",
+  "best_rejected": "uniform_temporal_focus",
+  "results": {
+    "natural_detected": {
+      "control": {
+        "spells": {
+          "<1s": {
+            "reference": 97,
+            "matched": 1
+          },
+          "1-3s": {
+            "reference": 481,
+            "matched": 86
+          },
+          "3-10s": {
+            "reference": 985,
+            "matched": 590
+          },
+          ">=10s": {
+            "reference": 1124,
+            "matched": 996
+          }
+        },
+        "missing": {
+          "<1s": {
+            "live": 42163,
+            "wrong_team": 3367,
+            "false_dead": 773
+          },
+          "1-3s": {
+            "live": 68692,
+            "wrong_team": 4938,
+            "false_dead": 1194
+          },
+          "3-10s": {
+            "live": 115928,
+            "wrong_team": 16296,
+            "false_dead": 5447
+          },
+          ">=10s": {
+            "live": 112915,
+            "wrong_team": 8450,
+            "false_dead": 59782
+          }
+        }
+      },
+      "uniform_temporal_focus": {
+        "spells": {
+          "<1s": {
+            "reference": 97,
+            "matched": 0
+          },
+          "1-3s": {
+            "reference": 481,
+            "matched": 131
+          },
+          "3-10s": {
+            "reference": 985,
+            "matched": 646
+          },
+          ">=10s": {
+            "reference": 1124,
+            "matched": 1010
+          }
+        },
+        "missing": {
+          "<1s": {
+            "live": 42163,
+            "wrong_team": 3336,
+            "false_dead": 862
+          },
+          "1-3s": {
+            "live": 68692,
+            "wrong_team": 4895,
+            "false_dead": 1371
+          },
+          "3-10s": {
+            "live": 115928,
+            "wrong_team": 14068,
+            "false_dead": 4914
+          },
+          ">=10s": {
+            "live": 112915,
+            "wrong_team": 7704,
+            "false_dead": 56706
+          }
+        }
+      }
+    },
+    "label_blind_seed7": {
+      "control": {
+        "spells": {
+          "<1s": {
+            "reference": 97,
+            "matched": 1
+          },
+          "1-3s": {
+            "reference": 481,
+            "matched": 75
+          },
+          "3-10s": {
+            "reference": 985,
+            "matched": 574
+          },
+          ">=10s": {
+            "reference": 1124,
+            "matched": 993
+          }
+        },
+        "missing": {
+          "<1s": {
+            "live": 39384,
+            "wrong_team": 3216,
+            "false_dead": 778
+          },
+          "1-3s": {
+            "live": 67052,
+            "wrong_team": 4566,
+            "false_dead": 1093
+          },
+          "3-10s": {
+            "live": 122019,
+            "wrong_team": 15617,
+            "false_dead": 5733
+          },
+          ">=10s": {
+            "live": 152076,
+            "wrong_team": 11618,
+            "false_dead": 61970
+          }
+        }
+      },
+      "uniform_temporal_focus": {
+        "spells": {
+          "<1s": {
+            "reference": 97,
+            "matched": 1
+          },
+          "1-3s": {
+            "reference": 481,
+            "matched": 110
+          },
+          "3-10s": {
+            "reference": 985,
+            "matched": 625
+          },
+          ">=10s": {
+            "reference": 1124,
+            "matched": 1003
+          }
+        },
+        "missing": {
+          "<1s": {
+            "live": 39384,
+            "wrong_team": 3217,
+            "false_dead": 830
+          },
+          "1-3s": {
+            "live": 67052,
+            "wrong_team": 4550,
+            "false_dead": 1253
+          },
+          "3-10s": {
+            "live": 122019,
+            "wrong_team": 13753,
+            "false_dead": 5542
+          },
+          ">=10s": {
+            "live": 152076,
+            "wrong_team": 11136,
+            "false_dead": 59075
+          }
+        }
+      }
+    }
+  }
+}
