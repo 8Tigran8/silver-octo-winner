@@ -12,7 +12,9 @@
 
 import hashlib
 import os
+import tempfile
 import xml.etree.ElementTree as ET
+import zipfile
 
 import numpy as np
 
@@ -42,7 +44,8 @@ def read_meta(meta_path):
 
 def _f(s):
     try:
-        return float(s)
+        value = float(s)
+        return value if np.isfinite(value) else np.nan
     except ValueError:
         return np.nan
 
@@ -68,6 +71,8 @@ def parse_raw(raw_path, n_slots):
             for s, g in enumerate(groups[:n_slots]):
                 if g and g[0] != "N":
                     v = g.split(",")
+                    if len(v) < 2:
+                        raise ValueError("Malformed player coordinates at line {}".format(i + 1))
                     players[i, s, 0] = _f(v[0])
                     players[i, s, 1] = _f(v[1])
                     if len(v) > 2:
@@ -80,6 +85,36 @@ def parse_raw(raw_path, n_slots):
     return {"ball": ball, "ball_nfields": ball_nf, "players": players, "frame_ids": frame_ids}
 
 
+def _validate_arrays(d, n_slots):
+    """Reject incomplete/corrupt cache contracts before inference or cache writes."""
+    ids = d["frame_ids"]
+    if not (ids.ndim == 1 and np.issubdtype(ids.dtype, np.integer) and len(ids)
+            and np.array_equal(ids, np.arange(1, len(ids) + 1))):
+        raise ValueError("frame_id не идут 1..N подряд — выравнивание не то, что в DATA.md")
+    n = len(ids)
+    for key, shape in (("ball", (n, 3)), ("players", (n, n_slots, 3))):
+        arr = d[key]
+        if arr.shape != shape or not np.issubdtype(arr.dtype, np.floating) or np.isinf(arr).any():
+            raise ValueError("Invalid tracking array: " + key)
+    nf = d["ball_nfields"]
+    if nf.shape != (n,) or not np.issubdtype(nf.dtype, np.integer) or (nf < 1).any():
+        raise ValueError("Invalid ball field counts")
+
+
+def _write_cache(cache, d):
+    """An interrupted process must not leave a partially written shared cache."""
+    folder = os.path.dirname(cache)
+    os.makedirs(folder, exist_ok=True)
+    fd, temporary = tempfile.mkstemp(prefix=".atd-", suffix=".npz", dir=folder)
+    try:
+        with os.fdopen(fd, "wb") as stream:
+            np.savez(stream, **d)
+        os.replace(temporary, cache)
+    finally:
+        if os.path.exists(temporary):
+            os.unlink(temporary)
+
+
 def load(source="tactical", use_cache=True):
     """Трекинг, выровненный по кадрам видео (строка i = кадр i)."""
     meta_path, raw_path = asset("atd_meta", source), asset("atd_raw", source)
@@ -88,24 +123,28 @@ def load(source="tactical", use_cache=True):
             raise IOError("нет файла данных: {}\nРаспакуй пакет организаторов в data/ "
                           "(или задай MTAH_DATA_DIR).".format(p))
     names, slot_team = read_meta(meta_path)
-    # имя кэша зависит от пути к данным, чтобы синтетика и настоящий матч не перепутались
-    digest = hashlib.sha256()
+    # Cache identity includes source bytes and parser contract, not path/mtime.
+    digest = hashlib.sha256(b"atd-parser-v2\0")
     for file in (meta_path, raw_path):
         with open(file, "rb") as stream:
             for block in iter(lambda: stream.read(1024*1024), b""):
                 digest.update(block)
     key = digest.hexdigest()
     cache = os.path.join(CACHE_DIR, "atd_{}_{}.npz".format(source, key))
+    d = None
     if use_cache and os.path.isfile(cache):
-        d = dict(np.load(cache))
-    else:
+        try:
+            with open(cache, "rb") as stream:
+                with np.load(stream, allow_pickle=False) as archive:
+                    d = dict(archive)
+            _validate_arrays(d, len(slot_team))
+        except (OSError, ValueError, KeyError, EOFError, zipfile.BadZipFile):
+            d = None  # Cache is disposable; the source remains authoritative.
+    if d is None:
         d = parse_raw(raw_path, len(slot_team))
-        os.makedirs(CACHE_DIR, exist_ok=True)
-        np.savez(cache, **d)
+        _validate_arrays(d, len(slot_team))
+        _write_cache(cache, d)
     d = dict(d)
-    ids = d["frame_ids"]
-    if not (len(ids) and ids[0] == 1 and np.array_equal(ids, np.arange(1, len(ids) + 1))):
-        raise ValueError("frame_id не идут 1..N подряд — выравнивание не то, что в DATA.md")
     d["slot_team"] = slot_team
     d["team_names"] = names
     return d
@@ -114,8 +153,8 @@ def load(source="tactical", use_cache=True):
 def summary(d):
     """Сводка без сырых значений — её можно показывать."""
     n = len(d["frame_ids"])
-    ball_seen = ~np.isnan(d["ball"][:, 0])
-    n_players = (~np.isnan(d["players"][:, :, 0])).sum(axis=1)
+    ball_seen = np.isfinite(d["ball"][:, :2]).all(axis=1)
+    n_players = np.isfinite(d["players"][:, :, :2]).all(axis=2).sum(axis=1)
     nf = np.bincount(d["ball_nfields"], minlength=6)
     return {
         "кадров": n,

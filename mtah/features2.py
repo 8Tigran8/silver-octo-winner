@@ -43,7 +43,7 @@ def _gap_info(seen):
 def _interp(x, seen):
     """Линейная подстановка мяча в дырах (по краям — ближайшее известное)."""
     idx = np.flatnonzero(seen)
-    if len(idx) < 2:
+    if not len(idx):
         return np.zeros_like(x)
     return np.interp(np.arange(len(x)), idx, x[idx])
 
@@ -125,9 +125,9 @@ def _build(d, segments, swap):
         team = 1 - team
     ball = d["ball"][:, :2] * np.array([L, W])
     pl = d["players"][:, :, :2] * np.array([L, W])
-    sp = d["players"][:, :, 2]
-    vis = np.isfinite(pl[:, :, 0])
-    seen = np.isfinite(ball[:, 0])
+    sp = np.where(np.isfinite(d["players"][:, :, 2]), d["players"][:, :, 2], np.nan)
+    vis = np.isfinite(pl).all(axis=2)
+    seen = np.isfinite(ball).all(axis=1)
 
     bi = np.stack([_interp(ball[:, 0], seen), _interp(ball[:, 1], seen)], axis=1)
     h = _team_stats(pl, sp, vis & (team[None, :] == 0), bi, L)
