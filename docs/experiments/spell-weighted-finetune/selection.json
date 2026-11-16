@@ -1,0 +1,19 @@
+{
+  "selected": "weighted_short_gap",
+  "status": "Frozen before supplementary cross-provider checks or artifact generation",
+  "selection_rule": "Original minimum-scenario-gain rule; no thresholds changed",
+  "development_result_sha256": "eed475ba976c9346135162e04f4f22ae963154d1b64e62cced47e3b2b4bc929c",
+  "neural_sha256": "aadb7e73228fdeed29a9c79d9edf0beaed1183a4d97731d04ef62a50c07f8a07",
+  "activity_sha256": "287dbb28ebf592e761b8b958d413362e28d18ca5a1953c75af5d5029dd7599e2",
+  "decoder_overrides": {
+    "min_team_s": 0.4,
+    "cost_ha": 4.5
+  },
+  "missing_dead_blend": {
+    "weighted_temporal": 0.75,
+    "activity": 0.25
+  },
+  "observed_dead_and_team_blend": "same50/50 inherited/new neural",
+  "supplementary_required": true,
+  "production_adopted": false
+}
