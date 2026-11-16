@@ -119,7 +119,7 @@ def main():
   'Ruses Cules.csv'"""
     story.append(Preformatted(commands,STYLES['CodeTeam']))
     add(f"Two clean committed-source CPU generations passed the official validator and produced identical CSV bytes in {proof['runs'][0]['seconds']:.3f}s and {proof['runs'][1]['seconds']:.3f}s. Observed peak child RSS was {proof['peak_child_RSS_mb']/1024:.2f} GiB. Organizer/model input hashes remained unchanged. This repeats frozen-weight inference, not training. Source: {proof['source_commit'][:12]}; the same inference core remained frozen through final validation.")
-    add('VV reports byte-identical historical v4 output on Linux ARM. The current boundary102 file has not yet been independently reproduced on Linux; no cross-platform identity claim is made for it.', 'SmallTeam')
+    add('VV reports two matching boundary102 CPU runs and format PASS on Linux ARM, using archive 072feab with local Git. This teammate report is not an audited upstream clone or Linux/x86 proof.', 'SmallTeam')
     digest=proof['runs'][0]['csv_sha256'];add('CSV SHA-256:<br/><font name="Courier" size="8.7">'+digest[:32]+'<br/>'+digest[32:]+'</font>')
     add('Bundle/checkpoint/metadata and inherited hashes are checked before loading; the new checkpoint uses weights-only deserialization. Optional fitting and whole-fold provenance are documented. Organizer assets, raw PFF tracking, references and frame predictions are excluded from the repository.')
     add('Overfit and remaining limits','SectionTeam')
