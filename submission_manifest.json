@@ -76,8 +76,28 @@
     "mtah/possession_context.py": "973319eb341eebb0576a0c82cfe1d18addbc055ae8c2e6305bff50768fce2e30",
     "mtah/external.py": "6497791710cb3aacbbd41ab485d4e878604ec2ec74c0766a5c972491975b2b67",
     "mtah/tagging.py": "c3f1d798017e0f274edc12785a2a1401ad02c2012e618adeddc94b32d9c848db",
+    "mtah/methods/baseline.py": "9d2f816da3b604df0d66434f1a8527d9146686d51462d22bd9d263484859e5ac",
+    "mtah/methods/boost.py": "60807b94a981b9fc3eb7c450eed474a078fc6e065fae882529d590d28c8ce9e6",
+    "mtah/methods/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mtah/methods/boost_train.py": "c3e8156605e7c6950f29ae2eabbc10f73f1ac8a049fc9189ea301d5f48f3408f",
+    "mtah/methods/viterbi.py": "a6630d3880526214e7cc386d16490b06255ae78590900c64c35d70fbd01b72eb",
     "tools/generate_mixed_candidate.py": "e756a06948b7040d5b60ecf64ff60cf908d107858b3789e9d8dac367c85c98f1"
   },
   "technical_document": "out/audit-ready/Ruses Cules.md",
-  "technical_document_sha256": "0569705456a333d271f1c600f4cad75a77b5eb1b042a619060b69b7724c692d6"
+  "technical_document_sha256": "0569705456a333d271f1c600f4cad75a77b5eb1b042a619060b69b7724c692d6",
+  "model_file_sha256": {
+    "assets/v4/temporal_state.pt": "d2628a2ddb790175f100e54d76c4e2aa89ebfce8179931e3c531d24c88816a90",
+    "assets/v4/README.md": "8f6217877f00e1b58e5827be749c24f3c7768c76e715a0a3b2813cffd3cafe2f",
+    "assets/v4/manifest.json": "25729febd8697681eebaaad12dbea2d0b0d65c90d93d3ed876bfaec5f3253cd8",
+    "assets/v4/team_external.pkl": "9f0688b4a6197d7134153993576a172000e42ae40619174819fbfcf62dc7cf18",
+    "assets/v4/base_external.pkl": "f2f33ae6ac086d976ed9712110e542ad68588ed489d0c0fc212a47635731c682",
+    "assets/pff-mixed-candidate/model.pt": "a727ef64efbfba338f5aab3f41782a906d2739ae90e96c308be82adc495fd944",
+    "assets/pff-mixed-candidate/bundle.json": "d71bdd23e0ab2ef49823298a6a1a62e33862140ea0d8a40086f35b916ac8946b",
+    "assets/pff-mixed-candidate/README.md": "9a68c3bc049b8463c61fb3930d692a05d673b0e1f1af2fa163bb71063ab9d9a7",
+    "assets/pff-mixed-candidate/meta.json": "a5f5e2188eba9a87afbf4571b80eec77294e7ba1d8c073306bd478f78b032e62",
+    "mtah/expanded_team_training.json": "659a8d7ee9f4f3f9947a8394d2f8a72142b7405b24f182f96fb0e726250a87a8",
+    "mtah/methods/v3_params.json": "946109d611a251e60ecc434f8690d83b83a6f63e236c647027c3168c75cc4da5",
+    "mtah/methods/v2_params.json": "22888607bace4e71118aa6445d7360ee18ac7019869bf37c46bc8a2b6506201a",
+    "mtah/methods/v1_params.json": "01f8e02238da5dc7f3aa3fd49b2a7f2be6089ea2c974a616bd170e611ba34c6d"
+  }
 }

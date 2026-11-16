@@ -1,0 +1,7 @@
+{
+  "exact_audited_file": "PASS",
+  "one_label_tamper": "REJECTED as required",
+  "official_validator": "PASS",
+  "source_model_config_hashes": "PASS",
+  "command": "python tools/final_submission_gate.py --csv \"out/audit-ready/Ruses Cules.csv\""
+}

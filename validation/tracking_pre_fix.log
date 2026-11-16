@@ -10,7 +10,7 @@ Traceback (most recent call last):
     assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
   File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 988, in assert_array_compare
     raise AssertionError(msg)
-AssertionError: 
+AssertionError:
 Not equal to tolerance rtol=1e-07, atol=0
 
 Mismatched elements: 600 / 52200 (1.15%)
