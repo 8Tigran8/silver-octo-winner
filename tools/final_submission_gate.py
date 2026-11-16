@@ -4,7 +4,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def main():
- p=argparse.ArgumentParser();p.add_argument('--csv',type=Path,required=True);a=p.parse_args();m=json.loads((ROOT/'submission_manifest.json').read_text());expected=m['runs'][0]['sha256']
+ p=argparse.ArgumentParser();p.add_argument('--csv',type=Path,required=True);p.add_argument('--manifest',type=Path,default=ROOT/'submission_manifest.json');a=p.parse_args();m=json.loads(a.manifest.read_text());expected=m['runs'][0]['sha256']
  if sha(a.csv)!=expected:raise ValueError('CSV differs from audited output')
  for name,digest in m['inference_source_sha256'].items():
   if sha(ROOT/name)!=digest:raise ValueError('Inference source changed: '+name)

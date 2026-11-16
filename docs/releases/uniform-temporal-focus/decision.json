@@ -1,0 +1,27 @@
+{
+  "registered_utc": "2026-11-16T23:08:37.341311+00:00",
+  "candidate": "uniform_temporal_focus",
+  "authority": "User explicitly authorizes adoption if packaging, clean reproduction and official validator pass; preserve rollback; no organizer submission",
+  "historical_gate": "Original mean+0.02 gate FAILED on seed7; preserve unchanged research reports. User authorizes reasoned adoption review instead of treating arbitrary effect-size cutoff as absolute.",
+  "frozen_model_files": {
+    "owner_meta.json": "2e6769fab97a6d3fa92941c6a57598e208c17326096c416711df3405efe30ad0",
+    "dead_meta.json": "ce5aa8e1fe7e397d45f82f531ad43db5a0cdca369acbac81e85ee8b89a6ec125",
+    "activity_meta.json": "ccddd31252110e1c70381ae8cf6944d3b0fe3a648256756fe131c6f2ef047648",
+    "dead.pt": "2a45f288a0465f5581514d19c8eebb5711797ec78d768ec3d96e560087f15dc8",
+    "activity.pt": "2e3230ac3d30952930aaa011c4804e9c8689a327ca67b148a31e6355cc093539",
+    "owner.pt": "2b931e44c4b38a977309ae5c47c8cd24345dc87ee11d5e03c8c560916dafb73c"
+  },
+  "conditions": [
+    "Exact parity with frozen development predictions",
+    "Regression tests",
+    "Four clean-source identical CSV generations on macOS twice and offline Linux ARM/AMD64",
+    "Pinned official validator PASS",
+    "Preserve old bundle, manifest, CSV and source for rollback"
+  ],
+  "prohibited": [
+    "No new fitting or tuning",
+    "No18audit or targetGT reads",
+    "No organizer submission",
+    "No repository visibility change"
+  ]
+}

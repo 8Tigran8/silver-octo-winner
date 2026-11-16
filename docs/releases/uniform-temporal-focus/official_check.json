@@ -1,0 +1,26 @@
+{
+  "checked_utc": "2026-11-16T23:10:11.925416+00:00",
+  "files": [
+    {
+      "file": "evaluation/possession_metrics.py",
+      "url": "https://raw.githubusercontent.com/metrica-sports/more-than-a-hack-2027/main/evaluation/possession_metrics.py",
+      "remote_sha256": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+      "pinned_sha256": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+      "equal": true
+    },
+    {
+      "file": "evaluation/validate_submission.py",
+      "url": "https://raw.githubusercontent.com/metrica-sports/more-than-a-hack-2027/main/evaluation/validate_submission.py",
+      "remote_sha256": "07ac29499acbd337e1dc1de1832d63f6e1fa1d981e22f6ad08212529e2bbee14",
+      "pinned_sha256": "07ac29499acbd337e1dc1de1832d63f6e1fa1d981e22f6ad08212529e2bbee14",
+      "equal": true
+    },
+    {
+      "file": "games.py",
+      "url": "https://raw.githubusercontent.com/metrica-sports/more-than-a-hack-2027/main/games.py",
+      "remote_sha256": "3b2122794e9e0476e2b3a871d14880e5fa47c4feaeacf99caef054c2309076ce",
+      "pinned_sha256": "3b2122794e9e0476e2b3a871d14880e5fa47c4feaeacf99caef054c2309076ce",
+      "equal": true
+    }
+  ]
+}
