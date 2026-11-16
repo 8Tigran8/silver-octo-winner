@@ -1,0 +1,11 @@
+{
+  "purpose": "Quantify descriptive training-vs-new-match performance of the same frozen current model, not fit or tune anything.",
+  "games": "All 36 original PFF training IDs in the unchanged source protocol; no selection by score",
+  "scenario": "natural_detected",
+  "model": "Audited boundary102 frozen by freeze.json",
+  "reference": "Canonical original PFF event-state reference; no target-match GT",
+  "metrics": ["official Spell F1", "macro F1", "per-class F1", "per-game distribution"],
+  "comparison": "36 in-sample training games, ten previously reused development games, six prospectively frozen new matches. Report each group separately; no pooling into a fake test set.",
+  "interpretation": "A training/test gap measures optimism plus source/schedule difficulty differences. It does not alone identify overfitting causally; low gap does not prove absence of overfitting. No promotion or post-test selection.",
+  "execution": "Two independent CPU workers, same deterministic inference. Check frozen source/weights before and after. Save every game aggregate, including failures."
+}
