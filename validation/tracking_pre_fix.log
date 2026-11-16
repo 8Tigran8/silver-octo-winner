@@ -1,0 +1,35 @@
+...F.
+======================================================================
+FAIL: test_nearest_tie_is_slot_order_invariant (tests.test_audit_tracking.TrackingAudit.test_nearest_tie_is_slot_order_invariant)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/tests/test_audit_tracking.py", line 9, in test_nearest_tie_is_slot_order_invariant
+    a,_=features2.build(d,[(0,600)]);perm=[1,0,2,3];b,_=features2.build(dict(d,players=d['players'][:,perm],slot_team=d['slot_team'][perm]),[(0,600)]);np.testing.assert_allclose(a,b,equal_nan=True)
+                                                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 1780, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 988, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=1e-07, atol=0
+
+Mismatched elements: 600 / 52200 (1.15%)
+First 5 mismatches are at indices:
+ [0, 62]: 1.0 (ACTUAL), 7.0 (DESIRED)
+ [1, 62]: 1.0 (ACTUAL), 7.0 (DESIRED)
+ [2, 62]: 1.0 (ACTUAL), 7.0 (DESIRED)
+ [3, 62]: 1.0 (ACTUAL), 7.0 (DESIRED)
+ [4, 62]: 1.0 (ACTUAL), 7.0 (DESIRED)
+Max absolute difference among violations: 6.
+Max relative difference among violations: 0.85714287
+ ACTUAL: array([[26.25    ,       nan, 47.736805, ...,  1.      ,  0.      ,
+         0.      ],
+       [26.25    ,       nan, 47.736805, ...,  1.      ,  0.      ,...
+ DESIRED: array([[26.25    ,       nan, 47.736805, ...,  1.      ,  0.      ,
+         0.      ],
+       [26.25    ,       nan, 47.736805, ...,  1.      ,  0.      ,...
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.016s
+
+FAILED (failures=1)

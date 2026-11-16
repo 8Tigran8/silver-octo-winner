@@ -1,3 +1,7 @@
+# Independent audit status — 16 November 2026
+
+This branch contains correctness repairs to period isolation, tracking cache identity and equidistant slot handling. **CONDITIONALLY READY**: 105 tests pass; a newly installed environment reproduces the same CSV twice. Original final metrics belong to the pre-audit source; corrected development regression and source limitations are reported separately. See [final audit](validation/FINAL_AUDIT_REPORT.md), [audited technical document](validation/TECHNICAL_DOCUMENT.md), and [submission manifest](submission_manifest.json). Public repository access, source-access qualifications and team eligibility remain unresolved conditions. No organizer submission has occurred.
+
 # Ruses Cules · More Than a Hack 2027
 
 Ball possession from automatic tracking. **Current selected model: boundary102.** The organizer submission remains on hold. This branch makes the current code, frozen weights and evidence available for team review; it does not change repository visibility or submit the solution.

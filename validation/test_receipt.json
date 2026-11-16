@@ -1,0 +1,848 @@
+{
+  "run": 105,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "records": [
+    {
+      "test": "tests.test_audit_alignment.AuditAlignment.test_content_change_invalidates_cache",
+      "purpose": "test content change invalidates cache",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_audit_alignment.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_audit_alignment.AuditAlignment.test_content_change_invalidates_cache"
+    },
+    {
+      "test": "tests.test_audit_alignment.AuditAlignment.test_period_isolation",
+      "purpose": "test period isolation",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_audit_alignment.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_audit_alignment.AuditAlignment.test_period_isolation"
+    },
+    {
+      "test": "tests.test_audit_alignment.AuditAlignment.test_tiny_period_shape",
+      "purpose": "test tiny period shape",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_audit_alignment.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_audit_alignment.AuditAlignment.test_tiny_period_shape"
+    },
+    {
+      "test": "tests.test_audit_contracts.DecoderContracts.test_half_decoder_resets",
+      "purpose": "test half decoder resets",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_audit_contracts.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_audit_contracts.DecoderContracts.test_half_decoder_resets"
+    },
+    {
+      "test": "tests.test_audit_contracts.DecoderContracts.test_minimum_duration_explicit_short_loss",
+      "purpose": "test minimum duration explicit short loss",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_audit_contracts.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_audit_contracts.DecoderContracts.test_minimum_duration_explicit_short_loss"
+    },
+    {
+      "test": "tests.test_audit_contracts.DecoderContracts.test_restart_and_control_scenarios",
+      "purpose": "test restart and control scenarios",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_audit_contracts.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_audit_contracts.DecoderContracts.test_restart_and_control_scenarios"
+    },
+    {
+      "test": "tests.test_audit_contracts.MetricParity.test_all_named_cases_and_random_parity",
+      "purpose": "test all named cases and random parity",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_audit_contracts.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_audit_contracts.MetricParity.test_all_named_cases_and_random_parity"
+    },
+    {
+      "test": "tests.test_audit_contracts.MetricParity.test_ungraded_invariance_and_abstention_semantics",
+      "purpose": "test ungraded invariance and abstention semantics",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_audit_contracts.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_audit_contracts.MetricParity.test_ungraded_invariance_and_abstention_semantics"
+    },
+    {
+      "test": "tests.test_audit_contracts.PredictorContracts.test_missing_sensor_and_determinism",
+      "purpose": "test missing sensor and determinism",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_audit_contracts.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_audit_contracts.PredictorContracts.test_missing_sensor_and_determinism"
+    },
+    {
+      "test": "tests.test_audit_contracts.PredictorContracts.test_predictor_period_isolation",
+      "purpose": "test predictor period isolation",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_audit_contracts.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_audit_contracts.PredictorContracts.test_predictor_period_isolation"
+    },
+    {
+      "test": "tests.test_audit_contracts.PredictorContracts.test_reference_rejected",
+      "purpose": "test reference rejected",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_audit_contracts.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_audit_contracts.PredictorContracts.test_reference_rejected"
+    },
+    {
+      "test": "tests.test_audit_contracts.PredictorContracts.test_slot_permutation_and_team_swap",
+      "purpose": "test slot permutation and team swap",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_audit_contracts.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_audit_contracts.PredictorContracts.test_slot_permutation_and_team_swap"
+    },
+    {
+      "test": "tests.test_audit_contracts.SubmissionContract.test_mutations_rejected_and_strict_extra_column",
+      "purpose": "test mutations rejected and strict extra column",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_audit_contracts.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_audit_contracts.SubmissionContract.test_mutations_rejected_and_strict_extra_column"
+    },
+    {
+      "test": "tests.test_audit_optional_assets.OptionalAssetsAudit.test_conflicting_unused_tags_cannot_change_features",
+      "purpose": "test conflicting unused tags cannot change features",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_audit_optional_assets.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_audit_optional_assets.OptionalAssetsAudit.test_conflicting_unused_tags_cannot_change_features"
+    },
+    {
+      "test": "tests.test_audit_optional_assets.OptionalAssetsAudit.test_tagging_intervals_and_unknown_team",
+      "purpose": "test tagging intervals and unknown team",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_audit_optional_assets.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_audit_optional_assets.OptionalAssetsAudit.test_tagging_intervals_and_unknown_team"
+    },
+    {
+      "test": "tests.test_audit_tracking.TrackingAudit.test_bad_team_rejected",
+      "purpose": "test bad team rejected",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_audit_tracking.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_audit_tracking.TrackingAudit.test_bad_team_rejected"
+    },
+    {
+      "test": "tests.test_audit_tracking.TrackingAudit.test_distances_in_metres",
+      "purpose": "test distances in metres",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_audit_tracking.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_audit_tracking.TrackingAudit.test_distances_in_metres"
+    },
+    {
+      "test": "tests.test_audit_tracking.TrackingAudit.test_frame_id_endpoint_mapping",
+      "purpose": "test frame id endpoint mapping",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_audit_tracking.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_audit_tracking.TrackingAudit.test_frame_id_endpoint_mapping"
+    },
+    {
+      "test": "tests.test_audit_tracking.TrackingAudit.test_nearest_tie_is_slot_order_invariant",
+      "purpose": "test nearest tie is slot order invariant",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_audit_tracking.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_audit_tracking.TrackingAudit.test_nearest_tie_is_slot_order_invariant"
+    },
+    {
+      "test": "tests.test_audit_tracking.TrackingAudit.test_resampling_global_phase_and_periods",
+      "purpose": "test resampling global phase and periods",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_audit_tracking.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_audit_tracking.TrackingAudit.test_resampling_global_phase_and_periods"
+    },
+    {
+      "test": "tests.test_evaluation_policy.EvaluationPolicyTests.test_average_gain_cannot_hide_failed_dead_ball_detection",
+      "purpose": "test average gain cannot hide failed dead ball detection",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_evaluation_policy.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_evaluation_policy.EvaluationPolicyTests.test_average_gain_cannot_hide_failed_dead_ball_detection"
+    },
+    {
+      "test": "tests.test_evaluation_policy.EvaluationPolicyTests.test_identical_predictions_cannot_be_called_an_improvement",
+      "purpose": "test identical predictions cannot be called an improvement",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_evaluation_policy.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_evaluation_policy.EvaluationPolicyTests.test_identical_predictions_cannot_be_called_an_improvement"
+    },
+    {
+      "test": "tests.test_evaluation_policy.EvaluationPolicyTests.test_missing_hard_match_and_duplicate_are_rejected",
+      "purpose": "test missing hard match and duplicate are rejected",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_evaluation_policy.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_evaluation_policy.EvaluationPolicyTests.test_missing_hard_match_and_duplicate_are_rejected"
+    },
+    {
+      "test": "tests.test_evaluation_policy.EvaluationPolicyTests.test_nan_and_wrong_fold_are_rejected",
+      "purpose": "test nan and wrong fold are rejected",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_evaluation_policy.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_evaluation_policy.EvaluationPolicyTests.test_nan_and_wrong_fold_are_rejected"
+    },
+    {
+      "test": "tests.test_evaluation_policy.EvaluationPolicyTests.test_paired_reconstruction_does_not_replace_historical_control",
+      "purpose": "test paired reconstruction does not replace historical control",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_evaluation_policy.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_evaluation_policy.EvaluationPolicyTests.test_paired_reconstruction_does_not_replace_historical_control"
+    },
+    {
+      "test": "tests.test_evaluation_policy.EvaluationPolicyTests.test_paired_reconstruction_requires_complete_control_grid",
+      "purpose": "test paired reconstruction requires complete control grid",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_evaluation_policy.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_evaluation_policy.EvaluationPolicyTests.test_paired_reconstruction_requires_complete_control_grid"
+    },
+    {
+      "test": "tests.test_evaluation_policy.EvaluationPolicyTests.test_positive_development_result_never_becomes_final_test_pass",
+      "purpose": "test positive development result never becomes final test pass",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_evaluation_policy.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_evaluation_policy.EvaluationPolicyTests.test_positive_development_result_never_becomes_final_test_pass"
+    },
+    {
+      "test": "tests.test_evaluation_policy.EvaluationPolicyTests.test_reserve_countries_and_all_64_match_ids_remain_isolated",
+      "purpose": "test reserve countries and all 64 match ids remain isolated",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_evaluation_policy.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_evaluation_policy.EvaluationPolicyTests.test_reserve_countries_and_all_64_match_ids_remain_isolated"
+    },
+    {
+      "test": "tests.test_evaluation_policy.EvaluationPolicyTests.test_training_leak_and_reserved_country_game_are_rejected",
+      "purpose": "test training leak and reserved country game are rejected",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_evaluation_policy.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_evaluation_policy.EvaluationPolicyTests.test_training_leak_and_reserved_country_game_are_rejected"
+    },
+    {
+      "test": "tests.test_expanded_team.ExpandedTests.test_all_augmented_copies_share_game_exclusion",
+      "purpose": "test all augmented copies share game exclusion",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_expanded_team.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_expanded_team.ExpandedTests.test_all_augmented_copies_share_game_exclusion"
+    },
+    {
+      "test": "tests.test_expanded_team.ExpandedTests.test_competition_and_fresh_games_cannot_be_training_inputs",
+      "purpose": "test competition and fresh games cannot be training inputs",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_expanded_team.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_expanded_team.ExpandedTests.test_competition_and_fresh_games_cannot_be_training_inputs"
+    },
+    {
+      "test": "tests.test_expanded_team.ExpandedTests.test_independent_periods_make_features_label_invariant",
+      "purpose": "test independent periods make features label invariant",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_expanded_team.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_expanded_team.ExpandedTests.test_independent_periods_make_features_label_invariant"
+    },
+    {
+      "test": "tests.test_expanded_team.ExpandedTests.test_taper_keeps_visible_predictions_and_bounds_weights",
+      "purpose": "test taper keeps visible predictions and bounds weights",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_expanded_team.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_expanded_team.ExpandedTests.test_taper_keeps_visible_predictions_and_bounds_weights"
+    },
+    {
+      "test": "tests.test_holdout_reader.LineupTests.test_lineup_order_changes_are_mapped_by_player_channel",
+      "purpose": "test lineup order changes are mapped by player channel",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_holdout_reader.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_holdout_reader.LineupTests.test_lineup_order_changes_are_mapped_by_player_channel"
+    },
+    {
+      "test": "tests.test_holdout_reader.LineupTests.test_wrong_frame_offset_is_rejected",
+      "purpose": "test wrong frame offset is rejected",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_holdout_reader.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_holdout_reader.LineupTests.test_wrong_frame_offset_is_rejected"
+    },
+    {
+      "test": "tests.test_legacy_skillcorner_reader.LegacyTests.test_interpolation_does_not_bridge_reassigned_slot",
+      "purpose": "test interpolation does not bridge reassigned slot",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_legacy_skillcorner_reader.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_legacy_skillcorner_reader.LegacyTests.test_interpolation_does_not_bridge_reassigned_slot"
+    },
+    {
+      "test": "tests.test_legacy_skillcorner_reader.LegacyTests.test_missing_possession_is_unknown_not_dead",
+      "purpose": "test missing possession is unknown not dead",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_legacy_skillcorner_reader.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_legacy_skillcorner_reader.LegacyTests.test_missing_possession_is_unknown_not_dead"
+    },
+    {
+      "test": "tests.test_legacy_skillcorner_reader.LegacyTests.test_reference_annotation_cannot_change_input_positions",
+      "purpose": "test reference annotation cannot change input positions",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_legacy_skillcorner_reader.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_legacy_skillcorner_reader.LegacyTests.test_reference_annotation_cannot_change_input_positions"
+    },
+    {
+      "test": "tests.test_mixed_temporal.MixedTemporalTests.test_long_context_chunk_boundaries_do_not_change_prediction",
+      "purpose": "test long context chunk boundaries do not change prediction",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_mixed_temporal.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_mixed_temporal.MixedTemporalTests.test_long_context_chunk_boundaries_do_not_change_prediction"
+    },
+    {
+      "test": "tests.test_mixed_temporal.MixedTemporalTests.test_short_control_exactly_matches_original_inference",
+      "purpose": "test short control exactly matches original inference",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_mixed_temporal.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_mixed_temporal.MixedTemporalTests.test_short_control_exactly_matches_original_inference"
+    },
+    {
+      "test": "tests.test_mixed_temporal.MixedTemporalTests.test_unknown_targets_create_no_boundary_loss_or_gradient",
+      "purpose": "test unknown targets create no boundary loss or gradient",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_mixed_temporal.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_mixed_temporal.MixedTemporalTests.test_unknown_targets_create_no_boundary_loss_or_gradient"
+    },
+    {
+      "test": "tests.test_more_data.MoreDataTests.test_augmentation_siblings_keep_same_game_key",
+      "purpose": "test augmentation siblings keep same game key",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_more_data.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_more_data.MoreDataTests.test_augmentation_siblings_keep_same_game_key"
+    },
+    {
+      "test": "tests.test_more_data.MoreDataTests.test_calibration_preserves_team_swap_symmetry",
+      "purpose": "test calibration preserves team swap symmetry",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_more_data.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_more_data.MoreDataTests.test_calibration_preserves_team_swap_symmetry"
+    },
+    {
+      "test": "tests.test_more_data.MoreDataTests.test_complete_exclusion_for_every_scored_game",
+      "purpose": "test complete exclusion for every scored game",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_more_data.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_more_data.MoreDataTests.test_complete_exclusion_for_every_scored_game"
+    },
+    {
+      "test": "tests.test_more_data.MoreDataTests.test_future_pff_holdout_excludes_entire_national_teams",
+      "purpose": "test future pff holdout excludes entire national teams",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_more_data.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_more_data.MoreDataTests.test_future_pff_holdout_excludes_entire_national_teams"
+    },
+    {
+      "test": "tests.test_more_data.MoreDataTests.test_new_training_games_are_never_claimed_as_holdout",
+      "purpose": "test new training games are never claimed as holdout",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_more_data.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_more_data.MoreDataTests.test_new_training_games_are_never_claimed_as_holdout"
+    },
+    {
+      "test": "tests.test_pff_download.DownloadTests.test_fallback_accepts_normal_public_metadata_response",
+      "purpose": "test fallback accepts normal public metadata response",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_pff_download.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_pff_download.DownloadTests.test_fallback_accepts_normal_public_metadata_response"
+    },
+    {
+      "test": "tests.test_pff_download.DownloadTests.test_unknown_interstitial_and_unexpected_form_are_not_bypassed",
+      "purpose": "test unknown interstitial and unexpected form are not bypassed",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_pff_download.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_pff_download.DownloadTests.test_unknown_interstitial_and_unexpected_form_are_not_bypassed"
+    },
+    {
+      "test": "tests.test_pff_final.PffFinalTests.test_missing_or_duplicated_reserve_cell_cannot_pass",
+      "purpose": "test missing or duplicated reserve cell cannot pass",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_pff_final.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_pff_final.PffFinalTests.test_missing_or_duplicated_reserve_cell_cannot_pass"
+    },
+    {
+      "test": "tests.test_pff_final.PffFinalTests.test_negative_country_group_blocks_large_aggregate_improvement",
+      "purpose": "test negative country group blocks large aggregate improvement",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_pff_final.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_pff_final.PffFinalTests.test_negative_country_group_blocks_large_aggregate_improvement"
+    },
+    {
+      "test": "tests.test_pff_final.PffFinalTests.test_reference_sensitivity_and_macro_are_independent_guards",
+      "purpose": "test reference sensitivity and macro are independent guards",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_pff_final.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_pff_final.PffFinalTests.test_reference_sensitivity_and_macro_are_independent_guards"
+    },
+    {
+      "test": "tests.test_pff_reader.PffReaderTests.test_annotations_cannot_affect_geometry_and_estimates_stay_missing",
+      "purpose": "test annotations cannot affect geometry and estimates stay missing",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_pff_reader.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_pff_reader.PffReaderTests.test_annotations_cannot_affect_geometry_and_estimates_stay_missing"
+    },
+    {
+      "test": "tests.test_pff_reader.PffReaderTests.test_conflicting_deliberate_owners_are_unknown_not_majority_voted",
+      "purpose": "test conflicting deliberate owners are unknown not majority voted",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_pff_reader.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_pff_reader.PffReaderTests.test_conflicting_deliberate_owners_are_unknown_not_majority_voted"
+    },
+    {
+      "test": "tests.test_pff_reader.PffReaderTests.test_conflicting_duplicate_coordinates_become_missing",
+      "purpose": "test conflicting duplicate coordinates become missing",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_pff_reader.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_pff_reader.PffReaderTests.test_conflicting_duplicate_coordinates_become_missing"
+    },
+    {
+      "test": "tests.test_pff_reader.PffReaderTests.test_missing_tracking_frame_is_not_excluded_from_period",
+      "purpose": "test missing tracking frame is not excluded from period",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_pff_reader.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_pff_reader.PffReaderTests.test_missing_tracking_frame_is_not_excluded_from_period"
+    },
+    {
+      "test": "tests.test_pff_reader.PffReaderTests.test_only_explicit_out_creates_dead_and_period_resets_reference",
+      "purpose": "test only explicit out creates dead and period resets reference",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_pff_reader.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_pff_reader.PffReaderTests.test_only_explicit_out_creates_dead_and_period_resets_reference"
+    },
+    {
+      "test": "tests.test_pff_reader.PffReaderTests.test_primary_state_machine_ignores_positions_and_preserves_side_event_state",
+      "purpose": "test primary state machine ignores positions and preserves side event state",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_pff_reader.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_pff_reader.PffReaderTests.test_primary_state_machine_ignores_positions_and_preserves_side_event_state"
+    },
+    {
+      "test": "tests.test_pff_reader.PffReaderTests.test_rebound_opening_is_unknown_until_deliberate_control",
+      "purpose": "test rebound opening is unknown until deliberate control",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_pff_reader.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_pff_reader.PffReaderTests.test_rebound_opening_is_unknown_until_deliberate_control"
+    },
+    {
+      "test": "tests.test_pff_reader.PffReaderTests.test_reference_duplicates_mask_conflict_without_majority_vote",
+      "purpose": "test reference duplicates mask conflict without majority vote",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_pff_reader.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_pff_reader.PffReaderTests.test_reference_duplicates_mask_conflict_without_majority_vote"
+    },
+    {
+      "test": "tests.test_possession_context.ContextTests.test_all_missing_context_stays_unknown",
+      "purpose": "test all missing context stays unknown",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_possession_context.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_possession_context.ContextTests.test_all_missing_context_stays_unknown"
+    },
+    {
+      "test": "tests.test_possession_context.ContextTests.test_carries_only_actual_observations",
+      "purpose": "test carries only actual observations",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_possession_context.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_possession_context.ContextTests.test_carries_only_actual_observations"
+    },
+    {
+      "test": "tests.test_possession_context.ContextTests.test_other_half_cannot_change_context",
+      "purpose": "test other half cannot change context",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_possession_context.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_possession_context.ContextTests.test_other_half_cannot_change_context"
+    },
+    {
+      "test": "tests.test_provider_stress.StressTests.test_dropout_remains_nan_and_no_unobserved_rows_are_filled",
+      "purpose": "test dropout remains nan and no unobserved rows are filled",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_provider_stress.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_provider_stress.StressTests.test_dropout_remains_nan_and_no_unobserved_rows_are_filled"
+    },
+    {
+      "test": "tests.test_provider_stress.StressTests.test_fifteen_hz_speed_uses_nonuniform_source_intervals",
+      "purpose": "test fifteen hz speed uses nonuniform source intervals",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_provider_stress.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_provider_stress.StressTests.test_fifteen_hz_speed_uses_nonuniform_source_intervals"
+    },
+    {
+      "test": "tests.test_provider_stress.StressTests.test_half_grid_ties_always_map_forward",
+      "purpose": "test half grid ties always map forward",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_provider_stress.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_provider_stress.StressTests.test_half_grid_ties_always_map_forward"
+    },
+    {
+      "test": "tests.test_provider_stress.StressTests.test_labels_cannot_change_geometry_clocks_or_masks",
+      "purpose": "test labels cannot change geometry clocks or masks",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_provider_stress.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_provider_stress.StressTests.test_labels_cannot_change_geometry_clocks_or_masks"
+    },
+    {
+      "test": "tests.test_provider_stress.StressTests.test_outside_periods_and_existing_grid_gaps_stay_empty",
+      "purpose": "test outside periods and existing grid gaps stay empty",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_provider_stress.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_provider_stress.StressTests.test_outside_periods_and_existing_grid_gaps_stay_empty"
+    },
+    {
+      "test": "tests.test_provider_stress.StressTests.test_periods_reset_speed_and_random_streams",
+      "purpose": "test periods reset speed and random streams",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_provider_stress.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_provider_stress.StressTests.test_periods_reset_speed_and_random_streams"
+    },
+    {
+      "test": "tests.test_provider_stress.StressTests.test_skillcorner_adapter_rejects_finite_extrapolated_positions",
+      "purpose": "test skillcorner adapter rejects finite extrapolated positions",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_provider_stress.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_provider_stress.StressTests.test_skillcorner_adapter_rejects_finite_extrapolated_positions"
+    },
+    {
+      "test": "tests.test_provider_stress.StressTests.test_source_half_boundary_between_grid_rows",
+      "purpose": "test source half boundary between grid rows",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_provider_stress.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_provider_stress.StressTests.test_source_half_boundary_between_grid_rows"
+    },
+    {
+      "test": "tests.test_provider_stress.StressTests.test_speed_uses_elapsed_time_and_does_not_bridge_hidden_gap",
+      "purpose": "test speed uses elapsed time and does not bridge hidden gap",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_provider_stress.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_provider_stress.StressTests.test_speed_uses_elapsed_time_and_does_not_bridge_hidden_gap"
+    },
+    {
+      "test": "tests.test_provider_stress.StressTests.test_ten_hz_source_never_becomes_fifteen_hz_measurements",
+      "purpose": "test ten hz source never becomes fifteen hz measurements",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_provider_stress.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_provider_stress.StressTests.test_ten_hz_source_never_becomes_fifteen_hz_measurements"
+    },
+    {
+      "test": "tests.test_provider_stress.StressTests.test_verification_rejects_incorrect_dropout_counts",
+      "purpose": "test verification rejects incorrect dropout counts",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_provider_stress.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_provider_stress.StressTests.test_verification_rejects_incorrect_dropout_counts"
+    },
+    {
+      "test": "tests.test_provider_stress.StressTests.test_verification_rejects_incorrect_native_timestamps",
+      "purpose": "test verification rejects incorrect native timestamps",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_provider_stress.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_provider_stress.StressTests.test_verification_rejects_incorrect_native_timestamps"
+    },
+    {
+      "test": "tests.test_quality_protocol.IsolationTests.test_all_nested_fits_are_isolated_and_pairs_reused",
+      "purpose": "test all nested fits are isolated and pairs reused",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_quality_protocol.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_quality_protocol.IsolationTests.test_all_nested_fits_are_isolated_and_pairs_reused"
+    },
+    {
+      "test": "tests.test_quality_protocol.IsolationTests.test_competition_inputs_gt_and_full_data_checkpoint_are_blocked",
+      "purpose": "test competition inputs gt and full data checkpoint are blocked",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_quality_protocol.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_quality_protocol.IsolationTests.test_competition_inputs_gt_and_full_data_checkpoint_are_blocked"
+    },
+    {
+      "test": "tests.test_quality_protocol.IsolationTests.test_historical_stack_leakage_is_rejected",
+      "purpose": "test historical stack leakage is rejected",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_quality_protocol.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_quality_protocol.IsolationTests.test_historical_stack_leakage_is_rejected"
+    },
+    {
+      "test": "tests.test_reliability.ReliabilityTests.test_constant_mixture_is_exact_v4_probability_control",
+      "purpose": "test constant mixture is exact v4 probability control",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_reliability.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_reliability.ReliabilityTests.test_constant_mixture_is_exact_v4_probability_control"
+    },
+    {
+      "test": "tests.test_reliability.ReliabilityTests.test_missing_geometry_is_bounded_and_finite",
+      "purpose": "test missing geometry is bounded and finite",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_reliability.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_reliability.ReliabilityTests.test_missing_geometry_is_bounded_and_finite"
+    },
+    {
+      "test": "tests.test_reliability.ReliabilityTests.test_team_swap_preserves_dead_and_complements_home",
+      "purpose": "test team swap preserves dead and complements home",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_reliability.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_reliability.ReliabilityTests.test_team_swap_preserves_dead_and_complements_home"
+    },
+    {
+      "test": "tests.test_research_candidate.ResearchAdapterTests.test_adapter_matches_v4_control_and_ignores_reference_labels",
+      "purpose": "test adapter matches v4 control and ignores reference labels",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_research_candidate.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_research_candidate.ResearchAdapterTests.test_adapter_matches_v4_control_and_ignores_reference_labels"
+    },
+    {
+      "test": "tests.test_robust_temporal.RobustTemporalTests.test_channels_are_team_symmetric",
+      "purpose": "test channels are team symmetric",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_robust_temporal.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_robust_temporal.RobustTemporalTests.test_channels_are_team_symmetric"
+    },
+    {
+      "test": "tests.test_robust_temporal.RobustTemporalTests.test_no_observations_means_no_long_model_weight",
+      "purpose": "test no observations means no long model weight",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_robust_temporal.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_robust_temporal.RobustTemporalTests.test_no_observations_means_no_long_model_weight"
+    },
+    {
+      "test": "tests.test_robust_temporal.RobustTemporalTests.test_outlier_shrinkage_and_period_reset",
+      "purpose": "test outlier shrinkage and period reset",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_robust_temporal.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_robust_temporal.RobustTemporalTests.test_outlier_shrinkage_and_period_reset"
+    },
+    {
+      "test": "tests.test_skillcorner_reader.ReaderTests.test_half_open_phase_boundaries_and_dead_gaps",
+      "purpose": "test half open phase boundaries and dead gaps",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_skillcorner_reader.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_skillcorner_reader.ReaderTests.test_half_open_phase_boundaries_and_dead_gaps"
+    },
+    {
+      "test": "tests.test_skillcorner_reader.ReaderTests.test_interpolation_does_not_bridge_missing_source_frames",
+      "purpose": "test interpolation does not bridge missing source frames",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_skillcorner_reader.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_skillcorner_reader.ReaderTests.test_interpolation_does_not_bridge_missing_source_frames"
+    },
+    {
+      "test": "tests.test_skillcorner_reader.ReaderTests.test_provider_phase_cannot_extend_scored_half",
+      "purpose": "test provider phase cannot extend scored half",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_skillcorner_reader.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_skillcorner_reader.ReaderTests.test_provider_phase_cannot_extend_scored_half"
+    },
+    {
+      "test": "tests.test_spell_loss.SpellLossTests.test_no_transition_weight_across_independent_periods",
+      "purpose": "test no transition weight across independent periods",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_spell_loss.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_spell_loss.SpellLossTests.test_no_transition_weight_across_independent_periods"
+    },
+    {
+      "test": "tests.test_spell_loss.SpellLossTests.test_short_possessions_receive_more_weight_and_unknown_none",
+      "purpose": "test short possessions receive more weight and unknown none",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_spell_loss.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_spell_loss.SpellLossTests.test_short_possessions_receive_more_weight_and_unknown_none"
+    },
+    {
+      "test": "tests.test_spell_loss.SpellLossTests.test_swapping_home_and_away_preserves_weights",
+      "purpose": "test swapping home and away preserves weights",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_spell_loss.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_spell_loss.SpellLossTests.test_swapping_home_and_away_preserves_weights"
+    },
+    {
+      "test": "tests.test_spell_loss.SpellLossTests.test_unknown_targets_supply_no_gradient_even_with_positive_input_weights",
+      "purpose": "test unknown targets supply no gradient even with positive input weights",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_spell_loss.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_spell_loss.SpellLossTests.test_unknown_targets_supply_no_gradient_even_with_positive_input_weights"
+    },
+    {
+      "test": "tests.test_strict_fullfold.StrictLineageTests.test_complete_transitive_exclusion_is_accepted",
+      "purpose": "test complete transitive exclusion is accepted",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_strict_fullfold.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_strict_fullfold.StrictLineageTests.test_complete_transitive_exclusion_is_accepted"
+    },
+    {
+      "test": "tests.test_strict_fullfold.StrictLineageTests.test_excluding_scored_game_but_training_on_its_fold_peer_is_rejected",
+      "purpose": "test excluding scored game but training on its fold peer is rejected",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_strict_fullfold.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_strict_fullfold.StrictLineageTests.test_excluding_scored_game_but_training_on_its_fold_peer_is_rejected"
+    },
+    {
+      "test": "tests.test_strict_fullfold.StrictLineageTests.test_incomplete_exclusion_declaration_is_rejected",
+      "purpose": "test incomplete exclusion declaration is rejected",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_strict_fullfold.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_strict_fullfold.StrictLineageTests.test_incomplete_exclusion_declaration_is_rejected"
+    },
+    {
+      "test": "tests.test_strict_fullfold.StrictLineageTests.test_leak_through_inner_first_stage_is_rejected",
+      "purpose": "test leak through inner first stage is rejected",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_strict_fullfold.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_strict_fullfold.StrictLineageTests.test_leak_through_inner_first_stage_is_rejected"
+    },
+    {
+      "test": "tests.test_team_gap_gating.GapTests.test_taper_is_time_symmetric_and_reduces_boundary_influence",
+      "purpose": "test taper is time symmetric and reduces boundary influence",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_team_gap_gating.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_team_gap_gating.GapTests.test_taper_is_time_symmetric_and_reduces_boundary_influence"
+    },
+    {
+      "test": "tests.test_team_gap_gating.GapTests.test_visible_frames_and_outside_period_are_unchanged",
+      "purpose": "test visible frames and outside period are unchanged",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_team_gap_gating.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_team_gap_gating.GapTests.test_visible_frames_and_outside_period_are_unchanged"
+    },
+    {
+      "test": "tests.test_temporal.TemporalTests.test_entire_matches_stay_out_of_training",
+      "purpose": "test entire matches stay out of training",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_temporal.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_temporal.TemporalTests.test_entire_matches_stay_out_of_training"
+    },
+    {
+      "test": "tests.test_temporal.TemporalTests.test_normalization_does_not_read_reference_values",
+      "purpose": "test normalization does not read reference values",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_temporal.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_temporal.TemporalTests.test_normalization_does_not_read_reference_values"
+    },
+    {
+      "test": "tests.test_temporal.TemporalTests.test_predictions_reset_at_periods_and_are_team_symmetric",
+      "purpose": "test predictions reset at periods and are team symmetric",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_temporal.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_temporal.TemporalTests.test_predictions_reset_at_periods_and_are_team_symmetric"
+    },
+    {
+      "test": "tests.test_temporal.TemporalTests.test_unknown_targets_provide_no_gradient",
+      "purpose": "test unknown targets provide no gradient",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_temporal.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_temporal.TemporalTests.test_unknown_targets_provide_no_gradient"
+    },
+    {
+      "test": "tests.test_v4.V4Tests.test_actual_frozen_predictor_is_reference_blind",
+      "purpose": "test actual frozen predictor is reference blind",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_v4.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_v4.V4Tests.test_actual_frozen_predictor_is_reference_blind"
+    },
+    {
+      "test": "tests.test_v4.V4Tests.test_external_geometry_ignores_label_columns",
+      "purpose": "test external geometry ignores label columns",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_v4.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_v4.V4Tests.test_external_geometry_ignores_label_columns"
+    },
+    {
+      "test": "tests.test_v4.V4Tests.test_external_reference_ambiguity_never_uses_a_majority",
+      "purpose": "test external reference ambiguity never uses a majority",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_v4.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_v4.V4Tests.test_external_reference_ambiguity_never_uses_a_majority"
+    },
+    {
+      "test": "tests.test_v4.V4Tests.test_frozen_bundle_contains_only_external_trained_models",
+      "purpose": "test frozen bundle contains only external trained models",
+      "input_and_expected": "See concrete fixture and assertions in tests/test_v4.py",
+      "actual": "PASS",
+      "detail": "",
+      "command": "python -m unittest tests.test_v4.V4Tests.test_frozen_bundle_contains_only_external_trained_models"
+    }
+  ]
+}

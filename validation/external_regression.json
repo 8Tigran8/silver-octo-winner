@@ -1,0 +1,1275 @@
+{
+  "scope": "Familiar development regression for correctness repair; not new final validation",
+  "records": [
+    {
+      "game": "10510",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6831775700934578,
+      "macro_f1": 0.8655869248593624,
+      "n_gt_spells": 240,
+      "n_pred_spells": 188,
+      "per_class": {
+        "H": {
+          "precision": 0.9218838992332968,
+          "recall": 0.8302229236535806,
+          "f1": 0.8736558023666183,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.9009989594172737,
+          "recall": 0.8720866990310819,
+          "f1": 0.8863071049102802,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.7798172672210245,
+          "recall": 0.9027619319262217,
+          "f1": 0.8367978673011885,
+          "support": 42072
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": 0.0
+    },
+    {
+      "game": "10510",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6597647058823528,
+      "macro_f1": 0.8460494091388959,
+      "n_gt_spells": 240,
+      "n_pred_spells": 185,
+      "per_class": {
+        "H": {
+          "precision": 0.9270811624406623,
+          "recall": 0.7898204774117182,
+          "f1": 0.8529640479360853,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.8989712816116588,
+          "recall": 0.8449529641641319,
+          "f1": 0.8711255101087194,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.7328386605783866,
+          "recall": 0.9155257653546301,
+          "f1": 0.8140586693718828,
+          "support": 42072
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": -0.00010808886366131532
+    },
+    {
+      "game": "10510",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6831775700934578,
+      "macro_f1": 0.8655869248593624,
+      "n_gt_spells": 240,
+      "n_pred_spells": 188,
+      "per_class": {
+        "H": {
+          "precision": 0.9218838992332968,
+          "recall": 0.8302229236535806,
+          "f1": 0.8736558023666183,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.9009989594172737,
+          "recall": 0.8720866990310819,
+          "f1": 0.8863071049102802,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.7798172672210245,
+          "recall": 0.9027619319262217,
+          "f1": 0.8367978673011885,
+          "support": 42072
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": 0.0
+    },
+    {
+      "game": "10510",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6597647058823528,
+      "macro_f1": 0.8460494091388959,
+      "n_gt_spells": 240,
+      "n_pred_spells": 185,
+      "per_class": {
+        "H": {
+          "precision": 0.9270811624406623,
+          "recall": 0.7898204774117182,
+          "f1": 0.8529640479360853,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.8989712816116588,
+          "recall": 0.8449529641641319,
+          "f1": 0.8711255101087194,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.7328386605783866,
+          "recall": 0.9155257653546301,
+          "f1": 0.8140586693718828,
+          "support": 42072
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": -0.00010808886366131532
+    },
+    {
+      "game": "3821",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "spell_f1_mean": 0.5979381443298969,
+      "macro_f1": 0.8704920558791311,
+      "n_gt_spells": 280,
+      "n_pred_spells": 205,
+      "per_class": {
+        "H": {
+          "precision": 0.9146503712871287,
+          "recall": 0.9091370402263501,
+          "f1": 0.9118853723240176,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.8034225890879807,
+          "recall": 0.7716075640976062,
+          "f1": 0.7871937507397325,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.9027203547246689,
+          "recall": 0.9222834404652587,
+          "f1": 0.9123970445736433,
+          "support": 65340
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": -5.1381727617982875e-05
+    },
+    {
+      "game": "3821",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6008403361344538,
+      "macro_f1": 0.8678652716091048,
+      "n_gt_spells": 280,
+      "n_pred_spells": 196,
+      "per_class": {
+        "H": {
+          "precision": 0.923895613897186,
+          "recall": 0.9036935662443105,
+          "f1": 0.9136829340339858,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.805437693099897,
+          "recall": 0.7561003905796821,
+          "f1": 0.7799896277975027,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.8899130892810113,
+          "recall": 0.9308539944903581,
+          "f1": 0.909923252995826,
+          "support": 65340
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": -5.18987315150099e-05
+    },
+    {
+      "game": "3821",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.5979381443298969,
+      "macro_f1": 0.8704920558791311,
+      "n_gt_spells": 280,
+      "n_pred_spells": 205,
+      "per_class": {
+        "H": {
+          "precision": 0.9146503712871287,
+          "recall": 0.9091370402263501,
+          "f1": 0.9118853723240176,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.8034225890879807,
+          "recall": 0.7716075640976062,
+          "f1": 0.7871937507397325,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.9027203547246689,
+          "recall": 0.9222834404652587,
+          "f1": 0.9123970445736433,
+          "support": 65340
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": -5.1381727617982875e-05
+    },
+    {
+      "game": "3821",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6008403361344538,
+      "macro_f1": 0.8678652716091048,
+      "n_gt_spells": 280,
+      "n_pred_spells": 196,
+      "per_class": {
+        "H": {
+          "precision": 0.923895613897186,
+          "recall": 0.9036935662443105,
+          "f1": 0.9136829340339858,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.805437693099897,
+          "recall": 0.7561003905796821,
+          "f1": 0.7799896277975027,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.8899130892810113,
+          "recall": 0.9308539944903581,
+          "f1": 0.909923252995826,
+          "support": 65340
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": -5.18987315150099e-05
+    },
+    {
+      "game": "10513",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6370731707317073,
+      "macro_f1": 0.898231600901044,
+      "n_gt_spells": 237,
+      "n_pred_spells": 173,
+      "per_class": {
+        "H": {
+          "precision": 0.9231682053138639,
+          "recall": 0.8795270762273407,
+          "f1": 0.9008193906089005,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.8984052790761616,
+          "recall": 0.8417053065430191,
+          "f1": 0.8691315334485968,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8931273293653001,
+          "recall": 0.9586810168530101,
+          "f1": 0.9247438786456347,
+          "support": 66991
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": 0.0
+    },
+    {
+      "game": "10513",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6323529411764707,
+      "macro_f1": 0.8941982616005125,
+      "n_gt_spells": 237,
+      "n_pred_spells": 171,
+      "per_class": {
+        "H": {
+          "precision": 0.9261174354677185,
+          "recall": 0.8683171731882114,
+          "f1": 0.8962864065667805,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.8941192635339379,
+          "recall": 0.8381504379185987,
+          "f1": 0.8652306874085893,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8850408651861636,
+          "recall": 0.960173754683465,
+          "f1": 0.9210776908261675,
+          "support": 66991
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": 0.0
+    },
+    {
+      "game": "10513",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6370731707317073,
+      "macro_f1": 0.898231600901044,
+      "n_gt_spells": 237,
+      "n_pred_spells": 173,
+      "per_class": {
+        "H": {
+          "precision": 0.9231682053138639,
+          "recall": 0.8795270762273407,
+          "f1": 0.9008193906089005,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.8984052790761616,
+          "recall": 0.8417053065430191,
+          "f1": 0.8691315334485968,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8931273293653001,
+          "recall": 0.9586810168530101,
+          "f1": 0.9247438786456347,
+          "support": 66991
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": 0.0
+    },
+    {
+      "game": "10513",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6323529411764707,
+      "macro_f1": 0.8941982616005125,
+      "n_gt_spells": 237,
+      "n_pred_spells": 171,
+      "per_class": {
+        "H": {
+          "precision": 0.9261174354677185,
+          "recall": 0.8683171731882114,
+          "f1": 0.8962864065667805,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.8941192635339379,
+          "recall": 0.8381504379185987,
+          "f1": 0.8652306874085893,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8850408651861636,
+          "recall": 0.960173754683465,
+          "f1": 0.9210776908261675,
+          "support": 66991
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": 0.0
+    },
+    {
+      "game": "10516",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6773784355179704,
+      "macro_f1": 0.8834708143092588,
+      "n_gt_spells": 271,
+      "n_pred_spells": 202,
+      "per_class": {
+        "H": {
+          "precision": 0.9111980092428013,
+          "recall": 0.8535464535464535,
+          "f1": 0.8814305364511692,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.870722605450639,
+          "recall": 0.8677395361417269,
+          "f1": 0.8692285114357318,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.8775059715015238,
+          "recall": 0.9231582413392718,
+          "f1": 0.8997533950408757,
+          "support": 57703
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": 2.914870016612614e-05
+    },
+    {
+      "game": "10516",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6487179487179489,
+      "macro_f1": 0.8651473636512642,
+      "n_gt_spells": 271,
+      "n_pred_spells": 197,
+      "per_class": {
+        "H": {
+          "precision": 0.9119637165972052,
+          "recall": 0.8258186258186259,
+          "f1": 0.8667559853206734,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.8619485508089861,
+          "recall": 0.8345166452543558,
+          "f1": 0.8480108105632028,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.8412971437588764,
+          "recall": 0.9239207666845745,
+          "f1": 0.8806752950699165,
+          "support": 57703
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": 3.287425016451628e-05
+    },
+    {
+      "game": "10516",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6773784355179704,
+      "macro_f1": 0.8834708143092588,
+      "n_gt_spells": 271,
+      "n_pred_spells": 202,
+      "per_class": {
+        "H": {
+          "precision": 0.9111980092428013,
+          "recall": 0.8535464535464535,
+          "f1": 0.8814305364511692,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.870722605450639,
+          "recall": 0.8677395361417269,
+          "f1": 0.8692285114357318,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.8775059715015238,
+          "recall": 0.9231582413392718,
+          "f1": 0.8997533950408757,
+          "support": 57703
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": 2.914870016612614e-05
+    },
+    {
+      "game": "10516",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6487179487179489,
+      "macro_f1": 0.8651473636512642,
+      "n_gt_spells": 271,
+      "n_pred_spells": 197,
+      "per_class": {
+        "H": {
+          "precision": 0.9119637165972052,
+          "recall": 0.8258186258186259,
+          "f1": 0.8667559853206734,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.8619485508089861,
+          "recall": 0.8345166452543558,
+          "f1": 0.8480108105632028,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.8412971437588764,
+          "recall": 0.9239207666845745,
+          "f1": 0.8806752950699165,
+          "support": 57703
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": 3.287425016451628e-05
+    },
+    {
+      "game": "3859",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6208067940552018,
+      "macro_f1": 0.8570479519742454,
+      "n_gt_spells": 275,
+      "n_pred_spells": 196,
+      "per_class": {
+        "H": {
+          "precision": 0.8375441980070717,
+          "recall": 0.7968439401816569,
+          "f1": 0.8166873011644126,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.9166957988031833,
+          "recall": 0.8123701570871451,
+          "f1": 0.8613856603190245,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.8472018252386447,
+          "recall": 0.9441911442349846,
+          "f1": 0.8930708944392994,
+          "support": 68430
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": 0.0
+    },
+    {
+      "game": "3859",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "spell_f1_mean": 0.613107822410148,
+      "macro_f1": 0.8553616754258937,
+      "n_gt_spells": 275,
+      "n_pred_spells": 198,
+      "per_class": {
+        "H": {
+          "precision": 0.8420862719370182,
+          "recall": 0.7850698798128383,
+          "f1": 0.8125791339579641,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.9153860396222921,
+          "recall": 0.810875824616394,
+          "f1": 0.8599673376303355,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.8442835038812102,
+          "recall": 0.9488966827414876,
+          "f1": 0.8935385546893814,
+          "support": 68430
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": 0.0
+    },
+    {
+      "game": "3859",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6208067940552018,
+      "macro_f1": 0.8570479519742454,
+      "n_gt_spells": 275,
+      "n_pred_spells": 196,
+      "per_class": {
+        "H": {
+          "precision": 0.8375441980070717,
+          "recall": 0.7968439401816569,
+          "f1": 0.8166873011644126,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.9166957988031833,
+          "recall": 0.8123701570871451,
+          "f1": 0.8613856603190245,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.8472018252386447,
+          "recall": 0.9441911442349846,
+          "f1": 0.8930708944392994,
+          "support": 68430
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": 0.0
+    },
+    {
+      "game": "3859",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.613107822410148,
+      "macro_f1": 0.8553616754258937,
+      "n_gt_spells": 275,
+      "n_pred_spells": 198,
+      "per_class": {
+        "H": {
+          "precision": 0.8420862719370182,
+          "recall": 0.7850698798128383,
+          "f1": 0.8125791339579641,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.9153860396222921,
+          "recall": 0.810875824616394,
+          "f1": 0.8599673376303355,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.8442835038812102,
+          "recall": 0.9488966827414876,
+          "f1": 0.8935385546893814,
+          "support": 68430
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": 0.0
+    },
+    {
+      "game": "3827",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "spell_f1_mean": 0.7010309278350515,
+      "macro_f1": 0.9067222198969643,
+      "n_gt_spells": 269,
+      "n_pred_spells": 216,
+      "per_class": {
+        "H": {
+          "precision": 0.9252954252954253,
+          "recall": 0.9087966598356731,
+          "f1": 0.9169718343881347,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.8979984925885605,
+          "recall": 0.8581374876623896,
+          "f1": 0.8776156049652162,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.9055985358955162,
+          "recall": 0.9464614849591375,
+          "f1": 0.9255792203375419,
+          "support": 57510
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": -7.72608733676794e-05
+    },
+    {
+      "game": "3827",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "spell_f1_mean": 0.681081081081081,
+      "macro_f1": 0.902422049864014,
+      "n_gt_spells": 269,
+      "n_pred_spells": 212,
+      "per_class": {
+        "H": {
+          "precision": 0.9233678382751428,
+          "recall": 0.9071687127726812,
+          "f1": 0.9151965993623805,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.8892495383065644,
+          "recall": 0.8477605569930909,
+          "f1": 0.8680095595766472,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.9035978396343997,
+          "recall": 0.94547035298209,
+          "f1": 0.9240599906530144,
+          "support": 57510
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": -0.00015538774424983526
+    },
+    {
+      "game": "3827",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.7010309278350515,
+      "macro_f1": 0.9067222198969643,
+      "n_gt_spells": 269,
+      "n_pred_spells": 216,
+      "per_class": {
+        "H": {
+          "precision": 0.9252954252954253,
+          "recall": 0.9087966598356731,
+          "f1": 0.9169718343881347,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.8979984925885605,
+          "recall": 0.8581374876623896,
+          "f1": 0.8776156049652162,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.9055985358955162,
+          "recall": 0.9464614849591375,
+          "f1": 0.9255792203375419,
+          "support": 57510
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": -7.72608733676794e-05
+    },
+    {
+      "game": "3827",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.681081081081081,
+      "macro_f1": 0.902422049864014,
+      "n_gt_spells": 269,
+      "n_pred_spells": 212,
+      "per_class": {
+        "H": {
+          "precision": 0.9233678382751428,
+          "recall": 0.9071687127726812,
+          "f1": 0.9151965993623805,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.8892495383065644,
+          "recall": 0.8477605569930909,
+          "f1": 0.8680095595766472,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.9035978396343997,
+          "recall": 0.94547035298209,
+          "f1": 0.9240599906530144,
+          "support": 57510
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": -0.00015538774424983526
+    },
+    {
+      "game": "10503",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6623655913978495,
+      "macro_f1": 0.8942643379417289,
+      "n_gt_spells": 264,
+      "n_pred_spells": 201,
+      "per_class": {
+        "H": {
+          "precision": 0.9189193869599099,
+          "recall": 0.8805967672342262,
+          "f1": 0.8993500165250036,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.8899094607006954,
+          "recall": 0.8793174981848356,
+          "f1": 0.8845817735981948,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.8737991594115881,
+          "recall": 0.9254033860583419,
+          "f1": 0.8988612237019881,
+          "support": 50324
+        }
+      },
+      "spell_gain": 0.0008602150537634357,
+      "macro_gain": -9.231328316394727e-05
+    },
+    {
+      "game": "10503",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6283185840707965,
+      "macro_f1": 0.8853120904587105,
+      "n_gt_spells": 264,
+      "n_pred_spells": 188,
+      "per_class": {
+        "H": {
+          "precision": 0.920003529515574,
+          "recall": 0.8651465365594609,
+          "f1": 0.8917321656132667,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.8915393810599017,
+          "recall": 0.8702935380147288,
+          "f1": 0.8807883583303808,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.8470712670508425,
+          "recall": 0.9230188379302122,
+          "f1": 0.8834157474324837,
+          "support": 50324
+        }
+      },
+      "spell_gain": 0.0008849557522124796,
+      "macro_gain": -0.00012242139995755075
+    },
+    {
+      "game": "10503",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6623655913978495,
+      "macro_f1": 0.8942643379417289,
+      "n_gt_spells": 264,
+      "n_pred_spells": 201,
+      "per_class": {
+        "H": {
+          "precision": 0.9189193869599099,
+          "recall": 0.8805967672342262,
+          "f1": 0.8993500165250036,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.8899094607006954,
+          "recall": 0.8793174981848356,
+          "f1": 0.8845817735981948,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.8737991594115881,
+          "recall": 0.9254033860583419,
+          "f1": 0.8988612237019881,
+          "support": 50324
+        }
+      },
+      "spell_gain": 0.0008602150537634357,
+      "macro_gain": -9.231328316394727e-05
+    },
+    {
+      "game": "10503",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6283185840707965,
+      "macro_f1": 0.8853120904587105,
+      "n_gt_spells": 264,
+      "n_pred_spells": 188,
+      "per_class": {
+        "H": {
+          "precision": 0.920003529515574,
+          "recall": 0.8651465365594609,
+          "f1": 0.8917321656132667,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.8915393810599017,
+          "recall": 0.8702935380147288,
+          "f1": 0.8807883583303808,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.8470712670508425,
+          "recall": 0.9230188379302122,
+          "f1": 0.8834157474324837,
+          "support": 50324
+        }
+      },
+      "spell_gain": 0.0008849557522124796,
+      "macro_gain": -0.00012242139995755075
+    },
+    {
+      "game": "3858",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6120754716981132,
+      "macro_f1": 0.8743387791450687,
+      "n_gt_spells": 305,
+      "n_pred_spells": 225,
+      "per_class": {
+        "H": {
+          "precision": 0.8569082548719071,
+          "recall": 0.8754250178954903,
+          "f1": 0.866067674331113,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8530923267765373,
+          "recall": 0.8391772088853472,
+          "f1": 0.8460775575279009,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9129031332491679,
+          "recall": 0.9088481039777191,
+          "f1": 0.9108711055761923,
+          "support": 70015
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": 0.0
+    },
+    {
+      "game": "3858",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6094161958568738,
+      "macro_f1": 0.8726606083657092,
+      "n_gt_spells": 305,
+      "n_pred_spells": 226,
+      "per_class": {
+        "H": {
+          "precision": 0.856043956043956,
+          "recall": 0.8712866857551896,
+          "f1": 0.863598066604585,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8528735044483076,
+          "recall": 0.8307849387389182,
+          "f1": 0.8416843273791502,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9111145903015984,
+          "recall": 0.9142897950439192,
+          "f1": 0.9126994311133924,
+          "support": 70015
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": 0.0
+    },
+    {
+      "game": "3858",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6120754716981132,
+      "macro_f1": 0.8743387791450687,
+      "n_gt_spells": 305,
+      "n_pred_spells": 225,
+      "per_class": {
+        "H": {
+          "precision": 0.8569082548719071,
+          "recall": 0.8754250178954903,
+          "f1": 0.866067674331113,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8530923267765373,
+          "recall": 0.8391772088853472,
+          "f1": 0.8460775575279009,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9129031332491679,
+          "recall": 0.9088481039777191,
+          "f1": 0.9108711055761923,
+          "support": 70015
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": 0.0
+    },
+    {
+      "game": "3858",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6094161958568738,
+      "macro_f1": 0.8726606083657092,
+      "n_gt_spells": 305,
+      "n_pred_spells": 226,
+      "per_class": {
+        "H": {
+          "precision": 0.856043956043956,
+          "recall": 0.8712866857551896,
+          "f1": 0.863598066604585,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8528735044483076,
+          "recall": 0.8307849387389182,
+          "f1": 0.8416843273791502,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9111145903015984,
+          "recall": 0.9142897950439192,
+          "f1": 0.9126994311133924,
+          "support": 70015
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": 0.0
+    },
+    {
+      "game": "3838",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6609053497942387,
+      "macro_f1": 0.8911120190877426,
+      "n_gt_spells": 278,
+      "n_pred_spells": 208,
+      "per_class": {
+        "H": {
+          "precision": 0.8851679238937202,
+          "recall": 0.8568239425156384,
+          "f1": 0.8707653404861219,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.8999063572989283,
+          "recall": 0.8804128748549441,
+          "f1": 0.8900528948072529,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.8945225399903054,
+          "recall": 0.9312519975104712,
+          "f1": 0.9125178219698531,
+          "support": 59449
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": 0.0
+    },
+    {
+      "game": "3838",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6639004149377594,
+      "macro_f1": 0.8843932495095275,
+      "n_gt_spells": 278,
+      "n_pred_spells": 204,
+      "per_class": {
+        "H": {
+          "precision": 0.8910251706171571,
+          "recall": 0.8470571820570658,
+          "f1": 0.8684850507844165,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.9005547258374227,
+          "recall": 0.8593212402532625,
+          "f1": 0.879454937544927,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.8742400501410216,
+          "recall": 0.9385187303402917,
+          "f1": 0.905239760199239,
+          "support": 59449
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": 0.0
+    },
+    {
+      "game": "3838",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6609053497942387,
+      "macro_f1": 0.8911120190877426,
+      "n_gt_spells": 278,
+      "n_pred_spells": 208,
+      "per_class": {
+        "H": {
+          "precision": 0.8851679238937202,
+          "recall": 0.8568239425156384,
+          "f1": 0.8707653404861219,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.8999063572989283,
+          "recall": 0.8804128748549441,
+          "f1": 0.8900528948072529,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.8945225399903054,
+          "recall": 0.9312519975104712,
+          "f1": 0.9125178219698531,
+          "support": 59449
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": 0.0
+    },
+    {
+      "game": "3838",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6639004149377594,
+      "macro_f1": 0.8843932495095275,
+      "n_gt_spells": 278,
+      "n_pred_spells": 204,
+      "per_class": {
+        "H": {
+          "precision": 0.8910251706171571,
+          "recall": 0.8470571820570658,
+          "f1": 0.8684850507844165,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.9005547258374227,
+          "recall": 0.8593212402532625,
+          "f1": 0.879454937544927,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.8742400501410216,
+          "recall": 0.9385187303402917,
+          "f1": 0.905239760199239,
+          "support": 59449
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": 0.0
+    },
+    {
+      "game": "3842",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "spell_f1_mean": 0.700414937759336,
+      "macro_f1": 0.9148154292094026,
+      "n_gt_spells": 268,
+      "n_pred_spells": 214,
+      "per_class": {
+        "H": {
+          "precision": 0.9150356044982295,
+          "recall": 0.9093211654840394,
+          "f1": 0.9121694353126001,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9064992321791252,
+          "recall": 0.8978925934103678,
+          "f1": 0.9021753867011769,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.9239384041063929,
+          "recall": 0.9363472997257164,
+          "f1": 0.9301014656144307,
+          "support": 52865
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": 0.0
+    },
+    {
+      "game": "3842",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6882352941176471,
+      "macro_f1": 0.9057247514008248,
+      "n_gt_spells": 268,
+      "n_pred_spells": 208,
+      "per_class": {
+        "H": {
+          "precision": 0.9117049600631102,
+          "recall": 0.8937955569304538,
+          "f1": 0.9026614336203699,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9134195820255684,
+          "recall": 0.8781923897843527,
+          "f1": 0.8954596622889306,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.897606982489676,
+          "recall": 0.9415492291686371,
+          "f1": 0.9190531582931738,
+          "support": 52865
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": 0.0
+    },
+    {
+      "game": "3842",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.700414937759336,
+      "macro_f1": 0.9148154292094026,
+      "n_gt_spells": 268,
+      "n_pred_spells": 214,
+      "per_class": {
+        "H": {
+          "precision": 0.9150356044982295,
+          "recall": 0.9093211654840394,
+          "f1": 0.9121694353126001,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9064992321791252,
+          "recall": 0.8978925934103678,
+          "f1": 0.9021753867011769,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.9239384041063929,
+          "recall": 0.9363472997257164,
+          "f1": 0.9301014656144307,
+          "support": 52865
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": 0.0
+    },
+    {
+      "game": "3842",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6882352941176471,
+      "macro_f1": 0.9057247514008248,
+      "n_gt_spells": 268,
+      "n_pred_spells": 208,
+      "per_class": {
+        "H": {
+          "precision": 0.9117049600631102,
+          "recall": 0.8937955569304538,
+          "f1": 0.9026614336203699,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9134195820255684,
+          "recall": 0.8781923897843527,
+          "f1": 0.8954596622889306,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.897606982489676,
+          "recall": 0.9415492291686371,
+          "f1": 0.9190531582931738,
+          "support": 52865
+        }
+      },
+      "spell_gain": 0.0,
+      "macro_gain": 0.0
+    }
+  ],
+  "summary": {
+    "canonical/natural_detected": {
+      "spell_f1_mean": 0.6553166393212824,
+      "macro_f1": 0.885608213320395,
+      "spell_gain": 8.602150537634357e-05,
+      "macro_gain": -1.918071839834834e-05,
+      "worst_spell_gain": 0.0
+    },
+    "canonical/label_blind_seed7": {
+      "spell_f1_mean": 0.6425735324385532,
+      "macro_f1": 0.8779134731024458,
+      "spell_gain": 8.849557522124795e-05,
+      "macro_gain": -4.049224892191949e-05,
+      "worst_spell_gain": 0.0
+    },
+    "sdk_shadow/natural_detected": {
+      "spell_f1_mean": 0.6553166393212824,
+      "macro_f1": 0.885608213320395,
+      "spell_gain": 8.602150537634357e-05,
+      "macro_gain": -1.918071839834834e-05,
+      "worst_spell_gain": 0.0
+    },
+    "sdk_shadow/label_blind_seed7": {
+      "spell_f1_mean": 0.6425735324385532,
+      "macro_f1": 0.8779134731024458,
+      "spell_gain": 8.849557522124795e-05,
+      "macro_gain": -4.049224892191949e-05,
+      "worst_spell_gain": 0.0
+    }
+  }
+}

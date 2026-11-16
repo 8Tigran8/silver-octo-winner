@@ -1,0 +1,64 @@
+{
+  "scope": "Prediction-only aggregate morphology. No target truth, tuning rule or hidden quality estimate.",
+  "by_label": {
+    "H": {
+      "count": 142,
+      "mean_s": 15.535211267605634,
+      "quantiles_s": [
+        1.0,
+        1.8200000000000003,
+        3.05,
+        8.9,
+        23.4,
+        38.86000000000001,
+        84.8
+      ],
+      "fraction_under1s": 0.0
+    },
+    "A": {
+      "count": 154,
+      "mean_s": 9.353246753246754,
+      "quantiles_s": [
+        1.0,
+        2.0,
+        3.05,
+        5.6,
+        11.35,
+        22.280000000000005,
+        48.0
+      ],
+      "fraction_under1s": 0.0
+    },
+    "D": {
+      "count": 114,
+      "mean_s": 23.753333333333334,
+      "quantiles_s": [
+        2.8,
+        4.2,
+        7.3,
+        14.7,
+        27.95,
+        46.30000000000001,
+        221.4
+      ],
+      "fraction_under1s": 0.0
+    }
+  },
+  "transitions": {
+    "H->A": 88,
+    "H->D": 54,
+    "A->H": 95,
+    "A->D": 59,
+    "D->H": 47,
+    "D->A": 65
+  },
+  "switches_per_minute": 3.852521450109218,
+  "X_fraction_all": 0.20300121915120986,
+  "X_fraction_graded": 0.0,
+  "islands_under1s": 0,
+  "patterns": {
+    "HAH": 53,
+    "DHD": 20
+  },
+  "X_fraction_within_1s_transition": 0.0
+}

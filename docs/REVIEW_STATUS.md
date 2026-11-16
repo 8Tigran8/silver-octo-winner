@@ -1,3 +1,7 @@
+# Superseded by independent audit
+
+The current branch includes correctness repairs. Consult [the independent audit](../validation/FINAL_AUDIT_REPORT.md) and root `submission_manifest.json`. The prior review narrative below describes pre-audit source and must not be read as unconditional current readiness.
+
 # Current team-review status
 
 16 November 2026. Candidate: **boundary102**. Code, frozen weights and current documentation are on `codex/reliability-fusion`. Remote `main` remains the historical v4. The repository remains private; publication and organizer submission remain on user hold.

@@ -1,0 +1,6 @@
+{
+  "frozen_utc": "2026-11-16T11:42:29.716361+00:00",
+  "source_commit": "0136646390a35a1b8a57a1bc428d2f44fba7f588",
+  "csv_sha256": "cfbd16ea35075a199d2401c18f162d4c1f953be4049cd776d502ff42ea389c97",
+  "policy": "One fixed candidate, diagnostic only; no candidate comparison, tuning or model selection from public score."
+}

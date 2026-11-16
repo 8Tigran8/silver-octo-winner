@@ -1,0 +1,8 @@
+{
+  "scope": "All reachable refs: protected filename patterns, blobs >15MiB, recognized credential patterns in text blobs <2MiB. This is not proof against arbitrary disguised data or all secret formats.",
+  "objects": 878,
+  "text_blobs_scanned": 525,
+  "protected_name_hits": [],
+  "large_blobs": [],
+  "recognized_secret_hits": []
+}

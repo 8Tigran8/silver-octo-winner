@@ -1,0 +1,11 @@
+# Temporal segmentation and semantics
+
+The prediction-only aggregate report is `segmentation.json`. It uses official published periods and opens no target ground truth. It reports 142 H possessions, 154 A possessions, 114 D stretches; mean durations 15.54 / 9.35 / 23.75 seconds. There are 3.85 transitions/minute, zero graded-frame X, and no predicted sub-second islands. These counts describe output structure, not correct counts for the hidden match. No parameter was chosen from them.
+
+The zero sub-second count is partly a decoder constraint and must not be celebrated as proof of realism. `test_minimum_duration_explicit_short_loss` demonstrates that a valid 0.2-second opposing possession is suppressed. Prior external duration diagnostics also show weak short-possession recall. The minimum is retained as an existing model choice; audit repairs do not disguise a decoder retuning.
+
+The actual four-state decoder was checked against exhaustive enumeration on 60 tiny random sequences. Synthetic probability scenarios cover stable possession, H/A changes, H-D-H logic, interception/recovery/reception, neutral deflection/duel/failed tackle evidence, and D intervals for each listed restart type. The names denote supplied latent states; tests do not claim the learned geometry model recognizes all these football events. End-of-period truncated runs may be shorter than the internal minimum, as allowed by the implementation.
+
+Full-predictor tests mutate every observation in another period and require exact invariance. Decoder and contact context reset independently. Neural contexts clip to periods; preprocessing and temporal stacking were repaired to match this contract. Centered smoothing/future context are intentional offline operations. Five-frame block quantization can move a boundary by up to four frames before other model errors; arbitrary one-frame shift equivariance is not claimed.
+
+Missing-ball, one-team dropout and all-player-missing cases produce deterministic finite probabilities. This verifies defined execution, not correct guessed labels. Slot permutation and team-swap symmetry are tested; duplicate observations alter geometry counts and remain a sensor robustness issue. Smart Tagging, homography and broadcast are not part of this inference path.

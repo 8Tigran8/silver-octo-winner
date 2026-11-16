@@ -1,0 +1,61 @@
+FFE
+======================================================================
+ERROR: test_tiny_period_shape (tests.test_audit_alignment.AuditAlignment.test_tiny_period_shape)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/tests/test_audit_alignment.py", line 15, in test_tiny_period_shape
+    x,_=features2.build(fixture(n),[(0,n)]);self.assertEqual(len(x),n)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/mtah/features2.py", line 74, in build
+    return _build(d, segments, swap)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/mtah/features2.py", line 181, in _build
+    X = np.stack([np.asarray(f[k], dtype=np.float32) for k in names], axis=1)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/.venv/lib/python3.12/site-packages/numpy/_core/shape_base.py", line 458, in stack
+    raise ValueError('all input arrays must have the same shape')
+ValueError: all input arrays must have the same shape
+
+======================================================================
+FAIL: test_content_change_invalidates_cache (tests.test_audit_alignment.AuditAlignment.test_content_change_invalidates_cache)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/tests/test_audit_alignment.py", line 20, in test_content_change_invalidates_cache
+    a=atd.load();raw.write_text('1:0.1,0.2,0;0.7,0.8,0:0.9,0.4,0\n');os.utime(raw,(stamp,stamp));b=atd.load();self.assertNotEqual(a['ball'][0,0],b['ball'][0,0])
+                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: np.float64(0.3) == np.float64(0.3)
+
+======================================================================
+FAIL: test_period_isolation (tests.test_audit_alignment.AuditAlignment.test_period_isolation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/tests/test_audit_alignment.py", line 12, in test_period_isolation
+    d=fixture();x,_=features2.build(d,[(0,300),(300,600)]);d['ball'][300:,:2]=.9;y,_=features2.build(d,[(0,300),(300,600)]);np.testing.assert_allclose(x[:300],y[:300],equal_nan=True)
+                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 1780, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 988, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=1e-07, atol=0
+
+Mismatched elements: 615 / 26100 (2.36%)
+First 5 mismatches are at indices:
+ [223, 27]: 0.0 (ACTUAL), 2.370500087738037 (DESIRED)
+ [224, 27]: 0.0 (ACTUAL), 4.741000175476074 (DESIRED)
+ [225, 27]: 0.0 (ACTUAL), 7.1115007400512695 (DESIRED)
+ [225, 32]: -21.0 (ACTUAL), -20.582780838012695 (DESIRED)
+ [225, 35]: 1.0 (ACTUAL), 0.9607843160629272 (DESIRED)
+Max absolute difference among violations: 357.94553
+Max relative difference among violations: 297.16672
+ ACTUAL: array([[26.25    ,       nan, 47.736805, ...,  1.      ,  0.      ,
+         0.      ],
+       [26.25    ,       nan, 47.736805, ...,  1.      ,  0.      ,...
+ DESIRED: array([[26.25    ,       nan, 47.736805, ...,  1.      ,  0.      ,
+         0.      ],
+       [26.25    ,       nan, 47.736805, ...,  1.      ,  0.      ,...
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.021s
+
+FAILED (failures=2, errors=1)
