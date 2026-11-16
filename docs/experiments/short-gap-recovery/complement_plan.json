@@ -1,0 +1,13 @@
+{
+  "status": "Registered after initial development results, before evaluating either new combination",
+  "reason": "Neural-only gap D cuts false D (20.99% to16.47%) but increases missed true stops (4.42% to5.69%); activity expert25 decreases missed true stops to3.44%. Their complementary errors justify one bounded combination study.",
+  "hypothesis": "Blend .75 existing neural D with .25 activity-expert D on missing-ball frames, preserving original D on seen frames. Test unchanged decoder and the already defined .4s/4.5 short decoder.",
+  "candidates": [
+    "neural_expert25",
+    "short_neural_expert25"
+  ],
+  "fixed": "No new fit, no threshold or blend-weight sweep. Existing .25 expert weight and short decoder settings retained. Original gates unchanged for both scenarios/references; all ten development games retained.",
+  "excluded": "Six bridges, original twelve final and provided-match labels remain untouched. No changed candidate uses their former scores.",
+  "limitations": "Adaptive follow-up on familiar development, not independent validation. No additional follow-up tuning if these combinations fail.",
+  "prior_results_sha256": "7f4da96de37ba30517b4316f3c9c1e3a08dad0de43fb97e4f47519168327ae76"
+}

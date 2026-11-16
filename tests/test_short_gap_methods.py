@@ -40,5 +40,23 @@ class RecoveryContracts(unittest.TestCase):
         np.testing.assert_array_equal(pd, [.2, .6]); np.testing.assert_array_equal(ph, c['ph'])
         self.assertEqual(p['min_team_s'], 1.)
 
+    def test_short_policy_recovers_clear_brief_control_without_extra_switches(self):
+        from mtah.methods import boost
+        n = 500; ph = np.full(n, .999); ph[200:210] = .001
+        cache = dict(pd=np.full(n, .01), ph=ph)
+        base = boost.decode_segment(cache['pd'], ph, boost.DECODER)
+        pd, new_ph, params = policy('short04_ha45', cache, boost.DECODER)
+        recovered = boost.decode_segment(pd, new_ph, params)
+        self.assertEqual(int((base == 1).sum()), 0)
+        expected = np.zeros(n, np.int8); expected[200:210] = 1
+        np.testing.assert_array_equal(recovered, expected)
+
+    def test_only_registered_train_or_development_games_are_accepted(self):
+        from tools.short_gap_study import guard, plan
+        for split in ['training_games', 'development_games']:
+            guard(plan()[split][0], split)
+            for forbidden in ['10512', '10511', '10509', '10507', '10505', '10502', 'target']:
+                with self.assertRaises(ValueError): guard(forbidden, split)
+
 
 if __name__ == '__main__': unittest.main()
