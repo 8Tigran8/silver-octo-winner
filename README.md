@@ -1,48 +1,57 @@
 # Ruses Cules — More Than a Hack 2027
 
-Current candidate: **weighted_short_gap**, branch **codex/short-possession-recovery** (16 November2026). Short-possession weighted training and player-activity evidence during ball gaps pass the unchanged development promotion gates. The package is reproducible; submission/publication remain on user hold. **Overall CONDITIONALLY READY**, not a guaranteed high hidden score.
+Current adopted candidate: **uniform_temporal_focus**, branch **codex/short-possession-recovery**, 17 November 2026. **Technically READY**: regression tests, research-to-package parity, four clean-source reproductions and the official validator pass. Organizer submission and repository publication remain on user hold. Hidden-match quality and unconditional eligibility are not certified by this status.
 
-| Ten original development games | Audited parent | Current | Gain | Wins |
-|---|---:|---:|---:|---:|
-| Natural tracking, official Spell F1 |0.655317|0.680009|+0.024692|9/10|
-| Fixed blind sensor stress, official Spell F1 |0.642574|0.667271|+0.024698|9/10|
-
-These are reused-development results with PFF event-derived references. After adoption, the fixed current model was additionally evaluated on all six opened PFF bridges and twelve old final matches; none entered training or numerical tuning during this audit. All 18 games improve in both scenarios. Earlier parent outcomes were known, so this is reopened-test evidence, not a fresh prospective holdout. Six supplementary DFL/Metrica/SkillCorner training matches remain in-sample checks.
-
-| Later fixed-model audit | Parent Spell F1 | Current Spell F1 | Wins |
+| Ten original development games | Previous weighted_short_gap | Current | Wins |
 |---|---:|---:|---:|
-| Six opened bridge matches, natural |0.613896|0.638797|6/6|
-| Twelve opened original final matches, natural |0.604159|0.639452|12/12|
-| All 18, natural |0.607404|0.639234|18/18|
-| All 18, fixed blind stress |0.589488|0.619814|18/18|
+| Natural, official Spell F1 | 0.680009 | 0.701652 | 10/10 |
+| Original blind stress, seed 7 | 0.667271 | 0.686287 | 9/10 |
+| Additional stress, seed 23 XOR match ID | 0.667221 | 0.687005 | 8/10 |
+| Additional stress, seed 101 XOR match ID | 0.662958 | 0.688400 | 10/10 |
 
-Current training mean on 36 PFF matches: **0.652584**. Full game list, Netherlands–USA error analysis, leakage checks, failed reporter execution and repair: [opened-match audit](docs/experiments/recovery-opened-audit/REPORT.md). This is later evidence; the generation-bound technical document/manifest stay unchanged. The current full suite has **140 passing tests**. No absence-of-overfitting claim follows from the train/test gap.
+These are repeated-development results using PFF event-derived references, not a new holdout. Forty scenario outputs represent ten matches. Short-spell recall below three seconds rises from 15.05% to 22.66%; subsecond recovery remains weak. Missing-ball false-live fraction increases slightly. No absence-of-overfitting or finalist-probability claim is made.
 
-Read the [complete experiment report](docs/experiments/spell-weighted-finetune/REPORT.md), [technical document](docs/Ruses%20Cules.md), [current audit](validation/FINAL_AUDIT_REPORT.md), and [exact manifest](submission_manifest.json). Short-possession recall remains only 15.05%; no absence-of-overfitting or finalist-probability claim is made.
+The historical +0.02 mean-gain rule failed in the original blind scenario. The user explicitly authorized adoption based on the broader evidence and successful technical checks. The original failed reports are preserved; they were not rewritten as passed experiments. The 18 previously opened audit games and target labels were not read or scored for this release. Their old metrics describe older models only.
 
-## Generate the current CSV
+Read the [current technical document](docs/releases/uniform-temporal-focus/TECHNICAL.md), [adoption receipt](docs/releases/uniform-temporal-focus/release.json), [data coverage review](docs/releases/uniform-temporal-focus/DATA_REVIEW.md), [frozen experiment](docs/experiments/dead-gap-focus/REPORT.md) and [exact manifest](submission_manifest.json).
 
-Use Python3.12, this branch, and the original organizer data folder with tactical/BAR-ATH_tactical_atd.xml and .txt. Inference uses bundled frozen weights and CPU; no external training files, target labels, tagging or video are needed.
+## Generate and verify
+
+Use Python 3.12, this branch, and the original data folder containing tactical/BAR-ATH_tactical_atd.xml and .txt. Inference uses frozen bundled weights on CPU. Training data, research caches and target labels are unnecessary.
 
 ```sh
 python3.12 -m venv .venv
 .venv/bin/pip install -r requirements-temporal.txt
 .venv/bin/python tools/fetch_reference.py
-.venv/bin/python tools/generate_recovery_candidate.py \
-  --bundle assets/recovery-candidate/bundle.json \
+.venv/bin/python tools/generate_final_candidate.py \
+  --bundle assets/final-candidate/bundle.json \
   --data-dir /absolute/path/to/data \
   --output 'out/Ruses Cules.csv'
 .venv/bin/python tools/final_submission_gate.py --csv 'out/Ruses Cules.csv'
 ```
 
-Expected SHA-256: `1f4602b5b8b04e4066c5478549a9b5e53f13852ca6513f01422906d1dcb1a1c0`.
+Expected CSV SHA-256: `897db60c18fefe362acee239665136d47a8b2c87a54eb8eae67231b0dcdf9e33`. The generator refuses existing output. Local release: `out/final-ready/` (CSV, technical Markdown, reproduction receipt).
 
-All 140 tests pass. Portable inference exactly matches all 20 development outputs. Four clean-source generations (two macOS ARM, Linux ARM, emulated Linux AMD64) produce the same199,319-row CSV and pass the official validator. One physical host, no repeated training. Source commit and exact weights are recorded in the manifest. The generator refuses to overwrite existing output.
+169 regression tests pass. All 40 portable outputs exactly match frozen research predictions. Four clean-source runs (macOS ARM twice, offline Linux ARM and offline emulated Linux AMD64) produce the identical 199,319-row CSV and pass the official validator. This is one physical host and inference reproduction, not repeated weight training. Generation source commit: `98e931ccc2eea3e81bcb8aa4b04b90c49bc64e4e`. Later documentation commits preserve the recorded inference/source hashes.
 
-## Provenance and delivery limits
+## Data and limits
 
-Training uses the same65 external games:7DFL,2Metrica,20SkillCorner,36 PFF. The activity expert uses only those36 PFF training games. Raw data, labels, protected organizer files and predictions remain local. See [PFF source terms](docs/PFF_SOURCE.md); original provider access is not equivalent to a standard permissive data license. The Hugging Face mirror is unused.
+Training uses the same 65 external games: seven DFL, two Metrica, 20 SkillCorner and 36 PFF. The activity network uses only those 36 PFF training games. Inherited boosted training registries are subsets of the same union. No development/audit match was moved into training. See [source-access qualifications](docs/PFF_SOURCE.md); original provider access is not equivalent to a standard permissive license.
 
-Current local package: out/recovery-ready/. Public repository access, source-access qualifications and team eligibility remain conditions for an unconditional READY verdict. No organizer submission occurred. The organizer deadline recorded in the welcome email is 17 November2026,23:59CET.
+Useful sources have not been exhausted. SoccerTrack v2 offers ten unused full matches, but its event-reconstructed ball trajectory cannot be treated as independent input when events also define possession reference. New validation requires provenance and synchronization checks, independent reference construction and a preregistered whole-match split. The current release remains frozen during that work.
 
-Historical parent documents/manifest are preserved under validation/PARENT_*. Prior six-match evidence is in [the parent audit](docs/experiments/unseen-bridge-audit/REPORT.md); earlier training and holdout results remain in docs/experiments/pff-mixed/. The old generate_mixed_candidate.py and run.py v4 still generate historical versions. Do not confuse their metrics or hashes with the current candidate.
+## Rollback
+
+Previous source tag: `codex/rollback-weighted-short-gap-20261117`. Old source, weights and research reports remain committed; its exact manifest and documentation are under `releases/weighted-short-gap/`. Local previous CSV: `out/rollback-weighted-short-gap/Ruses Cules.csv`.
+
+```sh
+.venv/bin/python tools/generate_recovery_candidate.py \
+  --bundle assets/recovery-candidate/bundle.json \
+  --data-dir /absolute/path/to/data \
+  --output 'out/rollback-regenerated/Ruses Cules.csv'
+.venv/bin/python tools/final_submission_gate.py \
+  --manifest releases/weighted-short-gap/submission_manifest.json \
+  --csv 'out/rollback-regenerated/Ruses Cules.csv'
+```
+
+Rollback CSV SHA-256: `1f4602b5b8b04e4066c5478549a9b5e53f13852ca6513f01422906d1dcb1a1c0`. Historical `run.py v4` and `generate_mixed_candidate.py` generate still older versions. Public repository access, provider-access qualifications and team eligibility remain outside the technical readiness claim. Nothing has been sent to the organizers.

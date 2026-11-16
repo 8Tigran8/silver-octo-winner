@@ -1,0 +1,328 @@
+{
+  "status": "PASS",
+  "exact40": true,
+  "reference_labels_read": false,
+  "heldout18_read": false,
+  "records": [
+    {
+      "game": "10510",
+      "scenario": "natural_detected",
+      "frames": 143302,
+      "mismatches": 0,
+      "geometry_sha256": "fc185b4bcf5c35914e6322c70f47474485695a6ab46cd0c5772ab4c041fc7163",
+      "research_predictions_sha256": "cdbe75604c429d27f72635d898775a9745bedfee3ad0805f6c957668d0e67206"
+    },
+    {
+      "game": "10510",
+      "scenario": "label_blind_seed7",
+      "frames": 143302,
+      "mismatches": 0,
+      "geometry_sha256": "fc185b4bcf5c35914e6322c70f47474485695a6ab46cd0c5772ab4c041fc7163",
+      "research_predictions_sha256": "c76964c57ae30650506d8ea4446a4446d850a023acd4c1e5802c1bb631b0c12b"
+    },
+    {
+      "game": "10510",
+      "scenario": "novel_23",
+      "frames": 143302,
+      "mismatches": 0,
+      "geometry_sha256": "fc185b4bcf5c35914e6322c70f47474485695a6ab46cd0c5772ab4c041fc7163",
+      "research_predictions_sha256": "c399462c9da328c53d5f12b524df95683a3ebb8f89f027c642752f50004f2926"
+    },
+    {
+      "game": "10510",
+      "scenario": "novel_101",
+      "frames": 143302,
+      "mismatches": 0,
+      "geometry_sha256": "fc185b4bcf5c35914e6322c70f47474485695a6ab46cd0c5772ab4c041fc7163",
+      "research_predictions_sha256": "795255f1889fbdf7817582c26606a96839a29a35a9cbfdc8c5e9d7cf84904226"
+    },
+    {
+      "game": "3821",
+      "scenario": "natural_detected",
+      "frames": 157898,
+      "mismatches": 0,
+      "geometry_sha256": "43f7f699b6c85e6938181d0249ae613f16746b21aa578ca663f95d6da403bc73",
+      "research_predictions_sha256": "54f0a523fd63cbc6c6b71cf9776149833050a0c3af14d4d8f1ef8261f165c82f"
+    },
+    {
+      "game": "3821",
+      "scenario": "label_blind_seed7",
+      "frames": 157898,
+      "mismatches": 0,
+      "geometry_sha256": "43f7f699b6c85e6938181d0249ae613f16746b21aa578ca663f95d6da403bc73",
+      "research_predictions_sha256": "a36a8bd3c2c4791c4ab054a808765146f2b79a95f1fbb46d3ae33c5bcc932114"
+    },
+    {
+      "game": "3821",
+      "scenario": "novel_23",
+      "frames": 157898,
+      "mismatches": 0,
+      "geometry_sha256": "43f7f699b6c85e6938181d0249ae613f16746b21aa578ca663f95d6da403bc73",
+      "research_predictions_sha256": "777daf61193444e7cc2fd0f4312ade713689d13f58d26de1ee6a3ac60da4831a"
+    },
+    {
+      "game": "3821",
+      "scenario": "novel_101",
+      "frames": 157898,
+      "mismatches": 0,
+      "geometry_sha256": "43f7f699b6c85e6938181d0249ae613f16746b21aa578ca663f95d6da403bc73",
+      "research_predictions_sha256": "d860040fd2a028005950255761667e1473397984ae2706f447f08d1ae0b357a6"
+    },
+    {
+      "game": "10513",
+      "scenario": "natural_detected",
+      "frames": 158864,
+      "mismatches": 0,
+      "geometry_sha256": "76082ebe5f9a2a4a9d30948616a2ce39f30a761007b72707c346a622d8d6755a",
+      "research_predictions_sha256": "a54d535e39b78bcaf8087603964dd41379d7fb33921789c91ca61f714eab5d5d"
+    },
+    {
+      "game": "10513",
+      "scenario": "label_blind_seed7",
+      "frames": 158864,
+      "mismatches": 0,
+      "geometry_sha256": "76082ebe5f9a2a4a9d30948616a2ce39f30a761007b72707c346a622d8d6755a",
+      "research_predictions_sha256": "c018afa2c332cc2c7d8a177f9ee9c11962fd082b97c538fea93208b5485947eb"
+    },
+    {
+      "game": "10513",
+      "scenario": "novel_23",
+      "frames": 158864,
+      "mismatches": 0,
+      "geometry_sha256": "76082ebe5f9a2a4a9d30948616a2ce39f30a761007b72707c346a622d8d6755a",
+      "research_predictions_sha256": "165c5dd4dbd802e7b62b2815c8ee2196ae8b376ffcf2e2aa28db1bf4d72eded8"
+    },
+    {
+      "game": "10513",
+      "scenario": "novel_101",
+      "frames": 158864,
+      "mismatches": 0,
+      "geometry_sha256": "76082ebe5f9a2a4a9d30948616a2ce39f30a761007b72707c346a622d8d6755a",
+      "research_predictions_sha256": "c4c1f5544959d996e11442ea394738b9eb9e8e47c621740ea0bebd8762f44907"
+    },
+    {
+      "game": "10516",
+      "scenario": "natural_detected",
+      "frames": 148639,
+      "mismatches": 0,
+      "geometry_sha256": "4235e18b269f72d20b017357a7da35c87af7ce3701a5ac04a0e9bd1978497928",
+      "research_predictions_sha256": "772218bac72f5d9cb69f8bbddf946b4be36a0f18348b792e2e1d64aa2dc9cefd"
+    },
+    {
+      "game": "10516",
+      "scenario": "label_blind_seed7",
+      "frames": 148639,
+      "mismatches": 0,
+      "geometry_sha256": "4235e18b269f72d20b017357a7da35c87af7ce3701a5ac04a0e9bd1978497928",
+      "research_predictions_sha256": "863619739c6305d4c308826a1612160d8111ba7c6357d9eec278f35d369d54f2"
+    },
+    {
+      "game": "10516",
+      "scenario": "novel_23",
+      "frames": 148639,
+      "mismatches": 0,
+      "geometry_sha256": "4235e18b269f72d20b017357a7da35c87af7ce3701a5ac04a0e9bd1978497928",
+      "research_predictions_sha256": "d764cba4a92ee81c3fa7dfb4481271c12b5174f93ff662d79e5ce7a4b54aa739"
+    },
+    {
+      "game": "10516",
+      "scenario": "novel_101",
+      "frames": 148639,
+      "mismatches": 0,
+      "geometry_sha256": "4235e18b269f72d20b017357a7da35c87af7ce3701a5ac04a0e9bd1978497928",
+      "research_predictions_sha256": "42035ab4cbe5eea76db13def8c11d17c2153f0024b85296424ebf7cc4c60dd42"
+    },
+    {
+      "game": "3827",
+      "scenario": "natural_detected",
+      "frames": 148089,
+      "mismatches": 0,
+      "geometry_sha256": "850e9c8681cf9879ed4f480eeb45e49aae08881afb727bf92eff40239ee7d054",
+      "research_predictions_sha256": "8908e1496ef344694f897fd8b4174e4453069adea37a2a82b3212755ea431c59"
+    },
+    {
+      "game": "3827",
+      "scenario": "label_blind_seed7",
+      "frames": 148089,
+      "mismatches": 0,
+      "geometry_sha256": "850e9c8681cf9879ed4f480eeb45e49aae08881afb727bf92eff40239ee7d054",
+      "research_predictions_sha256": "0f9412cc9eff289a423db0d3650be6947124319b8317e0592e1bc00f904935d0"
+    },
+    {
+      "game": "3827",
+      "scenario": "novel_23",
+      "frames": 148089,
+      "mismatches": 0,
+      "geometry_sha256": "850e9c8681cf9879ed4f480eeb45e49aae08881afb727bf92eff40239ee7d054",
+      "research_predictions_sha256": "a9bef33c6e330b7f96632ffd3952667d76ac43176c7cffdeb5e4971a81c94803"
+    },
+    {
+      "game": "3827",
+      "scenario": "novel_101",
+      "frames": 148089,
+      "mismatches": 0,
+      "geometry_sha256": "850e9c8681cf9879ed4f480eeb45e49aae08881afb727bf92eff40239ee7d054",
+      "research_predictions_sha256": "67c68209dd119fea808abba94953d8c0d685739deff6ce20105944a7f59cf532"
+    },
+    {
+      "game": "3859",
+      "scenario": "natural_detected",
+      "frames": 156815,
+      "mismatches": 0,
+      "geometry_sha256": "151ba59ec0031c605390fc14ef27aa79daf9a49dfb4273d62c4edb44243f8eb2",
+      "research_predictions_sha256": "7fcc361574dc8db44a2a494fb7219f129d8e2d2f0567a06ed8ded1bb7745c5b5"
+    },
+    {
+      "game": "3859",
+      "scenario": "label_blind_seed7",
+      "frames": 156815,
+      "mismatches": 0,
+      "geometry_sha256": "151ba59ec0031c605390fc14ef27aa79daf9a49dfb4273d62c4edb44243f8eb2",
+      "research_predictions_sha256": "25f634bc177ffbcf5dc496188de501d88363c01667095da83a9df7d158834efd"
+    },
+    {
+      "game": "3859",
+      "scenario": "novel_23",
+      "frames": 156815,
+      "mismatches": 0,
+      "geometry_sha256": "151ba59ec0031c605390fc14ef27aa79daf9a49dfb4273d62c4edb44243f8eb2",
+      "research_predictions_sha256": "35ca6f227e0a042b90697fc8a3f5b47b0ebe6a0bf7f0e85bc1a262accbb0cc8d"
+    },
+    {
+      "game": "3859",
+      "scenario": "novel_101",
+      "frames": 156815,
+      "mismatches": 0,
+      "geometry_sha256": "151ba59ec0031c605390fc14ef27aa79daf9a49dfb4273d62c4edb44243f8eb2",
+      "research_predictions_sha256": "c8244ecba50a7ce820bd94fdcca20bf8f7ad8e236acbdbfd4acbf51b527cc80b"
+    },
+    {
+      "game": "10503",
+      "scenario": "natural_detected",
+      "frames": 150004,
+      "mismatches": 0,
+      "geometry_sha256": "fae6eb20eb179daf96e606f9b0d2709eff6dfac2f213a68892100b13b8f8853e",
+      "research_predictions_sha256": "385c644e81070c934501385b6506b647a189aab3e12e2f701312979a58fd1344"
+    },
+    {
+      "game": "10503",
+      "scenario": "label_blind_seed7",
+      "frames": 150004,
+      "mismatches": 0,
+      "geometry_sha256": "fae6eb20eb179daf96e606f9b0d2709eff6dfac2f213a68892100b13b8f8853e",
+      "research_predictions_sha256": "88b4452a89250078670aec3fc9d3217b344519cabb7f3c81c9d822baf86f9b6a"
+    },
+    {
+      "game": "10503",
+      "scenario": "novel_23",
+      "frames": 150004,
+      "mismatches": 0,
+      "geometry_sha256": "fae6eb20eb179daf96e606f9b0d2709eff6dfac2f213a68892100b13b8f8853e",
+      "research_predictions_sha256": "bb4b5880aeff7776eb28322ca75e1e3fd32bb4602a9795937cc2ce6fc672d597"
+    },
+    {
+      "game": "10503",
+      "scenario": "novel_101",
+      "frames": 150004,
+      "mismatches": 0,
+      "geometry_sha256": "fae6eb20eb179daf96e606f9b0d2709eff6dfac2f213a68892100b13b8f8853e",
+      "research_predictions_sha256": "98b701bfde6948cb86685ce5ae08a73c36ca3a3f526c008f9c5e4dc5650b4cad"
+    },
+    {
+      "game": "3858",
+      "scenario": "natural_detected",
+      "frames": 156716,
+      "mismatches": 0,
+      "geometry_sha256": "40dd6bac86abf509c6c6b765056e09569aaff592f97c9768239e3ee6b481fbe5",
+      "research_predictions_sha256": "041905d5845e29032f0020f0bc6f1b93665958cc5dbfeccb103a0d22c12f34d0"
+    },
+    {
+      "game": "3858",
+      "scenario": "label_blind_seed7",
+      "frames": 156716,
+      "mismatches": 0,
+      "geometry_sha256": "40dd6bac86abf509c6c6b765056e09569aaff592f97c9768239e3ee6b481fbe5",
+      "research_predictions_sha256": "2bd0c0677a5eae08ca366ac130e6fb148064251e671b203c3e392503cc60af13"
+    },
+    {
+      "game": "3858",
+      "scenario": "novel_23",
+      "frames": 156716,
+      "mismatches": 0,
+      "geometry_sha256": "40dd6bac86abf509c6c6b765056e09569aaff592f97c9768239e3ee6b481fbe5",
+      "research_predictions_sha256": "c1f43ca575df047e968c4203aa53b92fa6a48ec5f5c3c1d0ba725729de80f119"
+    },
+    {
+      "game": "3858",
+      "scenario": "novel_101",
+      "frames": 156716,
+      "mismatches": 0,
+      "geometry_sha256": "40dd6bac86abf509c6c6b765056e09569aaff592f97c9768239e3ee6b481fbe5",
+      "research_predictions_sha256": "1a53106e76ac607fc48e6c8789fbe72ffb480cb08c77ad03accd5b236033907c"
+    },
+    {
+      "game": "3838",
+      "scenario": "natural_detected",
+      "frames": 153390,
+      "mismatches": 0,
+      "geometry_sha256": "c71ff93def3691b01ec492cfc1f5d76b9255b56acef38e751cb4681277c046ae",
+      "research_predictions_sha256": "e88a5ca2ad1bcca6e60c09098578c84778e6494c3ba5e570df19c311251cba06"
+    },
+    {
+      "game": "3838",
+      "scenario": "label_blind_seed7",
+      "frames": 153390,
+      "mismatches": 0,
+      "geometry_sha256": "c71ff93def3691b01ec492cfc1f5d76b9255b56acef38e751cb4681277c046ae",
+      "research_predictions_sha256": "7a6f817904f57290f0273be30db684b40922e06d91580074ddc5ba9c591ba446"
+    },
+    {
+      "game": "3838",
+      "scenario": "novel_23",
+      "frames": 153390,
+      "mismatches": 0,
+      "geometry_sha256": "c71ff93def3691b01ec492cfc1f5d76b9255b56acef38e751cb4681277c046ae",
+      "research_predictions_sha256": "b8c47b6f8a7c66452b59feb334f0efac8a0eaa3a334daa223ec17f79ed605fe3"
+    },
+    {
+      "game": "3838",
+      "scenario": "novel_101",
+      "frames": 153390,
+      "mismatches": 0,
+      "geometry_sha256": "c71ff93def3691b01ec492cfc1f5d76b9255b56acef38e751cb4681277c046ae",
+      "research_predictions_sha256": "9f37178b79e52097bb4dcbbf34e6dcc37031192dc92b030b1849a6bbdd9b3c32"
+    },
+    {
+      "game": "3842",
+      "scenario": "natural_detected",
+      "frames": 147028,
+      "mismatches": 0,
+      "geometry_sha256": "8a4ee14ebcc733bd5f9015d7d10c3c3ead49e293d3c85a55e05ec6bbda439978",
+      "research_predictions_sha256": "f59cac88523d2cc836da32cb5b527a22dbf28247a1a843a766cbfb3763466a62"
+    },
+    {
+      "game": "3842",
+      "scenario": "label_blind_seed7",
+      "frames": 147028,
+      "mismatches": 0,
+      "geometry_sha256": "8a4ee14ebcc733bd5f9015d7d10c3c3ead49e293d3c85a55e05ec6bbda439978",
+      "research_predictions_sha256": "3e5133eff0722d3eaca4a0d5ae26225a4405ecf0f35c288517fcdf544b35324e"
+    },
+    {
+      "game": "3842",
+      "scenario": "novel_23",
+      "frames": 147028,
+      "mismatches": 0,
+      "geometry_sha256": "8a4ee14ebcc733bd5f9015d7d10c3c3ead49e293d3c85a55e05ec6bbda439978",
+      "research_predictions_sha256": "3c9f8362661165c85d994e152f597ae8f18d26ca1b2bd29d3516ff163c41b5bf"
+    },
+    {
+      "game": "3842",
+      "scenario": "novel_101",
+      "frames": 147028,
+      "mismatches": 0,
+      "geometry_sha256": "8a4ee14ebcc733bd5f9015d7d10c3c3ead49e293d3c85a55e05ec6bbda439978",
+      "research_predictions_sha256": "c0bdb54329b21381e0d4ea188c8c447ba8f578a37ebacd1aa876e1e66abcf193"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
-  "status": "CONDITIONALLY READY overall; technical checks PASS; meaningful development gain PASS; fresh generalization not assessed; publication/submission on user hold",
-  "candidate": "weighted_short_gap",
-  "source_commit": "dfc9e860bd28810d0aa768a584eb518e96cee0b6",
+  "status": "READY technical; adopted; generalization uncertainty disclosed; organizer submission and publication on user hold",
+  "candidate": "uniform_temporal_focus",
+  "source_commit": "98e931ccc2eea3e81bcb8aa4b04b90c49bc64e4e",
   "input_sha256": {
     "tactical/BAR-ATH_tactical_atd.xml": "327e35e32e46a647389b88f883d4f9a2ab931e3e6148aef2fcf8f22b1e93c43a",
     "tactical/BAR-ATH_tactical_atd.txt": "f130e350d2bfdf734b7e32f072931fccc6d015c1e837d082064875fe0a700431"
@@ -14,6 +14,7 @@
     "mtah/robust_temporal.py": "6e87ac3928dddfcd4059396dd059cbbf73f2816b4bc91a5ba0129006b78da87d",
     "mtah/v4.py": "e10fa8ae504c0f5065de588f476f6a853136f96da8b34dca1dfb3860308ecf22",
     "mtah/temporal.py": "800925d1d60c7ca622e62ed206655f7c8bfedb756caf0ce8feff1988c78aa268",
+    "mtah/activity_temporal.py": "1906c7ce9e6ee333efb29b5f691c262f9be662c3a105f12e80c1121345df7307",
     "mtah/spell_loss.py": "9b08242e2d8426a35eb78bbcf0a8d3e24aadf202f1c6cde7817f699fd36f0393",
     "mtah/config.py": "9c6bd4f888989aecafe2f28e9e56c146628ddd5169fb801fe0f39d166e773914",
     "mtah/reliability.py": "7b45ba722be976503540d678871a533ddb70470610b772c9ec8a59351a744875",
@@ -24,6 +25,7 @@
     "mtah/mixed_candidate.py": "384c306fa2fbed04a6c8029705fa4d6f8eff5d233aac086fa0975427f04eafca",
     "mtah/features.py": "5d6f7b88847ae35da393e0c2b8eee02f4ece315354803f00d4e1302802a0c604",
     "mtah/recovery_candidate.py": "29239f981856df9e53ef1c8369f39accc67373c979be606b162d90a8d7e6ec47",
+    "mtah/final_candidate.py": "a239b106c110ad06292285e52adb796e164fc5c3e25857ee7d28b283920d302d",
     "mtah/degrade.py": "c451d252a49720e08bd45a09ba62cf178d9d5f3f66d7537ab453b97b85e5e14a",
     "mtah/stack.py": "755acfeb73d4294e9752fb1d365dfead4e2b1cbdc05d763d9e81d50aa0eb0f38",
     "mtah/recovery_features.py": "af261dd62fc29e9be2fa37aa9cb84513115af3cd61ae8f42f13792e9a1912b44",
@@ -39,7 +41,7 @@
     "mtah/methods/v3_params.json": "946109d611a251e60ecc434f8690d83b83a6f63e236c647027c3168c75cc4da5",
     "mtah/methods/v2_params.json": "22888607bace4e71118aa6445d7360ee18ac7019869bf37c46bc8a2b6506201a",
     "mtah/methods/v1_params.json": "01f8e02238da5dc7f3aa3fd49b2a7f2be6089ea2c974a616bd170e611ba34c6d",
-    "tools/generate_recovery_candidate.py": "b096257fa1c475209999d594430fa08e76d24951310ae51db10c75e21d0d3095"
+    "tools/generate_final_candidate.py": "50a2b3b3df9056642e73f2ed84f5fff36aa57fd915bbd13c921653dc8cd18924"
   },
   "model_file_sha256": {
     "assets/v4/temporal_state.pt": "d2628a2ddb790175f100e54d76c4e2aa89ebfce8179931e3c531d24c88816a90",
@@ -56,7 +58,14 @@
     "assets/recovery-candidate/bundle.json": "4d25e3c36e7c72f844950bb1083531a2b44a0ba23dd4332ae9c6894a56d11161",
     "assets/recovery-candidate/README.md": "2606bf6e39337a9966859d9d26412ce2c2ec652c6cfcda491fce162bc8f8729a",
     "assets/recovery-candidate/activity.pkl": "287dbb28ebf592e761b8b958d413362e28d18ca5a1953c75af5d5029dd7599e2",
-    "assets/recovery-candidate/activity_meta.json": "adc0a8115e626d62b6f751aba999751ff52db047c6ec189776298acf23f09e62"
+    "assets/recovery-candidate/activity_meta.json": "adc0a8115e626d62b6f751aba999751ff52db047c6ec189776298acf23f09e62",
+    "assets/final-candidate/bundle.json": "4fd40e8911324cab78e0641ab56ac85209aba9aa30290f5cd4a0311d24bf709f",
+    "assets/final-candidate/owner_meta.json": "2e6769fab97a6d3fa92941c6a57598e208c17326096c416711df3405efe30ad0",
+    "assets/final-candidate/dead_meta.json": "ce5aa8e1fe7e397d45f82f531ad43db5a0cdca369acbac81e85ee8b89a6ec125",
+    "assets/final-candidate/activity_meta.json": "ccddd31252110e1c70381ae8cf6944d3b0fe3a648256756fe131c6f2ef047648",
+    "assets/final-candidate/dead.pt": "2a45f288a0465f5581514d19c8eebb5711797ec78d768ec3d96e560087f15dc8",
+    "assets/final-candidate/activity.pt": "2e3230ac3d30952930aaa011c4804e9c8689a327ca67b148a31e6355cc093539",
+    "assets/final-candidate/owner.pt": "2b931e44c4b38a977309ae5c47c8cd24345dc87ee11d5e03c8c560916dafb73c"
   },
   "official_sha256": {
     "evaluation/validate_submission.py": "07ac29499acbd337e1dc1de1832d63f6e1fa1d981e22f6ad08212529e2bbee14",
@@ -80,22 +89,22 @@
     {
       "environment": "macOS ARM",
       "run": 1,
-      "seconds": 35.511347500025295,
-      "sha256": "1f4602b5b8b04e4066c5478549a9b5e53f13852ca6513f01422906d1dcb1a1c0",
+      "seconds": 52.46560558397323,
+      "sha256": "897db60c18fefe362acee239665136d47a8b2c87a54eb8eae67231b0dcdf9e33",
       "official_validator": "PASS"
     },
     {
       "environment": "macOS ARM",
       "run": 2,
-      "seconds": 35.304452916025184,
-      "sha256": "1f4602b5b8b04e4066c5478549a9b5e53f13852ca6513f01422906d1dcb1a1c0",
+      "seconds": 47.71047670801636,
+      "sha256": "897db60c18fefe362acee239665136d47a8b2c87a54eb8eae67231b0dcdf9e33",
       "official_validator": "PASS"
     },
     {
       "environment": "Linux arm64",
       "run": 1,
-      "seconds": 39.27412420802284,
-      "sha256": "1f4602b5b8b04e4066c5478549a9b5e53f13852ca6513f01422906d1dcb1a1c0",
+      "seconds": 52.24863437504973,
+      "sha256": "897db60c18fefe362acee239665136d47a8b2c87a54eb8eae67231b0dcdf9e33",
       "official_validator": "PASS",
       "network": "none",
       "image_id": "sha256:047088ca4edff82cf4197acc48fe81a07452eb5b793fdc0facdb52afffc36aa3"
@@ -103,24 +112,32 @@
     {
       "environment": "Linux amd64 emulated",
       "run": 1,
-      "seconds": 52.10885049996432,
-      "sha256": "1f4602b5b8b04e4066c5478549a9b5e53f13852ca6513f01422906d1dcb1a1c0",
+      "seconds": 86.53940675000194,
+      "sha256": "897db60c18fefe362acee239665136d47a8b2c87a54eb8eae67231b0dcdf9e33",
       "official_validator": "PASS",
       "network": "none",
       "image_id": "sha256:3bc0d12985d15f5c631a67ff2e45f831727c240b489fa06bd9cbdbd7f76cf562"
     }
   ],
   "inputs_unchanged": true,
-  "model": "weighted_short_gap",
-  "command": "python tools/generate_recovery_candidate.py --bundle assets/recovery-candidate/bundle.json --data-dir /path/to/data --output \"Ruses Cules.csv\"",
-  "output_path": "out/recovery-ready/Ruses Cules.csv",
+  "technical_readiness": "READY",
+  "adopted": true,
+  "adopted_utc": "2026-11-16T23:19:03.421084+00:00",
+  "model": "uniform_temporal_focus",
+  "command": "python tools/generate_final_candidate.py --bundle assets/final-candidate/bundle.json --data-dir /path/to/data --output \"Ruses Cules.csv\"",
+  "output_path": "out/final-ready/Ruses Cules.csv",
   "output_bytes": 1682773,
-  "original_csv_sha256": "cfbd16ea35075a199d2401c18f162d4c1f953be4049cd776d502ff42ea389c97",
-  "output_changed_from_original": true,
-  "parent_manifest": "validation/PARENT_SUBMISSION_MANIFEST.json",
-  "official_source_commit": "f8f2629ff1e0985f81d7e59d8413678514ee1530",
-  "technical_document_sha256": "5b82d96b8ed3788553ab0018674a0c1ae5ef1e5fc3451307b2d2af83cc1135ea",
-  "technical_document_path": "out/recovery-ready/Ruses Cules.md",
+  "technical_document_path": "out/final-ready/Ruses Cules.md",
+  "technical_document_sha256": "bc8dd6b7d19b5036f2b7942de2001a1ac787a6d0955798a144244706dcbe1329",
   "release_branch": "codex/short-possession-recovery",
-  "repository_url": "https://github.com/8Tigran8/silver-octo-winner/tree/codex/short-possession-recovery"
+  "repository_url": "https://github.com/8Tigran8/silver-octo-winner/tree/codex/short-possession-recovery",
+  "rollback_manifest": "releases/weighted-short-gap/submission_manifest.json",
+  "rollback_tag": "codex/rollback-weighted-short-gap-20261117",
+  "research_parity_sha256": "2ce0fac0683f3104a4cd83254125004ea328076c34cfe4dd6009f77a33e5ffd7",
+  "test_log_sha256": "d50e8499325af952793a34fa95c5c88ca766c6c5ef6bde258ee6b75c89fc59bb",
+  "decision_sha256": "c25b3a4caff8da4e513f7dc63abf0db151e06402bdaf3521f7baf780d5b04198",
+  "official_refresh_sha256": "b07d54d7d4d456124a913aaf954e9eb47d8e4e417997aadb2d39961de37e3052",
+  "heldout18_scored_this_release": false,
+  "organizer_submission": false,
+  "repository_visibility_changed": false
 }

@@ -1,0 +1,85 @@
+{
+  "candidate": "uniform_temporal_focus",
+  "adopted": true,
+  "technical_readiness": "READY",
+  "recorded_utc": "2026-11-16T23:19:29.689010+00:00",
+  "generation_source_commit": "98e931ccc2eea3e81bcb8aa4b04b90c49bc64e4e",
+  "source_branch": "codex/short-possession-recovery",
+  "csv_sha256": "897db60c18fefe362acee239665136d47a8b2c87a54eb8eae67231b0dcdf9e33",
+  "rows": 199319,
+  "regression_tests": 169,
+  "portable_research_parity": {
+    "matches": 10,
+    "scenarios_per_match": 4,
+    "exact_outputs": 40,
+    "reference_labels_read": false
+  },
+  "clean_source_runs": [
+    {
+      "environment": "macOS ARM",
+      "run": 1,
+      "seconds": 52.46560558397323,
+      "sha256": "897db60c18fefe362acee239665136d47a8b2c87a54eb8eae67231b0dcdf9e33",
+      "official_validator": "PASS"
+    },
+    {
+      "environment": "macOS ARM",
+      "run": 2,
+      "seconds": 47.71047670801636,
+      "sha256": "897db60c18fefe362acee239665136d47a8b2c87a54eb8eae67231b0dcdf9e33",
+      "official_validator": "PASS"
+    },
+    {
+      "environment": "Linux arm64",
+      "run": 1,
+      "seconds": 52.24863437504973,
+      "sha256": "897db60c18fefe362acee239665136d47a8b2c87a54eb8eae67231b0dcdf9e33",
+      "official_validator": "PASS",
+      "network": "none",
+      "image_id": "sha256:047088ca4edff82cf4197acc48fe81a07452eb5b793fdc0facdb52afffc36aa3"
+    },
+    {
+      "environment": "Linux amd64 emulated",
+      "run": 1,
+      "seconds": 86.53940675000194,
+      "sha256": "897db60c18fefe362acee239665136d47a8b2c87a54eb8eae67231b0dcdf9e33",
+      "official_validator": "PASS",
+      "network": "none",
+      "image_id": "sha256:3bc0d12985d15f5c631a67ff2e45f831727c240b489fa06bd9cbdbd7f76cf562"
+    }
+  ],
+  "one_physical_host": true,
+  "weight_training_repeated": false,
+  "heldout18_read": false,
+  "target_labels_read": false,
+  "organizer_submission": false,
+  "repository_visibility_changed": false,
+  "adoption_basis": "Explicit user authorization after successful technical verification; historical +0.02 effect-size gate failures are preserved and not reclassified.",
+  "remaining_limits": [
+    "Repeated development selection; no new prospective holdout score",
+    "PFF event-derived references are proxies; alternate SDK reconstruction is not independent data",
+    "Subsecond possessions and long ball gaps remain weak; small false-live tradeoff disclosed",
+    "Public source availability, original-provider access qualifications and team eligibility are separate from technical readiness"
+  ],
+  "rollback": {
+    "tag": "codex/rollback-weighted-short-gap-20261117",
+    "source_commit": "b395a4a40743cd5628c64fa55bd0ef1856b1173d",
+    "manifest": "releases/weighted-short-gap/submission_manifest.json",
+    "csv": "out/rollback-weighted-short-gap/Ruses Cules.csv",
+    "csv_sha256": "1f4602b5b8b04e4066c5478549a9b5e53f13852ca6513f01422906d1dcb1a1c0",
+    "gate": "PASS"
+  },
+  "evidence_sha256": {
+    "decision.json": "c25b3a4caff8da4e513f7dc63abf0db151e06402bdaf3521f7baf780d5b04198",
+    "parity.json": "2ce0fac0683f3104a4cd83254125004ea328076c34cfe4dd6009f77a33e5ffd7",
+    "reproduction.json": "dc04b047a915a6441e481feacad41f696e06ae1bb6264b72e00c675614ec9f3e",
+    "official_check.json": "b07d54d7d4d456124a913aaf954e9eb47d8e4e417997aadb2d39961de37e3052",
+    "tests.log": "d50e8499325af952793a34fa95c5c88ca766c6c5ef6bde258ee6b75c89fc59bb",
+    "final_gate.log": "c9fd2b1fef9518f6e739b13a81437fe1390bf561577073e860c7964925f272f2",
+    "rollback_gate.log": "b3b40c86e2bfa4e33cfaf8e88b4b5a838161e4038a89ba27204b7af9fb0202f3",
+    "TECHNICAL.md": "bc8dd6b7d19b5036f2b7942de2001a1ac787a6d0955798a144244706dcbe1329",
+    "DATA_REVIEW.md": "6e2a2d06e9c3c09a48a1b7955fb9817253e04b33b915d277e7aae81d76821265",
+    "data_inventory_check.json": "38dcc2f9958a8962d5009ed23a8c17098a2fe999f62a8e9e1062fff985d0ccdc"
+  },
+  "submission_manifest_sha256": "3515107bae26f76dc8e2c173a8c768e175cca36fa1da701276cbeb370987dbac"
+}
