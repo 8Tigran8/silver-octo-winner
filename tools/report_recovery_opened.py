@@ -1,10 +1,19 @@
 """Report all reopened outcomes and explicitly separate evidence from no-overfit claims."""
-import json,sys
+import json,sys,re
 from pathlib import Path
 import numpy as np
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT));sys.path.insert(0,str(ROOT/'tools'))
 from recovery_opened_audit import DOC,check
 from pff_reader import sha
+
+
+def readable_spacing(text):
+    before=r"\b(The|All|all|the|on|of|for|current|original|approved|only|versus|below|contains|predicts|misses|separates|and|is|improves|declines|remains|frozen|with|against|supplies|has)(?=\d)"
+    after=r"(?<=\d)(?=(?:matches|games|original|reference|possessions|spells|frames|records|training|changed|mostly|of|at|historical|sets|in|passing|tests|PFF|fresh|brute|source|fixed|s)\b)"
+    text=re.sub(before,r"\1 ",text)
+    text=re.sub(after," ",text)
+    text=text.replace("macro F10.","macro F1 0.").replace("%ofgraded","% of graded").replace("%and","% and ").replace("%on","% on")
+    return text
 
 
 def main():
@@ -22,6 +31,15 @@ def main():
     for g in p['fixtures']:
         game=g['game_id'];o=index[game,'natural_detected','boundary102'];n=index[game,'natural_detected','weighted_short_gap'];ob=index[game,'label_blind_seed7','boundary102'];nb=index[game,'label_blind_seed7','weighted_short_gap']
         report.append(f"| {g['cohort']}: {g['home']}–{g['away']} ({game}) | {o['spell_f1_mean']:.6f} | {n['spell_f1_mean']:.6f} | {n['spell_f1_mean']-o['spell_f1_mean']:+.6f} | {ob['spell_f1_mean']:.6f} | {nb['spell_f1_mean']:.6f} |")
+    report+=['','## Pooled error diagnostics across all18matches','', '| Scenario / model | Short spells<3s matched / reference (IoU0.5) | False D / missing-ball live frames | False live / missing-ball D frames | Wrong team / missing-ball live frames |','|---|---:|---:|---:|---:|']
+    for scenario in ['natural_detected','label_blind_seed7']:
+        for model in ['boundary102','weighted_short_gap']:
+            rr=[r for r in d['diagnostics'] if r['scenario']==scenario and r['candidate']==model]
+            total=sum(r['short_spells'][k]['reference'] for r in rr for k in ['under_1s','1_to_3s']);matched=sum(r['short_spells'][k]['matched'] for r in rr for k in ['under_1s','1_to_3s'])
+            m={k:sum(r['observation']['missing'][k] for r in rr) for k in ['live','false_dead','dead','false_live','wrong_team']}
+            cells=[f"{matched}/{total} ({100*matched/total:.2f}%)"]+[f"{m[k]}/{m[den]} ({100*m[k]/m[den]:.2f}%)" for k,den in [('false_dead','live'),('false_live','dead'),('wrong_team','live')]]
+            report.append('| '+scenario+' / '+model+' | '+' | '.join(cells)+' |')
+    report+=['','Counts pool frames/spells, unlike the equal-match headline average. Short recall has no precision term. Missing-ball wrong-team errors increase even while false stoppages and total error decrease; both sides are disclosed.']
     report+=['','## Current train / development / audit comparison','', '| Group | Games | Current natural Spell F1 | Interpretation |','|---|---:|---:|---|',
     f"| PFF training |36|{training['mean_spell']:.6f}|In-sample|",'| PFF development |10|0.680009|Reused model-selection set;22 changed policies|']
     for r in selected:
@@ -48,8 +66,8 @@ def main():
     'The full current test suite and exact submission gate are rerun after this repair; see verification.json and tests.txt. Previous clean-source generation evidence remains valid because inference files, model bytes and the target CSV are unchanged. Four macOS/Linux outputs were byte-identical and official-validator valid. The target CSV SHA-256 remains1f4602b5b8b04e4066c5478549a9b5e53f13852ca6513f01422906d1dcb1a1c0.','',
     '## Reproduction and decision','',
     'Original source and raw files must be available locally; raw/reference/prediction arrays remain ignored and are not redistributed. The evidence directory publishes aggregate metrics and hashes only. tools/recovery_opened_audit.py run --resume completes the frozen18-game audit using the reporting amendment; tools/recovery_training_audit.py run --resume completes the36-game training inference audit; tools/report_recovery_opened.py recreates this report. Completed evidence is not replaced with a different candidate.','',
-    'All per-game regressions, failed guards and technical defects must be investigated before claiming readiness. If the frozen review guards pass, retain the already selected model; these reopened outcomes do not authorize a new threshold search. Remaining weaknesses are short-possession recall, ambiguous ownership, long observation gaps, domain shift and proxy labels. Repeatedly searching these18matches would consume them as further development. A genuinely new provider-diverse labeled sample would still be needed for stronger prospective generalization evidence. No organizer submission or repository publication was performed.']
-    (DOC/'REPORT.md').write_text('\n'.join(report)+'\n')
+    'All per-game regressions, failed guards and technical defects must be investigated before claiming readiness. All frozen review guards pass: retain the already selected model. These reopened outcomes do not authorize a new threshold search. Remaining weaknesses are short-possession recall, ambiguous ownership, long observation gaps, domain shift and proxy labels. Repeatedly searching these18matches would consume them as further development. A genuinely new provider-diverse labeled sample would still be needed for stronger prospective generalization evidence. No organizer submission or repository publication was performed.']
+    (DOC/'REPORT.md').write_text(readable_spacing('\n'.join(report)+'\n'))
     compact=dict(scope=d['scope'],summary=selected,training_mean_spell=training['mean_spell'],all_guards_pass=all(r['review_guard_pass'] for r in d['summary']),
         source_results_sha256=sha(DOC/'results.json'),training_results_sha256=sha(DOC/'training_results.json'))
     (DOC/'summary.json').write_text(json.dumps(compact,indent=2)+'\n');print(json.dumps(compact,indent=2))

@@ -11,5 +11,22 @@
   "logs_sha256": {
     "tests.txt": "cd883103c7389872d440f423946f169448faf7ceb21b20b13756ff09ca673c9c",
     "exact_gate.txt": "b3b40c86e2bfa4e33cfaf8e88b4b5a838161e4038a89ba27204b7af9fb0202f3"
+  },
+  "complete_score_grid": {
+    "matches": 18,
+    "scenarios": 2,
+    "models": 2,
+    "references": 2,
+    "records": 144
+  },
+  "canonical_sdk_exact_metric_agreement": true,
+  "all_predeclared_review_guards_pass": true,
+  "report_sha256": "2d97f196e9ac72eb661f732be8ac1d4110c8ca0e53b3a79a51ea752782c3bfed",
+  "training_inference_completed_games": 36,
+  "all_pff_games_accounted_for": {
+    "training": 36,
+    "development": 10,
+    "reopened_test": 18,
+    "total": 64
   }
 }

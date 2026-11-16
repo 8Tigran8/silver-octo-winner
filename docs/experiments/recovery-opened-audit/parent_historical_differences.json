@@ -1,0 +1,107 @@
+{
+  "scope": "Parent recomputed with audited source versus original stored predictions; weights unchanged",
+  "differences": [
+    {
+      "game": "3812",
+      "scenario": "natural_detected",
+      "differing_frames": 40,
+      "max_distance_to_period_edge_frames": 93
+    },
+    {
+      "game": "3812",
+      "scenario": "label_blind_seed7",
+      "differing_frames": 40,
+      "max_distance_to_period_edge_frames": 93
+    },
+    {
+      "game": "3814",
+      "scenario": "natural_detected",
+      "differing_frames": 25,
+      "max_distance_to_period_edge_frames": 268
+    },
+    {
+      "game": "3814",
+      "scenario": "label_blind_seed7",
+      "differing_frames": 25,
+      "max_distance_to_period_edge_frames": 268
+    },
+    {
+      "game": "3829",
+      "scenario": "natural_detected",
+      "differing_frames": 55,
+      "max_distance_to_period_edge_frames": 81
+    },
+    {
+      "game": "3829",
+      "scenario": "label_blind_seed7",
+      "differing_frames": 55,
+      "max_distance_to_period_edge_frames": 81
+    },
+    {
+      "game": "3830",
+      "scenario": "natural_detected",
+      "differing_frames": 35,
+      "max_distance_to_period_edge_frames": 1782
+    },
+    {
+      "game": "3830",
+      "scenario": "label_blind_seed7",
+      "differing_frames": 30,
+      "max_distance_to_period_edge_frames": 1782
+    },
+    {
+      "game": "3841",
+      "scenario": "natural_detected",
+      "differing_frames": 85,
+      "max_distance_to_period_edge_frames": 267
+    },
+    {
+      "game": "3841",
+      "scenario": "label_blind_seed7",
+      "differing_frames": 90,
+      "max_distance_to_period_edge_frames": 272
+    },
+    {
+      "game": "3843",
+      "scenario": "natural_detected",
+      "differing_frames": 5,
+      "max_distance_to_period_edge_frames": 266
+    },
+    {
+      "game": "3844",
+      "scenario": "label_blind_seed7",
+      "differing_frames": 5,
+      "max_distance_to_period_edge_frames": 289
+    },
+    {
+      "game": "3845",
+      "scenario": "natural_detected",
+      "differing_frames": 20,
+      "max_distance_to_period_edge_frames": 374
+    },
+    {
+      "game": "3845",
+      "scenario": "label_blind_seed7",
+      "differing_frames": 20,
+      "max_distance_to_period_edge_frames": 294
+    },
+    {
+      "game": "3856",
+      "scenario": "natural_detected",
+      "differing_frames": 5,
+      "max_distance_to_period_edge_frames": 298
+    },
+    {
+      "game": "3857",
+      "scenario": "natural_detected",
+      "differing_frames": 10,
+      "max_distance_to_period_edge_frames": 21
+    },
+    {
+      "game": "3857",
+      "scenario": "label_blind_seed7",
+      "differing_frames": 10,
+      "max_distance_to_period_edge_frames": 21
+    }
+  ]
+}

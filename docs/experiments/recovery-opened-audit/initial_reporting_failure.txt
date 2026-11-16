@@ -1,0 +1,84 @@
+Loaded 10502 geometry 24.4
+Loaded 10505 geometry 24.4
+Predicted 10505 natural_detected 45.0
+Predicted 10505 label_blind_seed7 65.5
+Predicted 10502 natural_detected 80.4
+Loaded 10507 geometry 31.6
+Predicted 10507 natural_detected 52.3
+Predicted 10502 label_blind_seed7 135.5
+Predicted 10507 label_blind_seed7 71.1
+Loaded 10509 geometry 25.8
+Predicted 10509 natural_detected 45.0
+Loaded 10511 geometry 32.5
+Predicted 10509 label_blind_seed7 64.4
+Predicted 10511 natural_detected 54.1
+Predicted 10511 label_blind_seed7 74.7
+Loaded 10512 geometry 27.3
+Predicted 10512 natural_detected 47.0
+Loaded 3812 geometry 31.5
+Predicted 10512 label_blind_seed7 66.7
+Predicted 3812 natural_detected 52.2
+Predicted 3812 label_blind_seed7 73.4
+Loaded 3814 geometry 29.4
+Predicted 3814 natural_detected 51.9
+Loaded 3825 geometry 32.4
+Predicted 3814 label_blind_seed7 74.1
+Predicted 3825 natural_detected 54.8
+Predicted 3825 label_blind_seed7 74.6
+Loaded 3826 geometry 28.1
+Predicted 3826 natural_detected 49.2
+Loaded 3829 geometry 29.2
+Predicted 3826 label_blind_seed7 69.9
+Predicted 3829 natural_detected 50.0
+Predicted 3829 label_blind_seed7 69.7
+Loaded 3830 geometry 27.5
+Predicted 3830 natural_detected 48.2
+Loaded 3841 geometry 30.0
+Predicted 3830 label_blind_seed7 68.8
+Predicted 3841 natural_detected 51.6
+Predicted 3841 label_blind_seed7 72.5
+Loaded 3843 geometry 28.7
+Predicted 3843 natural_detected 49.0
+Predicted 3843 label_blind_seed7 69.0
+Loaded 3844 geometry 27.9
+Predicted 3844 natural_detected 47.6
+Predicted 3844 label_blind_seed7 67.1
+Loaded 3845 geometry 26.7
+Predicted 3845 natural_detected 46.9
+Predicted 3845 label_blind_seed7 66.3
+Loaded 3856 geometry 28.8
+Predicted 3856 natural_detected 49.9
+Loaded 3857 geometry 27.4
+Predicted 3856 label_blind_seed7 71.5
+Predicted 3857 natural_detected 48.3
+Predicted 3857 label_blind_seed7 69.9
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.12/3.12.11/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/process.py", line 264, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/tools/recovery_opened_audit.py", line 136, in worker
+    if reference=='canonical':diagnostics.append(dict(game=game,cohort=fixture['cohort'],scenario=scenario,candidate=name,**diagnostic(gt,pred,observed[scenario])))
+                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/tools/recovery_opened_audit.py", line 78, in diagnostic
+    for a,b in spans(data['period']):
+                     ~~~~^^^^^^^^^^
+KeyError: 'period'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/tools/recovery_opened_audit.py", line 178, in <module>
+    historic=json.loads((ROOT/fixture['historical_scores']).read_text());prior=historic['source']
+                                        ^^^^^^^^^^^^^
+  File "/Users/tigran/Documents/CV/hackathons/more-than-a-hack-2027/vv-model-v1/tools/recovery_opened_audit.py", line 170, in run
+    def finish_saved(fixture):
+                  ^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.11/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.11/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+KeyError: 'period'

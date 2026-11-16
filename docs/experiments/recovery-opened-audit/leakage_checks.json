@@ -28,5 +28,10 @@
     "recovery_opened_tests.log": "17cf4c5e305b832007992e1117e23ee388fa40b589d810e0d1fdcd870273aa68",
     "recovery_opened_final_gate.log": "b3b40c86e2bfa4e33cfaf8e88b4b5a838161e4038a89ba27204b7af9fb0202f3"
   },
-  "post_reporting_repair_verification": "verification.json (140 tests)"
+  "post_reporting_repair_verification": "verification.json (140 tests)",
+  "pff_tracking_source_identity": {
+    "distinct_registered_games": 64,
+    "distinct_recorded_raw_tracking_sha256": 64,
+    "scope": "Original source receipts; exact duplicate identity only, not semantic near-duplicate detection"
+  }
 }
