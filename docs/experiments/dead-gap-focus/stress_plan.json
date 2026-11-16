@@ -1,0 +1,15 @@
+{
+  "registered_utc": "2026-11-16T21:32:53.585678+00:00",
+  "candidate": "uniform_temporal_focus",
+  "status": "Frozen after original development selection failed; before any new-seed corruption/scores",
+  "base_seeds": [
+    23,
+    101
+  ],
+  "per_game_seed": "base_seed XOR integer game_id, avoids identical temporal corruption layouts across games",
+  "cohort": "Same original10development matches; no new match-generalization claim",
+  "corruption": "Same label-blind geometry corruption parameters; use dummy period-valid labels only; same original independent period spans for inference",
+  "hypothesis": "Check whether the strongest existing candidate transfers to new missing-ball layouts, rather than depending on seed7. No training or numerical changes after these results.",
+  "gates": "Report same+.02/8wins/worst-.02/macro-.002/short/wrong-team/D-F1-.002/false-live+.01 criteria, both references. These diagnostics cannot override the failed original mean-gain requirement.",
+  "prohibited": "No18audit or targetGT reads; no model or threshold selection from new stress results"
+}
