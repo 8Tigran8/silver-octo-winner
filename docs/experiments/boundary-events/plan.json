@@ -1,0 +1,163 @@
+{
+  "registered_utc": "2026-11-16T10:54:50.461188+00:00",
+  "hypothesis": "A separate geometry-only event-boundary classifier supplies time-varying transition evidence; frozen boundary102 emissions and duration constraints remain unchanged. Recover short possessions without globally reducing the transition penalty.",
+  "baseline": "Frozen boundary102, not v4",
+  "base_bundle_sha256": "d71bdd23e0ab2ef49823298a6a1a62e33862140ea0d8a40086f35b916ac8946b",
+  "training_games": [
+    "pff/3816",
+    "pff/3854",
+    "pff/3850",
+    "pff/3836",
+    "pff/3831",
+    "pff/10506",
+    "pff/3846",
+    "pff/10514",
+    "pff/3819",
+    "pff/3853",
+    "pff/3855",
+    "pff/3832",
+    "pff/3833",
+    "pff/3823",
+    "pff/3834",
+    "pff/3822",
+    "pff/10504",
+    "pff/3835",
+    "pff/3847",
+    "pff/3840",
+    "pff/3824",
+    "pff/3837",
+    "pff/3851",
+    "pff/3817",
+    "pff/3815",
+    "pff/10517",
+    "pff/3839",
+    "pff/10515",
+    "pff/3813",
+    "pff/3828",
+    "pff/3848",
+    "pff/3852",
+    "pff/10508",
+    "pff/3818",
+    "pff/3820",
+    "pff/3849"
+  ],
+  "pff_dev_ids": [
+    "10510",
+    "3821",
+    "10513",
+    "10516",
+    "3859",
+    "3827",
+    "10503",
+    "3858",
+    "3838",
+    "3842"
+  ],
+  "forbidden_original_final_ids": [
+    "3812",
+    "3814",
+    "3825",
+    "3826",
+    "3829",
+    "3830",
+    "3841",
+    "3843",
+    "3844",
+    "3845",
+    "3856",
+    "3857"
+  ],
+  "forbidden_bridge_ids": [
+    "10512",
+    "10511",
+    "10509",
+    "10507",
+    "10505",
+    "10502"
+  ],
+  "no_organizer_data": true,
+  "feature_design": "108 cached geometry/contact features at5Hz plus backward/forward differences at0.2s and1s for16 fixed geometry/contact features. Differences reset/clamp within metadata periods. Direct/team-swapped probabilities average. No component posteriors, events, identity or label coverage as predictor features.",
+  "delta_features": [
+    "margin",
+    "h_d1",
+    "a_d1",
+    "dmin",
+    "bspeed_raw",
+    "bspeed",
+    "seen",
+    "allspeed",
+    "h_n3",
+    "a_n3",
+    "nvis",
+    "out",
+    "observed_margin_previous",
+    "observed_margin_following",
+    "h_d2",
+    "a_d2"
+  ],
+  "target_classes": {
+    "0": "No change",
+    "1": "H/A handover while live",
+    "2": "Live/dead transition"
+  },
+  "target_policy": "Adjacent known H/A/D5Hz labels only, first observation and unknown pairs excluded. Labels enter supervised targets only. Every transition row retained; regular negative rows at stride10. Inverse sampling weights, game/scenario weights equal, train priors from weighted sampled rows. No positive dilation or reference-conditioned sensor corruption.",
+  "seeds": [
+    20261113,
+    20261114,
+    20261115
+  ],
+  "deployment_seed_policy": "Equal probability ensemble of all3seeds; report each seed on PFFdev; never select a best seed.",
+  "classifier": {
+    "max_iter": 150,
+    "learning_rate": 0.07,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 100,
+    "l2_regularization": 2.0,
+    "max_bins": 127,
+    "early_stopping": false
+  },
+  "policies": [
+    {
+      "name": "unchanged",
+      "kind": "control",
+      "strength": 0.0
+    },
+    {
+      "name": "constant6",
+      "kind": "constant_control",
+      "cost": 6.0
+    },
+    {
+      "name": "event1",
+      "kind": "learned",
+      "strength": 1.0
+    },
+    {
+      "name": "event2",
+      "kind": "learned",
+      "strength": 2.0
+    }
+  ],
+  "decoder": "Original4state duration chain and emissions; for transition type k, cost_t=clip(cost_base-strength*max(0,log(q_k/q_none)-log(prior_k/prior_none)),1,cost_base). No transition rewarded; min live/dead1s remains. Constant6 is an explanatory control, not an automatic replacement.",
+  "pff_dev_gate": {
+    "min_natural_spell_gain_vs_boundary102": 0.02,
+    "min_natural_game_wins": 8,
+    "max_blind_spell_loss": 0.01,
+    "max_macro_loss": 0.01,
+    "max_perclass_loss": 0.02
+  },
+  "selection": "Score every policy on all10PFFdev games and both fixed natural/blind cases; canonical+fixed SDK shadow. First pass20cells under +.02meaningful gate, then all67old cells with existing frozen complete-fold base models; head never sees old29labels. Old composite must improve>=.005 versusboundary102, no original source/scenario/class guard relaxed. If2eligible pick higher mean of PFFdev andold composite gain; tie event1.",
+  "reused_guards": "All11reused external games and VV2game sensor pilot; no mean loss>.01 versusboundary102 by cohort/scenario, no worst game loss>.05. No game/scenario dropping.",
+  "confirmation": "No original12final or6unopened bridge contents read in this research cycle. A development winner requires a separately declared untouched reserve and one candidate/code freeze before any new final access. This plan does not replace the release candidate or certify final quality.",
+  "no_gain_policy": "Publish complete negative results and retain boundary102. Do not open a reserve after failure or tune on prior final scores.",
+  "literature": [
+    {
+      "url": "https://yiskw713.github.io/asrf/",
+      "use": "Separate frame classification and boundary detection; conceptual inspiration only, no claimed reproduction or football transfer score"
+    },
+    {
+      "url": "https://arxiv.org/abs/2405.15995",
+      "use": "Boundary-aware temporal segmentation motivation; no pretrained video model is imported"
+    }
+  ]
+}
