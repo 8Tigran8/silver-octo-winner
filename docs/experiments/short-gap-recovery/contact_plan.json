@@ -1,0 +1,30 @@
+{
+  "status": "Registered after mechanical/expert/complement development outcomes, before contact candidate scores",
+  "reason": "Changing min duration alone gives essentially zero benefit; lower switch cost modestly increases short recall but not robust Spell F1. This points to insufficient short-control emission evidence. Test a different observable-contact mechanism rather than another duration/threshold sweep.",
+  "hypothesis": "A close player moving with a continuously observed ball supplies additional evidence of brief control, while rejecting fast passes, stationary-ball restarts, uncertain opponents and gaps.",
+  "contact_conditions": {
+    "nearest_distance_metres": 2,
+    "opponent_distance_margin_metres": 2,
+    "minimum_visible_players_each_team": 3,
+    "continuous_ball_frames": 11,
+    "velocity_lag_frames": 10,
+    "ball_speed_range_metres_per_second": [
+      0.5,
+      10
+    ],
+    "max_relative_velocity_metres_per_second": 3,
+    "current_dead_probability_below": 0.5
+  },
+  "correction": "Add signed log(9) to current H/A conditional log odds only where the contact gate passes. Never change missing coordinates or directly assign H/A/D. Keep geometry/period handling and all fitted weights fixed.",
+  "candidates": [
+    "contact",
+    "short_contact",
+    "contact_neural_expert25",
+    "short_contact_neural_expert25"
+  ],
+  "decoder_and_gap_options": "Use only previously fixed original or .4s/4.5 short decoder and unchanged .75 neural/.25 activity gap blend. No new threshold or weight search after scoring.",
+  "data": "All ten original development games, natural and fixed blind scenarios, both canonical and SDK references. No six-bridge, old-final or target data.",
+  "gate": "Unchanged original recovery gate: +.02 mean Spell,8/10 wins,worst>=-.02,macro>=-.002 in each scenario/reference.",
+  "limitation": "A deflection need not be possession. This is a hypothesis, not a hand-labelled control truth; any extra switches/erased true stoppages must remain visible. Reused adaptive development does not prove unseen improvement.",
+  "prior_result_sha256": "12c63e1c462a5a1336dc62b01942f16acb19f1bef6b8c45c93952c6b0ee1de91"
+}
