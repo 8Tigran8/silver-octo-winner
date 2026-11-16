@@ -88,4 +88,14 @@ class PredictorContracts(unittest.TestCase):
    for x,y in zip(a,b):self.assertTrue(np.isfinite(x).all());np.testing.assert_array_equal(x,y)
  def test_reference_rejected(self):
   with self.assertRaises(ValueError):self.predict(dict(fixture(),gt=np.zeros(600)))
+ def test_complete_predictor_short_periods(self):
+  for n in [1,2,5,12,50]:
+   for probability in mixed_candidate.probabilities(fixture(n),[(0,n)],self.assets,self.state):
+    self.assertEqual(probability.shape,(n,));self.assertTrue(np.isfinite(probability).all())
+ def test_partial_xy_is_missing_in_complete_predictor(self):
+  for key in ['ball','players']:
+   partial,missing=fixture(),fixture()
+   if key=='ball':partial[key][100:200,1]=np.nan;missing[key][100:200,:2]=np.nan
+   else:partial[key][100:200,0,1]=np.nan;missing[key][100:200,0,:2]=np.nan
+   for a,b in zip(self.predict(partial),self.predict(missing)):np.testing.assert_array_equal(a,b)
 if __name__=='__main__':unittest.main()
