@@ -1,0 +1,11 @@
+{
+  "source_commit": "be6aa964a236a750bcfc2613870cc0aa8caf9aa2",
+  "frozen_utc": "2026-11-16T13:22:26.926319+00:00",
+  "files_sha256": {
+    "docs/experiments/short-gap-recovery/contact_plan.json": "211606319e09b00f1588cfc94a620a8fe3bc95061f78abfb0b73164baac822b7",
+    "tools/visible_contact.py": "1627045cf98509312a080cbf1e784c58b746887c61ecaa976ac31bf1726eb6c4",
+    "tools/contact_recovery_study.py": "3e71c9c096158affca31ab821a295a83592d5df549c5b9687a94b103c32efbab",
+    "docs/experiments/short-gap-recovery/complement_result.json": "12c63e1c462a5a1336dc62b01942f16acb19f1bef6b8c45c93952c6b0ee1de91",
+    "docs/experiments/short-gap-recovery/complement_scores.json": "fe881f6ce1e705d789b2a7e852147ee90ba36d9c1f03ec43bb75051f57c4b57d"
+  }
+}
