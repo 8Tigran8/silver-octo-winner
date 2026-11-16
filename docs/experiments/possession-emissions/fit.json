@@ -1,0 +1,656 @@
+{
+  "plan_sha256": "9adf6b9343c883a8d2a21d7b97facad483bdaf68024037024269d786b91218c9",
+  "source_sha256": "ccc7682f92eabd240b2748d46e92a6d74c226449eefa26ae02421e8ae59c0469",
+  "rows": 901836,
+  "features": 172,
+  "training": [
+    {
+      "game": "pff/3816",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "121ec4cf65f7f41d81f85d09a1882b920c91c0ed0f53de6121d29b55b5f16c7a",
+        "xs.npy": "e80c473627534efe5a630fc256b4e6002a1f751319ee7682dd9612b5b10c9797",
+        "gt.npy": "b346ea8c6f660645e90d5def89f95c333f0360339ec47ba9c01206fd66cd135b"
+      }
+    },
+    {
+      "game": "pff/3816",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "8a99eb0ea9fa666da8f04514b8369fc2c1f347f7665281f2aa522ca01a560a73",
+        "xs.npy": "eeaa5dc2b5b23fc91a0f412041f3f79be9bd700c34f3b39e298d6a1d7c2dbcdb",
+        "gt.npy": "b346ea8c6f660645e90d5def89f95c333f0360339ec47ba9c01206fd66cd135b"
+      }
+    },
+    {
+      "game": "pff/3854",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "bb26f7db617d980a89d400eb6655f64620c760a50811b1566320d4116eac8b8e",
+        "xs.npy": "a6e6ef8cac2c3e5a0aa472871fd231b5fad785147d4f3db810bc7dc17363c6f0",
+        "gt.npy": "37a38ba0a46f57c37309d775ab1978f4aed391f316afe8caf463cd3727397d81"
+      }
+    },
+    {
+      "game": "pff/3854",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "da8c6b18a4b7180daf6e5e2ca1eaaedfb820688a3a8b4497bd89a2eb72912cb6",
+        "xs.npy": "c510264f41996fb6816a4d77889bd3fa5c73c9460617d3e02c2e8392aa57c3d8",
+        "gt.npy": "37a38ba0a46f57c37309d775ab1978f4aed391f316afe8caf463cd3727397d81"
+      }
+    },
+    {
+      "game": "pff/3850",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "d95f83e4c9d0aa6ba5dc5efe144f969759846aa3e9f0f2137012de93d617520c",
+        "xs.npy": "438e76465f05c04276a0ba0fba5750569f37b5dc40b8162658ee81451f143539",
+        "gt.npy": "2445a6a8a691cd2cd7bc9f475a67b16f642bc5c421285ae56de46d1ad95ae4da"
+      }
+    },
+    {
+      "game": "pff/3850",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "15a081c319a9486a1fcbb524ca16cca9995b0e5803257c7ece76a3b8ce125acb",
+        "xs.npy": "aa3c1150bbbe963c38385d70fd269abaeec972405d35b2caf51521bfcba433d2",
+        "gt.npy": "2445a6a8a691cd2cd7bc9f475a67b16f642bc5c421285ae56de46d1ad95ae4da"
+      }
+    },
+    {
+      "game": "pff/3836",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "c138208dacd293a7a0b6070af52420756995ba67e1bbc8f3cfdbaecede1bd590",
+        "xs.npy": "5439221092d7016bec88722e0d83889a4c5331dd9e3f014b51682618855a6e87",
+        "gt.npy": "8f3f67010de93c1e9a6f371256496ba07e0ff9d10e5e58385dc2c13c619aadf0"
+      }
+    },
+    {
+      "game": "pff/3836",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "38bc8a414972ceb61b9a8791f9d37fa22a4e524b466ec2aedb3a90f7073c92fb",
+        "xs.npy": "d9b79543be4e88614ce41ca0551374ca18d3921f4acd8d917c0ccb8d0d364551",
+        "gt.npy": "8f3f67010de93c1e9a6f371256496ba07e0ff9d10e5e58385dc2c13c619aadf0"
+      }
+    },
+    {
+      "game": "pff/3831",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "a403de5e5a959e7fe0f1d6c505d064f1da58a074615574c778ea309d8467d011",
+        "xs.npy": "2afb358dabeacff61abc7a63a1caf42e90169ec0b43330c79a1e33f513fd3fd2",
+        "gt.npy": "3848ddf4359e6da06b8ed28be218cf89692eaa153b049b991aae0d33b53ec17e"
+      }
+    },
+    {
+      "game": "pff/3831",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "0c1da3d98c490b5f270ea276901595cbd963fa2cd0517bb7508621673979d56a",
+        "xs.npy": "c9beecd4ce28c493ec974a973be4eb80814ff276c51b0f5e21ca4799c95fb639",
+        "gt.npy": "3848ddf4359e6da06b8ed28be218cf89692eaa153b049b991aae0d33b53ec17e"
+      }
+    },
+    {
+      "game": "pff/10506",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "34a1239b549176f20c6d2603690be9380f2f8918d29b82c14c4807a489f686c2",
+        "xs.npy": "fbfa3604a419eda21b596b304f1695349ab48bcdb3dc8f44fedcea78017a15a6",
+        "gt.npy": "22641694292af4aa370702d7dbeba41ccacadce640a72e906331536fc700fd0a"
+      }
+    },
+    {
+      "game": "pff/10506",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "e309e9f840ad225a34607e341fbbf91c2e016c8a810bd708dda3cb3bbbb5f586",
+        "xs.npy": "bb2f2663d8ca7252a17322e8ed016d4361f02416ca31d422eba5ef4545087be8",
+        "gt.npy": "22641694292af4aa370702d7dbeba41ccacadce640a72e906331536fc700fd0a"
+      }
+    },
+    {
+      "game": "pff/3846",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "78b853fda648d6e8a248aea4087041df0bc165306cfbc560d9cd8ababa0236fe",
+        "xs.npy": "3c2c106d764f0131dace7e847bfe777f9803f0af7ba3edc30f11285c5bf84944",
+        "gt.npy": "15215928068987948706694dfb86a1a1bc91614bf39454070341370b1c930e5a"
+      }
+    },
+    {
+      "game": "pff/3846",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "37c7eef3dc019ea99ab908ff31ac8d4c064ddb6d34bd8641b14bd408123e3ca1",
+        "xs.npy": "8a8e9b479675662ac13883e414a7046283ceaaac913ecf7588a356ab861f7bd3",
+        "gt.npy": "15215928068987948706694dfb86a1a1bc91614bf39454070341370b1c930e5a"
+      }
+    },
+    {
+      "game": "pff/10514",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "f8471914b5d9261191f2cf1e04ada81043859a121a80487d03211b2fdf069974",
+        "xs.npy": "e79b62e61eb1ab615cb2e13d6a50ef19b519d93150765e65c242f1ebf28029fa",
+        "gt.npy": "d439fb4c3c24103490cfd1754aaba10c976c983edfeb2a9a41ab2a5c2123742b"
+      }
+    },
+    {
+      "game": "pff/10514",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "92abf35a6a87fd54f57a3ed4801c6321922755428cc7cd88703018bf6861de55",
+        "xs.npy": "7e76368e7322b8bc7709fcccd4bc9438db6f93c302d1441bfbc93de4e64d5023",
+        "gt.npy": "d439fb4c3c24103490cfd1754aaba10c976c983edfeb2a9a41ab2a5c2123742b"
+      }
+    },
+    {
+      "game": "pff/3819",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "31f0ffbf41ae5671c868719d57c9be41ba6407aa8507de55701f7a1f4480d400",
+        "xs.npy": "055d255da9eb25f409f1aad36b62d622338541ab676c315628f5ffd0aa59f02a",
+        "gt.npy": "85da98cacb3ac05244f2272467f19906c37d369bc669cc142b264974f29a4930"
+      }
+    },
+    {
+      "game": "pff/3819",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "57b4e8e25d3edc958ee8e0629de212c3090b3874db7313107418b479a848a2d6",
+        "xs.npy": "538fcac93c658670116afae56e82d3d033dbc8d4f756487635f94756840f3b94",
+        "gt.npy": "85da98cacb3ac05244f2272467f19906c37d369bc669cc142b264974f29a4930"
+      }
+    },
+    {
+      "game": "pff/3853",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "b5651cc857594accf200e5d2361fb070022ddfe59248adacc6e6b63f91321040",
+        "xs.npy": "7a3e1b67b05a1dce21bc1c37cdd408cadc2f98c03461e94aa69b9b2be9fec932",
+        "gt.npy": "c7c892284fcd86814fd7d4cb0d781886cdb20d890efee45acae65cc9de14531b"
+      }
+    },
+    {
+      "game": "pff/3853",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "202710412ab32092216556b502d4386ed9b4ec481aa883b583ba08287769a71d",
+        "xs.npy": "5a4ae73ad37c5d3db820ee132a20681991be86cafdcaacf54146123d2f11e07a",
+        "gt.npy": "c7c892284fcd86814fd7d4cb0d781886cdb20d890efee45acae65cc9de14531b"
+      }
+    },
+    {
+      "game": "pff/3855",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "1625fae53cb8228df5c9495fbb114df7f9c0bb6c478be39ff07b5114377edb4d",
+        "xs.npy": "654b808aa5e48876c6d33475b270c8390fb9f6b7b212d977758f314e518ab8ad",
+        "gt.npy": "60720a8f361617975a5379528b7b63e8243dab9dfba9bf7f6c5743ba0afc1309"
+      }
+    },
+    {
+      "game": "pff/3855",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "ffd91768e749b59f1f4a31e434eabbf38d143fbc419b15535b0620459b9be26f",
+        "xs.npy": "8a4f4a084b32afa2de105021d29a23e8c16558a5e90d8c01d93f78102f51ca4f",
+        "gt.npy": "60720a8f361617975a5379528b7b63e8243dab9dfba9bf7f6c5743ba0afc1309"
+      }
+    },
+    {
+      "game": "pff/3832",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "8f77a27cb95fec8de0a1c9f1b2ef37e25667a378656efab8d4a45b467ea1972f",
+        "xs.npy": "3d440a20264ee49b5f0a067360f971a2d76dc131326482868b91552373aa5675",
+        "gt.npy": "3c8265ec528e8acd494f51ff3f7b1d4e95bc401e0698a0e3847cf02d6d1d133e"
+      }
+    },
+    {
+      "game": "pff/3832",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "195083aeb6332fe8e905f374fe8da849b74f8bb9162ac9d564c67fb7929c1b5b",
+        "xs.npy": "7e6196a1e5d44d28422d926ffd0024c7690170e5ead6dc7fdc738837ade854e2",
+        "gt.npy": "3c8265ec528e8acd494f51ff3f7b1d4e95bc401e0698a0e3847cf02d6d1d133e"
+      }
+    },
+    {
+      "game": "pff/3833",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "c8b2774b3688e7021b583d699440c6f00517529996b1e6e0f1d3d3c85f819d53",
+        "xs.npy": "cd8d9bb38fc590e046c964e0b54508fc3e542dac7477a5d2468af32d67e66b78",
+        "gt.npy": "8a0e1e3dcd6bd090066da121aed9bc429059186939bc93dbaa8a6ae7609d7070"
+      }
+    },
+    {
+      "game": "pff/3833",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "483760af364b3e3accf04fe4707ff262d39e80e545beaa373ab377db9c6aabdd",
+        "xs.npy": "035ef04b204557ab6724950a8a836571f58102ca9e4782e4582d343d0ad60b08",
+        "gt.npy": "8a0e1e3dcd6bd090066da121aed9bc429059186939bc93dbaa8a6ae7609d7070"
+      }
+    },
+    {
+      "game": "pff/3823",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "d35e6b02a39aa7a50d02d74b4f776cbd57d566427885363c0a40a65613eb6627",
+        "xs.npy": "b6533716c25370baed1dc174ccd2729f168ea220a46a5b1d1b254b82db378ff7",
+        "gt.npy": "a0c8f90a8fe92aa7f61cd24bdc9d74ac503946de0e8f8837d90ad64ef4ae38ad"
+      }
+    },
+    {
+      "game": "pff/3823",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "ebe85174de52b769aee8cd24b2d448783445a027cf37897490fb27218c7dea30",
+        "xs.npy": "96c89111d46fa2bebbbdc473509d400dc8c81efd8bd0b9659de49af82f846343",
+        "gt.npy": "a0c8f90a8fe92aa7f61cd24bdc9d74ac503946de0e8f8837d90ad64ef4ae38ad"
+      }
+    },
+    {
+      "game": "pff/3834",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "0db99ca05ca4c0b75712aef1b44c410818181e06a2eee472fc725e01dbcb4407",
+        "xs.npy": "ee486f3b9d09cdc7db54d7491306a1353b7df469489829280757092d92cb9b40",
+        "gt.npy": "80c8c4e06b01b059a92f0cc90bdc26f94b51b72b23fbad8526857f6a16470097"
+      }
+    },
+    {
+      "game": "pff/3834",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "e2a9cc67b6b4f83791938204f8dd26f9a0e39e5d92e4d861c0ee2c302e56f6a3",
+        "xs.npy": "822df01005f7ca0364bf4719bf35453f04e8a170955d97edc4cdf46c9b5b76e4",
+        "gt.npy": "80c8c4e06b01b059a92f0cc90bdc26f94b51b72b23fbad8526857f6a16470097"
+      }
+    },
+    {
+      "game": "pff/3822",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "c2ca1a7bf5790188d97afe8899d7505de95b94614ca4f925e399ea8eb1fb52c9",
+        "xs.npy": "975fe2d820268436ec26444ad1578f8e0423bbfebb8e01bf988a06406c36d140",
+        "gt.npy": "384979ca27121a18410390b918d986c6456fee9edcbe9a9cd8cb3e45901f0c8b"
+      }
+    },
+    {
+      "game": "pff/3822",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "ee29c9b5dab5067953a182c371d8b465e59cfe62d38e86c6a4ab6505726422fd",
+        "xs.npy": "82cd0a47296dc2f42d1171165c00473a0a010b57e32725dcdbbe0890f39b62f6",
+        "gt.npy": "384979ca27121a18410390b918d986c6456fee9edcbe9a9cd8cb3e45901f0c8b"
+      }
+    },
+    {
+      "game": "pff/10504",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "789878479a7b01bfc662a1050c514dda4437b6363ec30c04695939893ac7ec04",
+        "xs.npy": "1fc0c5c73ac9b01d2ecf457bffb6ce4cae443b38241373c87384b482993d22be",
+        "gt.npy": "78292b74370a98fce80472fd3f668bb621d7dd14b342d6e8f4e6e4c295c49560"
+      }
+    },
+    {
+      "game": "pff/10504",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "1d255e82a960b831945277e8b67b0330263192fce711a3827cbfe159dae687d1",
+        "xs.npy": "c810b9bcff699d762e8fa05bff330151a5d50a7b4d33b9cddbcc18e14ba14546",
+        "gt.npy": "78292b74370a98fce80472fd3f668bb621d7dd14b342d6e8f4e6e4c295c49560"
+      }
+    },
+    {
+      "game": "pff/3835",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "a52f2df433756b58ec35e732bd14bbdf5d68a5d04a210502ef18bc1f0ccc2add",
+        "xs.npy": "cdf457c3c8e50f6ff7fec70654dfc22c5036e8612fff1bf1ab90bad3de13514d",
+        "gt.npy": "bc8568afcd7732f3274a36acf59b93a71ac033a7878174ad10d9cbf7e4c1507b"
+      }
+    },
+    {
+      "game": "pff/3835",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "e7623683eed3d15c31c702767e9eecca1ecf9b240f8acfb00ed8a40b1c8e4910",
+        "xs.npy": "c2467e8b3631c2d55768fc8eb1a3494296c9924518553c3496c5508e962a5c94",
+        "gt.npy": "bc8568afcd7732f3274a36acf59b93a71ac033a7878174ad10d9cbf7e4c1507b"
+      }
+    },
+    {
+      "game": "pff/3847",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "59a96808b2028a99e1041cacb5cbee73aa8508e09b9c670be42d36557191ccc8",
+        "xs.npy": "d36165bffb891cd66238455c6f82afbf64d18b9d057efa04c127c6376c905991",
+        "gt.npy": "a30cb0a21f9402b462a17de6cc31cff0bbf136c578331bcffd98921f40a795c9"
+      }
+    },
+    {
+      "game": "pff/3847",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "e27a918e6953bc3be47462bdc93212f8f232c297ff5d79cb4d92183b22472600",
+        "xs.npy": "c500bbb9b1220067495bbd837aff66ba1b95ae66712e6fc159a312082ac946ac",
+        "gt.npy": "a30cb0a21f9402b462a17de6cc31cff0bbf136c578331bcffd98921f40a795c9"
+      }
+    },
+    {
+      "game": "pff/3840",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "f47027bbf97f03617643e205e0ad79c9a438d35becd1ffbb3e44aae5dfee33b2",
+        "xs.npy": "64f40a9183e881bc3001979d2336969d36eefabd3f01793d1f0cc09ff28e63b5",
+        "gt.npy": "14a108bdea7cec1916d40e46ed9a4e989d3f4b72f9f4afd040390f08e4c6d975"
+      }
+    },
+    {
+      "game": "pff/3840",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "c8ae00bb9638680c9fb2557e7573aab4fb2e209f9d5aa0feb966d0568ed2d561",
+        "xs.npy": "369ee945b5b082098ce9dc5177a554c01848162a7ef57649e803d231e4fe03da",
+        "gt.npy": "14a108bdea7cec1916d40e46ed9a4e989d3f4b72f9f4afd040390f08e4c6d975"
+      }
+    },
+    {
+      "game": "pff/3824",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "eb28149841989acf7b26c655749bc6b6809a8126ebb8fabd349390ba6b61de91",
+        "xs.npy": "2cb17bf58966bfc4ba2474fefbaedca55eb97c09d33533c8f4a9202b7560547b",
+        "gt.npy": "c5b85581ec4fb40b527cff6f1388a9f2b9a491334d75f3cb548a270330b47fbb"
+      }
+    },
+    {
+      "game": "pff/3824",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "2727a2d1c7f9915250de42538feadc64ce452eb8dceefc7122359a732e0f0203",
+        "xs.npy": "6425526c85ebee01e3d1cfe09e4b20f5fac19bd60e50781beff8c56422dd58d9",
+        "gt.npy": "c5b85581ec4fb40b527cff6f1388a9f2b9a491334d75f3cb548a270330b47fbb"
+      }
+    },
+    {
+      "game": "pff/3837",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "6f7ca04c53c1184993c19022e1bc7d71ff70e784023de5adae1310c5a1a419f5",
+        "xs.npy": "0ce5dac36197cdeca814b22f5a06f1ee94c11837d8a0aa37aa925ddecdbeaaf5",
+        "gt.npy": "23c3c8578be08314ff91e3a1bf0c7c367052e0a3d25e1039559d9291f232c86e"
+      }
+    },
+    {
+      "game": "pff/3837",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "a97546ad38e6e16a7ac6394d14ef293b461b5f7b2d842b6550bb5a63adc1e496",
+        "xs.npy": "5917d00f40ad046800d6ec6330941e74d61e3534209d0e8d46b6a5c222ba88f4",
+        "gt.npy": "23c3c8578be08314ff91e3a1bf0c7c367052e0a3d25e1039559d9291f232c86e"
+      }
+    },
+    {
+      "game": "pff/3851",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "7b068349e0a5e39e6df7fab1c78662326559e20def949e59a72b2c6e1f9ed9b1",
+        "xs.npy": "59f63f19249af23df195799ca2f8162dce17bd3a1575ac4b998dd032c27bbe67",
+        "gt.npy": "72ca1c2e7f88fa3f481d27c1d9c1a2b3a1436181ff872d1c3874e7ac574abdd2"
+      }
+    },
+    {
+      "game": "pff/3851",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "70941a66701f8001d2a2e87cc6ba858da2fc52bbe41f393b4407003f2eab4177",
+        "xs.npy": "1892534fd9e98b7be887b880ce31f25daf6c99325b5de9bf4da60f32f5514284",
+        "gt.npy": "72ca1c2e7f88fa3f481d27c1d9c1a2b3a1436181ff872d1c3874e7ac574abdd2"
+      }
+    },
+    {
+      "game": "pff/3817",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "842f6325a91626719b49e8ba2562989e48ec6654301e8ed2440d21ff9d1fca4a",
+        "xs.npy": "4e962183b952c9d1d2dd620f1e693d80130b94fa4665b72d26fa5a3e2e60a60d",
+        "gt.npy": "ecd22c3d862dcdc837a743f821fc302b87abfc1288d8acfb15c763bc0c612c90"
+      }
+    },
+    {
+      "game": "pff/3817",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "3aeb42278a9e3b8f2db4f871e76a4ff4c25ef01e6a53565b8043cee87aeef469",
+        "xs.npy": "d52c611408fc9b9e386c51ecb4c83aa0529d3b79c108319691a9de369e1c14bf",
+        "gt.npy": "ecd22c3d862dcdc837a743f821fc302b87abfc1288d8acfb15c763bc0c612c90"
+      }
+    },
+    {
+      "game": "pff/3815",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "a2cb85a6035a398f30a658eb62243100cf75021957c76e513f269a8ce13eadca",
+        "xs.npy": "3daa6260f03d16ae5de592a88a41a8a7a188ab63d8fa1f4d02c0dea01b2f0baf",
+        "gt.npy": "4fe07815914a38795cd7385f3c96fed935bd0e9045865dee1e057846d40f9232"
+      }
+    },
+    {
+      "game": "pff/3815",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "2ba1f9986b2dc67825e6c072fb8ece6a6ec3eba0d300db4d8ea9b3ed986d575b",
+        "xs.npy": "2643e3891150e070c07535a8b3488146c5bb0425caa7736941e9b7ece5c70c44",
+        "gt.npy": "4fe07815914a38795cd7385f3c96fed935bd0e9045865dee1e057846d40f9232"
+      }
+    },
+    {
+      "game": "pff/10517",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "210f9485fd032869149e822d7c9fc166283e918ac4825453d0101b4f4c06f2e8",
+        "xs.npy": "8036b87cfcb12ae90e15243a925a3850281fc41f95e7965c54764fd71a15669c",
+        "gt.npy": "0d2bbb5fd1496431622a2e7475a5eac740c326ed4c7aa80fd3a79b984b8f9475"
+      }
+    },
+    {
+      "game": "pff/10517",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "1494f1648fdc8a1cab8339946c9652c681ec82ec18187ce0a1ae7d1191831806",
+        "xs.npy": "116f8b7abe5d930d59ce24a43987e0bce1ce0f4cf130e3001e19c137a50d4cb1",
+        "gt.npy": "0d2bbb5fd1496431622a2e7475a5eac740c326ed4c7aa80fd3a79b984b8f9475"
+      }
+    },
+    {
+      "game": "pff/3839",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "ecd8a3d2774845d0e4e35cbf139f5117aa137478659024673547d1b5f5bf897c",
+        "xs.npy": "66323431b25b51d2ff665da61d41b9af8785a6c7382f4928e6427efe8b9faaac",
+        "gt.npy": "524caa089eefb49132b7a7baff94e947edc39daab9282c4496e89791e56a5f2e"
+      }
+    },
+    {
+      "game": "pff/3839",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "6984c49c50a3322b3cc3097d28fc3f61f14e0f620c617ab75da77a7f6b313a9e",
+        "xs.npy": "fc749571097142d6b18019aea00ab1bf5739c60a0cc517935b4367bd351460b7",
+        "gt.npy": "524caa089eefb49132b7a7baff94e947edc39daab9282c4496e89791e56a5f2e"
+      }
+    },
+    {
+      "game": "pff/10515",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "fb58e2fd97c9da8180cc321e11ad79ef5febb7690089af0b02b1ad9553d76e01",
+        "xs.npy": "1c15c032788c64c31add5741305193b74b13c68dd083fd2b4bc508a4228b4251",
+        "gt.npy": "de381716030bf95a999d73257f87b0305f12c584a9dec2c433d3310471301bb7"
+      }
+    },
+    {
+      "game": "pff/10515",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "e698386a3f01006f304ead233070977358122310755d50ad854dc973e5b90cf7",
+        "xs.npy": "96b8ea039616cb7f431a323d391b20aa4e4df247c55c0919f0b9b274f8c6755d",
+        "gt.npy": "de381716030bf95a999d73257f87b0305f12c584a9dec2c433d3310471301bb7"
+      }
+    },
+    {
+      "game": "pff/3813",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "e0e1ab5d50be6d049f29fc47c7b293e7861ecbe672d1272cdf942cf005f65a65",
+        "xs.npy": "70fb0353dba171d2aa5ba4aac55a0710e93e1ef12d7bac0e2a8d8066907eaa98",
+        "gt.npy": "4f40eb99deae5d898709c8c10dca3472a4bf3ec2573e79fe21033decc5f88584"
+      }
+    },
+    {
+      "game": "pff/3813",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "28cc4c824e627ed5e09edea8b8a670dd71806457a9506214e5d8e920b19218cc",
+        "xs.npy": "1c152707661ae63abdd8a0a864e8e38bd1237e8aafcbab484731dfe8ec9551bc",
+        "gt.npy": "4f40eb99deae5d898709c8c10dca3472a4bf3ec2573e79fe21033decc5f88584"
+      }
+    },
+    {
+      "game": "pff/3828",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "e84fedf0833b1b529f5166503729e323b3edeef61c60029a4dfceb084c02f24f",
+        "xs.npy": "daf603b4290a68d94e1c5bd4fc449e146333402845890de31b6d69d7a2504910",
+        "gt.npy": "c4a000be56e5cf504e3f3ea7ec2630ec50cfe2bc03fee1e6fe72a5080507fdc5"
+      }
+    },
+    {
+      "game": "pff/3828",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "5e2a377f5ef1e1f65063dc5ab55d2e21d0be1bbeadce0ba06f51e5a1a111878f",
+        "xs.npy": "946be0dbd6398e1908fe7738a9ff811b99436daced66c786d860b14ff166cc07",
+        "gt.npy": "c4a000be56e5cf504e3f3ea7ec2630ec50cfe2bc03fee1e6fe72a5080507fdc5"
+      }
+    },
+    {
+      "game": "pff/3848",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "0872a11a836cd99385fc3e79f552bd238f81bdb0bc253e1c565709e6ccdb1746",
+        "xs.npy": "315b9d49e6dc7c4515c716096db74352575284a8cac330c435f7ff4d081da69f",
+        "gt.npy": "92988f3db4c109df8d070ab95bba8a174ae3cc3af8d8d686580e3d65ac04a5c3"
+      }
+    },
+    {
+      "game": "pff/3848",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "b0448bd70237d440314896aea346d95f4e37a346ca57eeb0f5519d1a861e5f1d",
+        "xs.npy": "a762afdc2d7a97c86657d08e94fa7b8d8ac4145afec0f4d063e09fdfb000f65f",
+        "gt.npy": "92988f3db4c109df8d070ab95bba8a174ae3cc3af8d8d686580e3d65ac04a5c3"
+      }
+    },
+    {
+      "game": "pff/3852",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "a31de50a939f4fb462a2791ccadbf5a91785f67b1423c8008bc374b92783b563",
+        "xs.npy": "0d20952e326b0488c47b68bf666f3768764256dca78c93172300bd3213a4190e",
+        "gt.npy": "334533c9c7688f3a75fd5093660f4eb8988a2104df30b8a929d786a331560d34"
+      }
+    },
+    {
+      "game": "pff/3852",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "211dc0d844626bae0386eada255b4bb5aefe6e7d5e828cca04df8b2ec030a2cf",
+        "xs.npy": "00aca60f7ac9111f245132c4b675d05970b4f8632f4a7d01cfbea978c2c47fc5",
+        "gt.npy": "334533c9c7688f3a75fd5093660f4eb8988a2104df30b8a929d786a331560d34"
+      }
+    },
+    {
+      "game": "pff/10508",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "c930a620db363b5c26ef2122b49d668e560801085b281fed7b12bd76469c768f",
+        "xs.npy": "0b510a3ff0dabde052ebcb218ab07b9e65181a72c52bd5e74cbb38fb5dd3d013",
+        "gt.npy": "bf9e377904d551c61b1296c827b98d286ea68cb10bc392e28fc7ee6e38f05dd8"
+      }
+    },
+    {
+      "game": "pff/10508",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "0c018d421846db0282775cd0f1ced60633a1e71c5c1855ae5aee5563bb49fbdb",
+        "xs.npy": "219814dcf8e0237bda5f62bbb20072136d16705a1aace99fae2c1c6eef4d5113",
+        "gt.npy": "bf9e377904d551c61b1296c827b98d286ea68cb10bc392e28fc7ee6e38f05dd8"
+      }
+    },
+    {
+      "game": "pff/3818",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "8baa172daa68a4330ce87a428bf3726cfe7b97b71468eb101fc01743ff04ef85",
+        "xs.npy": "a0e4fae27039be13a05e216b3e499590bcf3516b104a64f5650605269d832a1e",
+        "gt.npy": "f6bc5d39951c11d8b85f64a517b7d0a0bfa7ee66128d9a60d6697d52f8c6a5ab"
+      }
+    },
+    {
+      "game": "pff/3818",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "3f962f4aa28280db055f6f58796598818b1ead1a2ee206cd0d1497c9929af842",
+        "xs.npy": "2347463bb0c7f811347cde5ede2b7af962dff0bc890b52a6c8e359639300b87b",
+        "gt.npy": "f6bc5d39951c11d8b85f64a517b7d0a0bfa7ee66128d9a60d6697d52f8c6a5ab"
+      }
+    },
+    {
+      "game": "pff/3820",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "8358a102be4d62bd22e30f2c3b6f4c9fc62012502798290ca1bcd2a86b24faef",
+        "xs.npy": "7892f7d39a0060b15286448f8556ca6907250f4fd3aecb590936edf8663338e7",
+        "gt.npy": "a4d4b99fcdfb6d50cb8ecad38e62f459d36612107467beefb5c75dcf9260521a"
+      }
+    },
+    {
+      "game": "pff/3820",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "11c9d0ef5a3c2c5db66cc98e8875ef85fc8744205106bf98ab825731e8239f41",
+        "xs.npy": "05550e611f457adc514bb2f85d4c9112c87399c9b761e194d13a0b8d50c8c56d",
+        "gt.npy": "a4d4b99fcdfb6d50cb8ecad38e62f459d36612107467beefb5c75dcf9260521a"
+      }
+    },
+    {
+      "game": "pff/3849",
+      "scenario": "natural_detected",
+      "hashes": {
+        "x.npy": "80b8b2885498d0435a09e2f7346d40b61de7faad033165445b73ec5f9105b481",
+        "xs.npy": "3016fa2ea5e98c4203765a2f00f35633a7029b02d1a3849ddd5eb213f34ca9b8",
+        "gt.npy": "5b56526c162d5c8cabde7a40ed416cd706a1e080b3654f3678d4f6878a318a05"
+      }
+    },
+    {
+      "game": "pff/3849",
+      "scenario": "label_blind_seed7",
+      "hashes": {
+        "x.npy": "877a8d6eb0e0bf7945586064e844bdd617272a394e6c2283e7bece8057ebd144",
+        "xs.npy": "2074e80444a1950bcd32fd4ebca4cb1609de1ab8c4c07332da7892bfebc976d7",
+        "gt.npy": "5b56526c162d5c8cabde7a40ed416cd706a1e080b3654f3678d4f6878a318a05"
+      }
+    }
+  ]
+}

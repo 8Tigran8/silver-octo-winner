@@ -1,0 +1,61 @@
+{
+  "scope": "Post-hoc canonical natural development diagnostic. Ground-truth interval endpoints used ONLY to measure evidence; this is oracle-conditioned analysis, not a deployable score or independent test. No final/bridge/organizer data.",
+  "summary": {
+    "under1": {
+      "all": {
+        "spells": 97,
+        "fraction_correct_argmax": 0.34132302861058794,
+        "correct_mean_probability_wins": 0.36082474226804123,
+        "correct_log_evidence_wins": 0.36082474226804123
+      },
+      "missed_iou50": {
+        "spells": 97,
+        "fraction_correct_argmax": 0.34132302861058794,
+        "correct_mean_probability_wins": 0.36082474226804123,
+        "correct_log_evidence_wins": 0.36082474226804123
+      }
+    },
+    "1to3": {
+      "all": {
+        "spells": 481,
+        "fraction_correct_argmax": 0.3801485435722687,
+        "correct_mean_probability_wins": 0.3908523908523909,
+        "correct_log_evidence_wins": 0.3970893970893971
+      },
+      "missed_iou50": {
+        "spells": 416,
+        "fraction_correct_argmax": 0.3027997402826802,
+        "correct_mean_probability_wins": 0.2980769230769231,
+        "correct_log_evidence_wins": 0.30528846153846156
+      }
+    },
+    "3to10": {
+      "all": {
+        "spells": 985,
+        "fraction_correct_argmax": 0.7005399264297621,
+        "correct_mean_probability_wins": 0.7593908629441625,
+        "correct_log_evidence_wins": 0.7593908629441625
+      },
+      "missed_iou50": {
+        "spells": 438,
+        "fraction_correct_argmax": 0.4776120591621368,
+        "correct_mean_probability_wins": 0.4703196347031963,
+        "correct_log_evidence_wins": 0.4703196347031963
+      }
+    },
+    "10plus": {
+      "all": {
+        "spells": 1124,
+        "fraction_correct_argmax": 0.898663978684462,
+        "correct_mean_probability_wins": 0.9608540925266904,
+        "correct_log_evidence_wins": 0.9644128113879004
+      },
+      "missed_iou50": {
+        "spells": 154,
+        "fraction_correct_argmax": 0.6457947334749822,
+        "correct_mean_probability_wins": 0.7142857142857143,
+        "correct_log_evidence_wins": 0.7467532467532467
+      }
+    }
+  }
+}
