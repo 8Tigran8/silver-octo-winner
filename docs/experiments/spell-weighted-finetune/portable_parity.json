@@ -1,0 +1,127 @@
+{
+  "status": "PASS",
+  "scope": "All ten development games, two scenarios; exact predictions, not another model selection",
+  "records": [
+    {
+      "game": "10510",
+      "scenario": "natural_detected",
+      "differing_frames": 0,
+      "reference_prediction_sha256": "23d2ebadeea33f94b25576bcd760a52a0c5c96d938bb5cbafb8e7956051afaaa"
+    },
+    {
+      "game": "10510",
+      "scenario": "label_blind_seed7",
+      "differing_frames": 0,
+      "reference_prediction_sha256": "41bbe79d72da2366b72c92f78606e49a93e90eff8df2f430591d37419cc8d5de"
+    },
+    {
+      "game": "3821",
+      "scenario": "natural_detected",
+      "differing_frames": 0,
+      "reference_prediction_sha256": "01b43226af48c056866ce0abfff3ebbdaeae053bec944f85748793639f15ed19"
+    },
+    {
+      "game": "3821",
+      "scenario": "label_blind_seed7",
+      "differing_frames": 0,
+      "reference_prediction_sha256": "ad66bfca4044209088d3df61d79b9434c8e490a5f3f18b5d98aa6c0c721508b6"
+    },
+    {
+      "game": "10513",
+      "scenario": "natural_detected",
+      "differing_frames": 0,
+      "reference_prediction_sha256": "5480b7a0e3712da6349a3210e33bf384df1d76f43c3d2c0fce89bbb82a410c87"
+    },
+    {
+      "game": "10513",
+      "scenario": "label_blind_seed7",
+      "differing_frames": 0,
+      "reference_prediction_sha256": "4055235c16e9b9c6ee05e7f7dbbf7d0d558f55e9acb684e22e15ada5e58358e7"
+    },
+    {
+      "game": "10516",
+      "scenario": "natural_detected",
+      "differing_frames": 0,
+      "reference_prediction_sha256": "b6da7e3e1ba6ad2f8b014260272a5ad6ee4f94258827a6d0691b16834478e98b"
+    },
+    {
+      "game": "10516",
+      "scenario": "label_blind_seed7",
+      "differing_frames": 0,
+      "reference_prediction_sha256": "b16cf2da731dbb2775f2fdc27cfd2ddc57b6f9b8cca7600546a1001ff53f9c44"
+    },
+    {
+      "game": "3827",
+      "scenario": "natural_detected",
+      "differing_frames": 0,
+      "reference_prediction_sha256": "a28d0b698d71510a569474837778437160a3e1437e617dbb8ef3cc51e3dab0e6"
+    },
+    {
+      "game": "3827",
+      "scenario": "label_blind_seed7",
+      "differing_frames": 0,
+      "reference_prediction_sha256": "19ac10b323e8ae9c7a1f56c47584374e0295a464a7618de49888cf34a28106f3"
+    },
+    {
+      "game": "3859",
+      "scenario": "natural_detected",
+      "differing_frames": 0,
+      "reference_prediction_sha256": "aa94eaf92880d648d6bc78c808707fea544626a0ca530582a8d59c333270c75e"
+    },
+    {
+      "game": "3859",
+      "scenario": "label_blind_seed7",
+      "differing_frames": 0,
+      "reference_prediction_sha256": "a0f708b86c640b0ef93d4a89b078d5a625cd49b65a21943629e06554cc96d598"
+    },
+    {
+      "game": "10503",
+      "scenario": "natural_detected",
+      "differing_frames": 0,
+      "reference_prediction_sha256": "f8e145d4820ed78bb23246347aea6f380b32d361055e34626a8d0be986636d7c"
+    },
+    {
+      "game": "10503",
+      "scenario": "label_blind_seed7",
+      "differing_frames": 0,
+      "reference_prediction_sha256": "0df286cc5e39f67b971f7e6494055fb8de67c5095fcb9667643d52a84f87961c"
+    },
+    {
+      "game": "3858",
+      "scenario": "natural_detected",
+      "differing_frames": 0,
+      "reference_prediction_sha256": "6377b4c831d6d00cf4e7ddbf5aff3fb0545856450ce28df0f73aae92beedc351"
+    },
+    {
+      "game": "3858",
+      "scenario": "label_blind_seed7",
+      "differing_frames": 0,
+      "reference_prediction_sha256": "506daa89a5d06562f5e58b49385ef35ab8437941a3eee13df0a25a504aa31958"
+    },
+    {
+      "game": "3842",
+      "scenario": "natural_detected",
+      "differing_frames": 0,
+      "reference_prediction_sha256": "1e6bd2c740150ee29e23a26dee4952570146f8abf3c4b989509d7704f0575048"
+    },
+    {
+      "game": "3842",
+      "scenario": "label_blind_seed7",
+      "differing_frames": 0,
+      "reference_prediction_sha256": "3e3a3e82672e2db154bdcc3d12e4f2d332fb57e656b60834165af2a9b0223be0"
+    },
+    {
+      "game": "3838",
+      "scenario": "natural_detected",
+      "differing_frames": 0,
+      "reference_prediction_sha256": "3b8c0f750fce24f48675e26e24d1112162f4d24b95f31adb0d38e952e9a1077a"
+    },
+    {
+      "game": "3838",
+      "scenario": "label_blind_seed7",
+      "differing_frames": 0,
+      "reference_prediction_sha256": "374c617339a2043ce24e4edc9af3680dfe6d8250e9dedd2aec0b15df3f5fecb2"
+    }
+  ],
+  "bundle_sha256": "4d25e3c36e7c72f844950bb1083531a2b44a0ba23dd4332ae9c6894a56d11161"
+}

@@ -1,0 +1,813 @@
+{
+  "scope": "All six specified training matches from three providers; not fresh independent validation",
+  "selection_sha256": "842aae8038da614d0873a68377b24ba5a58f1ff600031d0828d6e1470afb07b4",
+  "records": [
+    {
+      "game": "original/idsse_J03WN1",
+      "provider": "DFL",
+      "scenario": "matched_seed0",
+      "scope": "in-sample cross-provider regression",
+      "control": {
+        "spell_f1_mean": 0.6637992831541217,
+        "macro_f1": 0.9220439951626997,
+        "n_gt_spells": 500,
+        "n_pred_spells": 337,
+        "per_class": {
+          "H": {
+            "precision": 0.9129208633093525,
+            "recall": 0.8710359408033826,
+            "f1": 0.8914867010439645,
+            "support": 36421
+          },
+          "A": {
+            "precision": 0.8716788977085518,
+            "recall": 0.9106584053072976,
+            "f1": 0.8907424128801213,
+            "support": 31956
+          },
+          "D": {
+            "precision": 0.9822814806744206,
+            "recall": 0.9855296239615217,
+            "f1": 0.9839028715640133,
+            "support": 73184
+          }
+        }
+      },
+      "candidate": {
+        "spell_f1_mean": 0.6848554913294798,
+        "macro_f1": 0.9285060845839973,
+        "n_gt_spells": 500,
+        "n_pred_spells": 365,
+        "per_class": {
+          "H": {
+            "precision": 0.9309339938802274,
+            "recall": 0.877103868647209,
+            "f1": 0.9032175978285457,
+            "support": 36421
+          },
+          "A": {
+            "precision": 0.8805433962264151,
+            "recall": 0.912755038177494,
+            "f1": 0.8963599207141869,
+            "support": 31956
+          },
+          "D": {
+            "precision": 0.9797088544407118,
+            "recall": 0.9922524048972453,
+            "f1": 0.9859407352092596,
+            "support": 73184
+          }
+        }
+      },
+      "spell_gain": 0.021056208175358027,
+      "macro_gain": 0.006462089421297557,
+      "source_sha256": {
+        "external/conv/idsse_J03WN1.npz": "b97a0a6d947128886ab63b6c2d10e81ca8d2ea14377c8cd0c1dc3623caa4c2ea"
+      }
+    },
+    {
+      "game": "original/idsse_J03WN1",
+      "provider": "DFL",
+      "scenario": "label_blind_seed1",
+      "scope": "in-sample cross-provider regression",
+      "control": {
+        "spell_f1_mean": 0.5398709677419355,
+        "macro_f1": 0.866289078328446,
+        "n_gt_spells": 500,
+        "n_pred_spells": 275,
+        "per_class": {
+          "H": {
+            "precision": 0.8975953831356204,
+            "recall": 0.7686774113835425,
+            "f1": 0.8281492656520388,
+            "support": 36421
+          },
+          "A": {
+            "precision": 0.8299212598425196,
+            "recall": 0.808079859807235,
+            "f1": 0.818854941256679,
+            "support": 31956
+          },
+          "D": {
+            "precision": 0.9154007267588574,
+            "recall": 0.9913505684302579,
+            "f1": 0.9518630280766204,
+            "support": 73184
+          }
+        }
+      },
+      "candidate": {
+        "spell_f1_mean": 0.5832923832923833,
+        "macro_f1": 0.8840286871027091,
+        "n_gt_spells": 500,
+        "n_pred_spells": 314,
+        "per_class": {
+          "H": {
+            "precision": 0.884166164960867,
+            "recall": 0.8064578128003075,
+            "f1": 0.8435260837724904,
+            "support": 36421
+          },
+          "A": {
+            "precision": 0.825898180706314,
+            "recall": 0.8452559769683314,
+            "f1": 0.83546496342463,
+            "support": 31956
+          },
+          "D": {
+            "precision": 0.9573219102014914,
+            "recall": 0.9893965894184521,
+            "f1": 0.9730950141110066,
+            "support": 73184
+          }
+        }
+      },
+      "spell_gain": 0.04342141555044776,
+      "macro_gain": 0.01773960877426306,
+      "source_sha256": {
+        "external/conv/idsse_J03WN1.npz": "b97a0a6d947128886ab63b6c2d10e81ca8d2ea14377c8cd0c1dc3623caa4c2ea"
+      }
+    },
+    {
+      "game": "original/idsse_J03WMX",
+      "provider": "DFL",
+      "scenario": "matched_seed0",
+      "scope": "in-sample cross-provider regression",
+      "control": {
+        "spell_f1_mean": 0.6259803921568627,
+        "macro_f1": 0.9343273741941651,
+        "n_gt_spells": 511,
+        "n_pred_spells": 305,
+        "per_class": {
+          "H": {
+            "precision": 0.9163249211356467,
+            "recall": 0.8912326455472885,
+            "f1": 0.9036046195123848,
+            "support": 39111
+          },
+          "A": {
+            "precision": 0.9220065430752453,
+            "recall": 0.9138743568680012,
+            "f1": 0.917922438876102,
+            "support": 46258
+          },
+          "D": {
+            "precision": 0.969763358409717,
+            "recall": 0.9934321264728209,
+            "f1": 0.9814550641940085,
+            "support": 60598
+          }
+        }
+      },
+      "candidate": {
+        "spell_f1_mean": 0.6605418138987044,
+        "macro_f1": 0.9372902792407453,
+        "n_gt_spells": 511,
+        "n_pred_spells": 338,
+        "per_class": {
+          "H": {
+            "precision": 0.924521830893022,
+            "recall": 0.8960139091304237,
+            "f1": 0.9100446660434195,
+            "support": 39111
+          },
+          "A": {
+            "precision": 0.9286948911497648,
+            "recall": 0.917592632625708,
+            "f1": 0.9231103813490209,
+            "support": 46258
+          },
+          "D": {
+            "precision": 0.9649117180108088,
+            "recall": 0.9929205584342717,
+            "f1": 0.9787157903297955,
+            "support": 60598
+          }
+        }
+      },
+      "spell_gain": 0.034561421741841625,
+      "macro_gain": 0.0029629050465801443,
+      "source_sha256": {
+        "external/conv/idsse_J03WMX.npz": "cf4a153aedbc826b143651811cb079d544929072afc87aee9c97c10bead1040a"
+      }
+    },
+    {
+      "game": "original/idsse_J03WMX",
+      "provider": "DFL",
+      "scenario": "label_blind_seed1",
+      "scope": "in-sample cross-provider regression",
+      "control": {
+        "spell_f1_mean": 0.5335031847133758,
+        "macro_f1": 0.8893037172995633,
+        "n_gt_spells": 511,
+        "n_pred_spells": 274,
+        "per_class": {
+          "H": {
+            "precision": 0.8950967924261692,
+            "recall": 0.8098233233617141,
+            "f1": 0.8503275343642612,
+            "support": 39111
+          },
+          "A": {
+            "precision": 0.9006804264005444,
+            "recall": 0.8584677245017078,
+            "f1": 0.8790676052596627,
+            "support": 46258
+          },
+          "D": {
+            "precision": 0.896919930217169,
+            "recall": 0.984157892999769,
+            "f1": 0.9385160122747659,
+            "support": 60598
+          }
+        }
+      },
+      "candidate": {
+        "spell_f1_mean": 0.5657568238213398,
+        "macro_f1": 0.9073870016797314,
+        "n_gt_spells": 511,
+        "n_pred_spells": 295,
+        "per_class": {
+          "H": {
+            "precision": 0.8948366987396666,
+            "recall": 0.8441359208406842,
+            "f1": 0.8687472041680919,
+            "support": 39111
+          },
+          "A": {
+            "precision": 0.9007901668129938,
+            "recall": 0.8871978900946863,
+            "f1": 0.8939423642423053,
+            "support": 46258
+          },
+          "D": {
+            "precision": 0.937460637359869,
+            "recall": 0.9825406779101621,
+            "f1": 0.959471436628797,
+            "support": 60598
+          }
+        }
+      },
+      "spell_gain": 0.03225363910796408,
+      "macro_gain": 0.018083284380168152,
+      "source_sha256": {
+        "external/conv/idsse_J03WMX.npz": "cf4a153aedbc826b143651811cb079d544929072afc87aee9c97c10bead1040a"
+      }
+    },
+    {
+      "game": "original/metrica_2",
+      "provider": "Metrica",
+      "scenario": "matched_seed0",
+      "scope": "in-sample cross-provider regression",
+      "control": {
+        "spell_f1_mean": 0.824263431542461,
+        "macro_f1": 0.9663021801617417,
+        "n_gt_spells": 326,
+        "n_pred_spells": 251,
+        "per_class": {
+          "H": {
+            "precision": 0.9651351351351352,
+            "recall": 0.9645392807532026,
+            "f1": 0.9648371159487417,
+            "support": 51832
+          },
+          "A": {
+            "precision": 0.9592332123411978,
+            "recall": 0.9489855462788401,
+            "f1": 0.9540818628999503,
+            "support": 44556
+          },
+          "D": {
+            "precision": 0.9744897959183674,
+            "recall": 0.9855477126518942,
+            "f1": 0.9799875616365332,
+            "support": 44768
+          }
+        }
+      },
+      "candidate": {
+        "spell_f1_mean": 0.866,
+        "macro_f1": 0.9783358161885065,
+        "n_gt_spells": 326,
+        "n_pred_spells": 274,
+        "per_class": {
+          "H": {
+            "precision": 0.9709129307862149,
+            "recall": 0.975652106806606,
+            "f1": 0.9732767497137137,
+            "support": 51832
+          },
+          "A": {
+            "precision": 0.9723094297007341,
+            "recall": 0.9661773947392046,
+            "f1": 0.9692337134558882,
+            "support": 44556
+          },
+          "D": {
+            "precision": 0.9921868023930708,
+            "recall": 0.9928073624017155,
+            "f1": 0.992496985395918,
+            "support": 44768
+          }
+        }
+      },
+      "spell_gain": 0.041736568457539036,
+      "macro_gain": 0.012033636026764771,
+      "source_sha256": {
+        "external/conv/metrica_2.npz": "c281860596fc33feb55687ada6913c65e63451ccbb7c675588205c5dc9ff41c9"
+      }
+    },
+    {
+      "game": "original/metrica_2",
+      "provider": "Metrica",
+      "scenario": "label_blind_seed1",
+      "scope": "in-sample cross-provider regression",
+      "control": {
+        "spell_f1_mean": 0.8150684931506849,
+        "macro_f1": 0.9650995923616786,
+        "n_gt_spells": 326,
+        "n_pred_spells": 258,
+        "per_class": {
+          "H": {
+            "precision": 0.9611298563578521,
+            "recall": 0.9617417811390647,
+            "f1": 0.9614357213805607,
+            "support": 51832
+          },
+          "A": {
+            "precision": 0.9625584311937065,
+            "recall": 0.9474144896310261,
+            "f1": 0.9549264231826357,
+            "support": 44556
+          },
+          "D": {
+            "precision": 0.9717404701118056,
+            "recall": 0.9862401715511079,
+            "f1": 0.9789366325218394,
+            "support": 44768
+          }
+        }
+      },
+      "candidate": {
+        "spell_f1_mean": 0.8528428093645486,
+        "macro_f1": 0.9779585480405563,
+        "n_gt_spells": 326,
+        "n_pred_spells": 272,
+        "per_class": {
+          "H": {
+            "precision": 0.9669939937076938,
+            "recall": 0.9784303133199568,
+            "f1": 0.972678538891606,
+            "support": 51832
+          },
+          "A": {
+            "precision": 0.974838049778384,
+            "recall": 0.9625639644492324,
+            "f1": 0.9686621269099163,
+            "support": 44556
+          },
+          "D": {
+            "precision": 0.9931120851596744,
+            "recall": 0.9919585418155825,
+            "f1": 0.9925349783201467,
+            "support": 44768
+          }
+        }
+      },
+      "spell_gain": 0.037774316213863735,
+      "macro_gain": 0.012858955678877626,
+      "source_sha256": {
+        "external/conv/metrica_2.npz": "c281860596fc33feb55687ada6913c65e63451ccbb7c675588205c5dc9ff41c9"
+      }
+    },
+    {
+      "game": "original/metrica_1",
+      "provider": "Metrica",
+      "scenario": "matched_seed0",
+      "scope": "in-sample cross-provider regression",
+      "control": {
+        "spell_f1_mean": 0.8383838383838385,
+        "macro_f1": 0.9647069354798519,
+        "n_gt_spells": 326,
+        "n_pred_spells": 268,
+        "per_class": {
+          "H": {
+            "precision": 0.9570091399625592,
+            "recall": 0.9678374947101143,
+            "f1": 0.9623928595158469,
+            "support": 44897
+          },
+          "A": {
+            "precision": 0.9391561281172438,
+            "recall": 0.9607534942206316,
+            "f1": 0.9498320563238862,
+            "support": 41354
+          },
+          "D": {
+            "precision": 0.9943975146607092,
+            "recall": 0.9697047059824696,
+            "f1": 0.9818958905998225,
+            "support": 58755
+          }
+        }
+      },
+      "candidate": {
+        "spell_f1_mean": 0.8796052631578949,
+        "macro_f1": 0.9792277359996425,
+        "n_gt_spells": 326,
+        "n_pred_spells": 282,
+        "per_class": {
+          "H": {
+            "precision": 0.9736055332440875,
+            "recall": 0.9719357640822327,
+            "f1": 0.9727699321198882,
+            "support": 44897
+          },
+          "A": {
+            "precision": 0.9695762404925752,
+            "recall": 0.9710064322677371,
+            "f1": 0.9702908093609925,
+            "support": 41354
+          },
+          "D": {
+            "precision": 0.994487076959725,
+            "recall": 0.9947578929452813,
+            "f1": 0.9946224665180471,
+            "support": 58755
+          }
+        }
+      },
+      "spell_gain": 0.04122142477405644,
+      "macro_gain": 0.014520800519790655,
+      "source_sha256": {
+        "external/conv/metrica_1.npz": "dfc476291ddc64617269d303598e93884838cd2cd5f41fd25e7d09d6c6503cb5"
+      }
+    },
+    {
+      "game": "original/metrica_1",
+      "provider": "Metrica",
+      "scenario": "label_blind_seed1",
+      "scope": "in-sample cross-provider regression",
+      "control": {
+        "spell_f1_mean": 0.7939393939393938,
+        "macro_f1": 0.9547751770186159,
+        "n_gt_spells": 326,
+        "n_pred_spells": 268,
+        "per_class": {
+          "H": {
+            "precision": 0.948087371105444,
+            "recall": 0.9522685257366862,
+            "f1": 0.9501733487421105,
+            "support": 44897
+          },
+          "A": {
+            "precision": 0.9304213282551773,
+            "recall": 0.9451806354887072,
+            "f1": 0.9377429106088958,
+            "support": 41354
+          },
+          "D": {
+            "precision": 0.9836099549230584,
+            "recall": 0.9693132499361756,
+            "f1": 0.9764092717048416,
+            "support": 58755
+          }
+        }
+      },
+      "candidate": {
+        "spell_f1_mean": 0.8271074380165289,
+        "macro_f1": 0.9710474572091868,
+        "n_gt_spells": 326,
+        "n_pred_spells": 279,
+        "per_class": {
+          "H": {
+            "precision": 0.9641288596589009,
+            "recall": 0.963226941666481,
+            "f1": 0.9636776896336572,
+            "support": 44897
+          },
+          "A": {
+            "precision": 0.9599081126828678,
+            "recall": 0.9599313246602506,
+            "f1": 0.959919718531236,
+            "support": 41354
+          },
+          "D": {
+            "precision": 0.9891999455745288,
+            "recall": 0.9898902221087567,
+            "f1": 0.9895449634626672,
+            "support": 58755
+          }
+        }
+      },
+      "spell_gain": 0.03316804407713503,
+      "macro_gain": 0.01627228019057092,
+      "source_sha256": {
+        "external/conv/metrica_1.npz": "dfc476291ddc64617269d303598e93884838cd2cd5f41fd25e7d09d6c6503cb5"
+      }
+    },
+    {
+      "game": "skillcorner/1886347",
+      "provider": "SkillCorner",
+      "scenario": "natural_detected",
+      "scope": "in-sample cross-provider regression",
+      "control": {
+        "spell_f1_mean": 0.7063291139240506,
+        "macro_f1": 0.8985937067760043,
+        "n_gt_spells": 237,
+        "n_pred_spells": 237,
+        "per_class": {
+          "H": {
+            "precision": 0.8627037773359841,
+            "recall": 0.9461863852426846,
+            "f1": 0.902518666417088,
+            "support": 45862
+          },
+          "A": {
+            "precision": 0.8292117263843648,
+            "recall": 0.9327568518247106,
+            "f1": 0.8779417850738034,
+            "support": 34115
+          },
+          "D": {
+            "precision": 0.9828765379719983,
+            "recall": 0.8564541650030315,
+            "f1": 0.9153206688371212,
+            "support": 67623
+          }
+        }
+      },
+      "candidate": {
+        "spell_f1_mean": 0.7326403326403326,
+        "macro_f1": 0.9100851883369434,
+        "n_gt_spells": 237,
+        "n_pred_spells": 244,
+        "per_class": {
+          "H": {
+            "precision": 0.8770382358891361,
+            "recall": 0.9452705943918712,
+            "f1": 0.9098770096125592,
+            "support": 45862
+          },
+          "A": {
+            "precision": 0.8565511640498105,
+            "recall": 0.9274805803898578,
+            "f1": 0.8906058686932659,
+            "support": 34115
+          },
+          "D": {
+            "precision": 0.9783112853176548,
+            "recall": 0.8858228709167,
+            "f1": 0.929772686705005,
+            "support": 67623
+          }
+        }
+      },
+      "spell_gain": 0.026311218716281948,
+      "macro_gain": 0.011491481560939154,
+      "source_sha256": {
+        "reports/v2_search/skillcorner/1886347.npz": "8498207bc9bacb8d6406322676c37206dca647a7a3c7077c07170b5f5fa19f97"
+      }
+    },
+    {
+      "game": "skillcorner/1886347",
+      "provider": "SkillCorner",
+      "scenario": "label_blind_seed7",
+      "scope": "in-sample cross-provider regression",
+      "control": {
+        "spell_f1_mean": 0.6632558139534883,
+        "macro_f1": 0.8823227727220267,
+        "n_gt_spells": 237,
+        "n_pred_spells": 193,
+        "per_class": {
+          "H": {
+            "precision": 0.8696750902527076,
+            "recall": 0.8929614931751777,
+            "f1": 0.8811644719855409,
+            "support": 45862
+          },
+          "A": {
+            "precision": 0.8381988010595288,
+            "recall": 0.8811959548585666,
+            "f1": 0.8591597599314089,
+            "support": 34115
+          },
+          "D": {
+            "precision": 0.9275272642895815,
+            "recall": 0.8866805672626178,
+            "f1": 0.9066440862491306,
+            "support": 67623
+          }
+        }
+      },
+      "candidate": {
+        "spell_f1_mean": 0.6772009029345372,
+        "macro_f1": 0.9002747428035042,
+        "n_gt_spells": 237,
+        "n_pred_spells": 206,
+        "per_class": {
+          "H": {
+            "precision": 0.8695669976456136,
+            "recall": 0.9261262047010597,
+            "f1": 0.89695587443378,
+            "support": 45862
+          },
+          "A": {
+            "precision": 0.8554267355775946,
+            "recall": 0.89755239630661,
+            "f1": 0.8759834072378773,
+            "support": 34115
+          },
+          "D": {
+            "precision": 0.9622458703939009,
+            "recall": 0.8958934090472177,
+            "f1": 0.9278849467388557,
+            "support": 67623
+          }
+        }
+      },
+      "spell_gain": 0.013945088981048848,
+      "macro_gain": 0.01795197008147742,
+      "source_sha256": {
+        "reports/v2_search/skillcorner/1886347.npz": "8498207bc9bacb8d6406322676c37206dca647a7a3c7077c07170b5f5fa19f97"
+      }
+    },
+    {
+      "game": "skillcorner/1874553",
+      "provider": "SkillCorner",
+      "scenario": "natural_detected",
+      "scope": "in-sample cross-provider regression",
+      "control": {
+        "spell_f1_mean": 0.7186046511627906,
+        "macro_f1": 0.8969797749228201,
+        "n_gt_spells": 250,
+        "n_pred_spells": 266,
+        "per_class": {
+          "H": {
+            "precision": 0.8217773992049971,
+            "recall": 0.9098711097139265,
+            "f1": 0.8635834700880203,
+            "support": 31810
+          },
+          "A": {
+            "precision": 0.8686118158753171,
+            "recall": 0.9587534005440871,
+            "f1": 0.9114593237743887,
+            "support": 49992
+          },
+          "D": {
+            "precision": 0.9811940298507462,
+            "recall": 0.8587477140120178,
+            "f1": 0.9158965309060512,
+            "support": 68898
+          }
+        }
+      },
+      "candidate": {
+        "spell_f1_mean": 0.732695984703633,
+        "macro_f1": 0.9077897980245151,
+        "n_gt_spells": 250,
+        "n_pred_spells": 273,
+        "per_class": {
+          "H": {
+            "precision": 0.8469513991163475,
+            "recall": 0.9039295818924866,
+            "f1": 0.8745133819951338,
+            "support": 31810
+          },
+          "A": {
+            "precision": 0.8844206246534836,
+            "recall": 0.957273163706193,
+            "f1": 0.919405967224453,
+            "support": 49992
+          },
+          "D": {
+            "precision": 0.9758780332056194,
+            "recall": 0.8872391070858371,
+            "f1": 0.9294500448539585,
+            "support": 68898
+          }
+        }
+      },
+      "spell_gain": 0.014091333540842355,
+      "macro_gain": 0.010810023101694988,
+      "source_sha256": {
+        "reports/v2_search/skillcorner/1874553.npz": "4a4be0ed844154c77baaaa2de8d48d9a158a18cffaebc9044afaed5eb32d33ee"
+      }
+    },
+    {
+      "game": "skillcorner/1874553",
+      "provider": "SkillCorner",
+      "scenario": "label_blind_seed7",
+      "scope": "in-sample cross-provider regression",
+      "control": {
+        "spell_f1_mean": 0.6458947368421053,
+        "macro_f1": 0.8726793552504534,
+        "n_gt_spells": 250,
+        "n_pred_spells": 225,
+        "per_class": {
+          "H": {
+            "precision": 0.8218543046357616,
+            "recall": 0.8582835586293618,
+            "f1": 0.8396739966169461,
+            "support": 31810
+          },
+          "A": {
+            "precision": 0.874881329113924,
+            "recall": 0.8848215714514323,
+            "f1": 0.8798233749701647,
+            "support": 49992
+          },
+          "D": {
+            "precision": 0.9118200836820084,
+            "recall": 0.8856425440506256,
+            "f1": 0.8985406941642492,
+            "support": 68898
+          }
+        }
+      },
+      "candidate": {
+        "spell_f1_mean": 0.6923076923076923,
+        "macro_f1": 0.8971505168954885,
+        "n_gt_spells": 250,
+        "n_pred_spells": 244,
+        "per_class": {
+          "H": {
+            "precision": 0.8309896602658788,
+            "recall": 0.8842816724300534,
+            "f1": 0.8568077977459642,
+            "support": 31810
+          },
+          "A": {
+            "precision": 0.8774320156994674,
+            "recall": 0.9390902544407105,
+            "f1": 0.9072147018754168,
+            "support": 49992
+          },
+          "D": {
+            "precision": 0.9680795642907886,
+            "recall": 0.8900548637115736,
+            "f1": 0.9274290510650848,
+            "support": 68898
+          }
+        }
+      },
+      "spell_gain": 0.04641295546558699,
+      "macro_gain": 0.024471161645035155,
+      "source_sha256": {
+        "reports/v2_search/skillcorner/1874553.npz": "4a4be0ed844154c77baaaa2de8d48d9a158a18cffaebc9044afaed5eb32d33ee"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "provider": "DFL",
+      "scenario": "label_blind_seed1",
+      "mean_spell_gain": 0.03783752732920592,
+      "mean_macro_gain": 0.017911446577215606,
+      "worst_spell_gain": 0.03225363910796408,
+      "pass": true
+    },
+    {
+      "provider": "DFL",
+      "scenario": "matched_seed0",
+      "mean_spell_gain": 0.027808814958599826,
+      "mean_macro_gain": 0.0047124972339388504,
+      "worst_spell_gain": 0.021056208175358027,
+      "pass": true
+    },
+    {
+      "provider": "Metrica",
+      "scenario": "label_blind_seed1",
+      "mean_spell_gain": 0.03547118014549938,
+      "mean_macro_gain": 0.014565617934724273,
+      "worst_spell_gain": 0.03316804407713503,
+      "pass": true
+    },
+    {
+      "provider": "Metrica",
+      "scenario": "matched_seed0",
+      "mean_spell_gain": 0.041478996615797736,
+      "mean_macro_gain": 0.013277218273277713,
+      "worst_spell_gain": 0.04122142477405644,
+      "pass": true
+    },
+    {
+      "provider": "SkillCorner",
+      "scenario": "label_blind_seed7",
+      "mean_spell_gain": 0.03017902222331792,
+      "mean_macro_gain": 0.021211565863256288,
+      "worst_spell_gain": 0.013945088981048848,
+      "pass": true
+    },
+    {
+      "provider": "SkillCorner",
+      "scenario": "natural_detected",
+      "mean_spell_gain": 0.02020127612856215,
+      "mean_macro_gain": 0.011150752331317071,
+      "worst_spell_gain": 0.014091333540842355,
+      "pass": true
+    }
+  ],
+  "passed": true
+}
