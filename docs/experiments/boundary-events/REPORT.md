@@ -38,7 +38,7 @@ A post-hoc descriptive audit uses the official one-to-one same-team spell matchi
 | 3–10 seconds | 985 | 0.5328 | 0.5472 |
 | At least 10 seconds | 1,124 | 0.8466 | 0.8530 |
 
-These are official scored valid-run spells. Masked reference gaps can split a possession, so these counts differ from whole-metadata-period duration summaries that omit such fragments. The 2,687 reference spells become 2,028 predictions in boundary102 and 2,099 in strength two; more segments do not by themselves establish better segmentation.
+These are official scored valid-run spells. Masked reference gaps can split a possession, so these counts differ from whole-metadata-period duration summaries that omit such fragments. The 2,687 reference spells become 2,028 predictions in boundary102 and 2,099 in strength two; more segments do not by themselves establish better segmentation. Averaging the official matching counts over the five IoUs, matched spells rise from 1,543.6 to 1,574.0, but spurious predictions rise from 484.4 to 525.0. Thus the 71 extra predictions supply only 30.4 additional matches alongside 40.6 additional false positives; fractional counts reflect threshold averaging.
 
 Exact-timing boundary average precision at 5 Hz, averaged by game, is 0.0924 for live handovers and 0.1122 for live/dead changes (positive fractions 0.00566/0.00627); blind values are 0.0751/0.1031. These are frame-boundary AP diagnostics, not event precision or possession F1. The head has signal, but the tested likelihood-ratio cost adjustment recovers very few additional short possessions. It cannot directly repair an incorrect or missing team-control emission.
 

@@ -27,7 +27,8 @@ def main():
                     predicted=official.possession_spells(pred,runs);overlaps=official.spell_overlaps(spells,predicted)
                     flags=np.stack([official.matched_gt_flags(overlaps,len(spells),t) for t in official.SPELL_IOUS])
                     per_bin={k:{'n_gt':int(mask.sum()),'recall_mean_iou':float(flags[:,mask].mean()) if mask.any() else None} for k,mask in bins.items()}
-                    records.append({'game':game,'scenario':scenario,'candidate':name,'n_gt':len(spells),'n_pred':len(predicted),'mean_pred_duration_s':float(np.mean([(b-a)/25 for a,b,k in predicted])),'spells':per_bin})
+                    matched=float(flags.sum(axis=1).mean())
+                    records.append({'game':game,'scenario':scenario,'candidate':name,'n_gt':len(spells),'n_pred':len(predicted),'n_matched_mean_iou':matched,'n_spurious_mean_iou':len(predicted)-matched,'n_missed_mean_iou':len(spells)-matched,'mean_pred_duration_s':float(np.mean([(b-a)/25 for a,b,k in predicted])),'spells':per_bin})
                 cache=OUT/'probabilities'/f'{game}__{scenario}.npz';source[str(cache.relative_to(ROOT))]=sha(cache)
                 with np.load(cache,allow_pickle=False) as probabilities:q=probabilities['q'][::5]
                 parts=[((a+4)//5,(b+4)//5) for a,b in runs];target=targets(gt[::5],parts);valid=target>=0
@@ -43,7 +44,7 @@ def main():
             for label in ['under1','1to3','3to10','10plus']:
                 count=sum(r['spells'][label]['n_gt'] for r in cells)
                 pooled[label]={'n_gt':count,'recall_mean_iou':sum(r['spells'][label]['n_gt']*(r['spells'][label]['recall_mean_iou'] or 0) for r in cells)/count if count else None}
-            summary[scenario][name]={'n_gt':sum(r['n_gt'] for r in cells),'n_pred':sum(r['n_pred'] for r in cells),'per_duration':pooled,'mean_game_pred_duration_s':float(np.mean([r['mean_pred_duration_s'] for r in cells]))}
+            summary[scenario][name]={'n_gt':sum(r['n_gt'] for r in cells),'n_pred':sum(r['n_pred'] for r in cells),'n_matched_mean_iou':sum(r['n_matched_mean_iou'] for r in cells),'n_spurious_mean_iou':sum(r['n_spurious_mean_iou'] for r in cells),'n_missed_mean_iou':sum(r['n_missed_mean_iou'] for r in cells),'per_duration':pooled,'mean_game_pred_duration_s':float(np.mean([r['mean_pred_duration_s'] for r in cells]))}
     seeds={}
     for seed in cfg['seeds']:
         name=f'event1_seed{seed}';seeds[str(seed)]={}

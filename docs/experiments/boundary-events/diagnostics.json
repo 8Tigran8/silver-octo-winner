@@ -48,6 +48,9 @@
       "unchanged": {
         "n_gt": 2687,
         "n_pred": 2028,
+        "n_matched_mean_iou": 1543.6,
+        "n_spurious_mean_iou": 484.40000000000003,
+        "n_missed_mean_iou": 1143.4,
         "per_duration": {
           "under1": {
             "n_gt": 97,
@@ -71,6 +74,9 @@
       "constant6": {
         "n_gt": 2687,
         "n_pred": 2095,
+        "n_matched_mean_iou": 1569.4,
+        "n_spurious_mean_iou": 525.6,
+        "n_missed_mean_iou": 1117.6,
         "per_duration": {
           "under1": {
             "n_gt": 97,
@@ -94,6 +100,9 @@
       "event1": {
         "n_gt": 2687,
         "n_pred": 2059,
+        "n_matched_mean_iou": 1556.8,
+        "n_spurious_mean_iou": 502.2,
+        "n_missed_mean_iou": 1130.2,
         "per_duration": {
           "under1": {
             "n_gt": 97,
@@ -117,6 +126,9 @@
       "event2": {
         "n_gt": 2687,
         "n_pred": 2099,
+        "n_matched_mean_iou": 1574.0,
+        "n_spurious_mean_iou": 525.0,
+        "n_missed_mean_iou": 1113.0,
         "per_duration": {
           "under1": {
             "n_gt": 97,
@@ -142,6 +154,9 @@
       "unchanged": {
         "n_gt": 2687,
         "n_pred": 1985,
+        "n_matched_mean_iou": 1500.2,
+        "n_spurious_mean_iou": 484.79999999999995,
+        "n_missed_mean_iou": 1186.8,
         "per_duration": {
           "under1": {
             "n_gt": 97,
@@ -165,6 +180,9 @@
       "constant6": {
         "n_gt": 2687,
         "n_pred": 2067,
+        "n_matched_mean_iou": 1530.4,
+        "n_spurious_mean_iou": 536.6,
+        "n_missed_mean_iou": 1156.6,
         "per_duration": {
           "under1": {
             "n_gt": 97,
@@ -188,6 +206,9 @@
       "event1": {
         "n_gt": 2687,
         "n_pred": 2021,
+        "n_matched_mean_iou": 1518.3999999999999,
+        "n_spurious_mean_iou": 502.6000000000001,
+        "n_missed_mean_iou": 1168.6000000000001,
         "per_duration": {
           "under1": {
             "n_gt": 97,
@@ -211,6 +232,9 @@
       "event2": {
         "n_gt": 2687,
         "n_pred": 2056,
+        "n_matched_mean_iou": 1531.6,
+        "n_spurious_mean_iou": 524.4000000000001,
+        "n_missed_mean_iou": 1155.4,
         "per_duration": {
           "under1": {
             "n_gt": 97,
@@ -576,6 +600,9 @@
       "candidate": "unchanged",
       "n_gt": 240,
       "n_pred": 188,
+      "n_matched_mean_iou": 146.2,
+      "n_spurious_mean_iou": 41.80000000000001,
+      "n_missed_mean_iou": 93.80000000000001,
       "mean_pred_duration_s": 19.93617021276596,
       "spells": {
         "under1": {
@@ -602,6 +629,9 @@
       "candidate": "constant6",
       "n_gt": 240,
       "n_pred": 192,
+      "n_matched_mean_iou": 146.8,
+      "n_spurious_mean_iou": 45.19999999999999,
+      "n_missed_mean_iou": 93.19999999999999,
       "mean_pred_duration_s": 19.53125,
       "spells": {
         "under1": {
@@ -628,6 +658,9 @@
       "candidate": "event1",
       "n_gt": 240,
       "n_pred": 188,
+      "n_matched_mean_iou": 145.8,
+      "n_spurious_mean_iou": 42.19999999999999,
+      "n_missed_mean_iou": 94.19999999999999,
       "mean_pred_duration_s": 19.93617021276596,
       "spells": {
         "under1": {
@@ -654,6 +687,9 @@
       "candidate": "event2",
       "n_gt": 240,
       "n_pred": 191,
+      "n_matched_mean_iou": 145.8,
+      "n_spurious_mean_iou": 45.19999999999999,
+      "n_missed_mean_iou": 94.19999999999999,
       "mean_pred_duration_s": 19.62198952879581,
       "spells": {
         "under1": {
@@ -680,6 +716,9 @@
       "candidate": "unchanged",
       "n_gt": 240,
       "n_pred": 185,
+      "n_matched_mean_iou": 140.2,
+      "n_spurious_mean_iou": 44.80000000000001,
+      "n_missed_mean_iou": 99.80000000000001,
       "mean_pred_duration_s": 19.422702702702704,
       "spells": {
         "under1": {
@@ -706,6 +745,9 @@
       "candidate": "constant6",
       "n_gt": 240,
       "n_pred": 195,
+      "n_matched_mean_iou": 141.0,
+      "n_spurious_mean_iou": 54.0,
+      "n_missed_mean_iou": 99.0,
       "mean_pred_duration_s": 18.41846153846154,
       "spells": {
         "under1": {
@@ -732,6 +774,9 @@
       "candidate": "event1",
       "n_gt": 240,
       "n_pred": 187,
+      "n_matched_mean_iou": 142.0,
+      "n_spurious_mean_iou": 45.0,
+      "n_missed_mean_iou": 98.0,
       "mean_pred_duration_s": 19.21818181818182,
       "spells": {
         "under1": {
@@ -758,6 +803,9 @@
       "candidate": "event2",
       "n_gt": 240,
       "n_pred": 193,
+      "n_matched_mean_iou": 141.6,
+      "n_spurious_mean_iou": 51.400000000000006,
+      "n_missed_mean_iou": 98.4,
       "mean_pred_duration_s": 18.61139896373057,
       "spells": {
         "under1": {
@@ -784,6 +832,9 @@
       "candidate": "unchanged",
       "n_gt": 280,
       "n_pred": 205,
+      "n_matched_mean_iou": 145.0,
+      "n_spurious_mean_iou": 60.0,
+      "n_missed_mean_iou": 135.0,
       "mean_pred_duration_s": 17.459512195121953,
       "spells": {
         "under1": {
@@ -810,6 +861,9 @@
       "candidate": "constant6",
       "n_gt": 280,
       "n_pred": 217,
+      "n_matched_mean_iou": 148.8,
+      "n_spurious_mean_iou": 68.19999999999999,
+      "n_missed_mean_iou": 131.2,
       "mean_pred_duration_s": 16.46175115207373,
       "spells": {
         "under1": {
@@ -836,6 +890,9 @@
       "candidate": "event1",
       "n_gt": 280,
       "n_pred": 209,
+      "n_matched_mean_iou": 146.4,
+      "n_spurious_mean_iou": 62.599999999999994,
+      "n_missed_mean_iou": 133.6,
       "mean_pred_duration_s": 17.095693779904305,
       "spells": {
         "under1": {
@@ -862,6 +919,9 @@
       "candidate": "event2",
       "n_gt": 280,
       "n_pred": 214,
+      "n_matched_mean_iou": 149.4,
+      "n_spurious_mean_iou": 64.6,
+      "n_missed_mean_iou": 130.6,
       "mean_pred_duration_s": 16.67476635514019,
       "spells": {
         "under1": {
@@ -888,6 +948,9 @@
       "candidate": "unchanged",
       "n_gt": 280,
       "n_pred": 196,
+      "n_matched_mean_iou": 143.0,
+      "n_spurious_mean_iou": 53.0,
+      "n_missed_mean_iou": 137.0,
       "mean_pred_duration_s": 17.93673469387755,
       "spells": {
         "under1": {
@@ -914,6 +977,9 @@
       "candidate": "constant6",
       "n_gt": 280,
       "n_pred": 203,
+      "n_matched_mean_iou": 143.8,
+      "n_spurious_mean_iou": 59.19999999999999,
+      "n_missed_mean_iou": 136.2,
       "mean_pred_duration_s": 17.3192118226601,
       "spells": {
         "under1": {
@@ -940,6 +1006,9 @@
       "candidate": "event1",
       "n_gt": 280,
       "n_pred": 197,
+      "n_matched_mean_iou": 143.2,
+      "n_spurious_mean_iou": 53.80000000000001,
+      "n_missed_mean_iou": 136.8,
       "mean_pred_duration_s": 17.82741116751269,
       "spells": {
         "under1": {
@@ -966,6 +1035,9 @@
       "candidate": "event2",
       "n_gt": 280,
       "n_pred": 198,
+      "n_matched_mean_iou": 144.2,
+      "n_spurious_mean_iou": 53.80000000000001,
+      "n_missed_mean_iou": 135.8,
       "mean_pred_duration_s": 17.73030303030303,
       "spells": {
         "under1": {
@@ -992,6 +1064,9 @@
       "candidate": "unchanged",
       "n_gt": 237,
       "n_pred": 173,
+      "n_matched_mean_iou": 130.6,
+      "n_spurious_mean_iou": 42.400000000000006,
+      "n_missed_mean_iou": 106.4,
       "mean_pred_duration_s": 19.904971098265897,
       "spells": {
         "under1": {
@@ -1018,6 +1093,9 @@
       "candidate": "constant6",
       "n_gt": 237,
       "n_pred": 179,
+      "n_matched_mean_iou": 134.0,
+      "n_spurious_mean_iou": 45.0,
+      "n_missed_mean_iou": 103.0,
       "mean_pred_duration_s": 19.24,
       "spells": {
         "under1": {
@@ -1044,6 +1122,9 @@
       "candidate": "event1",
       "n_gt": 237,
       "n_pred": 175,
+      "n_matched_mean_iou": 132.0,
+      "n_spurious_mean_iou": 43.0,
+      "n_missed_mean_iou": 105.0,
       "mean_pred_duration_s": 19.6752,
       "spells": {
         "under1": {
@@ -1070,6 +1151,9 @@
       "candidate": "event2",
       "n_gt": 237,
       "n_pred": 178,
+      "n_matched_mean_iou": 133.0,
+      "n_spurious_mean_iou": 45.0,
+      "n_missed_mean_iou": 104.0,
       "mean_pred_duration_s": 19.361573033707867,
       "spells": {
         "under1": {
@@ -1096,6 +1180,9 @@
       "candidate": "unchanged",
       "n_gt": 237,
       "n_pred": 171,
+      "n_matched_mean_iou": 129.0,
+      "n_spurious_mean_iou": 42.0,
+      "n_missed_mean_iou": 108.0,
       "mean_pred_duration_s": 19.957660818713453,
       "spells": {
         "under1": {
@@ -1122,6 +1209,9 @@
       "candidate": "constant6",
       "n_gt": 237,
       "n_pred": 177,
+      "n_matched_mean_iou": 132.2,
+      "n_spurious_mean_iou": 44.80000000000001,
+      "n_missed_mean_iou": 104.80000000000001,
       "mean_pred_duration_s": 19.26531073446328,
       "spells": {
         "under1": {
@@ -1148,6 +1238,9 @@
       "candidate": "event1",
       "n_gt": 237,
       "n_pred": 173,
+      "n_matched_mean_iou": 130.2,
+      "n_spurious_mean_iou": 42.80000000000001,
+      "n_missed_mean_iou": 106.80000000000001,
       "mean_pred_duration_s": 19.694566473988438,
       "spells": {
         "under1": {
@@ -1174,6 +1267,9 @@
       "candidate": "event2",
       "n_gt": 237,
       "n_pred": 176,
+      "n_matched_mean_iou": 130.6,
+      "n_spurious_mean_iou": 45.400000000000006,
+      "n_missed_mean_iou": 106.4,
       "mean_pred_duration_s": 19.375909090909094,
       "spells": {
         "under1": {
@@ -1200,6 +1296,9 @@
       "candidate": "unchanged",
       "n_gt": 271,
       "n_pred": 202,
+      "n_matched_mean_iou": 160.2,
+      "n_spurious_mean_iou": 41.80000000000001,
+      "n_missed_mean_iou": 110.80000000000001,
       "mean_pred_duration_s": 17.11782178217822,
       "spells": {
         "under1": {
@@ -1226,6 +1325,9 @@
       "candidate": "constant6",
       "n_gt": 271,
       "n_pred": 207,
+      "n_matched_mean_iou": 163.4,
+      "n_spurious_mean_iou": 43.599999999999994,
+      "n_missed_mean_iou": 107.6,
       "mean_pred_duration_s": 16.71400966183575,
       "spells": {
         "under1": {
@@ -1252,6 +1354,9 @@
       "candidate": "event1",
       "n_gt": 271,
       "n_pred": 206,
+      "n_matched_mean_iou": 162.6,
+      "n_spurious_mean_iou": 43.400000000000006,
+      "n_missed_mean_iou": 108.4,
       "mean_pred_duration_s": 16.775728155339806,
       "spells": {
         "under1": {
@@ -1278,6 +1383,9 @@
       "candidate": "event2",
       "n_gt": 271,
       "n_pred": 208,
+      "n_matched_mean_iou": 163.8,
+      "n_spurious_mean_iou": 44.19999999999999,
+      "n_missed_mean_iou": 107.19999999999999,
       "mean_pred_duration_s": 16.623076923076923,
       "spells": {
         "under1": {
@@ -1304,6 +1412,9 @@
       "candidate": "unchanged",
       "n_gt": 271,
       "n_pred": 197,
+      "n_matched_mean_iou": 151.8,
+      "n_spurious_mean_iou": 45.19999999999999,
+      "n_missed_mean_iou": 119.19999999999999,
       "mean_pred_duration_s": 17.011167512690353,
       "spells": {
         "under1": {
@@ -1330,6 +1441,9 @@
       "candidate": "constant6",
       "n_gt": 271,
       "n_pred": 203,
+      "n_matched_mean_iou": 154.4,
+      "n_spurious_mean_iou": 48.599999999999994,
+      "n_missed_mean_iou": 116.6,
       "mean_pred_duration_s": 16.529064039408865,
       "spells": {
         "under1": {
@@ -1356,6 +1470,9 @@
       "candidate": "event1",
       "n_gt": 271,
       "n_pred": 200,
+      "n_matched_mean_iou": 155.0,
+      "n_spurious_mean_iou": 45.0,
+      "n_missed_mean_iou": 116.0,
       "mean_pred_duration_s": 16.767999999999997,
       "spells": {
         "under1": {
@@ -1382,6 +1499,9 @@
       "candidate": "event2",
       "n_gt": 271,
       "n_pred": 203,
+      "n_matched_mean_iou": 154.4,
+      "n_spurious_mean_iou": 48.599999999999994,
+      "n_missed_mean_iou": 116.6,
       "mean_pred_duration_s": 16.539901477832508,
       "spells": {
         "under1": {
@@ -1408,6 +1528,9 @@
       "candidate": "unchanged",
       "n_gt": 275,
       "n_pred": 196,
+      "n_matched_mean_iou": 146.2,
+      "n_spurious_mean_iou": 49.80000000000001,
+      "n_missed_mean_iou": 128.8,
       "mean_pred_duration_s": 16.273265306122447,
       "spells": {
         "under1": {
@@ -1434,6 +1557,9 @@
       "candidate": "constant6",
       "n_gt": 275,
       "n_pred": 203,
+      "n_matched_mean_iou": 148.6,
+      "n_spurious_mean_iou": 54.400000000000006,
+      "n_missed_mean_iou": 126.4,
       "mean_pred_duration_s": 15.705221674876846,
       "spells": {
         "under1": {
@@ -1460,6 +1586,9 @@
       "candidate": "event1",
       "n_gt": 275,
       "n_pred": 202,
+      "n_matched_mean_iou": 148.6,
+      "n_spurious_mean_iou": 53.400000000000006,
+      "n_missed_mean_iou": 126.4,
       "mean_pred_duration_s": 15.776039603960397,
       "spells": {
         "under1": {
@@ -1486,6 +1615,9 @@
       "candidate": "event2",
       "n_gt": 275,
       "n_pred": 205,
+      "n_matched_mean_iou": 151.0,
+      "n_spurious_mean_iou": 54.0,
+      "n_missed_mean_iou": 124.0,
       "mean_pred_duration_s": 15.539317073170732,
       "spells": {
         "under1": {
@@ -1512,6 +1644,9 @@
       "candidate": "unchanged",
       "n_gt": 275,
       "n_pred": 198,
+      "n_matched_mean_iou": 145.0,
+      "n_spurious_mean_iou": 53.0,
+      "n_missed_mean_iou": 130.0,
       "mean_pred_duration_s": 15.97858585858586,
       "spells": {
         "under1": {
@@ -1538,6 +1673,9 @@
       "candidate": "constant6",
       "n_gt": 275,
       "n_pred": 205,
+      "n_matched_mean_iou": 148.6,
+      "n_spurious_mean_iou": 56.400000000000006,
+      "n_missed_mean_iou": 126.4,
       "mean_pred_duration_s": 15.446634146341461,
       "spells": {
         "under1": {
@@ -1564,6 +1702,9 @@
       "candidate": "event1",
       "n_gt": 275,
       "n_pred": 203,
+      "n_matched_mean_iou": 146.2,
+      "n_spurious_mean_iou": 56.80000000000001,
+      "n_missed_mean_iou": 128.8,
       "mean_pred_duration_s": 15.614581280788178,
       "spells": {
         "under1": {
@@ -1590,6 +1731,9 @@
       "candidate": "event2",
       "n_gt": 275,
       "n_pred": 205,
+      "n_matched_mean_iou": 150.2,
+      "n_spurious_mean_iou": 54.80000000000001,
+      "n_missed_mean_iou": 124.80000000000001,
       "mean_pred_duration_s": 15.451512195121952,
       "spells": {
         "under1": {
@@ -1616,6 +1760,9 @@
       "candidate": "unchanged",
       "n_gt": 269,
       "n_pred": 216,
+      "n_matched_mean_iou": 170.0,
+      "n_spurious_mean_iou": 46.0,
+      "n_missed_mean_iou": 99.0,
       "mean_pred_duration_s": 16.13240740740741,
       "spells": {
         "under1": {
@@ -1642,6 +1789,9 @@
       "candidate": "constant6",
       "n_gt": 269,
       "n_pred": 221,
+      "n_matched_mean_iou": 171.2,
+      "n_spurious_mean_iou": 49.80000000000001,
+      "n_missed_mean_iou": 97.80000000000001,
       "mean_pred_duration_s": 15.760180995475114,
       "spells": {
         "under1": {
@@ -1668,6 +1818,9 @@
       "candidate": "event1",
       "n_gt": 269,
       "n_pred": 220,
+      "n_matched_mean_iou": 170.6,
+      "n_spurious_mean_iou": 49.400000000000006,
+      "n_missed_mean_iou": 98.4,
       "mean_pred_duration_s": 15.82909090909091,
       "spells": {
         "under1": {
@@ -1694,6 +1847,9 @@
       "candidate": "event2",
       "n_gt": 269,
       "n_pred": 221,
+      "n_matched_mean_iou": 170.8,
+      "n_spurious_mean_iou": 50.19999999999999,
+      "n_missed_mean_iou": 98.19999999999999,
       "mean_pred_duration_s": 15.759276018099548,
       "spells": {
         "under1": {
@@ -1720,6 +1876,9 @@
       "candidate": "unchanged",
       "n_gt": 269,
       "n_pred": 212,
+      "n_matched_mean_iou": 163.8,
+      "n_spurious_mean_iou": 48.19999999999999,
+      "n_missed_mean_iou": 105.19999999999999,
       "mean_pred_duration_s": 16.425471698113206,
       "spells": {
         "under1": {
@@ -1746,6 +1905,9 @@
       "candidate": "constant6",
       "n_gt": 269,
       "n_pred": 220,
+      "n_matched_mean_iou": 167.0,
+      "n_spurious_mean_iou": 53.0,
+      "n_missed_mean_iou": 102.0,
       "mean_pred_duration_s": 15.833636363636362,
       "spells": {
         "under1": {
@@ -1772,6 +1934,9 @@
       "candidate": "event1",
       "n_gt": 269,
       "n_pred": 216,
+      "n_matched_mean_iou": 165.2,
+      "n_spurious_mean_iou": 50.80000000000001,
+      "n_missed_mean_iou": 103.80000000000001,
       "mean_pred_duration_s": 16.12222222222222,
       "spells": {
         "under1": {
@@ -1798,6 +1963,9 @@
       "candidate": "event2",
       "n_gt": 269,
       "n_pred": 217,
+      "n_matched_mean_iou": 165.4,
+      "n_spurious_mean_iou": 51.599999999999994,
+      "n_missed_mean_iou": 103.6,
       "mean_pred_duration_s": 16.034101382488476,
       "spells": {
         "under1": {
@@ -1824,6 +1992,9 @@
       "candidate": "unchanged",
       "n_gt": 264,
       "n_pred": 201,
+      "n_matched_mean_iou": 153.8,
+      "n_spurious_mean_iou": 47.19999999999999,
+      "n_missed_mean_iou": 110.19999999999999,
       "mean_pred_duration_s": 19.082587064676616,
       "spells": {
         "under1": {
@@ -1850,6 +2021,9 @@
       "candidate": "constant6",
       "n_gt": 264,
       "n_pred": 210,
+      "n_matched_mean_iou": 156.6,
+      "n_spurious_mean_iou": 53.400000000000006,
+      "n_missed_mean_iou": 107.4,
       "mean_pred_duration_s": 18.25904761904762,
       "spells": {
         "under1": {
@@ -1876,6 +2050,9 @@
       "candidate": "event1",
       "n_gt": 264,
       "n_pred": 204,
+      "n_matched_mean_iou": 154.4,
+      "n_spurious_mean_iou": 49.599999999999994,
+      "n_missed_mean_iou": 109.6,
       "mean_pred_duration_s": 18.78921568627451,
       "spells": {
         "under1": {
@@ -1902,6 +2079,9 @@
       "candidate": "event2",
       "n_gt": 264,
       "n_pred": 208,
+      "n_matched_mean_iou": 157.0,
+      "n_spurious_mean_iou": 51.0,
+      "n_missed_mean_iou": 107.0,
       "mean_pred_duration_s": 18.407692307692308,
       "spells": {
         "under1": {
@@ -1928,6 +2108,9 @@
       "candidate": "unchanged",
       "n_gt": 264,
       "n_pred": 188,
+      "n_matched_mean_iou": 141.8,
+      "n_spurious_mean_iou": 46.19999999999999,
+      "n_missed_mean_iou": 122.19999999999999,
       "mean_pred_duration_s": 20.076595744680855,
       "spells": {
         "under1": {
@@ -1954,6 +2137,9 @@
       "candidate": "constant6",
       "n_gt": 264,
       "n_pred": 194,
+      "n_matched_mean_iou": 143.6,
+      "n_spurious_mean_iou": 50.400000000000006,
+      "n_missed_mean_iou": 120.4,
       "mean_pred_duration_s": 19.446391752577316,
       "spells": {
         "under1": {
@@ -1980,6 +2166,9 @@
       "candidate": "event1",
       "n_gt": 264,
       "n_pred": 189,
+      "n_matched_mean_iou": 141.2,
+      "n_spurious_mean_iou": 47.80000000000001,
+      "n_missed_mean_iou": 122.80000000000001,
       "mean_pred_duration_s": 19.944973544973546,
       "spells": {
         "under1": {
@@ -2006,6 +2195,9 @@
       "candidate": "event2",
       "n_gt": 264,
       "n_pred": 197,
+      "n_matched_mean_iou": 144.2,
+      "n_spurious_mean_iou": 52.80000000000001,
+      "n_missed_mean_iou": 119.80000000000001,
       "mean_pred_duration_s": 19.139086294416245,
       "spells": {
         "under1": {
@@ -2032,6 +2224,9 @@
       "candidate": "unchanged",
       "n_gt": 305,
       "n_pred": 225,
+      "n_matched_mean_iou": 162.2,
+      "n_spurious_mean_iou": 62.80000000000001,
+      "n_missed_mean_iou": 142.8,
       "mean_pred_duration_s": 15.141511111111111,
       "spells": {
         "under1": {
@@ -2058,6 +2253,9 @@
       "candidate": "constant6",
       "n_gt": 305,
       "n_pred": 230,
+      "n_matched_mean_iou": 164.2,
+      "n_spurious_mean_iou": 65.80000000000001,
+      "n_missed_mean_iou": 140.8,
       "mean_pred_duration_s": 14.811478260869567,
       "spells": {
         "under1": {
@@ -2084,6 +2282,9 @@
       "candidate": "event1",
       "n_gt": 305,
       "n_pred": 229,
+      "n_matched_mean_iou": 162.4,
+      "n_spurious_mean_iou": 66.6,
+      "n_missed_mean_iou": 142.6,
       "mean_pred_duration_s": 14.880524017467248,
       "spells": {
         "under1": {
@@ -2110,6 +2311,9 @@
       "candidate": "event2",
       "n_gt": 305,
       "n_pred": 230,
+      "n_matched_mean_iou": 163.2,
+      "n_spurious_mean_iou": 66.80000000000001,
+      "n_missed_mean_iou": 141.8,
       "mean_pred_duration_s": 14.80713043478261,
       "spells": {
         "under1": {
@@ -2136,6 +2340,9 @@
       "candidate": "unchanged",
       "n_gt": 305,
       "n_pred": 226,
+      "n_matched_mean_iou": 161.8,
+      "n_spurious_mean_iou": 64.19999999999999,
+      "n_missed_mean_iou": 143.2,
       "mean_pred_duration_s": 14.976283185840709,
       "spells": {
         "under1": {
@@ -2162,6 +2369,9 @@
       "candidate": "constant6",
       "n_gt": 305,
       "n_pred": 235,
+      "n_matched_mean_iou": 166.4,
+      "n_spurious_mean_iou": 68.6,
+      "n_missed_mean_iou": 138.6,
       "mean_pred_duration_s": 14.38825531914894,
       "spells": {
         "under1": {
@@ -2188,6 +2398,9 @@
       "candidate": "event1",
       "n_gt": 305,
       "n_pred": 229,
+      "n_matched_mean_iou": 163.6,
+      "n_spurious_mean_iou": 65.4,
+      "n_missed_mean_iou": 141.4,
       "mean_pred_duration_s": 14.76873362445415,
       "spells": {
         "under1": {
@@ -2214,6 +2427,9 @@
       "candidate": "event2",
       "n_gt": 305,
       "n_pred": 233,
+      "n_matched_mean_iou": 166.2,
+      "n_spurious_mean_iou": 66.80000000000001,
+      "n_missed_mean_iou": 138.8,
       "mean_pred_duration_s": 14.5006008583691,
       "spells": {
         "under1": {
@@ -2240,6 +2456,9 @@
       "candidate": "unchanged",
       "n_gt": 278,
       "n_pred": 208,
+      "n_matched_mean_iou": 160.6,
+      "n_spurious_mean_iou": 47.400000000000006,
+      "n_missed_mean_iou": 117.4,
       "mean_pred_duration_s": 17.246346153846154,
       "spells": {
         "under1": {
@@ -2266,6 +2485,9 @@
       "candidate": "constant6",
       "n_gt": 278,
       "n_pred": 220,
+      "n_matched_mean_iou": 167.0,
+      "n_spurious_mean_iou": 53.0,
+      "n_missed_mean_iou": 111.0,
       "mean_pred_duration_s": 16.32018181818182,
       "spells": {
         "under1": {
@@ -2292,6 +2514,9 @@
       "candidate": "event1",
       "n_gt": 278,
       "n_pred": 213,
+      "n_matched_mean_iou": 164.2,
+      "n_spurious_mean_iou": 48.80000000000001,
+      "n_missed_mean_iou": 113.80000000000001,
       "mean_pred_duration_s": 16.837746478873242,
       "spells": {
         "under1": {
@@ -2318,6 +2543,9 @@
       "candidate": "event2",
       "n_gt": 278,
       "n_pred": 221,
+      "n_matched_mean_iou": 167.2,
+      "n_spurious_mean_iou": 53.80000000000001,
+      "n_missed_mean_iou": 110.80000000000001,
       "mean_pred_duration_s": 16.23547511312217,
       "spells": {
         "under1": {
@@ -2344,6 +2572,9 @@
       "candidate": "unchanged",
       "n_gt": 278,
       "n_pred": 204,
+      "n_matched_mean_iou": 160.0,
+      "n_spurious_mean_iou": 44.0,
+      "n_missed_mean_iou": 118.0,
       "mean_pred_duration_s": 17.20607843137255,
       "spells": {
         "under1": {
@@ -2370,6 +2601,9 @@
       "candidate": "constant6",
       "n_gt": 278,
       "n_pred": 216,
+      "n_matched_mean_iou": 163.0,
+      "n_spurious_mean_iou": 53.0,
+      "n_missed_mean_iou": 115.0,
       "mean_pred_duration_s": 16.271481481481484,
       "spells": {
         "under1": {
@@ -2396,6 +2630,9 @@
       "candidate": "event1",
       "n_gt": 278,
       "n_pred": 209,
+      "n_matched_mean_iou": 162.2,
+      "n_spurious_mean_iou": 46.80000000000001,
+      "n_missed_mean_iou": 115.80000000000001,
       "mean_pred_duration_s": 16.80114832535885,
       "spells": {
         "under1": {
@@ -2422,6 +2659,9 @@
       "candidate": "event2",
       "n_gt": 278,
       "n_pred": 213,
+      "n_matched_mean_iou": 163.0,
+      "n_spurious_mean_iou": 50.0,
+      "n_missed_mean_iou": 115.0,
       "mean_pred_duration_s": 16.492206572769955,
       "spells": {
         "under1": {
@@ -2448,6 +2688,9 @@
       "candidate": "unchanged",
       "n_gt": 268,
       "n_pred": 214,
+      "n_matched_mean_iou": 168.8,
+      "n_spurious_mean_iou": 45.19999999999999,
+      "n_missed_mean_iou": 99.19999999999999,
       "mean_pred_duration_s": 17.153644859813085,
       "spells": {
         "under1": {
@@ -2474,6 +2717,9 @@
       "candidate": "constant6",
       "n_gt": 268,
       "n_pred": 216,
+      "n_matched_mean_iou": 168.8,
+      "n_spurious_mean_iou": 47.19999999999999,
+      "n_missed_mean_iou": 99.19999999999999,
       "mean_pred_duration_s": 16.995185185185186,
       "spells": {
         "under1": {
@@ -2500,6 +2746,9 @@
       "candidate": "event1",
       "n_gt": 268,
       "n_pred": 213,
+      "n_matched_mean_iou": 169.8,
+      "n_spurious_mean_iou": 43.19999999999999,
+      "n_missed_mean_iou": 98.19999999999999,
       "mean_pred_duration_s": 17.22384976525822,
       "spells": {
         "under1": {
@@ -2526,6 +2775,9 @@
       "candidate": "event2",
       "n_gt": 268,
       "n_pred": 223,
+      "n_matched_mean_iou": 172.8,
+      "n_spurious_mean_iou": 50.19999999999999,
+      "n_missed_mean_iou": 95.19999999999999,
       "mean_pred_duration_s": 16.446098654708518,
       "spells": {
         "under1": {
@@ -2552,6 +2804,9 @@
       "candidate": "unchanged",
       "n_gt": 268,
       "n_pred": 208,
+      "n_matched_mean_iou": 163.8,
+      "n_spurious_mean_iou": 44.19999999999999,
+      "n_missed_mean_iou": 104.19999999999999,
       "mean_pred_duration_s": 17.287307692307692,
       "spells": {
         "under1": {
@@ -2578,6 +2833,9 @@
       "candidate": "constant6",
       "n_gt": 268,
       "n_pred": 219,
+      "n_matched_mean_iou": 170.4,
+      "n_spurious_mean_iou": 48.599999999999994,
+      "n_missed_mean_iou": 97.6,
       "mean_pred_duration_s": 16.423561643835615,
       "spells": {
         "under1": {
@@ -2604,6 +2862,9 @@
       "candidate": "event1",
       "n_gt": 268,
       "n_pred": 218,
+      "n_matched_mean_iou": 169.6,
+      "n_spurious_mean_iou": 48.400000000000006,
+      "n_missed_mean_iou": 98.4,
       "mean_pred_duration_s": 16.48422018348624,
       "spells": {
         "under1": {
@@ -2630,6 +2891,9 @@
       "candidate": "event2",
       "n_gt": 268,
       "n_pred": 221,
+      "n_matched_mean_iou": 171.8,
+      "n_spurious_mean_iou": 49.19999999999999,
+      "n_missed_mean_iou": 96.19999999999999,
       "mean_pred_duration_s": 16.28126696832579,
       "spells": {
         "under1": {
