@@ -1,0 +1,434 @@
+[
+  {
+    "game": "3854",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3854_natural_detected.npz",
+    "sha256": "1fe2d8066cbdc96f984506b54a2c5aba734639360c309366317e2544d06b3d06"
+  },
+  {
+    "game": "3854",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3854_label_blind_seed7.npz",
+    "sha256": "1210756326af692213a35b690c23144d6f0ff62f69e52a6802bc9b873710e99f"
+  },
+  {
+    "game": "3816",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3816_natural_detected.npz",
+    "sha256": "fb6fb40381f799f9e4ad73f188487775b26f89efdfab2bb8487a7160fee2ca5c"
+  },
+  {
+    "game": "3816",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3816_label_blind_seed7.npz",
+    "sha256": "61a26a2c449303846198b4ab5266b510832c44f24707381e69d7821acc74f6b3"
+  },
+  {
+    "game": "3836",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3836_natural_detected.npz",
+    "sha256": "f5cd9ebc66a19f69654ee0a2e4d3891ddbab3708606394102c56b73029dbddca"
+  },
+  {
+    "game": "3836",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3836_label_blind_seed7.npz",
+    "sha256": "0e1b9d66a2274dcfceab244333d45d0a18aef2087a9fb99caae8b7df9b4ca8b7"
+  },
+  {
+    "game": "3850",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3850_natural_detected.npz",
+    "sha256": "804e99405a44b1816ce4881458fda05d8b7fe3afbb8ed862a5530a137641e804"
+  },
+  {
+    "game": "3850",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3850_label_blind_seed7.npz",
+    "sha256": "94866e52d58b403d5517fee3a850e6fe1cb57ff631fbdfd562a0756b8f7fb547"
+  },
+  {
+    "game": "3831",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3831_natural_detected.npz",
+    "sha256": "356a67ea2c8c43acfa081e7522bb1811559dc52288a466d7191d89350a65f3cf"
+  },
+  {
+    "game": "3831",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3831_label_blind_seed7.npz",
+    "sha256": "8ae533ab0ee9afd4b980ddf4e37d87a2d63e63e2d3ea4c1b8491f950f1f3684c"
+  },
+  {
+    "game": "10506",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/10506_natural_detected.npz",
+    "sha256": "ba9936913d96ea48cc5817e130704b9396fac656bf05b9d705dd5aeebf5a1fe3"
+  },
+  {
+    "game": "10506",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/10506_label_blind_seed7.npz",
+    "sha256": "7e8407c9669c257be96a61b258554a909ee3979032bcb066e1a5650084873c4f"
+  },
+  {
+    "game": "3846",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3846_natural_detected.npz",
+    "sha256": "7c930c96d8dc0951249be4554ff67e7c58e3a745a2fa265e0166f036082d6bca"
+  },
+  {
+    "game": "3846",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3846_label_blind_seed7.npz",
+    "sha256": "85ce336951e37c16935eb83a8797bda492cf08494a909e3da6cebacf95820455"
+  },
+  {
+    "game": "10514",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/10514_natural_detected.npz",
+    "sha256": "7402ea432dded39d88d64f1cb8169816a24d2dce94b167de862b952f8a69d2e1"
+  },
+  {
+    "game": "10514",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/10514_label_blind_seed7.npz",
+    "sha256": "988c0c8917c4f4d1c8695046cf0285484aa21dfa44e8a367bc7a0d3cce64216b"
+  },
+  {
+    "game": "3819",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3819_natural_detected.npz",
+    "sha256": "1b604ad42611f131c67f1a168d616fe5a57bac0e8ae102d368274b78f5700f5b"
+  },
+  {
+    "game": "3819",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3819_label_blind_seed7.npz",
+    "sha256": "8217c096a0cb1f354d518d14140ce686e2856b54b2c978de175f5bfe3a9e06cb"
+  },
+  {
+    "game": "3853",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3853_natural_detected.npz",
+    "sha256": "812dcbcd991e4de3488571fe946212e0f7a368ad93fc4cd72dde87ac567c6b4c"
+  },
+  {
+    "game": "3853",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3853_label_blind_seed7.npz",
+    "sha256": "78a644b227d46e50efbddc678ff6a0c08709e4c8fe07c6f6799e8cef0ce8f630"
+  },
+  {
+    "game": "3855",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3855_natural_detected.npz",
+    "sha256": "4a4bff10c95415687f49b143ca4b97a589cba21cbe44d95165b605db81700bd3"
+  },
+  {
+    "game": "3855",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3855_label_blind_seed7.npz",
+    "sha256": "107c8024a60ec4b51e8ecdb633ca8af7227ac7105b5f9b46fc6518a6a2ecf370"
+  },
+  {
+    "game": "3832",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3832_natural_detected.npz",
+    "sha256": "a505c5e6f3660bac4a71fb8f0b71aebf89caddd42bf3b2d3e9028202e6e7f3e4"
+  },
+  {
+    "game": "3832",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3832_label_blind_seed7.npz",
+    "sha256": "49ae302cea66c470e5916a370a2c220eb809766372832ab5d72aa9249fecd2b3"
+  },
+  {
+    "game": "3833",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3833_natural_detected.npz",
+    "sha256": "2650ff4a0dcec96c7d829c996e1027498a4d43325220b2614daee3406a4f0ab2"
+  },
+  {
+    "game": "3833",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3833_label_blind_seed7.npz",
+    "sha256": "2e10d300561b07d73d1b6a27895bff659c39afd0685956e02b646e17fdfeacdf"
+  },
+  {
+    "game": "3823",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3823_natural_detected.npz",
+    "sha256": "a531c87dbc9b039f3358ef6e1505a85f425d2243b9d52d2303651c4eaace3f35"
+  },
+  {
+    "game": "3823",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3823_label_blind_seed7.npz",
+    "sha256": "25b658b9833a794954428d7cfeb7fd8f28f00899d29cb4aa11f4c70f0b94a6a9"
+  },
+  {
+    "game": "3834",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3834_natural_detected.npz",
+    "sha256": "c95885621ae7e222bc02b4da2ebf9db91bc906aee30017972ce5b5a0b44e7a52"
+  },
+  {
+    "game": "3834",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3834_label_blind_seed7.npz",
+    "sha256": "c8a3973c7d59494d18a81560d313652b7a95447adeb3f2dbeb4c8925e8a5631b"
+  },
+  {
+    "game": "3822",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3822_natural_detected.npz",
+    "sha256": "f0db9cdbd9db2d682b4981d20a3b8fee50261a2837b3ce4a4c1717c3df9d8f7f"
+  },
+  {
+    "game": "3822",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3822_label_blind_seed7.npz",
+    "sha256": "acf628a20b87b3c117d83cbc094b354d54b8807c91311a6d7ca36eb40d78eb4c"
+  },
+  {
+    "game": "10504",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/10504_natural_detected.npz",
+    "sha256": "0ef3aaf771350fb3f52f47c000c428c5eac64dd56f9186b5f1109bbaf33d8aec"
+  },
+  {
+    "game": "10504",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/10504_label_blind_seed7.npz",
+    "sha256": "23497911c7558dfb769304a951d1705c2ab3f61a6d6d75b62a35cd830c18b4c5"
+  },
+  {
+    "game": "3835",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3835_natural_detected.npz",
+    "sha256": "b6ea0abcdd6cc1346f80224ae4092613dc751efe088e226bd216001319e3c24c"
+  },
+  {
+    "game": "3835",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3835_label_blind_seed7.npz",
+    "sha256": "c18c83d46bd00644998d40bfbad058d618135bcb101acf3efd9b203e66482451"
+  },
+  {
+    "game": "3847",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3847_natural_detected.npz",
+    "sha256": "9037832e56aa567c09167048a177450dabcd4a55615eec964c5634ad0c95733e"
+  },
+  {
+    "game": "3847",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3847_label_blind_seed7.npz",
+    "sha256": "014233a2d09d684500a12978d88af82f4d20c8464a03712915cd5a86f907f268"
+  },
+  {
+    "game": "3840",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3840_natural_detected.npz",
+    "sha256": "a61c3d9eebdfb3686e9920d5aa149fcd7a88c858bafb24e834199d4a9694b9b0"
+  },
+  {
+    "game": "3840",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3840_label_blind_seed7.npz",
+    "sha256": "b4cd965f3005984086f40373b8ce1905db2d5ec58dad408e50041426398d2b13"
+  },
+  {
+    "game": "3837",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3837_natural_detected.npz",
+    "sha256": "c754458e2a1fb9c917afa7bdc2e7402290037b06d626811e5c440b8b35cb8300"
+  },
+  {
+    "game": "3837",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3837_label_blind_seed7.npz",
+    "sha256": "1772d10aa27862925b211343f880a8df11d6748b4126c1e752646560d6f3c647"
+  },
+  {
+    "game": "3824",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3824_natural_detected.npz",
+    "sha256": "75831715f3b8b1b937539fed8cf734a27deae060c887ed74b6d24e55b6dea313"
+  },
+  {
+    "game": "3824",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3824_label_blind_seed7.npz",
+    "sha256": "f936bd33db0d0d2b1ce2b130cd6eb3037efdff5493200ffeae93274a9e16fdd3"
+  },
+  {
+    "game": "3851",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3851_natural_detected.npz",
+    "sha256": "e97ba80e8edea4090568f1c31f40d7d5c48ae0d581e832e27ed3f7b483b4fa6e"
+  },
+  {
+    "game": "3851",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3851_label_blind_seed7.npz",
+    "sha256": "eba72468b7429ca6c77b26e45d24f50f748466f9d5d451756c22e6185e6a44f1"
+  },
+  {
+    "game": "3817",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3817_natural_detected.npz",
+    "sha256": "b8c3ff5297072916d5c43d2944bb6ae5ad9034a90638c8ef9a3ef131ddd51956"
+  },
+  {
+    "game": "3817",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3817_label_blind_seed7.npz",
+    "sha256": "651f110eacc136ebbecabf10134d24f4eb500f91c411952fb73d741c49d3e0aa"
+  },
+  {
+    "game": "3815",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3815_natural_detected.npz",
+    "sha256": "6a8d051ae4cb95325313bab01e667d290f19165447beacc3112124efa71c2546"
+  },
+  {
+    "game": "3815",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3815_label_blind_seed7.npz",
+    "sha256": "1c9466e3779533a2b6a64db519a3e150ce602429e2cdd15bc2d176505c7bb928"
+  },
+  {
+    "game": "10517",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/10517_natural_detected.npz",
+    "sha256": "2b770fcd43faa6d114a714cb04708b7aed7806b7b0ae79a22ea7f2cd0274a91e"
+  },
+  {
+    "game": "10517",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/10517_label_blind_seed7.npz",
+    "sha256": "fe7f4e7eb7b167a8bcdee267c0aed354aaae2666413197df47415cff9f9109bb"
+  },
+  {
+    "game": "3839",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3839_natural_detected.npz",
+    "sha256": "b33505160e4b1748fdb99b9203e84c7d8e2911889222099d4372d6901a67a2f4"
+  },
+  {
+    "game": "3839",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3839_label_blind_seed7.npz",
+    "sha256": "9d8df39deac82c2887bf486efa53525343f8393d898427b3ce634381fa975e63"
+  },
+  {
+    "game": "10515",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/10515_natural_detected.npz",
+    "sha256": "17feb6dd5f4b613582141161d2f8283d0eca20d039049544c606a59dd79e3722"
+  },
+  {
+    "game": "10515",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/10515_label_blind_seed7.npz",
+    "sha256": "7136e71f29abadb1b24777afd9e3111dd580914c962d48ae693a560fe832067c"
+  },
+  {
+    "game": "3813",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3813_natural_detected.npz",
+    "sha256": "f6c5fe51ef5b73b08ee11b13d8c2daf52308e8074609f2633d8dbc4235fa3d22"
+  },
+  {
+    "game": "3813",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3813_label_blind_seed7.npz",
+    "sha256": "f4b961474b4c349cd2e006ba4f56619b170d7df67655648a48f9fb979300766c"
+  },
+  {
+    "game": "3828",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3828_natural_detected.npz",
+    "sha256": "22a07b3a2eddaa76e92c5061f841c460522e0d89c7a7a9527313c70eb70c2a4b"
+  },
+  {
+    "game": "3828",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3828_label_blind_seed7.npz",
+    "sha256": "3c47d42586be1d8fd055c7c0faa641e3f6ccacae1db14d43d315e7139304c04e"
+  },
+  {
+    "game": "3848",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3848_natural_detected.npz",
+    "sha256": "8e09bfd5a37c8fd58701f9964ff4f8d81a8be7f7c2bf9144ccb200b394c4ba6c"
+  },
+  {
+    "game": "3848",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3848_label_blind_seed7.npz",
+    "sha256": "edf46ee344520583e6071ac5a6c54c0db6810f4ebd985b37c363369f06d6d4b7"
+  },
+  {
+    "game": "3852",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3852_natural_detected.npz",
+    "sha256": "eb60e3915381d6f12d48a305289630db154350144042177427765a9259ca8b35"
+  },
+  {
+    "game": "3852",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3852_label_blind_seed7.npz",
+    "sha256": "71bffcbd4a7e72069df9ae54abfaccba1d78132968c776d609568ec40110abc7"
+  },
+  {
+    "game": "3818",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3818_natural_detected.npz",
+    "sha256": "0c8c5d50d6e89369c475d8d46ab75720ec01ee868a3fd135e3a076462dbffac2"
+  },
+  {
+    "game": "3818",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3818_label_blind_seed7.npz",
+    "sha256": "a57ccc2ba3e494c59a4041853aeab3468ec89b72bfdf7f0c7fd1d8622c1563ca"
+  },
+  {
+    "game": "10508",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/10508_natural_detected.npz",
+    "sha256": "4dd3ccca5c789c65ba65841ac29edd2ec1be878e771f4752bb140be7575d29ac"
+  },
+  {
+    "game": "10508",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/10508_label_blind_seed7.npz",
+    "sha256": "8a65e2dea9d0b14a05e537eb0f3d1b0b9264132a7199d233c8d3015a90e1dfc4"
+  },
+  {
+    "game": "3820",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3820_natural_detected.npz",
+    "sha256": "1f082d428eaf42ba4b71426630e2ecfaeb020c06eba37e79d42f2cd61033eb10"
+  },
+  {
+    "game": "3820",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3820_label_blind_seed7.npz",
+    "sha256": "c95d36567d80bf42b2f18ece2b4acae3c22bed051dd6ce83a06b2e73696c90d5"
+  },
+  {
+    "game": "3849",
+    "scenario": "natural_detected",
+    "path": "reports/activity_temporal/training/3849_natural_detected.npz",
+    "sha256": "60c0571043f0042016523c32a6341d01af80b35c81450d7e7fe1000922385778"
+  },
+  {
+    "game": "3849",
+    "scenario": "label_blind_seed7",
+    "path": "reports/activity_temporal/training/3849_label_blind_seed7.npz",
+    "sha256": "27d57c8c811acf725a2d7294fbc8c93ecd8e05c59ac5877ee54782c8072cb823"
+  }
+]
