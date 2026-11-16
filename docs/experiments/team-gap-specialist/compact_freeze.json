@@ -1,0 +1,11 @@
+{
+  "frozen_utc": "2026-11-16T16:14:36.993272+00:00",
+  "source_commit": "23c96cb8e6c1d479f964ba13735beeb382616e29",
+  "files_sha256": {
+    "tools/team_gap_compact.py": "d9afe7f59a80692cd47b531fc6e3e826d309a0e146d0ef7126e0a631846cf4c3",
+    "tools/team_gap_compact_study.py": "64e9f8af07bba1f5b3207ed0d72defa322e02f654e64e82797e03719b88a282d",
+    "tests/test_team_gap_compact.py": "d8fc7c726b2f96e7a37b29e2675fddab0a97285e2498b98148b8634be6575be2",
+    "tools/report_team_gap_specialist.py": "9eba78c058cd15ee5264b25c5354420cfbaf43086e74d1e62816ce9b30254442",
+    "docs/experiments/team-gap-specialist/compact_plan.json": "ceae40c0bb3d0573de4da8a3bc7e76648b613b5fa6c5c201b931dc5ce55535db"
+  }
+}

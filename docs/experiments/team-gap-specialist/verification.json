@@ -1,0 +1,29 @@
+{
+  "completed_utc": "2026-11-16T16:20:22.295710+00:00",
+  "decision": "NO_NEW_MODEL_ADOPTED",
+  "best_rejected": "focus_missing_only",
+  "production_unchanged": true,
+  "fit_count": 4,
+  "noncontrol_policy_count": 16,
+  "train_games": 65,
+  "development_games": 10,
+  "audit_games_read": 0,
+  "target_ground_truth_read": false,
+  "tests": 154,
+  "tests_status": "PASS",
+  "existing_artifact_gate": "PASS",
+  "production_csv_sha256": "1f4602b5b8b04e4066c5478549a9b5e53f13852ca6513f01422906d1dcb1a1c0",
+  "logs_sha256": {
+    "reports/team_gap_tests.log": "776143d887b60c9d877592cd56429cc0d62eff9a5600dc053f585df2b74c93b6",
+    "reports/team_gap_guarded_tests.log": "99e9b8e95bc31a45d861316f547e18b46855cf2095e7b1421fe40d7d212d9545",
+    "reports/team_gap_synthetic_guard_fixture.log": "c346f1228fe88f4ab3cb336ffa610dc3a34ec7c7bb7d05df7a1c222f2d928881",
+    "reports/team_gap_parent_gate.log": "b3b40c86e2bfa4e33cfaf8e88b4b5a838161e4038a89ba27204b7af9fb0202f3"
+  },
+  "score_files_sha256": {
+    "mechanical_scores.json": "e1b2983c3b69ac38312b83ad874a60bcd9f640e2b96e7e93d6988166c6dc1a5b",
+    "learned_scores.json": "7f9a78936f06007b272330fd4ec0b8e46b5683f2e6db63b10f4b85926b4e8903",
+    "followup_scores.json": "f7ec6006c5c0606ba189bf147b6cdb6e67e14530ac0e2e4d42ca26c574483733",
+    "calibration_scores.json": "28171c92c51b54b28fceff390374c77cfebbe25a1e8aa55f293c43edd521bf65",
+    "compact_scores.json": "6712043012eca77b997ece2f010265dec7a784418b25fa102d2203e2df10d2ad"
+  }
+}
