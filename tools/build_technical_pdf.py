@@ -132,7 +132,7 @@ def main():
     if supplemental.exists():
         add('A later two-game sensor pilot loses to same-exclusion v4 in all six distinct combined perturbation cases (spellF1 losses 0.0064-0.0694). One-factor probes retain cadence-only/burst-only gains but reveal sensitivity to independent coordinate jitter. These familiar-game copies are supplemental diagnostics, not new independent matches. No model change follows.')
     add('Next work: improve jitter robustness, add independent Metrica-like games, reduce tiny-source sampling weight, and improve short spells. A changed model requires a new untouched reserve.')
-    add('Source and full evidence: <a href="https://github.com/8Tigran8/silver-octo-winner" color="#157d69">github.com/8Tigran8/silver-octo-winner</a><br/>Experiment records: docs/experiments/pff-mixed/REPORT.md', 'SmallTeam')
+    add('Review source: <a href="https://github.com/8Tigran8/silver-octo-winner/tree/codex/reliability-fusion" color="#157d69">github.com/8Tigran8/silver-octo-winner/tree/codex/reliability-fusion</a><br/>Experiment records: docs/experiments/pff-mixed/REPORT.md', 'SmallTeam')
     doc=SimpleDocTemplate(str(pdf),pagesize=A4,rightMargin=42,leftMargin=42,topMargin=42,bottomMargin=48,title='Ruses Cules - Possession from noisy tracking',author='Ruses Cules',pageCompression=1)
     doc.build(story,onFirstPage=footer,onLaterPages=footer);print(pdf)
 
