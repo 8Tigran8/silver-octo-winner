@@ -1,0 +1,6 @@
+{
+  "started_utc": "2026-11-16T10:57:44.030786+00:00",
+  "source_commit": "1b4a6b9b04a2e78d110dc5cc220bdf907817bef2",
+  "plan_sha256": "e6c2d06a0fe575031395d855fc012b7a18d9c0a2c8755966262daa1ce7704432",
+  "mode": "36PFFtraining-only boundary head; do not read old final or bridges"
+}
