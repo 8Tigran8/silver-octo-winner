@@ -1,0 +1,28 @@
+{
+  "status": "Registered after individual learned and gap experiments, before any composed candidate scores",
+  "hypothesis": "Duration-weighted training improves ownership on every natural development game, while the independent gap mechanism corrects a complementary dead-ball error. Their composition may yield a sufficient gain without changing thresholds or fitting additional parameters.",
+  "candidates": [
+    "weighted_gap",
+    "weighted_short_gap"
+  ],
+  "fixed_composition": "Use the already fitted weighted3000-step neural checkpoint. Preserve50/50 inherited/new H/A fusion and observed-frame D fusion. In missing-ball frames only, D=.75 new-neural D+.25 already fitted activity-expert D. Original decoder or exactly the previously registered .4s/4.5 H/A decoder.",
+  "data": "Same ten development games and two scenarios/references. No six bridges, old final or target labels. No refitting, no interpolation, no new thresholds or data after viewing scores.",
+  "gates": "Unchanged +.02 mean Spell,8/10 positive games,worst>=-.02,macro>=-.002 in each scenario and reference.",
+  "selection": "If eligible, select largest minimum scenario gain; original decoder on tie. Freeze one choice before supplementary checks; failed supplementary checks do not trigger a weight/threshold search.",
+  "supplement_if_pass": {
+    "meaning": "In-sample cross-provider regression only, not unseen generalization",
+    "games": [
+      "original/idsse_J03WMX",
+      "original/idsse_J03WN1",
+      "original/metrica_1",
+      "original/metrica_2",
+      "skillcorner/1874553",
+      "skillcorner/1886347"
+    ],
+    "scenarios": "Original matched_seed0 and label_blind_seed1; SkillCorner natural_detected and label_blind_seed7",
+    "guards": "Paired against frozen parent, each provider/scenario mean Spell>=-.005, mean macro>=-.002, each game Spell>=-.02. Then full inference contracts, official validator and repeatable artifact generation; no organizer submission."
+  },
+  "limitations": "Adaptive development. Prior six-game/old-final scores cannot be attributed to this changed model. All failed earlier candidates and unchanged gates remain visible.",
+  "prior_weighted_result_sha256": "591680deb92d21b2da9fd0a35405a208c53cad4cda6e691a20baf0cd18464076",
+  "prior_gap_result_sha256": "12c63e1c462a5a1336dc62b01942f16acb19f1bef6b8c45c93952c6b0ee1de91"
+}

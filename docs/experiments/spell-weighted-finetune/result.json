@@ -1,0 +1,1096 @@
+{
+  "scope": "Matched additional-training experiment on reused development; no new final/bridge/target evaluation",
+  "plan_sha256": "1b993a0ad343366586680352d43d98c89df173cea04d09edbf9179d073803471",
+  "summary": [
+    {
+      "candidate": "control",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6553166393212824,
+      "mean_spell_gain": 0.0,
+      "macro_f1_mean": 0.885608213320395,
+      "mean_macro_gain": 0.0,
+      "positive_games": 0,
+      "worst_spell_gain": 0.0,
+      "per_game_gain": {
+        "10510": 0.0,
+        "3821": 0.0,
+        "10513": 0.0,
+        "10516": 0.0,
+        "3859": 0.0,
+        "3827": 0.0,
+        "10503": 0.0,
+        "3858": 0.0,
+        "3838": 0.0,
+        "3842": 0.0
+      },
+      "class_f1_gain": {
+        "H": 0.0,
+        "A": 0.0,
+        "D": 0.0
+      },
+      "diagnostics": {
+        "counts": {
+          "short_reference": 578,
+          "short_matched": 65,
+          "missing_live": 339698,
+          "missing_false_dead": 71319,
+          "missing_dead": 536842,
+          "missing_false_live": 23715
+        },
+        "short_recall_iou05": 0.11245674740484429,
+        "missing_false_dead_rate": 0.2099482481498272,
+        "missing_false_live_rate": 0.04417500866176641
+      },
+      "descriptive_paired_bootstrap_gain_95": [
+        0.0,
+        0.0
+      ],
+      "gate_pass": false
+    },
+    {
+      "candidate": "control",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6553166393212824,
+      "mean_spell_gain": 0.0,
+      "macro_f1_mean": 0.885608213320395,
+      "mean_macro_gain": 0.0,
+      "positive_games": 0,
+      "worst_spell_gain": 0.0,
+      "per_game_gain": {
+        "10510": 0.0,
+        "3821": 0.0,
+        "10513": 0.0,
+        "10516": 0.0,
+        "3859": 0.0,
+        "3827": 0.0,
+        "10503": 0.0,
+        "3858": 0.0,
+        "3838": 0.0,
+        "3842": 0.0
+      },
+      "class_f1_gain": {
+        "H": 0.0,
+        "A": 0.0,
+        "D": 0.0
+      },
+      "diagnostics": {
+        "counts": {
+          "short_reference": 578,
+          "short_matched": 65,
+          "missing_live": 339698,
+          "missing_false_dead": 71319,
+          "missing_dead": 536842,
+          "missing_false_live": 23715
+        },
+        "short_recall_iou05": 0.11245674740484429,
+        "missing_false_dead_rate": 0.2099482481498272,
+        "missing_false_live_rate": 0.04417500866176641
+      },
+      "descriptive_paired_bootstrap_gain_95": [
+        0.0,
+        0.0
+      ],
+      "gate_pass": false
+    },
+    {
+      "candidate": "control",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6425735324385532,
+      "mean_spell_gain": 0.0,
+      "macro_f1_mean": 0.8779134731024458,
+      "mean_macro_gain": 0.0,
+      "positive_games": 0,
+      "worst_spell_gain": 0.0,
+      "per_game_gain": {
+        "10510": 0.0,
+        "3821": 0.0,
+        "10513": 0.0,
+        "10516": 0.0,
+        "3859": 0.0,
+        "3827": 0.0,
+        "10503": 0.0,
+        "3858": 0.0,
+        "3838": 0.0,
+        "3842": 0.0
+      },
+      "class_f1_gain": {
+        "H": 0.0,
+        "A": 0.0,
+        "D": 0.0
+      },
+      "diagnostics": {
+        "counts": {
+          "short_reference": 578,
+          "short_matched": 55,
+          "missing_live": 380531,
+          "missing_false_dead": 84256,
+          "missing_dead": 540597,
+          "missing_false_live": 22767
+        },
+        "short_recall_iou05": 0.09515570934256055,
+        "missing_false_dead_rate": 0.22141691478486641,
+        "missing_false_live_rate": 0.04211455113513393
+      },
+      "descriptive_paired_bootstrap_gain_95": [
+        0.0,
+        0.0
+      ],
+      "gate_pass": false
+    },
+    {
+      "candidate": "control",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6425735324385532,
+      "mean_spell_gain": 0.0,
+      "macro_f1_mean": 0.8779134731024458,
+      "mean_macro_gain": 0.0,
+      "positive_games": 0,
+      "worst_spell_gain": 0.0,
+      "per_game_gain": {
+        "10510": 0.0,
+        "3821": 0.0,
+        "10513": 0.0,
+        "10516": 0.0,
+        "3859": 0.0,
+        "3827": 0.0,
+        "10503": 0.0,
+        "3858": 0.0,
+        "3838": 0.0,
+        "3842": 0.0
+      },
+      "class_f1_gain": {
+        "H": 0.0,
+        "A": 0.0,
+        "D": 0.0
+      },
+      "diagnostics": {
+        "counts": {
+          "short_reference": 578,
+          "short_matched": 55,
+          "missing_live": 380531,
+          "missing_false_dead": 84256,
+          "missing_dead": 540597,
+          "missing_false_live": 22767
+        },
+        "short_recall_iou05": 0.09515570934256055,
+        "missing_false_dead_rate": 0.22141691478486641,
+        "missing_false_live_rate": 0.04211455113513393
+      },
+      "descriptive_paired_bootstrap_gain_95": [
+        0.0,
+        0.0
+      ],
+      "gate_pass": false
+    },
+    {
+      "candidate": "uniform",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6629626636426346,
+      "mean_spell_gain": 0.007646024321352263,
+      "macro_f1_mean": 0.8895427288065774,
+      "mean_macro_gain": 0.003934515486182455,
+      "positive_games": 10,
+      "worst_spell_gain": 0.0010437609616289478,
+      "per_game_gain": {
+        "10510": 0.009645396413719198,
+        "3821": 0.005009224091155673,
+        "10513": 0.0073158566997142405,
+        "10516": 0.013608688945548897,
+        "3859": 0.009365619737901731,
+        "3827": 0.0010437609616289478,
+        "10503": 0.0013898671174343846,
+        "3858": 0.014514123677609403,
+        "3838": 0.006314567218209555,
+        "3842": 0.008253138350600597
+      },
+      "class_f1_gain": {
+        "H": 0.0016879309876180026,
+        "A": 0.00456871878260715,
+        "D": 0.005546896688322289
+      },
+      "diagnostics": {
+        "counts": {
+          "short_reference": 578,
+          "short_matched": 66,
+          "missing_live": 339698,
+          "missing_false_dead": 76766,
+          "missing_dead": 536842,
+          "missing_false_live": 15983
+        },
+        "short_recall_iou05": 0.11418685121107267,
+        "missing_false_dead_rate": 0.22598307908789572,
+        "missing_false_live_rate": 0.029772260739658968
+      },
+      "descriptive_paired_bootstrap_gain_95": [
+        0.005069128239928482,
+        0.010290377303508534
+      ],
+      "gate_pass": false
+    },
+    {
+      "candidate": "uniform",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6629626636426346,
+      "mean_spell_gain": 0.007646024321352263,
+      "macro_f1_mean": 0.8895427288065774,
+      "mean_macro_gain": 0.003934515486182455,
+      "positive_games": 10,
+      "worst_spell_gain": 0.0010437609616289478,
+      "per_game_gain": {
+        "10510": 0.009645396413719198,
+        "3821": 0.005009224091155673,
+        "10513": 0.0073158566997142405,
+        "10516": 0.013608688945548897,
+        "3859": 0.009365619737901731,
+        "3827": 0.0010437609616289478,
+        "10503": 0.0013898671174343846,
+        "3858": 0.014514123677609403,
+        "3838": 0.006314567218209555,
+        "3842": 0.008253138350600597
+      },
+      "class_f1_gain": {
+        "H": 0.0016879309876180026,
+        "A": 0.00456871878260715,
+        "D": 0.005546896688322289
+      },
+      "diagnostics": {
+        "counts": {
+          "short_reference": 578,
+          "short_matched": 66,
+          "missing_live": 339698,
+          "missing_false_dead": 76766,
+          "missing_dead": 536842,
+          "missing_false_live": 15983
+        },
+        "short_recall_iou05": 0.11418685121107267,
+        "missing_false_dead_rate": 0.22598307908789572,
+        "missing_false_live_rate": 0.029772260739658968
+      },
+      "descriptive_paired_bootstrap_gain_95": [
+        0.005069128239928482,
+        0.010290377303508534
+      ],
+      "gate_pass": false
+    },
+    {
+      "candidate": "uniform",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6518124790837694,
+      "mean_spell_gain": 0.009238946645216317,
+      "macro_f1_mean": 0.8817198477268187,
+      "mean_macro_gain": 0.0038063746243729435,
+      "positive_games": 10,
+      "worst_spell_gain": 0.00030591245341771156,
+      "per_game_gain": {
+        "10510": 0.004983495556496131,
+        "3821": 0.004703373886868145,
+        "10513": 0.01901862989584857,
+        "10516": 0.00030591245341771156,
+        "3859": 0.012754246555369164,
+        "3827": 0.004994868286007481,
+        "10503": 0.01437804514268659,
+        "3858": 0.020468861614390543,
+        "3838": 0.0013627429569774696,
+        "3842": 0.009419290104101363
+      },
+      "class_f1_gain": {
+        "H": 0.0011521857722310846,
+        "A": 0.00530186483501045,
+        "D": 0.004965073265877429
+      },
+      "diagnostics": {
+        "counts": {
+          "short_reference": 578,
+          "short_matched": 49,
+          "missing_live": 380531,
+          "missing_false_dead": 89744,
+          "missing_dead": 540597,
+          "missing_false_live": 15173
+        },
+        "short_recall_iou05": 0.0847750865051903,
+        "missing_false_dead_rate": 0.23583886726705577,
+        "missing_false_live_rate": 0.028067118389484218
+      },
+      "descriptive_paired_bootstrap_gain_95": [
+        0.005154700427168223,
+        0.013643015743927558
+      ],
+      "gate_pass": false
+    },
+    {
+      "candidate": "uniform",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6518124790837694,
+      "mean_spell_gain": 0.009238946645216317,
+      "macro_f1_mean": 0.8817198477268187,
+      "mean_macro_gain": 0.0038063746243729435,
+      "positive_games": 10,
+      "worst_spell_gain": 0.00030591245341771156,
+      "per_game_gain": {
+        "10510": 0.004983495556496131,
+        "3821": 0.004703373886868145,
+        "10513": 0.01901862989584857,
+        "10516": 0.00030591245341771156,
+        "3859": 0.012754246555369164,
+        "3827": 0.004994868286007481,
+        "10503": 0.01437804514268659,
+        "3858": 0.020468861614390543,
+        "3838": 0.0013627429569774696,
+        "3842": 0.009419290104101363
+      },
+      "class_f1_gain": {
+        "H": 0.0011521857722310846,
+        "A": 0.00530186483501045,
+        "D": 0.004965073265877429
+      },
+      "diagnostics": {
+        "counts": {
+          "short_reference": 578,
+          "short_matched": 49,
+          "missing_live": 380531,
+          "missing_false_dead": 89744,
+          "missing_dead": 540597,
+          "missing_false_live": 15173
+        },
+        "short_recall_iou05": 0.0847750865051903,
+        "missing_false_dead_rate": 0.23583886726705577,
+        "missing_false_live_rate": 0.028067118389484218
+      },
+      "descriptive_paired_bootstrap_gain_95": [
+        0.005154700427168223,
+        0.013643015743927558
+      ],
+      "gate_pass": false
+    },
+    {
+      "candidate": "uniform_short",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6645332695324132,
+      "mean_spell_gain": 0.009216630211130884,
+      "macro_f1_mean": 0.8896080889682768,
+      "mean_macro_gain": 0.003999875647881901,
+      "positive_games": 7,
+      "worst_spell_gain": -0.00510063413289219,
+      "per_game_gain": {
+        "10510": -0.0008246289169872023,
+        "3821": 0.012850237412841636,
+        "10513": 0.010451581743540217,
+        "10516": 0.0162924505579789,
+        "3859": 0.011260716493321499,
+        "3827": -0.003489944228494135,
+        "10503": -0.00510063413289219,
+        "3858": 0.022015437392795878,
+        "3838": 0.01958245508381007,
+        "3842": 0.009128630705394158
+      },
+      "class_f1_gain": {
+        "H": 0.0019181039275735223,
+        "A": 0.004674315406358975,
+        "D": 0.005407207609713138
+      },
+      "diagnostics": {
+        "counts": {
+          "short_reference": 578,
+          "short_matched": 71,
+          "missing_live": 339698,
+          "missing_false_dead": 76546,
+          "missing_dead": 536842,
+          "missing_false_live": 16305
+        },
+        "short_recall_iou05": 0.12283737024221453,
+        "missing_false_dead_rate": 0.22533544501292324,
+        "missing_false_live_rate": 0.030372064778836232
+      },
+      "descriptive_paired_bootstrap_gain_95": [
+        0.003546436472718308,
+        0.01469343458135041
+      ],
+      "gate_pass": false
+    },
+    {
+      "candidate": "uniform_short",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6645332695324132,
+      "mean_spell_gain": 0.009216630211130884,
+      "macro_f1_mean": 0.8896080889682768,
+      "mean_macro_gain": 0.003999875647881901,
+      "positive_games": 7,
+      "worst_spell_gain": -0.00510063413289219,
+      "per_game_gain": {
+        "10510": -0.0008246289169872023,
+        "3821": 0.012850237412841636,
+        "10513": 0.010451581743540217,
+        "10516": 0.0162924505579789,
+        "3859": 0.011260716493321499,
+        "3827": -0.003489944228494135,
+        "10503": -0.00510063413289219,
+        "3858": 0.022015437392795878,
+        "3838": 0.01958245508381007,
+        "3842": 0.009128630705394158
+      },
+      "class_f1_gain": {
+        "H": 0.0019181039275735223,
+        "A": 0.004674315406358975,
+        "D": 0.005407207609713138
+      },
+      "diagnostics": {
+        "counts": {
+          "short_reference": 578,
+          "short_matched": 71,
+          "missing_live": 339698,
+          "missing_false_dead": 76546,
+          "missing_dead": 536842,
+          "missing_false_live": 16305
+        },
+        "short_recall_iou05": 0.12283737024221453,
+        "missing_false_dead_rate": 0.22533544501292324,
+        "missing_false_live_rate": 0.030372064778836232
+      },
+      "descriptive_paired_bootstrap_gain_95": [
+        0.003546436472718308,
+        0.01469343458135041
+      ],
+      "gate_pass": false
+    },
+    {
+      "candidate": "uniform_short",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6534048520728514,
+      "mean_spell_gain": 0.010831319634298186,
+      "macro_f1_mean": 0.8821271910968846,
+      "mean_macro_gain": 0.004213717994438815,
+      "positive_games": 9,
+      "worst_spell_gain": -0.004104328523862333,
+      "per_game_gain": {
+        "10510": -0.004104328523862333,
+        "3821": 0.009286246144027288,
+        "10513": 0.020122306348281715,
+        "10516": 0.008547008547008517,
+        "3859": 0.013643769946539819,
+        "3827": 0.003692581470359446,
+        "10503": 0.009209009748187946,
+        "3858": 0.03148436699490864,
+        "3838": 0.001388841260587803,
+        "3842": 0.015043394406943023
+      },
+      "class_f1_gain": {
+        "H": 0.0015161996180240388,
+        "A": 0.005946977170613277,
+        "D": 0.005177977194679151
+      },
+      "diagnostics": {
+        "counts": {
+          "short_reference": 578,
+          "short_matched": 61,
+          "missing_live": 380531,
+          "missing_false_dead": 89342,
+          "missing_dead": 540597,
+          "missing_false_live": 15238
+        },
+        "short_recall_iou05": 0.10553633217993079,
+        "missing_false_dead_rate": 0.23478244873610823,
+        "missing_false_live_rate": 0.028187355830683485
+      },
+      "descriptive_paired_bootstrap_gain_95": [
+        0.0052595125478614385,
+        0.017105247942583054
+      ],
+      "gate_pass": false
+    },
+    {
+      "candidate": "uniform_short",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6534048520728514,
+      "mean_spell_gain": 0.010831319634298186,
+      "macro_f1_mean": 0.8821271910968846,
+      "mean_macro_gain": 0.004213717994438815,
+      "positive_games": 9,
+      "worst_spell_gain": -0.004104328523862333,
+      "per_game_gain": {
+        "10510": -0.004104328523862333,
+        "3821": 0.009286246144027288,
+        "10513": 0.020122306348281715,
+        "10516": 0.008547008547008517,
+        "3859": 0.013643769946539819,
+        "3827": 0.003692581470359446,
+        "10503": 0.009209009748187946,
+        "3858": 0.03148436699490864,
+        "3838": 0.001388841260587803,
+        "3842": 0.015043394406943023
+      },
+      "class_f1_gain": {
+        "H": 0.0015161996180240388,
+        "A": 0.005946977170613277,
+        "D": 0.005177977194679151
+      },
+      "diagnostics": {
+        "counts": {
+          "short_reference": 578,
+          "short_matched": 61,
+          "missing_live": 380531,
+          "missing_false_dead": 89342,
+          "missing_dead": 540597,
+          "missing_false_live": 15238
+        },
+        "short_recall_iou05": 0.10553633217993079,
+        "missing_false_dead_rate": 0.23478244873610823,
+        "missing_false_live_rate": 0.028187355830683485
+      },
+      "descriptive_paired_bootstrap_gain_95": [
+        0.0052595125478614385,
+        0.017105247942583054
+      ],
+      "gate_pass": false
+    },
+    {
+      "candidate": "weighted",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6688377476219493,
+      "mean_spell_gain": 0.013521108300667018,
+      "macro_f1_mean": 0.8894319637660738,
+      "mean_macro_gain": 0.003823750445678775,
+      "positive_games": 10,
+      "worst_spell_gain": 0.0022477606895385804,
+      "per_game_gain": {
+        "10510": 0.010967628969774101,
+        "3821": 0.009962063570311042,
+        "10513": 0.017382274812847154,
+        "10516": 0.014994445837961834,
+        "3859": 0.01698513800424628,
+        "3827": 0.0022477606895385804,
+        "10503": 0.0028704601042964795,
+        "3858": 0.026547855261733866,
+        "3838": 0.024691358024691468,
+        "3842": 0.008562097731269369
+      },
+      "class_f1_gain": {
+        "H": 0.001472091705500278,
+        "A": 0.004665994507114013,
+        "D": 0.0053331651244220455
+      },
+      "diagnostics": {
+        "counts": {
+          "short_reference": 578,
+          "short_matched": 77,
+          "missing_live": 339698,
+          "missing_false_dead": 77320,
+          "missing_dead": 536842,
+          "missing_false_live": 15751
+        },
+        "short_recall_iou05": 0.13321799307958476,
+        "missing_false_dead_rate": 0.2276139394403264,
+        "missing_false_live_rate": 0.029340103792177216
+      },
+      "descriptive_paired_bootstrap_gain_95": [
+        0.008769012467503823,
+        0.018420001116048197
+      ],
+      "gate_pass": false
+    },
+    {
+      "candidate": "weighted",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6688377476219493,
+      "mean_spell_gain": 0.013521108300667018,
+      "macro_f1_mean": 0.8894319637660738,
+      "mean_macro_gain": 0.003823750445678775,
+      "positive_games": 10,
+      "worst_spell_gain": 0.0022477606895385804,
+      "per_game_gain": {
+        "10510": 0.010967628969774101,
+        "3821": 0.009962063570311042,
+        "10513": 0.017382274812847154,
+        "10516": 0.014994445837961834,
+        "3859": 0.01698513800424628,
+        "3827": 0.0022477606895385804,
+        "10503": 0.0028704601042964795,
+        "3858": 0.026547855261733866,
+        "3838": 0.024691358024691468,
+        "3842": 0.008562097731269369
+      },
+      "class_f1_gain": {
+        "H": 0.001472091705500278,
+        "A": 0.004665994507114013,
+        "D": 0.0053331651244220455
+      },
+      "diagnostics": {
+        "counts": {
+          "short_reference": 578,
+          "short_matched": 77,
+          "missing_live": 339698,
+          "missing_false_dead": 77320,
+          "missing_dead": 536842,
+          "missing_false_live": 15751
+        },
+        "short_recall_iou05": 0.13321799307958476,
+        "missing_false_dead_rate": 0.2276139394403264,
+        "missing_false_live_rate": 0.029340103792177216
+      },
+      "descriptive_paired_bootstrap_gain_95": [
+        0.008769012467503823,
+        0.018420001116048197
+      ],
+      "gate_pass": false
+    },
+    {
+      "candidate": "weighted",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6551844831614353,
+      "mean_spell_gain": 0.012610950722882019,
+      "macro_f1_mean": 0.8817332115112111,
+      "mean_macro_gain": 0.003819738408765272,
+      "positive_games": 10,
+      "worst_spell_gain": 0.00032919083126214943,
+      "per_game_gain": {
+        "10510": 0.00032919083126214943,
+        "3821": 0.011421820313749276,
+        "10513": 0.02147421931735649,
+        "10516": 0.022249793217535063,
+        "3859": 0.011573028653681705,
+        "3827": 0.007715599416844299,
+        "10503": 0.006714675352706756,
+        "3858": 0.01828778896286054,
+        "3838": 0.01187598257776834,
+        "3842": 0.014467408585055574
+      },
+      "class_f1_gain": {
+        "H": 0.0010157754553859367,
+        "A": 0.005511547805473549,
+        "D": 0.004931891965436408
+      },
+      "diagnostics": {
+        "counts": {
+          "short_reference": 578,
+          "short_matched": 56,
+          "missing_live": 380531,
+          "missing_false_dead": 90240,
+          "missing_dead": 540597,
+          "missing_false_live": 15016
+        },
+        "short_recall_iou05": 0.09688581314878893,
+        "missing_false_dead_rate": 0.2371423090365831,
+        "missing_false_live_rate": 0.027776698723818296
+      },
+      "descriptive_paired_bootstrap_gain_95": [
+        0.008571270105050549,
+        0.016527654479981783
+      ],
+      "gate_pass": false
+    },
+    {
+      "candidate": "weighted",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6551844831614353,
+      "mean_spell_gain": 0.012610950722882019,
+      "macro_f1_mean": 0.8817332115112111,
+      "mean_macro_gain": 0.003819738408765272,
+      "positive_games": 10,
+      "worst_spell_gain": 0.00032919083126214943,
+      "per_game_gain": {
+        "10510": 0.00032919083126214943,
+        "3821": 0.011421820313749276,
+        "10513": 0.02147421931735649,
+        "10516": 0.022249793217535063,
+        "3859": 0.011573028653681705,
+        "3827": 0.007715599416844299,
+        "10503": 0.006714675352706756,
+        "3858": 0.01828778896286054,
+        "3838": 0.01187598257776834,
+        "3842": 0.014467408585055574
+      },
+      "class_f1_gain": {
+        "H": 0.0010157754553859367,
+        "A": 0.005511547805473549,
+        "D": 0.004931891965436408
+      },
+      "diagnostics": {
+        "counts": {
+          "short_reference": 578,
+          "short_matched": 56,
+          "missing_live": 380531,
+          "missing_false_dead": 90240,
+          "missing_dead": 540597,
+          "missing_false_live": 15016
+        },
+        "short_recall_iou05": 0.09688581314878893,
+        "missing_false_dead_rate": 0.2371423090365831,
+        "missing_false_live_rate": 0.027776698723818296
+      },
+      "descriptive_paired_bootstrap_gain_95": [
+        0.008571270105050549,
+        0.016527654479981783
+      ],
+      "gate_pass": false
+    },
+    {
+      "candidate": "weighted_short",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6707831711177674,
+      "mean_spell_gain": 0.015466531796484972,
+      "macro_f1_mean": 0.8895493971354383,
+      "mean_macro_gain": 0.00394118381504358,
+      "positive_games": 10,
+      "worst_spell_gain": 0.0022477606895385804,
+      "per_game_gain": {
+        "10510": 0.010528723612835966,
+        "3821": 0.01599628189961133,
+        "10513": 0.0188878998279034,
+        "10516": 0.021781228347575787,
+        "3859": 0.012666009292078506,
+        "3827": 0.0022477606895385804,
+        "10503": 0.0040227175791860414,
+        "3858": 0.040438494782333745,
+        "3838": 0.022628786751946017,
+        "3842": 0.005467415181840352
+      },
+      "class_f1_gain": {
+        "H": 0.001763340841637162,
+        "A": 0.004872173534195179,
+        "D": 0.005188037069298368
+      },
+      "diagnostics": {
+        "counts": {
+          "short_reference": 578,
+          "short_matched": 88,
+          "missing_live": 339698,
+          "missing_false_dead": 77061,
+          "missing_dead": 536842,
+          "missing_false_live": 16205
+        },
+        "short_recall_iou05": 0.1522491349480969,
+        "missing_false_dead_rate": 0.22685149750660882,
+        "missing_false_live_rate": 0.03018579023250789
+      },
+      "descriptive_paired_bootstrap_gain_95": [
+        0.009389235707850966,
+        0.02253088782351162
+      ],
+      "gate_pass": false
+    },
+    {
+      "candidate": "weighted_short",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6707831711177674,
+      "mean_spell_gain": 0.015466531796484972,
+      "macro_f1_mean": 0.8895493971354383,
+      "mean_macro_gain": 0.00394118381504358,
+      "positive_games": 10,
+      "worst_spell_gain": 0.0022477606895385804,
+      "per_game_gain": {
+        "10510": 0.010528723612835966,
+        "3821": 0.01599628189961133,
+        "10513": 0.0188878998279034,
+        "10516": 0.021781228347575787,
+        "3859": 0.012666009292078506,
+        "3827": 0.0022477606895385804,
+        "10503": 0.0040227175791860414,
+        "3858": 0.040438494782333745,
+        "3838": 0.022628786751946017,
+        "3842": 0.005467415181840352
+      },
+      "class_f1_gain": {
+        "H": 0.001763340841637162,
+        "A": 0.004872173534195179,
+        "D": 0.005188037069298368
+      },
+      "diagnostics": {
+        "counts": {
+          "short_reference": 578,
+          "short_matched": 88,
+          "missing_live": 339698,
+          "missing_false_dead": 77061,
+          "missing_dead": 536842,
+          "missing_false_live": 16205
+        },
+        "short_recall_iou05": 0.1522491349480969,
+        "missing_false_dead_rate": 0.22685149750660882,
+        "missing_false_live_rate": 0.03018579023250789
+      },
+      "descriptive_paired_bootstrap_gain_95": [
+        0.009389235707850966,
+        0.02253088782351162
+      ],
+      "gate_pass": false
+    },
+    {
+      "candidate": "weighted_short",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "spell_f1_mean": 0.6554117695032279,
+      "mean_spell_gain": 0.01283823706467474,
+      "macro_f1_mean": 0.8820149117189547,
+      "mean_macro_gain": 0.004101438616509079,
+      "positive_games": 10,
+      "worst_spell_gain": 0.00013152208631594942,
+      "per_game_gain": {
+        "10510": 0.0016671647873932605,
+        "3821": 0.012103296433396027,
+        "10513": 0.018261309437779927,
+        "10516": 0.024163407214254473,
+        "3859": 0.007610993657505283,
+        "3827": 0.0011275078759743762,
+        "10503": 0.00013152208631594942,
+        "3858": 0.03280602636534846,
+        "3838": 0.017732238123465027,
+        "3842": 0.012778904665314617
+      },
+      "class_f1_gain": {
+        "H": 0.0011419606216202193,
+        "A": 0.0058137796507748305,
+        "D": 0.005348575577132375
+      },
+      "diagnostics": {
+        "counts": {
+          "short_reference": 578,
+          "short_matched": 67,
+          "missing_live": 380531,
+          "missing_false_dead": 89676,
+          "missing_dead": 540597,
+          "missing_false_live": 15087
+        },
+        "short_recall_iou05": 0.11591695501730104,
+        "missing_false_dead_rate": 0.23566016960510444,
+        "missing_false_live_rate": 0.02790803500574365
+      },
+      "descriptive_paired_bootstrap_gain_95": [
+        0.006759813898904526,
+        0.01931970832585621
+      ],
+      "gate_pass": false
+    },
+    {
+      "candidate": "weighted_short",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "spell_f1_mean": 0.6554117695032279,
+      "mean_spell_gain": 0.01283823706467474,
+      "macro_f1_mean": 0.8820149117189547,
+      "mean_macro_gain": 0.004101438616509079,
+      "positive_games": 10,
+      "worst_spell_gain": 0.00013152208631594942,
+      "per_game_gain": {
+        "10510": 0.0016671647873932605,
+        "3821": 0.012103296433396027,
+        "10513": 0.018261309437779927,
+        "10516": 0.024163407214254473,
+        "3859": 0.007610993657505283,
+        "3827": 0.0011275078759743762,
+        "10503": 0.00013152208631594942,
+        "3858": 0.03280602636534846,
+        "3838": 0.017732238123465027,
+        "3842": 0.012778904665314617
+      },
+      "class_f1_gain": {
+        "H": 0.0011419606216202193,
+        "A": 0.0058137796507748305,
+        "D": 0.005348575577132375
+      },
+      "diagnostics": {
+        "counts": {
+          "short_reference": 578,
+          "short_matched": 67,
+          "missing_live": 380531,
+          "missing_false_dead": 89676,
+          "missing_dead": 540597,
+          "missing_false_live": 15087
+        },
+        "short_recall_iou05": 0.11591695501730104,
+        "missing_false_dead_rate": 0.23566016960510444,
+        "missing_false_live_rate": 0.02790803500574365
+      },
+      "descriptive_paired_bootstrap_gain_95": [
+        0.006759813898904526,
+        0.01931970832585621
+      ],
+      "gate_pass": false
+    }
+  ],
+  "eligible": [],
+  "selected": null,
+  "decision": "Reject all candidates; preserve current production",
+  "warning": "Intervals are descriptive, post-selection and common-provider dependent, not no-overfitting guarantees.",
+  "source_sha256": {
+    "reports/spell_weighted_finetune/results.json": "c6c1e9b81f20c69c9226010e905f16bfb4147c5238e16f37a44b902f8d768d1a",
+    "docs/experiments/short-gap-recovery/scores.json": "396205fcff57ac79f88fb1ce49c691a9a9c31dbf5114e1f4990dfa389361467f"
+  },
+  "matched_training_objective_comparison": [
+    {
+      "decoder": "original",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "mean_weighted_minus_uniform": 0.005875083979314755,
+      "positive_games": 10,
+      "worst_weighted_minus_uniform": 0.0003089593806687718,
+      "per_game": {
+        "10510": 0.001322232556054903,
+        "3821": 0.004952839479155369,
+        "10513": 0.010066418113132913,
+        "10516": 0.001385756892412937,
+        "3859": 0.007619518266344549,
+        "3827": 0.0012039997279096326,
+        "10503": 0.0014805929868620948,
+        "3858": 0.012033731584124463,
+        "3838": 0.018376790806481913,
+        "3842": 0.0003089593806687718
+      }
+    },
+    {
+      "decoder": "original",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "mean_weighted_minus_uniform": 0.005875083979314755,
+      "positive_games": 10,
+      "worst_weighted_minus_uniform": 0.0003089593806687718,
+      "per_game": {
+        "10510": 0.001322232556054903,
+        "3821": 0.004952839479155369,
+        "10513": 0.010066418113132913,
+        "10516": 0.001385756892412937,
+        "3859": 0.007619518266344549,
+        "3827": 0.0012039997279096326,
+        "10503": 0.0014805929868620948,
+        "3858": 0.012033731584124463,
+        "3838": 0.018376790806481913,
+        "3842": 0.0003089593806687718
+      }
+    },
+    {
+      "decoder": "original",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "mean_weighted_minus_uniform": 0.0033720040776657025,
+      "positive_games": 6,
+      "worst_weighted_minus_uniform": -0.007663369789979835,
+      "per_game": {
+        "10510": -0.004654304725233982,
+        "3821": 0.006718446426881131,
+        "10513": 0.00245558942150792,
+        "10516": 0.02194388076411735,
+        "3859": -0.001181217901687459,
+        "3827": 0.0027207311308368176,
+        "10503": -0.007663369789979835,
+        "3858": -0.0021810726515300027,
+        "3838": 0.01051323962079087,
+        "3842": 0.005048118480954211
+      }
+    },
+    {
+      "decoder": "original",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "mean_weighted_minus_uniform": 0.0033720040776657025,
+      "positive_games": 6,
+      "worst_weighted_minus_uniform": -0.007663369789979835,
+      "per_game": {
+        "10510": -0.004654304725233982,
+        "3821": 0.006718446426881131,
+        "10513": 0.00245558942150792,
+        "10516": 0.02194388076411735,
+        "3859": -0.001181217901687459,
+        "3827": 0.0027207311308368176,
+        "10503": -0.007663369789979835,
+        "3858": -0.0021810726515300027,
+        "3838": 0.01051323962079087,
+        "3842": 0.005048118480954211
+      }
+    },
+    {
+      "decoder": "short",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "mean_weighted_minus_uniform": 0.006249901585354089,
+      "positive_games": 9,
+      "worst_weighted_minus_uniform": -0.003661215523553807,
+      "per_game": {
+        "10510": 0.011353352529823169,
+        "3821": 0.0031460444867696946,
+        "10513": 0.008436318084363181,
+        "10516": 0.005488777789596888,
+        "3859": 0.0014052927987570074,
+        "3827": 0.0057377049180327155,
+        "10503": 0.009123351712078231,
+        "3858": 0.018423057389537867,
+        "3838": 0.0030463316681359487,
+        "3842": -0.003661215523553807
+      }
+    },
+    {
+      "decoder": "short",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "mean_weighted_minus_uniform": 0.006249901585354089,
+      "positive_games": 9,
+      "worst_weighted_minus_uniform": -0.003661215523553807,
+      "per_game": {
+        "10510": 0.011353352529823169,
+        "3821": 0.0031460444867696946,
+        "10513": 0.008436318084363181,
+        "10516": 0.005488777789596888,
+        "3859": 0.0014052927987570074,
+        "3827": 0.0057377049180327155,
+        "10503": 0.009123351712078231,
+        "3858": 0.018423057389537867,
+        "3838": 0.0030463316681359487,
+        "3842": -0.003661215523553807
+      }
+    },
+    {
+      "decoder": "short",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "mean_weighted_minus_uniform": 0.0020069174303765534,
+      "positive_games": 5,
+      "worst_weighted_minus_uniform": -0.009077487661871997,
+      "per_game": {
+        "10510": 0.005771493311255593,
+        "3821": 0.002817050289368739,
+        "10513": -0.0018609969105017887,
+        "10516": 0.015616398667245956,
+        "3859": -0.006032776289034536,
+        "3827": -0.00256507359438507,
+        "10503": -0.009077487661871997,
+        "3858": 0.0013216593704398205,
+        "3838": 0.016343396862877224,
+        "3842": -0.002264489741628406
+      }
+    },
+    {
+      "decoder": "short",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "mean_weighted_minus_uniform": 0.0020069174303765534,
+      "positive_games": 5,
+      "worst_weighted_minus_uniform": -0.009077487661871997,
+      "per_game": {
+        "10510": 0.005771493311255593,
+        "3821": 0.002817050289368739,
+        "10513": -0.0018609969105017887,
+        "10516": 0.015616398667245956,
+        "3859": -0.006032776289034536,
+        "3827": -0.00256507359438507,
+        "10503": -0.009077487661871997,
+        "3858": 0.0013216593704398205,
+        "3838": 0.016343396862877224,
+        "3842": -0.002264489741628406
+      }
+    }
+  ]
+}
