@@ -1,0 +1,6244 @@
+{
+  "records": [
+    {
+      "game": "10510",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "control",
+      "spell_f1_mean": 0.6995348837209303,
+      "macro_f1": 0.8746978103887798,
+      "n_gt_spells": 240,
+      "n_pred_spells": 190,
+      "per_class": {
+        "H": {
+          "precision": 0.9365399534522886,
+          "recall": 0.8335371868218584,
+          "f1": 0.882041647095663,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.9096577787108965,
+          "recall": 0.8727715891465061,
+          "f1": 0.890833016356029,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.7861860652436569,
+          "recall": 0.9279806046776954,
+          "f1": 0.851218767714647,
+          "support": 42072
+        }
+      },
+      "diagnostics": {
+        "short_reference": 45,
+        "short_matched": 7,
+        "missing_live": 36705,
+        "missing_false_dead": 10331,
+        "missing_dead": 37575,
+        "missing_false_live": 1453,
+        "missing_wrong_team": 2705
+      }
+    },
+    {
+      "game": "10510",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.7055679287305122,
+      "macro_f1": 0.8765435085159091,
+      "n_gt_spells": 240,
+      "n_pred_spells": 209,
+      "per_class": {
+        "H": {
+          "precision": 0.9408311862887868,
+          "recall": 0.8284474255277176,
+          "f1": 0.8810700236034618,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.904274384591616,
+          "recall": 0.8842737143202466,
+          "f1": 0.8941622194158145,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.7923209751142712,
+          "recall": 0.9270298535843317,
+          "f1": 0.8543982825284511,
+          "support": 42072
+        }
+      },
+      "diagnostics": {
+        "short_reference": 45,
+        "short_matched": 9,
+        "missing_live": 36705,
+        "missing_false_dead": 9932,
+        "missing_dead": 37575,
+        "missing_false_live": 1493,
+        "missing_wrong_team": 2795
+      }
+    },
+    {
+      "game": "10510",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.70625,
+      "macro_f1": 0.8767592171987104,
+      "n_gt_spells": 240,
+      "n_pred_spells": 208,
+      "per_class": {
+        "H": {
+          "precision": 0.940905017921147,
+          "recall": 0.8286052475833497,
+          "f1": 0.8811916500576943,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.9044588610853671,
+          "recall": 0.8846363032048828,
+          "f1": 0.8944377685899916,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.7926640926640927,
+          "recall": 0.927148697471002,
+          "f1": 0.8546482329484455,
+          "support": 42072
+        }
+      },
+      "diagnostics": {
+        "short_reference": 45,
+        "short_matched": 9,
+        "missing_live": 36705,
+        "missing_false_dead": 9912,
+        "missing_dead": 37575,
+        "missing_false_live": 1488,
+        "missing_wrong_team": 2793
+      }
+    },
+    {
+      "game": "10510",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.703111111111111,
+      "macro_f1": 0.876537620790613,
+      "n_gt_spells": 240,
+      "n_pred_spells": 210,
+      "per_class": {
+        "H": {
+          "precision": 0.940676826535186,
+          "recall": 0.8280331426316828,
+          "f1": 0.8807680201447906,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.9041490785545145,
+          "recall": 0.8845154402433374,
+          "f1": 0.8942245030954707,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.7925639983746444,
+          "recall": 0.9272200038030044,
+          "f1": 0.8546203391315778,
+          "support": 42072
+        }
+      },
+      "diagnostics": {
+        "short_reference": 45,
+        "short_matched": 9,
+        "missing_live": 36705,
+        "missing_false_dead": 9912,
+        "missing_dead": 37575,
+        "missing_false_live": 1488,
+        "missing_wrong_team": 2793
+      }
+    },
+    {
+      "game": "10510",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "control",
+      "spell_f1_mean": 0.6995348837209303,
+      "macro_f1": 0.8746978103887798,
+      "n_gt_spells": 240,
+      "n_pred_spells": 190,
+      "per_class": {
+        "H": {
+          "precision": 0.9365399534522886,
+          "recall": 0.8335371868218584,
+          "f1": 0.882041647095663,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.9096577787108965,
+          "recall": 0.8727715891465061,
+          "f1": 0.890833016356029,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.7861860652436569,
+          "recall": 0.9279806046776954,
+          "f1": 0.851218767714647,
+          "support": 42072
+        }
+      },
+      "diagnostics": {
+        "short_reference": 45,
+        "short_matched": 7,
+        "missing_live": 36705,
+        "missing_false_dead": 10331,
+        "missing_dead": 37575,
+        "missing_false_live": 1453,
+        "missing_wrong_team": 2705
+      }
+    },
+    {
+      "game": "10510",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.7055679287305122,
+      "macro_f1": 0.8765435085159091,
+      "n_gt_spells": 240,
+      "n_pred_spells": 209,
+      "per_class": {
+        "H": {
+          "precision": 0.9408311862887868,
+          "recall": 0.8284474255277176,
+          "f1": 0.8810700236034618,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.904274384591616,
+          "recall": 0.8842737143202466,
+          "f1": 0.8941622194158145,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.7923209751142712,
+          "recall": 0.9270298535843317,
+          "f1": 0.8543982825284511,
+          "support": 42072
+        }
+      },
+      "diagnostics": {
+        "short_reference": 45,
+        "short_matched": 9,
+        "missing_live": 36705,
+        "missing_false_dead": 9932,
+        "missing_dead": 37575,
+        "missing_false_live": 1493,
+        "missing_wrong_team": 2795
+      }
+    },
+    {
+      "game": "10510",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.70625,
+      "macro_f1": 0.8767592171987104,
+      "n_gt_spells": 240,
+      "n_pred_spells": 208,
+      "per_class": {
+        "H": {
+          "precision": 0.940905017921147,
+          "recall": 0.8286052475833497,
+          "f1": 0.8811916500576943,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.9044588610853671,
+          "recall": 0.8846363032048828,
+          "f1": 0.8944377685899916,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.7926640926640927,
+          "recall": 0.927148697471002,
+          "f1": 0.8546482329484455,
+          "support": 42072
+        }
+      },
+      "diagnostics": {
+        "short_reference": 45,
+        "short_matched": 9,
+        "missing_live": 36705,
+        "missing_false_dead": 9912,
+        "missing_dead": 37575,
+        "missing_false_live": 1488,
+        "missing_wrong_team": 2793
+      }
+    },
+    {
+      "game": "10510",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.703111111111111,
+      "macro_f1": 0.876537620790613,
+      "n_gt_spells": 240,
+      "n_pred_spells": 210,
+      "per_class": {
+        "H": {
+          "precision": 0.940676826535186,
+          "recall": 0.8280331426316828,
+          "f1": 0.8807680201447906,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.9041490785545145,
+          "recall": 0.8845154402433374,
+          "f1": 0.8942245030954707,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.7925639983746444,
+          "recall": 0.9272200038030044,
+          "f1": 0.8546203391315778,
+          "support": 42072
+        }
+      },
+      "diagnostics": {
+        "short_reference": 45,
+        "short_matched": 9,
+        "missing_live": 36705,
+        "missing_false_dead": 9912,
+        "missing_dead": 37575,
+        "missing_false_live": 1488,
+        "missing_wrong_team": 2793
+      }
+    },
+    {
+      "game": "10510",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "control",
+      "spell_f1_mean": 0.6591422121896163,
+      "macro_f1": 0.8675587868710991,
+      "n_gt_spells": 240,
+      "n_pred_spells": 203,
+      "per_class": {
+        "H": {
+          "precision": 0.9339686861810755,
+          "recall": 0.8119944762280529,
+          "f1": 0.8687209793161672,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.8937700175637979,
+          "recall": 0.8713010897810366,
+          "f1": 0.8823925416675167,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.7844813776531838,
+          "recall": 0.9311893896177981,
+          "f1": 0.8515628396296134,
+          "support": 42072
+        }
+      },
+      "diagnostics": {
+        "short_reference": 45,
+        "short_matched": 5,
+        "missing_live": 47078,
+        "missing_false_dead": 10471,
+        "missing_dead": 38142,
+        "missing_false_live": 1680,
+        "missing_wrong_team": 3985
+      }
+    },
+    {
+      "game": "10510",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.6529032258064515,
+      "macro_f1": 0.8667571940331836,
+      "n_gt_spells": 240,
+      "n_pred_spells": 225,
+      "per_class": {
+        "H": {
+          "precision": 0.9322342239909039,
+          "recall": 0.8087393963306372,
+          "f1": 0.8661067976548883,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.8894688363524716,
+          "recall": 0.8753499989928086,
+          "f1": 0.8823529411764707,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.7873524962178517,
+          "recall": 0.9277666856816885,
+          "f1": 0.851811843268192,
+          "support": 42072
+        }
+      },
+      "diagnostics": {
+        "short_reference": 45,
+        "short_matched": 7,
+        "missing_live": 47078,
+        "missing_false_dead": 10245,
+        "missing_dead": 38142,
+        "missing_false_live": 1823,
+        "missing_wrong_team": 4124
+      }
+    },
+    {
+      "game": "10510",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.6597402597402597,
+      "macro_f1": 0.8673653171120969,
+      "n_gt_spells": 240,
+      "n_pred_spells": 222,
+      "per_class": {
+        "H": {
+          "precision": 0.9326287078077055,
+          "recall": 0.8094495955809824,
+          "f1": 0.866684268891588,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.8903767403767404,
+          "recall": 0.8759744576274601,
+          "f1": 0.8831168831168832,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.7878353843050232,
+          "recall": 0.9282420612283704,
+          "f1": 0.852294799327819,
+          "support": 42072
+        }
+      },
+      "diagnostics": {
+        "short_reference": 45,
+        "short_matched": 7,
+        "missing_live": 47078,
+        "missing_false_dead": 10221,
+        "missing_dead": 38142,
+        "missing_false_live": 1802,
+        "missing_wrong_team": 4082
+      }
+    },
+    {
+      "game": "10510",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.6577586206896552,
+      "macro_f1": 0.866846364122669,
+      "n_gt_spells": 240,
+      "n_pred_spells": 224,
+      "per_class": {
+        "H": {
+          "precision": 0.9321644085164522,
+          "recall": 0.8075754586703492,
+          "f1": 0.8654088050314466,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.8892729317926168,
+          "recall": 0.8758737384928389,
+          "f1": 0.882522478637683,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.7879423328964613,
+          "recall": 0.9288362806617227,
+          "f1": 0.8526078086988775,
+          "support": 42072
+        }
+      },
+      "diagnostics": {
+        "short_reference": 45,
+        "short_matched": 7,
+        "missing_live": 47078,
+        "missing_false_dead": 10225,
+        "missing_dead": 38142,
+        "missing_false_live": 1798,
+        "missing_wrong_team": 4092
+      }
+    },
+    {
+      "game": "10510",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "control",
+      "spell_f1_mean": 0.6591422121896163,
+      "macro_f1": 0.8675587868710991,
+      "n_gt_spells": 240,
+      "n_pred_spells": 203,
+      "per_class": {
+        "H": {
+          "precision": 0.9339686861810755,
+          "recall": 0.8119944762280529,
+          "f1": 0.8687209793161672,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.8937700175637979,
+          "recall": 0.8713010897810366,
+          "f1": 0.8823925416675167,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.7844813776531838,
+          "recall": 0.9311893896177981,
+          "f1": 0.8515628396296134,
+          "support": 42072
+        }
+      },
+      "diagnostics": {
+        "short_reference": 45,
+        "short_matched": 5,
+        "missing_live": 47078,
+        "missing_false_dead": 10471,
+        "missing_dead": 38142,
+        "missing_false_live": 1680,
+        "missing_wrong_team": 3985
+      }
+    },
+    {
+      "game": "10510",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.6529032258064515,
+      "macro_f1": 0.8667571940331836,
+      "n_gt_spells": 240,
+      "n_pred_spells": 225,
+      "per_class": {
+        "H": {
+          "precision": 0.9322342239909039,
+          "recall": 0.8087393963306372,
+          "f1": 0.8661067976548883,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.8894688363524716,
+          "recall": 0.8753499989928086,
+          "f1": 0.8823529411764707,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.7873524962178517,
+          "recall": 0.9277666856816885,
+          "f1": 0.851811843268192,
+          "support": 42072
+        }
+      },
+      "diagnostics": {
+        "short_reference": 45,
+        "short_matched": 7,
+        "missing_live": 47078,
+        "missing_false_dead": 10245,
+        "missing_dead": 38142,
+        "missing_false_live": 1823,
+        "missing_wrong_team": 4124
+      }
+    },
+    {
+      "game": "10510",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.6597402597402597,
+      "macro_f1": 0.8673653171120969,
+      "n_gt_spells": 240,
+      "n_pred_spells": 222,
+      "per_class": {
+        "H": {
+          "precision": 0.9326287078077055,
+          "recall": 0.8094495955809824,
+          "f1": 0.866684268891588,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.8903767403767404,
+          "recall": 0.8759744576274601,
+          "f1": 0.8831168831168832,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.7878353843050232,
+          "recall": 0.9282420612283704,
+          "f1": 0.852294799327819,
+          "support": 42072
+        }
+      },
+      "diagnostics": {
+        "short_reference": 45,
+        "short_matched": 7,
+        "missing_live": 47078,
+        "missing_false_dead": 10221,
+        "missing_dead": 38142,
+        "missing_false_live": 1802,
+        "missing_wrong_team": 4082
+      }
+    },
+    {
+      "game": "10510",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.6577586206896552,
+      "macro_f1": 0.866846364122669,
+      "n_gt_spells": 240,
+      "n_pred_spells": 224,
+      "per_class": {
+        "H": {
+          "precision": 0.9321644085164522,
+          "recall": 0.8075754586703492,
+          "f1": 0.8654088050314466,
+          "support": 50690
+        },
+        "A": {
+          "precision": 0.8892729317926168,
+          "recall": 0.8758737384928389,
+          "f1": 0.882522478637683,
+          "support": 49643
+        },
+        "D": {
+          "precision": 0.7879423328964613,
+          "recall": 0.9288362806617227,
+          "f1": 0.8526078086988775,
+          "support": 42072
+        }
+      },
+      "diagnostics": {
+        "short_reference": 45,
+        "short_matched": 7,
+        "missing_live": 47078,
+        "missing_false_dead": 10225,
+        "missing_dead": 38142,
+        "missing_false_live": 1798,
+        "missing_wrong_team": 4092
+      }
+    },
+    {
+      "game": "3821",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "control",
+      "spell_f1_mean": 0.6219560878243513,
+      "macro_f1": 0.8854141254532889,
+      "n_gt_spells": 280,
+      "n_pred_spells": 221,
+      "per_class": {
+        "H": {
+          "precision": 0.9268915510718789,
+          "recall": 0.9042010087341616,
+          "f1": 0.9154056915125475,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.8143247462919594,
+          "recall": 0.806798406744267,
+          "f1": 0.8105441053633521,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.9176132557204746,
+          "recall": 0.9433272115090297,
+          "f1": 0.9302925794839674,
+          "support": 65340
+        }
+      },
+      "diagnostics": {
+        "short_reference": 66,
+        "short_matched": 4,
+        "missing_live": 30232,
+        "missing_false_dead": 5340,
+        "missing_dead": 60256,
+        "missing_false_live": 2126,
+        "missing_wrong_team": 4132
+      }
+    },
+    {
+      "game": "3821",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.6551594746716698,
+      "macro_f1": 0.8905859730524672,
+      "n_gt_spells": 280,
+      "n_pred_spells": 253,
+      "per_class": {
+        "H": {
+          "precision": 0.9354138613861386,
+          "recall": 0.9079837618403248,
+          "f1": 0.9214947291213121,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.8104884513441878,
+          "recall": 0.8277582273096408,
+          "f1": 0.8190323136084486,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.9217644236535925,
+          "recall": 0.9408937863483318,
+          "f1": 0.9312308764276409,
+          "support": 65340
+        }
+      },
+      "diagnostics": {
+        "short_reference": 66,
+        "short_matched": 11,
+        "missing_live": 30232,
+        "missing_false_dead": 5024,
+        "missing_dead": 60256,
+        "missing_false_live": 2300,
+        "missing_wrong_team": 3636
+      }
+    },
+    {
+      "game": "3821",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.666173752310536,
+      "macro_f1": 0.891071841207384,
+      "n_gt_spells": 280,
+      "n_pred_spells": 261,
+      "per_class": {
+        "H": {
+          "precision": 0.9357958148383005,
+          "recall": 0.9077069750276787,
+          "f1": 0.9215374047708256,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.8117290957245554,
+          "recall": 0.8296531188367686,
+          "f1": 0.8205932414083269,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.9214490190494746,
+          "recall": 0.94092439546985,
+          "f1": 0.9310848774429997,
+          "support": 65340
+        }
+      },
+      "diagnostics": {
+        "short_reference": 66,
+        "short_matched": 14,
+        "missing_live": 30232,
+        "missing_false_dead": 5047,
+        "missing_dead": 60256,
+        "missing_false_live": 2298,
+        "missing_wrong_team": 3614
+      }
+    },
+    {
+      "game": "3821",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.6634686346863469,
+      "macro_f1": 0.8900943079306761,
+      "n_gt_spells": 280,
+      "n_pred_spells": 262,
+      "per_class": {
+        "H": {
+          "precision": 0.9359224843141927,
+          "recall": 0.9060308771066552,
+          "f1": 0.9207341370607952,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.8081371256357129,
+          "recall": 0.8295757763254573,
+          "f1": 0.8187161285398061,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.9211311084803165,
+          "recall": 0.9407407407407408,
+          "f1": 0.9308326581914274,
+          "support": 65340
+        }
+      },
+      "diagnostics": {
+        "short_reference": 66,
+        "short_matched": 14,
+        "missing_live": 30232,
+        "missing_false_dead": 5052,
+        "missing_dead": 60256,
+        "missing_false_live": 2297,
+        "missing_wrong_team": 3638
+      }
+    },
+    {
+      "game": "3821",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "control",
+      "spell_f1_mean": 0.6219560878243513,
+      "macro_f1": 0.8854141254532889,
+      "n_gt_spells": 280,
+      "n_pred_spells": 221,
+      "per_class": {
+        "H": {
+          "precision": 0.9268915510718789,
+          "recall": 0.9042010087341616,
+          "f1": 0.9154056915125475,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.8143247462919594,
+          "recall": 0.806798406744267,
+          "f1": 0.8105441053633521,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.9176132557204746,
+          "recall": 0.9433272115090297,
+          "f1": 0.9302925794839674,
+          "support": 65340
+        }
+      },
+      "diagnostics": {
+        "short_reference": 66,
+        "short_matched": 4,
+        "missing_live": 30232,
+        "missing_false_dead": 5340,
+        "missing_dead": 60256,
+        "missing_false_live": 2126,
+        "missing_wrong_team": 4132
+      }
+    },
+    {
+      "game": "3821",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.6551594746716698,
+      "macro_f1": 0.8905859730524672,
+      "n_gt_spells": 280,
+      "n_pred_spells": 253,
+      "per_class": {
+        "H": {
+          "precision": 0.9354138613861386,
+          "recall": 0.9079837618403248,
+          "f1": 0.9214947291213121,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.8104884513441878,
+          "recall": 0.8277582273096408,
+          "f1": 0.8190323136084486,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.9217644236535925,
+          "recall": 0.9408937863483318,
+          "f1": 0.9312308764276409,
+          "support": 65340
+        }
+      },
+      "diagnostics": {
+        "short_reference": 66,
+        "short_matched": 11,
+        "missing_live": 30232,
+        "missing_false_dead": 5024,
+        "missing_dead": 60256,
+        "missing_false_live": 2300,
+        "missing_wrong_team": 3636
+      }
+    },
+    {
+      "game": "3821",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.666173752310536,
+      "macro_f1": 0.891071841207384,
+      "n_gt_spells": 280,
+      "n_pred_spells": 261,
+      "per_class": {
+        "H": {
+          "precision": 0.9357958148383005,
+          "recall": 0.9077069750276787,
+          "f1": 0.9215374047708256,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.8117290957245554,
+          "recall": 0.8296531188367686,
+          "f1": 0.8205932414083269,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.9214490190494746,
+          "recall": 0.94092439546985,
+          "f1": 0.9310848774429997,
+          "support": 65340
+        }
+      },
+      "diagnostics": {
+        "short_reference": 66,
+        "short_matched": 14,
+        "missing_live": 30232,
+        "missing_false_dead": 5047,
+        "missing_dead": 60256,
+        "missing_false_live": 2298,
+        "missing_wrong_team": 3614
+      }
+    },
+    {
+      "game": "3821",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.6634686346863469,
+      "macro_f1": 0.8900943079306761,
+      "n_gt_spells": 280,
+      "n_pred_spells": 262,
+      "per_class": {
+        "H": {
+          "precision": 0.9359224843141927,
+          "recall": 0.9060308771066552,
+          "f1": 0.9207341370607952,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.8081371256357129,
+          "recall": 0.8295757763254573,
+          "f1": 0.8187161285398061,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.9211311084803165,
+          "recall": 0.9407407407407408,
+          "f1": 0.9308326581914274,
+          "support": 65340
+        }
+      },
+      "diagnostics": {
+        "short_reference": 66,
+        "short_matched": 14,
+        "missing_live": 30232,
+        "missing_false_dead": 5052,
+        "missing_dead": 60256,
+        "missing_false_live": 2297,
+        "missing_wrong_team": 3638
+      }
+    },
+    {
+      "game": "3821",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "control",
+      "spell_f1_mean": 0.6245472837022134,
+      "macro_f1": 0.8854248267564229,
+      "n_gt_spells": 280,
+      "n_pred_spells": 217,
+      "per_class": {
+        "H": {
+          "precision": 0.9248290497524169,
+          "recall": 0.9046776971337188,
+          "f1": 0.9146423935264717,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.8199254755834477,
+          "recall": 0.8083839282261495,
+          "f1": 0.8141137983409277,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.9152128246003486,
+          "recall": 0.9401591674318948,
+          "f1": 0.9275182884018692,
+          "support": 65340
+        }
+      },
+      "diagnostics": {
+        "short_reference": 66,
+        "short_matched": 6,
+        "missing_live": 33337,
+        "missing_false_dead": 5489,
+        "missing_dead": 60487,
+        "missing_false_live": 2438,
+        "missing_wrong_team": 3938
+      }
+    },
+    {
+      "game": "3821",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.6486891385767791,
+      "macro_f1": 0.8864840090073809,
+      "n_gt_spells": 280,
+      "n_pred_spells": 254,
+      "per_class": {
+        "H": {
+          "precision": 0.9298431807381593,
+          "recall": 0.9026479271743142,
+          "f1": 0.916043757119895,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.8061497830598,
+          "recall": 0.8262887195947253,
+          "f1": 0.8160950271178673,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.918568682803772,
+          "recall": 0.9362258953168044,
+          "f1": 0.9273132427843804,
+          "support": 65340
+        }
+      },
+      "diagnostics": {
+        "short_reference": 66,
+        "short_matched": 13,
+        "missing_live": 33337,
+        "missing_false_dead": 5213,
+        "missing_dead": 60487,
+        "missing_false_live": 2695,
+        "missing_wrong_team": 3865
+      }
+    },
+    {
+      "game": "3821",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.651685393258427,
+      "macro_f1": 0.8868665288632865,
+      "n_gt_spells": 280,
+      "n_pred_spells": 254,
+      "per_class": {
+        "H": {
+          "precision": 0.9301481657554869,
+          "recall": 0.9025864189937262,
+          "f1": 0.9161600474492145,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.8068627450980392,
+          "recall": 0.827487528520051,
+          "f1": 0.8170449989499609,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.9185809086268504,
+          "recall": 0.9363789409243954,
+          "f1": 0.927394540190684,
+          "support": 65340
+        }
+      },
+      "diagnostics": {
+        "short_reference": 66,
+        "short_matched": 13,
+        "missing_live": 33337,
+        "missing_false_dead": 5213,
+        "missing_dead": 60487,
+        "missing_false_live": 2685,
+        "missing_wrong_team": 3838
+      }
+    },
+    {
+      "game": "3821",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.6565055762081785,
+      "macro_f1": 0.8874213863024439,
+      "n_gt_spells": 280,
+      "n_pred_spells": 258,
+      "per_class": {
+        "H": {
+          "precision": 0.9307497226184815,
+          "recall": 0.9029554680772542,
+          "f1": 0.9166419506407955,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.8078401809272522,
+          "recall": 0.8288023512123439,
+          "f1": 0.8181870239935866,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.9185870201618351,
+          "recall": 0.936455463728191,
+          "f1": 0.9274351842729498,
+          "support": 65340
+        }
+      },
+      "diagnostics": {
+        "short_reference": 66,
+        "short_matched": 16,
+        "missing_live": 33337,
+        "missing_false_dead": 5213,
+        "missing_dead": 60487,
+        "missing_false_live": 2685,
+        "missing_wrong_team": 3836
+      }
+    },
+    {
+      "game": "3821",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "control",
+      "spell_f1_mean": 0.6245472837022134,
+      "macro_f1": 0.8854248267564229,
+      "n_gt_spells": 280,
+      "n_pred_spells": 217,
+      "per_class": {
+        "H": {
+          "precision": 0.9248290497524169,
+          "recall": 0.9046776971337188,
+          "f1": 0.9146423935264717,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.8199254755834477,
+          "recall": 0.8083839282261495,
+          "f1": 0.8141137983409277,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.9152128246003486,
+          "recall": 0.9401591674318948,
+          "f1": 0.9275182884018692,
+          "support": 65340
+        }
+      },
+      "diagnostics": {
+        "short_reference": 66,
+        "short_matched": 6,
+        "missing_live": 33337,
+        "missing_false_dead": 5489,
+        "missing_dead": 60487,
+        "missing_false_live": 2438,
+        "missing_wrong_team": 3938
+      }
+    },
+    {
+      "game": "3821",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.6486891385767791,
+      "macro_f1": 0.8864840090073809,
+      "n_gt_spells": 280,
+      "n_pred_spells": 254,
+      "per_class": {
+        "H": {
+          "precision": 0.9298431807381593,
+          "recall": 0.9026479271743142,
+          "f1": 0.916043757119895,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.8061497830598,
+          "recall": 0.8262887195947253,
+          "f1": 0.8160950271178673,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.918568682803772,
+          "recall": 0.9362258953168044,
+          "f1": 0.9273132427843804,
+          "support": 65340
+        }
+      },
+      "diagnostics": {
+        "short_reference": 66,
+        "short_matched": 13,
+        "missing_live": 33337,
+        "missing_false_dead": 5213,
+        "missing_dead": 60487,
+        "missing_false_live": 2695,
+        "missing_wrong_team": 3865
+      }
+    },
+    {
+      "game": "3821",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.651685393258427,
+      "macro_f1": 0.8868665288632865,
+      "n_gt_spells": 280,
+      "n_pred_spells": 254,
+      "per_class": {
+        "H": {
+          "precision": 0.9301481657554869,
+          "recall": 0.9025864189937262,
+          "f1": 0.9161600474492145,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.8068627450980392,
+          "recall": 0.827487528520051,
+          "f1": 0.8170449989499609,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.9185809086268504,
+          "recall": 0.9363789409243954,
+          "f1": 0.927394540190684,
+          "support": 65340
+        }
+      },
+      "diagnostics": {
+        "short_reference": 66,
+        "short_matched": 13,
+        "missing_live": 33337,
+        "missing_false_dead": 5213,
+        "missing_dead": 60487,
+        "missing_false_live": 2685,
+        "missing_wrong_team": 3838
+      }
+    },
+    {
+      "game": "3821",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.6565055762081785,
+      "macro_f1": 0.8874213863024439,
+      "n_gt_spells": 280,
+      "n_pred_spells": 258,
+      "per_class": {
+        "H": {
+          "precision": 0.9307497226184815,
+          "recall": 0.9029554680772542,
+          "f1": 0.9166419506407955,
+          "support": 65032
+        },
+        "A": {
+          "precision": 0.8078401809272522,
+          "recall": 0.8288023512123439,
+          "f1": 0.8181870239935866,
+          "support": 25859
+        },
+        "D": {
+          "precision": 0.9185870201618351,
+          "recall": 0.936455463728191,
+          "f1": 0.9274351842729498,
+          "support": 65340
+        }
+      },
+      "diagnostics": {
+        "short_reference": 66,
+        "short_matched": 16,
+        "missing_live": 33337,
+        "missing_false_dead": 5213,
+        "missing_dead": 60487,
+        "missing_false_live": 2685,
+        "missing_wrong_team": 3836
+      }
+    },
+    {
+      "game": "10513",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "control",
+      "spell_f1_mean": 0.676923076923077,
+      "macro_f1": 0.9014867147207372,
+      "n_gt_spells": 237,
+      "n_pred_spells": 179,
+      "per_class": {
+        "H": {
+          "precision": 0.9296526255985715,
+          "recall": 0.8779557735791208,
+          "f1": 0.9030649453040307,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.914180790960452,
+          "recall": 0.8336424523441525,
+          "f1": 0.8720560495823229,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8892692973960962,
+          "recall": 0.9731904285650311,
+          "f1": 0.9293391492758581,
+          "support": 66991
+        }
+      },
+      "diagnostics": {
+        "short_reference": 47,
+        "short_matched": 6,
+        "missing_live": 32819,
+        "missing_false_dead": 7935,
+        "missing_dead": 61338,
+        "missing_false_live": 1249,
+        "missing_wrong_team": 3108
+      }
+    },
+    {
+      "game": "10513",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.6818181818181819,
+      "macro_f1": 0.9051106942635215,
+      "n_gt_spells": 237,
+      "n_pred_spells": 203,
+      "per_class": {
+        "H": {
+          "precision": 0.932631493867324,
+          "recall": 0.8844326064461733,
+          "f1": 0.9078927956724859,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.9202656868287168,
+          "recall": 0.8387171561051004,
+          "f1": 0.8776010781671159,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8908215731320425,
+          "recall": 0.9724291322714992,
+          "f1": 0.929838208950963,
+          "support": 66991
+        }
+      },
+      "diagnostics": {
+        "short_reference": 47,
+        "short_matched": 12,
+        "missing_live": 32819,
+        "missing_false_dead": 7801,
+        "missing_dead": 61338,
+        "missing_false_live": 1301,
+        "missing_wrong_team": 2770
+      }
+    },
+    {
+      "game": "10513",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.6751131221719457,
+      "macro_f1": 0.9048398110863727,
+      "n_gt_spells": 237,
+      "n_pred_spells": 205,
+      "per_class": {
+        "H": {
+          "precision": 0.9325433736401505,
+          "recall": 0.8837236040317327,
+          "f1": 0.9074773711137348,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.9196496680322079,
+          "recall": 0.8385110767645544,
+          "f1": 0.8772081115677425,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8907010444578115,
+          "recall": 0.97256347867624,
+          "f1": 0.9298339505776406,
+          "support": 66991
+        }
+      },
+      "diagnostics": {
+        "short_reference": 47,
+        "short_matched": 12,
+        "missing_live": 32819,
+        "missing_false_dead": 7812,
+        "missing_dead": 61338,
+        "missing_false_live": 1292,
+        "missing_wrong_team": 2804
+      }
+    },
+    {
+      "game": "10513",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.6772009029345373,
+      "macro_f1": 0.9050486402337623,
+      "n_gt_spells": 237,
+      "n_pred_spells": 206,
+      "per_class": {
+        "H": {
+          "precision": 0.9334803901728255,
+          "recall": 0.8838960640784885,
+          "f1": 0.908011811023622,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.9193056731583404,
+          "recall": 0.8390262751159197,
+          "f1": 0.8773333333333333,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8906401651333506,
+          "recall": 0.97256347867624,
+          "f1": 0.9298007763443316,
+          "support": 66991
+        }
+      },
+      "diagnostics": {
+        "short_reference": 47,
+        "short_matched": 13,
+        "missing_live": 32819,
+        "missing_false_dead": 7812,
+        "missing_dead": 61338,
+        "missing_false_live": 1292,
+        "missing_wrong_team": 2795
+      }
+    },
+    {
+      "game": "10513",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "control",
+      "spell_f1_mean": 0.676923076923077,
+      "macro_f1": 0.9014867147207372,
+      "n_gt_spells": 237,
+      "n_pred_spells": 179,
+      "per_class": {
+        "H": {
+          "precision": 0.9296526255985715,
+          "recall": 0.8779557735791208,
+          "f1": 0.9030649453040307,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.914180790960452,
+          "recall": 0.8336424523441525,
+          "f1": 0.8720560495823229,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8892692973960962,
+          "recall": 0.9731904285650311,
+          "f1": 0.9293391492758581,
+          "support": 66991
+        }
+      },
+      "diagnostics": {
+        "short_reference": 47,
+        "short_matched": 6,
+        "missing_live": 32819,
+        "missing_false_dead": 7935,
+        "missing_dead": 61338,
+        "missing_false_live": 1249,
+        "missing_wrong_team": 3108
+      }
+    },
+    {
+      "game": "10513",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.6818181818181819,
+      "macro_f1": 0.9051106942635215,
+      "n_gt_spells": 237,
+      "n_pred_spells": 203,
+      "per_class": {
+        "H": {
+          "precision": 0.932631493867324,
+          "recall": 0.8844326064461733,
+          "f1": 0.9078927956724859,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.9202656868287168,
+          "recall": 0.8387171561051004,
+          "f1": 0.8776010781671159,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8908215731320425,
+          "recall": 0.9724291322714992,
+          "f1": 0.929838208950963,
+          "support": 66991
+        }
+      },
+      "diagnostics": {
+        "short_reference": 47,
+        "short_matched": 12,
+        "missing_live": 32819,
+        "missing_false_dead": 7801,
+        "missing_dead": 61338,
+        "missing_false_live": 1301,
+        "missing_wrong_team": 2770
+      }
+    },
+    {
+      "game": "10513",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.6751131221719457,
+      "macro_f1": 0.9048398110863727,
+      "n_gt_spells": 237,
+      "n_pred_spells": 205,
+      "per_class": {
+        "H": {
+          "precision": 0.9325433736401505,
+          "recall": 0.8837236040317327,
+          "f1": 0.9074773711137348,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.9196496680322079,
+          "recall": 0.8385110767645544,
+          "f1": 0.8772081115677425,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8907010444578115,
+          "recall": 0.97256347867624,
+          "f1": 0.9298339505776406,
+          "support": 66991
+        }
+      },
+      "diagnostics": {
+        "short_reference": 47,
+        "short_matched": 12,
+        "missing_live": 32819,
+        "missing_false_dead": 7812,
+        "missing_dead": 61338,
+        "missing_false_live": 1292,
+        "missing_wrong_team": 2804
+      }
+    },
+    {
+      "game": "10513",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.6772009029345373,
+      "macro_f1": 0.9050486402337623,
+      "n_gt_spells": 237,
+      "n_pred_spells": 206,
+      "per_class": {
+        "H": {
+          "precision": 0.9334803901728255,
+          "recall": 0.8838960640784885,
+          "f1": 0.908011811023622,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.9193056731583404,
+          "recall": 0.8390262751159197,
+          "f1": 0.8773333333333333,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8906401651333506,
+          "recall": 0.97256347867624,
+          "f1": 0.9298007763443316,
+          "support": 66991
+        }
+      },
+      "diagnostics": {
+        "short_reference": 47,
+        "short_matched": 13,
+        "missing_live": 32819,
+        "missing_false_dead": 7812,
+        "missing_dead": 61338,
+        "missing_false_live": 1292,
+        "missing_wrong_team": 2795
+      }
+    },
+    {
+      "game": "10513",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "control",
+      "spell_f1_mean": 0.6634146341463415,
+      "macro_f1": 0.9003568317505067,
+      "n_gt_spells": 237,
+      "n_pred_spells": 173,
+      "per_class": {
+        "H": {
+          "precision": 0.9253743391048149,
+          "recall": 0.8787031004483962,
+          "f1": 0.901435030469825,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.9154773726769755,
+          "recall": 0.8311695002575992,
+          "f1": 0.8712887328697766,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8889860378698872,
+          "recall": 0.9713543610335716,
+          "f1": 0.928346731911919,
+          "support": 66991
+        }
+      },
+      "diagnostics": {
+        "short_reference": 47,
+        "short_matched": 7,
+        "missing_live": 33418,
+        "missing_false_dead": 7900,
+        "missing_dead": 61352,
+        "missing_false_live": 1380,
+        "missing_wrong_team": 3157
+      }
+    },
+    {
+      "game": "10513",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.6627539503386004,
+      "macro_f1": 0.9033073998979311,
+      "n_gt_spells": 237,
+      "n_pred_spells": 206,
+      "per_class": {
+        "H": {
+          "precision": 0.9278954574742269,
+          "recall": 0.8830529260721266,
+          "f1": 0.9049189985272459,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.9187270155586987,
+          "recall": 0.8366048428645029,
+          "f1": 0.8757449103411084,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8911116287354589,
+          "recall": 0.970816975414608,
+          "f1": 0.929258290825439,
+          "support": 66991
+        }
+      },
+      "diagnostics": {
+        "short_reference": 47,
+        "short_matched": 11,
+        "missing_live": 33418,
+        "missing_false_dead": 7723,
+        "missing_dead": 61352,
+        "missing_false_live": 1420,
+        "missing_wrong_team": 2904
+      }
+    },
+    {
+      "game": "10513",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.6604026845637584,
+      "macro_f1": 0.9032103526061382,
+      "n_gt_spells": 237,
+      "n_pred_spells": 210,
+      "per_class": {
+        "H": {
+          "precision": 0.9286333662707456,
+          "recall": 0.8824205725673552,
+          "f1": 0.9049373618275607,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.9180276914382594,
+          "recall": 0.836913961875322,
+          "f1": 0.8755962808246867,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8907529650223233,
+          "recall": 0.9708916123061306,
+          "f1": 0.9290974151661677,
+          "support": 66991
+        }
+      },
+      "diagnostics": {
+        "short_reference": 47,
+        "short_matched": 10,
+        "missing_live": 33418,
+        "missing_false_dead": 7753,
+        "missing_dead": 61352,
+        "missing_false_live": 1415,
+        "missing_wrong_team": 2897
+      }
+    },
+    {
+      "game": "10513",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.6557522123893804,
+      "macro_f1": 0.9024663626494727,
+      "n_gt_spells": 237,
+      "n_pred_spells": 215,
+      "per_class": {
+        "H": {
+          "precision": 0.929266368656324,
+          "recall": 0.8803510520062852,
+          "f1": 0.9041476014760147,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.9143902095934731,
+          "recall": 0.8372488408037094,
+          "f1": 0.874120890203725,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8908139646364346,
+          "recall": 0.9708916123061306,
+          "f1": 0.929130596268678,
+          "support": 66991
+        }
+      },
+      "diagnostics": {
+        "short_reference": 47,
+        "short_matched": 12,
+        "missing_live": 33418,
+        "missing_false_dead": 7753,
+        "missing_dead": 61352,
+        "missing_false_live": 1415,
+        "missing_wrong_team": 2886
+      }
+    },
+    {
+      "game": "10513",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "control",
+      "spell_f1_mean": 0.6634146341463415,
+      "macro_f1": 0.9003568317505067,
+      "n_gt_spells": 237,
+      "n_pred_spells": 173,
+      "per_class": {
+        "H": {
+          "precision": 0.9253743391048149,
+          "recall": 0.8787031004483962,
+          "f1": 0.901435030469825,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.9154773726769755,
+          "recall": 0.8311695002575992,
+          "f1": 0.8712887328697766,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8889860378698872,
+          "recall": 0.9713543610335716,
+          "f1": 0.928346731911919,
+          "support": 66991
+        }
+      },
+      "diagnostics": {
+        "short_reference": 47,
+        "short_matched": 7,
+        "missing_live": 33418,
+        "missing_false_dead": 7900,
+        "missing_dead": 61352,
+        "missing_false_live": 1380,
+        "missing_wrong_team": 3157
+      }
+    },
+    {
+      "game": "10513",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.6627539503386004,
+      "macro_f1": 0.9033073998979311,
+      "n_gt_spells": 237,
+      "n_pred_spells": 206,
+      "per_class": {
+        "H": {
+          "precision": 0.9278954574742269,
+          "recall": 0.8830529260721266,
+          "f1": 0.9049189985272459,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.9187270155586987,
+          "recall": 0.8366048428645029,
+          "f1": 0.8757449103411084,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8911116287354589,
+          "recall": 0.970816975414608,
+          "f1": 0.929258290825439,
+          "support": 66991
+        }
+      },
+      "diagnostics": {
+        "short_reference": 47,
+        "short_matched": 11,
+        "missing_live": 33418,
+        "missing_false_dead": 7723,
+        "missing_dead": 61352,
+        "missing_false_live": 1420,
+        "missing_wrong_team": 2904
+      }
+    },
+    {
+      "game": "10513",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.6604026845637584,
+      "macro_f1": 0.9032103526061382,
+      "n_gt_spells": 237,
+      "n_pred_spells": 210,
+      "per_class": {
+        "H": {
+          "precision": 0.9286333662707456,
+          "recall": 0.8824205725673552,
+          "f1": 0.9049373618275607,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.9180276914382594,
+          "recall": 0.836913961875322,
+          "f1": 0.8755962808246867,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8907529650223233,
+          "recall": 0.9708916123061306,
+          "f1": 0.9290974151661677,
+          "support": 66991
+        }
+      },
+      "diagnostics": {
+        "short_reference": 47,
+        "short_matched": 10,
+        "missing_live": 33418,
+        "missing_false_dead": 7753,
+        "missing_dead": 61352,
+        "missing_false_live": 1415,
+        "missing_wrong_team": 2897
+      }
+    },
+    {
+      "game": "10513",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.6557522123893804,
+      "macro_f1": 0.9024663626494727,
+      "n_gt_spells": 237,
+      "n_pred_spells": 215,
+      "per_class": {
+        "H": {
+          "precision": 0.929266368656324,
+          "recall": 0.8803510520062852,
+          "f1": 0.9041476014760147,
+          "support": 52186
+        },
+        "A": {
+          "precision": 0.9143902095934731,
+          "recall": 0.8372488408037094,
+          "f1": 0.874120890203725,
+          "support": 38820
+        },
+        "D": {
+          "precision": 0.8908139646364346,
+          "recall": 0.9708916123061306,
+          "f1": 0.929130596268678,
+          "support": 66991
+        }
+      },
+      "diagnostics": {
+        "short_reference": 47,
+        "short_matched": 12,
+        "missing_live": 33418,
+        "missing_false_dead": 7753,
+        "missing_dead": 61352,
+        "missing_false_live": 1415,
+        "missing_wrong_team": 2886
+      }
+    },
+    {
+      "game": "10516",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "control",
+      "spell_f1_mean": 0.7084536082474227,
+      "macro_f1": 0.896611604619263,
+      "n_gt_spells": 271,
+      "n_pred_spells": 214,
+      "per_class": {
+        "H": {
+          "precision": 0.9192721257237386,
+          "recall": 0.8635586635586635,
+          "f1": 0.8905448717948717,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.8889167903207397,
+          "recall": 0.8776568170036289,
+          "f1": 0.8832509186589848,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.8913189605705386,
+          "recall": 0.9421693846073861,
+          "f1": 0.9160390234039327,
+          "support": 57703
+        }
+      },
+      "diagnostics": {
+        "short_reference": 59,
+        "short_matched": 13,
+        "missing_live": 32935,
+        "missing_false_dead": 6278,
+        "missing_dead": 50831,
+        "missing_false_live": 1959,
+        "missing_wrong_team": 2898
+      }
+    },
+    {
+      "game": "10516",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.7241106719367588,
+      "macro_f1": 0.9002459612022892,
+      "n_gt_spells": 271,
+      "n_pred_spells": 235,
+      "per_class": {
+        "H": {
+          "precision": 0.9225745608864788,
+          "recall": 0.8687090687090687,
+          "f1": 0.8948319231648753,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.8966914710933028,
+          "recall": 0.8827056145333243,
+          "f1": 0.889643579200836,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.89132322818517,
+          "recall": 0.9426372978874582,
+          "f1": 0.9162623812411562,
+          "support": 57703
+        }
+      },
+      "diagnostics": {
+        "short_reference": 59,
+        "short_matched": 15,
+        "missing_live": 32935,
+        "missing_false_dead": 6257,
+        "missing_dead": 50831,
+        "missing_false_live": 1932,
+        "missing_wrong_team": 2429
+      }
+    },
+    {
+      "game": "10516",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.724853228962818,
+      "macro_f1": 0.900948270142146,
+      "n_gt_spells": 271,
+      "n_pred_spells": 240,
+      "per_class": {
+        "H": {
+          "precision": 0.9240533207502655,
+          "recall": 0.8694860694860694,
+          "f1": 0.8959396088299211,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.8976541938436892,
+          "recall": 0.8840579710144928,
+          "f1": 0.890804206127501,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.8910952732038994,
+          "recall": 0.9425506472800375,
+          "f1": 0.9161009954690158,
+          "support": 57703
+        }
+      },
+      "diagnostics": {
+        "short_reference": 59,
+        "short_matched": 15,
+        "missing_live": 32935,
+        "missing_false_dead": 6269,
+        "missing_dead": 50831,
+        "missing_false_live": 1937,
+        "missing_wrong_team": 2325
+      }
+    },
+    {
+      "game": "10516",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.7268482490272373,
+      "macro_f1": 0.9007459882315478,
+      "n_gt_spells": 271,
+      "n_pred_spells": 243,
+      "per_class": {
+        "H": {
+          "precision": 0.9237971698113208,
+          "recall": 0.8695526695526695,
+          "f1": 0.8958545371376292,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.8975498053583696,
+          "recall": 0.883449410597967,
+          "f1": 0.8904437906789192,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.890867392906872,
+          "recall": 0.9424639966726167,
+          "f1": 0.9159396368780948,
+          "support": 57703
+        }
+      },
+      "diagnostics": {
+        "short_reference": 59,
+        "short_matched": 16,
+        "missing_live": 32935,
+        "missing_false_dead": 6270,
+        "missing_dead": 50831,
+        "missing_false_live": 1937,
+        "missing_wrong_team": 2309
+      }
+    },
+    {
+      "game": "10516",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "control",
+      "spell_f1_mean": 0.7084536082474227,
+      "macro_f1": 0.896611604619263,
+      "n_gt_spells": 271,
+      "n_pred_spells": 214,
+      "per_class": {
+        "H": {
+          "precision": 0.9192721257237386,
+          "recall": 0.8635586635586635,
+          "f1": 0.8905448717948717,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.8889167903207397,
+          "recall": 0.8776568170036289,
+          "f1": 0.8832509186589848,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.8913189605705386,
+          "recall": 0.9421693846073861,
+          "f1": 0.9160390234039327,
+          "support": 57703
+        }
+      },
+      "diagnostics": {
+        "short_reference": 59,
+        "short_matched": 13,
+        "missing_live": 32935,
+        "missing_false_dead": 6278,
+        "missing_dead": 50831,
+        "missing_false_live": 1959,
+        "missing_wrong_team": 2898
+      }
+    },
+    {
+      "game": "10516",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.7241106719367588,
+      "macro_f1": 0.9002459612022892,
+      "n_gt_spells": 271,
+      "n_pred_spells": 235,
+      "per_class": {
+        "H": {
+          "precision": 0.9225745608864788,
+          "recall": 0.8687090687090687,
+          "f1": 0.8948319231648753,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.8966914710933028,
+          "recall": 0.8827056145333243,
+          "f1": 0.889643579200836,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.89132322818517,
+          "recall": 0.9426372978874582,
+          "f1": 0.9162623812411562,
+          "support": 57703
+        }
+      },
+      "diagnostics": {
+        "short_reference": 59,
+        "short_matched": 15,
+        "missing_live": 32935,
+        "missing_false_dead": 6257,
+        "missing_dead": 50831,
+        "missing_false_live": 1932,
+        "missing_wrong_team": 2429
+      }
+    },
+    {
+      "game": "10516",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.724853228962818,
+      "macro_f1": 0.900948270142146,
+      "n_gt_spells": 271,
+      "n_pred_spells": 240,
+      "per_class": {
+        "H": {
+          "precision": 0.9240533207502655,
+          "recall": 0.8694860694860694,
+          "f1": 0.8959396088299211,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.8976541938436892,
+          "recall": 0.8840579710144928,
+          "f1": 0.890804206127501,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.8910952732038994,
+          "recall": 0.9425506472800375,
+          "f1": 0.9161009954690158,
+          "support": 57703
+        }
+      },
+      "diagnostics": {
+        "short_reference": 59,
+        "short_matched": 15,
+        "missing_live": 32935,
+        "missing_false_dead": 6269,
+        "missing_dead": 50831,
+        "missing_false_live": 1937,
+        "missing_wrong_team": 2325
+      }
+    },
+    {
+      "game": "10516",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.7268482490272373,
+      "macro_f1": 0.9007459882315478,
+      "n_gt_spells": 271,
+      "n_pred_spells": 243,
+      "per_class": {
+        "H": {
+          "precision": 0.9237971698113208,
+          "recall": 0.8695526695526695,
+          "f1": 0.8958545371376292,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.8975498053583696,
+          "recall": 0.883449410597967,
+          "f1": 0.8904437906789192,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.890867392906872,
+          "recall": 0.9424639966726167,
+          "f1": 0.9159396368780948,
+          "support": 57703
+        }
+      },
+      "diagnostics": {
+        "short_reference": 59,
+        "short_matched": 16,
+        "missing_live": 32935,
+        "missing_false_dead": 6270,
+        "missing_dead": 50831,
+        "missing_false_live": 1937,
+        "missing_wrong_team": 2309
+      }
+    },
+    {
+      "game": "10516",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "control",
+      "spell_f1_mean": 0.6909090909090908,
+      "macro_f1": 0.8872065465524449,
+      "n_gt_spells": 271,
+      "n_pred_spells": 213,
+      "per_class": {
+        "H": {
+          "precision": 0.9166425818882467,
+          "recall": 0.8449106449106449,
+          "f1": 0.8793161208340553,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.8827942188575362,
+          "recall": 0.8673338291973764,
+          "f1": 0.8749957365530885,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.8758325941456334,
+          "recall": 0.941129577318337,
+          "f1": 0.9073077822701908,
+          "support": 57703
+        }
+      },
+      "diagnostics": {
+        "short_reference": 59,
+        "short_matched": 9,
+        "missing_live": 36706,
+        "missing_false_dead": 7299,
+        "missing_dead": 51485,
+        "missing_false_live": 2091,
+        "missing_wrong_team": 3039
+      }
+    },
+    {
+      "game": "10516",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.7072691552062867,
+      "macro_f1": 0.8920109436548044,
+      "n_gt_spells": 271,
+      "n_pred_spells": 238,
+      "per_class": {
+        "H": {
+          "precision": 0.9222743118163241,
+          "recall": 0.8516372516372517,
+          "f1": 0.8855493998153279,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.8903040734366036,
+          "recall": 0.8744111614488246,
+          "f1": 0.8822860521707488,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.8771006538057955,
+          "recall": 0.9415801604769249,
+          "f1": 0.9081973789783364,
+          "support": 57703
+        }
+      },
+      "diagnostics": {
+        "short_reference": 59,
+        "short_matched": 13,
+        "missing_live": 36706,
+        "missing_false_dead": 7217,
+        "missing_dead": 51485,
+        "missing_false_live": 2095,
+        "missing_wrong_team": 2488
+      }
+    },
+    {
+      "game": "10516",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.7039370078740158,
+      "macro_f1": 0.8914891267464418,
+      "n_gt_spells": 271,
+      "n_pred_spells": 237,
+      "per_class": {
+        "H": {
+          "precision": 0.9215342070458098,
+          "recall": 0.8507492507492508,
+          "f1": 0.8847281542190927,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.8899552290207783,
+          "recall": 0.8736673653841819,
+          "f1": 0.8817360842565001,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.876708350141186,
+          "recall": 0.9416148207198932,
+          "f1": 0.9080031417637326,
+          "support": 57703
+        }
+      },
+      "diagnostics": {
+        "short_reference": 59,
+        "short_matched": 13,
+        "missing_live": 36706,
+        "missing_false_dead": 7242,
+        "missing_dead": 51485,
+        "missing_false_live": 2093,
+        "missing_wrong_team": 2526
+      }
+    },
+    {
+      "game": "10516",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.7049115913555991,
+      "macro_f1": 0.8910268124570284,
+      "n_gt_spells": 271,
+      "n_pred_spells": 238,
+      "per_class": {
+        "H": {
+          "precision": 0.9201344699243607,
+          "recall": 0.8506826506826507,
+          "f1": 0.8840466028376975,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.8902335212239733,
+          "recall": 0.8721346947055244,
+          "f1": 0.8810911740595683,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.8764454479477461,
+          "recall": 0.9417881219347347,
+          "f1": 0.9079426604738194,
+          "support": 57703
+        }
+      },
+      "diagnostics": {
+        "short_reference": 59,
+        "short_matched": 13,
+        "missing_live": 36706,
+        "missing_false_dead": 7246,
+        "missing_dead": 51485,
+        "missing_false_live": 2093,
+        "missing_wrong_team": 2539
+      }
+    },
+    {
+      "game": "10516",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "control",
+      "spell_f1_mean": 0.6909090909090908,
+      "macro_f1": 0.8872065465524449,
+      "n_gt_spells": 271,
+      "n_pred_spells": 213,
+      "per_class": {
+        "H": {
+          "precision": 0.9166425818882467,
+          "recall": 0.8449106449106449,
+          "f1": 0.8793161208340553,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.8827942188575362,
+          "recall": 0.8673338291973764,
+          "f1": 0.8749957365530885,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.8758325941456334,
+          "recall": 0.941129577318337,
+          "f1": 0.9073077822701908,
+          "support": 57703
+        }
+      },
+      "diagnostics": {
+        "short_reference": 59,
+        "short_matched": 9,
+        "missing_live": 36706,
+        "missing_false_dead": 7299,
+        "missing_dead": 51485,
+        "missing_false_live": 2091,
+        "missing_wrong_team": 3039
+      }
+    },
+    {
+      "game": "10516",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.7072691552062867,
+      "macro_f1": 0.8920109436548044,
+      "n_gt_spells": 271,
+      "n_pred_spells": 238,
+      "per_class": {
+        "H": {
+          "precision": 0.9222743118163241,
+          "recall": 0.8516372516372517,
+          "f1": 0.8855493998153279,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.8903040734366036,
+          "recall": 0.8744111614488246,
+          "f1": 0.8822860521707488,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.8771006538057955,
+          "recall": 0.9415801604769249,
+          "f1": 0.9081973789783364,
+          "support": 57703
+        }
+      },
+      "diagnostics": {
+        "short_reference": 59,
+        "short_matched": 13,
+        "missing_live": 36706,
+        "missing_false_dead": 7217,
+        "missing_dead": 51485,
+        "missing_false_live": 2095,
+        "missing_wrong_team": 2488
+      }
+    },
+    {
+      "game": "10516",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.7039370078740158,
+      "macro_f1": 0.8914891267464418,
+      "n_gt_spells": 271,
+      "n_pred_spells": 237,
+      "per_class": {
+        "H": {
+          "precision": 0.9215342070458098,
+          "recall": 0.8507492507492508,
+          "f1": 0.8847281542190927,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.8899552290207783,
+          "recall": 0.8736673653841819,
+          "f1": 0.8817360842565001,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.876708350141186,
+          "recall": 0.9416148207198932,
+          "f1": 0.9080031417637326,
+          "support": 57703
+        }
+      },
+      "diagnostics": {
+        "short_reference": 59,
+        "short_matched": 13,
+        "missing_live": 36706,
+        "missing_false_dead": 7242,
+        "missing_dead": 51485,
+        "missing_false_live": 2093,
+        "missing_wrong_team": 2526
+      }
+    },
+    {
+      "game": "10516",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.7049115913555991,
+      "macro_f1": 0.8910268124570284,
+      "n_gt_spells": 271,
+      "n_pred_spells": 238,
+      "per_class": {
+        "H": {
+          "precision": 0.9201344699243607,
+          "recall": 0.8506826506826507,
+          "f1": 0.8840466028376975,
+          "support": 45045
+        },
+        "A": {
+          "precision": 0.8902335212239733,
+          "recall": 0.8721346947055244,
+          "f1": 0.8810911740595683,
+          "support": 44367
+        },
+        "D": {
+          "precision": 0.8764454479477461,
+          "recall": 0.9417881219347347,
+          "f1": 0.9079426604738194,
+          "support": 57703
+        }
+      },
+      "diagnostics": {
+        "short_reference": 59,
+        "short_matched": 13,
+        "missing_live": 36706,
+        "missing_false_dead": 7246,
+        "missing_dead": 51485,
+        "missing_false_live": 2093,
+        "missing_wrong_team": 2539
+      }
+    },
+    {
+      "game": "3827",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "control",
+      "spell_f1_mean": 0.6981818181818182,
+      "macro_f1": 0.9095370754051624,
+      "n_gt_spells": 269,
+      "n_pred_spells": 226,
+      "per_class": {
+        "H": {
+          "precision": 0.9285952161733304,
+          "recall": 0.9078581962346542,
+          "f1": 0.9181096261863257,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.8930965704471162,
+          "recall": 0.860004801664577,
+          "f1": 0.8762383637969695,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.9143927411970365,
+          "recall": 0.9550165188662841,
+          "f1": 0.9342632362321921,
+          "support": 57510
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 10,
+        "missing_live": 37074,
+        "missing_false_dead": 5020,
+        "missing_dead": 53816,
+        "missing_false_live": 1533,
+        "missing_wrong_team": 3318
+      }
+    },
+    {
+      "game": "3827",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.7153692614770458,
+      "macro_f1": 0.9109602038420519,
+      "n_gt_spells": 269,
+      "n_pred_spells": 232,
+      "per_class": {
+        "H": {
+          "precision": 0.9293225440756812,
+          "recall": 0.9106161300825465,
+          "f1": 0.9198742442563483,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.8964837787583604,
+          "recall": 0.8617120601808627,
+          "f1": 0.8787540805223067,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.9147546446721653,
+          "recall": 0.9545992001391063,
+          "f1": 0.9342522867475006,
+          "support": 57510
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 13,
+        "missing_live": 37074,
+        "missing_false_dead": 4990,
+        "missing_dead": 53816,
+        "missing_false_live": 1542,
+        "missing_wrong_team": 3133
+      }
+    },
+    {
+      "game": "3827",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.7141153081510934,
+      "macro_f1": 0.9107748369496264,
+      "n_gt_spells": 269,
+      "n_pred_spells": 234,
+      "per_class": {
+        "H": {
+          "precision": 0.9297854010025063,
+          "recall": 0.9094669909792581,
+          "f1": 0.9195139662100015,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.8954393154819594,
+          "recall": 0.8626190412676394,
+          "f1": 0.8787228260869566,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.9145189504373178,
+          "recall": 0.9545122587376108,
+          "f1": 0.9340877185519207,
+          "support": 57510
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 12,
+        "missing_live": 37074,
+        "missing_false_dead": 5005,
+        "missing_dead": 53816,
+        "missing_false_live": 1547,
+        "missing_wrong_team": 3138
+      }
+    },
+    {
+      "game": "3827",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.7176237623762376,
+      "macro_f1": 0.910771896637339,
+      "n_gt_spells": 269,
+      "n_pred_spells": 236,
+      "per_class": {
+        "H": {
+          "precision": 0.930680636490278,
+          "recall": 0.9084710704230747,
+          "f1": 0.9194417522775732,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.8942483010111056,
+          "recall": 0.8634993464400992,
+          "f1": 0.8786048720906562,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.9145474227662587,
+          "recall": 0.9548600243435924,
+          "f1": 0.9342690655437879,
+          "support": 57510
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 13,
+        "missing_live": 37074,
+        "missing_false_dead": 5005,
+        "missing_dead": 53816,
+        "missing_false_live": 1547,
+        "missing_wrong_team": 3108
+      }
+    },
+    {
+      "game": "3827",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "control",
+      "spell_f1_mean": 0.6981818181818182,
+      "macro_f1": 0.9095370754051624,
+      "n_gt_spells": 269,
+      "n_pred_spells": 226,
+      "per_class": {
+        "H": {
+          "precision": 0.9285952161733304,
+          "recall": 0.9078581962346542,
+          "f1": 0.9181096261863257,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.8930965704471162,
+          "recall": 0.860004801664577,
+          "f1": 0.8762383637969695,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.9143927411970365,
+          "recall": 0.9550165188662841,
+          "f1": 0.9342632362321921,
+          "support": 57510
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 10,
+        "missing_live": 37074,
+        "missing_false_dead": 5020,
+        "missing_dead": 53816,
+        "missing_false_live": 1533,
+        "missing_wrong_team": 3318
+      }
+    },
+    {
+      "game": "3827",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.7153692614770458,
+      "macro_f1": 0.9109602038420519,
+      "n_gt_spells": 269,
+      "n_pred_spells": 232,
+      "per_class": {
+        "H": {
+          "precision": 0.9293225440756812,
+          "recall": 0.9106161300825465,
+          "f1": 0.9198742442563483,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.8964837787583604,
+          "recall": 0.8617120601808627,
+          "f1": 0.8787540805223067,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.9147546446721653,
+          "recall": 0.9545992001391063,
+          "f1": 0.9342522867475006,
+          "support": 57510
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 13,
+        "missing_live": 37074,
+        "missing_false_dead": 4990,
+        "missing_dead": 53816,
+        "missing_false_live": 1542,
+        "missing_wrong_team": 3133
+      }
+    },
+    {
+      "game": "3827",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.7141153081510934,
+      "macro_f1": 0.9107748369496264,
+      "n_gt_spells": 269,
+      "n_pred_spells": 234,
+      "per_class": {
+        "H": {
+          "precision": 0.9297854010025063,
+          "recall": 0.9094669909792581,
+          "f1": 0.9195139662100015,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.8954393154819594,
+          "recall": 0.8626190412676394,
+          "f1": 0.8787228260869566,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.9145189504373178,
+          "recall": 0.9545122587376108,
+          "f1": 0.9340877185519207,
+          "support": 57510
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 12,
+        "missing_live": 37074,
+        "missing_false_dead": 5005,
+        "missing_dead": 53816,
+        "missing_false_live": 1547,
+        "missing_wrong_team": 3138
+      }
+    },
+    {
+      "game": "3827",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.7176237623762376,
+      "macro_f1": 0.910771896637339,
+      "n_gt_spells": 269,
+      "n_pred_spells": 236,
+      "per_class": {
+        "H": {
+          "precision": 0.930680636490278,
+          "recall": 0.9084710704230747,
+          "f1": 0.9194417522775732,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.8942483010111056,
+          "recall": 0.8634993464400992,
+          "f1": 0.8786048720906562,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.9145474227662587,
+          "recall": 0.9548600243435924,
+          "f1": 0.9342690655437879,
+          "support": 57510
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 13,
+        "missing_live": 37074,
+        "missing_false_dead": 5005,
+        "missing_dead": 53816,
+        "missing_false_live": 1547,
+        "missing_wrong_team": 3108
+      }
+    },
+    {
+      "game": "3827",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "control",
+      "spell_f1_mean": 0.685483870967742,
+      "macro_f1": 0.9092520977122508,
+      "n_gt_spells": 269,
+      "n_pred_spells": 227,
+      "per_class": {
+        "H": {
+          "precision": 0.9258291574863026,
+          "recall": 0.9094095340240936,
+          "f1": 0.9175458937198068,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.8953094845187817,
+          "recall": 0.8538960172859925,
+          "f1": 0.8741125068268707,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.9154063486787436,
+          "recall": 0.9577464788732394,
+          "f1": 0.9360978925900747,
+          "support": 57510
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 11,
+        "missing_live": 37074,
+        "missing_false_dead": 4947,
+        "missing_dead": 53816,
+        "missing_false_live": 1413,
+        "missing_wrong_team": 3336
+      }
+    },
+    {
+      "game": "3827",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.6922155688622753,
+      "macro_f1": 0.9084592381080822,
+      "n_gt_spells": 269,
+      "n_pred_spells": 232,
+      "per_class": {
+        "H": {
+          "precision": 0.9259989844146713,
+          "recall": 0.9080688717369237,
+          "f1": 0.9169462843881448,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.8913852477227283,
+          "recall": 0.8562168218315683,
+          "f1": 0.8734471732770938,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.9155833333333333,
+          "recall": 0.9552251782298731,
+          "f1": 0.9349842566590079,
+          "support": 57510
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 13,
+        "missing_live": 37074,
+        "missing_false_dead": 4919,
+        "missing_dead": 53816,
+        "missing_false_live": 1557,
+        "missing_wrong_team": 3343
+      }
+    },
+    {
+      "game": "3827",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.6924302788844621,
+      "macro_f1": 0.9087486287624517,
+      "n_gt_spells": 269,
+      "n_pred_spells": 233,
+      "per_class": {
+        "H": {
+          "precision": 0.9246550012651575,
+          "recall": 0.9098500373470209,
+          "f1": 0.917192779225794,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.894103556805838,
+          "recall": 0.8563235254888362,
+          "f1": 0.8748058318572013,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.9153846153846154,
+          "recall": 0.9539036689271431,
+          "f1": 0.9342472752043596,
+          "support": 57510
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 13,
+        "missing_live": 37074,
+        "missing_false_dead": 4925,
+        "missing_dead": 53816,
+        "missing_false_live": 1633,
+        "missing_wrong_team": 3240
+      }
+    },
+    {
+      "game": "3827",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.6913385826771654,
+      "macro_f1": 0.908242756090489,
+      "n_gt_spells": 269,
+      "n_pred_spells": 239,
+      "per_class": {
+        "H": {
+          "precision": 0.9249541570754165,
+          "recall": 0.9081071763737001,
+          "f1": 0.9164532495771927,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.8918851366363031,
+          "recall": 0.8566969882892737,
+          "f1": 0.873937002517178,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.9153987320653987,
+          "recall": 0.9540775517301339,
+          "f1": 0.9343380161770967,
+          "support": 57510
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 13,
+        "missing_live": 37074,
+        "missing_false_dead": 4925,
+        "missing_dead": 53816,
+        "missing_false_live": 1633,
+        "missing_wrong_team": 3278
+      }
+    },
+    {
+      "game": "3827",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "control",
+      "spell_f1_mean": 0.685483870967742,
+      "macro_f1": 0.9092520977122508,
+      "n_gt_spells": 269,
+      "n_pred_spells": 227,
+      "per_class": {
+        "H": {
+          "precision": 0.9258291574863026,
+          "recall": 0.9094095340240936,
+          "f1": 0.9175458937198068,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.8953094845187817,
+          "recall": 0.8538960172859925,
+          "f1": 0.8741125068268707,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.9154063486787436,
+          "recall": 0.9577464788732394,
+          "f1": 0.9360978925900747,
+          "support": 57510
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 11,
+        "missing_live": 37074,
+        "missing_false_dead": 4947,
+        "missing_dead": 53816,
+        "missing_false_live": 1413,
+        "missing_wrong_team": 3336
+      }
+    },
+    {
+      "game": "3827",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.6922155688622753,
+      "macro_f1": 0.9084592381080822,
+      "n_gt_spells": 269,
+      "n_pred_spells": 232,
+      "per_class": {
+        "H": {
+          "precision": 0.9259989844146713,
+          "recall": 0.9080688717369237,
+          "f1": 0.9169462843881448,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.8913852477227283,
+          "recall": 0.8562168218315683,
+          "f1": 0.8734471732770938,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.9155833333333333,
+          "recall": 0.9552251782298731,
+          "f1": 0.9349842566590079,
+          "support": 57510
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 13,
+        "missing_live": 37074,
+        "missing_false_dead": 4919,
+        "missing_dead": 53816,
+        "missing_false_live": 1557,
+        "missing_wrong_team": 3343
+      }
+    },
+    {
+      "game": "3827",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.6924302788844621,
+      "macro_f1": 0.9087486287624517,
+      "n_gt_spells": 269,
+      "n_pred_spells": 233,
+      "per_class": {
+        "H": {
+          "precision": 0.9246550012651575,
+          "recall": 0.9098500373470209,
+          "f1": 0.917192779225794,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.894103556805838,
+          "recall": 0.8563235254888362,
+          "f1": 0.8748058318572013,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.9153846153846154,
+          "recall": 0.9539036689271431,
+          "f1": 0.9342472752043596,
+          "support": 57510
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 13,
+        "missing_live": 37074,
+        "missing_false_dead": 4925,
+        "missing_dead": 53816,
+        "missing_false_live": 1633,
+        "missing_wrong_team": 3240
+      }
+    },
+    {
+      "game": "3827",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.6913385826771654,
+      "macro_f1": 0.908242756090489,
+      "n_gt_spells": 269,
+      "n_pred_spells": 239,
+      "per_class": {
+        "H": {
+          "precision": 0.9249541570754165,
+          "recall": 0.9081071763737001,
+          "f1": 0.9164532495771927,
+          "support": 52213
+        },
+        "A": {
+          "precision": 0.8918851366363031,
+          "recall": 0.8566969882892737,
+          "f1": 0.873937002517178,
+          "support": 37487
+        },
+        "D": {
+          "precision": 0.9153987320653987,
+          "recall": 0.9540775517301339,
+          "f1": 0.9343380161770967,
+          "support": 57510
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 13,
+        "missing_live": 37074,
+        "missing_false_dead": 4925,
+        "missing_dead": 53816,
+        "missing_false_live": 1633,
+        "missing_wrong_team": 3278
+      }
+    },
+    {
+      "game": "3859",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "control",
+      "spell_f1_mean": 0.6580912863070539,
+      "macro_f1": 0.8706794977171354,
+      "n_gt_spells": 275,
+      "n_pred_spells": 207,
+      "per_class": {
+        "H": {
+          "precision": 0.865183463390337,
+          "recall": 0.796813358206673,
+          "f1": 0.8295921291431847,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.9297110823630875,
+          "recall": 0.8250902066552466,
+          "f1": 0.8742819074469214,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.8566376038036507,
+          "recall": 0.966286716352477,
+          "f1": 0.9081644565613003,
+          "support": 68430
+        }
+      },
+      "diagnostics": {
+        "short_reference": 50,
+        "short_matched": 4,
+        "missing_live": 38941,
+        "missing_false_dead": 10757,
+        "missing_dead": 63038,
+        "missing_false_live": 1249,
+        "missing_wrong_team": 3071
+      }
+    },
+    {
+      "game": "3859",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.7,
+      "macro_f1": 0.8752492435485268,
+      "n_gt_spells": 275,
+      "n_pred_spells": 225,
+      "per_class": {
+        "H": {
+          "precision": 0.8772712034864231,
+          "recall": 0.8002997033548427,
+          "f1": 0.8370196228949767,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.9290823130076373,
+          "recall": 0.8379924918905128,
+          "f1": 0.8811896366702437,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.8587227272134482,
+          "recall": 0.9622387841589946,
+          "f1": 0.9075384710803602,
+          "support": 68430
+        }
+      },
+      "diagnostics": {
+        "short_reference": 50,
+        "short_matched": 10,
+        "missing_live": 38941,
+        "missing_false_dead": 10526,
+        "missing_dead": 63038,
+        "missing_false_live": 1420,
+        "missing_wrong_team": 2485
+      }
+    },
+    {
+      "game": "3859",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.6942345924453279,
+      "macro_f1": 0.8754329790602773,
+      "n_gt_spells": 275,
+      "n_pred_spells": 228,
+      "per_class": {
+        "H": {
+          "precision": 0.876760916847917,
+          "recall": 0.8013089085293128,
+          "f1": 0.8373386168988879,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.9295506935738261,
+          "recall": 0.8377373619564821,
+          "f1": 0.881259105896787,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.8589559636856934,
+          "recall": 0.962311851527108,
+          "f1": 0.907701214385157,
+          "support": 68430
+        }
+      },
+      "diagnostics": {
+        "short_reference": 50,
+        "short_matched": 10,
+        "missing_live": 38941,
+        "missing_false_dead": 10506,
+        "missing_dead": 63038,
+        "missing_false_live": 1415,
+        "missing_wrong_team": 2487
+      }
+    },
+    {
+      "game": "3859",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.6857142857142857,
+      "macro_f1": 0.8747242549274029,
+      "n_gt_spells": 275,
+      "n_pred_spells": 236,
+      "per_class": {
+        "H": {
+          "precision": 0.8749498327759198,
+          "recall": 0.8000550475549711,
+          "f1": 0.8358280483713798,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.9293793884943038,
+          "recall": 0.8369901957211066,
+          "f1": 0.8807686038372661,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.8587319388659955,
+          "recall": 0.962311851527108,
+          "f1": 0.9075761125735629,
+          "support": 68430
+        }
+      },
+      "diagnostics": {
+        "short_reference": 50,
+        "short_matched": 11,
+        "missing_live": 38941,
+        "missing_false_dead": 10510,
+        "missing_dead": 63038,
+        "missing_false_live": 1415,
+        "missing_wrong_team": 2526
+      }
+    },
+    {
+      "game": "3859",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "control",
+      "spell_f1_mean": 0.6580912863070539,
+      "macro_f1": 0.8706794977171354,
+      "n_gt_spells": 275,
+      "n_pred_spells": 207,
+      "per_class": {
+        "H": {
+          "precision": 0.865183463390337,
+          "recall": 0.796813358206673,
+          "f1": 0.8295921291431847,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.9297110823630875,
+          "recall": 0.8250902066552466,
+          "f1": 0.8742819074469214,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.8566376038036507,
+          "recall": 0.966286716352477,
+          "f1": 0.9081644565613003,
+          "support": 68430
+        }
+      },
+      "diagnostics": {
+        "short_reference": 50,
+        "short_matched": 4,
+        "missing_live": 38941,
+        "missing_false_dead": 10757,
+        "missing_dead": 63038,
+        "missing_false_live": 1249,
+        "missing_wrong_team": 3071
+      }
+    },
+    {
+      "game": "3859",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.7,
+      "macro_f1": 0.8752492435485268,
+      "n_gt_spells": 275,
+      "n_pred_spells": 225,
+      "per_class": {
+        "H": {
+          "precision": 0.8772712034864231,
+          "recall": 0.8002997033548427,
+          "f1": 0.8370196228949767,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.9290823130076373,
+          "recall": 0.8379924918905128,
+          "f1": 0.8811896366702437,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.8587227272134482,
+          "recall": 0.9622387841589946,
+          "f1": 0.9075384710803602,
+          "support": 68430
+        }
+      },
+      "diagnostics": {
+        "short_reference": 50,
+        "short_matched": 10,
+        "missing_live": 38941,
+        "missing_false_dead": 10526,
+        "missing_dead": 63038,
+        "missing_false_live": 1420,
+        "missing_wrong_team": 2485
+      }
+    },
+    {
+      "game": "3859",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.6942345924453279,
+      "macro_f1": 0.8754329790602773,
+      "n_gt_spells": 275,
+      "n_pred_spells": 228,
+      "per_class": {
+        "H": {
+          "precision": 0.876760916847917,
+          "recall": 0.8013089085293128,
+          "f1": 0.8373386168988879,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.9295506935738261,
+          "recall": 0.8377373619564821,
+          "f1": 0.881259105896787,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.8589559636856934,
+          "recall": 0.962311851527108,
+          "f1": 0.907701214385157,
+          "support": 68430
+        }
+      },
+      "diagnostics": {
+        "short_reference": 50,
+        "short_matched": 10,
+        "missing_live": 38941,
+        "missing_false_dead": 10506,
+        "missing_dead": 63038,
+        "missing_false_live": 1415,
+        "missing_wrong_team": 2487
+      }
+    },
+    {
+      "game": "3859",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.6857142857142857,
+      "macro_f1": 0.8747242549274029,
+      "n_gt_spells": 275,
+      "n_pred_spells": 236,
+      "per_class": {
+        "H": {
+          "precision": 0.8749498327759198,
+          "recall": 0.8000550475549711,
+          "f1": 0.8358280483713798,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.9293793884943038,
+          "recall": 0.8369901957211066,
+          "f1": 0.8807686038372661,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.8587319388659955,
+          "recall": 0.962311851527108,
+          "f1": 0.9075761125735629,
+          "support": 68430
+        }
+      },
+      "diagnostics": {
+        "short_reference": 50,
+        "short_matched": 11,
+        "missing_live": 38941,
+        "missing_false_dead": 10510,
+        "missing_dead": 63038,
+        "missing_false_live": 1415,
+        "missing_wrong_team": 2526
+      }
+    },
+    {
+      "game": "3859",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "control",
+      "spell_f1_mean": 0.6488517745302713,
+      "macro_f1": 0.8728344186814277,
+      "n_gt_spells": 275,
+      "n_pred_spells": 204,
+      "per_class": {
+        "H": {
+          "precision": 0.8726784214945424,
+          "recall": 0.794642037982813,
+          "f1": 0.8318340429618721,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.928762863397369,
+          "recall": 0.8272952582279404,
+          "f1": 0.8750975875396375,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.8590156304541753,
+          "recall": 0.9709776413853572,
+          "f1": 0.9115716255427736,
+          "support": 68430
+        }
+      },
+      "diagnostics": {
+        "short_reference": 50,
+        "short_matched": 4,
+        "missing_live": 38941,
+        "missing_false_dead": 10600,
+        "missing_dead": 63038,
+        "missing_false_live": 983,
+        "missing_wrong_team": 3097
+      }
+    },
+    {
+      "game": "3859",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.6757515030060119,
+      "macro_f1": 0.8765736947978531,
+      "n_gt_spells": 275,
+      "n_pred_spells": 224,
+      "per_class": {
+        "H": {
+          "precision": 0.8881390593047035,
+          "recall": 0.7969051041316249,
+          "f1": 0.8400522252131724,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.9254713374514578,
+          "recall": 0.8381929511243941,
+          "f1": 0.8796725732263585,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.8595447222077854,
+          "recall": 0.9667397340347801,
+          "f1": 0.9099962859540284,
+          "support": 68430
+        }
+      },
+      "diagnostics": {
+        "short_reference": 50,
+        "short_matched": 9,
+        "missing_live": 38941,
+        "missing_false_dead": 10501,
+        "missing_dead": 63038,
+        "missing_false_live": 1167,
+        "missing_wrong_team": 2538
+      }
+    },
+    {
+      "game": "3859",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.6679841897233201,
+      "macro_f1": 0.8760772883583215,
+      "n_gt_spells": 275,
+      "n_pred_spells": 231,
+      "per_class": {
+        "H": {
+          "precision": 0.888524029416795,
+          "recall": 0.7943973821829414,
+          "f1": 0.8388284302644751,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.9232435468019816,
+          "recall": 0.8388672230929037,
+          "f1": 0.8790352610924923,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.8601854139307493,
+          "recall": 0.9667689609820255,
+          "f1": 0.9103681737179973,
+          "support": 68430
+        }
+      },
+      "diagnostics": {
+        "short_reference": 50,
+        "short_matched": 9,
+        "missing_live": 38941,
+        "missing_false_dead": 10444,
+        "missing_dead": 63038,
+        "missing_false_live": 1165,
+        "missing_wrong_team": 2618
+      }
+    },
+    {
+      "game": "3859",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.6726915520628683,
+      "macro_f1": 0.8756048343144421,
+      "n_gt_spells": 275,
+      "n_pred_spells": 234,
+      "per_class": {
+        "H": {
+          "precision": 0.8851555857847305,
+          "recall": 0.7959876448821065,
+          "f1": 0.8382068787839753,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.9243064782381125,
+          "recall": 0.8367168422203594,
+          "f1": 0.8783333970998967,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.8600176797878425,
+          "recall": 0.9667689609820255,
+          "f1": 0.9102742270594547,
+          "support": 68430
+        }
+      },
+      "diagnostics": {
+        "short_reference": 50,
+        "short_matched": 10,
+        "missing_live": 38941,
+        "missing_false_dead": 10453,
+        "missing_dead": 63038,
+        "missing_false_live": 1165,
+        "missing_wrong_team": 2650
+      }
+    },
+    {
+      "game": "3859",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "control",
+      "spell_f1_mean": 0.6488517745302713,
+      "macro_f1": 0.8728344186814277,
+      "n_gt_spells": 275,
+      "n_pred_spells": 204,
+      "per_class": {
+        "H": {
+          "precision": 0.8726784214945424,
+          "recall": 0.794642037982813,
+          "f1": 0.8318340429618721,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.928762863397369,
+          "recall": 0.8272952582279404,
+          "f1": 0.8750975875396375,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.8590156304541753,
+          "recall": 0.9709776413853572,
+          "f1": 0.9115716255427736,
+          "support": 68430
+        }
+      },
+      "diagnostics": {
+        "short_reference": 50,
+        "short_matched": 4,
+        "missing_live": 38941,
+        "missing_false_dead": 10600,
+        "missing_dead": 63038,
+        "missing_false_live": 983,
+        "missing_wrong_team": 3097
+      }
+    },
+    {
+      "game": "3859",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.6757515030060119,
+      "macro_f1": 0.8765736947978531,
+      "n_gt_spells": 275,
+      "n_pred_spells": 224,
+      "per_class": {
+        "H": {
+          "precision": 0.8881390593047035,
+          "recall": 0.7969051041316249,
+          "f1": 0.8400522252131724,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.9254713374514578,
+          "recall": 0.8381929511243941,
+          "f1": 0.8796725732263585,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.8595447222077854,
+          "recall": 0.9667397340347801,
+          "f1": 0.9099962859540284,
+          "support": 68430
+        }
+      },
+      "diagnostics": {
+        "short_reference": 50,
+        "short_matched": 9,
+        "missing_live": 38941,
+        "missing_false_dead": 10501,
+        "missing_dead": 63038,
+        "missing_false_live": 1167,
+        "missing_wrong_team": 2538
+      }
+    },
+    {
+      "game": "3859",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.6679841897233201,
+      "macro_f1": 0.8760772883583215,
+      "n_gt_spells": 275,
+      "n_pred_spells": 231,
+      "per_class": {
+        "H": {
+          "precision": 0.888524029416795,
+          "recall": 0.7943973821829414,
+          "f1": 0.8388284302644751,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.9232435468019816,
+          "recall": 0.8388672230929037,
+          "f1": 0.8790352610924923,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.8601854139307493,
+          "recall": 0.9667689609820255,
+          "f1": 0.9103681737179973,
+          "support": 68430
+        }
+      },
+      "diagnostics": {
+        "short_reference": 50,
+        "short_matched": 9,
+        "missing_live": 38941,
+        "missing_false_dead": 10444,
+        "missing_dead": 63038,
+        "missing_false_live": 1165,
+        "missing_wrong_team": 2618
+      }
+    },
+    {
+      "game": "3859",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.6726915520628683,
+      "macro_f1": 0.8756048343144421,
+      "n_gt_spells": 275,
+      "n_pred_spells": 234,
+      "per_class": {
+        "H": {
+          "precision": 0.8851555857847305,
+          "recall": 0.7959876448821065,
+          "f1": 0.8382068787839753,
+          "support": 32699
+        },
+        "A": {
+          "precision": 0.9243064782381125,
+          "recall": 0.8367168422203594,
+          "f1": 0.8783333970998967,
+          "support": 54874
+        },
+        "D": {
+          "precision": 0.8600176797878425,
+          "recall": 0.9667689609820255,
+          "f1": 0.9102742270594547,
+          "support": 68430
+        }
+      },
+      "diagnostics": {
+        "short_reference": 50,
+        "short_matched": 10,
+        "missing_live": 38941,
+        "missing_false_dead": 10453,
+        "missing_dead": 63038,
+        "missing_false_live": 1165,
+        "missing_wrong_team": 2650
+      }
+    },
+    {
+      "game": "10503",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "control",
+      "spell_f1_mean": 0.6732510288065845,
+      "macro_f1": 0.903722665028388,
+      "n_gt_spells": 264,
+      "n_pred_spells": 222,
+      "per_class": {
+        "H": {
+          "precision": 0.9289808079922881,
+          "recall": 0.8796010488233927,
+          "f1": 0.9036168199602772,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.9030101225359617,
+          "recall": 0.8790322580645161,
+          "f1": 0.8908598759592137,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.881175413832927,
+          "recall": 0.9551903664255623,
+          "f1": 0.9166912991656735,
+          "support": 50324
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 14,
+        "missing_live": 36192,
+        "missing_false_dead": 6132,
+        "missing_dead": 46037,
+        "missing_false_live": 1255,
+        "missing_wrong_team": 3286
+      }
+    },
+    {
+      "game": "10503",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.6853658536585366,
+      "macro_f1": 0.9047685217330876,
+      "n_gt_spells": 264,
+      "n_pred_spells": 228,
+      "per_class": {
+        "H": {
+          "precision": 0.9324741364194283,
+          "recall": 0.8825218228285041,
+          "f1": 0.9068105859081919,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.9005968961400717,
+          "recall": 0.8803028731459392,
+          "f1": 0.8903342556288438,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.8826372172506937,
+          "recall": 0.9544948732215245,
+          "f1": 0.9171607236622273,
+          "support": 50324
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 16,
+        "missing_live": 36192,
+        "missing_false_dead": 6036,
+        "missing_dead": 46037,
+        "missing_false_live": 1288,
+        "missing_wrong_team": 3162
+      }
+    },
+    {
+      "game": "10503",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.6736,
+      "macro_f1": 0.9041739330036082,
+      "n_gt_spells": 264,
+      "n_pred_spells": 236,
+      "per_class": {
+        "H": {
+          "precision": 0.930039352864014,
+          "recall": 0.8824554416011152,
+          "f1": 0.9056227806493916,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.9013308490817141,
+          "recall": 0.8780987449434706,
+          "f1": 0.889563138676544,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.882961710262679,
+          "recall": 0.9544948732215245,
+          "f1": 0.9173358796848889,
+          "support": 50324
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 16,
+        "missing_live": 36192,
+        "missing_false_dead": 6016,
+        "missing_dead": 46037,
+        "missing_false_live": 1288,
+        "missing_wrong_team": 3259
+      }
+    },
+    {
+      "game": "10503",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.6642857142857143,
+      "macro_f1": 0.9038414569222221,
+      "n_gt_spells": 264,
+      "n_pred_spells": 240,
+      "per_class": {
+        "H": {
+          "precision": 0.9299212598425197,
+          "recall": 0.8819575823956985,
+          "f1": 0.9053045789043336,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.9002260337721048,
+          "recall": 0.8778394357431801,
+          "f1": 0.8888918063779228,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.8830321192844405,
+          "recall": 0.9543955170495191,
+          "f1": 0.9173279854844101,
+          "support": 50324
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 16,
+        "missing_live": 36192,
+        "missing_false_dead": 6016,
+        "missing_dead": 46037,
+        "missing_false_live": 1288,
+        "missing_wrong_team": 3258
+      }
+    },
+    {
+      "game": "10503",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "control",
+      "spell_f1_mean": 0.6732510288065845,
+      "macro_f1": 0.903722665028388,
+      "n_gt_spells": 264,
+      "n_pred_spells": 222,
+      "per_class": {
+        "H": {
+          "precision": 0.9289808079922881,
+          "recall": 0.8796010488233927,
+          "f1": 0.9036168199602772,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.9030101225359617,
+          "recall": 0.8790322580645161,
+          "f1": 0.8908598759592137,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.881175413832927,
+          "recall": 0.9551903664255623,
+          "f1": 0.9166912991656735,
+          "support": 50324
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 14,
+        "missing_live": 36192,
+        "missing_false_dead": 6132,
+        "missing_dead": 46037,
+        "missing_false_live": 1255,
+        "missing_wrong_team": 3286
+      }
+    },
+    {
+      "game": "10503",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.6853658536585366,
+      "macro_f1": 0.9047685217330876,
+      "n_gt_spells": 264,
+      "n_pred_spells": 228,
+      "per_class": {
+        "H": {
+          "precision": 0.9324741364194283,
+          "recall": 0.8825218228285041,
+          "f1": 0.9068105859081919,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.9005968961400717,
+          "recall": 0.8803028731459392,
+          "f1": 0.8903342556288438,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.8826372172506937,
+          "recall": 0.9544948732215245,
+          "f1": 0.9171607236622273,
+          "support": 50324
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 16,
+        "missing_live": 36192,
+        "missing_false_dead": 6036,
+        "missing_dead": 46037,
+        "missing_false_live": 1288,
+        "missing_wrong_team": 3162
+      }
+    },
+    {
+      "game": "10503",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.6736,
+      "macro_f1": 0.9041739330036082,
+      "n_gt_spells": 264,
+      "n_pred_spells": 236,
+      "per_class": {
+        "H": {
+          "precision": 0.930039352864014,
+          "recall": 0.8824554416011152,
+          "f1": 0.9056227806493916,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.9013308490817141,
+          "recall": 0.8780987449434706,
+          "f1": 0.889563138676544,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.882961710262679,
+          "recall": 0.9544948732215245,
+          "f1": 0.9173358796848889,
+          "support": 50324
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 16,
+        "missing_live": 36192,
+        "missing_false_dead": 6016,
+        "missing_dead": 46037,
+        "missing_false_live": 1288,
+        "missing_wrong_team": 3259
+      }
+    },
+    {
+      "game": "10503",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.6642857142857143,
+      "macro_f1": 0.9038414569222221,
+      "n_gt_spells": 264,
+      "n_pred_spells": 240,
+      "per_class": {
+        "H": {
+          "precision": 0.9299212598425197,
+          "recall": 0.8819575823956985,
+          "f1": 0.9053045789043336,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.9002260337721048,
+          "recall": 0.8778394357431801,
+          "f1": 0.8888918063779228,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.8830321192844405,
+          "recall": 0.9543955170495191,
+          "f1": 0.9173279854844101,
+          "support": 50324
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 16,
+        "missing_live": 36192,
+        "missing_false_dead": 6016,
+        "missing_dead": 46037,
+        "missing_false_live": 1288,
+        "missing_wrong_team": 3258
+      }
+    },
+    {
+      "game": "10503",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "control",
+      "spell_f1_mean": 0.6495798319327731,
+      "macro_f1": 0.9000691270545401,
+      "n_gt_spells": 264,
+      "n_pred_spells": 212,
+      "per_class": {
+        "H": {
+          "precision": 0.9310879915358843,
+          "recall": 0.8762653921471008,
+          "f1": 0.9028452226249915,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.8999466097170316,
+          "recall": 0.8741831760190851,
+          "f1": 0.8868778280542986,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.8719623108265425,
+          "recall": 0.9525673634846197,
+          "f1": 0.9104843304843306,
+          "support": 50324
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 11,
+        "missing_live": 43055,
+        "missing_false_dead": 6717,
+        "missing_dead": 46428,
+        "missing_false_live": 1517,
+        "missing_wrong_team": 3429
+      }
+    },
+    {
+      "game": "10503",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.6546201232032856,
+      "macro_f1": 0.8999672588860562,
+      "n_gt_spells": 264,
+      "n_pred_spells": 223,
+      "per_class": {
+        "H": {
+          "precision": 0.933756278086175,
+          "recall": 0.8793189286069899,
+          "f1": 0.9057203661444578,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.8926092715231788,
+          "recall": 0.8737682812986205,
+          "f1": 0.8830882931048039,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.8750251596494117,
+          "recall": 0.9502623002940943,
+          "f1": 0.911093117408907,
+          "support": 50324
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 14,
+        "missing_live": 43055,
+        "missing_false_dead": 6494,
+        "missing_dead": 46428,
+        "missing_false_live": 1631,
+        "missing_wrong_team": 3446
+      }
+    },
+    {
+      "game": "10503",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.6489795918367347,
+      "macro_f1": 0.9000606155982682,
+      "n_gt_spells": 264,
+      "n_pred_spells": 226,
+      "per_class": {
+        "H": {
+          "precision": 0.9326404791262991,
+          "recall": 0.878655116333101,
+          "f1": 0.9048432853676043,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.8931568497683653,
+          "recall": 0.8748833108598693,
+          "f1": 0.8839256474410195,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.8757165619677295,
+          "recall": 0.9501430728876877,
+          "f1": 0.9114129139861806,
+          "support": 50324
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 13,
+        "missing_live": 43055,
+        "missing_false_dead": 6464,
+        "missing_dead": 46428,
+        "missing_false_live": 1637,
+        "missing_wrong_team": 3492
+      }
+    },
+    {
+      "game": "10503",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.6491935483870968,
+      "macro_f1": 0.8992521631012363,
+      "n_gt_spells": 264,
+      "n_pred_spells": 232,
+      "per_class": {
+        "H": {
+          "precision": 0.9308835164835165,
+          "recall": 0.8786219257194066,
+          "f1": 0.9039980193455303,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.8929936305732484,
+          "recall": 0.8725235971372264,
+          "f1": 0.8826399454383295,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.8755106153028888,
+          "recall": 0.9497456481996661,
+          "f1": 0.9111185245198493,
+          "support": 50324
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 14,
+        "missing_live": 43055,
+        "missing_false_dead": 6458,
+        "missing_dead": 46428,
+        "missing_false_live": 1637,
+        "missing_wrong_team": 3486
+      }
+    },
+    {
+      "game": "10503",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "control",
+      "spell_f1_mean": 0.6495798319327731,
+      "macro_f1": 0.9000691270545401,
+      "n_gt_spells": 264,
+      "n_pred_spells": 212,
+      "per_class": {
+        "H": {
+          "precision": 0.9310879915358843,
+          "recall": 0.8762653921471008,
+          "f1": 0.9028452226249915,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.8999466097170316,
+          "recall": 0.8741831760190851,
+          "f1": 0.8868778280542986,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.8719623108265425,
+          "recall": 0.9525673634846197,
+          "f1": 0.9104843304843306,
+          "support": 50324
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 11,
+        "missing_live": 43055,
+        "missing_false_dead": 6717,
+        "missing_dead": 46428,
+        "missing_false_live": 1517,
+        "missing_wrong_team": 3429
+      }
+    },
+    {
+      "game": "10503",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.6546201232032856,
+      "macro_f1": 0.8999672588860562,
+      "n_gt_spells": 264,
+      "n_pred_spells": 223,
+      "per_class": {
+        "H": {
+          "precision": 0.933756278086175,
+          "recall": 0.8793189286069899,
+          "f1": 0.9057203661444578,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.8926092715231788,
+          "recall": 0.8737682812986205,
+          "f1": 0.8830882931048039,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.8750251596494117,
+          "recall": 0.9502623002940943,
+          "f1": 0.911093117408907,
+          "support": 50324
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 14,
+        "missing_live": 43055,
+        "missing_false_dead": 6494,
+        "missing_dead": 46428,
+        "missing_false_live": 1631,
+        "missing_wrong_team": 3446
+      }
+    },
+    {
+      "game": "10503",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.6489795918367347,
+      "macro_f1": 0.9000606155982682,
+      "n_gt_spells": 264,
+      "n_pred_spells": 226,
+      "per_class": {
+        "H": {
+          "precision": 0.9326404791262991,
+          "recall": 0.878655116333101,
+          "f1": 0.9048432853676043,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.8931568497683653,
+          "recall": 0.8748833108598693,
+          "f1": 0.8839256474410195,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.8757165619677295,
+          "recall": 0.9501430728876877,
+          "f1": 0.9114129139861806,
+          "support": 50324
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 13,
+        "missing_live": 43055,
+        "missing_false_dead": 6464,
+        "missing_dead": 46428,
+        "missing_false_live": 1637,
+        "missing_wrong_team": 3492
+      }
+    },
+    {
+      "game": "10503",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.6491935483870968,
+      "macro_f1": 0.8992521631012363,
+      "n_gt_spells": 264,
+      "n_pred_spells": 232,
+      "per_class": {
+        "H": {
+          "precision": 0.9308835164835165,
+          "recall": 0.8786219257194066,
+          "f1": 0.9039980193455303,
+          "support": 60258
+        },
+        "A": {
+          "precision": 0.8929936305732484,
+          "recall": 0.8725235971372264,
+          "f1": 0.8826399454383295,
+          "support": 38564
+        },
+        "D": {
+          "precision": 0.8755106153028888,
+          "recall": 0.9497456481996661,
+          "f1": 0.9111185245198493,
+          "support": 50324
+        }
+      },
+      "diagnostics": {
+        "short_reference": 60,
+        "short_matched": 14,
+        "missing_live": 43055,
+        "missing_false_dead": 6458,
+        "missing_dead": 46428,
+        "missing_false_live": 1637,
+        "missing_wrong_team": 3486
+      }
+    },
+    {
+      "game": "3858",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "control",
+      "spell_f1_mean": 0.6580406654343809,
+      "macro_f1": 0.892101882827565,
+      "n_gt_spells": 305,
+      "n_pred_spells": 236,
+      "per_class": {
+        "H": {
+          "precision": 0.877576303637797,
+          "recall": 0.8715103793843951,
+          "f1": 0.8745328230395403,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8922136844037659,
+          "recall": 0.847220838728957,
+          "f1": 0.8691353609156053,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9175938851953724,
+          "recall": 0.948182532314504,
+          "f1": 0.9326374645275491,
+          "support": 70015
+        }
+      },
+      "diagnostics": {
+        "short_reference": 77,
+        "short_matched": 11,
+        "missing_live": 35047,
+        "missing_false_dead": 5530,
+        "missing_dead": 63556,
+        "missing_false_live": 1798,
+        "missing_wrong_team": 3897
+      }
+    },
+    {
+      "game": "3858",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.6881944444444444,
+      "macro_f1": 0.8945720340919588,
+      "n_gt_spells": 305,
+      "n_pred_spells": 271,
+      "per_class": {
+        "H": {
+          "precision": 0.8866339458965872,
+          "recall": 0.8688036864710093,
+          "f1": 0.8776282637923827,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8885628989087915,
+          "recall": 0.859796792509214,
+          "f1": 0.8739431985014934,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9179521976348076,
+          "recall": 0.9467828322502321,
+          "f1": 0.9321446399820007,
+          "support": 70015
+        }
+      },
+      "diagnostics": {
+        "short_reference": 77,
+        "short_matched": 19,
+        "missing_live": 35047,
+        "missing_false_dead": 5479,
+        "missing_dead": 63556,
+        "missing_false_live": 1896,
+        "missing_wrong_team": 3592
+      }
+    },
+    {
+      "game": "3858",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.6970639032815199,
+      "macro_f1": 0.895611151680141,
+      "n_gt_spells": 305,
+      "n_pred_spells": 274,
+      "per_class": {
+        "H": {
+          "precision": 0.8887034072718957,
+          "recall": 0.8693405511811023,
+          "f1": 0.8789153493000429,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8897714711704069,
+          "recall": 0.8619633429624465,
+          "f1": 0.8756466853030092,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9178893748961852,
+          "recall": 0.9471113332857245,
+          "f1": 0.9322714204373712,
+          "support": 70015
+        }
+      },
+      "diagnostics": {
+        "short_reference": 77,
+        "short_matched": 20,
+        "missing_live": 35047,
+        "missing_false_dead": 5486,
+        "missing_dead": 63556,
+        "missing_false_live": 1883,
+        "missing_wrong_team": 3474
+      }
+    },
+    {
+      "game": "3858",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.6958904109589041,
+      "macro_f1": 0.8948898339980698,
+      "n_gt_spells": 305,
+      "n_pred_spells": 279,
+      "per_class": {
+        "H": {
+          "precision": 0.8884104443426477,
+          "recall": 0.8676628489620616,
+          "f1": 0.8779140826580961,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8874900643573241,
+          "recall": 0.8619633429624465,
+          "f1": 0.8745404702047829,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9180214362865926,
+          "recall": 0.9468542455188174,
+          "f1": 0.9322149491313305,
+          "support": 70015
+        }
+      },
+      "diagnostics": {
+        "short_reference": 77,
+        "short_matched": 21,
+        "missing_live": 35047,
+        "missing_false_dead": 5486,
+        "missing_dead": 63556,
+        "missing_false_live": 1876,
+        "missing_wrong_team": 3480
+      }
+    },
+    {
+      "game": "3858",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "control",
+      "spell_f1_mean": 0.6580406654343809,
+      "macro_f1": 0.892101882827565,
+      "n_gt_spells": 305,
+      "n_pred_spells": 236,
+      "per_class": {
+        "H": {
+          "precision": 0.877576303637797,
+          "recall": 0.8715103793843951,
+          "f1": 0.8745328230395403,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8922136844037659,
+          "recall": 0.847220838728957,
+          "f1": 0.8691353609156053,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9175938851953724,
+          "recall": 0.948182532314504,
+          "f1": 0.9326374645275491,
+          "support": 70015
+        }
+      },
+      "diagnostics": {
+        "short_reference": 77,
+        "short_matched": 11,
+        "missing_live": 35047,
+        "missing_false_dead": 5530,
+        "missing_dead": 63556,
+        "missing_false_live": 1798,
+        "missing_wrong_team": 3897
+      }
+    },
+    {
+      "game": "3858",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.6881944444444444,
+      "macro_f1": 0.8945720340919588,
+      "n_gt_spells": 305,
+      "n_pred_spells": 271,
+      "per_class": {
+        "H": {
+          "precision": 0.8866339458965872,
+          "recall": 0.8688036864710093,
+          "f1": 0.8776282637923827,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8885628989087915,
+          "recall": 0.859796792509214,
+          "f1": 0.8739431985014934,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9179521976348076,
+          "recall": 0.9467828322502321,
+          "f1": 0.9321446399820007,
+          "support": 70015
+        }
+      },
+      "diagnostics": {
+        "short_reference": 77,
+        "short_matched": 19,
+        "missing_live": 35047,
+        "missing_false_dead": 5479,
+        "missing_dead": 63556,
+        "missing_false_live": 1896,
+        "missing_wrong_team": 3592
+      }
+    },
+    {
+      "game": "3858",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.6970639032815199,
+      "macro_f1": 0.895611151680141,
+      "n_gt_spells": 305,
+      "n_pred_spells": 274,
+      "per_class": {
+        "H": {
+          "precision": 0.8887034072718957,
+          "recall": 0.8693405511811023,
+          "f1": 0.8789153493000429,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8897714711704069,
+          "recall": 0.8619633429624465,
+          "f1": 0.8756466853030092,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9178893748961852,
+          "recall": 0.9471113332857245,
+          "f1": 0.9322714204373712,
+          "support": 70015
+        }
+      },
+      "diagnostics": {
+        "short_reference": 77,
+        "short_matched": 20,
+        "missing_live": 35047,
+        "missing_false_dead": 5486,
+        "missing_dead": 63556,
+        "missing_false_live": 1883,
+        "missing_wrong_team": 3474
+      }
+    },
+    {
+      "game": "3858",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.6958904109589041,
+      "macro_f1": 0.8948898339980698,
+      "n_gt_spells": 305,
+      "n_pred_spells": 279,
+      "per_class": {
+        "H": {
+          "precision": 0.8884104443426477,
+          "recall": 0.8676628489620616,
+          "f1": 0.8779140826580961,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8874900643573241,
+          "recall": 0.8619633429624465,
+          "f1": 0.8745404702047829,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9180214362865926,
+          "recall": 0.9468542455188174,
+          "f1": 0.9322149491313305,
+          "support": 70015
+        }
+      },
+      "diagnostics": {
+        "short_reference": 77,
+        "short_matched": 21,
+        "missing_live": 35047,
+        "missing_false_dead": 5486,
+        "missing_dead": 63556,
+        "missing_false_live": 1876,
+        "missing_wrong_team": 3480
+      }
+    },
+    {
+      "game": "3858",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "control",
+      "spell_f1_mean": 0.6497237569060774,
+      "macro_f1": 0.8906097017831058,
+      "n_gt_spells": 305,
+      "n_pred_spells": 238,
+      "per_class": {
+        "H": {
+          "precision": 0.8747442958300551,
+          "recall": 0.8704590193271295,
+          "f1": 0.8725963964165985,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8902169915410078,
+          "recall": 0.8438838529734037,
+          "f1": 0.8664314387256782,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9179110668657707,
+          "recall": 0.948182532314504,
+          "f1": 0.932801270207041,
+          "support": 70015
+        }
+      },
+      "diagnostics": {
+        "short_reference": 77,
+        "short_matched": 11,
+        "missing_live": 35047,
+        "missing_false_dead": 5466,
+        "missing_dead": 63556,
+        "missing_false_live": 1797,
+        "missing_wrong_team": 4005
+      }
+    },
+    {
+      "game": "3858",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.6758377425044092,
+      "macro_f1": 0.8929889702491516,
+      "n_gt_spells": 305,
+      "n_pred_spells": 262,
+      "per_class": {
+        "H": {
+          "precision": 0.8843489196295873,
+          "recall": 0.8651798496778812,
+          "f1": 0.8746593697350716,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8860626012705435,
+          "recall": 0.8579290766012551,
+          "f1": 0.8717689183546946,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9180586501335474,
+          "recall": 0.9474826822823681,
+          "f1": 0.9325386226576886,
+          "support": 70015
+        }
+      },
+      "diagnostics": {
+        "short_reference": 77,
+        "short_matched": 16,
+        "missing_live": 35047,
+        "missing_false_dead": 5446,
+        "missing_dead": 63556,
+        "missing_false_live": 1852,
+        "missing_wrong_team": 3713
+      }
+    },
+    {
+      "game": "3858",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.6797891036906856,
+      "macro_f1": 0.893353581580743,
+      "n_gt_spells": 305,
+      "n_pred_spells": 264,
+      "per_class": {
+        "H": {
+          "precision": 0.8857961053837342,
+          "recall": 0.8649114173228346,
+          "f1": 0.8752291916608188,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8855412410819689,
+          "recall": 0.8592987349337583,
+          "f1": 0.8722226435125502,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9181278456662838,
+          "recall": 0.9475540955509534,
+          "f1": 0.9326089095688601,
+          "support": 70015
+        }
+      },
+      "diagnostics": {
+        "short_reference": 77,
+        "short_matched": 16,
+        "missing_live": 35047,
+        "missing_false_dead": 5441,
+        "missing_dead": 63556,
+        "missing_false_live": 1847,
+        "missing_wrong_team": 3673
+      }
+    },
+    {
+      "game": "3858",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.681326352530541,
+      "macro_f1": 0.8931898756451763,
+      "n_gt_spells": 305,
+      "n_pred_spells": 268,
+      "per_class": {
+        "H": {
+          "precision": 0.8869146005509642,
+          "recall": 0.8642179670722978,
+          "f1": 0.8754191969545908,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8846153846153846,
+          "recall": 0.8597220838728957,
+          "f1": 0.8719911090904497,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9174978212452793,
+          "recall": 0.9472970077840462,
+          "f1": 0.932159320890488,
+          "support": 70015
+        }
+      },
+      "diagnostics": {
+        "short_reference": 77,
+        "short_matched": 17,
+        "missing_live": 35047,
+        "missing_false_dead": 5449,
+        "missing_dead": 63556,
+        "missing_false_live": 1847,
+        "missing_wrong_team": 3662
+      }
+    },
+    {
+      "game": "3858",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "control",
+      "spell_f1_mean": 0.6497237569060774,
+      "macro_f1": 0.8906097017831058,
+      "n_gt_spells": 305,
+      "n_pred_spells": 238,
+      "per_class": {
+        "H": {
+          "precision": 0.8747442958300551,
+          "recall": 0.8704590193271295,
+          "f1": 0.8725963964165985,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8902169915410078,
+          "recall": 0.8438838529734037,
+          "f1": 0.8664314387256782,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9179110668657707,
+          "recall": 0.948182532314504,
+          "f1": 0.932801270207041,
+          "support": 70015
+        }
+      },
+      "diagnostics": {
+        "short_reference": 77,
+        "short_matched": 11,
+        "missing_live": 35047,
+        "missing_false_dead": 5466,
+        "missing_dead": 63556,
+        "missing_false_live": 1797,
+        "missing_wrong_team": 4005
+      }
+    },
+    {
+      "game": "3858",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.6758377425044092,
+      "macro_f1": 0.8929889702491516,
+      "n_gt_spells": 305,
+      "n_pred_spells": 262,
+      "per_class": {
+        "H": {
+          "precision": 0.8843489196295873,
+          "recall": 0.8651798496778812,
+          "f1": 0.8746593697350716,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8860626012705435,
+          "recall": 0.8579290766012551,
+          "f1": 0.8717689183546946,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9180586501335474,
+          "recall": 0.9474826822823681,
+          "f1": 0.9325386226576886,
+          "support": 70015
+        }
+      },
+      "diagnostics": {
+        "short_reference": 77,
+        "short_matched": 16,
+        "missing_live": 35047,
+        "missing_false_dead": 5446,
+        "missing_dead": 63556,
+        "missing_false_live": 1852,
+        "missing_wrong_team": 3713
+      }
+    },
+    {
+      "game": "3858",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.6797891036906856,
+      "macro_f1": 0.893353581580743,
+      "n_gt_spells": 305,
+      "n_pred_spells": 264,
+      "per_class": {
+        "H": {
+          "precision": 0.8857961053837342,
+          "recall": 0.8649114173228346,
+          "f1": 0.8752291916608188,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8855412410819689,
+          "recall": 0.8592987349337583,
+          "f1": 0.8722226435125502,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9181278456662838,
+          "recall": 0.9475540955509534,
+          "f1": 0.9326089095688601,
+          "support": 70015
+        }
+      },
+      "diagnostics": {
+        "short_reference": 77,
+        "short_matched": 16,
+        "missing_live": 35047,
+        "missing_false_dead": 5441,
+        "missing_dead": 63556,
+        "missing_false_live": 1847,
+        "missing_wrong_team": 3673
+      }
+    },
+    {
+      "game": "3858",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.681326352530541,
+      "macro_f1": 0.8931898756451763,
+      "n_gt_spells": 305,
+      "n_pred_spells": 268,
+      "per_class": {
+        "H": {
+          "precision": 0.8869146005509642,
+          "recall": 0.8642179670722978,
+          "f1": 0.8754191969545908,
+          "support": 44704
+        },
+        "A": {
+          "precision": 0.8846153846153846,
+          "recall": 0.8597220838728957,
+          "f1": 0.8719911090904497,
+          "support": 40156
+        },
+        "D": {
+          "precision": 0.9174978212452793,
+          "recall": 0.9472970077840462,
+          "f1": 0.932159320890488,
+          "support": 70015
+        }
+      },
+      "diagnostics": {
+        "short_reference": 77,
+        "short_matched": 17,
+        "missing_live": 35047,
+        "missing_false_dead": 5449,
+        "missing_dead": 63556,
+        "missing_false_live": 1847,
+        "missing_wrong_team": 3662
+      }
+    },
+    {
+      "game": "3838",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "control",
+      "spell_f1_mean": 0.7001996007984032,
+      "macro_f1": 0.9028042711713219,
+      "n_gt_spells": 278,
+      "n_pred_spells": 223,
+      "per_class": {
+        "H": {
+          "precision": 0.8920983928528659,
+          "recall": 0.8661256191428505,
+          "f1": 0.8789201689595771,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.9173784977908689,
+          "recall": 0.8877012968505059,
+          "f1": 0.90229593684363,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.9060523358484508,
+          "recall": 0.9493515450217834,
+          "f1": 0.9271967077107582,
+          "support": 59449
+        }
+      },
+      "diagnostics": {
+        "short_reference": 53,
+        "short_matched": 7,
+        "missing_live": 32426,
+        "missing_false_dead": 5622,
+        "missing_dead": 53238,
+        "missing_false_live": 1534,
+        "missing_wrong_team": 3531
+      }
+    },
+    {
+      "game": "3838",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.7282242990654206,
+      "macro_f1": 0.9052829315307799,
+      "n_gt_spells": 278,
+      "n_pred_spells": 257,
+      "per_class": {
+        "H": {
+          "precision": 0.8912688457077939,
+          "recall": 0.8756830918773109,
+          "f1": 0.8834072301592886,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.9217290458618872,
+          "recall": 0.8899407561228853,
+          "f1": 0.9055560159098442,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.9085709669601745,
+          "recall": 0.9459536745782099,
+          "f1": 0.9268855485232068,
+          "support": 59449
+        }
+      },
+      "diagnostics": {
+        "short_reference": 53,
+        "short_matched": 18,
+        "missing_live": 32426,
+        "missing_false_dead": 5417,
+        "missing_dead": 53238,
+        "missing_false_live": 1757,
+        "missing_wrong_team": 3244
+      }
+    },
+    {
+      "game": "3838",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.7272045028142589,
+      "macro_f1": 0.9059669444610737,
+      "n_gt_spells": 278,
+      "n_pred_spells": 255,
+      "per_class": {
+        "H": {
+          "precision": 0.8920412936146087,
+          "recall": 0.878101527800386,
+          "f1": 0.8850165233084117,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.9207074428887251,
+          "recall": 0.8902664956534131,
+          "f1": 0.9052311259237792,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.9104057008664669,
+          "recall": 0.9455667883395852,
+          "f1": 0.9276531841510305,
+          "support": 59449
+        }
+      },
+      "diagnostics": {
+        "short_reference": 53,
+        "short_matched": 17,
+        "missing_live": 32426,
+        "missing_false_dead": 5290,
+        "missing_dead": 53238,
+        "missing_false_live": 1780,
+        "missing_wrong_team": 3272
+      }
+    },
+    {
+      "game": "3838",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.723134328358209,
+      "macro_f1": 0.9058450612466783,
+      "n_gt_spells": 278,
+      "n_pred_spells": 258,
+      "per_class": {
+        "H": {
+          "precision": 0.8919321296908971,
+          "recall": 0.8776829523521614,
+          "f1": 0.8847501728806011,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.9204040829211828,
+          "recall": 0.8903479305360451,
+          "f1": 0.9051265600099344,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.9104470359572401,
+          "recall": 0.9455331460579657,
+          "f1": 0.9276584508494996,
+          "support": 59449
+        }
+      },
+      "diagnostics": {
+        "short_reference": 53,
+        "short_matched": 15,
+        "missing_live": 32426,
+        "missing_false_dead": 5290,
+        "missing_dead": 53238,
+        "missing_false_live": 1780,
+        "missing_wrong_team": 3270
+      }
+    },
+    {
+      "game": "3838",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "control",
+      "spell_f1_mean": 0.7001996007984032,
+      "macro_f1": 0.9028042711713219,
+      "n_gt_spells": 278,
+      "n_pred_spells": 223,
+      "per_class": {
+        "H": {
+          "precision": 0.8920983928528659,
+          "recall": 0.8661256191428505,
+          "f1": 0.8789201689595771,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.9173784977908689,
+          "recall": 0.8877012968505059,
+          "f1": 0.90229593684363,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.9060523358484508,
+          "recall": 0.9493515450217834,
+          "f1": 0.9271967077107582,
+          "support": 59449
+        }
+      },
+      "diagnostics": {
+        "short_reference": 53,
+        "short_matched": 7,
+        "missing_live": 32426,
+        "missing_false_dead": 5622,
+        "missing_dead": 53238,
+        "missing_false_live": 1534,
+        "missing_wrong_team": 3531
+      }
+    },
+    {
+      "game": "3838",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.7282242990654206,
+      "macro_f1": 0.9052829315307799,
+      "n_gt_spells": 278,
+      "n_pred_spells": 257,
+      "per_class": {
+        "H": {
+          "precision": 0.8912688457077939,
+          "recall": 0.8756830918773109,
+          "f1": 0.8834072301592886,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.9217290458618872,
+          "recall": 0.8899407561228853,
+          "f1": 0.9055560159098442,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.9085709669601745,
+          "recall": 0.9459536745782099,
+          "f1": 0.9268855485232068,
+          "support": 59449
+        }
+      },
+      "diagnostics": {
+        "short_reference": 53,
+        "short_matched": 18,
+        "missing_live": 32426,
+        "missing_false_dead": 5417,
+        "missing_dead": 53238,
+        "missing_false_live": 1757,
+        "missing_wrong_team": 3244
+      }
+    },
+    {
+      "game": "3838",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.7272045028142589,
+      "macro_f1": 0.9059669444610737,
+      "n_gt_spells": 278,
+      "n_pred_spells": 255,
+      "per_class": {
+        "H": {
+          "precision": 0.8920412936146087,
+          "recall": 0.878101527800386,
+          "f1": 0.8850165233084117,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.9207074428887251,
+          "recall": 0.8902664956534131,
+          "f1": 0.9052311259237792,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.9104057008664669,
+          "recall": 0.9455667883395852,
+          "f1": 0.9276531841510305,
+          "support": 59449
+        }
+      },
+      "diagnostics": {
+        "short_reference": 53,
+        "short_matched": 17,
+        "missing_live": 32426,
+        "missing_false_dead": 5290,
+        "missing_dead": 53238,
+        "missing_false_live": 1780,
+        "missing_wrong_team": 3272
+      }
+    },
+    {
+      "game": "3838",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.723134328358209,
+      "macro_f1": 0.9058450612466783,
+      "n_gt_spells": 278,
+      "n_pred_spells": 258,
+      "per_class": {
+        "H": {
+          "precision": 0.8919321296908971,
+          "recall": 0.8776829523521614,
+          "f1": 0.8847501728806011,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.9204040829211828,
+          "recall": 0.8903479305360451,
+          "f1": 0.9051265600099344,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.9104470359572401,
+          "recall": 0.9455331460579657,
+          "f1": 0.9276584508494996,
+          "support": 59449
+        }
+      },
+      "diagnostics": {
+        "short_reference": 53,
+        "short_matched": 15,
+        "missing_live": 32426,
+        "missing_false_dead": 5290,
+        "missing_dead": 53238,
+        "missing_false_live": 1780,
+        "missing_wrong_team": 3270
+      }
+    },
+    {
+      "game": "3838",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "control",
+      "spell_f1_mean": 0.6915662650602409,
+      "macro_f1": 0.8918385814086393,
+      "n_gt_spells": 278,
+      "n_pred_spells": 220,
+      "per_class": {
+        "H": {
+          "precision": 0.8765271332512549,
+          "recall": 0.8608934260400437,
+          "f1": 0.8686399418106736,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.911454119650841,
+          "recall": 0.8715771900893747,
+          "f1": 0.8910697374309234,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.8943958951334884,
+          "recall": 0.9382664132281451,
+          "f1": 0.9158060649843204,
+          "support": 59449
+        }
+      },
+      "diagnostics": {
+        "short_reference": 53,
+        "short_matched": 3,
+        "missing_live": 36844,
+        "missing_false_dead": 6263,
+        "missing_dead": 54162,
+        "missing_false_live": 2393,
+        "missing_wrong_team": 3723
+      }
+    },
+    {
+      "game": "3838",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.7159474671669793,
+      "macro_f1": 0.894920658720138,
+      "n_gt_spells": 278,
+      "n_pred_spells": 255,
+      "per_class": {
+        "H": {
+          "precision": 0.8750990537453969,
+          "recall": 0.8731251308048276,
+          "f1": 0.8741109778952146,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.912241653418124,
+          "recall": 0.8761375435167654,
+          "f1": 0.8938251604461337,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.9016100178890877,
+          "recall": 0.9325640464936332,
+          "f1": 0.9168258378190658,
+          "support": 59449
+        }
+      },
+      "diagnostics": {
+        "short_reference": 53,
+        "short_matched": 13,
+        "missing_live": 36844,
+        "missing_false_dead": 5735,
+        "missing_dead": 54162,
+        "missing_false_live": 2730,
+        "missing_wrong_team": 3553
+      }
+    },
+    {
+      "game": "3838",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.7178907721280604,
+      "macro_f1": 0.8950904487938635,
+      "n_gt_spells": 278,
+      "n_pred_spells": 253,
+      "per_class": {
+        "H": {
+          "precision": 0.8756823589791443,
+          "recall": 0.8728925888891472,
+          "f1": 0.8742852484598633,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.9122736418511066,
+          "recall": 0.8769111749017692,
+          "f1": 0.8942429464155958,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.9015287038542853,
+          "recall": 0.9324799407895844,
+          "f1": 0.9167431515061313,
+          "support": 59449
+        }
+      },
+      "diagnostics": {
+        "short_reference": 53,
+        "short_matched": 12,
+        "missing_live": 36844,
+        "missing_false_dead": 5740,
+        "missing_dead": 54162,
+        "missing_false_live": 2735,
+        "missing_wrong_team": 3525
+      }
+    },
+    {
+      "game": "3838",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.7080373831775701,
+      "macro_f1": 0.8947909285306835,
+      "n_gt_spells": 278,
+      "n_pred_spells": 257,
+      "per_class": {
+        "H": {
+          "precision": 0.8765802041389643,
+          "recall": 0.8707299490733205,
+          "f1": 0.873645282842777,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.9106886354034643,
+          "recall": 0.8777051650074309,
+          "f1": 0.8938927419940079,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.9014386734942696,
+          "recall": 0.9327659001833505,
+          "f1": 0.916834760755266,
+          "support": 59449
+        }
+      },
+      "diagnostics": {
+        "short_reference": 53,
+        "short_matched": 11,
+        "missing_live": 36844,
+        "missing_false_dead": 5742,
+        "missing_dead": 54162,
+        "missing_false_live": 2731,
+        "missing_wrong_team": 3540
+      }
+    },
+    {
+      "game": "3838",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "control",
+      "spell_f1_mean": 0.6915662650602409,
+      "macro_f1": 0.8918385814086393,
+      "n_gt_spells": 278,
+      "n_pred_spells": 220,
+      "per_class": {
+        "H": {
+          "precision": 0.8765271332512549,
+          "recall": 0.8608934260400437,
+          "f1": 0.8686399418106736,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.911454119650841,
+          "recall": 0.8715771900893747,
+          "f1": 0.8910697374309234,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.8943958951334884,
+          "recall": 0.9382664132281451,
+          "f1": 0.9158060649843204,
+          "support": 59449
+        }
+      },
+      "diagnostics": {
+        "short_reference": 53,
+        "short_matched": 3,
+        "missing_live": 36844,
+        "missing_false_dead": 6263,
+        "missing_dead": 54162,
+        "missing_false_live": 2393,
+        "missing_wrong_team": 3723
+      }
+    },
+    {
+      "game": "3838",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.7159474671669793,
+      "macro_f1": 0.894920658720138,
+      "n_gt_spells": 278,
+      "n_pred_spells": 255,
+      "per_class": {
+        "H": {
+          "precision": 0.8750990537453969,
+          "recall": 0.8731251308048276,
+          "f1": 0.8741109778952146,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.912241653418124,
+          "recall": 0.8761375435167654,
+          "f1": 0.8938251604461337,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.9016100178890877,
+          "recall": 0.9325640464936332,
+          "f1": 0.9168258378190658,
+          "support": 59449
+        }
+      },
+      "diagnostics": {
+        "short_reference": 53,
+        "short_matched": 13,
+        "missing_live": 36844,
+        "missing_false_dead": 5735,
+        "missing_dead": 54162,
+        "missing_false_live": 2730,
+        "missing_wrong_team": 3553
+      }
+    },
+    {
+      "game": "3838",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.7178907721280604,
+      "macro_f1": 0.8950904487938635,
+      "n_gt_spells": 278,
+      "n_pred_spells": 253,
+      "per_class": {
+        "H": {
+          "precision": 0.8756823589791443,
+          "recall": 0.8728925888891472,
+          "f1": 0.8742852484598633,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.9122736418511066,
+          "recall": 0.8769111749017692,
+          "f1": 0.8942429464155958,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.9015287038542853,
+          "recall": 0.9324799407895844,
+          "f1": 0.9167431515061313,
+          "support": 59449
+        }
+      },
+      "diagnostics": {
+        "short_reference": 53,
+        "short_matched": 12,
+        "missing_live": 36844,
+        "missing_false_dead": 5740,
+        "missing_dead": 54162,
+        "missing_false_live": 2735,
+        "missing_wrong_team": 3525
+      }
+    },
+    {
+      "game": "3838",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.7080373831775701,
+      "macro_f1": 0.8947909285306835,
+      "n_gt_spells": 278,
+      "n_pred_spells": 257,
+      "per_class": {
+        "H": {
+          "precision": 0.8765802041389643,
+          "recall": 0.8707299490733205,
+          "f1": 0.873645282842777,
+          "support": 43003
+        },
+        "A": {
+          "precision": 0.9106886354034643,
+          "recall": 0.8777051650074309,
+          "f1": 0.8938927419940079,
+          "support": 49119
+        },
+        "D": {
+          "precision": 0.9014386734942696,
+          "recall": 0.9327659001833505,
+          "f1": 0.916834760755266,
+          "support": 59449
+        }
+      },
+      "diagnostics": {
+        "short_reference": 53,
+        "short_matched": 11,
+        "missing_live": 36844,
+        "missing_false_dead": 5742,
+        "missing_dead": 54162,
+        "missing_false_live": 2731,
+        "missing_wrong_team": 3540
+      }
+    },
+    {
+      "game": "3842",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "control",
+      "spell_f1_mean": 0.7054545454545454,
+      "macro_f1": 0.9176680525640494,
+      "n_gt_spells": 268,
+      "n_pred_spells": 227,
+      "per_class": {
+        "H": {
+          "precision": 0.923131870312314,
+          "recall": 0.8995185707932948,
+          "f1": 0.9111722598145301,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9130510672252145,
+          "recall": 0.8983341919972523,
+          "f1": 0.9056328448648984,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.9192998450177774,
+          "recall": 0.953731202118604,
+          "f1": 0.9361990530127193,
+          "support": 52865
+        }
+      },
+      "diagnostics": {
+        "short_reference": 61,
+        "short_matched": 11,
+        "missing_live": 27327,
+        "missing_false_dead": 4251,
+        "missing_dead": 47157,
+        "missing_false_live": 1190,
+        "missing_wrong_team": 3105
+      }
+    },
+    {
+      "game": "3842",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.7245579567779961,
+      "macro_f1": 0.9207667202267092,
+      "n_gt_spells": 268,
+      "n_pred_spells": 241,
+      "per_class": {
+        "H": {
+          "precision": 0.925244177310293,
+          "recall": 0.904796891011388,
+          "f1": 0.9149063040694435,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9167744503034524,
+          "recall": 0.9042467064105395,
+          "f1": 0.9104674859507195,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.9223311646659947,
+          "recall": 0.9519909202686088,
+          "f1": 0.9369263706599645,
+          "support": 52865
+        }
+      },
+      "diagnostics": {
+        "short_reference": 61,
+        "short_matched": 15,
+        "missing_live": 27327,
+        "missing_false_dead": 4063,
+        "missing_dead": 47157,
+        "missing_false_live": 1290,
+        "missing_wrong_team": 2800
+      }
+    },
+    {
+      "game": "3842",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.7238095238095238,
+      "macro_f1": 0.920758269390415,
+      "n_gt_spells": 268,
+      "n_pred_spells": 236,
+      "per_class": {
+        "H": {
+          "precision": 0.9244541829523472,
+          "recall": 0.905454264225363,
+          "f1": 0.9148555856181444,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9181423654412132,
+          "recall": 0.9031181766885013,
+          "f1": 0.9105683012800692,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.922007509845224,
+          "recall": 0.9521800813392604,
+          "f1": 0.9368509212730318,
+          "support": 52865
+        }
+      },
+      "diagnostics": {
+        "short_reference": 61,
+        "short_matched": 15,
+        "missing_live": 27327,
+        "missing_false_dead": 4083,
+        "missing_dead": 47157,
+        "missing_false_live": 1288,
+        "missing_wrong_team": 2817
+      }
+    },
+    {
+      "game": "3842",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.716078431372549,
+      "macro_f1": 0.9205052871653443,
+      "n_gt_spells": 268,
+      "n_pred_spells": 242,
+      "per_class": {
+        "H": {
+          "precision": 0.9247477440120057,
+          "recall": 0.9054735987316563,
+          "f1": 0.9150091829158689,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9173605225108441,
+          "recall": 0.9027992443757513,
+          "f1": 0.9100216383307573,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.9216889540208829,
+          "recall": 0.9517639269838267,
+          "f1": 0.9364850402494067,
+          "support": 52865
+        }
+      },
+      "diagnostics": {
+        "short_reference": 61,
+        "short_matched": 15,
+        "missing_live": 27327,
+        "missing_false_dead": 4083,
+        "missing_dead": 47157,
+        "missing_false_live": 1285,
+        "missing_wrong_team": 2816
+      }
+    },
+    {
+      "game": "3842",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "control",
+      "spell_f1_mean": 0.7054545454545454,
+      "macro_f1": 0.9176680525640494,
+      "n_gt_spells": 268,
+      "n_pred_spells": 227,
+      "per_class": {
+        "H": {
+          "precision": 0.923131870312314,
+          "recall": 0.8995185707932948,
+          "f1": 0.9111722598145301,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9130510672252145,
+          "recall": 0.8983341919972523,
+          "f1": 0.9056328448648984,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.9192998450177774,
+          "recall": 0.953731202118604,
+          "f1": 0.9361990530127193,
+          "support": 52865
+        }
+      },
+      "diagnostics": {
+        "short_reference": 61,
+        "short_matched": 11,
+        "missing_live": 27327,
+        "missing_false_dead": 4251,
+        "missing_dead": 47157,
+        "missing_false_live": 1190,
+        "missing_wrong_team": 3105
+      }
+    },
+    {
+      "game": "3842",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.7245579567779961,
+      "macro_f1": 0.9207667202267092,
+      "n_gt_spells": 268,
+      "n_pred_spells": 241,
+      "per_class": {
+        "H": {
+          "precision": 0.925244177310293,
+          "recall": 0.904796891011388,
+          "f1": 0.9149063040694435,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9167744503034524,
+          "recall": 0.9042467064105395,
+          "f1": 0.9104674859507195,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.9223311646659947,
+          "recall": 0.9519909202686088,
+          "f1": 0.9369263706599645,
+          "support": 52865
+        }
+      },
+      "diagnostics": {
+        "short_reference": 61,
+        "short_matched": 15,
+        "missing_live": 27327,
+        "missing_false_dead": 4063,
+        "missing_dead": 47157,
+        "missing_false_live": 1290,
+        "missing_wrong_team": 2800
+      }
+    },
+    {
+      "game": "3842",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.7238095238095238,
+      "macro_f1": 0.920758269390415,
+      "n_gt_spells": 268,
+      "n_pred_spells": 236,
+      "per_class": {
+        "H": {
+          "precision": 0.9244541829523472,
+          "recall": 0.905454264225363,
+          "f1": 0.9148555856181444,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9181423654412132,
+          "recall": 0.9031181766885013,
+          "f1": 0.9105683012800692,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.922007509845224,
+          "recall": 0.9521800813392604,
+          "f1": 0.9368509212730318,
+          "support": 52865
+        }
+      },
+      "diagnostics": {
+        "short_reference": 61,
+        "short_matched": 15,
+        "missing_live": 27327,
+        "missing_false_dead": 4083,
+        "missing_dead": 47157,
+        "missing_false_live": 1288,
+        "missing_wrong_team": 2817
+      }
+    },
+    {
+      "game": "3842",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.716078431372549,
+      "macro_f1": 0.9205052871653443,
+      "n_gt_spells": 268,
+      "n_pred_spells": 242,
+      "per_class": {
+        "H": {
+          "precision": 0.9247477440120057,
+          "recall": 0.9054735987316563,
+          "f1": 0.9150091829158689,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9173605225108441,
+          "recall": 0.9027992443757513,
+          "f1": 0.9100216383307573,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.9216889540208829,
+          "recall": 0.9517639269838267,
+          "f1": 0.9364850402494067,
+          "support": 52865
+        }
+      },
+      "diagnostics": {
+        "short_reference": 61,
+        "short_matched": 15,
+        "missing_live": 27327,
+        "missing_false_dead": 4083,
+        "missing_dead": 47157,
+        "missing_false_live": 1285,
+        "missing_wrong_team": 2816
+      }
+    },
+    {
+      "game": "3842",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "control",
+      "spell_f1_mean": 0.7094949494949496,
+      "macro_f1": 0.9164803506123934,
+      "n_gt_spells": 268,
+      "n_pred_spells": 227,
+      "per_class": {
+        "H": {
+          "precision": 0.9199810419052885,
+          "recall": 0.9007173101834844,
+          "f1": 0.9102472669721275,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9155092592592593,
+          "recall": 0.8926670101322343,
+          "f1": 0.9039438544189803,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.9173837896843445,
+          "recall": 0.9538257826539298,
+          "f1": 0.9352499304460724,
+          "support": 52865
+        }
+      },
+      "diagnostics": {
+        "short_reference": 61,
+        "short_matched": 9,
+        "missing_live": 39031,
+        "missing_false_dead": 4422,
+        "missing_dead": 48131,
+        "missing_false_live": 1413,
+        "missing_wrong_team": 3308
+      }
+    },
+    {
+      "game": "3842",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.7106796116504854,
+      "macro_f1": 0.9168927836762077,
+      "n_gt_spells": 268,
+      "n_pred_spells": 247,
+      "per_class": {
+        "H": {
+          "precision": 0.9207042364843503,
+          "recall": 0.9008913207401249,
+          "f1": 0.9106900292194783,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9155896202785292,
+          "recall": 0.8967885969431565,
+          "f1": 0.9060915907541673,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.9172854145763021,
+          "recall": 0.9511207793436111,
+          "f1": 0.9338967310549776,
+          "support": 52865
+        }
+      },
+      "diagnostics": {
+        "short_reference": 61,
+        "short_matched": 14,
+        "missing_live": 39031,
+        "missing_false_dead": 4412,
+        "missing_dead": 48131,
+        "missing_false_live": 1551,
+        "missing_wrong_team": 3145
+      }
+    },
+    {
+      "game": "3842",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.7145631067961166,
+      "macro_f1": 0.9166777425060059,
+      "n_gt_spells": 268,
+      "n_pred_spells": 247,
+      "per_class": {
+        "H": {
+          "precision": 0.9205426356589147,
+          "recall": 0.9000212679569227,
+          "f1": 0.9101662935408499,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9148946815430029,
+          "recall": 0.897230195530041,
+          "f1": 0.9059763423546171,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.9173615546026822,
+          "recall": 0.9510261988082852,
+          "f1": 0.9338905916225504,
+          "support": 52865
+        }
+      },
+      "diagnostics": {
+        "short_reference": 61,
+        "short_matched": 14,
+        "missing_live": 39031,
+        "missing_false_dead": 4407,
+        "missing_dead": 48131,
+        "missing_false_live": 1558,
+        "missing_wrong_team": 3177
+      }
+    },
+    {
+      "game": "3842",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.7102514506769826,
+      "macro_f1": 0.9164631676522869,
+      "n_gt_spells": 268,
+      "n_pred_spells": 249,
+      "per_class": {
+        "H": {
+          "precision": 0.920447802523834,
+          "recall": 0.8997505848688154,
+          "f1": 0.9099815211333705,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9145408163265306,
+          "recall": 0.8971075292559064,
+          "f1": 0.9057402935166264,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.9171425964784236,
+          "recall": 0.9507992055235033,
+          "f1": 0.9336676883068636,
+          "support": 52865
+        }
+      },
+      "diagnostics": {
+        "short_reference": 61,
+        "short_matched": 14,
+        "missing_live": 39031,
+        "missing_false_dead": 4407,
+        "missing_dead": 48131,
+        "missing_false_live": 1558,
+        "missing_wrong_team": 3183
+      }
+    },
+    {
+      "game": "3842",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "control",
+      "spell_f1_mean": 0.7094949494949496,
+      "macro_f1": 0.9164803506123934,
+      "n_gt_spells": 268,
+      "n_pred_spells": 227,
+      "per_class": {
+        "H": {
+          "precision": 0.9199810419052885,
+          "recall": 0.9007173101834844,
+          "f1": 0.9102472669721275,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9155092592592593,
+          "recall": 0.8926670101322343,
+          "f1": 0.9039438544189803,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.9173837896843445,
+          "recall": 0.9538257826539298,
+          "f1": 0.9352499304460724,
+          "support": 52865
+        }
+      },
+      "diagnostics": {
+        "short_reference": 61,
+        "short_matched": 9,
+        "missing_live": 39031,
+        "missing_false_dead": 4422,
+        "missing_dead": 48131,
+        "missing_false_live": 1413,
+        "missing_wrong_team": 3308
+      }
+    },
+    {
+      "game": "3842",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_link_missing_only",
+      "spell_f1_mean": 0.7106796116504854,
+      "macro_f1": 0.9168927836762077,
+      "n_gt_spells": 268,
+      "n_pred_spells": 247,
+      "per_class": {
+        "H": {
+          "precision": 0.9207042364843503,
+          "recall": 0.9008913207401249,
+          "f1": 0.9106900292194783,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9155896202785292,
+          "recall": 0.8967885969431565,
+          "f1": 0.9060915907541673,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.9172854145763021,
+          "recall": 0.9511207793436111,
+          "f1": 0.9338967310549776,
+          "support": 52865
+        }
+      },
+      "diagnostics": {
+        "short_reference": 61,
+        "short_matched": 14,
+        "missing_live": 39031,
+        "missing_false_dead": 4412,
+        "missing_dead": 48131,
+        "missing_false_live": 1551,
+        "missing_wrong_team": 3145
+      }
+    },
+    {
+      "game": "3842",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_missing_only",
+      "spell_f1_mean": 0.7145631067961166,
+      "macro_f1": 0.9166777425060059,
+      "n_gt_spells": 268,
+      "n_pred_spells": 247,
+      "per_class": {
+        "H": {
+          "precision": 0.9205426356589147,
+          "recall": 0.9000212679569227,
+          "f1": 0.9101662935408499,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9148946815430029,
+          "recall": 0.897230195530041,
+          "f1": 0.9059763423546171,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.9173615546026822,
+          "recall": 0.9510261988082852,
+          "f1": 0.9338905916225504,
+          "support": 52865
+        }
+      },
+      "diagnostics": {
+        "short_reference": 61,
+        "short_matched": 14,
+        "missing_live": 39031,
+        "missing_false_dead": 4407,
+        "missing_dead": 48131,
+        "missing_false_live": 1558,
+        "missing_wrong_team": 3177
+      }
+    },
+    {
+      "game": "3842",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "candidate": "focus_bce_gap100",
+      "spell_f1_mean": 0.7102514506769826,
+      "macro_f1": 0.9164631676522869,
+      "n_gt_spells": 268,
+      "n_pred_spells": 249,
+      "per_class": {
+        "H": {
+          "precision": 0.920447802523834,
+          "recall": 0.8997505848688154,
+          "f1": 0.9099815211333705,
+          "support": 51721
+        },
+        "A": {
+          "precision": 0.9145408163265306,
+          "recall": 0.8971075292559064,
+          "f1": 0.9057402935166264,
+          "support": 40761
+        },
+        "D": {
+          "precision": 0.9171425964784236,
+          "recall": 0.9507992055235033,
+          "f1": 0.9336676883068636,
+          "support": 52865
+        }
+      },
+      "diagnostics": {
+        "short_reference": 61,
+        "short_matched": 14,
+        "missing_live": 39031,
+        "missing_false_dead": 4407,
+        "missing_dead": 48131,
+        "missing_false_live": 1558,
+        "missing_wrong_team": 3183
+      }
+    }
+  ]
+}

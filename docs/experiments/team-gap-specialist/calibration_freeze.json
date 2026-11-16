@@ -1,0 +1,15 @@
+{
+  "frozen_utc": "2026-11-16T16:08:10.462482+00:00",
+  "source_commit": "e6b63421ce46268d7efb591ef9716425626fd16e",
+  "files_sha256": {
+    "tools/team_gap_calibration.py": "e651e2ca9e937226013aaf805f194b9119962add4b9acc8c37eba6e1aa1a114b",
+    "tools/team_gap_calibration_study.py": "25032c662e51a03077cbf83f61cfa49be789f0f9713e3aef2cfba9146a003bb9",
+    "tests/test_team_gap_calibration.py": "857f814ca1d1362aec5f2c501f69fdc2408d2164179fd2cf26febb2908e84553",
+    "tools/report_team_gap_specialist.py": "9eba78c058cd15ee5264b25c5354420cfbaf43086e74d1e62816ce9b30254442",
+    "docs/experiments/team-gap-specialist/calibration_plan.json": "185ae8f15c796dc2d7f88712e5652b8d22b9ec46c6ee62fb91305a2ca10332c0",
+    "reports/team_gap_specialist/uniform/model.pt": "6ca12d983f25d5cf2269510abcfdcbd707ac689bd95d943190dc0b57a17845c5",
+    "reports/team_gap_specialist/uniform/meta.json": "cdf42723c36a66aeda45c371cd4b9db8894026fb91a94dce9a8dc8d902117c6a",
+    "reports/team_gap_specialist/focus/model.pt": "2b931e44c4b38a977309ae5c47c8cd24345dc87ee11d5e03c8c560916dafb73c",
+    "reports/team_gap_specialist/focus/meta.json": "2e6769fab97a6d3fa92941c6a57598e208c17326096c416711df3405efe30ad0"
+  }
+}

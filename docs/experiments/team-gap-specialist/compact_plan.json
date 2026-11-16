@@ -1,0 +1,29 @@
+{
+  "registered_utc": "2026-11-16T16:14:17.192963+00:00",
+  "stage": "After calibration outcomes; before compact fit/scores",
+  "reason": "Loss/link variants find more short spells but still underperform stress gain requirement. Test whether broad102s ownership receptive field suppresses local ownership changes. Smaller model is a hypothesis; do not assume it improves.",
+  "candidates": [
+    "control",
+    "compact_focus_missing_only",
+    "compact_focus_gap100"
+  ],
+  "architecture": {
+    "dilations": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "context_steps": 64,
+    "receptive_steps": 125,
+    "receptive_seconds": 25,
+    "width": 48,
+    "input_features": 108
+  },
+  "initialization": "Copy parent input and first5residual blocks exactly; copy original head net9 to compact head net7. Drop two broadest blocks. Parent production remains unchanged.",
+  "fit": "Same65train/139scenarios,mean/scale,4000steps,lr5e-5,seed20261117,AdamWwd.001,batch16,core256,50%short-focused windows,missingx3 and gamma1 focal as original focus. Only model context/architecture differs; stochastic activations need not match.",
+  "routing": "missing_only retains parent observed H/A. gap100 uses50/50inherited/compact observed. Compact alone missing. D/decoder frozen.",
+  "gates": "All original gates unchanged, both scenarios/references; no18match or target reads.",
+  "limit": "Single architecture, single final checkpoint; no depth/learning-rate sweep"
+}
