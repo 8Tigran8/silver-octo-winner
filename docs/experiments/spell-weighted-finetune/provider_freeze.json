@@ -1,0 +1,13 @@
+{
+  "source_commit": "88419478cb141d804c8e81fd0a17bcbc36c1823e",
+  "frozen_utc": "2026-11-16T13:50:36.442278+00:00",
+  "files_sha256": {
+    "tools/recovery_candidate_runtime.py": "b1e1f4f979135136227244ea95deff91121727c952f07bc73f72ddbda3b5e592",
+    "tools/recovery_provider_regression.py": "64d04e1bece4f2b5b262b164796b918e894a0a15649f9d8e056ef931c5cdf1d3",
+    "tools/short_gap_methods.py": "2bbd121fd6a653e3bfe4dcde61457c81cb02c8c20c9edc07e97e148a9907c10e",
+    "docs/experiments/spell-weighted-finetune/selection.json": "842aae8038da614d0873a68377b24ba5a58f1ff600031d0828d6e1470afb07b4",
+    "docs/experiments/spell-weighted-finetune/combined_plan.json": "9bd86cc0c7522c923f6a32879de9b563e37abc3c92650fe15df045b40860b3aa",
+    "reports/spell_weighted_finetune/weighted/model.pt": "aadb7e73228fdeed29a9c79d9edf0beaed1183a4d97731d04ef62a50c07f8a07",
+    "reports/short_gap_recovery/gap_expert.pkl": "287dbb28ebf592e761b8b958d413362e28d18ca5a1953c75af5d5029dd7599e2"
+  }
+}
