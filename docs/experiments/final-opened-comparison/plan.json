@@ -1,0 +1,237 @@
+{
+  "registered_utc": "2026-11-17T10:37:38.443184+00:00",
+  "scope": "User-authorized one-shot old/new choice on 18 previously opened PFF matches; results consume these fixtures for model selection, not a fresh prospective holdout.",
+  "fixtures": [
+    {
+      "game_id": "10502",
+      "home": "Netherlands",
+      "away": "United States",
+      "date": "2022-12-03T15:00:00",
+      "cohort": "bridge6",
+      "historical_scores": "reports/unseen_bridge_audit/10502_scores.json"
+    },
+    {
+      "game_id": "10505",
+      "home": "England",
+      "away": "Senegal",
+      "date": "2022-12-04T19:00:00",
+      "cohort": "bridge6",
+      "historical_scores": "reports/unseen_bridge_audit/10505_scores.json"
+    },
+    {
+      "game_id": "10507",
+      "home": "Brazil",
+      "away": "South Korea",
+      "date": "2022-12-05T19:00:00",
+      "cohort": "bridge6",
+      "historical_scores": "reports/unseen_bridge_audit/10507_scores.json"
+    },
+    {
+      "game_id": "10509",
+      "home": "Portugal",
+      "away": "Switzerland",
+      "date": "2022-12-06T19:00:00",
+      "cohort": "bridge6",
+      "historical_scores": "reports/unseen_bridge_audit/10509_scores.json"
+    },
+    {
+      "game_id": "10511",
+      "home": "Netherlands",
+      "away": "Argentina",
+      "date": "2022-12-09T19:00:00",
+      "cohort": "bridge6",
+      "historical_scores": "reports/unseen_bridge_audit/10511_scores.json"
+    },
+    {
+      "game_id": "10512",
+      "home": "Morocco",
+      "away": "Portugal",
+      "date": "2022-12-10T15:00:00",
+      "cohort": "bridge6",
+      "historical_scores": "reports/unseen_bridge_audit/10512_scores.json"
+    },
+    {
+      "game_id": "3812",
+      "home": "Senegal",
+      "away": "Netherlands",
+      "date": "2022-11-21T16:00:00",
+      "cohort": "original_final12",
+      "historical_scores": "reports/pff_mixed_final/3812_scores.json"
+    },
+    {
+      "game_id": "3814",
+      "home": "Qatar",
+      "away": "Ecuador",
+      "date": "2022-11-20T16:00:00",
+      "cohort": "original_final12",
+      "historical_scores": "reports/pff_mixed_final/3814_scores.json"
+    },
+    {
+      "game_id": "3825",
+      "home": "Uruguay",
+      "away": "South Korea",
+      "date": "2022-11-24T13:00:00",
+      "cohort": "original_final12",
+      "historical_scores": "reports/pff_mixed_final/3825_scores.json"
+    },
+    {
+      "game_id": "3826",
+      "home": "Portugal",
+      "away": "Ghana",
+      "date": "2022-11-24T16:00:00",
+      "cohort": "original_final12",
+      "historical_scores": "reports/pff_mixed_final/3826_scores.json"
+    },
+    {
+      "game_id": "3829",
+      "home": "Qatar",
+      "away": "Senegal",
+      "date": "2022-11-25T13:00:00",
+      "cohort": "original_final12",
+      "historical_scores": "reports/pff_mixed_final/3829_scores.json"
+    },
+    {
+      "game_id": "3830",
+      "home": "Netherlands",
+      "away": "Ecuador",
+      "date": "2022-11-25T16:00:00",
+      "cohort": "original_final12",
+      "historical_scores": "reports/pff_mixed_final/3830_scores.json"
+    },
+    {
+      "game_id": "3841",
+      "home": "South Korea",
+      "away": "Ghana",
+      "date": "2022-11-28T13:00:00",
+      "cohort": "original_final12",
+      "historical_scores": "reports/pff_mixed_final/3841_scores.json"
+    },
+    {
+      "game_id": "3843",
+      "home": "Portugal",
+      "away": "Uruguay",
+      "date": "2022-11-28T19:00:00",
+      "cohort": "original_final12",
+      "historical_scores": "reports/pff_mixed_final/3843_scores.json"
+    },
+    {
+      "game_id": "3844",
+      "home": "Ecuador",
+      "away": "Senegal",
+      "date": "2022-11-29T15:00:00",
+      "cohort": "original_final12",
+      "historical_scores": "reports/pff_mixed_final/3844_scores.json"
+    },
+    {
+      "game_id": "3845",
+      "home": "Netherlands",
+      "away": "Qatar",
+      "date": "2022-11-29T15:00:00",
+      "cohort": "original_final12",
+      "historical_scores": "reports/pff_mixed_final/3845_scores.json"
+    },
+    {
+      "game_id": "3856",
+      "home": "Ghana",
+      "away": "Uruguay",
+      "date": "2022-12-02T15:00:00",
+      "cohort": "original_final12",
+      "historical_scores": "reports/pff_mixed_final/3856_scores.json"
+    },
+    {
+      "game_id": "3857",
+      "home": "South Korea",
+      "away": "Portugal",
+      "date": "2022-12-02T15:00:00",
+      "cohort": "original_final12",
+      "historical_scores": "reports/pff_mixed_final/3857_scores.json"
+    }
+  ],
+  "candidates": [
+    "weighted_short_gap",
+    "uniform_temporal_focus"
+  ],
+  "scenarios": [
+    "natural_detected",
+    "label_blind_seed7",
+    "vv_hz10_noise0p5",
+    "vv_hz15_noise0p5",
+    "vv_hz10_noise2",
+    "vv_hz15_noise2"
+  ],
+  "vv_presets": {
+    "hz10_noise0p5": {
+      "description": "10 Hz requested, 0.5 m xy standard deviation, 2 Poisson burst starts per minute, uniform 2-6 s duration.",
+      "observation_hz": 10,
+      "noise_std_m": 0.5,
+      "ball_bursts_per_minute": 2.0,
+      "burst_min_s": 2.0,
+      "burst_max_s": 6.0
+    },
+    "hz15_noise0p5": {
+      "description": "15 Hz requested, 0.5 m xy standard deviation, 2 Poisson burst starts per minute, uniform 2-6 s duration.",
+      "observation_hz": 15,
+      "noise_std_m": 0.5,
+      "ball_bursts_per_minute": 2.0,
+      "burst_min_s": 2.0,
+      "burst_max_s": 6.0
+    },
+    "hz10_noise2": {
+      "description": "10 Hz requested, 2 m xy standard deviation, 2 Poisson burst starts per minute, uniform 2-6 s duration.",
+      "observation_hz": 10,
+      "noise_std_m": 2,
+      "ball_bursts_per_minute": 2.0,
+      "burst_min_s": 2.0,
+      "burst_max_s": 6.0
+    },
+    "hz15_noise2": {
+      "description": "15 Hz requested, 2 m xy standard deviation, 2 Poisson burst starts per minute, uniform 2-6 s duration.",
+      "observation_hz": 15,
+      "noise_std_m": 2,
+      "ball_bursts_per_minute": 2.0,
+      "burst_min_s": 2.0,
+      "burst_max_s": 6.0
+    }
+  },
+  "vv_seed": 20261113,
+  "vv_adapter": "Apply unchanged PR2 corrupt_geometry to the audited 25Hz canonical PFF geometry, source_hz=25. This is corruption of the model input grid, not a new native-PFF acquisition simulation. Same seed, arrays, valid periods and reference for both models; retain gaps. Do not claim it matches organizer error distribution.",
+  "references": [
+    "canonical",
+    "sdk_shadow"
+  ],
+  "cohorts": [
+    "bridge6",
+    "original_final12",
+    "all18"
+  ],
+  "selection": {
+    "rule": "Retain final candidate only if all prespecified comparison guards pass; otherwise roll back to weighted_short_gap. No alternate mixture, decoder tuning or training. Missing/invalid cells block decision rather than being dropped.",
+    "comparison_guards": {
+      "mean_spell_gain_min": 0.0,
+      "mean_macro_gain_min": -0.002,
+      "worst_match_spell_gain_min": -0.02,
+      "mean_each_class_f1_gain_min": -0.01
+    },
+    "guard_scope": "Each of 3 cohorts x 6 scenarios x 2 references, separately; never average natural and stress together.",
+    "diagnostic_guards": {
+      "short_under3_recall_gain_min": 0.0,
+      "missing_false_dead_rate_increase_max": 0.01,
+      "missing_false_live_rate_increase_max": 0.01,
+      "missing_wrong_team_rate_increase_max": 0.01
+    },
+    "diagnostic_scope": "Pooled all18, natural and original blind scenarios, both references. VV diagnostics reported separately; no fabricated target-equivalence assumption.",
+    "rationale": "Conservative release-regression policy, not a hypothesis-test noninferiority margin. Reuse existing mean/macro/worst guards; add class and gap-error safeguards before any new-candidate audit outcomes. No arbitrary +0.02 improvement requirement. Heavy VV stress is deliberately a conservative veto even if not target calibrated."
+  },
+  "uncertainty": "Paired whole-match bootstrap, 10000 replicates, seed20261117, descriptive percentile95 interval; shared teams/provider and post-selection reuse prevent a clean generalization guarantee. No frame-level bootstrap.",
+  "controls": [
+    "Freeze weights, inference/scoring source, input hashes, decoder and plan before predictions",
+    "Write predictions for all scenarios of a match before accessing its reference",
+    "Validate paired inference against both portable entrypoints on training3816, natural and vv_hz10_noise0p5; no quality scores",
+    "Regenerate references using unchanged reader and compare exactly with previous audited references",
+    "Old natural/blind predictions must exactly match prior recovery audit",
+    "No target labels or public-window scoring",
+    "No new fitting, calibration, threshold search, result-dependent fixture exclusion",
+    "No submission or publication"
+  ],
+  "metrica3": "Not included in primary gate: previously researched, competition anonymous, not a fresh independent top-level match. No new data acquisition required for this bounded comparison."
+}

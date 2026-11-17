@@ -1,0 +1,12 @@
+{
+  "source": "Telegram VV message read in UI, 17 November 2026, 08:56",
+  "evidence_type": "Teammate report; machine receipt not attached or independently inspected in this turn",
+  "commit": "331ecea63fdcda2cef082dc885ef60294432efa6",
+  "platform": "Linux ARM on a separate server",
+  "runs": 2,
+  "reported_csv_sha256": "897db60c18fefe362acee239665136d47a8b2c87a54eb8eae67231b0dcdf9e33",
+  "reported_validator": "PASS",
+  "reported_final_gate": "PASS",
+  "reported_seconds_per_run": 100,
+  "reported_memory_gb": 1.2
+}

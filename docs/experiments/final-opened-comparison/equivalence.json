@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "game": "3816",
+  "quality_scored": false,
+  "records": [
+    {
+      "scenario": "natural_detected",
+      "candidate": "weighted_short_gap",
+      "max_probability_error": 0.0
+    },
+    {
+      "scenario": "natural_detected",
+      "candidate": "uniform_temporal_focus",
+      "max_probability_error": 0.0
+    },
+    {
+      "scenario": "vv_hz10_noise0p5",
+      "candidate": "weighted_short_gap",
+      "max_probability_error": 0.0
+    },
+    {
+      "scenario": "vv_hz10_noise0p5",
+      "candidate": "uniform_temporal_focus",
+      "max_probability_error": 0.0
+    }
+  ],
+  "tool_sha256": "70271f91c357603b12f4b0fcd2fc841c348191292320ea3ac2cf8407727c65a8"
+}
