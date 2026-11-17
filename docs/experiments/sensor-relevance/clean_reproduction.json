@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "candidate": "uniform_temporal_focus",
+  "source_archive_commit": "1de1db74ceb5833bb811c5552bcad64ad58e9fa4",
+  "csv_sha256": "897db60c18fefe362acee239665136d47a8b2c87a54eb8eae67231b0dcdf9e33",
+  "seconds": 36.41632237506565,
+  "official_validator": "PASS",
+  "exact_source_model_gate": "PASS",
+  "only_tactical_input_files_exposed": true,
+  "target_quality_assessed": false,
+  "training_repeated": false
+}

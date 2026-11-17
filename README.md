@@ -1,55 +1,50 @@
-# Ruses Cules — More Than a Hack 2027
+# Ruses Cules - team possession from tactical tracking
 
-Current selected candidate: **weighted_short_gap**. Technical validation PASS; hidden-match quality remains uncertain. Organizer submission and repository publication are on user hold.
+Selected model: **uniform_temporal_focus**. We use missing-ball temporal specialists and duration-constrained decoding to estimate H/A/D from tactical ATD XML/TXT. Technical checks pass; hidden-match accuracy and competition rank remain unknown. Organizer submission and repository publication remain on hold.
 
-## Final frozen comparison, 17 November 2026
+## Evaluation
 
-The active release is **weighted_short_gap**, selected by the conservative rule registered before this audit. The alternative **uniform_temporal_focus** remains intact. This is a robustness-policy rollback, not a claim that the old model performs better on ordinary PFF tracking.
-
-| Mean official Spell F1, 18 previously opened PFF World Cup matches | Selected weighted_short_gap | Alternative uniform_temporal_focus |
+| Mean official Spell F1 | Previous weighted_short_gap | Selected uniform_temporal_focus |
 |---|---:|---:|
-| Original tracking | 0.639234 | 0.674644 |
-| Original label-blind stress | 0.619814 | 0.655080 |
-| VV 10 Hz, noise 0.5 m | 0.485381 | 0.479455 |
-| VV 15 Hz, noise 0.5 m | 0.490207 | 0.484463 |
-| VV 10 Hz, noise 2 m | 0.399510 | 0.390008 |
-| VV 15 Hz, noise 2 m | 0.409646 | 0.397353 |
+| Ten reused development matches, original tracking |0.680009|0.701652|
+| Ten reused development matches, original blind stress |0.667271|0.686287|
+| Eighteen previously opened audit matches, original tracking |0.639234|0.674644|
+| Eighteen previously opened audit matches, original blind stress |0.619814|0.655080|
 
-The alternative wins all 18 original-tracking matches and 17/18 original-stress matches. Original-tracking short-possession recall (<3 s) increases 14.23% to 23.77%. It nevertheless fails the preregistered mean/macro/worst-match guards under VV corruption. The largest single-match Spell regression is 0.04885. All four VV presets include 2–6-second ball gaps. Their noise is applied to the audited 25 Hz model-input grid; equivalence to the organizer sensor is unproven. This conservative veto is an engineering policy, not evidence that the selected model maximizes hidden-match quality.
+The selected model wins18/18 natural audit games and17/18 original-blind games. Recall of audit possessions shorter than3s increases14.23% to23.77%. These are PFF World Cup2022 games, kept outside fitting but now used for release selection. They are not a fresh prospective holdout. Source-label proxies, shared teams/provider and unresolved subsecond possessions limit generalization claims.
 
-All 18 matches were previously opened, although none entered fitting or normalization. This comparison now also uses them for release selection. Six scenarios and two reference reconstructions remain 18 matches, not independent datasets. No fitting, threshold search, result-dependent exclusion or target-label scoring occurred. Predictions were saved before references were opened for scoring. Canonical and SDK-shadow references matched their previous audited arrays; old natural/blind predictions matched their previous audit exactly. The audit blocked access to organizer data/labels.
+We initially rolled back because the selected model loses0.006–0.012 on four VV jitter/thinning/burst stress cases. We now explicitly override that conservative release choice after an unlabelled sensor-relevance review. Even stationary players gain median apparent speeds8.43–12.56m/s at0.5m jitter; the corruptor leaves all players missing on40–60% of rows. The supplied tracking has0% all-player-missing rows and median coordinate speed1.36m/s. We treat those severe combined corruptions as a robustness warning rather than a calibrated target-distribution veto. The original failed gate and selected-old decision are unchanged. See the [explicit override](docs/experiments/sensor-relevance/selection_override.json) and [sensor review](docs/experiments/sensor-relevance/REPORT.md). This post-result choice adds selection bias and does not guarantee hidden quality.
 
-All 176 regression tests pass. The selected model was reproduced again from clean source archive 8b1074340e2734f34e4cbc58930fb4bd2c309df7, exposing only the two tactical ATD files. The 199,319-row CSV matches the historical artifact byte-for-byte and passes the official validator and exact source/model gate. This supplements the historical four clean-source inference reproductions on one physical host; it does not repeat model training. VV supplied the same SHA-256 and official validator output from two clean runs of this selected release on a separate Linux ARM server (Python 3.12.3). We checked the hash, row count and H/A/D/X counts against the selected CSV; the server logs were supplied by our teammate.
+## Generate and verify
 
-Full protocol, every match, diagnostics, failures and uncertainty: docs/experiments/final-opened-comparison/REPORT.md. Replay the comparison from audit snapshot bf30915, where the root manifest still matches freeze.json; later root-manifest changes only activate the selected package. A frozen alternative manifest is preserved at releases/uniform-temporal-focus/submission_manifest.json. No absence-of-overfitting, La Liga generalization, hidden score or finalist probability is certified. Submission and repository publication remain on user hold.
-
-## Generate and verify the selected release
-
-Python 3.12, frozen CPU weights, tactical ATD XML/TXT only. No training download, reference labels or research cache is required.
+Use Python3.12 and the main branch. Frozen weights are bundled; inference requires only the original tactical data, no training download or research cache.
 
 ```sh
 python3.12 -m venv .venv
 .venv/bin/pip install -r requirements-temporal.txt
 .venv/bin/python tools/fetch_reference.py
-.venv/bin/python tools/generate_recovery_candidate.py \
-  --bundle assets/recovery-candidate/bundle.json \
+.venv/bin/python tools/generate_final_candidate.py \
+  --bundle assets/final-candidate/bundle.json \
   --data-dir /absolute/path/to/data \
   --output 'out/Ruses Cules.csv'
 .venv/bin/python tools/final_submission_gate.py --csv 'out/Ruses Cules.csv'
 ```
 
-Expected CSV SHA-256: `1f4602b5b8b04e4066c5478549a9b5e53f13852ca6513f01422906d1dcb1a1c0`. Local active package: `out/selected-ready/`. Source generation commit: `dfc9e860bd28810d0aa768a584eb518e96cee0b6`; later source archive reproduction at `8b10743` gives identical bytes. The generator refuses existing output.
+The generator refuses existing output. Expected CSV SHA-256:
+`897db60c18fefe362acee239665136d47a8b2c87a54eb8eae67231b0dcdf9e33`.
 
-Read [technical details](docs/Ruses%20Cules.md), [full comparison](docs/experiments/final-opened-comparison/REPORT.md) and [active manifest](submission_manifest.json).
+**Current local upload package: out/submission-final/Ruses Cules.csv and out/submission-final/Ruses Cules.pdf.** The older out/selected-ready/ directory is a preserved rollback, not the active package. [PDF technical report](docs/Ruses%20Cules.pdf), [Markdown source](docs/Ruses%20Cules.md), [active manifest](submission_manifest.json).
 
-## Preserved alternative
+All176 regression tests pass. Four clean-source generations across macOS ARM, offline Linux ARM and emulated Linux AMD64 reproduced the same CSV on one physical host. VV separately reports two matching Linux ARM server runs of this model: [reported evidence](docs/experiments/final-opened-comparison/vv_external_reproduction.json). These reproduce frozen-weight inference, not repeated training or target-label accuracy. The previous model's later detailed server receipt remains separately recorded in validation/EXTERNAL_REPRODUCTION.json.
 
-`uniform_temporal_focus` remains at tag `release/frozen-uniform-temporal-focus-20261117`. Its source, assets and historical release evidence are unchanged. Local alternative CSV: `out/final-ready/Ruses Cules.csv`, SHA-256 `897db60c18fefe362acee239665136d47a8b2c87a54eb8eae67231b0dcdf9e33`. It is no longer the active upload package. Its exact gate uses `--manifest releases/uniform-temporal-focus/submission_manifest.json`. Generate it with `tools/generate_final_candidate.py --bundle assets/final-candidate/bundle.json`. The older selected model is also preserved under tag `release/rollback-weighted-short-gap-20261117`.
+## Training sources and limits
 
-## Data and limits
+Training uses65 unique external matches: seven DFL (two Bundesliga and five Bundesliga2), two anonymized Metrica sample matches,20 SkillCorner A-League2024/25 matches and36 PFF World Cup2022 games. Inherited boosted registries overlap the same union. No development or audit match was added to fitting. Raw PFF predictor geometry excludes event-informed/estimated coordinates. See training registries and [PFF access qualifications](docs/PFF_SOURCE.md). Original provider access does not establish a standard permissive redistribution license; raw data are excluded.
 
-Training uses the same 65 external games: seven DFL, two Metrica, 20 SkillCorner and 36 PFF. The activity network uses only those 36 PFF training games. Inherited boosted training registries are subsets of the same union. No development/audit match was moved into training. See [source-access qualifications](docs/PFF_SOURCE.md); original provider access is not equivalent to a standard permissive license.
+We prioritize elite professional football and independent La Liga tracking-plus-possession validation. Such an additional eligible cohort has not been verified. University data do not substitute for evidence in elite football. The current release remains frozen; further improvement requires a new whole-match protocol and source/annotation review.
 
-Data-search priority updated on 17 November 2026 at the user's request: elite professional football, preferably La Liga, followed by other major European first divisions/Champions League and senior international tournaments. University SoccerTrack v2 is deprioritized and must not substitute for evidence of performance in elite football. The earlier frozen data review records discovery, not the current acquisition priority. PFF is the 64-match 2022 World Cup; SkillCorner is the 2024/25 Australian A-League (20 matches in the actual manifest); DFL contains two first-division and five second-division German matches from 2022/23. Metrica sample competitions are anonymized, so their level is unverified. Our ten current development matches are all PFF World Cup matches. Existing training sources are not removed without a controlled development experiment. New validation requires independent tracking/reference provenance, synchronization checks and a preregistered whole-match split. Compare tempo, possession durations, ball visibility and tracking errors instead of assuming league names establish input equivalence. No additional eligible independent La Liga tracking-plus-possession cohort has been verified; the current release remains frozen.
+## Rollback and records
 
-The current technical document uses neutral release names. Historical document hashes refer to their original versions at commit `2b88bb2`; `validation/DOCUMENTATION_UPDATE.json` records the editorial changes. Prediction bytes, weights and inference code are unchanged.
+The previous weighted model, weights, CSV and manifest remain intact. Its post-comparison manifest is releases/weighted-short-gap/post-comparison-manifest.json. Original comparison plan/results/failed gates are under docs/experiments/final-opened-comparison/. Historical document versions and neutral reference aliases are recorded in validation/DOCUMENTATION_UPDATE.json. No history was rewritten.
+
+To regenerate the report, install requirements-report.txt and run tools/build_submission_pdf.py. Model inference does not require report-generation dependencies. The PDF is the upload document; Markdown remains available for inspection.

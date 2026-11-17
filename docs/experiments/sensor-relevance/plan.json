@@ -1,0 +1,7 @@
+{
+  "scope": "Post-comparison review requested by user: assess relevance of the prespecified VV stress to the unlabeled organizer tracking. No weights, thresholds, predictions or metric outcomes will change in this diagnostic.",
+  "sources": ["organizer tactical ATD XML/TXT only", "PFF training match3816 geometry only", "stationary synthetic geometry"],
+  "forbidden": ["organizer possession labels", "human events/video annotations", "new quality scoring", "fitting or threshold tuning"],
+  "measurements": ["ball visibility and player coverage", "fraction of completely unobserved player rows", "period-local ball gap quantiles", "median and95pct player speeds", "adjacent-frame coordinate curvature on complete triplets (not a calibrated measurement-error estimator)", "VV corruption of stationary coordinates as a kinematic sanity probe"],
+  "interpretation": "The VV scenarios deliberately combine lower sampling rate, independent per-coordinate jitter, missing player rows and ball bursts. Compare these properties with supplied inputs before treating that stress as a target-distribution veto. Input similarities do not establish expected SpellF1. Any changed release choice must be recorded as an explicit post-result engineering override; the original failed gate and all metric results remain immutable."
+}

@@ -1,0 +1,230 @@
+{
+  "target": {
+    "ball_visible_fraction": 0.593074274347369,
+    "player_count_mean": 20.487419503075092,
+    "player_count_quantiles": {
+      "0.5": 22.0,
+      "0.9": 22.0,
+      "0.95": 22.0,
+      "0.99": 23.0
+    },
+    "all_players_missing_fraction": 0.0,
+    "ball_gap_seconds": {
+      "0.5": 10.72,
+      "0.9": 33.811999999999976,
+      "0.95": 50.795999999999985,
+      "0.99": 104.75159999999937
+    },
+    "adjacent_coordinate_speed_mps": {
+      "0.5": 1.3602547576189816,
+      "0.9": 3.8238045242924614,
+      "0.95": 4.678720701818545,
+      "0.99": 6.579640553252057
+    },
+    "provided_speed_mps": {
+      "0.5": 1.409842610359192,
+      "0.9": 3.84751410484314,
+      "0.95": 4.660158014297485,
+      "0.99": 6.439982328414916
+    },
+    "complete_triplet_second_difference_m": {
+      "0.5": 0.0013599999999946988,
+      "0.9": 0.004266537706392674,
+      "0.95": 0.0058640723051559054,
+      "0.99": 0.009694077006078527
+    }
+  },
+  "training3816": {
+    "ball_visible_fraction": 0.35044953473457485,
+    "player_count_mean": 7.237085708062584,
+    "player_count_quantiles": {
+      "0.5": 7.0,
+      "0.9": 17.0,
+      "0.95": 19.0,
+      "0.99": 20.0
+    },
+    "all_players_missing_fraction": 0.4615808133977082,
+    "ball_gap_seconds": {
+      "0.5": 0.84,
+      "0.9": 14.456000000000003,
+      "0.95": 25.843999999999987,
+      "0.99": 82.64480000000016
+    },
+    "adjacent_coordinate_speed_mps": {
+      "0.5": 1.6182966222975226,
+      "0.9": 5.221406234700714,
+      "0.95": 6.785361293981714,
+      "0.99": 11.112925040549452
+    },
+    "provided_speed_mps": {},
+    "complete_triplet_second_difference_m": {
+      "0.5": 0.05038525373070071,
+      "0.9": 0.17060929272545727,
+      "0.95": 0.22184244727041516,
+      "0.99": 0.37423187939633384
+    }
+  },
+  "source_stress": {
+    "hz10_noise0p5": {
+      "ball_visible_fraction": 0.12260863251896759,
+      "player_count_mean": 2.9001343158964676,
+      "player_count_quantiles": {
+        "0.5": 0.0,
+        "0.9": 14.0,
+        "0.95": 17.0,
+        "0.99": 19.0
+      },
+      "all_players_missing_fraction": 0.7844229861690928,
+      "ball_gap_seconds": {
+        "0.5": 0.08,
+        "0.9": 0.08,
+        "0.95": 0.08,
+        "0.99": 4.3879999999998835
+      },
+      "adjacent_coordinate_speed_mps": {},
+      "provided_speed_mps": {
+        "0.5": 8.770156860351562,
+        "0.9": 16.999530792236328,
+        "0.95": 19.833044052124023,
+        "0.99": 25.780193328857422
+      },
+      "complete_triplet_second_difference_m": {}
+    },
+    "hz15_noise0p5": {
+      "ball_visible_fraction": 0.18456335233116733,
+      "player_count_mean": 4.3452947084377005,
+      "player_count_quantiles": {
+        "0.5": 0.0,
+        "0.9": 16.0,
+        "0.95": 18.0,
+        "0.99": 20.0
+      },
+      "all_players_missing_fraction": 0.676843213417069,
+      "ball_gap_seconds": {
+        "0.5": 0.04,
+        "0.9": 0.04,
+        "0.95": 0.04,
+        "0.99": 4.32
+      },
+      "adjacent_coordinate_speed_mps": {
+        "0.5": 21.044669202407732,
+        "0.9": 38.396005037283246,
+        "0.95": 43.849645685176945,
+        "0.99": 54.72670255979304
+      },
+      "provided_speed_mps": {
+        "0.5": 12.877099990844727,
+        "0.9": 28.434825897216797,
+        "0.95": 35.01145935058594,
+        "0.99": 47.661136627197266
+      },
+      "complete_triplet_second_difference_m": {}
+    },
+    "hz10_noise2": {
+      "ball_visible_fraction": 0.12260863251896759,
+      "player_count_mean": 2.9001343158964676,
+      "player_count_quantiles": {
+        "0.5": 0.0,
+        "0.9": 14.0,
+        "0.95": 17.0,
+        "0.99": 19.0
+      },
+      "all_players_missing_fraction": 0.7844229861690928,
+      "ball_gap_seconds": {
+        "0.5": 0.08,
+        "0.9": 0.08,
+        "0.95": 0.08,
+        "0.99": 4.3879999999998835
+      },
+      "adjacent_coordinate_speed_mps": {},
+      "provided_speed_mps": {
+        "0.5": 33.6324462890625,
+        "0.9": 65.65219116210938,
+        "0.95": 76.7636947631836,
+        "0.99": 98.9326400756836
+      },
+      "complete_triplet_second_difference_m": {}
+    },
+    "hz15_noise2": {
+      "ball_visible_fraction": 0.18456335233116733,
+      "player_count_mean": 4.3452947084377005,
+      "player_count_quantiles": {
+        "0.5": 0.0,
+        "0.9": 16.0,
+        "0.95": 18.0,
+        "0.99": 20.0
+      },
+      "all_players_missing_fraction": 0.676843213417069,
+      "ball_gap_seconds": {
+        "0.5": 0.04,
+        "0.9": 0.04,
+        "0.95": 0.04,
+        "0.99": 4.32
+      },
+      "adjacent_coordinate_speed_mps": {
+        "0.5": 83.18948360779999,
+        "0.9": 151.76509055026142,
+        "0.95": 173.20609456267636,
+        "0.99": 215.3287785088493
+      },
+      "provided_speed_mps": {
+        "0.5": 50.41608428955078,
+        "0.9": 111.94583892822266,
+        "0.95": 138.04507446289062,
+        "0.99": 187.70228576660156
+      },
+      "complete_triplet_second_difference_m": {}
+    }
+  },
+  "stationary_probe": {
+    "hz10_noise0p5": {
+      "all_players_missing_fraction": 0.6,
+      "reported_player_speed_mps": {
+        "0.5": 8.43079948425293,
+        "0.9": 16.326427459716797,
+        "0.95": 19.12059783935547,
+        "0.99": 24.949586868286133
+      },
+      "note": "True speed is zero. White coordinate noise creates these apparent velocities; no clipping/correlation applied."
+    },
+    "hz15_noise0p5": {
+      "all_players_missing_fraction": 0.4,
+      "reported_player_speed_mps": {
+        "0.5": 12.564558029174805,
+        "0.9": 27.96720314025879,
+        "0.95": 34.38385009765625,
+        "0.99": 46.49464797973633
+      },
+      "note": "True speed is zero. White coordinate noise creates these apparent velocities; no clipping/correlation applied."
+    },
+    "hz10_noise2": {
+      "all_players_missing_fraction": 0.6,
+      "reported_player_speed_mps": {
+        "0.5": 33.72327423095703,
+        "0.9": 65.30583190917969,
+        "0.95": 76.48231506347656,
+        "0.99": 99.7982177734375
+      },
+      "note": "True speed is zero. White coordinate noise creates these apparent velocities; no clipping/correlation applied."
+    },
+    "hz15_noise2": {
+      "all_players_missing_fraction": 0.4,
+      "reported_player_speed_mps": {
+        "0.5": 50.25823974609375,
+        "0.9": 111.86896514892578,
+        "0.95": 137.53541564941406,
+        "0.99": 185.97900390625
+      },
+      "note": "True speed is zero. White coordinate noise creates these apparent velocities; no clipping/correlation applied."
+    }
+  },
+  "reference_labels_read": false,
+  "quality_scored": false,
+  "input_sha256": {
+    "data/tactical/BAR-ATH_tactical_atd.xml": "327e35e32e46a647389b88f883d4f9a2ab931e3e6148aef2fcf8f22b1e93c43a",
+    "data/tactical/BAR-ATH_tactical_atd.txt": "f130e350d2bfdf734b7e32f072931fccc6d015c1e837d082064875fe0a700431",
+    "vv-model-v1/external/pff/converted/3816_geometry.npz": "4176516abf60f0872d4660927085136720f444c6ae6b30032c5ee43a1394c67a"
+  },
+  "code_sha256": "8814d4b41d7f2f5b17d4471f6881880e1d2ccc73163fbe1c2d55b8cac7d8b117",
+  "plan_sha256": "8b415052db8e2ccffdb7830b321adfbace6a6370059d18a1299fda39fe8a6020"
+}

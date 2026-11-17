@@ -1,0 +1,31 @@
+{
+  "recorded_utc": "2026-11-17T18:10:30.725110+00:00",
+  "selected": "uniform_temporal_focus",
+  "previous_selected": "weighted_short_gap",
+  "decision_type": "Explicit post-result engineering override after user-requested sensor-relevance review; not a newly passed preregistered gate",
+  "original_gate": {
+    "path": "docs/experiments/final-opened-comparison/decision.json",
+    "sha256": "42bf1c4120679f9bdf669801ee76b196ac60986401fc496db6aea377b5c9efa7",
+    "selected": "weighted_short_gap",
+    "new_passes": false
+  },
+  "basis": [
+    "New beats old on18/18 natural and17/18 original-blind audit games; development gains also positive.",
+    "VV jitter/dropout stresses combine sparse player observations and high uncorrelated positional jitter. Target input has0% all-player-missing rows vs40\u201360% introduced even for perfect synthetic tracks.",
+    "Stationary-player median apparent speeds8.43/12.56m/s at0.5m noise and33.72/50.26m/s at2m noise; target median coordinate speed1.36m/s. These are uncalibrated destructive disturbances.",
+    "Retain stress failures as robustness limitations; do not treat all scenarios as equally likely target inputs or independent matches."
+  ],
+  "limits": [
+    "Post-result policy change introduces additional selection bias. All18 are previously opened and now consumed for release selection.",
+    "Unlabeled input summaries do not establish possession accuracy or calibrate true measurement errors.",
+    "Target has long ball gaps; short-spell recall remains weak and hidden quality unknown.",
+    "No training, calibration, threshold search, outcome exclusion or target-label access."
+  ],
+  "target_data_used": "Automatic tactical tracking XML/TXT only; never possession labels/human events/video.",
+  "weights_changed": false,
+  "decoder_changed": false,
+  "submission_sent": false,
+  "repository_visibility_changed": false,
+  "sensor_report": "docs/experiments/sensor-relevance/results.json",
+  "sensor_report_sha256": "705f5ff88dddd36601f956587325710f4712b72cc25fa52c968829afe23780be"
+}
