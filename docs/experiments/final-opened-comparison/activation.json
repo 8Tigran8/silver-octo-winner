@@ -1,0 +1,13 @@
+{
+  "selected": "weighted_short_gap",
+  "reason": "Preregistered VV stress robustness veto; alternative is better on all18 natural and mean original blind stress. No claim old is universally better.",
+  "audit_commit": "bf30915",
+  "activated_utc": "2026-11-17T11:13:10.576578+00:00",
+  "csv_sha256": "1f4602b5b8b04e4066c5478549a9b5e53f13852ca6513f01422906d1dcb1a1c0",
+  "technical_document_sha256": "37012eb9ab2575d5ae5e23c129fc3b78cc6c778e94b7eb71b30bde41b95f5907",
+  "decision_sha256": "42bf1c4120679f9bdf669801ee76b196ac60986401fc496db6aea377b5c9efa7",
+  "manifest_sha256": "4d2b9416c984a72ad1790d9851b7e3aec5dbfc5187a1bd4ad6e16ed462b782cf",
+  "no_weights_or_inference_source_changed": true,
+  "submission_sent": false,
+  "repository_visibility_changed": false
+}
