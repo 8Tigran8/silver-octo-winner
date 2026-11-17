@@ -1,0 +1,149 @@
+{
+  "base_commit": "2b88bb23e58061c6194c5af13928b60a7784a422",
+  "scope": "Presentation-only reference aliases; no inference, weights, predictions or historical metric results changed. Original evidence document bytes remain available in base_commit. Historical Git refs retained for reproducibility.",
+  "files": [
+    {
+      "path": "README.md",
+      "before_sha256": "00231572e79915d29923088c17fdfd0921f31047c757ee93ba092f5ee39f5735",
+      "after_sha256": "9d6e8273ee8d9b602507478405bb7c6387deef2514653455174c76185a52d2db"
+    },
+    {
+      "path": "docs/REVIEW_STATUS.md",
+      "before_sha256": "adf44452903d036d08d52fd1da7841fbd5ee61de42a8c44d81055ad599d9ea02",
+      "after_sha256": "f0cb53fbe388c1b5cb48b638cd580c24b8f502afd0a9267ff62b31ea4e729c16"
+    },
+    {
+      "path": "docs/Ruses Cules.md",
+      "before_sha256": "37012eb9ab2575d5ae5e23c129fc3b78cc6c778e94b7eb71b30bde41b95f5907",
+      "after_sha256": "f695c23009c183e24e9835dc504a0226607552b6fa6fe1b93533abdd2ad50706"
+    },
+    {
+      "path": "docs/releases/uniform-temporal-focus/TECHNICAL.md",
+      "before_sha256": "bc8dd6b7d19b5036f2b7942de2001a1ac787a6d0955798a144244706dcbe1329",
+      "after_sha256": "6ccfda6b0fabd2aaabaeb0f2c10344aa36fdb36f3a59d051c9dbc8de306f4fb4"
+    },
+    {
+      "path": "docs/releases/uniform-temporal-focus/release.json",
+      "before_sha256": "e1d5caf0cfa3f816370a6ab804aa6e7134b8b13b51f6fa05d221540929b28a16",
+      "after_sha256": "978d75e5df7f16eab8c44848941df4d0d4c4818ffb130bd7ba6bdcc45b647724"
+    },
+    {
+      "path": "releases/uniform-temporal-focus/submission_manifest.json",
+      "before_sha256": "3515107bae26f76dc8e2c173a8c768e175cca36fa1da701276cbeb370987dbac",
+      "after_sha256": "84c398b507a30dfa20b5bba0e8c47ee765e1c01d11de66930188a9df1e348970"
+    },
+    {
+      "path": "releases/weighted-short-gap/FINAL_AUDIT_REPORT.md",
+      "before_sha256": "8ee336c1ca3c6b70a6ff3489637fcfe3bf9ead379dcddccee8257fa9e245036b",
+      "after_sha256": "c7345a549d87baafec4c72dbddad17aea46e26c4fcb6a989b693d85fc7a0c114"
+    },
+    {
+      "path": "releases/weighted-short-gap/PUBLISHED_TECHNICAL.md",
+      "before_sha256": "5b82d96b8ed3788553ab0018674a0c1ae5ef1e5fc3451307b2d2af83cc1135ea",
+      "after_sha256": "66e53ffd960a9e3143e5fd219e17a325a739b58dfae18e553462f04a88b3be59"
+    },
+    {
+      "path": "releases/weighted-short-gap/README.md",
+      "before_sha256": "62db2f527fb33255c95f05ccc10b86fec1a17240dda815adda83ea2b4145c060",
+      "after_sha256": "f58f08328c3d79f559c4477e15882fb7cc8d44285e623969740d3d6407e4196d"
+    },
+    {
+      "path": "releases/weighted-short-gap/TECHNICAL.md",
+      "before_sha256": "5b82d96b8ed3788553ab0018674a0c1ae5ef1e5fc3451307b2d2af83cc1135ea",
+      "after_sha256": "66e53ffd960a9e3143e5fd219e17a325a739b58dfae18e553462f04a88b3be59"
+    },
+    {
+      "path": "releases/weighted-short-gap/submission_manifest.json",
+      "before_sha256": "e9f4c92d8aa63da28708ae7ff48d905c76b28fdffcccccd51b5deb7729835ccd",
+      "after_sha256": "c6f59e26f4917d5c4dc57f8ea2ad081bf1d59e4ed4bf59914c949ccc150ea0d4"
+    },
+    {
+      "path": "tools/build_technical_pdf.py",
+      "before_sha256": "a49c59653ce1a4093301c1698cae7e5828d74a9df0769dbe7227a9c4855267bc",
+      "after_sha256": "3a80a1a21679a4560fa027914940175a39f5bdced9e1d567af53ea71a5942c5a"
+    },
+    {
+      "path": "validation/DEVELOPMENT_AUDIT_REPORT.md",
+      "before_sha256": "e72d53e1998b4b605d5c6a5fe118bfbfe959ab18d88bbca522f801194129872f",
+      "after_sha256": "e9c98fbbb4a588f069077b7aa8c9c3dc7528ce039c241d69ed84605721049ae1"
+    },
+    {
+      "path": "validation/PARENT_README.md",
+      "before_sha256": "b2fe2ea2260a2d31c5e72d7c80a6b8e7a2ba02c9c49211bb4437016a5ef5529a",
+      "after_sha256": "17ea819459dfc1452b3bfa0a9e985fad99074fdd3366866c8c6f036b806a2658"
+    },
+    {
+      "path": "validation/PARENT_SUBMISSION_MANIFEST.json",
+      "before_sha256": "c540d5815cceaaacc5e48ced1df8bf6402a12ca053fed46ad3e7165ce733cb2f",
+      "after_sha256": "1dc50baa7e3575af48d17542eaf52366766f982ae714bcfbc2ee65bc3ff2509e"
+    },
+    {
+      "path": "validation/PARENT_TECHNICAL_DOCUMENT.md",
+      "before_sha256": "fe224c6a4ac71783a5dbc5b794a42d26bbb7a4d824df7b8e0b9aafe4e91d23a7",
+      "after_sha256": "f8c1ac458d5b81fec7ab3ed43cc725cf38b7d33d233818e0bd69823f2e70ed87"
+    },
+    {
+      "path": "validation/TECHNICAL_DOCUMENT.md",
+      "before_sha256": "37012eb9ab2575d5ae5e23c129fc3b78cc6c778e94b7eb71b30bde41b95f5907",
+      "after_sha256": "f695c23009c183e24e9835dc504a0226607552b6fa6fe1b93533abdd2ad50706"
+    }
+  ],
+  "aliases": [
+    {
+      "ref": "release/boundary-events",
+      "commit": "7aaa7b1975a9408406a1941a21b7fe14ad38d613"
+    },
+    {
+      "ref": "release/frozen-uniform-temporal-focus-20261117",
+      "commit": "66b486e249f7317b89dd3c5f91d298b45630f863"
+    },
+    {
+      "ref": "release/independent-audit",
+      "commit": "e93327b4d22396d7093a91899a9262254b95ef25"
+    },
+    {
+      "ref": "release/possession-emissions",
+      "commit": "5645055092c7cf1082ed5fe8bd55e7d76286b315"
+    },
+    {
+      "ref": "release/reliability-fusion",
+      "commit": "309f201b6cf9354326266c44607deeeaab906153"
+    },
+    {
+      "ref": "release/rollback-weighted-short-gap-20261117",
+      "commit": "b395a4a40743cd5628c64fa55bd0ef1856b1173d"
+    },
+    {
+      "ref": "release/short-possession-recovery",
+      "commit": "2b88bb23e58061c6194c5af13928b60a7784a422"
+    }
+  ],
+  "active_technical_document_sha256": "f695c23009c183e24e9835dc504a0226607552b6fa6fe1b93533abdd2ad50706",
+  "prediction_sha256": "1f4602b5b8b04e4066c5478549a9b5e53f13852ca6513f01422906d1dcb1a1c0",
+  "historical_hash_note": "Historical release checksums refer to the original documents in base_commit. This editorial revision changes display aliases and current prose only; it does not rerun or reclassify past experiments.",
+  "updated_files": [
+    {
+      "path": "README.md",
+      "sha256": "a39d209fefe69009a4bc83e077089c8d64227eaa9210c3f65dc8db5c1f290591"
+    },
+    {
+      "path": "docs/Ruses Cules.md",
+      "sha256": "f695c23009c183e24e9835dc504a0226607552b6fa6fe1b93533abdd2ad50706"
+    },
+    {
+      "path": "validation/TECHNICAL_DOCUMENT.md",
+      "sha256": "f695c23009c183e24e9835dc504a0226607552b6fa6fe1b93533abdd2ad50706"
+    },
+    {
+      "path": "submission_manifest.json",
+      "sha256": "9c20f35f599947c102a4dedc1860d169c1acff80c9eafc6ffe9688cab9e1aa47"
+    }
+  ],
+  "validation": {
+    "regression_tests": 176,
+    "official_validator": "PASS",
+    "exact_source_weights_csv_gate": "PASS",
+    "csv_unchanged": true,
+    "external_reproduction": "validation/EXTERNAL_REPRODUCTION.json"
+  }
+}

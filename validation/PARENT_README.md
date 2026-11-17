@@ -10,7 +10,7 @@ Ball possession from automatic tracking. **Current selected model: boundary102.*
 
 ## Generate the current CSV
 
-Use branch `codex/independent-audit`; default `main` still contains historical v4 and does not represent this package. Use Python 3.12 and the organizer data bundle. The data directory must contain `tactical/BAR-ATH_tactical_atd.xml` and `tactical/BAR-ATH_tactical_atd.txt`.
+Use branch `release/independent-audit`; default `main` still contains historical v4 and does not represent this package. Use Python 3.12 and the organizer data bundle. The data directory must contain `tactical/BAR-ATH_tactical_atd.xml` and `tactical/BAR-ATH_tactical_atd.txt`.
 
 ```bash
 python3.12 -m venv .venv
@@ -81,4 +81,4 @@ Organizer tracking, video, tagging, homography and target labels stay local. Do 
 
 ## Later research
 
-The separate boundary-event head on `codex/boundary-events` failed its predeclared meaningful-improvement gate (+0.00297 Spell F1, 7/10 development wins; required +0.020 and 8/10). It is not part of this release. See [the complete negative result](https://github.com/8Tigran8/silver-octo-winner/blob/codex/boundary-events/docs/experiments/boundary-events/REPORT.md).
+The separate boundary-event head on `release/boundary-events` failed its predeclared meaningful-improvement gate (+0.00297 Spell F1, 7/10 development wins; required +0.020 and 8/10). It is not part of this release. See [the complete negative result](https://github.com/8Tigran8/silver-octo-winner/blob/release/boundary-events/docs/experiments/boundary-events/REPORT.md).

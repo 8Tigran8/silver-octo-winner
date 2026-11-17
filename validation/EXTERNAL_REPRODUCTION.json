@@ -1,0 +1,21 @@
+{
+  "checked_utc": "2026-11-17T16:44:33.109449+00:00",
+  "source": "VV Telegram message Nov17 after12:52, before13:07",
+  "commit": "2b88bb2",
+  "reported_environment": "independent Linux ARM aarch64, Python3.12.3",
+  "reported_clean_runs": 2,
+  "reported_sha256": "1f4602b5b8b04e4066c5478549a9b5e53f13852ca6513f01422906d1dcb1a1c0",
+  "local_sha256": "1f4602b5b8b04e4066c5478549a9b5e53f13852ca6513f01422906d1dcb1a1c0",
+  "hash_matches": true,
+  "reported_rows": 199319,
+  "local_rows": 199319,
+  "label_counts_match": true,
+  "label_counts": {
+    "X": 40462,
+    "A": 35680,
+    "H": 54625,
+    "D": 68552
+  },
+  "reported_validator": "Valid",
+  "evidence_scope": "SHA256 and pasted validator output supplied by teammate, compared against local selected CSV. No direct server access or independently collected execution log."
+}

@@ -51,10 +51,10 @@ The 18 previously opened audit games and target labels were not read or scored i
 
 ## Reproduction
 
-Use Python 3.12 and branch `codex/short-possession-recovery`. Frozen weights are bundled; inference requires no external training download or research cache.
+Use Python 3.12 and branch `release/short-possession-recovery`. Frozen weights are bundled; inference requires no external training download or research cache.
 
 ```sh
-git clone --branch codex/short-possession-recovery --single-branch https://github.com/8Tigran8/silver-octo-winner.git ruses-cules
+git clone --branch release/short-possession-recovery --single-branch https://github.com/8Tigran8/silver-octo-winner.git ruses-cules
 cd ruses-cules
 python3.12 -m venv .venv
 .venv/bin/pip install -r requirements-temporal.txt
@@ -70,4 +70,4 @@ The data folder must contain `tactical/BAR-ATH_tactical_atd.xml` and `.txt`. The
 
 Four fresh-source runs (macOS ARM twice, offline Linux ARM and offline emulated Linux AMD64) produced the same CSV bytes and passed the official validator. One physical host was used; weight training was not repeated. The 169-test regression suite passed. Portable/research prediction parity and release receipts are recorded beside this document. Official metric/validator bytes were checked against the current organizer repository.
 
-Local delivery files are in `out/final-ready/`. Organizer submission and repository publication remain on user hold. Technical readiness does not resolve public-source availability, source-access qualifications or team eligibility. The old model, CSV, manifest and source tag `codex/rollback-weighted-short-gap-20261117` remain available for rollback. Full experiment evidence: `docs/experiments/dead-gap-focus/`; new data review: `DATA_REVIEW.md`.
+Local delivery files are in `out/final-ready/`. Organizer submission and repository publication remain on user hold. Technical readiness does not resolve public-source availability, source-access qualifications or team eligibility. The old model, CSV, manifest and source tag `release/rollback-weighted-short-gap-20261117` remain available for rollback. Full experiment evidence: `docs/experiments/dead-gap-focus/`; new data review: `DATA_REVIEW.md`.

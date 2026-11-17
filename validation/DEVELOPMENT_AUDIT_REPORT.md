@@ -51,7 +51,7 @@ Tested source commit: dfc9e860bd28810d0aa768a584eb518e96cee0b6. Later documentat
 .venv/bin/python tools/final_submission_gate.py --csv 'Ruses Cules.csv'
 ```
 
-CSV: ready locally in out/recovery-ready/. Technical document: ready and copied there. Frozen-weight inference: reproduced on all listed environments. Source: branch codex/short-possession-recovery, private; public access is pending. Organizer upload: not performed. Current manifest binds source/model/input/output/document hashes; parent package is preserved. Full technical setup is in TECHNICAL_DOCUMENT.md.
+CSV: ready locally in out/recovery-ready/. Technical document: ready and copied there. Frozen-weight inference: reproduced on all listed environments. Source: branch release/short-possession-recovery, private; public access is pending. Organizer upload: not performed. Current manifest binds source/model/input/output/document hashes; parent package is preserved. Full technical setup is in TECHNICAL_DOCUMENT.md.
 
 ## Confidence and stopping scope
 

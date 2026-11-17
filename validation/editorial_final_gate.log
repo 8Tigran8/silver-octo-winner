@@ -1,0 +1,16 @@
+OK    Ruses Cules.csv
+      199319 rows, frame 0..199318
+
+      label counts
+        H    54625   27.4%
+        A    35680   17.9%
+        D    68552   34.4%
+        X    40462   20.3%
+
+      reports 320 possessions of mean 11.3 s
+      (counted with each X as a gap; the scorer bridges abstentions inside a real
+       possession, so its count can be lower than this one)
+
+Valid. Note this checks the format only -- it says nothing about whether the labels are right.
+Score it against the public ground truth with run_evaluation.py.
+PASS: exact audited CSV, source, weights/config and official validator; quality/eligibility/publication are separate.

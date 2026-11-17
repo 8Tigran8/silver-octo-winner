@@ -1,6 +1,6 @@
 # Ruses Cules — More Than a Hack 2027
 
-Current candidate: **weighted_short_gap**, branch **codex/short-possession-recovery** (16 November2026). Short-possession weighted training and player-activity evidence during ball gaps pass the unchanged development promotion gates. The package is reproducible; submission/publication remain on user hold. **Overall CONDITIONALLY READY**, not a guaranteed high hidden score.
+Current candidate: **weighted_short_gap**, branch **release/short-possession-recovery** (16 November2026). Short-possession weighted training and player-activity evidence during ball gaps pass the unchanged development promotion gates. The package is reproducible; submission/publication remain on user hold. **Overall CONDITIONALLY READY**, not a guaranteed high hidden score.
 
 | Ten original development games | Audited parent | Current | Gain | Wins |
 |---|---:|---:|---:|---:|

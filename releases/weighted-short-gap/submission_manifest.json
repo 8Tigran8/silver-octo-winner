@@ -121,6 +121,6 @@
   "official_source_commit": "f8f2629ff1e0985f81d7e59d8413678514ee1530",
   "technical_document_sha256": "5b82d96b8ed3788553ab0018674a0c1ae5ef1e5fc3451307b2d2af83cc1135ea",
   "technical_document_path": "out/recovery-ready/Ruses Cules.md",
-  "release_branch": "codex/short-possession-recovery",
-  "repository_url": "https://github.com/8Tigran8/silver-octo-winner/tree/codex/short-possession-recovery"
+  "release_branch": "release/short-possession-recovery",
+  "repository_url": "https://github.com/8Tigran8/silver-octo-winner/tree/release/short-possession-recovery"
 }

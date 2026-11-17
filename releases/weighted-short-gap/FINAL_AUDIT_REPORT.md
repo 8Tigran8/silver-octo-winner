@@ -44,4 +44,4 @@ Current package: out/recovery-ready/. CSV SHA-256:
 
 `1f4602b5b8b04e4066c5478549a9b5e53f13852ca6513f01422906d1dcb1a1c0`
 
-The manifest and technical document remain the exact generation-bound versions. This later report adds validation evidence without altering them. Source branch: codex/short-possession-recovery. Public source access and organizer submission remain on hold. Historical audits are preserved in PARENT_FINAL_AUDIT_REPORT.md and DEVELOPMENT_AUDIT_REPORT.md.
+The manifest and technical document remain the exact generation-bound versions. This later report adds validation evidence without altering them. Source branch: release/short-possession-recovery. Public source access and organizer submission remain on hold. Historical audits are preserved in PARENT_FINAL_AUDIT_REPORT.md and DEVELOPMENT_AUDIT_REPORT.md.

@@ -119,7 +119,7 @@
   "output_changed_from_original": true,
   "parent_manifest": "validation/PARENT_SUBMISSION_MANIFEST.json",
   "official_source_commit": "f8f2629ff1e0985f81d7e59d8413678514ee1530",
-  "technical_document_sha256": "37012eb9ab2575d5ae5e23c129fc3b78cc6c778e94b7eb71b30bde41b95f5907",
+  "technical_document_sha256": "f695c23009c183e24e9835dc504a0226607552b6fa6fe1b93533abdd2ad50706",
   "technical_document_path": "out/selected-ready/Ruses Cules.md",
   "release_branch": "main",
   "repository_url": "https://github.com/8Tigran8/silver-octo-winner",
@@ -128,5 +128,6 @@
   "current_reproduction": "docs/experiments/final-opened-comparison/selected_reproduction.json",
   "alternative_manifest": "releases/uniform-temporal-focus/submission_manifest.json",
   "submission_authorized": false,
-  "publication_authorized": false
+  "publication_authorized": false,
+  "technical_document_revision": "Editorial update after 2b88bb2; predictions, weights and inference sources unchanged."
 }

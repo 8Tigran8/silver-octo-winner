@@ -55,10 +55,10 @@ All136 tests pass; portable predictions exactly match all20 development outputs.
 
 ## Reproduction and delivery
 
-Use Python3.12 and branch codex/short-possession-recovery. main remains historical. Model weights are bundled; inference needs no external training download, labels, API key or research cache.
+Use Python3.12 and branch release/short-possession-recovery. main remains historical. Model weights are bundled; inference needs no external training download, labels, API key or research cache.
 
 ```sh
-git clone --branch codex/short-possession-recovery --single-branch https://github.com/8Tigran8/silver-octo-winner.git ruses-cules
+git clone --branch release/short-possession-recovery --single-branch https://github.com/8Tigran8/silver-octo-winner.git ruses-cules
 cd ruses-cules
 python3.12 -m venv .venv
 .venv/bin/pip install -r requirements-temporal.txt

@@ -215,6 +215,6 @@
   "source_equivalence_receipt": "validation/reproduction_source_equivalence.json",
   "technical_document_sha256": "fe224c6a4ac71783a5dbc5b794a42d26bbb7a4d824df7b8e0b9aafe4e91d23a7",
   "technical_document_path": "out/audit-ready/Ruses Cules.md",
-  "release_branch": "codex/independent-audit",
-  "repository_url": "https://github.com/8Tigran8/silver-octo-winner/tree/codex/independent-audit"
+  "release_branch": "release/independent-audit",
+  "repository_url": "https://github.com/8Tigran8/silver-octo-winner/tree/release/independent-audit"
 }
