@@ -1,0 +1,3245 @@
+{
+  "selected": "weighted_short_gap",
+  "new_passes": false,
+  "comparisons": [
+    {
+      "cohort": "bridge6",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "games": 6,
+      "old_spell": 0.6387973442998703,
+      "new_spell": 0.6700368742828259,
+      "gain": 0.031239529982955577,
+      "wins": 6,
+      "ties": 0,
+      "worst_gain": 0.012251363182551378,
+      "bootstrap95": [
+        0.01641618425505198,
+        0.047389604638123216
+      ],
+      "macro_gain": 0.006179154822960868,
+      "class_f1_gain": {
+        "H": 0.00967162979646565,
+        "A": 0.006362042490044073,
+        "D": 0.002503792182372918
+      },
+      "counts": {
+        "old": {
+          "short_reference": 370,
+          "short_matched": 54,
+          "subsecond_reference": 54,
+          "subsecond_matched": 1,
+          "missing_live": 196486,
+          "missing_dead": 331195,
+          "missing_false_dead": 36024,
+          "missing_false_live": 9257,
+          "missing_wrong_team": 20864
+        },
+        "new": {
+          "short_reference": 370,
+          "short_matched": 79,
+          "subsecond_reference": 54,
+          "subsecond_matched": 1,
+          "missing_live": 196486,
+          "missing_dead": 331195,
+          "missing_false_dead": 33314,
+          "missing_false_live": 9804,
+          "missing_wrong_team": 18424
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.14594594594594595,
+          "false_dead": 0.18334130675976915,
+          "false_live": 0.027950301182083064,
+          "wrong_team": 0.10618568244047923
+        },
+        "new": {
+          "short_recall": 0.21351351351351353,
+          "false_dead": 0.1695489754995267,
+          "false_live": 0.029601896163891365,
+          "wrong_team": 0.09376749488513177
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": 0.06756756756756757,
+        "false_dead": -0.013792331260242457,
+        "false_live": 0.0016515949818083006,
+        "wrong_team": -0.01241818755534746
+      },
+      "checks": {
+        "mean_spell": true,
+        "macro": true,
+        "worst": true,
+        "H_f1": true,
+        "A_f1": true,
+        "D_f1": true
+      },
+      "pass_all": true,
+      "per_match_gain": {
+        "10502": 0.06484848484848482,
+        "10505": 0.026412102041978636,
+        "10507": 0.012692325252248615,
+        "10509": 0.012251363182551378,
+        "10511": 0.021315702479338783,
+        "10512": 0.04991720209313122
+      }
+    },
+    {
+      "cohort": "bridge6",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "games": 6,
+      "old_spell": 0.6387973442998703,
+      "new_spell": 0.6700368742828259,
+      "gain": 0.031239529982955577,
+      "wins": 6,
+      "ties": 0,
+      "worst_gain": 0.012251363182551378,
+      "bootstrap95": [
+        0.01641618425505198,
+        0.047389604638123216
+      ],
+      "macro_gain": 0.006179154822960868,
+      "class_f1_gain": {
+        "H": 0.00967162979646565,
+        "A": 0.006362042490044073,
+        "D": 0.002503792182372918
+      },
+      "counts": {
+        "old": {
+          "short_reference": 370,
+          "short_matched": 54,
+          "subsecond_reference": 54,
+          "subsecond_matched": 1,
+          "missing_live": 196486,
+          "missing_dead": 331195,
+          "missing_false_dead": 36024,
+          "missing_false_live": 9257,
+          "missing_wrong_team": 20864
+        },
+        "new": {
+          "short_reference": 370,
+          "short_matched": 79,
+          "subsecond_reference": 54,
+          "subsecond_matched": 1,
+          "missing_live": 196486,
+          "missing_dead": 331195,
+          "missing_false_dead": 33314,
+          "missing_false_live": 9804,
+          "missing_wrong_team": 18424
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.14594594594594595,
+          "false_dead": 0.18334130675976915,
+          "false_live": 0.027950301182083064,
+          "wrong_team": 0.10618568244047923
+        },
+        "new": {
+          "short_recall": 0.21351351351351353,
+          "false_dead": 0.1695489754995267,
+          "false_live": 0.029601896163891365,
+          "wrong_team": 0.09376749488513177
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": 0.06756756756756757,
+        "false_dead": -0.013792331260242457,
+        "false_live": 0.0016515949818083006,
+        "wrong_team": -0.01241818755534746
+      },
+      "checks": {
+        "mean_spell": true,
+        "macro": true,
+        "worst": true,
+        "H_f1": true,
+        "A_f1": true,
+        "D_f1": true
+      },
+      "pass_all": true,
+      "per_match_gain": {
+        "10502": 0.06484848484848482,
+        "10505": 0.026412102041978636,
+        "10507": 0.012692325252248615,
+        "10509": 0.012251363182551378,
+        "10511": 0.021315702479338783,
+        "10512": 0.04991720209313122
+      }
+    },
+    {
+      "cohort": "bridge6",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "games": 6,
+      "old_spell": 0.6167776534351129,
+      "new_spell": 0.6468197222126734,
+      "gain": 0.030042068777560365,
+      "wins": 5,
+      "ties": 0,
+      "worst_gain": -0.009668099207787328,
+      "bootstrap95": [
+        0.011064643500663662,
+        0.045930574137020584
+      ],
+      "macro_gain": 0.005835576057810228,
+      "class_f1_gain": {
+        "H": 0.007723473307666835,
+        "A": 0.006901110452606866,
+        "D": 0.002882144413157021
+      },
+      "counts": {
+        "old": {
+          "short_reference": 370,
+          "short_matched": 48,
+          "subsecond_reference": 54,
+          "subsecond_matched": 2,
+          "missing_live": 222548,
+          "missing_dead": 332744,
+          "missing_false_dead": 37669,
+          "missing_false_live": 10213,
+          "missing_wrong_team": 23782
+        },
+        "new": {
+          "short_reference": 370,
+          "short_matched": 72,
+          "subsecond_reference": 54,
+          "subsecond_matched": 2,
+          "missing_live": 222548,
+          "missing_dead": 332744,
+          "missing_false_dead": 34745,
+          "missing_false_live": 10773,
+          "missing_wrong_team": 21940
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.12972972972972974,
+          "false_dead": 0.16926236137821954,
+          "false_live": 0.030693265693746544,
+          "wrong_team": 0.10686233980983878
+        },
+        "new": {
+          "short_recall": 0.1945945945945946,
+          "false_dead": 0.15612362276902061,
+          "false_live": 0.032376241194431755,
+          "wrong_team": 0.09858547369556231
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": 0.06486486486486487,
+        "false_dead": -0.013138738609198924,
+        "false_live": 0.0016829755006852118,
+        "wrong_team": -0.008276866114276471
+      },
+      "checks": {
+        "mean_spell": true,
+        "macro": true,
+        "worst": true,
+        "H_f1": true,
+        "A_f1": true,
+        "D_f1": true
+      },
+      "pass_all": true,
+      "per_match_gain": {
+        "10502": 0.04229623459317511,
+        "10505": 0.04740216363462868,
+        "10507": -0.009668099207787328,
+        "10509": 0.010799689440993743,
+        "10511": 0.03622317097964045,
+        "10512": 0.05319925322471153
+      }
+    },
+    {
+      "cohort": "bridge6",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "games": 6,
+      "old_spell": 0.6167776534351129,
+      "new_spell": 0.6468197222126734,
+      "gain": 0.030042068777560365,
+      "wins": 5,
+      "ties": 0,
+      "worst_gain": -0.009668099207787328,
+      "bootstrap95": [
+        0.011064643500663662,
+        0.045930574137020584
+      ],
+      "macro_gain": 0.005835576057810228,
+      "class_f1_gain": {
+        "H": 0.007723473307666835,
+        "A": 0.006901110452606866,
+        "D": 0.002882144413157021
+      },
+      "counts": {
+        "old": {
+          "short_reference": 370,
+          "short_matched": 48,
+          "subsecond_reference": 54,
+          "subsecond_matched": 2,
+          "missing_live": 222548,
+          "missing_dead": 332744,
+          "missing_false_dead": 37669,
+          "missing_false_live": 10213,
+          "missing_wrong_team": 23782
+        },
+        "new": {
+          "short_reference": 370,
+          "short_matched": 72,
+          "subsecond_reference": 54,
+          "subsecond_matched": 2,
+          "missing_live": 222548,
+          "missing_dead": 332744,
+          "missing_false_dead": 34745,
+          "missing_false_live": 10773,
+          "missing_wrong_team": 21940
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.12972972972972974,
+          "false_dead": 0.16926236137821954,
+          "false_live": 0.030693265693746544,
+          "wrong_team": 0.10686233980983878
+        },
+        "new": {
+          "short_recall": 0.1945945945945946,
+          "false_dead": 0.15612362276902061,
+          "false_live": 0.032376241194431755,
+          "wrong_team": 0.09858547369556231
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": 0.06486486486486487,
+        "false_dead": -0.013138738609198924,
+        "false_live": 0.0016829755006852118,
+        "wrong_team": -0.008276866114276471
+      },
+      "checks": {
+        "mean_spell": true,
+        "macro": true,
+        "worst": true,
+        "H_f1": true,
+        "A_f1": true,
+        "D_f1": true
+      },
+      "pass_all": true,
+      "per_match_gain": {
+        "10502": 0.04229623459317511,
+        "10505": 0.04740216363462868,
+        "10507": -0.009668099207787328,
+        "10509": 0.010799689440993743,
+        "10511": 0.03622317097964045,
+        "10512": 0.05319925322471153
+      }
+    },
+    {
+      "cohort": "bridge6",
+      "scenario": "vv_hz10_noise0p5",
+      "reference": "canonical",
+      "games": 6,
+      "old_spell": 0.4803822189000691,
+      "new_spell": 0.47461314597331133,
+      "gain": -0.005769072926757758,
+      "wins": 1,
+      "ties": 0,
+      "worst_gain": -0.013665220369947495,
+      "bootstrap95": [
+        -0.010315631369065742,
+        0.00037899633645064695
+      ],
+      "macro_gain": -0.0036651548949418467,
+      "class_f1_gain": {
+        "H": -0.004942653839861144,
+        "A": -0.004936449272647118,
+        "D": -0.0011163615723172964
+      },
+      "counts": {
+        "old": {
+          "short_reference": 370,
+          "short_matched": 17,
+          "subsecond_reference": 54,
+          "subsecond_matched": 0,
+          "missing_live": 418009,
+          "missing_dead": 352005,
+          "missing_false_dead": 73771,
+          "missing_false_live": 30765,
+          "missing_wrong_team": 35629
+        },
+        "new": {
+          "short_reference": 370,
+          "short_matched": 12,
+          "subsecond_reference": 54,
+          "subsecond_matched": 1,
+          "missing_live": 418009,
+          "missing_dead": 352005,
+          "missing_false_dead": 82647,
+          "missing_false_live": 25405,
+          "missing_wrong_team": 34772
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.04594594594594595,
+          "false_dead": 0.17648184608465367,
+          "false_live": 0.08739932671410917,
+          "wrong_team": 0.08523500690176528
+        },
+        "new": {
+          "short_recall": 0.032432432432432434,
+          "false_dead": 0.19771583865419165,
+          "false_live": 0.07217227028025171,
+          "wrong_team": 0.08318481181027203
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": -0.013513513513513514,
+        "false_dead": 0.02123399256953798,
+        "false_live": -0.015227056433857467,
+        "wrong_team": -0.002050195091493248
+      },
+      "checks": {
+        "mean_spell": false,
+        "macro": false,
+        "worst": true,
+        "H_f1": true,
+        "A_f1": true,
+        "D_f1": true
+      },
+      "pass_all": false,
+      "per_match_gain": {
+        "10502": -0.005566100214963066,
+        "10505": -0.007666013444794451,
+        "10507": -0.006282919488337146,
+        "10509": -0.009571184561445678,
+        "10511": 0.008137000518941284,
+        "10512": -0.013665220369947495
+      }
+    },
+    {
+      "cohort": "bridge6",
+      "scenario": "vv_hz10_noise0p5",
+      "reference": "sdk_shadow",
+      "games": 6,
+      "old_spell": 0.4803822189000691,
+      "new_spell": 0.47461314597331133,
+      "gain": -0.005769072926757758,
+      "wins": 1,
+      "ties": 0,
+      "worst_gain": -0.013665220369947495,
+      "bootstrap95": [
+        -0.010315631369065742,
+        0.00037899633645064695
+      ],
+      "macro_gain": -0.0036651548949418467,
+      "class_f1_gain": {
+        "H": -0.004942653839861144,
+        "A": -0.004936449272647118,
+        "D": -0.0011163615723172964
+      },
+      "counts": {
+        "old": {
+          "short_reference": 370,
+          "short_matched": 17,
+          "subsecond_reference": 54,
+          "subsecond_matched": 0,
+          "missing_live": 418009,
+          "missing_dead": 352005,
+          "missing_false_dead": 73771,
+          "missing_false_live": 30765,
+          "missing_wrong_team": 35629
+        },
+        "new": {
+          "short_reference": 370,
+          "short_matched": 12,
+          "subsecond_reference": 54,
+          "subsecond_matched": 1,
+          "missing_live": 418009,
+          "missing_dead": 352005,
+          "missing_false_dead": 82647,
+          "missing_false_live": 25405,
+          "missing_wrong_team": 34772
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.04594594594594595,
+          "false_dead": 0.17648184608465367,
+          "false_live": 0.08739932671410917,
+          "wrong_team": 0.08523500690176528
+        },
+        "new": {
+          "short_recall": 0.032432432432432434,
+          "false_dead": 0.19771583865419165,
+          "false_live": 0.07217227028025171,
+          "wrong_team": 0.08318481181027203
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": -0.013513513513513514,
+        "false_dead": 0.02123399256953798,
+        "false_live": -0.015227056433857467,
+        "wrong_team": -0.002050195091493248
+      },
+      "checks": {
+        "mean_spell": false,
+        "macro": false,
+        "worst": true,
+        "H_f1": true,
+        "A_f1": true,
+        "D_f1": true
+      },
+      "pass_all": false,
+      "per_match_gain": {
+        "10502": -0.005566100214963066,
+        "10505": -0.007666013444794451,
+        "10507": -0.006282919488337146,
+        "10509": -0.009571184561445678,
+        "10511": 0.008137000518941284,
+        "10512": -0.013665220369947495
+      }
+    },
+    {
+      "cohort": "bridge6",
+      "scenario": "vv_hz15_noise0p5",
+      "reference": "canonical",
+      "games": 6,
+      "old_spell": 0.493842499476165,
+      "new_spell": 0.4910953011364228,
+      "gain": -0.002747198339742111,
+      "wins": 2,
+      "ties": 0,
+      "worst_gain": -0.03151992213123417,
+      "bootstrap95": [
+        -0.014990976851740343,
+        0.007265418173703316
+      ],
+      "macro_gain": -0.0030755276828484854,
+      "class_f1_gain": {
+        "H": -0.007894744353012758,
+        "A": -0.0020975278861236437,
+        "D": 0.0007656891905910753
+      },
+      "counts": {
+        "old": {
+          "short_reference": 370,
+          "short_matched": 16,
+          "subsecond_reference": 54,
+          "subsecond_matched": 0,
+          "missing_live": 357326,
+          "missing_dead": 346378,
+          "missing_false_dead": 55552,
+          "missing_false_live": 35112,
+          "missing_wrong_team": 31350
+        },
+        "new": {
+          "short_reference": 370,
+          "short_matched": 12,
+          "subsecond_reference": 54,
+          "subsecond_matched": 0,
+          "missing_live": 357326,
+          "missing_dead": 346378,
+          "missing_false_dead": 66200,
+          "missing_false_live": 26873,
+          "missing_wrong_team": 30684
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.043243243243243246,
+          "false_dead": 0.15546587709822404,
+          "false_live": 0.10136902459163111,
+          "wrong_team": 0.087735009487135
+        },
+        "new": {
+          "short_recall": 0.032432432432432434,
+          "false_dead": 0.1852649961099948,
+          "false_live": 0.07758287189140188,
+          "wrong_team": 0.08587116526645136
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": -0.010810810810810811,
+        "false_dead": 0.029799119011770764,
+        "false_live": -0.023786152700229227,
+        "wrong_team": -0.0018638442206836414
+      },
+      "checks": {
+        "mean_spell": false,
+        "macro": false,
+        "worst": false,
+        "H_f1": true,
+        "A_f1": true,
+        "D_f1": true
+      },
+      "pass_all": false,
+      "per_match_gain": {
+        "10502": -0.03151992213123417,
+        "10505": 0.013269224953884273,
+        "10507": -0.0043276598353119144,
+        "10509": -0.0019621947808016182,
+        "10511": 0.010074688796680609,
+        "10512": -0.0020173270416698474
+      }
+    },
+    {
+      "cohort": "bridge6",
+      "scenario": "vv_hz15_noise0p5",
+      "reference": "sdk_shadow",
+      "games": 6,
+      "old_spell": 0.493842499476165,
+      "new_spell": 0.4910953011364228,
+      "gain": -0.002747198339742111,
+      "wins": 2,
+      "ties": 0,
+      "worst_gain": -0.03151992213123417,
+      "bootstrap95": [
+        -0.014990976851740343,
+        0.007265418173703316
+      ],
+      "macro_gain": -0.0030755276828484854,
+      "class_f1_gain": {
+        "H": -0.007894744353012758,
+        "A": -0.0020975278861236437,
+        "D": 0.0007656891905910753
+      },
+      "counts": {
+        "old": {
+          "short_reference": 370,
+          "short_matched": 16,
+          "subsecond_reference": 54,
+          "subsecond_matched": 0,
+          "missing_live": 357326,
+          "missing_dead": 346378,
+          "missing_false_dead": 55552,
+          "missing_false_live": 35112,
+          "missing_wrong_team": 31350
+        },
+        "new": {
+          "short_reference": 370,
+          "short_matched": 12,
+          "subsecond_reference": 54,
+          "subsecond_matched": 0,
+          "missing_live": 357326,
+          "missing_dead": 346378,
+          "missing_false_dead": 66200,
+          "missing_false_live": 26873,
+          "missing_wrong_team": 30684
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.043243243243243246,
+          "false_dead": 0.15546587709822404,
+          "false_live": 0.10136902459163111,
+          "wrong_team": 0.087735009487135
+        },
+        "new": {
+          "short_recall": 0.032432432432432434,
+          "false_dead": 0.1852649961099948,
+          "false_live": 0.07758287189140188,
+          "wrong_team": 0.08587116526645136
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": -0.010810810810810811,
+        "false_dead": 0.029799119011770764,
+        "false_live": -0.023786152700229227,
+        "wrong_team": -0.0018638442206836414
+      },
+      "checks": {
+        "mean_spell": false,
+        "macro": false,
+        "worst": false,
+        "H_f1": true,
+        "A_f1": true,
+        "D_f1": true
+      },
+      "pass_all": false,
+      "per_match_gain": {
+        "10502": -0.03151992213123417,
+        "10505": 0.013269224953884273,
+        "10507": -0.0043276598353119144,
+        "10509": -0.0019621947808016182,
+        "10511": 0.010074688796680609,
+        "10512": -0.0020173270416698474
+      }
+    },
+    {
+      "cohort": "bridge6",
+      "scenario": "vv_hz10_noise2",
+      "reference": "canonical",
+      "games": 6,
+      "old_spell": 0.4040284241302318,
+      "new_spell": 0.39650491094670676,
+      "gain": -0.007523513183525075,
+      "wins": 2,
+      "ties": 0,
+      "worst_gain": -0.04485056781502589,
+      "bootstrap95": [
+        -0.024129955144626958,
+        0.005915715794043828
+      ],
+      "macro_gain": -0.00881143280161086,
+      "class_f1_gain": {
+        "H": -0.012109820830085624,
+        "A": -0.013999070527566123,
+        "D": -0.00032540704718072205
+      },
+      "counts": {
+        "old": {
+          "short_reference": 370,
+          "short_matched": 18,
+          "subsecond_reference": 54,
+          "subsecond_matched": 0,
+          "missing_live": 418009,
+          "missing_dead": 352005,
+          "missing_false_dead": 46531,
+          "missing_false_live": 62067,
+          "missing_wrong_team": 56572
+        },
+        "new": {
+          "short_reference": 370,
+          "short_matched": 8,
+          "subsecond_reference": 54,
+          "subsecond_matched": 0,
+          "missing_live": 418009,
+          "missing_dead": 352005,
+          "missing_false_dead": 62505,
+          "missing_false_live": 51292,
+          "missing_wrong_team": 55205
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.04864864864864865,
+          "false_dead": 0.11131578506682871,
+          "false_live": 0.17632419994034176,
+          "wrong_team": 0.13533679896844325
+        },
+        "new": {
+          "short_recall": 0.021621621621621623,
+          "false_dead": 0.14953027327162813,
+          "false_live": 0.1457138392920555,
+          "wrong_team": 0.1320665344526075
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": -0.02702702702702703,
+        "false_dead": 0.03821448820479942,
+        "false_live": -0.03061036064828626,
+        "wrong_team": -0.003270264515835758
+      },
+      "checks": {
+        "mean_spell": false,
+        "macro": false,
+        "worst": false,
+        "H_f1": false,
+        "A_f1": false,
+        "D_f1": true
+      },
+      "pass_all": false,
+      "per_match_gain": {
+        "10502": -0.04485056781502589,
+        "10505": 0.009211949066378344,
+        "10507": -0.0010890725186162298,
+        "10509": -9.907646580087359e-05,
+        "10511": -0.018350903970446197,
+        "10512": 0.010036592602360395
+      }
+    },
+    {
+      "cohort": "bridge6",
+      "scenario": "vv_hz10_noise2",
+      "reference": "sdk_shadow",
+      "games": 6,
+      "old_spell": 0.4040284241302318,
+      "new_spell": 0.39650491094670676,
+      "gain": -0.007523513183525075,
+      "wins": 2,
+      "ties": 0,
+      "worst_gain": -0.04485056781502589,
+      "bootstrap95": [
+        -0.024129955144626958,
+        0.005915715794043828
+      ],
+      "macro_gain": -0.00881143280161086,
+      "class_f1_gain": {
+        "H": -0.012109820830085624,
+        "A": -0.013999070527566123,
+        "D": -0.00032540704718072205
+      },
+      "counts": {
+        "old": {
+          "short_reference": 370,
+          "short_matched": 18,
+          "subsecond_reference": 54,
+          "subsecond_matched": 0,
+          "missing_live": 418009,
+          "missing_dead": 352005,
+          "missing_false_dead": 46531,
+          "missing_false_live": 62067,
+          "missing_wrong_team": 56572
+        },
+        "new": {
+          "short_reference": 370,
+          "short_matched": 8,
+          "subsecond_reference": 54,
+          "subsecond_matched": 0,
+          "missing_live": 418009,
+          "missing_dead": 352005,
+          "missing_false_dead": 62505,
+          "missing_false_live": 51292,
+          "missing_wrong_team": 55205
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.04864864864864865,
+          "false_dead": 0.11131578506682871,
+          "false_live": 0.17632419994034176,
+          "wrong_team": 0.13533679896844325
+        },
+        "new": {
+          "short_recall": 0.021621621621621623,
+          "false_dead": 0.14953027327162813,
+          "false_live": 0.1457138392920555,
+          "wrong_team": 0.1320665344526075
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": -0.02702702702702703,
+        "false_dead": 0.03821448820479942,
+        "false_live": -0.03061036064828626,
+        "wrong_team": -0.003270264515835758
+      },
+      "checks": {
+        "mean_spell": false,
+        "macro": false,
+        "worst": false,
+        "H_f1": false,
+        "A_f1": false,
+        "D_f1": true
+      },
+      "pass_all": false,
+      "per_match_gain": {
+        "10502": -0.04485056781502589,
+        "10505": 0.009211949066378344,
+        "10507": -0.0010890725186162298,
+        "10509": -9.907646580087359e-05,
+        "10511": -0.018350903970446197,
+        "10512": 0.010036592602360395
+      }
+    },
+    {
+      "cohort": "bridge6",
+      "scenario": "vv_hz15_noise2",
+      "reference": "canonical",
+      "games": 6,
+      "old_spell": 0.4263248171933059,
+      "new_spell": 0.418710719346531,
+      "gain": -0.007614097846774988,
+      "wins": 1,
+      "ties": 0,
+      "worst_gain": -0.01964268608104225,
+      "bootstrap95": [
+        -0.014925320972776185,
+        0.0004004296583994353
+      ],
+      "macro_gain": -0.003928484461573178,
+      "class_f1_gain": {
+        "H": -0.007055361391640351,
+        "A": -0.0065074063009058864,
+        "D": 0.0017773143078266829
+      },
+      "counts": {
+        "old": {
+          "short_reference": 370,
+          "short_matched": 15,
+          "subsecond_reference": 54,
+          "subsecond_matched": 1,
+          "missing_live": 357326,
+          "missing_dead": 346378,
+          "missing_false_dead": 36951,
+          "missing_false_live": 63167,
+          "missing_wrong_team": 44417
+        },
+        "new": {
+          "short_reference": 370,
+          "short_matched": 12,
+          "subsecond_reference": 54,
+          "subsecond_matched": 1,
+          "missing_live": 357326,
+          "missing_dead": 346378,
+          "missing_false_dead": 51663,
+          "missing_false_live": 52133,
+          "missing_wrong_team": 42182
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.04054054054054054,
+          "false_dead": 0.1034097714691906,
+          "false_live": 0.18236435339426868,
+          "wrong_team": 0.12430385698213955
+        },
+        "new": {
+          "short_recall": 0.032432432432432434,
+          "false_dead": 0.14458225821798582,
+          "false_live": 0.1505089815173019,
+          "wrong_team": 0.1180490644397553
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": -0.008108108108108109,
+        "false_dead": 0.041172486748795215,
+        "false_live": -0.03185537187696677,
+        "wrong_team": -0.006254792542384258
+      },
+      "checks": {
+        "mean_spell": false,
+        "macro": false,
+        "worst": true,
+        "H_f1": true,
+        "A_f1": true,
+        "D_f1": true
+      },
+      "pass_all": false,
+      "per_match_gain": {
+        "10502": -0.01964268608104225,
+        "10505": -0.00636836424295939,
+        "10507": -0.0003061946647022751,
+        "10509": -0.017887139107611583,
+        "10511": -0.009789957694659346,
+        "10512": 0.008309754710324913
+      }
+    },
+    {
+      "cohort": "bridge6",
+      "scenario": "vv_hz15_noise2",
+      "reference": "sdk_shadow",
+      "games": 6,
+      "old_spell": 0.4263248171933059,
+      "new_spell": 0.418710719346531,
+      "gain": -0.007614097846774988,
+      "wins": 1,
+      "ties": 0,
+      "worst_gain": -0.01964268608104225,
+      "bootstrap95": [
+        -0.014925320972776185,
+        0.0004004296583994353
+      ],
+      "macro_gain": -0.003928484461573178,
+      "class_f1_gain": {
+        "H": -0.007055361391640351,
+        "A": -0.0065074063009058864,
+        "D": 0.0017773143078266829
+      },
+      "counts": {
+        "old": {
+          "short_reference": 370,
+          "short_matched": 15,
+          "subsecond_reference": 54,
+          "subsecond_matched": 1,
+          "missing_live": 357326,
+          "missing_dead": 346378,
+          "missing_false_dead": 36951,
+          "missing_false_live": 63167,
+          "missing_wrong_team": 44417
+        },
+        "new": {
+          "short_reference": 370,
+          "short_matched": 12,
+          "subsecond_reference": 54,
+          "subsecond_matched": 1,
+          "missing_live": 357326,
+          "missing_dead": 346378,
+          "missing_false_dead": 51663,
+          "missing_false_live": 52133,
+          "missing_wrong_team": 42182
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.04054054054054054,
+          "false_dead": 0.1034097714691906,
+          "false_live": 0.18236435339426868,
+          "wrong_team": 0.12430385698213955
+        },
+        "new": {
+          "short_recall": 0.032432432432432434,
+          "false_dead": 0.14458225821798582,
+          "false_live": 0.1505089815173019,
+          "wrong_team": 0.1180490644397553
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": -0.008108108108108109,
+        "false_dead": 0.041172486748795215,
+        "false_live": -0.03185537187696677,
+        "wrong_team": -0.006254792542384258
+      },
+      "checks": {
+        "mean_spell": false,
+        "macro": false,
+        "worst": true,
+        "H_f1": true,
+        "A_f1": true,
+        "D_f1": true
+      },
+      "pass_all": false,
+      "per_match_gain": {
+        "10502": -0.01964268608104225,
+        "10505": -0.00636836424295939,
+        "10507": -0.0003061946647022751,
+        "10509": -0.017887139107611583,
+        "10511": -0.009789957694659346,
+        "10512": 0.008309754710324913
+      }
+    },
+    {
+      "cohort": "original_final12",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "games": 12,
+      "old_spell": 0.6394520560538526,
+      "new_spell": 0.6769474587130585,
+      "gain": 0.037495402659205986,
+      "wins": 12,
+      "ties": 0,
+      "worst_gain": 0.010669180791539334,
+      "bootstrap95": [
+        0.02781633850128683,
+        0.04771221208619617
+      ],
+      "macro_gain": 0.004291461184877832,
+      "class_f1_gain": {
+        "H": 0.005869590432899262,
+        "A": 0.006125888870660697,
+        "D": 0.0008789042510735553
+      },
+      "counts": {
+        "old": {
+          "short_reference": 846,
+          "short_matched": 119,
+          "subsecond_reference": 109,
+          "subsecond_matched": 4,
+          "missing_live": 382811,
+          "missing_dead": 739467,
+          "missing_false_dead": 73321,
+          "missing_false_live": 18726,
+          "missing_wrong_team": 43529
+        },
+        "new": {
+          "short_reference": 846,
+          "short_matched": 210,
+          "subsecond_reference": 109,
+          "subsecond_matched": 1,
+          "missing_live": 382811,
+          "missing_dead": 739467,
+          "missing_false_dead": 69236,
+          "missing_false_live": 20977,
+          "missing_wrong_team": 39151
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.14066193853427897,
+          "false_dead": 0.19153315866054005,
+          "false_live": 0.025323645274231303,
+          "wrong_team": 0.11370885371632476
+        },
+        "new": {
+          "short_recall": 0.24822695035460993,
+          "false_dead": 0.18086209643923504,
+          "false_live": 0.02836772972965663,
+          "wrong_team": 0.10227240074083556
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": 0.10756501182033096,
+        "false_dead": -0.010671062221305011,
+        "false_live": 0.0030440844554253284,
+        "wrong_team": -0.011436452975489203
+      },
+      "checks": {
+        "mean_spell": true,
+        "macro": true,
+        "worst": true,
+        "H_f1": true,
+        "A_f1": true,
+        "D_f1": true
+      },
+      "pass_all": true,
+      "per_match_gain": {
+        "3812": 0.03283465725213308,
+        "3814": 0.026246527680350296,
+        "3825": 0.06109802644382567,
+        "3826": 0.010669180791539334,
+        "3829": 0.020144446918296643,
+        "3830": 0.04200704721634951,
+        "3841": 0.028439763001975038,
+        "3843": 0.05424387414818044,
+        "3844": 0.07080243188704827,
+        "3845": 0.04350358627621187,
+        "3856": 0.017199079989777655,
+        "3857": 0.04275621030478405
+      }
+    },
+    {
+      "cohort": "original_final12",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "games": 12,
+      "old_spell": 0.6394520560538526,
+      "new_spell": 0.6769474587130585,
+      "gain": 0.037495402659205986,
+      "wins": 12,
+      "ties": 0,
+      "worst_gain": 0.010669180791539334,
+      "bootstrap95": [
+        0.02781633850128683,
+        0.04771221208619617
+      ],
+      "macro_gain": 0.004291461184877832,
+      "class_f1_gain": {
+        "H": 0.005869590432899262,
+        "A": 0.006125888870660697,
+        "D": 0.0008789042510735553
+      },
+      "counts": {
+        "old": {
+          "short_reference": 846,
+          "short_matched": 119,
+          "subsecond_reference": 109,
+          "subsecond_matched": 4,
+          "missing_live": 382811,
+          "missing_dead": 739467,
+          "missing_false_dead": 73321,
+          "missing_false_live": 18726,
+          "missing_wrong_team": 43529
+        },
+        "new": {
+          "short_reference": 846,
+          "short_matched": 210,
+          "subsecond_reference": 109,
+          "subsecond_matched": 1,
+          "missing_live": 382811,
+          "missing_dead": 739467,
+          "missing_false_dead": 69236,
+          "missing_false_live": 20977,
+          "missing_wrong_team": 39151
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.14066193853427897,
+          "false_dead": 0.19153315866054005,
+          "false_live": 0.025323645274231303,
+          "wrong_team": 0.11370885371632476
+        },
+        "new": {
+          "short_recall": 0.24822695035460993,
+          "false_dead": 0.18086209643923504,
+          "false_live": 0.02836772972965663,
+          "wrong_team": 0.10227240074083556
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": 0.10756501182033096,
+        "false_dead": -0.010671062221305011,
+        "false_live": 0.0030440844554253284,
+        "wrong_team": -0.011436452975489203
+      },
+      "checks": {
+        "mean_spell": true,
+        "macro": true,
+        "worst": true,
+        "H_f1": true,
+        "A_f1": true,
+        "D_f1": true
+      },
+      "pass_all": true,
+      "per_match_gain": {
+        "3812": 0.03283465725213308,
+        "3814": 0.026246527680350296,
+        "3825": 0.06109802644382567,
+        "3826": 0.010669180791539334,
+        "3829": 0.020144446918296643,
+        "3830": 0.04200704721634951,
+        "3841": 0.028439763001975038,
+        "3843": 0.05424387414818044,
+        "3844": 0.07080243188704827,
+        "3845": 0.04350358627621187,
+        "3856": 0.017199079989777655,
+        "3857": 0.04275621030478405
+      }
+    },
+    {
+      "cohort": "original_final12",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "games": 12,
+      "old_spell": 0.6213322910957914,
+      "new_spell": 0.6592099727396618,
+      "gain": 0.037877681643870335,
+      "wins": 12,
+      "ties": 0,
+      "worst_gain": 0.009409664247574057,
+      "bootstrap95": [
+        0.028699544431971605,
+        0.047173158582309166
+      ],
+      "macro_gain": 0.005522177794653453,
+      "class_f1_gain": {
+        "H": 0.00722079182530493,
+        "A": 0.007062387593256771,
+        "D": 0.0022833539653987303
+      },
+      "counts": {
+        "old": {
+          "short_reference": 846,
+          "short_matched": 112,
+          "subsecond_reference": 109,
+          "subsecond_matched": 4,
+          "missing_live": 414632,
+          "missing_dead": 741556,
+          "missing_false_dead": 79333,
+          "missing_false_live": 19046,
+          "missing_wrong_team": 46622
+        },
+        "new": {
+          "short_reference": 846,
+          "short_matched": 195,
+          "subsecond_reference": 109,
+          "subsecond_matched": 3,
+          "missing_live": 414632,
+          "missing_dead": 741556,
+          "missing_false_dead": 73616,
+          "missing_false_live": 20897,
+          "missing_wrong_team": 42245
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.13238770685579196,
+          "false_dead": 0.1913335198441027,
+          "false_live": 0.025683832374089076,
+          "wrong_team": 0.11244187616971194
+        },
+        "new": {
+          "short_recall": 0.23049645390070922,
+          "false_dead": 0.17754538964672287,
+          "false_live": 0.028179935163359208,
+          "wrong_team": 0.10188552740743599
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": 0.09810874704491726,
+        "false_dead": -0.013788130197379844,
+        "false_live": 0.002496102789270132,
+        "wrong_team": -0.010556348762275944
+      },
+      "checks": {
+        "mean_spell": true,
+        "macro": true,
+        "worst": true,
+        "H_f1": true,
+        "A_f1": true,
+        "D_f1": true
+      },
+      "pass_all": true,
+      "per_match_gain": {
+        "3812": 0.032274754100739655,
+        "3814": 0.025274356103023532,
+        "3825": 0.062151220045956856,
+        "3826": 0.009409664247574057,
+        "3829": 0.03371502608817434,
+        "3830": 0.04439331479883679,
+        "3841": 0.0415377173787862,
+        "3843": 0.049629700875252425,
+        "3844": 0.06581120050564238,
+        "3845": 0.029717477709743312,
+        "3856": 0.015452912707879296,
+        "3857": 0.04516483516483516
+      }
+    },
+    {
+      "cohort": "original_final12",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "games": 12,
+      "old_spell": 0.6213322910957914,
+      "new_spell": 0.6592099727396618,
+      "gain": 0.037877681643870335,
+      "wins": 12,
+      "ties": 0,
+      "worst_gain": 0.009409664247574057,
+      "bootstrap95": [
+        0.028699544431971605,
+        0.047173158582309166
+      ],
+      "macro_gain": 0.005522177794653453,
+      "class_f1_gain": {
+        "H": 0.00722079182530493,
+        "A": 0.007062387593256771,
+        "D": 0.0022833539653987303
+      },
+      "counts": {
+        "old": {
+          "short_reference": 846,
+          "short_matched": 112,
+          "subsecond_reference": 109,
+          "subsecond_matched": 4,
+          "missing_live": 414632,
+          "missing_dead": 741556,
+          "missing_false_dead": 79333,
+          "missing_false_live": 19046,
+          "missing_wrong_team": 46622
+        },
+        "new": {
+          "short_reference": 846,
+          "short_matched": 195,
+          "subsecond_reference": 109,
+          "subsecond_matched": 3,
+          "missing_live": 414632,
+          "missing_dead": 741556,
+          "missing_false_dead": 73616,
+          "missing_false_live": 20897,
+          "missing_wrong_team": 42245
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.13238770685579196,
+          "false_dead": 0.1913335198441027,
+          "false_live": 0.025683832374089076,
+          "wrong_team": 0.11244187616971194
+        },
+        "new": {
+          "short_recall": 0.23049645390070922,
+          "false_dead": 0.17754538964672287,
+          "false_live": 0.028179935163359208,
+          "wrong_team": 0.10188552740743599
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": 0.09810874704491726,
+        "false_dead": -0.013788130197379844,
+        "false_live": 0.002496102789270132,
+        "wrong_team": -0.010556348762275944
+      },
+      "checks": {
+        "mean_spell": true,
+        "macro": true,
+        "worst": true,
+        "H_f1": true,
+        "A_f1": true,
+        "D_f1": true
+      },
+      "pass_all": true,
+      "per_match_gain": {
+        "3812": 0.032274754100739655,
+        "3814": 0.025274356103023532,
+        "3825": 0.062151220045956856,
+        "3826": 0.009409664247574057,
+        "3829": 0.03371502608817434,
+        "3830": 0.04439331479883679,
+        "3841": 0.0415377173787862,
+        "3843": 0.049629700875252425,
+        "3844": 0.06581120050564238,
+        "3845": 0.029717477709743312,
+        "3856": 0.015452912707879296,
+        "3857": 0.04516483516483516
+      }
+    },
+    {
+      "cohort": "original_final12",
+      "scenario": "vv_hz10_noise0p5",
+      "reference": "canonical",
+      "games": 12,
+      "old_spell": 0.48788104205970373,
+      "new_spell": 0.4818752033830021,
+      "gain": -0.006005838676701657,
+      "wins": 5,
+      "ties": 0,
+      "worst_gain": -0.04885043330872896,
+      "bootstrap95": [
+        -0.0187300289572731,
+        0.006033315601025247
+      ],
+      "macro_gain": -0.0045662718056583285,
+      "class_f1_gain": {
+        "H": -0.0040330201296866946,
+        "A": -0.007389154818689209,
+        "D": -0.0022766404685992205
+      },
+      "counts": {
+        "old": {
+          "short_reference": 846,
+          "short_matched": 55,
+          "subsecond_reference": 109,
+          "subsecond_matched": 1,
+          "missing_live": 804372,
+          "missing_dead": 779883,
+          "missing_false_dead": 126421,
+          "missing_false_live": 62131,
+          "missing_wrong_team": 75275
+        },
+        "new": {
+          "short_reference": 846,
+          "short_matched": 38,
+          "subsecond_reference": 109,
+          "subsecond_matched": 0,
+          "missing_live": 804372,
+          "missing_dead": 779883,
+          "missing_false_dead": 145010,
+          "missing_false_live": 51587,
+          "missing_wrong_team": 72893
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.06501182033096926,
+          "false_dead": 0.15716733053860651,
+          "false_live": 0.07966707826686824,
+          "wrong_team": 0.093582322606953
+        },
+        "new": {
+          "short_recall": 0.04491725768321513,
+          "false_dead": 0.18027728463944542,
+          "false_live": 0.06614710155241235,
+          "wrong_team": 0.09062100620111092
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": -0.02009456264775413,
+        "false_dead": 0.02310995410083891,
+        "false_live": -0.013519976714455886,
+        "wrong_team": -0.002961316405842074
+      },
+      "checks": {
+        "mean_spell": false,
+        "macro": false,
+        "worst": false,
+        "H_f1": true,
+        "A_f1": true,
+        "D_f1": true
+      },
+      "pass_all": false,
+      "per_match_gain": {
+        "3812": -0.03848542836527896,
+        "3814": -0.021069453457176368,
+        "3825": -0.005041087745214168,
+        "3826": 0.021352563244545597,
+        "3829": 0.023005477494641546,
+        "3830": 0.002088325915782341,
+        "3841": -0.016901896601521194,
+        "3843": -0.04885043330872896,
+        "3844": 0.010228593568384348,
+        "3845": 0.01958553224353199,
+        "3856": -0.011100088183421508,
+        "3857": -0.006882168925964549
+      }
+    },
+    {
+      "cohort": "original_final12",
+      "scenario": "vv_hz10_noise0p5",
+      "reference": "sdk_shadow",
+      "games": 12,
+      "old_spell": 0.48788104205970373,
+      "new_spell": 0.4818752033830021,
+      "gain": -0.006005838676701657,
+      "wins": 5,
+      "ties": 0,
+      "worst_gain": -0.04885043330872896,
+      "bootstrap95": [
+        -0.0187300289572731,
+        0.006033315601025247
+      ],
+      "macro_gain": -0.0045662718056583285,
+      "class_f1_gain": {
+        "H": -0.0040330201296866946,
+        "A": -0.007389154818689209,
+        "D": -0.0022766404685992205
+      },
+      "counts": {
+        "old": {
+          "short_reference": 846,
+          "short_matched": 55,
+          "subsecond_reference": 109,
+          "subsecond_matched": 1,
+          "missing_live": 804372,
+          "missing_dead": 779883,
+          "missing_false_dead": 126421,
+          "missing_false_live": 62131,
+          "missing_wrong_team": 75275
+        },
+        "new": {
+          "short_reference": 846,
+          "short_matched": 38,
+          "subsecond_reference": 109,
+          "subsecond_matched": 0,
+          "missing_live": 804372,
+          "missing_dead": 779883,
+          "missing_false_dead": 145010,
+          "missing_false_live": 51587,
+          "missing_wrong_team": 72893
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.06501182033096926,
+          "false_dead": 0.15716733053860651,
+          "false_live": 0.07966707826686824,
+          "wrong_team": 0.093582322606953
+        },
+        "new": {
+          "short_recall": 0.04491725768321513,
+          "false_dead": 0.18027728463944542,
+          "false_live": 0.06614710155241235,
+          "wrong_team": 0.09062100620111092
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": -0.02009456264775413,
+        "false_dead": 0.02310995410083891,
+        "false_live": -0.013519976714455886,
+        "wrong_team": -0.002961316405842074
+      },
+      "checks": {
+        "mean_spell": false,
+        "macro": false,
+        "worst": false,
+        "H_f1": true,
+        "A_f1": true,
+        "D_f1": true
+      },
+      "pass_all": false,
+      "per_match_gain": {
+        "3812": -0.03848542836527896,
+        "3814": -0.021069453457176368,
+        "3825": -0.005041087745214168,
+        "3826": 0.021352563244545597,
+        "3829": 0.023005477494641546,
+        "3830": 0.002088325915782341,
+        "3841": -0.016901896601521194,
+        "3843": -0.04885043330872896,
+        "3844": 0.010228593568384348,
+        "3845": 0.01958553224353199,
+        "3856": -0.011100088183421508,
+        "3857": -0.006882168925964549
+      }
+    },
+    {
+      "cohort": "original_final12",
+      "scenario": "vv_hz15_noise0p5",
+      "reference": "canonical",
+      "games": 12,
+      "old_spell": 0.48838972543912423,
+      "new_spell": 0.4811475141017418,
+      "gain": -0.007242211337382458,
+      "wins": 6,
+      "ties": 0,
+      "worst_gain": -0.03693292475314952,
+      "bootstrap95": [
+        -0.014944058586350286,
+        -0.0003501459605365582
+      ],
+      "macro_gain": -0.003955153940906814,
+      "class_f1_gain": {
+        "H": -0.0050666618865777,
+        "A": -0.0067436008231564855,
+        "D": -5.5199112986283515e-05
+      },
+      "counts": {
+        "old": {
+          "short_reference": 846,
+          "short_matched": 49,
+          "subsecond_reference": 109,
+          "subsecond_matched": 0,
+          "missing_live": 688342,
+          "missing_dead": 769107,
+          "missing_false_dead": 98921,
+          "missing_false_live": 70757,
+          "missing_wrong_team": 71383
+        },
+        "new": {
+          "short_reference": 846,
+          "short_matched": 42,
+          "subsecond_reference": 109,
+          "subsecond_matched": 0,
+          "missing_live": 688342,
+          "missing_dead": 769107,
+          "missing_false_dead": 120610,
+          "missing_false_live": 54739,
+          "missing_wrong_team": 69934
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.057919621749408984,
+          "false_dead": 0.14370908647155048,
+          "false_live": 0.0919989026234321,
+          "wrong_team": 0.10370281052151402
+        },
+        "new": {
+          "short_recall": 0.04964539007092199,
+          "false_dead": 0.1752181328467535,
+          "false_live": 0.07117215159919231,
+          "wrong_team": 0.10159775228011657
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": -0.008274231678486996,
+        "false_dead": 0.03150904637520302,
+        "false_live": -0.020826751024239795,
+        "wrong_team": -0.0021050582413974506
+      },
+      "checks": {
+        "mean_spell": false,
+        "macro": false,
+        "worst": false,
+        "H_f1": true,
+        "A_f1": true,
+        "D_f1": true
+      },
+      "pass_all": false,
+      "per_match_gain": {
+        "3812": -0.013185164140724348,
+        "3814": -0.013847365810486123,
+        "3825": 0.012147273197669783,
+        "3826": 0.001470670783047856,
+        "3829": 0.003906966704441128,
+        "3830": -0.017567017959457587,
+        "3841": -0.018690858041529368,
+        "3843": -0.03693292475314952,
+        "3844": 0.0006560603575529456,
+        "3845": 0.0009552052442640679,
+        "3856": -0.010299653493271332,
+        "3857": 0.004480271863052998
+      }
+    },
+    {
+      "cohort": "original_final12",
+      "scenario": "vv_hz15_noise0p5",
+      "reference": "sdk_shadow",
+      "games": 12,
+      "old_spell": 0.48838972543912423,
+      "new_spell": 0.4811475141017418,
+      "gain": -0.007242211337382458,
+      "wins": 6,
+      "ties": 0,
+      "worst_gain": -0.03693292475314952,
+      "bootstrap95": [
+        -0.014944058586350286,
+        -0.0003501459605365582
+      ],
+      "macro_gain": -0.003955153940906814,
+      "class_f1_gain": {
+        "H": -0.0050666618865777,
+        "A": -0.0067436008231564855,
+        "D": -5.5199112986283515e-05
+      },
+      "counts": {
+        "old": {
+          "short_reference": 846,
+          "short_matched": 49,
+          "subsecond_reference": 109,
+          "subsecond_matched": 0,
+          "missing_live": 688342,
+          "missing_dead": 769107,
+          "missing_false_dead": 98921,
+          "missing_false_live": 70757,
+          "missing_wrong_team": 71383
+        },
+        "new": {
+          "short_reference": 846,
+          "short_matched": 42,
+          "subsecond_reference": 109,
+          "subsecond_matched": 0,
+          "missing_live": 688342,
+          "missing_dead": 769107,
+          "missing_false_dead": 120610,
+          "missing_false_live": 54739,
+          "missing_wrong_team": 69934
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.057919621749408984,
+          "false_dead": 0.14370908647155048,
+          "false_live": 0.0919989026234321,
+          "wrong_team": 0.10370281052151402
+        },
+        "new": {
+          "short_recall": 0.04964539007092199,
+          "false_dead": 0.1752181328467535,
+          "false_live": 0.07117215159919231,
+          "wrong_team": 0.10159775228011657
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": -0.008274231678486996,
+        "false_dead": 0.03150904637520302,
+        "false_live": -0.020826751024239795,
+        "wrong_team": -0.0021050582413974506
+      },
+      "checks": {
+        "mean_spell": false,
+        "macro": false,
+        "worst": false,
+        "H_f1": true,
+        "A_f1": true,
+        "D_f1": true
+      },
+      "pass_all": false,
+      "per_match_gain": {
+        "3812": -0.013185164140724348,
+        "3814": -0.013847365810486123,
+        "3825": 0.012147273197669783,
+        "3826": 0.001470670783047856,
+        "3829": 0.003906966704441128,
+        "3830": -0.017567017959457587,
+        "3841": -0.018690858041529368,
+        "3843": -0.03693292475314952,
+        "3844": 0.0006560603575529456,
+        "3845": 0.0009552052442640679,
+        "3856": -0.010299653493271332,
+        "3857": 0.004480271863052998
+      }
+    },
+    {
+      "cohort": "original_final12",
+      "scenario": "vv_hz10_noise2",
+      "reference": "canonical",
+      "games": 12,
+      "old_spell": 0.39725023216764493,
+      "new_spell": 0.3867592488399791,
+      "gain": -0.010490983327665881,
+      "wins": 2,
+      "ties": 0,
+      "worst_gain": -0.041320112849578094,
+      "bootstrap95": [
+        -0.019716401830956,
+        -0.0008252404400915569
+      ],
+      "macro_gain": -0.010819679314472752,
+      "class_f1_gain": {
+        "H": -0.013557906444643173,
+        "A": -0.016078241012047367,
+        "D": -0.0028228904867276896
+      },
+      "counts": {
+        "old": {
+          "short_reference": 846,
+          "short_matched": 44,
+          "subsecond_reference": 109,
+          "subsecond_matched": 1,
+          "missing_live": 804372,
+          "missing_dead": 779883,
+          "missing_false_dead": 82578,
+          "missing_false_live": 126138,
+          "missing_wrong_team": 112517
+        },
+        "new": {
+          "short_reference": 846,
+          "short_matched": 26,
+          "subsecond_reference": 109,
+          "subsecond_matched": 1,
+          "missing_live": 804372,
+          "missing_dead": 779883,
+          "missing_false_dead": 125511,
+          "missing_false_live": 98577,
+          "missing_wrong_team": 108735
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.05200945626477541,
+          "false_dead": 0.10266145514761826,
+          "false_live": 0.16173964556221895,
+          "wrong_team": 0.1398817959849423
+        },
+        "new": {
+          "short_recall": 0.030732860520094562,
+          "false_dead": 0.15603601318792798,
+          "false_live": 0.12639972919014775,
+          "wrong_team": 0.1351799913472871
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": -0.02127659574468085,
+        "false_dead": 0.053374558040309716,
+        "false_live": -0.035339916372071206,
+        "wrong_team": -0.00470180463765521
+      },
+      "checks": {
+        "mean_spell": false,
+        "macro": false,
+        "worst": false,
+        "H_f1": false,
+        "A_f1": false,
+        "D_f1": true
+      },
+      "pass_all": false,
+      "per_match_gain": {
+        "3812": -0.041320112849578094,
+        "3814": -0.015206415206415247,
+        "3825": -0.01876723438767236,
+        "3826": 0.021078465147562953,
+        "3829": -0.019227906850872167,
+        "3830": -0.015092548647366089,
+        "3841": -0.01369792584758206,
+        "3843": -0.009106743239235271,
+        "3844": -0.02045088148109625,
+        "3845": -0.0009757149402981335,
+        "3856": -0.013266792034331454,
+        "3857": 0.020142010404893607
+      }
+    },
+    {
+      "cohort": "original_final12",
+      "scenario": "vv_hz10_noise2",
+      "reference": "sdk_shadow",
+      "games": 12,
+      "old_spell": 0.39725023216764493,
+      "new_spell": 0.3867592488399791,
+      "gain": -0.010490983327665881,
+      "wins": 2,
+      "ties": 0,
+      "worst_gain": -0.041320112849578094,
+      "bootstrap95": [
+        -0.019716401830956,
+        -0.0008252404400915569
+      ],
+      "macro_gain": -0.010819679314472752,
+      "class_f1_gain": {
+        "H": -0.013557906444643173,
+        "A": -0.016078241012047367,
+        "D": -0.0028228904867276896
+      },
+      "counts": {
+        "old": {
+          "short_reference": 846,
+          "short_matched": 44,
+          "subsecond_reference": 109,
+          "subsecond_matched": 1,
+          "missing_live": 804372,
+          "missing_dead": 779883,
+          "missing_false_dead": 82578,
+          "missing_false_live": 126138,
+          "missing_wrong_team": 112517
+        },
+        "new": {
+          "short_reference": 846,
+          "short_matched": 26,
+          "subsecond_reference": 109,
+          "subsecond_matched": 1,
+          "missing_live": 804372,
+          "missing_dead": 779883,
+          "missing_false_dead": 125511,
+          "missing_false_live": 98577,
+          "missing_wrong_team": 108735
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.05200945626477541,
+          "false_dead": 0.10266145514761826,
+          "false_live": 0.16173964556221895,
+          "wrong_team": 0.1398817959849423
+        },
+        "new": {
+          "short_recall": 0.030732860520094562,
+          "false_dead": 0.15603601318792798,
+          "false_live": 0.12639972919014775,
+          "wrong_team": 0.1351799913472871
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": -0.02127659574468085,
+        "false_dead": 0.053374558040309716,
+        "false_live": -0.035339916372071206,
+        "wrong_team": -0.00470180463765521
+      },
+      "checks": {
+        "mean_spell": false,
+        "macro": false,
+        "worst": false,
+        "H_f1": false,
+        "A_f1": false,
+        "D_f1": true
+      },
+      "pass_all": false,
+      "per_match_gain": {
+        "3812": -0.041320112849578094,
+        "3814": -0.015206415206415247,
+        "3825": -0.01876723438767236,
+        "3826": 0.021078465147562953,
+        "3829": -0.019227906850872167,
+        "3830": -0.015092548647366089,
+        "3841": -0.01369792584758206,
+        "3843": -0.009106743239235271,
+        "3844": -0.02045088148109625,
+        "3845": -0.0009757149402981335,
+        "3856": -0.013266792034331454,
+        "3857": 0.020142010404893607
+      }
+    },
+    {
+      "cohort": "original_final12",
+      "scenario": "vv_hz15_noise2",
+      "reference": "canonical",
+      "games": 12,
+      "old_spell": 0.4013068108588662,
+      "new_spell": 0.3866743855285441,
+      "gain": -0.01463242533032208,
+      "wins": 2,
+      "ties": 0,
+      "worst_gain": -0.03876138433515486,
+      "bootstrap95": [
+        -0.0241184297898525,
+        -0.003773410479703176
+      ],
+      "macro_gain": -0.0063494866610821305,
+      "class_f1_gain": {
+        "H": -0.010482138733600191,
+        "A": -0.011218352948554824,
+        "D": 0.00265203169890856
+      },
+      "counts": {
+        "old": {
+          "short_reference": 846,
+          "short_matched": 35,
+          "subsecond_reference": 109,
+          "subsecond_matched": 2,
+          "missing_live": 688342,
+          "missing_dead": 769107,
+          "missing_false_dead": 66284,
+          "missing_false_live": 133328,
+          "missing_wrong_team": 97359
+        },
+        "new": {
+          "short_reference": 846,
+          "short_matched": 27,
+          "subsecond_reference": 109,
+          "subsecond_matched": 0,
+          "missing_live": 688342,
+          "missing_dead": 769107,
+          "missing_false_dead": 97918,
+          "missing_false_live": 107562,
+          "missing_wrong_team": 96616
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.041371158392434985,
+          "false_dead": 0.09629515560578898,
+          "false_live": 0.17335429270569636,
+          "wrong_team": 0.1414398656481807
+        },
+        "new": {
+          "short_recall": 0.031914893617021274,
+          "false_dead": 0.1422519619607695,
+          "false_live": 0.1398531023641704,
+          "wrong_team": 0.1403604603525573
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": -0.009456264775413711,
+        "false_dead": 0.04595680635498052,
+        "false_live": -0.03350119034152596,
+        "wrong_team": -0.0010794052956233924
+      },
+      "checks": {
+        "mean_spell": false,
+        "macro": false,
+        "worst": false,
+        "H_f1": false,
+        "A_f1": false,
+        "D_f1": true
+      },
+      "pass_all": false,
+      "per_match_gain": {
+        "3812": -0.03876138433515486,
+        "3814": -0.01652277227722776,
+        "3825": -0.02135676729623387,
+        "3826": 0.017352425223080115,
+        "3829": -0.023688546372575003,
+        "3830": -0.009980101418576193,
+        "3841": -0.008504304561717357,
+        "3843": -0.017873227826333882,
+        "3844": -0.016884364831640186,
+        "3845": 0.022741453700630576,
+        "3856": -0.024972409650335925,
+        "3857": -0.037139104317780613
+      }
+    },
+    {
+      "cohort": "original_final12",
+      "scenario": "vv_hz15_noise2",
+      "reference": "sdk_shadow",
+      "games": 12,
+      "old_spell": 0.4013068108588662,
+      "new_spell": 0.3866743855285441,
+      "gain": -0.01463242533032208,
+      "wins": 2,
+      "ties": 0,
+      "worst_gain": -0.03876138433515486,
+      "bootstrap95": [
+        -0.0241184297898525,
+        -0.003773410479703176
+      ],
+      "macro_gain": -0.0063494866610821305,
+      "class_f1_gain": {
+        "H": -0.010482138733600191,
+        "A": -0.011218352948554824,
+        "D": 0.00265203169890856
+      },
+      "counts": {
+        "old": {
+          "short_reference": 846,
+          "short_matched": 35,
+          "subsecond_reference": 109,
+          "subsecond_matched": 2,
+          "missing_live": 688342,
+          "missing_dead": 769107,
+          "missing_false_dead": 66284,
+          "missing_false_live": 133328,
+          "missing_wrong_team": 97359
+        },
+        "new": {
+          "short_reference": 846,
+          "short_matched": 27,
+          "subsecond_reference": 109,
+          "subsecond_matched": 0,
+          "missing_live": 688342,
+          "missing_dead": 769107,
+          "missing_false_dead": 97918,
+          "missing_false_live": 107562,
+          "missing_wrong_team": 96616
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.041371158392434985,
+          "false_dead": 0.09629515560578898,
+          "false_live": 0.17335429270569636,
+          "wrong_team": 0.1414398656481807
+        },
+        "new": {
+          "short_recall": 0.031914893617021274,
+          "false_dead": 0.1422519619607695,
+          "false_live": 0.1398531023641704,
+          "wrong_team": 0.1403604603525573
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": -0.009456264775413711,
+        "false_dead": 0.04595680635498052,
+        "false_live": -0.03350119034152596,
+        "wrong_team": -0.0010794052956233924
+      },
+      "checks": {
+        "mean_spell": false,
+        "macro": false,
+        "worst": false,
+        "H_f1": false,
+        "A_f1": false,
+        "D_f1": true
+      },
+      "pass_all": false,
+      "per_match_gain": {
+        "3812": -0.03876138433515486,
+        "3814": -0.01652277227722776,
+        "3825": -0.02135676729623387,
+        "3826": 0.017352425223080115,
+        "3829": -0.023688546372575003,
+        "3830": -0.009980101418576193,
+        "3841": -0.008504304561717357,
+        "3843": -0.017873227826333882,
+        "3844": -0.016884364831640186,
+        "3845": 0.022741453700630576,
+        "3856": -0.024972409650335925,
+        "3857": -0.037139104317780613
+      }
+    },
+    {
+      "cohort": "all18",
+      "scenario": "natural_detected",
+      "reference": "canonical",
+      "games": 18,
+      "old_spell": 0.6392338188025252,
+      "new_spell": 0.6746439305696476,
+      "gain": 0.03541011176712252,
+      "wins": 18,
+      "ties": 0,
+      "worst_gain": 0.010669180791539334,
+      "bootstrap95": [
+        0.027030428937386858,
+        0.04406735811833458
+      ],
+      "macro_gain": 0.004920692397572177,
+      "class_f1_gain": {
+        "H": 0.007136936887421391,
+        "A": 0.006204606743788489,
+        "D": 0.001420533561506676
+      },
+      "counts": {
+        "old": {
+          "short_reference": 1216,
+          "short_matched": 173,
+          "subsecond_reference": 163,
+          "subsecond_matched": 5,
+          "missing_live": 579297,
+          "missing_dead": 1070662,
+          "missing_false_dead": 109345,
+          "missing_false_live": 27983,
+          "missing_wrong_team": 64393
+        },
+        "new": {
+          "short_reference": 1216,
+          "short_matched": 289,
+          "subsecond_reference": 163,
+          "subsecond_matched": 2,
+          "missing_live": 579297,
+          "missing_dead": 1070662,
+          "missing_false_dead": 102550,
+          "missing_false_live": 30781,
+          "missing_wrong_team": 57575
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.14226973684210525,
+          "false_dead": 0.18875464571713646,
+          "false_live": 0.02613616622239325,
+          "wrong_team": 0.11115714391754143
+        },
+        "new": {
+          "short_recall": 0.23766447368421054,
+          "false_dead": 0.17702491122860986,
+          "false_live": 0.028749502644158473,
+          "wrong_team": 0.09938770613346867
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": 0.09539473684210528,
+        "false_dead": -0.0117297344885266,
+        "false_live": 0.0026133364217652243,
+        "wrong_team": -0.011769437784072759
+      },
+      "checks": {
+        "mean_spell": true,
+        "macro": true,
+        "worst": true,
+        "H_f1": true,
+        "A_f1": true,
+        "D_f1": true,
+        "short_recall": true,
+        "false_dead": true,
+        "false_live": true,
+        "wrong_team": true
+      },
+      "pass_all": true,
+      "per_match_gain": {
+        "10502": 0.06484848484848482,
+        "10505": 0.026412102041978636,
+        "10507": 0.012692325252248615,
+        "10509": 0.012251363182551378,
+        "10511": 0.021315702479338783,
+        "10512": 0.04991720209313122,
+        "3812": 0.03283465725213308,
+        "3814": 0.026246527680350296,
+        "3825": 0.06109802644382567,
+        "3826": 0.010669180791539334,
+        "3829": 0.020144446918296643,
+        "3830": 0.04200704721634951,
+        "3841": 0.028439763001975038,
+        "3843": 0.05424387414818044,
+        "3844": 0.07080243188704827,
+        "3845": 0.04350358627621187,
+        "3856": 0.017199079989777655,
+        "3857": 0.04275621030478405
+      }
+    },
+    {
+      "cohort": "all18",
+      "scenario": "natural_detected",
+      "reference": "sdk_shadow",
+      "games": 18,
+      "old_spell": 0.6392338188025252,
+      "new_spell": 0.6746439305696476,
+      "gain": 0.03541011176712252,
+      "wins": 18,
+      "ties": 0,
+      "worst_gain": 0.010669180791539334,
+      "bootstrap95": [
+        0.027030428937386858,
+        0.04406735811833458
+      ],
+      "macro_gain": 0.004920692397572177,
+      "class_f1_gain": {
+        "H": 0.007136936887421391,
+        "A": 0.006204606743788489,
+        "D": 0.001420533561506676
+      },
+      "counts": {
+        "old": {
+          "short_reference": 1216,
+          "short_matched": 173,
+          "subsecond_reference": 163,
+          "subsecond_matched": 5,
+          "missing_live": 579297,
+          "missing_dead": 1070662,
+          "missing_false_dead": 109345,
+          "missing_false_live": 27983,
+          "missing_wrong_team": 64393
+        },
+        "new": {
+          "short_reference": 1216,
+          "short_matched": 289,
+          "subsecond_reference": 163,
+          "subsecond_matched": 2,
+          "missing_live": 579297,
+          "missing_dead": 1070662,
+          "missing_false_dead": 102550,
+          "missing_false_live": 30781,
+          "missing_wrong_team": 57575
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.14226973684210525,
+          "false_dead": 0.18875464571713646,
+          "false_live": 0.02613616622239325,
+          "wrong_team": 0.11115714391754143
+        },
+        "new": {
+          "short_recall": 0.23766447368421054,
+          "false_dead": 0.17702491122860986,
+          "false_live": 0.028749502644158473,
+          "wrong_team": 0.09938770613346867
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": 0.09539473684210528,
+        "false_dead": -0.0117297344885266,
+        "false_live": 0.0026133364217652243,
+        "wrong_team": -0.011769437784072759
+      },
+      "checks": {
+        "mean_spell": true,
+        "macro": true,
+        "worst": true,
+        "H_f1": true,
+        "A_f1": true,
+        "D_f1": true,
+        "short_recall": true,
+        "false_dead": true,
+        "false_live": true,
+        "wrong_team": true
+      },
+      "pass_all": true,
+      "per_match_gain": {
+        "10502": 0.06484848484848482,
+        "10505": 0.026412102041978636,
+        "10507": 0.012692325252248615,
+        "10509": 0.012251363182551378,
+        "10511": 0.021315702479338783,
+        "10512": 0.04991720209313122,
+        "3812": 0.03283465725213308,
+        "3814": 0.026246527680350296,
+        "3825": 0.06109802644382567,
+        "3826": 0.010669180791539334,
+        "3829": 0.020144446918296643,
+        "3830": 0.04200704721634951,
+        "3841": 0.028439763001975038,
+        "3843": 0.05424387414818044,
+        "3844": 0.07080243188704827,
+        "3845": 0.04350358627621187,
+        "3856": 0.017199079989777655,
+        "3857": 0.04275621030478405
+      }
+    },
+    {
+      "cohort": "all18",
+      "scenario": "label_blind_seed7",
+      "reference": "canonical",
+      "games": 18,
+      "old_spell": 0.6198140785422319,
+      "new_spell": 0.6550798892306655,
+      "gain": 0.03526581068843368,
+      "wins": 17,
+      "ties": 0,
+      "worst_gain": -0.009668099207787328,
+      "bootstrap95": [
+        0.026161479687633812,
+        0.04365877967699176
+      ],
+      "macro_gain": 0.005626643882372378,
+      "class_f1_gain": {
+        "H": 0.007388352319425566,
+        "A": 0.007008628546373469,
+        "D": 0.0024829507813181606
+      },
+      "counts": {
+        "old": {
+          "short_reference": 1216,
+          "short_matched": 160,
+          "subsecond_reference": 163,
+          "subsecond_matched": 6,
+          "missing_live": 637180,
+          "missing_dead": 1074300,
+          "missing_false_dead": 117002,
+          "missing_false_live": 29259,
+          "missing_wrong_team": 70404
+        },
+        "new": {
+          "short_reference": 1216,
+          "short_matched": 267,
+          "subsecond_reference": 163,
+          "subsecond_matched": 5,
+          "missing_live": 637180,
+          "missing_dead": 1074300,
+          "missing_false_dead": 108361,
+          "missing_false_live": 31670,
+          "missing_wrong_team": 64185
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.13157894736842105,
+          "false_dead": 0.18362472142879563,
+          "false_live": 0.027235409103602344,
+          "wrong_team": 0.11049311026711447
+        },
+        "new": {
+          "short_recall": 0.21957236842105263,
+          "false_dead": 0.17006340437552966,
+          "false_live": 0.02947966117471842,
+          "wrong_team": 0.10073291691515741
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": 0.08799342105263158,
+        "false_dead": -0.013561317053265964,
+        "false_live": 0.002244252071116077,
+        "wrong_team": -0.009760193351957061
+      },
+      "checks": {
+        "mean_spell": true,
+        "macro": true,
+        "worst": true,
+        "H_f1": true,
+        "A_f1": true,
+        "D_f1": true,
+        "short_recall": true,
+        "false_dead": true,
+        "false_live": true,
+        "wrong_team": true
+      },
+      "pass_all": true,
+      "per_match_gain": {
+        "10502": 0.04229623459317511,
+        "10505": 0.04740216363462868,
+        "10507": -0.009668099207787328,
+        "10509": 0.010799689440993743,
+        "10511": 0.03622317097964045,
+        "10512": 0.05319925322471153,
+        "3812": 0.032274754100739655,
+        "3814": 0.025274356103023532,
+        "3825": 0.062151220045956856,
+        "3826": 0.009409664247574057,
+        "3829": 0.03371502608817434,
+        "3830": 0.04439331479883679,
+        "3841": 0.0415377173787862,
+        "3843": 0.049629700875252425,
+        "3844": 0.06581120050564238,
+        "3845": 0.029717477709743312,
+        "3856": 0.015452912707879296,
+        "3857": 0.04516483516483516
+      }
+    },
+    {
+      "cohort": "all18",
+      "scenario": "label_blind_seed7",
+      "reference": "sdk_shadow",
+      "games": 18,
+      "old_spell": 0.6198140785422319,
+      "new_spell": 0.6550798892306655,
+      "gain": 0.03526581068843368,
+      "wins": 17,
+      "ties": 0,
+      "worst_gain": -0.009668099207787328,
+      "bootstrap95": [
+        0.026161479687633812,
+        0.04365877967699176
+      ],
+      "macro_gain": 0.005626643882372378,
+      "class_f1_gain": {
+        "H": 0.007388352319425566,
+        "A": 0.007008628546373469,
+        "D": 0.0024829507813181606
+      },
+      "counts": {
+        "old": {
+          "short_reference": 1216,
+          "short_matched": 160,
+          "subsecond_reference": 163,
+          "subsecond_matched": 6,
+          "missing_live": 637180,
+          "missing_dead": 1074300,
+          "missing_false_dead": 117002,
+          "missing_false_live": 29259,
+          "missing_wrong_team": 70404
+        },
+        "new": {
+          "short_reference": 1216,
+          "short_matched": 267,
+          "subsecond_reference": 163,
+          "subsecond_matched": 5,
+          "missing_live": 637180,
+          "missing_dead": 1074300,
+          "missing_false_dead": 108361,
+          "missing_false_live": 31670,
+          "missing_wrong_team": 64185
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.13157894736842105,
+          "false_dead": 0.18362472142879563,
+          "false_live": 0.027235409103602344,
+          "wrong_team": 0.11049311026711447
+        },
+        "new": {
+          "short_recall": 0.21957236842105263,
+          "false_dead": 0.17006340437552966,
+          "false_live": 0.02947966117471842,
+          "wrong_team": 0.10073291691515741
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": 0.08799342105263158,
+        "false_dead": -0.013561317053265964,
+        "false_live": 0.002244252071116077,
+        "wrong_team": -0.009760193351957061
+      },
+      "checks": {
+        "mean_spell": true,
+        "macro": true,
+        "worst": true,
+        "H_f1": true,
+        "A_f1": true,
+        "D_f1": true,
+        "short_recall": true,
+        "false_dead": true,
+        "false_live": true,
+        "wrong_team": true
+      },
+      "pass_all": true,
+      "per_match_gain": {
+        "10502": 0.04229623459317511,
+        "10505": 0.04740216363462868,
+        "10507": -0.009668099207787328,
+        "10509": 0.010799689440993743,
+        "10511": 0.03622317097964045,
+        "10512": 0.05319925322471153,
+        "3812": 0.032274754100739655,
+        "3814": 0.025274356103023532,
+        "3825": 0.062151220045956856,
+        "3826": 0.009409664247574057,
+        "3829": 0.03371502608817434,
+        "3830": 0.04439331479883679,
+        "3841": 0.0415377173787862,
+        "3843": 0.049629700875252425,
+        "3844": 0.06581120050564238,
+        "3845": 0.029717477709743312,
+        "3856": 0.015452912707879296,
+        "3857": 0.04516483516483516
+      }
+    },
+    {
+      "cohort": "all18",
+      "scenario": "vv_hz10_noise0p5",
+      "reference": "canonical",
+      "games": 18,
+      "old_spell": 0.4853814343398255,
+      "new_spell": 0.4794545175797719,
+      "gain": -0.005926916760053691,
+      "wins": 6,
+      "ties": 0,
+      "worst_gain": -0.04885043330872896,
+      "bootstrap95": [
+        -0.014683077535577826,
+        0.002095806668042711
+      ],
+      "macro_gain": -0.004265899502086168,
+      "class_f1_gain": {
+        "H": -0.004336231366411512,
+        "A": -0.0065715863033418455,
+        "D": -0.001889880836505246
+      },
+      "counts": {
+        "old": {
+          "short_reference": 1216,
+          "short_matched": 72,
+          "subsecond_reference": 163,
+          "subsecond_matched": 1,
+          "missing_live": 1222381,
+          "missing_dead": 1131888,
+          "missing_false_dead": 200192,
+          "missing_false_live": 92896,
+          "missing_wrong_team": 110904
+        },
+        "new": {
+          "short_reference": 1216,
+          "short_matched": 50,
+          "subsecond_reference": 163,
+          "subsecond_matched": 1,
+          "missing_live": 1222381,
+          "missing_dead": 1131888,
+          "missing_false_dead": 227657,
+          "missing_false_live": 76992,
+          "missing_wrong_team": 107665
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.05921052631578947,
+          "false_dead": 0.16377217905055788,
+          "false_live": 0.08207172441089577,
+          "wrong_team": 0.09072784999112388
+        },
+        "new": {
+          "short_recall": 0.04111842105263158,
+          "false_dead": 0.18624062383168585,
+          "false_live": 0.06802086425512065,
+          "wrong_team": 0.0880781033082157
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": -0.01809210526315789,
+        "false_dead": 0.022468444781127972,
+        "false_live": -0.014050860155775127,
+        "wrong_team": -0.002649746682908183
+      },
+      "checks": {
+        "mean_spell": false,
+        "macro": false,
+        "worst": false,
+        "H_f1": true,
+        "A_f1": true,
+        "D_f1": true
+      },
+      "pass_all": false,
+      "per_match_gain": {
+        "10502": -0.005566100214963066,
+        "10505": -0.007666013444794451,
+        "10507": -0.006282919488337146,
+        "10509": -0.009571184561445678,
+        "10511": 0.008137000518941284,
+        "10512": -0.013665220369947495,
+        "3812": -0.03848542836527896,
+        "3814": -0.021069453457176368,
+        "3825": -0.005041087745214168,
+        "3826": 0.021352563244545597,
+        "3829": 0.023005477494641546,
+        "3830": 0.002088325915782341,
+        "3841": -0.016901896601521194,
+        "3843": -0.04885043330872896,
+        "3844": 0.010228593568384348,
+        "3845": 0.01958553224353199,
+        "3856": -0.011100088183421508,
+        "3857": -0.006882168925964549
+      }
+    },
+    {
+      "cohort": "all18",
+      "scenario": "vv_hz10_noise0p5",
+      "reference": "sdk_shadow",
+      "games": 18,
+      "old_spell": 0.4853814343398255,
+      "new_spell": 0.4794545175797719,
+      "gain": -0.005926916760053691,
+      "wins": 6,
+      "ties": 0,
+      "worst_gain": -0.04885043330872896,
+      "bootstrap95": [
+        -0.014683077535577826,
+        0.002095806668042711
+      ],
+      "macro_gain": -0.004265899502086168,
+      "class_f1_gain": {
+        "H": -0.004336231366411512,
+        "A": -0.0065715863033418455,
+        "D": -0.001889880836505246
+      },
+      "counts": {
+        "old": {
+          "short_reference": 1216,
+          "short_matched": 72,
+          "subsecond_reference": 163,
+          "subsecond_matched": 1,
+          "missing_live": 1222381,
+          "missing_dead": 1131888,
+          "missing_false_dead": 200192,
+          "missing_false_live": 92896,
+          "missing_wrong_team": 110904
+        },
+        "new": {
+          "short_reference": 1216,
+          "short_matched": 50,
+          "subsecond_reference": 163,
+          "subsecond_matched": 1,
+          "missing_live": 1222381,
+          "missing_dead": 1131888,
+          "missing_false_dead": 227657,
+          "missing_false_live": 76992,
+          "missing_wrong_team": 107665
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.05921052631578947,
+          "false_dead": 0.16377217905055788,
+          "false_live": 0.08207172441089577,
+          "wrong_team": 0.09072784999112388
+        },
+        "new": {
+          "short_recall": 0.04111842105263158,
+          "false_dead": 0.18624062383168585,
+          "false_live": 0.06802086425512065,
+          "wrong_team": 0.0880781033082157
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": -0.01809210526315789,
+        "false_dead": 0.022468444781127972,
+        "false_live": -0.014050860155775127,
+        "wrong_team": -0.002649746682908183
+      },
+      "checks": {
+        "mean_spell": false,
+        "macro": false,
+        "worst": false,
+        "H_f1": true,
+        "A_f1": true,
+        "D_f1": true
+      },
+      "pass_all": false,
+      "per_match_gain": {
+        "10502": -0.005566100214963066,
+        "10505": -0.007666013444794451,
+        "10507": -0.006282919488337146,
+        "10509": -0.009571184561445678,
+        "10511": 0.008137000518941284,
+        "10512": -0.013665220369947495,
+        "3812": -0.03848542836527896,
+        "3814": -0.021069453457176368,
+        "3825": -0.005041087745214168,
+        "3826": 0.021352563244545597,
+        "3829": 0.023005477494641546,
+        "3830": 0.002088325915782341,
+        "3841": -0.016901896601521194,
+        "3843": -0.04885043330872896,
+        "3844": 0.010228593568384348,
+        "3845": 0.01958553224353199,
+        "3856": -0.011100088183421508,
+        "3857": -0.006882168925964549
+      }
+    },
+    {
+      "cohort": "all18",
+      "scenario": "vv_hz15_noise0p5",
+      "reference": "canonical",
+      "games": 18,
+      "old_spell": 0.49020731678480445,
+      "new_spell": 0.4844634431133021,
+      "gain": -0.0057438736715023425,
+      "wins": 8,
+      "ties": 0,
+      "worst_gain": -0.03693292475314952,
+      "bootstrap95": [
+        -0.01237938167988054,
+        0.0002631223716319558
+      ],
+      "macro_gain": -0.0036619451882207044,
+      "class_f1_gain": {
+        "H": -0.006009356042056053,
+        "A": -0.005194909844145538,
+        "D": 0.00021843032153950274
+      },
+      "counts": {
+        "old": {
+          "short_reference": 1216,
+          "short_matched": 65,
+          "subsecond_reference": 163,
+          "subsecond_matched": 0,
+          "missing_live": 1045668,
+          "missing_dead": 1115485,
+          "missing_false_dead": 154473,
+          "missing_false_live": 105869,
+          "missing_wrong_team": 102733
+        },
+        "new": {
+          "short_reference": 1216,
+          "short_matched": 54,
+          "subsecond_reference": 163,
+          "subsecond_matched": 0,
+          "missing_live": 1045668,
+          "missing_dead": 1115485,
+          "missing_false_dead": 186810,
+          "missing_false_live": 81612,
+          "missing_wrong_team": 100618
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.05345394736842105,
+          "false_dead": 0.1477266206864894,
+          "false_live": 0.09490849271841396,
+          "wrong_team": 0.09824628849692255
+        },
+        "new": {
+          "short_recall": 0.044407894736842105,
+          "false_dead": 0.1786513501417276,
+          "false_live": 0.07316279465882554,
+          "wrong_team": 0.09622365798704752
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": -0.009046052631578948,
+        "false_dead": 0.030924729455238192,
+        "false_live": -0.021745698059588425,
+        "wrong_team": -0.0020226305098750286
+      },
+      "checks": {
+        "mean_spell": false,
+        "macro": false,
+        "worst": false,
+        "H_f1": true,
+        "A_f1": true,
+        "D_f1": true
+      },
+      "pass_all": false,
+      "per_match_gain": {
+        "10502": -0.03151992213123417,
+        "10505": 0.013269224953884273,
+        "10507": -0.0043276598353119144,
+        "10509": -0.0019621947808016182,
+        "10511": 0.010074688796680609,
+        "10512": -0.0020173270416698474,
+        "3812": -0.013185164140724348,
+        "3814": -0.013847365810486123,
+        "3825": 0.012147273197669783,
+        "3826": 0.001470670783047856,
+        "3829": 0.003906966704441128,
+        "3830": -0.017567017959457587,
+        "3841": -0.018690858041529368,
+        "3843": -0.03693292475314952,
+        "3844": 0.0006560603575529456,
+        "3845": 0.0009552052442640679,
+        "3856": -0.010299653493271332,
+        "3857": 0.004480271863052998
+      }
+    },
+    {
+      "cohort": "all18",
+      "scenario": "vv_hz15_noise0p5",
+      "reference": "sdk_shadow",
+      "games": 18,
+      "old_spell": 0.49020731678480445,
+      "new_spell": 0.4844634431133021,
+      "gain": -0.0057438736715023425,
+      "wins": 8,
+      "ties": 0,
+      "worst_gain": -0.03693292475314952,
+      "bootstrap95": [
+        -0.01237938167988054,
+        0.0002631223716319558
+      ],
+      "macro_gain": -0.0036619451882207044,
+      "class_f1_gain": {
+        "H": -0.006009356042056053,
+        "A": -0.005194909844145538,
+        "D": 0.00021843032153950274
+      },
+      "counts": {
+        "old": {
+          "short_reference": 1216,
+          "short_matched": 65,
+          "subsecond_reference": 163,
+          "subsecond_matched": 0,
+          "missing_live": 1045668,
+          "missing_dead": 1115485,
+          "missing_false_dead": 154473,
+          "missing_false_live": 105869,
+          "missing_wrong_team": 102733
+        },
+        "new": {
+          "short_reference": 1216,
+          "short_matched": 54,
+          "subsecond_reference": 163,
+          "subsecond_matched": 0,
+          "missing_live": 1045668,
+          "missing_dead": 1115485,
+          "missing_false_dead": 186810,
+          "missing_false_live": 81612,
+          "missing_wrong_team": 100618
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.05345394736842105,
+          "false_dead": 0.1477266206864894,
+          "false_live": 0.09490849271841396,
+          "wrong_team": 0.09824628849692255
+        },
+        "new": {
+          "short_recall": 0.044407894736842105,
+          "false_dead": 0.1786513501417276,
+          "false_live": 0.07316279465882554,
+          "wrong_team": 0.09622365798704752
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": -0.009046052631578948,
+        "false_dead": 0.030924729455238192,
+        "false_live": -0.021745698059588425,
+        "wrong_team": -0.0020226305098750286
+      },
+      "checks": {
+        "mean_spell": false,
+        "macro": false,
+        "worst": false,
+        "H_f1": true,
+        "A_f1": true,
+        "D_f1": true
+      },
+      "pass_all": false,
+      "per_match_gain": {
+        "10502": -0.03151992213123417,
+        "10505": 0.013269224953884273,
+        "10507": -0.0043276598353119144,
+        "10509": -0.0019621947808016182,
+        "10511": 0.010074688796680609,
+        "10512": -0.0020173270416698474,
+        "3812": -0.013185164140724348,
+        "3814": -0.013847365810486123,
+        "3825": 0.012147273197669783,
+        "3826": 0.001470670783047856,
+        "3829": 0.003906966704441128,
+        "3830": -0.017567017959457587,
+        "3841": -0.018690858041529368,
+        "3843": -0.03693292475314952,
+        "3844": 0.0006560603575529456,
+        "3845": 0.0009552052442640679,
+        "3856": -0.010299653493271332,
+        "3857": 0.004480271863052998
+      }
+    },
+    {
+      "cohort": "all18",
+      "scenario": "vv_hz10_noise2",
+      "reference": "canonical",
+      "games": 18,
+      "old_spell": 0.39950962948850727,
+      "new_spell": 0.390007802875555,
+      "gain": -0.009501826612952279,
+      "wins": 4,
+      "ties": 0,
+      "worst_gain": -0.04485056781502589,
+      "bootstrap95": [
+        -0.017686729870028218,
+        -0.001529556067234541
+      ],
+      "macro_gain": -0.010150263810185455,
+      "class_f1_gain": {
+        "H": -0.013075211239790656,
+        "A": -0.01538518418388695,
+        "D": -0.0019903960068787005
+      },
+      "counts": {
+        "old": {
+          "short_reference": 1216,
+          "short_matched": 62,
+          "subsecond_reference": 163,
+          "subsecond_matched": 1,
+          "missing_live": 1222381,
+          "missing_dead": 1131888,
+          "missing_false_dead": 129109,
+          "missing_false_live": 188205,
+          "missing_wrong_team": 169089
+        },
+        "new": {
+          "short_reference": 1216,
+          "short_matched": 34,
+          "subsecond_reference": 163,
+          "subsecond_matched": 1,
+          "missing_live": 1222381,
+          "missing_dead": 1131888,
+          "missing_false_dead": 188016,
+          "missing_false_live": 149869,
+          "missing_wrong_team": 163940
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.05098684210526316,
+          "false_dead": 0.1056209152465557,
+          "false_live": 0.166275285187227,
+          "wrong_team": 0.13832757544497173
+        },
+        "new": {
+          "short_recall": 0.027960526315789474,
+          "false_dead": 0.1538112912422559,
+          "false_live": 0.1324062098016765,
+          "wrong_team": 0.13411530447544587
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": -0.023026315789473683,
+        "false_dead": 0.048190375995700196,
+        "false_live": -0.03386907538555051,
+        "wrong_team": -0.0042122709695258664
+      },
+      "checks": {
+        "mean_spell": false,
+        "macro": false,
+        "worst": false,
+        "H_f1": false,
+        "A_f1": false,
+        "D_f1": true
+      },
+      "pass_all": false,
+      "per_match_gain": {
+        "10502": -0.04485056781502589,
+        "10505": 0.009211949066378344,
+        "10507": -0.0010890725186162298,
+        "10509": -9.907646580087359e-05,
+        "10511": -0.018350903970446197,
+        "10512": 0.010036592602360395,
+        "3812": -0.041320112849578094,
+        "3814": -0.015206415206415247,
+        "3825": -0.01876723438767236,
+        "3826": 0.021078465147562953,
+        "3829": -0.019227906850872167,
+        "3830": -0.015092548647366089,
+        "3841": -0.01369792584758206,
+        "3843": -0.009106743239235271,
+        "3844": -0.02045088148109625,
+        "3845": -0.0009757149402981335,
+        "3856": -0.013266792034331454,
+        "3857": 0.020142010404893607
+      }
+    },
+    {
+      "cohort": "all18",
+      "scenario": "vv_hz10_noise2",
+      "reference": "sdk_shadow",
+      "games": 18,
+      "old_spell": 0.39950962948850727,
+      "new_spell": 0.390007802875555,
+      "gain": -0.009501826612952279,
+      "wins": 4,
+      "ties": 0,
+      "worst_gain": -0.04485056781502589,
+      "bootstrap95": [
+        -0.017686729870028218,
+        -0.001529556067234541
+      ],
+      "macro_gain": -0.010150263810185455,
+      "class_f1_gain": {
+        "H": -0.013075211239790656,
+        "A": -0.01538518418388695,
+        "D": -0.0019903960068787005
+      },
+      "counts": {
+        "old": {
+          "short_reference": 1216,
+          "short_matched": 62,
+          "subsecond_reference": 163,
+          "subsecond_matched": 1,
+          "missing_live": 1222381,
+          "missing_dead": 1131888,
+          "missing_false_dead": 129109,
+          "missing_false_live": 188205,
+          "missing_wrong_team": 169089
+        },
+        "new": {
+          "short_reference": 1216,
+          "short_matched": 34,
+          "subsecond_reference": 163,
+          "subsecond_matched": 1,
+          "missing_live": 1222381,
+          "missing_dead": 1131888,
+          "missing_false_dead": 188016,
+          "missing_false_live": 149869,
+          "missing_wrong_team": 163940
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.05098684210526316,
+          "false_dead": 0.1056209152465557,
+          "false_live": 0.166275285187227,
+          "wrong_team": 0.13832757544497173
+        },
+        "new": {
+          "short_recall": 0.027960526315789474,
+          "false_dead": 0.1538112912422559,
+          "false_live": 0.1324062098016765,
+          "wrong_team": 0.13411530447544587
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": -0.023026315789473683,
+        "false_dead": 0.048190375995700196,
+        "false_live": -0.03386907538555051,
+        "wrong_team": -0.0042122709695258664
+      },
+      "checks": {
+        "mean_spell": false,
+        "macro": false,
+        "worst": false,
+        "H_f1": false,
+        "A_f1": false,
+        "D_f1": true
+      },
+      "pass_all": false,
+      "per_match_gain": {
+        "10502": -0.04485056781502589,
+        "10505": 0.009211949066378344,
+        "10507": -0.0010890725186162298,
+        "10509": -9.907646580087359e-05,
+        "10511": -0.018350903970446197,
+        "10512": 0.010036592602360395,
+        "3812": -0.041320112849578094,
+        "3814": -0.015206415206415247,
+        "3825": -0.01876723438767236,
+        "3826": 0.021078465147562953,
+        "3829": -0.019227906850872167,
+        "3830": -0.015092548647366089,
+        "3841": -0.01369792584758206,
+        "3843": -0.009106743239235271,
+        "3844": -0.02045088148109625,
+        "3845": -0.0009757149402981335,
+        "3856": -0.013266792034331454,
+        "3857": 0.020142010404893607
+      }
+    },
+    {
+      "cohort": "all18",
+      "scenario": "vv_hz15_noise2",
+      "reference": "canonical",
+      "games": 18,
+      "old_spell": 0.40964614630367946,
+      "new_spell": 0.3973531634678731,
+      "gain": -0.012292982835806383,
+      "wins": 3,
+      "ties": 0,
+      "worst_gain": -0.03876138433515486,
+      "bootstrap95": [
+        -0.019505074860626498,
+        -0.004835743327878807
+      ],
+      "macro_gain": -0.005542485927912479,
+      "class_f1_gain": {
+        "H": -0.009339879619613578,
+        "A": -0.009648037399338512,
+        "D": 0.002360459235214601
+      },
+      "counts": {
+        "old": {
+          "short_reference": 1216,
+          "short_matched": 50,
+          "subsecond_reference": 163,
+          "subsecond_matched": 3,
+          "missing_live": 1045668,
+          "missing_dead": 1115485,
+          "missing_false_dead": 103235,
+          "missing_false_live": 196495,
+          "missing_wrong_team": 141776
+        },
+        "new": {
+          "short_reference": 1216,
+          "short_matched": 39,
+          "subsecond_reference": 163,
+          "subsecond_matched": 1,
+          "missing_live": 1045668,
+          "missing_dead": 1115485,
+          "missing_false_dead": 149581,
+          "missing_false_live": 159695,
+          "missing_wrong_team": 138798
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.04111842105263158,
+          "false_dead": 0.09872636439099217,
+          "false_live": 0.17615207734752147,
+          "wrong_team": 0.13558414334186378
+        },
+        "new": {
+          "short_recall": 0.032072368421052634,
+          "false_dead": 0.14304827153551605,
+          "false_live": 0.14316194301133586,
+          "wrong_team": 0.13273620307784115
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": -0.009046052631578948,
+        "false_dead": 0.04432190714452389,
+        "false_live": -0.03299013433618561,
+        "wrong_team": -0.0028479402640226303
+      },
+      "checks": {
+        "mean_spell": false,
+        "macro": false,
+        "worst": false,
+        "H_f1": true,
+        "A_f1": true,
+        "D_f1": true
+      },
+      "pass_all": false,
+      "per_match_gain": {
+        "10502": -0.01964268608104225,
+        "10505": -0.00636836424295939,
+        "10507": -0.0003061946647022751,
+        "10509": -0.017887139107611583,
+        "10511": -0.009789957694659346,
+        "10512": 0.008309754710324913,
+        "3812": -0.03876138433515486,
+        "3814": -0.01652277227722776,
+        "3825": -0.02135676729623387,
+        "3826": 0.017352425223080115,
+        "3829": -0.023688546372575003,
+        "3830": -0.009980101418576193,
+        "3841": -0.008504304561717357,
+        "3843": -0.017873227826333882,
+        "3844": -0.016884364831640186,
+        "3845": 0.022741453700630576,
+        "3856": -0.024972409650335925,
+        "3857": -0.037139104317780613
+      }
+    },
+    {
+      "cohort": "all18",
+      "scenario": "vv_hz15_noise2",
+      "reference": "sdk_shadow",
+      "games": 18,
+      "old_spell": 0.40964614630367946,
+      "new_spell": 0.3973531634678731,
+      "gain": -0.012292982835806383,
+      "wins": 3,
+      "ties": 0,
+      "worst_gain": -0.03876138433515486,
+      "bootstrap95": [
+        -0.019505074860626498,
+        -0.004835743327878807
+      ],
+      "macro_gain": -0.005542485927912479,
+      "class_f1_gain": {
+        "H": -0.009339879619613578,
+        "A": -0.009648037399338512,
+        "D": 0.002360459235214601
+      },
+      "counts": {
+        "old": {
+          "short_reference": 1216,
+          "short_matched": 50,
+          "subsecond_reference": 163,
+          "subsecond_matched": 3,
+          "missing_live": 1045668,
+          "missing_dead": 1115485,
+          "missing_false_dead": 103235,
+          "missing_false_live": 196495,
+          "missing_wrong_team": 141776
+        },
+        "new": {
+          "short_reference": 1216,
+          "short_matched": 39,
+          "subsecond_reference": 163,
+          "subsecond_matched": 1,
+          "missing_live": 1045668,
+          "missing_dead": 1115485,
+          "missing_false_dead": 149581,
+          "missing_false_live": 159695,
+          "missing_wrong_team": 138798
+        }
+      },
+      "rates": {
+        "old": {
+          "short_recall": 0.04111842105263158,
+          "false_dead": 0.09872636439099217,
+          "false_live": 0.17615207734752147,
+          "wrong_team": 0.13558414334186378
+        },
+        "new": {
+          "short_recall": 0.032072368421052634,
+          "false_dead": 0.14304827153551605,
+          "false_live": 0.14316194301133586,
+          "wrong_team": 0.13273620307784115
+        }
+      },
+      "diagnostic_rate_changes": {
+        "short_recall": -0.009046052631578948,
+        "false_dead": 0.04432190714452389,
+        "false_live": -0.03299013433618561,
+        "wrong_team": -0.0028479402640226303
+      },
+      "checks": {
+        "mean_spell": false,
+        "macro": false,
+        "worst": false,
+        "H_f1": true,
+        "A_f1": true,
+        "D_f1": true
+      },
+      "pass_all": false,
+      "per_match_gain": {
+        "10502": -0.01964268608104225,
+        "10505": -0.00636836424295939,
+        "10507": -0.0003061946647022751,
+        "10509": -0.017887139107611583,
+        "10511": -0.009789957694659346,
+        "10512": 0.008309754710324913,
+        "3812": -0.03876138433515486,
+        "3814": -0.01652277227722776,
+        "3825": -0.02135676729623387,
+        "3826": 0.017352425223080115,
+        "3829": -0.023688546372575003,
+        "3830": -0.009980101418576193,
+        "3841": -0.008504304561717357,
+        "3843": -0.017873227826333882,
+        "3844": -0.016884364831640186,
+        "3845": 0.022741453700630576,
+        "3856": -0.024972409650335925,
+        "3857": -0.037139104317780613
+      }
+    }
+  ],
+  "rule": {
+    "rule": "Retain final candidate only if all prespecified comparison guards pass; otherwise roll back to weighted_short_gap. No alternate mixture, decoder tuning or training. Missing/invalid cells block decision rather than being dropped.",
+    "comparison_guards": {
+      "mean_spell_gain_min": 0.0,
+      "mean_macro_gain_min": -0.002,
+      "worst_match_spell_gain_min": -0.02,
+      "mean_each_class_f1_gain_min": -0.01
+    },
+    "guard_scope": "Each of 3 cohorts x 6 scenarios x 2 references, separately; never average natural and stress together.",
+    "diagnostic_guards": {
+      "short_under3_recall_gain_min": 0.0,
+      "missing_false_dead_rate_increase_max": 0.01,
+      "missing_false_live_rate_increase_max": 0.01,
+      "missing_wrong_team_rate_increase_max": 0.01
+    },
+    "diagnostic_scope": "Pooled all18, natural and original blind scenarios, both references. VV diagnostics reported separately; no fabricated target-equivalence assumption.",
+    "rationale": "Conservative release-regression policy, not a hypothesis-test noninferiority margin. Reuse existing mean/macro/worst guards; add class and gap-error safeguards before any new-candidate audit outcomes. No arbitrary +0.02 improvement requirement. Heavy VV stress is deliberately a conservative veto even if not target calibrated."
+  },
+  "fresh_holdout": false
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "verified_utc": "2026-11-17T11:12:17.859390+00:00",
+  "frozen_files_verified": 161,
+  "records": 432,
+  "matches": 18,
+  "decision_recomputed_exactly": true,
+  "prediction_files_verified": 18,
+  "audit_replay_base_commit": "8b1074340e2734f34e4cbc58930fb4bd2c309df7",
+  "manifest_at_audit": "releases/uniform-temporal-focus/submission_manifest.json",
+  "manifest_sha256": "3515107bae26f76dc8e2c173a8c768e175cca36fa1da701276cbeb370987dbac",
+  "note": "Freeze binds the pre-selection root manifest. Replay the audit at its base commit; changing the active release pointer later intentionally changes only that manifest among frozen files."
+}
