@@ -1,6 +1,6 @@
 # Ruses Cules - team possession from tactical tracking
 
-Selected model: **uniform_temporal_focus**. We use missing-ball temporal specialists and duration-constrained decoding to estimate H/A/D from tactical ATD XML/TXT. Technical checks pass; hidden-match accuracy and competition rank remain unknown. Organizer submission and repository publication remain on hold.
+Selected model: **uniform_temporal_focus**. We use missing-ball temporal specialists and duration-constrained decoding to estimate H/A/D from tactical ATD XML/TXT. Technical checks pass; hidden-match accuracy and competition rank remain unknown. We submitted the selected CSV and five-page PDF on17 November2026 at19:34 CET; Google Forms confirmed receipt. The repository is public. [Submission receipt](docs/releases/submitted-20261117.json).
 
 ## Evaluation
 

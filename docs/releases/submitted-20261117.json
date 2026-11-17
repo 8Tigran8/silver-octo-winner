@@ -1,0 +1,19 @@
+{
+  "status": "SUBMITTED_FORM_CONFIRMED",
+  "recorded_utc": "2026-11-17T18:34:38.272396+00:00",
+  "recorded_local": "2026-11-17T19:34:38.272396+01:00",
+  "deadline_local": "2026-11-17T23:59:00+01:00",
+  "before_deadline": true,
+  "team": "Ruses Cules",
+  "form_confirmation": "Se ha registrado tu respuesta",
+  "candidate": "uniform_temporal_focus",
+  "tested_repository_commit": "c2a332cbadec8595796d0ffaf932c82212901536",
+  "repository": "https://github.com/8Tigran8/silver-octo-winner",
+  "repository_public": true,
+  "csv_filename": "Ruses Cules.csv",
+  "csv_sha256": "897db60c18fefe362acee239665136d47a8b2c87a54eb8eae67231b0dcdf9e33",
+  "pdf_filename": "Ruses Cules.pdf",
+  "pdf_sha256": "d5baedfc82721957052b7b28ba7e7a6936207d3f9734ed7c74b23615c0548136",
+  "submission_count_this_session": 1,
+  "acceptance_scope": "Google Forms recorded the response. Eligibility review and scoring outcomes are not yet known."
+}
